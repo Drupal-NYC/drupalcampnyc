@@ -1,0 +1,10 @@
+uuid: 0446ac14-d9c3-45b7-ad3a-58df585692c8
+langcode: en
+status: false
+dependencies:
+  module:
+    - block_content
+id: block_content.full
+label: Full
+targetEntityType: block_content
+cache: true
