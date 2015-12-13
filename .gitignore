@@ -12,18 +12,19 @@
 # vendor
 
 # Ignore configuration files that may contain sensitive information.
-sites/*/settings*.php
-sites/*/services*.yml
+docroot/sites/*/settings*.php
+docroot/sites/*/services*.yml
 
 # Ignore paths that contain user-generated content.
 # This project is passing files around via the repo
 # sites/*/files
 # So exempt the directories that are aggregation/cache files
-sites/*/files/css
-sites/*/files/js
-sites/*/files/php
+docroot/sites/*/files/css
+docroot/sites/*/files/js
+docroot/sites/*/files/php
+docroot/sites/default/files/styles
 # We don't have any private files but leaving this in place
-sites/*/private
+docroot/sites/*/private
 
 
 # IDE
