@@ -12,20 +12,18 @@
 # vendor
 
 # Ignore configuration files that may contain sensitive information.
-docroot/sites/*/settings*.php
-docroot/sites/*/services*.yml
+sites/*/settings*.php
+sites/*/services*.yml
 
 # Ignore paths that contain user-generated content.
-# This project is passing files around via the repo
-# sites/*/files
-# So exempt the directories that are aggregation/cache files
-docroot/sites/*/files/css
-docroot/sites/*/files/js
-docroot/sites/*/files/php
-docroot/sites/default/files/styles
+# Pantheon does not want sites/*/files in the repo
+sites/*/files/css
 # We don't have any private files but leaving this in place
-docroot/sites/*/private
+sites/*/private
 
 
 # IDE
 .idea
+
+#OS specific
+.DS
