@@ -1,0 +1,11 @@
+uuid: bade53db-7dcd-4506-bf00-b9c0e8523795
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node_delete_action
+label: 'Delete content'
+type: node
+plugin: node_delete_action
+configuration: {  }

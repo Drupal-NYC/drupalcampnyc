@@ -17,7 +17,7 @@ sites/*/services*.yml
 
 # Ignore paths that contain user-generated content.
 # Pantheon does not want sites/*/files in the repo
-sites/*/files/css
+sites/*/files
 # We don't have any private files but leaving this in place
 sites/*/private
 
