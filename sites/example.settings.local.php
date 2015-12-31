@@ -97,7 +97,7 @@ $settings['extension_discovery_scan_tests'] = TRUE;
  */
 // Get the path to the parent of docroot
 $dir = dirname(DRUPAL_ROOT);
-$config_directories[CONFIG_SYNC_DIRECTORY] = $dir . '/config/default';
+$config_directories[CONFIG_SYNC_DIRECTORY] = $dir . '/sites/default/config/default';
 
 /**
  * Load drupal console services definition file.
