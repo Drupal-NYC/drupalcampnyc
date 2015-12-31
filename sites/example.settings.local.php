@@ -90,4 +90,16 @@ $settings['extension_discovery_scan_tests'] = TRUE;
  * be gained by generating a query string from rebuild_token_calculator.sh and
  * using these parameters in a request to rebuild.php.
  */
-$settings['rebuild_access'] = TRUE;
+
+/**
+ * Configuration Sync Settings
+ *
+ */
+// Get the path to the parent of docroot
+$dir = dirname(DRUPAL_ROOT);
+$config_directories[CONFIG_SYNC_DIRECTORY] = $dir . '/sites/default/config/default';
+
+/**
+ * Load drupal console services definition file.
+ */
+$settings['container_yamls'][] = $dir . '/docroot/sites/default/services.yml';

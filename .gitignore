@@ -16,15 +16,14 @@ sites/*/settings*.php
 sites/*/services*.yml
 
 # Ignore paths that contain user-generated content.
-# This project is passing files around via the repo
-# sites/*/files
-# So exempt the directories that are aggregation/cache files
-sites/*/files/css
-sites/*/files/js
-sites/*/files/php
+# Pantheon does not want sites/*/files in the repo
+sites/*/files
 # We don't have any private files but leaving this in place
 sites/*/private
 
 
 # IDE
 .idea
+
+#OS specific
+.DS

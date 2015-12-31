@@ -1,0 +1,9 @@
+uuid: 6a8c2e63-b571-47b4-8000-e5a3040f2aa9
+langcode: en
+status: true
+dependencies: {  }
+name: 'Sponsorship Types'
+vid: sponsorship_type
+description: ''
+hierarchy: 0
+weight: 0

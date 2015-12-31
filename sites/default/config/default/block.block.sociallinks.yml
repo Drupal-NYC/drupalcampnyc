@@ -1,0 +1,25 @@
+uuid: 79165136-7ff8-42e5-9604-4e4c64d25c50
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:25a9c2b7-aa7b-4a83-be5e-947a1d3bfb25'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: sociallinks
+theme: bartik
+region: sidebar_second
+weight: -8
+provider: null
+plugin: 'block_content:25a9c2b7-aa7b-4a83-be5e-947a1d3bfb25'
+settings:
+  id: 'block_content:25a9c2b7-aa7b-4a83-be5e-947a1d3bfb25'
+  label: 'Connect With Us!'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
