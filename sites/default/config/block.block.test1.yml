@@ -2,10 +2,7 @@ uuid: 19c75ef7-bd0a-407a-9400-fd3965da6293
 langcode: en
 status: false
 dependencies:
-  content:
-    - 'block_content:basic:1e00b9eb-9e57-44f8-bf00-a57132ba9ab0'
   module:
-    - block_content
     - node
   theme:
     - dcnyc

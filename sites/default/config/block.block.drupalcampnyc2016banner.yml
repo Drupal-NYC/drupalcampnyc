@@ -2,10 +2,7 @@ uuid: 67ae2bac-c389-4627-8200-abac3dd24d14
 langcode: en
 status: false
 dependencies:
-  content:
-    - 'block_content:basic:4d7e9393-5406-46ca-9906-6c595da211f0'
   module:
-    - block_content
     - system
   theme:
     - dcnyc
