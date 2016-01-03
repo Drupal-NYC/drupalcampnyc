@@ -1,17 +1,17 @@
-uuid: 532fefb0-b80b-45e3-a711-174f87dc91be
+uuid: 2570b7e0-0d86-4687-8a00-ca140e73e5e4
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.tools
   module:
     - system
   theme:
-    - bartik
-id: bartik_tools
-theme: bartik
-region: sidebar_first
-weight: -7
+    - dcnyc
+id: dcnyc_tools
+theme: dcnyc
+region: '-1'
+weight: -8
 provider: null
 plugin: 'system_menu_block:tools'
 settings:

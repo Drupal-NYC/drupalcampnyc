@@ -1,4 +1,4 @@
-uuid: 79165136-7ff8-42e5-9604-4e4c64d25c50
+uuid: 10a1d9dc-9bc5-4bbe-a051-8101ff919b77
 langcode: en
 status: true
 dependencies:
@@ -7,10 +7,10 @@ dependencies:
   module:
     - block_content
   theme:
-    - bartik
-id: sociallinks
-theme: bartik
-region: sidebar_second
+    - dcnyc
+id: dcnyc_sociallinks
+theme: dcnyc
+region: footer
 weight: -8
 provider: null
 plugin: 'block_content:25a9c2b7-aa7b-4a83-be5e-947a1d3bfb25'

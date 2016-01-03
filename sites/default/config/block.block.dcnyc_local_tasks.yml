@@ -1,11 +1,11 @@
-uuid: 35255242-3208-480e-ad00-fba54d815897
+uuid: 2dffe4b9-e7aa-468b-8200-db94928be866
 langcode: en
 status: true
 dependencies:
   theme:
-    - bartik
-id: bartik_local_tasks
-theme: bartik
+    - dcnyc
+id: dcnyc_local_tasks
+theme: dcnyc
 region: content
 weight: -8
 provider: null

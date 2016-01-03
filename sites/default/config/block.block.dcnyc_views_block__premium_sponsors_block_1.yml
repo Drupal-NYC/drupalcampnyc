@@ -1,6 +1,6 @@
-uuid: 645591fd-16d1-4960-8301-1c4e46efe8ec
+uuid: 4488147d-af05-4646-8941-65dc5c89d7fc
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.premium_sponsors
@@ -8,11 +8,11 @@ dependencies:
     - node
     - views
   theme:
-    - bartik
-id: views_block__premium_sponsors_block_1
-theme: bartik
-region: sidebar_second
-weight: -7
+    - dcnyc
+id: dcnyc_views_block__premium_sponsors_block_1
+theme: dcnyc
+region: '-1'
+weight: -10
 provider: null
 plugin: 'views_block:premium_sponsors-block_1'
 settings:

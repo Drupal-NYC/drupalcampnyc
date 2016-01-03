@@ -181,14 +181,35 @@ padding: 0 20px 0 20px;
 	font-weight:bolder;
 	padding-left: 10px;	
 }
-
+/* Subject entry box */
 
 #edit-subject-0-value {
-	margin-left: 63px;
+	margin-left: 78px;
+	padding-right: 12px;
+}
+/* Name entry box */
+#edit-name {
+	margin-left: 0px; /* 56px; */
+	}
+#edit-mail {
+	margin-left: 0px;
 }	
+/* align entry queries , Your name, Your email address */	
+.form-item-mail,
+.form-item-name {
+	font-weight:700;
+	margin-left: 10px;
+}
 
 /* end Contact Form */
+/* USER LOGIN Form 
 
+#form-edit-pass {
+	font-weight:700;
+	margin-left: 10px;
+}
+
+/* ---------------- */
 
 #block-dcnyc-content	{
 	background: rgba(255, 255, 255, 0.8); /* 80% white */
