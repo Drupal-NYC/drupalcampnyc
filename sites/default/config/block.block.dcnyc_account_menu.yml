@@ -1,4 +1,4 @@
-uuid: 9daae973-5594-4890-ab05-5b9a8cf53968
+uuid: 804dfd6e-3d57-4cad-9a00-c22d1cfcd1b7
 langcode: en
 status: true
 dependencies:
@@ -7,11 +7,11 @@ dependencies:
   module:
     - system
   theme:
-    - bartik
-id: bartik_account_menu
-theme: bartik
-region: footer_second
-weight: 0
+    - dcnyc
+id: dcnyc_account_menu
+theme: dcnyc
+region: footer
+weight: -10
 provider: null
 plugin: 'system_menu_block:account'
 settings:
@@ -21,4 +21,9 @@ settings:
   label_display: '0'
   level: 1
   depth: 1
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

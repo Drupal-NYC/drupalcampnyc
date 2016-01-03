@@ -1,15 +1,15 @@
-uuid: 36835958-7e88-4fe3-8500-eb57b71d6d70
+uuid: c43e2f53-9543-46a1-b221-33fa75b42049
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - bartik
-id: bartik_powered
-theme: bartik
-region: footer_fifth
-weight: -7
+    - dcnyc
+id: dcnyc_powered
+theme: dcnyc
+region: footer
+weight: -9
 provider: null
 plugin: system_powered_by_block
 settings:

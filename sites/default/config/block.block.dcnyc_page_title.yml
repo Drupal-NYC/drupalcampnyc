@@ -1,13 +1,13 @@
-uuid: 053f88d9-bc8f-4862-a440-64d14115f98c
+uuid: e0944c75-6323-42f9-9838-569223236022
 langcode: en
 status: true
 dependencies:
   theme:
-    - bartik
-id: bartik_page_title
-theme: bartik
+    - dcnyc
+id: dcnyc_page_title
+theme: dcnyc
 region: content
-weight: -8
+weight: -10
 provider: null
 plugin: page_title_block
 settings:

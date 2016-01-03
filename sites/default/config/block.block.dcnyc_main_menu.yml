@@ -1,4 +1,4 @@
-uuid: b8f57e31-c7d4-43d6-9c00-f2e0641adbc6
+uuid: 1e485ee0-919b-4042-ba28-402a7ce07794
 langcode: en
 status: true
 dependencies:
@@ -7,11 +7,11 @@ dependencies:
   module:
     - system
   theme:
-    - bartik
-id: bartik_main_menu
-theme: bartik
+    - dcnyc
+id: dcnyc_main_menu
+theme: dcnyc
 region: primary_menu
-weight: 0
+weight: -9
 provider: null
 plugin: 'system_menu_block:main'
 settings:

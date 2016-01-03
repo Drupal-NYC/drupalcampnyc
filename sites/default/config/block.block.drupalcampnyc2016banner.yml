@@ -1,0 +1,28 @@
+uuid: 67ae2bac-c389-4627-8200-abac3dd24d14
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - dcnyc
+id: drupalcampnyc2016banner
+theme: dcnyc
+region: '-1'
+weight: -11
+provider: null
+plugin: 'block_content:4d7e9393-5406-46ca-9906-6c595da211f0'
+settings:
+  id: 'block_content:4d7e9393-5406-46ca-9906-6c595da211f0'
+  label: 'DrupalCampNYC2016 banner'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
