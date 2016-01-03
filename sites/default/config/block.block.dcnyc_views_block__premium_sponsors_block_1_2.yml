@@ -1,0 +1,24 @@
+uuid: 439a7c86-985d-45d0-a456-86ac7cf13256
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.premium_sponsors
+  module:
+    - views
+  theme:
+    - dcnyc
+id: dcnyc_views_block__premium_sponsors_block_1_2
+theme: dcnyc
+region: '-1'
+weight: -9
+provider: null
+plugin: 'views_block:premium_sponsors-block_1'
+settings:
+  id: 'views_block:premium_sponsors-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

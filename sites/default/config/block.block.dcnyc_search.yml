@@ -1,0 +1,26 @@
+uuid: 827987e5-6801-4ff2-9800-c9e406284e5c
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+    - system
+  theme:
+    - dcnyc
+id: dcnyc_search
+theme: dcnyc
+region: header
+weight: -7
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '*'
+    negate: false
+    context_mapping: {  }

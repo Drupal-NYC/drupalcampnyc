@@ -1,0 +1,20 @@
+uuid: 17542d50-6200-45bb-a625-37aec2d61287
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - dcnyc
+id: dcnyc_content
+theme: dcnyc
+region: content
+weight: -7
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }
