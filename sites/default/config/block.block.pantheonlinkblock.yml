@@ -9,7 +9,7 @@ dependencies:
 id: pantheonlinkblock
 theme: dcnyc
 region: footer
-weight: -6
+weight: -5
 provider: null
 plugin: pantheon_link_block
 settings:

@@ -9,7 +9,7 @@ dependencies:
 id: test1
 theme: dcnyc
 region: '-1'
-weight: -2
+weight: -3
 provider: null
 plugin: 'block_content:1e00b9eb-9e57-44f8-bf00-a57132ba9ab0'
 settings:

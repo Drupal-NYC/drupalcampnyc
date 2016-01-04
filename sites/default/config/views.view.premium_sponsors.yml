@@ -406,9 +406,9 @@ display:
       tags:
         - 'config:field.storage.node.field_image'
         - 'config:field.storage.node.field_url'
-  block_1:
+  sponsor_footer:
     display_plugin: block
-    id: block_1
+    id: sponsor_footer
     display_title: Block
     position: 1
     display_options:

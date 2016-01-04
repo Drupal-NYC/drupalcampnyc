@@ -9,7 +9,7 @@ dependencies:
 id: dcnyc_help
 theme: dcnyc
 region: content
-weight: -10
+weight: -9
 provider: null
 plugin: help_block
 settings:

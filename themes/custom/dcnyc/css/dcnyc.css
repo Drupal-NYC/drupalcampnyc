@@ -61,10 +61,10 @@ div.region.region-footer {
 }
 
 #block-dcnyc-views-block-premium-sponsors-block-1-2,
-#block-dcnyc-sociallinks,
+#block-connectlinks,
 #block-dcnyc-tools {
 	float:left;
-	padding: 0 0 0 20px;
+	padding: 0 20px 0 20px;
 }
 #block-dcnyc-powered,
 #block-pantheonlinkblock {

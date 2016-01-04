@@ -11,7 +11,7 @@ dependencies:
 id: dcnyc_tools
 theme: dcnyc
 region: '-1'
-weight: -5
+weight: -6
 provider: null
 plugin: 'system_menu_block:tools'
 settings:
