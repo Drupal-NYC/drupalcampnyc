@@ -1,15 +1,15 @@
-uuid: d1a6c249-51d2-4d1d-a336-5438865e67e4
+uuid: f6f8549d-c53c-407f-a000-b62745e34e22
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - bartik
-id: bartik_branding
-theme: bartik
+    - dcnyc
+id: dcnyc_branding
+theme: dcnyc
 region: header
-weight: 0
+weight: -8
 provider: null
 plugin: system_branding_block
 settings:

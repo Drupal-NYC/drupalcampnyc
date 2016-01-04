@@ -1,15 +1,15 @@
-uuid: eab577ae-85aa-4120-a926-38b333cd17f9
+uuid: 28659fea-7216-4795-b118-24850aa16090
 langcode: en
 status: true
 dependencies:
   module:
     - help
   theme:
-    - bartik
-id: bartik_help
-theme: bartik
+    - dcnyc
+id: dcnyc_help
+theme: dcnyc
 region: content
-weight: -8
+weight: -11
 provider: null
 plugin: help_block
 settings:

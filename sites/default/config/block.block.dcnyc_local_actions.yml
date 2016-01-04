@@ -1,13 +1,13 @@
-uuid: 6160100c-098f-4683-8500-e7eefaf6b741
+uuid: fb2bf24d-6911-4bb3-a556-86b2b1253619
 langcode: en
 status: true
 dependencies:
   theme:
-    - bartik
-id: bartik_local_actions
-theme: bartik
+    - dcnyc
+id: dcnyc_local_actions
+theme: dcnyc
 region: content
-weight: -8
+weight: -9
 provider: null
 plugin: local_actions_block
 settings:

@@ -1,15 +1,15 @@
-uuid: 34843d2e-f992-4f9a-a019-250cf9171771
+uuid: a236ea66-e7d4-498f-8f06-6c977b210f65
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
   theme:
-    - bartik
-id: bartik_breadcrumbs
-theme: bartik
-region: breadcrumb
-weight: 0
+    - dcnyc
+id: dcnyc_breadcrumbs
+theme: dcnyc
+region: '-1'
+weight: -7
 provider: null
 plugin: system_breadcrumb_block
 settings:
