@@ -9,7 +9,7 @@ dependencies:
 id: dcnyc_content
 theme: dcnyc
 region: content
-weight: -7
+weight: -6
 provider: null
 plugin: system_main_block
 settings:

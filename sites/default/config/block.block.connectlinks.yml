@@ -1,0 +1,23 @@
+uuid: 88029626-be19-43ec-a107-7e8ac455bf32
+langcode: en
+status: true
+dependencies:
+  module:
+    - dcnyc_social
+  theme:
+    - dcnyc
+id: connectlinks
+theme: dcnyc
+region: footer
+weight: -8
+provider: null
+plugin: social_footer_block
+settings:
+  id: social_footer_block
+  label: 'Connect With Us!'
+  provider: dcnyc_social
+  label_display: visible
+  facebook_url: 'https://www.facebook.com/Drupalcampnyc'
+  twitter_url: 'https://twitter.com/drupalnyc'
+  gdo_url: 'https://groups.drupal.org/nyc'
+visibility: {  }

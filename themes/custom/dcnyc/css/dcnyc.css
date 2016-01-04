@@ -51,19 +51,29 @@ body { font-family:Raleway,sans-serif; font-size:14px; font-weight:normal; font-
   	margin-top:20px;
 	padding: 25px 10px 0 20px;
 }
-#block-dcnyc-views-block-premium-sponsors-block-1-2,
-#block-dcnyc-sociallinks,
+
+/* FOOTER */
+
+div.region.region-footer {
+	margin-top: 10px;
+	overflow: hidden;
+	background: rgba(255, 255, 255, 0.8); /* 80% white */
+}
+
+#block-connectlinks,
 #block-dcnyc-tools {
-	background: rgba(255, 255, 255, 225); /* white */
 	float:left;
-	padding: 0 0 0 20px;
-	z-index: -3;
+	padding: 0 20px 0 20px;
 }
 #block-dcnyc-powered,
-#block-dcnyc-account-menu-menu {
-	background: rgba(255, 255, 255, 0.8); /* 80% white */
+#block-pantheonlinkblock {
 	padding: 0 0 0 20px;
-	z-index: -3;
+}
+
+/* "Powered by Drupal" title - turn off title, leave block message visible */
+#block-dcnyc-powered span {display:none;}
+#block-dcnyc-powered h2{
+	font-weight: 400;
 }
 
 /* SEARCH */
@@ -72,24 +82,7 @@ body { font-family:Raleway,sans-serif; font-size:14px; font-weight:normal; font-
 	float:right;
 	padding: 0 0 0 20px;
 }
-	
-#block-sponsorsintroduction,
-#block-premiumsponsors,
-#block-generalsponsors {
-	background: rgba(255, 255, 255, 225); /* white */
-	padding: 20px 0 0 20px;
-	z-index: -3;
-}
-#block-sponsorsintroduction {
-	padding: 0 0 0 20px;
-}
 
-	
-/* "Powered by Drupal" title - turn off title, leave block message visible */
-#block-dcnyc-powered span {display:none;}
-#block-dcnyc-powered h2{
-	font-weight: 400;	
-}
 /* ------------------------------- */
 
 a:link, a:visited { color:black;font-weight:bolder; text-decoration: none;  }

@@ -26,4 +26,4 @@ sites/*/private
 .idea
 
 #OS specific
-.DS
+.DS_Store
