@@ -5,6 +5,7 @@ dependencies:
   config:
     - views.view.premium_sponsors
   module:
+    - system
     - views
   theme:
     - dcnyc
@@ -21,4 +22,9 @@ settings:
   label_display: visible
   views_label: ''
   items_per_page: none
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: /our-sponsors
+    negate: true
+    context_mapping: {  }
