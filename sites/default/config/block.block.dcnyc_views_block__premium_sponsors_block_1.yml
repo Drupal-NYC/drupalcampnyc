@@ -12,7 +12,7 @@ dependencies:
 id: dcnyc_views_block__premium_sponsors_block_1
 theme: dcnyc
 region: '-1'
-weight: -10
+weight: -6
 provider: null
 plugin: 'views_block:premium_sponsors-block_1'
 settings:

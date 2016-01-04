@@ -9,7 +9,7 @@ dependencies:
 id: drupalcampnyc2016banner
 theme: dcnyc
 region: '-1'
-weight: -11
+weight: -8
 provider: null
 plugin: 'block_content:4d7e9393-5406-46ca-9906-6c595da211f0'
 settings:
