@@ -1,6 +1,6 @@
 uuid: 10a1d9dc-9bc5-4bbe-a051-8101ff919b77
 langcode: en
-status: true
+status: false
 dependencies:
   content:
     - 'block_content:basic:25a9c2b7-aa7b-4a83-be5e-947a1d3bfb25'
@@ -10,8 +10,8 @@ dependencies:
     - dcnyc
 id: dcnyc_sociallinks
 theme: dcnyc
-region: footer
-weight: -8
+region: '-1'
+weight: -4
 provider: null
 plugin: 'block_content:25a9c2b7-aa7b-4a83-be5e-947a1d3bfb25'
 settings:

@@ -1,6 +1,6 @@
 uuid: d7591578-250c-477f-8c26-3834c14dbb16
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.footer
@@ -10,8 +10,8 @@ dependencies:
     - dcnyc
 id: dcnyc_footer
 theme: dcnyc
-region: footer
-weight: -11
+region: '-1'
+weight: -7
 provider: null
 plugin: 'system_menu_block:footer'
 settings:

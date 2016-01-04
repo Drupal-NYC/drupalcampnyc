@@ -1,6 +1,6 @@
-uuid: 439a7c86-985d-45d0-a456-86ac7cf13256
+uuid: c48b8c12-0b83-4642-a304-4fd6f567aa0c
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - views.view.premium_sponsors
@@ -8,14 +8,14 @@ dependencies:
     - views
   theme:
     - dcnyc
-id: dcnyc_views_block__premium_sponsors_block_1_2
+id: views_block__premium_sponsors_sponsor_footer
 theme: dcnyc
-region: '-1'
+region: footer
 weight: -9
 provider: null
-plugin: 'views_block:premium_sponsors-block_1'
+plugin: 'views_block:premium_sponsors-sponsor_footer'
 settings:
-  id: 'views_block:premium_sponsors-block_1'
+  id: 'views_block:premium_sponsors-sponsor_footer'
   label: ''
   provider: views
   label_display: visible
