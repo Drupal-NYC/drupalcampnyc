@@ -13,6 +13,7 @@ module:
   dblog: 0
   dcnyc_pantheon: 0
   dcnyc_social: 0
+  dcync_reg_links: 0
   dynamic_page_cache: 0
   editor: 0
   field: 0

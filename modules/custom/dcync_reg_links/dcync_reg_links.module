@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * @file
+ * Contains dcync_reg_links.module..
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function dcync_reg_links_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the dcync_reg_links module.
+    case 'help.page.dcync_reg_links':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Provides a block of registration and sponsorship links') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function dcync_reg_links_theme() {
+  $theme = array();
+  $theme['dcnyc_registration_links'] = array(
+    'template' => 'reg-links-block',
+    'variables' => array(
+      'registration_page' => NULL,
+      'sponsorship_page' => NULL,
+    )
+  );
+  return $theme;
+}
