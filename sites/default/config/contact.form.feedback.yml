@@ -1,7 +1,12 @@
 uuid: 5be5337c-d3c2-4212-8b00-bb722611b2bc
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - contact_storage
+third_party_settings:
+  contact_storage:
+    redirect_uri: ''
 id: feedback
 label: 'Contact Us'
 recipients:
