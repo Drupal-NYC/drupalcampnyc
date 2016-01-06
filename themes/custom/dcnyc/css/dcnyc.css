@@ -43,13 +43,10 @@ body { font-family:Raleway,sans-serif; font-size:14px; font-weight:normal; font-
 }
 
 
-.node__content {	
-	/* background: rgba(255, 255, 255, 0.8); /* 80% white */
-	float:left;
+.node__content {
 	margin-left:-20px;
   	margin-right:-20px;
-  	margin-top:20px;
-	padding: 25px 10px 0 20px;
+	padding: 5px 10px 0 20px;
 }
 
 /* FOOTER */
@@ -95,7 +92,12 @@ a:hover, a:active, a:focus { color:black; text-decoration: none; }
 
 #main h1 a, #main h2 a, #main h3 a, #main h4 a, #main h5 a { text-decoration: none; }	
 
-h1, h2, h3, h4, h5, h6 { color: black; letter-spacing: -1px; margin:0; }
+h1, h2, h3, h4, h5, h6 {
+	color: black;
+	text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.4);
+	letter-spacing: -1px;
+	margin:0;
+}
 
 h1 { font-size:35px; font-weight:bold; font-style:normal; line-height: 140%; margin-bottom: 14px; }
 
