@@ -1,6 +1,6 @@
 definitions:
   contact__site_page:
-    weight: -43
+    weight: -42
     menu_name: main
     parent: ''
     expanded: true
