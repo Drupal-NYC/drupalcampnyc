@@ -3,7 +3,7 @@ type: theme
 description: A custom theme for NYC Camps using core Classy as a base theme
 package: DrupalCampNYC
 core: 8.x
- 
+
 libraries:
   - dcnyc/theme-level
   - dcnyc/global-css
@@ -19,6 +19,7 @@ regions:
   content: Content
   sidebar_first: Sidebar_first
   sidebar_second: Sidebar_second
+  mortise: Mortise
   footer: Footer
   breadcrumb: Breadcrumb
   help: Help
