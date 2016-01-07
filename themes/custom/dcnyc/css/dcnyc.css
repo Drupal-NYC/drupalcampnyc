@@ -65,6 +65,11 @@ body {
   padding: 5px 10px 0 20px;
 }
 
+/* Region Mortise*/
+.region-mortise {
+  margin: 10px 0;
+}
+
 /* FOOTER */
 
 div.region.region-footer {
@@ -299,7 +304,8 @@ input[type='password'] {
 
 /* ---------------- */
 
-#block-dcnyc-content {
+#block-dcnyc-content,
+#block-views-block-premium-sponsors-sponsor-footer {
   background: rgba(255, 255, 255, 0.8); /* 80% white */
   padding: 20px 20px 20px 20px;
 }
