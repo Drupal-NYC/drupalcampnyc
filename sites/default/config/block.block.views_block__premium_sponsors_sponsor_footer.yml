@@ -11,8 +11,8 @@ dependencies:
     - dcnyc
 id: views_block__premium_sponsors_sponsor_footer
 theme: dcnyc
-region: content
-weight: -4
+region: mortise
+weight: -9
 provider: null
 plugin: 'views_block:premium_sponsors-sponsor_footer'
 settings:
