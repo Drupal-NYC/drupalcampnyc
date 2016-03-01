@@ -9,33 +9,38 @@ body { font-family:Raleway,sans-serif; font-size:14px; font-weight:normal; font-
 
 /* HEADER */
 #bg {
-  position: fixed; 
-  top: -50%; 
-  left: -50%; 
-  width: 200%; 
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
   height: 200%;
   z-index: -50;
 }
 #bg img {
-  position: absolute; 
-  top: 0; 
-  left: 0; 
-  right: 0; 
-  bottom: 0; 
-  margin: auto; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
   min-width: 50%;
   min-height: 50%;
-  
+
 }
 
-.site-name a { 
+.site-name a {
 	color: black;
 	font-size:35px;
 	font-weight:bold;
 	font-style:normal;
 	line-height: 140%;
 	margin-bottom: 50px;
-	margin-left: 20px;	
+}
+
+@media (max-width: 500px) {
+  .site-name a {
+    font-size:24px;
+  }
 }
 
 #block-dcnyc-content {
@@ -90,7 +95,7 @@ a:hover, a:active, a:focus { color:black; text-decoration: none; }
 
 #main a:hover { color:maroon; text-decoration: none; }
 
-#main h1 a, #main h2 a, #main h3 a, #main h4 a, #main h5 a { text-decoration: none; }	
+#main h1 a, #main h2 a, #main h3 a, #main h4 a, #main h5 a { text-decoration: none; }
 
 h1, h2, h3, h4, h5, h6 {
 	color: black;
@@ -131,7 +136,7 @@ img, img.scale-with-grid { outline: 0; max-width: 100%; height: auto; }
 /* Menu */
 
 #block-dcnyc-main-menu ul {
-   
+
     background: rgba(125, 125, 125, 0.7); /* 70% gray */
     list-style-type: none;
     margin: 5px 0 0 0;
@@ -148,13 +153,13 @@ img, img.scale-with-grid { outline: 0; max-width: 100%; height: auto; }
     display: block;
     color:white;
 	padding: 10px;
-    
+
 }
 #block-dcnyc-main-menu li a:hover{
     display: block;
     color:black;
 	padding: 10px;
-    
+
 }
 h2 span{
 /* background: rgba(255, 255, 255, 0.8); /* 80% white */
@@ -171,10 +176,10 @@ padding: 0 20px 0 20px;
 #edit-mail,
 #edit-subject-wrapper,
 #edit-message-wrapper,
-.form-item-copy { 
+.form-item-copy {
 	/* background: white; */
 	font-weight:bolder;
-	padding-left: 10px;	
+	padding-left: 10px;
 }
 /* Subject entry box */
 
@@ -188,8 +193,8 @@ padding: 0 20px 0 20px;
 	}
 #edit-mail {
 	margin-left: 0px;
-}	
-/* align entry queries , Your name, Your email address */	
+}
+/* align entry queries , Your name, Your email address */
 .form-item-mail,
 .form-item-name {
 	font-weight:700;
@@ -197,7 +202,7 @@ padding: 0 20px 0 20px;
 }
 
 /* end Contact Form */
-/* USER LOGIN Form 
+/* USER LOGIN Form
 
 #form-edit-pass {
 	font-weight:700;
@@ -209,19 +214,19 @@ padding: 0 20px 0 20px;
 #block-dcnyc-content	{
 	background: rgba(255, 255, 255, 0.8); /* 80% white */
 	padding: 20px 20px 20px 20px;
-	
+
 }
 #block-dcnyc-account-menu	{
 	background: rgba(55, 55, 55, 0.8); /* 80% gray */
 	padding: 20px 20px 0 20px;
-	
-	
+
+
 }
 #block-dcnyc-account-menu.menu--account	{
 	background: rgba(255, 255, 255, 0.8); /* 80% white */
 	padding: 20px 20px 0 20px;
 	z-index:-3;
-	
+
 }
 #block-dcnyc-account-menu a{
 	color: red;
