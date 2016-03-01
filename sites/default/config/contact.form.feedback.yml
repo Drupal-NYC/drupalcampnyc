@@ -5,6 +5,7 @@ dependencies: {  }
 id: feedback
 label: 'Contact Us'
 recipients:
-  - joseph.bachana@dpci.com
+  - joe@tailwindendurance.com
+  - sd@shawnduncan.org
 reply: ''
 weight: 0

@@ -3,8 +3,8 @@ definitions:
     weight: -42
     menu_name: main
     parent: ''
-    enabled: true
     expanded: true
+    enabled: true
   standard__front_page:
     weight: -50
     menu_name: main

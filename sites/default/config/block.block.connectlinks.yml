@@ -9,7 +9,7 @@ dependencies:
 id: connectlinks
 theme: dcnyc
 region: footer
-weight: -8
+weight: -7
 provider: null
 plugin: social_footer_block
 settings:
