@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\system\Tests\Render\AjaxPageStateTest.
- */
-
 namespace Drupal\system\Tests\Render;
 
 use Drupal\simpletest\WebTestBase;
@@ -48,7 +43,7 @@ class AjaxPageStateTest extends WebTestBase {
     );
     $this->assertRaw(
       '/core/misc/drupalSettingsLoader.js',
-      'The Dupalsettings library from core should be loaded.'
+      'The drupalSettings library from core should be loaded.'
     );
   }
 
@@ -78,7 +73,7 @@ class AjaxPageStateTest extends WebTestBase {
 
     $this->assertRaw(
       '/core/misc/drupalSettingsLoader.js',
-      'The Dupalsettings library from core should be loaded.'
+      'The drupalSettings library from core should be loaded.'
     );
   }
 
@@ -107,7 +102,7 @@ class AjaxPageStateTest extends WebTestBase {
 
     $this->assertNoRaw(
       '/core/misc/drupalSettingsLoader.js',
-      'The Dupalsettings library from core should be excluded from loading.'
+      'The drupalSettings library from core should be excluded from loading.'
     );
   }
 }

@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\Core\Url.
- */
-
 namespace Drupal\Core;
 
 use Drupal\Component\Utility\UrlHelper;
@@ -293,6 +288,11 @@ class Url {
    * @see \Drupal\Core\Url::fromUserInput()
    */
   public static function fromUri($uri, $options = []) {
+    // parse_url() incorrectly parses base:number/... as hostname:port/...
+    // and not the scheme. Prevent that by prefixing the path with a slash.
+    if (preg_match('/^base:\d/', $uri)) {
+      $uri = str_replace('base:', 'base:/', $uri);
+    }
     $uri_parts = parse_url($uri);
     if ($uri_parts === FALSE) {
       throw new \InvalidArgumentException("The URI '$uri' is malformed.");

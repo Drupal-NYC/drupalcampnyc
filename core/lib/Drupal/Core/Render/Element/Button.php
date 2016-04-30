@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\Core\Render\Element\Button.
- */
-
 namespace Drupal\Core\Render\Element;
 
 use Drupal\Core\Form\FormStateInterface;
@@ -27,7 +22,7 @@ use Drupal\Core\Render\Element;
  * @code
  * $form['actions']['preview'] = array(
  *   '#type' => 'button',
- *   '#value => $this->t('Preview'),
+ *   '#value' => $this->t('Preview'),
  * );
  * @endcode
  *

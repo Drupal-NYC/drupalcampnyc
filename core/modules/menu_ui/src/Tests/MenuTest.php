@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\menu_ui\Tests\MenuTest.
- */
-
 namespace Drupal\menu_ui\Tests;
 
 use Drupal\block\Entity\Block;
@@ -116,7 +111,7 @@ class MenuTest extends MenuWebTestBase {
 
     // Verify delete link exists and reset link does not exist.
     $this->drupalGet('admin/structure/menu/manage/' . $this->menu->id());
-    $this->assertLinkByHref(Url::fromRoute('entity.menu_link_content.delete_form',  ['menu_link_content' => $this->items[0]->id()])->toString());
+    $this->assertLinkByHref(Url::fromRoute('entity.menu_link_content.delete_form', ['menu_link_content' => $this->items[0]->id()])->toString());
     $this->assertNoLinkByHref(Url::fromRoute('menu_ui.link_reset', ['menu_link_plugin' => $this->items[0]->getPluginId()])->toString());
     // Check delete and reset access.
     $this->drupalGet('admin/structure/menu/item/' . $this->items[0]->id() . '/delete');
@@ -157,7 +152,7 @@ class MenuTest extends MenuWebTestBase {
     $menu_name = substr(hash('sha256', $this->randomMachineName(16)), 0, MENU_MAX_MENU_NAME_LENGTH_UI);
     $label = $this->randomMachineName(16);
 
-    $menu = entity_create('menu', array(
+    $menu = Menu::create(array(
       'id' => $menu_name,
       'label' => $label,
       'description' => 'Description text',
@@ -265,23 +260,23 @@ class MenuTest extends MenuWebTestBase {
     $menu_name = $this->menu->id();
 
     // Test the 'Add link' local action.
-    $this->drupalGet(Url::fromRoute('entity.menu.edit_form',  ['menu' => $menu_name]));
+    $this->drupalGet(Url::fromRoute('entity.menu.edit_form', ['menu' => $menu_name]));
 
     $this->clickLink(t('Add link'));
     $link_title = $this->randomString();
     $this->drupalPostForm(NULL, array('link[0][uri]' => '/', 'title[0][value]' => $link_title), t('Save'));
-    $this->assertUrl(Url::fromRoute('entity.menu.edit_form',  ['menu' => $menu_name]));
+    $this->assertUrl(Url::fromRoute('entity.menu.edit_form', ['menu' => $menu_name]));
     // Test the 'Edit' operation.
     $this->clickLink(t('Edit'));
     $this->assertFieldByName('title[0][value]', $link_title);
     $link_title = $this->randomString();
     $this->drupalPostForm(NULL, array('title[0][value]' => $link_title), t('Save'));
-    $this->assertUrl(Url::fromRoute('entity.menu.edit_form',  ['menu' => $menu_name]));
+    $this->assertUrl(Url::fromRoute('entity.menu.edit_form', ['menu' => $menu_name]));
     // Test the 'Delete' operation.
     $this->clickLink(t('Delete'));
     $this->assertRaw(t('Are you sure you want to delete the custom menu link %item?', array('%item' => $link_title)));
     $this->drupalPostForm(NULL, array(), t('Delete'));
-    $this->assertUrl(Url::fromRoute('entity.menu.edit_form',  ['menu' => $menu_name]));
+    $this->assertUrl(Url::fromRoute('entity.menu.edit_form', ['menu' => $menu_name]));
 
     // Add nodes to use as links for menu links.
     $node1 = $this->drupalCreateNode(array('type' => 'article'));
@@ -298,7 +293,7 @@ class MenuTest extends MenuWebTestBase {
 
     // Verify add link button.
     $this->drupalGet('admin/structure/menu');
-    $this->assertLinkByHref('admin/structure/menu/manage/' . $menu_name . '/add', 0, "The add menu link button url is correct");
+    $this->assertLinkByHref('admin/structure/menu/manage/' . $menu_name . '/add', 0, "The add menu link button URL is correct");
 
     // Verify form defaults.
     $this->doMenuLinkFormDefaultsTest();
@@ -601,7 +596,7 @@ class MenuTest extends MenuWebTestBase {
    *   test whether it works when we do the authenticatedUser tests. Defaults
    *   to FALSE.
    * @param string $weight
-   *  Menu weight. Defaults to 0.
+   *   Menu weight. Defaults to 0.
    *
    * @return \Drupal\menu_link_content\Entity\MenuLinkContent
    *   A menu link entity.
@@ -901,8 +896,8 @@ class MenuTest extends MenuWebTestBase {
   /**
    * Verifies the logged in user has the desired access to various menu pages.
    *
-   * @param integer $response
-   *   The expected HTTP response code. Defaults to 200.
+   * @param int $response
+   *   (optional) The expected HTTP response code. Defaults to 200.
    */
   private function verifyAccess($response = 200) {
     // View menu help page.

@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\system\Tests\Update\SevenSecondaryLocalTasksConvertedIntoBlockUpdateTest.
- */
-
 namespace Drupal\system\Tests\Update;
 
 /**
@@ -29,7 +24,7 @@ class SevenSecondaryLocalTasksConvertedIntoBlockUpdateTest extends UpdatePathTes
   /**
    * {@inheritdoc}
    */
-  public function setUp() {
+  protected function setUp() {
     parent::setUp();
     /** @var \Drupal\Core\Extension\ThemeHandlerInterface $theme_handler */
     $theme_handler = \Drupal::service('theme_handler');

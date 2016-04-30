@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\shortcut\Tests\ShortcutLinksTest.
- */
-
 namespace Drupal\shortcut\Tests;
 
 use Drupal\Component\Utility\SafeMarkup;
@@ -54,7 +49,7 @@ class ShortcutLinksTest extends ShortcutTestBase {
       '/admin',
       '/admin/config/system/site-information',
       '/node/' . $this->node->id() . '/edit',
-      '/' . $path['alias'],
+      $path['alias'],
       '/router_test/test2',
       '/router_test/test3/value',
     ];

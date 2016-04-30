@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\Core\Asset\CssOptimizer.
- */
-
 namespace Drupal\Core\Asset;
 
 use Drupal\Component\Utility\Unicode;
@@ -265,7 +260,7 @@ class CssOptimizer implements AssetOptimizerInterface {
       $last = $path;
       $path = preg_replace('`(^|/)(?!\.\./)([^/]+)/\.\./`', '$1', $path);
     }
-    return 'url(' . file_create_url($path) . ')';
+    return 'url(' . file_url_transform_relative(file_create_url($path)) . ')';
   }
 
 }
