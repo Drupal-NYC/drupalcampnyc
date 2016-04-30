@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.sponsor.field_image
     - field.field.node.sponsor.field_sponsor_type
     - field.field.node.sponsor.field_url
+    - image.style.thumbnail
     - node.type.sponsor
   module:
     - image

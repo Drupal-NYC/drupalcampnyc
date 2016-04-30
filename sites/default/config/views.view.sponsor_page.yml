@@ -6,6 +6,7 @@ dependencies:
     - field.storage.node.field_image
     - field.storage.node.field_sponsor_type
     - field.storage.node.field_url
+    - image.style.max_325x325
     - node.type.sponsor
     - system.menu.main
   module:
@@ -82,7 +83,7 @@ display:
               field: field_sponsor_type
               rendered: true
               rendered_strip: false
-          columns: 3
+          columns: 5
           automatic_width: false
           alignment: horizontal
           col_class_default: true
