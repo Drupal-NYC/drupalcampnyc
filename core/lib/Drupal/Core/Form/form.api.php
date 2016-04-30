@@ -18,7 +18,7 @@
  * @param $MULTIPLE_PARAMS
  *   Additional parameters specific to the batch. These are specified in the
  *   array passed to batch_set().
- * @param $context
+ * @param array|\ArrayAccess $context.
  *   The batch context array, passed by reference. This contains the following
  *   properties:
  *   - 'finished': A float number between 0 and 1 informing the processing
@@ -51,6 +51,8 @@
  *     all operations have finished, this is passed to callback_batch_finished()
  *     where results may be referenced to display information to the end-user,
  *     such as how many total items were processed.
+ *   It is discouraged to typehint this parameter as an array, to allow an
+ *   object implement \ArrayAccess to be passed.
  */
 function callback_batch_operation($MULTIPLE_PARAMS, &$context) {
   $node_storage = \Drupal::entityTypeManager()->getStorage('node');
@@ -146,8 +148,6 @@ function callback_batch_finished($success, $results, $operations) {
  *
  * @param \Drupal\Core\Ajax\CommandInterface[] $data
  *   An array of all the rendered commands that will be sent to the client.
- *
- * @see \Drupal\Core\Ajax\AjaxResponse::ajaxRender()
  */
 function hook_ajax_render_alter(array &$data) {
   // Inject any new status messages into the content area.

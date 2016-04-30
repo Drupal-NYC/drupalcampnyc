@@ -2,8 +2,8 @@ name: Stable
 type: theme
 description: A default base theme using Drupal 8.0.0's core markup and CSS.
 package: Core
-# version: VERSION
-# core: 8.x
+version: VERSION
+core: 8.x
 base theme: false
 hidden: true
 
@@ -21,6 +21,10 @@ libraries-override:
     css:
       component:
         css/plugins/drupalimagecaption/ckeditor.drupalimagecaption.css: css/ckeditor/plugins/drupalimagecaption/ckeditor.drupalimagecaption.css
+  ckeditor/drupal.ckeditor.plugins.language:
+    css:
+      component:
+        css/plugins/language/ckeditor.language.css: css/ckeditor/plugins/language/ckeditor.language.css
   ckeditor/drupal.ckeditor.admin:
     css:
       theme:
@@ -233,9 +237,3 @@ libraries-override:
       theme:
         css/views_ui.admin.theme.css: css/views_ui/views_ui.admin.theme.css
         css/views_ui.contextual.css: css/views_ui/views_ui.contextual.css
-
-# Information added by Drupal.org packaging script on 2016-01-06
-version: '8.0.2'
-core: '8.x'
-project: 'drupal'
-datestamp: 1452121068

@@ -1,22 +1,60 @@
-# This file contains default .gitignore rules. To use it, copy it to .gitignore,
-# and it will cause files like your settings.php and user-uploaded files to be
-# excluded from Git version control. This is a common strategy to avoid
-# accidentally including private information in public repositories and patch
-# files.
-#
-# Because .gitignore can be specific to your site, this file has a different
-# name; updating Drupal core will not override your custom .gitignore file.
+# Ignore paths that contain user-generated content.
+sites/*/files
+sites/*/private
+files/*
 
-# Ignore core and vendor when managing dependencies with Composer.
-# core
-# vendor
-
-# Ignore configuration files that may contain sensitive information.
+# Pantheon commits a settings.php for environment-specific settings.
+# Place local settings in settings.local.php
 sites/*/settings.local.php
 sites/*/services*.yml
 
-# Ignore paths that contain user-generated content.
-# Pantheon does not want sites/*/files in the repo
+# ** Only works in OSs that support newer versions of fnmatch (Bash 4+)
+/sites/default/**/files
+/sites/default/**/private
+
+# Ignore SimpleTest multi-site environment.
+sites/simpletest
+
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.bz2
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.tgz
+
+# Logs and databases #
+######################
+*.log
+*.sql
+
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Icon
+
+Thumbs.db
+._*
+
+# Vim generated files #
+######################
+*.un~
+
+# SASS #
+##########
+.sass-cache
+
+# Things in the core directory that Drupal 8 commits in the repository.
+!core/**/*.gz
+
+# Backup pattern for other OSs
+# We really do not want sites/*/files in the repo
 sites/*/files
 # We don't have any private files but leaving this in place
 sites/*/private
@@ -24,6 +62,3 @@ sites/*/private
 
 # IDE
 .idea
-
-#OS specific
-.DS_Store

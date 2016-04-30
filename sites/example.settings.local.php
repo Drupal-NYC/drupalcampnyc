@@ -5,10 +5,13 @@
  * Local development override configuration feature.
  *
  * To activate this feature, copy and rename it such that its path plus
- * filename is 'sites/example.com/settings.local.php', where example.com
- * is the name of your site. Then, go to the bottom of
- * 'sites/example.com/settings.php' and uncomment the commented lines that
- * mention 'settings.local.php'.
+ * filename is 'sites/default/settings.local.php'. Then, go to the bottom of
+ * 'sites/default/settings.php' and uncomment the commented lines that mention
+ * 'settings.local.php'.
+ *
+ * If you are using a site name in the path, such as 'sites/example.com', copy
+ * this file to 'sites/example.com/settings.local.php', and uncomment the lines
+ * at the bottom of 'sites/example.com/settings.php'.
  */
 
 /**
@@ -34,7 +37,6 @@ assert_options(ASSERT_ACTIVE, TRUE);
  * Enable local development services.
  */
 $settings['container_yamls'][] = DRUPAL_ROOT . '/sites/development.services.yml';
-$settings['container_yamls'][] = DRUPAL_ROOT . '/sites/default/services.yml';
 
 /**
  * Show all error messages, with backtrace information.
@@ -90,25 +92,16 @@ $settings['extension_discovery_scan_tests'] = TRUE;
  * be gained by generating a query string from rebuild_token_calculator.sh and
  * using these parameters in a request to rebuild.php.
  */
+$settings['rebuild_access'] = TRUE;
 
 /**
- * Configuration Sync Settings
+ * Skip file system permissions hardening.
  *
+ * The system module will periodically check the permissions of your site's
+ * site directory to ensure that it is not writable by the website user. For
+ * sites that are managed with a version control system, this can cause problems
+ * when files in that directory such as settings.php are updated, because the
+ * user pulling in the changes won't have permissions to modify files in the
+ * directory.
  */
-// Get the path to the parent of docroot
-$config_directories[CONFIG_SYNC_DIRECTORY] = DRUPAL_ROOT . '/sites/default/config';
-
-/**
- * Load drupal console services definition file.
- */
-$settings['container_yamls'][] = DRUPAL_ROOT . '/sites/default/services.yml';
-$databases['default']['default'] = array (
-  'database' => 'name',
-  'username' => 'name',
-  'password' => 'password',
-  'prefix' => '',
-  'host' => 'localhost',
-  'port' => '',
-  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
-  'driver' => 'mysql',
-);
+$settings['skip_permissions_hardening'] = TRUE;

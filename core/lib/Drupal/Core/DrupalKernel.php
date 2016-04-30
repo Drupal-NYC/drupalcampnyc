@@ -1,14 +1,8 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\Core\DrupalKernel.
- */
-
 namespace Drupal\Core;
 
 use Drupal\Component\FileCache\FileCacheFactory;
-use Drupal\Component\Utility\Crypt;
 use Drupal\Component\Utility\Unicode;
 use Drupal\Component\Utility\UrlHelper;
 use Drupal\Core\Config\BootstrapConfigStorageFactory;
@@ -440,11 +434,6 @@ class DrupalKernel implements DrupalKernelInterface, TerminableInterface {
     // Initialize the container.
     $this->initializeContainer();
 
-    // Ensure mt_rand() is reseeded to prevent random values from one page load
-    // being exploited to predict random values in subsequent page loads.
-    $seed = unpack("L", Crypt::randomBytes(4));
-    mt_srand($seed[1]);
-
     $this->booted = TRUE;
 
     return $this;
@@ -540,7 +529,7 @@ class DrupalKernel implements DrupalKernelInterface, TerminableInterface {
     // Set the allowed protocols.
     UrlHelper::setAllowedProtocols($this->container->getParameter('filter_protocols'));
 
-    // Override of Symfony's mime type guesser singleton.
+    // Override of Symfony's MIME type guesser singleton.
     MimeTypeGuesser::registerWithSymfonyGuesser($this->container);
 
     $this->prepared = TRUE;
@@ -765,7 +754,7 @@ class DrupalKernel implements DrupalKernelInterface, TerminableInterface {
    *   The cache key used for the service container.
    */
   protected function getContainerCacheKey() {
-    $parts = array('service_container', $this->environment, \Drupal::VERSION, Settings::get('deployment_identifier'));
+    $parts = array('service_container', $this->environment, \Drupal::VERSION, Settings::get('deployment_identifier'), serialize(Settings::get('container_yamls')));
     return implode(':', $parts);
   }
 
@@ -866,7 +855,7 @@ class DrupalKernel implements DrupalKernelInterface, TerminableInterface {
 
     // If needs dumping flag was set, dump the container.
     if ($this->containerNeedsDumping && !$this->cacheDrupalContainer($container_definition)) {
-      $this->container->get('logger.factory')->get('DrupalKernel')->notice('Container cannot be saved to cache.');
+      $this->container->get('logger.factory')->get('DrupalKernel')->error('Container cannot be saved to cache.');
     }
 
     return $this->container;
@@ -968,11 +957,13 @@ class DrupalKernel implements DrupalKernelInterface, TerminableInterface {
       }
     }
 
-    // If the class loader is still the same, possibly upgrade to the APCu class
+    // If the class loader is still the same, possibly upgrade to the APC class
     // loader.
+    // ApcClassLoader does not support APCu without backwards compatibility
+    // enabled.
     if ($class_loader_class == get_class($this->classLoader)
         && Settings::get('class_loader_auto_detect', TRUE)
-        && function_exists('apcu_fetch')) {
+        && extension_loaded('apc')) {
       $prefix = Settings::getApcuPrefix('class_loader', $this->root);
       $apc_loader = new \Symfony\Component\ClassLoader\ApcClassLoader($prefix, $this->classLoader);
       $this->classLoader->unregister();

@@ -11,7 +11,6 @@
 use Drupal\Component\Serialization\Json;
 use Drupal\Component\Utility\Crypt;
 use Drupal\Component\Utility\Html;
-use Drupal\Component\Utility\SafeMarkup;
 use Drupal\Component\Render\MarkupInterface;
 use Drupal\Component\Utility\Unicode;
 use Drupal\Core\Config\Config;
@@ -92,6 +91,21 @@ function theme_get_registry($complete = TRUE) {
   else {
     return $theme_registry->getRuntime();
   }
+}
+
+/**
+ * Returns an array of default theme features.
+ *
+ * @see \Drupal\Core\Extension\ThemeHandler::$defaultFeatures
+ */
+function _system_default_theme_features() {
+  return array(
+    'favicon',
+    'logo',
+    'node_user_picture',
+    'comment_user_picture',
+    'comment_user_verification',
+  );
 }
 
 /**
@@ -328,10 +342,10 @@ function theme_get_setting($setting_name, $theme = NULL) {
 
       // Generate the path to the logo image.
       if ($cache[$theme]->get('logo.use_default')) {
-        $cache[$theme]->set('logo.url', file_create_url($theme_object->getPath() . '/logo.svg'));
+        $cache[$theme]->set('logo.url', file_url_transform_relative(file_create_url($theme_object->getPath() . '/logo.svg')));
       }
       elseif ($logo_path = $cache[$theme]->get('logo.path')) {
-        $cache[$theme]->set('logo.url', file_create_url($logo_path));
+        $cache[$theme]->set('logo.url', file_url_transform_relative(file_create_url($logo_path)));
       }
 
       // Generate the path to the favicon.
@@ -339,14 +353,14 @@ function theme_get_setting($setting_name, $theme = NULL) {
         $favicon_path = $cache[$theme]->get('favicon.path');
         if ($cache[$theme]->get('favicon.use_default')) {
           if (file_exists($favicon = $theme_object->getPath() . '/favicon.ico')) {
-            $cache[$theme]->set('favicon.url', file_create_url($favicon));
+            $cache[$theme]->set('favicon.url', file_url_transform_relative(file_create_url($favicon)));
           }
           else {
-            $cache[$theme]->set('favicon.url', file_create_url('core/misc/favicon.ico'));
+            $cache[$theme]->set('favicon.url', file_url_transform_relative(file_create_url('core/misc/favicon.ico')));
           }
         }
         elseif ($favicon_path) {
-          $cache[$theme]->set('favicon.url', file_create_url($favicon_path));
+          $cache[$theme]->set('favicon.url', file_url_transform_relative(file_create_url($favicon_path)));
         }
         else {
           $cache[$theme]->set('features.favicon', FALSE);
@@ -401,7 +415,7 @@ function theme_render_and_autoescape($arg) {
       $return = (string) $arg;
     }
     // You can't throw exceptions in the magic PHP __toString methods, see
-    // http://php.net/manual/en/language.oop5.magic.php#object.tostring so
+    // http://php.net/manual/language.oop5.magic.php#object.tostring so
     // we also support a toString method.
     elseif (method_exists($arg, 'toString')) {
       $return = $arg->toString();
@@ -413,7 +427,7 @@ function theme_render_and_autoescape($arg) {
 
   // We have a string or an object converted to a string: Escape it!
   if (isset($return)) {
-    return SafeMarkup::isSafe($return, 'html') ? $return : Html::escape($return);
+    return $return instanceof MarkupInterface ? $return : Html::escape($return);
   }
 
   // This is a normal render array, which is safe by definition, with special
@@ -568,9 +582,8 @@ function template_preprocess_datetime_wrapper(&$variables) {
  *
  * @param array $variables
  *   An associative array containing:
- *   - links: An associative array of links to be themed. The key for each link
- *     is used as its CSS class. Each link should be itself an array, with the
- *     following elements:
+ *   - links: An array of links to be themed. Each link should be itself an
+ *     array, with the following elements:
  *     - title: The link text.
  *     - url: (optional) The url object to link to. If omitted, no a tag is
  *       printed out.
@@ -741,7 +754,7 @@ function template_preprocess_links(&$variables) {
  */
 function template_preprocess_image(&$variables) {
   if (!empty($variables['uri'])) {
-    $variables['attributes']['src'] = file_create_url($variables['uri']);
+    $variables['attributes']['src'] = file_url_transform_relative(file_create_url($variables['uri']));
   }
   // Generate a srcset attribute conforming to the spec at
   // http://www.w3.org/html/wg/drafts/html/master/embedded-content.html#attr-img-srcset
@@ -749,7 +762,7 @@ function template_preprocess_image(&$variables) {
     $srcset = array();
     foreach ($variables['srcset'] as $src) {
       // URI is mandatory.
-      $source = file_create_url($src['uri']);
+      $source = file_url_transform_relative(file_create_url($src['uri']));
       if (isset($src['width']) && !empty($src['width'])) {
         $source .= ' ' . $src['width'];
       }
@@ -1313,9 +1326,7 @@ function template_preprocess_html(&$variables) {
  *
  * Default template: page.html.twig.
  *
- * Most themes use their own copy of page.html.twig. The default is located
- * inside "modules/system/page.html.twig". Look in there for the full list of
- * variables.
+ * See the page.html.twig template for the list of variables.
  */
 function template_preprocess_page(&$variables) {
   $language_interface = \Drupal::languageManager()->getCurrentLanguage();
