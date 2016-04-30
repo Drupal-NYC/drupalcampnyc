@@ -102,3 +102,13 @@ $config_directories[CONFIG_SYNC_DIRECTORY] = DRUPAL_ROOT . '/sites/default/confi
  * Load drupal console services definition file.
  */
 $settings['container_yamls'][] = DRUPAL_ROOT . '/sites/default/services.yml';
+$databases['default']['default'] = array (
+  'database' => 'name',
+  'username' => 'name',
+  'password' => 'password',
+  'prefix' => '',
+  'host' => 'localhost',
+  'port' => '',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);

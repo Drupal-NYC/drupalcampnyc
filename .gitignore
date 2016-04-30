@@ -12,7 +12,7 @@
 # vendor
 
 # Ignore configuration files that may contain sensitive information.
-sites/*/settings*.php
+sites/*/settings.local.php
 sites/*/services*.yml
 
 # Ignore paths that contain user-generated content.
