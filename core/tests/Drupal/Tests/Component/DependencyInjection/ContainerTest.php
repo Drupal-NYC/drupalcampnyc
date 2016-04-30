@@ -9,7 +9,6 @@ namespace Drupal\Tests\Component\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
-use Symfony\Component\DependencyInjection\Exception\LogicException;
 use Prophecy\Argument;
 
 /**
@@ -49,7 +48,7 @@ class ContainerTest extends \PHPUnit_Framework_TestCase {
   /**
    * {@inheritdoc}
    */
-  public function setUp() {
+  protected function setUp() {
     $this->machineFormat = TRUE;
     $this->containerClass = '\Drupal\Component\DependencyInjection\Container';
     $this->containerDefinition = $this->getMockContainerDefinition();
@@ -132,7 +131,7 @@ class ContainerTest extends \PHPUnit_Framework_TestCase {
    *
    * @covers ::setParameter
    *
-   * @expectedException LogicException
+   * @expectedException \Symfony\Component\DependencyInjection\Exception\LogicException
    */
   public function testSetParameterWithFrozenContainer() {
     $this->container = new $this->containerClass($this->containerDefinition);

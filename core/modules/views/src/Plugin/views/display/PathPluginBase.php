@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\views\Plugin\views\display\PathPluginBase.
- */
-
 namespace Drupal\views\Plugin\views\display;
 
 use Drupal\Component\Utility\UrlHelper;
@@ -269,6 +264,10 @@ abstract class PathPluginBase extends DisplayPluginBase implements DisplayRouter
         // Copy the original options from the route, so for example we ensure
         // that parameter conversion options is carried over.
         $route->setOptions($route->getOptions() + $original_route->getOptions());
+
+        if ($original_route->hasDefault('_title_callback')) {
+          $route->setDefault('_title_callback', $original_route->getDefault('_title_callback'));
+        }
 
         // Set the corrected path and the mapping to the route object.
         $route->setOption('_view_argument_map', $argument_map);

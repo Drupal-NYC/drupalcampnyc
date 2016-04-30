@@ -1,14 +1,9 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\comment\Tests\CommentPreviewTest.
- */
-
 namespace Drupal\comment\Tests;
 
 use Drupal\comment\CommentManagerInterface;
-use Drupal\Component\Utility\SafeMarkup;
+use Drupal\Component\Render\MarkupInterface;
 use Drupal\Core\Datetime\DrupalDateTime;
 use Drupal\comment\Entity\Comment;
 
@@ -54,7 +49,7 @@ class CommentPreviewTest extends CommentTestBase {
 
     \Drupal::state()->set('user_hooks_test_user_format_name_alter_safe', TRUE);
     $this->drupalPostForm('node/' . $this->node->id(), $edit, t('Preview'));
-    $this->assertTrue(SafeMarkup::isSafe($this->webUser->getDisplayName()), 'Username is marked safe');
+    $this->assertTrue($this->webUser->getDisplayName() instanceof MarkupInterface, 'Username is marked safe');
     $this->assertNoEscaped('<em>' . $this->webUser->id() . '</em>');
     $this->assertRaw('<em>' . $this->webUser->id() . '</em>');
 
@@ -129,7 +124,7 @@ class CommentPreviewTest extends CommentTestBase {
    * Tests comment edit, preview, and save.
    */
   function testCommentEditPreviewSave() {
-    $web_user = $this->drupalCreateUser(array('access comments', 'post comments', 'skip comment approval',  'edit own comments'));
+    $web_user = $this->drupalCreateUser(array('access comments', 'post comments', 'skip comment approval', 'edit own comments'));
     $this->drupalLogin($this->adminUser);
     $this->setCommentPreview(DRUPAL_OPTIONAL);
     $this->setCommentForm(TRUE);

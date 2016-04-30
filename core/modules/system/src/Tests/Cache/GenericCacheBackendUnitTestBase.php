@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\system\Tests\Cache\GenericCacheBackendUnitTestBase.
- */
-
 namespace Drupal\system\Tests\Cache;
 
 use Drupal\Core\Cache\Cache;
@@ -268,7 +263,7 @@ abstract class GenericCacheBackendUnitTestBase extends KernelTestBase {
       'test3' => '',
       'test4' => 12.64,
       'test5' => FALSE,
-      'test6' => array(1,2,3),
+      'test6' => array(1, 2, 3),
     );
 
     // Create cache entries.

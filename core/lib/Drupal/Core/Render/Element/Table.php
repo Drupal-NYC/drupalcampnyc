@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\Core\Render\Element\Table.
- */
-
 namespace Drupal\Core\Render\Element;
 
 use Drupal\Core\Form\FormStateInterface;
@@ -34,7 +29,7 @@ use Drupal\Component\Utility\Html as HtmlUtility;
  * @code
  * $form['contacts'] = array(
  *   '#type' => 'table',
- *   '#title' => 'Sample Table',
+ *   '#caption' => 'Sample Table',
  *   '#header' => array('Name', 'Phone'),
  * );
  *
