@@ -2,7 +2,7 @@
 
 namespace Drupal\simpletest\Tests;
 
-use Drupal\simpletest\KernelTestBase;
+use Drupal\simpletest\WebTestBase;
 
 /**
  * This test should not load since it requires a module that is not found.
@@ -10,7 +10,7 @@ use Drupal\simpletest\KernelTestBase;
  * @group simpletest
  * @dependencies simpletest_missing_module
  */
-class MissingDependentModuleUnitTest extends KernelTestBase {
+class MissingDependentModuleUnitTest extends WebTestBase {
 
   /**
    * Ensure that this test will not be loaded despite its dependency.
@@ -18,4 +18,5 @@ class MissingDependentModuleUnitTest extends KernelTestBase {
   function testFail() {
     $this->fail('Running test with missing required module.');
   }
+
 }

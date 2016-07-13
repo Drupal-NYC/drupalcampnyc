@@ -59,16 +59,16 @@ class Toolbar extends RenderElement {
    *   A renderable array.
    *
    * @return array
-   *  A renderable array.
+   *   A renderable array.
    *
-   * @see toolbar_page_top().
+   * @see toolbar_page_top()
    */
   public static function preRenderToolbar($element) {
     // Get the configured breakpoints to switch from vertical to horizontal
     // toolbar presentation.
     $breakpoints = static::breakpointManager()->getBreakpointsByGroup('toolbar');
     if (!empty($breakpoints)) {
-      $media_queries =  array();
+      $media_queries = array();
       foreach ($breakpoints as $id => $breakpoint) {
         $media_queries[$id] = $breakpoint->getMediaQuery();
       }

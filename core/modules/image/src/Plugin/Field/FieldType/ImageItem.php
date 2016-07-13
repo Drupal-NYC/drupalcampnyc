@@ -317,7 +317,7 @@ class ImageItem extends FileItem {
       $image = \Drupal::service('image.factory')->get($this->entity->getFileUri());
       if ($image->isValid()) {
         $this->width = $image->getWidth();
-        $this->height =$image->getHeight();
+        $this->height = $image->getHeight();
       }
     }
   }
@@ -343,7 +343,7 @@ class ImageItem extends FileItem {
         $image = File::create();
         $image->setFileUri($path);
         $image->setOwnerId(\Drupal::currentUser()->id());
-        $image->setMimeType('image/' . pathinfo($path, PATHINFO_EXTENSION));
+        $image->setMimeType(\Drupal::service('file.mime_type.guesser')->guess($path));
         $image->setFileName(drupal_basename($path));
         $destination_dir = static::doGetUploadLocation($settings);
         file_prepare_directory($destination_dir, FILE_CREATE_DIRECTORY);
@@ -366,7 +366,7 @@ class ImageItem extends FileItem {
       'target_id' => $file->id(),
       'alt' => $random->sentences(4),
       'title' => $random->sentences(4),
-      'width' =>$width,
+      'width' => $width,
       'height' => $height,
     );
     return $values;

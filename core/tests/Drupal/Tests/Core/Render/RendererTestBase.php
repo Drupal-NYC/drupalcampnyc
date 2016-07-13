@@ -22,7 +22,7 @@ use Symfony\Component\HttpFoundation\RequestStack;
 /**
  * Base class for the actual unit tests testing \Drupal\Core\Render\Renderer.
  */
-class RendererTestBase extends UnitTestCase {
+abstract class RendererTestBase extends UnitTestCase {
 
   /**
    * The tested renderer.
@@ -106,7 +106,7 @@ class RendererTestBase extends UnitTestCase {
     'auto_placeholder_conditions' => [
       'max-age' => 0,
       'contexts' => ['session', 'user'],
-      'tags' =>  ['current-temperature'],
+      'tags' => ['current-temperature'],
     ],
   ];
 
