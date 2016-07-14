@@ -64,6 +64,8 @@ use Drupal\Core\Access\AccessResult;
  * sure to restore your {node_access} record after node_access_rebuild() is
  * called.
  *
+ * For a detailed example, see node_access_example.module.
+ *
  * @param \Drupal\Core\Session\AccountInterface $account
  *   The account object whose grants are requested.
  * @param string $op
@@ -72,8 +74,6 @@ use Drupal\Core\Access\AccessResult;
  * @return array
  *   An array whose keys are "realms" of grants, and whose values are arrays of
  *   the grant IDs within this realm that this user is being granted.
- *
- * For a detailed example, see node_access_example.module.
  *
  * @see node_access_view_all_nodes()
  * @see node_access_rebuild()
@@ -208,14 +208,14 @@ function hook_node_access_records(\Drupal\node\NodeInterface $node) {
  *
  * A module may deny all access to a node by setting $grants to an empty array.
  *
+ * The preferred use of this hook is in a module that bridges multiple node
+ * access modules with a configurable behavior, as shown in the example with the
+ * 'is_preview' field.
+ *
  * @param array $grants
  *   The $grants array returned by hook_node_access_records().
  * @param \Drupal\node\NodeInterface $node
  *   The node for which the grants were acquired.
- *
- * The preferred use of this hook is in a module that bridges multiple node
- * access modules with a configurable behavior, as shown in the example with the
- * 'is_preview' field.
  *
  * @see hook_node_access_records()
  * @see hook_node_grants()

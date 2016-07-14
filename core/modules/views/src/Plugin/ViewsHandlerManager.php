@@ -86,7 +86,7 @@ class ViewsHandlerManager extends DefaultPluginManager implements FallbackPlugin
 
     if (isset($data[$field][$this->handlerType])) {
       $definition = $data[$field][$this->handlerType];
-      foreach (array('group', 'title', 'title short', 'help', 'real field', 'real table', 'entity type', 'entity field') as $key) {
+      foreach (array('group', 'title', 'title short', 'label', 'help', 'real field', 'real table', 'entity type', 'entity field') as $key) {
         if (!isset($definition[$key])) {
           // First check the field level.
           if (!empty($data[$field][$key])) {
@@ -101,7 +101,7 @@ class ViewsHandlerManager extends DefaultPluginManager implements FallbackPlugin
       }
 
       // @todo This is crazy. Find a way to remove the override functionality.
-      $plugin_id = $override ? : $definition['id'];
+      $plugin_id = $override ?: $definition['id'];
       // Try to use the overridden handler.
       $handler = $this->createInstance($plugin_id, $definition);
       if ($override && method_exists($handler, 'broken') && $handler->broken()) {
@@ -132,4 +132,5 @@ class ViewsHandlerManager extends DefaultPluginManager implements FallbackPlugin
   public function getFallbackPluginId($plugin_id, array $configuration = array()) {
     return 'broken';
   }
+
 }

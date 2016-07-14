@@ -3,6 +3,7 @@
 namespace Drupal\big_pipe_test;
 
 use Drupal\big_pipe\Render\BigPipeMarkup;
+use Drupal\big_pipe\Tests\BigPipePlaceholderTestCases;
 use Drupal\big_pipe_test\EventSubscriber\BigPipeTestSubscriber;
 
 class BigPipeTestController {
@@ -15,7 +16,7 @@ class BigPipeTestController {
   public function test() {
     $build = [];
 
-    $cases = \Drupal\big_pipe\Tests\BigPipePlaceholderTestCases::cases(\Drupal::getContainer());
+    $cases = BigPipePlaceholderTestCases::cases(\Drupal::getContainer());
 
     // 1. HTML placeholder: status messages. Drupal renders those automatically,
     // so all that we need to do in this controller is set a message.
@@ -49,6 +50,30 @@ class BigPipeTestController {
    */
   public static function nope() {
     return ['#markup' => '<p>Nope.</p>'];
+  }
+
+  /**
+   * A page with multiple occurrences of the same placeholder.
+   *
+   * @see \Drupal\big_pipe\Tests\BigPipeTest::testBigPipeMultipleOccurrencePlaceholders()
+   *
+   * @return array
+   */
+  public function multiOccurrence() {
+    return [
+      'item1' => [
+        '#lazy_builder' => [static::class . '::counter', []],
+        '#create_placeholder' => TRUE,
+      ],
+      'item2' => [
+        '#lazy_builder' => [static::class . '::counter', []],
+        '#create_placeholder' => TRUE,
+      ],
+      'item3' => [
+        '#lazy_builder' => [static::class . '::counter', []],
+        '#create_placeholder' => TRUE,
+      ],
+    ];
   }
 
   /**
@@ -95,6 +120,33 @@ class BigPipeTestController {
    */
   public static function responseException() {
     return ['#plain_text' => BigPipeTestSubscriber::CONTENT_TRIGGER_EXCEPTION];
+  }
+
+  /**
+   * #lazy_builder callback; returns the current count.
+   *
+   * @see \Drupal\big_pipe\Tests\BigPipeTest::testBigPipeMultipleOccurrencePlaceholders()
+   *
+   * @return array
+   *   The render array.
+   */
+  public static function counter() {
+    // Lazy builders are not allowed to build their own state like this function
+    // does, but in this case we're intentionally doing that for testing
+    // purposes: so we can ensure that each lazy builder is only ever called
+    // once with the same parameters.
+    static $count;
+
+    if (!isset($count)) {
+      $count = 0;
+    }
+
+    $count++;
+
+    return [
+      '#markup' => BigPipeMarkup::create("<p>The count is $count.</p>"),
+      '#cache' => ['max-age' => 0],
+    ];
   }
 
 }

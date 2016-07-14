@@ -259,7 +259,7 @@ abstract class HandlerBase extends PluginBase implements ViewsHandlerInterface {
 
     $form['admin_label'] = array(
       '#type' => 'details',
-      '#title' =>$this->t('Administrative title'),
+      '#title' => $this->t('Administrative title'),
       '#weight' => 150,
     );
     $form['admin_label']['admin_label'] = array(
@@ -815,4 +815,20 @@ abstract class HandlerBase extends PluginBase implements ViewsHandlerInterface {
     // Write to cache
     $view->cacheSet();
   }
+
+  /**
+   * Calculates options stored on the handler
+   *
+   * @param array $options
+   *   The options stored in the handler
+   * @param array $form_state_options
+   *   The newly submitted form state options.
+   *
+   * @return array
+   *   The new options
+   */
+  public function submitFormCalculateOptions(array $options, array $form_state_options) {
+    return $form_state_options + $options;
+  }
+
 }
