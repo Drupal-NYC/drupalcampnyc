@@ -1,6 +1,6 @@
 check:
   disabled_extensions: false
-  interval_days: 1
+  interval_days: 7
 fetch:
   url: ''
   max_attempts: 2
@@ -9,4 +9,4 @@ notification:
   emails:
     - sduncan@digitalpulp.com
     - joe@bachana.com
-  threshold: all
+  threshold: security
