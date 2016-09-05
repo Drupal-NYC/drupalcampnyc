@@ -423,6 +423,8 @@ display:
         type: normal
         title: Sponsors
         menu_name: main
+        enabled: true
+        expanded: false
     cache_metadata:
       max-age: -1
       contexts:
