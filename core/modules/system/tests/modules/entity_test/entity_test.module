@@ -325,7 +325,11 @@ function entity_test_form_node_form_alter(&$form, FormStateInterface $form_state
  *   The loaded entity object, or NULL if the entity cannot be loaded.
  */
 function entity_test_load($id, $reset = FALSE) {
-  return entity_load('entity_test', $id, $reset);
+  $storage = \Drupal::entityTypeManager()->getStorage('entity_test');
+  if ($reset) {
+    $storage->resetCache([$id]);
+  }
+  return $storage->load($id);
 }
 
 /**
@@ -340,7 +344,11 @@ function entity_test_load($id, $reset = FALSE) {
  *   The loaded entity object, or NULL if the entity cannot be loaded.
  */
 function entity_test_rev_load($id, $reset = FALSE) {
-  return entity_load('entity_test_rev', $id, $reset);
+  $storage = \Drupal::entityTypeManager()->getStorage('entity_test_rev');
+  if ($reset) {
+    $storage->resetCache([$id]);
+  }
+  return $storage->load($id);
 }
 
 /**
@@ -355,7 +363,11 @@ function entity_test_rev_load($id, $reset = FALSE) {
  *   The loaded entity object, or FALSE if the entity cannot be loaded.
  */
 function entity_test_mul_load($id, $reset = FALSE) {
-  return entity_load('entity_test_mul', $id, $reset);
+  $storage = \Drupal::entityTypeManager()->getStorage('entity_test_mul');
+  if ($reset) {
+    $storage->resetCache([$id]);
+  }
+  return $storage->load($id);
 }
 
 /**
@@ -370,7 +382,11 @@ function entity_test_mul_load($id, $reset = FALSE) {
  *   The loaded entity object, or NULL if the entity cannot be loaded.
  */
 function entity_test_mulrev_load($id, $reset = FALSE) {
-  return entity_load('entity_test_mulrev', $id, $reset);
+  $storage = \Drupal::entityTypeManager()->getStorage('entity_test_mulrev');
+  if ($reset) {
+    $storage->resetCache([$id]);
+  }
+  return $storage->load($id);
 }
 
 /**
@@ -658,11 +674,22 @@ function _entity_test_record_hooks($hook, $data) {
  * Implements hook_entity_prepare_view().
  */
 function entity_test_entity_prepare_view($entity_type, array $entities, array $displays) {
-  // Add a dummy field item attribute on field_test_text if it exists.
   if ($entity_type == 'entity_test') {
     foreach ($entities as $entity) {
+      /** @var \Drupal\Core\Entity\ContentEntityInterface $entity */
+
+      // Add a dummy field item attribute on field_test_text if it exists.
       if ($entity->hasField('field_test_text') && $displays[$entity->bundle()]->getComponent('field_test_text')) {
         foreach ($entity->get('field_test_text') as $item) {
+          $item->_attributes += array('data-field-item-attr' => 'foobar');
+        }
+      }
+
+      // Add a dummy field item attribute on daterange fields if they exist.
+      $fields = $entity->getFieldDefinitions();
+      foreach ($fields as $field) {
+        if ($field->getType() === 'daterange') {
+          $item = $entity->get($field->getName());
           $item->_attributes += array('data-field-item-attr' => 'foobar');
         }
       }
