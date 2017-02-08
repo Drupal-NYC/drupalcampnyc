@@ -343,6 +343,11 @@ input[type='password'] {
   padding: 20px 20px 20px 20px;
 }
 
+div.premium-logo-container {
+  display: flex;
+  justify-content: center;
+}
+
 #block-dcnyc-account-menu a {
   color: red;
 }
