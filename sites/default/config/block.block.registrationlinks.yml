@@ -18,10 +18,10 @@ settings:
   label: 'Registration Links'
   provider: dcync_reg_links
   label_display: '0'
-  registration_link: 'https://www.eventbrite.com/e/drupalcampnyc2016-registration-19937683147'
+  registration_link: 'http://tinyurl.com/dcnyc17'
   registration_link_text: 'Register Now!'
-  sponsorship_link: 'https://www.eventbrite.com/e/drupalcampnyc2016-registration-19937683147'
-  sponsorship_link_text: 'Sponsor DCNYC16 Now!'
+  sponsorship_link: 'http://tinyurl.com/dcnyc17'
+  sponsorship_link_text: 'Sponsor DCNYC17 Now!'
 visibility:
   request_path:
     id: request_path
