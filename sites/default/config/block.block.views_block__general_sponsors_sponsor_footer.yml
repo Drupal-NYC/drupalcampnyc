@@ -1,0 +1,24 @@
+uuid: 4d28f24e-3039-43f2-ba1e-f0854c151931
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.general_sponsors
+  module:
+    - views
+  theme:
+    - dcnyc
+id: views_block__general_sponsors_sponsor_footer
+theme: dcnyc
+region: '-1'
+weight: -4
+provider: null
+plugin: 'views_block:general_sponsors-sponsor_footer'
+settings:
+  id: 'views_block:general_sponsors-sponsor_footer'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

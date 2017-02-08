@@ -1,4 +1,4 @@
-uuid: f3a14654-ba74-47f5-8815-21bc0bb76d82
+uuid: 60032c2f-09d8-4879-87a6-b450a1e0689c
 langcode: en
 status: true
 dependencies:
@@ -8,15 +8,15 @@ dependencies:
     - node.type.sponsor
     - taxonomy.vocabulary.sponsorship_type
   content:
-    - 'taxonomy_term:sponsorship_type:218c2f53-369b-4399-9a00-dfb03f20cd84'
+    - 'taxonomy_term:sponsorship_type:7e7dc56e-c135-4852-9a00-e719e0e8b0af'
   module:
     - image
     - link
     - node
     - taxonomy
     - user
-id: premium_sponsors
-label: 'Premium Sponsors'
+id: general_sponsors
+label: 'General Sponsors'
 module: views
 description: ''
 tag: ''
@@ -304,13 +304,13 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: div
-          element_class: premium-logo
+          element_type: ''
+          element_class: ''
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
           element_wrapper_type: ''
-          element_wrapper_class: premium-logo-container
+          element_wrapper_class: ''
           element_default_classes: true
           empty: ''
           hide_empty: false
@@ -378,7 +378,7 @@ display:
           admin_label: ''
           operator: or
           value:
-            2: 2
+            1: 1
           group: 1
           exposed: false
           expose:
@@ -429,7 +429,7 @@ display:
           expose:
             label: ''
           granularity: second
-      title: 'Premium Sponsors'
+      title: 'General Sponsors'
       header: {  }
       footer: {  }
       empty: {  }

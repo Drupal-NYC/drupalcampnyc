@@ -12,7 +12,7 @@ dependencies:
 id: views_block__premium_sponsors_sponsor_footer
 theme: dcnyc
 region: mortise
-weight: -9
+weight: -10
 provider: null
 plugin: 'views_block:premium_sponsors-sponsor_footer'
 settings:
