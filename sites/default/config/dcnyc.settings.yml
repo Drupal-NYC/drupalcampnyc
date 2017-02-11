@@ -6,3 +6,6 @@ features:
 favicon:
   use_default: 1
   path: ''
+logo:
+  use_default: 1
+  path: ''

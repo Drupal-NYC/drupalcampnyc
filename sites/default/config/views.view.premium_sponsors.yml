@@ -447,6 +447,24 @@ display:
       tags:
         - 'config:field.storage.node.field_image'
         - 'config:field.storage.node.field_url'
+  embed_premium:
+    display_plugin: embed
+    id: embed_premium
+    display_title: Embed
+    position: 1
+    display_options:
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_image'
+        - 'config:field.storage.node.field_url'
   sponsor_footer:
     display_plugin: block
     id: sponsor_footer

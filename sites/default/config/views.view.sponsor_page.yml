@@ -9,10 +9,15 @@ dependencies:
     - image.style.max_325x325
     - node.type.sponsor
     - system.menu.main
+    - taxonomy.vocabulary.sponsorship_type
+    - views.view.premium_sponsors
+  content:
+    - 'taxonomy_term:sponsorship_type:7e7dc56e-c135-4852-9a00-e719e0e8b0af'
   module:
     - image
     - link
     - node
+    - taxonomy
     - user
 id: sponsor_page
 label: Sponsor-page
@@ -379,6 +384,50 @@ display:
           entity_type: node
           entity_field: type
           plugin_id: bundle
+        field_sponsor_type_target_id:
+          id: field_sponsor_type_target_id
+          table: node__field_sponsor_type
+          field: field_sponsor_type_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            1: 1
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: sponsorship_type
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
       sorts:
         field_sponsor_type_target_id:
           id: field_sponsor_type_target_id
@@ -393,7 +442,29 @@ display:
             label: ''
           plugin_id: standard
       title: 'DCNYC16 Sponsors'
-      header: {  }
+      header:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: 'Premium Title'
+          empty: false
+          tokenize: false
+          content: '<h3>Premium</h3>'
+          plugin_id: text_custom
+        view:
+          id: view
+          table: views
+          field: view
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          view_to_insert: 'premium_sponsors:embed_premium'
+          inherit_arguments: false
+          plugin_id: view
       footer: {  }
       empty: {  }
       relationships: {  }
@@ -405,6 +476,7 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url.query_args
+        - user
         - 'user.node_grants:view'
         - user.permissions
       tags:
@@ -431,6 +503,7 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url.query_args
+        - user
         - 'user.node_grants:view'
         - user.permissions
       tags:
