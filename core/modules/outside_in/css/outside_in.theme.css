@@ -9,7 +9,7 @@
 
 /* Style the edit mode toolbar and tabs. */
 #toolbar-bar.js-outside-in-edit-mode {
-  background-color: #fff;
+  background-image: linear-gradient(to bottom,#0c97ed,#1f86c7);
 }
 .js-outside-in-edit-mode .toolbar-item:not(.toolbar-icon-edit) {
   color: #999;
@@ -60,16 +60,16 @@
 }
 
 /* Style the editables while in edit mode. */
-.dialog-offcanvas__main-canvas.js-outside-in-edit-mode .outside-in-editable {
+.dialog-off-canvas__main-canvas.js-outside-in-edit-mode .outside-in-editable {
   outline: 1px dashed rgba(0,0,0,0.5);
   box-shadow: 0 0 0 1px rgba(255,255,255,0.7);
 }
-.dialog-offcanvas__main-canvas.js-outside-in-edit-mode .outside-in-editable:hover,
-.dialog-offcanvas__main-canvas.js-outside-in-edit-mode .outside-in-editable.outside-in-active-editable {
+.dialog-off-canvas__main-canvas.js-outside-in-edit-mode .outside-in-editable:hover,
+.dialog-off-canvas__main-canvas.js-outside-in-edit-mode .outside-in-editable.outside-in-active-editable {
   background-color: rgba(0,0,0,0.2);
 }
 
-/* Style the dialog-offcanvas container. */
+/* Style the dialog-off-canvas container. */
 .ui-dialog-outside-in {
   background: #444;
   border: 0 solid transparent;
