@@ -1,5 +1,8 @@
 <?php
-
+$settings['trusted_host_patterns'] = array(
+    '^drupalcamp\.nyc$',
+    '^.+\drupalcampnyc\.pantheonsite\.io$',
+  );
 /**
  * Load services definition file.
  */
