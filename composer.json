@@ -1,0 +1,90 @@
+{
+    "name": "digitalpulp/ballast",
+    "description": "A local development toolset for automating Docker setup and Drupal development.",
+    "type": "project",
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+            "name": "Shawn Duncan",
+            "role": "Project Lead"
+        },
+        {
+          "name": "Nick Main",
+          "role": "Developer"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+    "require": {
+        "composer/installers": "^1.2",
+        "cweagans/composer-patches": "^1.6",
+        "consolidation/robo": "^1.0",
+        "drupal-composer/drupal-scaffold": "^2.2",
+        "drupal/console": "^1.0.2",
+        "drupal/core": "^8.5",
+        "drush/drush": "^9.1",
+        "oomphinc/composer-installers-extender": "^1.1",
+        "symfony/cache": "^3.1",
+        "webflo/drupal-core-strict": "8.5.0",
+        "webflo/drupal-finder": "^1.0.0",
+        "webmozart/path-util": "^2.3"
+    },
+    "require-dev": {
+      "webflo/drupal-core-require-dev": "~8.5.0"
+    },
+    "conflict": {
+        "drupal/drupal": "*"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+          "Ballast\\": "scripts/robo/src"
+        },
+        "classmap": [
+            "scripts/composer/ScriptHandler.php"
+        ]
+    },
+    "scripts": {
+        "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
+        "robo": "@php scripts/robo/BallastRunner.php --ansi",
+        "pre-install-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
+        ],
+        "pre-update-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
+        ],
+        "post-install-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles",
+            "composer robo setup:drupal",
+            "composer robo setup:prerequisites"
+        ],
+        "post-update-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles",
+            "composer robo setup:drupal",
+            "composer robo setup:prerequisites"
+        ]
+    },
+    "extra": {
+        "installer-types": ["bower-asset"],
+        "installer-paths": {
+            "docroot/core": ["type:drupal-core"],
+            "docroot/libraries/{$name}": ["type:drupal-library"],
+            "docroot/modules/contrib/{$name}": ["type:drupal-module"],
+            "docroot/profiles/contrib/{$name}": ["type:drupal-profile"],
+            "docroot/themes/contrib/{$name}": ["type:drupal-theme"],
+            "drush/contrib/{$name}": ["type:drupal-drush"]
+        }
+    }
+}
