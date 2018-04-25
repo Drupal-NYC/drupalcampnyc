@@ -87,11 +87,11 @@ class SetupCommands extends Tasks {
     $collection = $this->collectionBuilder();
     $collection->addTask(
       $this->taskFilesystemStack()
-        ->copy("$project/setup/drupal/settings.pantheon.php",
-          "$drupal/sites/default/settings.pantheon.php", TRUE)
+        ->copy("$project/setup/drupal/settings.pantheon-additional.php",
+          "$drupal/sites/default/settings.pantheon-additional.php", TRUE)
     )->rollback(
       $this->taskFilesystemStack()
-        ->remove("$drupal/sites/default/settings.pantheon.php")
+        ->remove("$drupal/sites/default/settings.pantheon-additional.php")
     );
     $collection->addTask(
       $this->taskFilesystemStack()
