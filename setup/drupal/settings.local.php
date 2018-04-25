@@ -102,4 +102,4 @@ $dir = '/var/www';
 $config_directories[CONFIG_SYNC_DIRECTORY] = $dir . '/config';
 
 /* Load development services */
-$settings['container_yamls'][] = $dir . '/docroot/sites/default/services.dev.yml';
+$settings['container_yamls'][] = $dir . '/web/sites/default/services.dev.yml';

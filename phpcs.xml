@@ -5,12 +5,12 @@
   <!-- Uncomment this line to allow "Warning" level issues into the codebase.
   <config name="ignore_warnings_on_exit" value="1"/>
   -->
-  <!--If no files are specified when phpcs is called, scan the docroot-->
-  <file>./docroot</file>
+  <!--If no files are specified when phpcs is called, scan the web-->
+  <file>./web</file>
   <!--We don't sniff local settings-->
   <exclude-pattern>*/settings\.local</exclude-pattern>
   <!--We are not going to sniff core files-->
-  <exclude-pattern>*/docroot/core/*</exclude-pattern>
+  <exclude-pattern>*/web/core/*</exclude-pattern>
   <exclude-pattern>*/*default\.settings</exclude-pattern>
   <exclude-pattern>*/*example\.sites</exclude-pattern>
   <exclude-pattern>*/*example\.settings</exclude-pattern>

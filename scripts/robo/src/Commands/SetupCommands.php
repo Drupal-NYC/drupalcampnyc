@@ -87,19 +87,19 @@ class SetupCommands extends Tasks {
     $collection = $this->collectionBuilder();
     $collection->addTask(
       $this->taskFilesystemStack()
-        ->copy("$project/setup/drupal/settings.acquia.php",
-          "$drupal/sites/default/settings.acquia.php", TRUE)
+        ->copy("$project/setup/drupal/settings.pantheon.php",
+          "$drupal/sites/default/settings.pantheon.php", TRUE)
     )->rollback(
       $this->taskFilesystemStack()
-        ->remove("$drupal/sites/default/settings.acquia.php")
+        ->remove("$drupal/sites/default/settings.pantheon.php")
     );
     $collection->addTask(
       $this->taskFilesystemStack()
-        ->copy("$project/setup/drupal/settings.non-acquia.php",
-          "$drupal/sites/default/settings.non-acquia.php", TRUE)
+        ->copy("$project/setup/drupal/settings.non-pantheon.php",
+          "$drupal/sites/default/settings.non-pantheon.php", TRUE)
     )->rollback(
       $this->taskFilesystemStack()
-        ->remove("$drupal/sites/default/settings.non-acquia.php")
+        ->remove("$drupal/sites/default/settings.non-pantheon.php")
     );
     $collection->addTask(
       $this->taskFilesystemStack()

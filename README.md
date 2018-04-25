@@ -39,7 +39,7 @@ In the folder chosen or created under _Getting Started_, `composer create-projec
 
 ### Edit `setup/config.yml`
 There are some project specific values that should be set in this file. The
-default location for custom themes is `docroot/themes/custom`. This can be
+default location for custom themes is `web/themes/custom`. This can be
 altered by adding a `site_theme_path` key to this file and setting it to the
 relative path from the project root to parent directory for custom themes.
 
@@ -54,13 +54,13 @@ is shown as the last line in the snippet below:
 "extra": {
         "installer-types": ["bower-asset"],
         "installer-paths": {
-            "docroot/core": ["type:drupal-core"],
-            "docroot/libraries/{$name}": ["type:drupal-library"],
-            "docroot/modules/contrib/{$name}": ["type:drupal-module"],
-            "docroot/profiles/contrib/{$name}": ["type:drupal-profile"],
-            "docroot/themes/contrib/{$name}": ["type:drupal-theme"],
+            "web/core": ["type:drupal-core"],
+            "web/libraries/{$name}": ["type:drupal-library"],
+            "web/modules/contrib/{$name}": ["type:drupal-module"],
+            "web/profiles/contrib/{$name}": ["type:drupal-profile"],
+            "web/themes/contrib/{$name}": ["type:drupal-theme"],
             "drush/contrib/{$name}": ["type:drupal-drush"],
-            "docroot/themes/custom/theme_name/bower_components/{$name}": ["type:bower-asset"]
+            "web/themes/custom/theme_name/bower_components/{$name}": ["type:bower-asset"]
         }
     }
 }
@@ -84,11 +84,11 @@ There are two environment variables and one path which need to be set in
 `codeship-services.yml` found in the root of the project repo:
 
 -  front-end : environment : THEME_NAME - The folder/machine name of your custom
-   theme. This folder should be present in `docroot/themes/custom`. If you set
+   theme. This folder should be present in `web/themes/custom`. If you set
    `site_theme_path` in `setup/config.yml` then also set THEME_PATH here to the
    same value.
 -  front-end : working_dir - set this value to the full path in the container to
-   the theme folder.  Usually `/var/www/docroot/themes/custom/yourtheme`
+   the theme folder.  Usually `/var/www/web/themes/custom/yourtheme`
 -  deploy : environment : DEPLOY_TARGET - The url of the git remote to
    which Codeship will push the build artifact.
 
@@ -139,19 +139,19 @@ You should commit all files not excluded by the .gitignore file.
 
 When installing the given `composer.json` some tasks are taken care of:
 
-* Drupal will be installed in the `docroot`-directory.
+* Drupal will be installed in the `web`-directory.
 * Autoloader is implemented to use the generated composer autoloader in
   `vendor/autoload.php`, instead of the one provided by Drupal
-  (`docroot/vendor/autoload.php`).
+  (`web/vendor/autoload.php`).
 * Modules (packages of type `drupal-module`) will be placed
-  in `docroot/modules/contrib/`
+  in `web/modules/contrib/`
 * Theme (packages of type `drupal-theme`) will be placed
-  in `docroot/themes/contrib/`
+  in `web/themes/contrib/`
 * Profiles (packages of type `drupal-profile`) will be placed
-  in `docroot/profiles/contrib/`
+  in `web/profiles/contrib/`
 * Creates default writable versions of `settings.php`
   and `services.yml`.
-* Creates `docroot/sites/default/files`-directory.
+* Creates `web/sites/default/files`-directory.
 * Latest version of drush is installed locally for use
   at `vendor/bin/drush`.
 * Latest version of DrupalConsole is installed locally for use
@@ -188,7 +188,7 @@ Follow the steps below to update your core files.
 2. Run `git diff` to determine if any of the scaffolding files have
    changed. Review the files for any changes and restore any
    customizations to `.htaccess` or `robots.txt`.
-3. Commit everything all together in a single commit, so `docroot` will
+3. Commit everything all together in a single commit, so `web` will
    remain in sync with the `core` when checking out branches or running
    `git bisect`.
 4. In the event that there are non-trivial conflicts in step 2, you may
@@ -269,7 +269,7 @@ workrounds if a project decides to do it anyway](https://getcomposer.org/doc/faq
 ### Should I commit the scaffolding files?
 
 The [drupal-scaffold](https://github.com/drupal-composer/drupal-scaffold) plugin can download the scaffold files (like
-index.php, update.php, …) to the docroot/ directory of your project. We
+index.php, update.php, …) to the web/ directory of your project. We
 generally commit these. If you have not customized those files you could
 choose to not check them into your version control system (e.g. git). If
 that is the case for your project it might be convenient to

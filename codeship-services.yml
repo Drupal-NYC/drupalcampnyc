@@ -5,7 +5,7 @@ code-quality:
     - deploy
 front-end:
   image: digitalpulp/front-end:codeship
-  working_dir: /var/www/docroot/themes/custom/YOUR_THEME
+  working_dir: /var/www/web/themes/custom/YOUR_THEME
   volumes_from:
     - deploy
   environment:

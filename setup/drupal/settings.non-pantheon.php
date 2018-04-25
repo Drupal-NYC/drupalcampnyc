@@ -9,7 +9,7 @@
 
 // Staging key is deprecated.  See: https://www.drupal.org/node/2574957
 // This is the default - same as settings.local.php
-// Get the path to the parent of docroot.
+// Get the path to the parent of web.
 $dir = dirname(DRUPAL_ROOT);
 $config_directories[CONFIG_SYNC_DIRECTORY] = $dir . '/config';
 

@@ -281,7 +281,7 @@ class DeployCommands extends Tasks {
     $this->say('Finding .git subdirectories...');
     $git = new Finder();
     $git
-      ->in([$this->config->getProjectRoot() . '/vendor', $this->config->getProjectRoot() . '/docroot'])
+      ->in([$this->config->getProjectRoot() . '/vendor', $this->config->getProjectRoot() . '/web'])
       ->directories()
       ->ignoreDotFiles(FALSE)
       ->ignoreVCS(FALSE)

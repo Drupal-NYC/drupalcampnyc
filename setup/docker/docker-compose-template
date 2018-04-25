@@ -19,7 +19,7 @@ services:
     image: digitalpulp/php:7.1-alpine-fpm-1.0.6
     volumes:
       - .:/var/www
-    working_dir: /var/www/docroot/
+    working_dir: /var/www/web/
     networks:
       - internal
     environment:
@@ -32,7 +32,7 @@ services:
       - php
     volumes:
       - .:/var/www
-    working_dir: /var/www/docroot/
+    working_dir: /var/www/web/
     environment:
       VIRTUAL_HOST: {site_shortname}.dpulp
       DOCROOT: /var/www/docroot
@@ -50,7 +50,7 @@ services:
       - .:/var/www
     networks:
       - internal
-    working_dir: /var/www/docroot/themes/custom/{site_theme_name}
+    working_dir: /var/www/web/themes/custom/{site_theme_name}
   cli:
     image: digitalpulp/cli:7.1-alpine-cli-1.0.12
     depends_on:
@@ -59,7 +59,7 @@ services:
       - web
     volumes:
       - .:/var/www
-    working_dir: /var/www/docroot/
+    working_dir: /var/www/web/
     networks:
       - internal
     environment:
