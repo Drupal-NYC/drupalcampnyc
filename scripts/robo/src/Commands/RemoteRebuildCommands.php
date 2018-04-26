@@ -14,6 +14,8 @@ use Ballast\Utilities\Config;
  */
 class RemoteRebuildCommands extends Tasks {
 
+  use DockerMachineTrait;
+
   /**
    * Config Utility (singleton).
    *
@@ -62,7 +64,7 @@ class RemoteRebuildCommands extends Tasks {
     $this->dockerFlags = '';
     switch (php_uname('s')) {
       case 'Darwin':
-        $this->dockerFlags = $this->config->getDockerMachineConfig();
+        $this->dockerFlags = $this->getDockerMachineConfig();
         break;
 
       default:
@@ -85,7 +87,7 @@ class RemoteRebuildCommands extends Tasks {
     $this->io()->text('Dumping remote database');
     $dumpRemote = $this->collectionBuilder();
     $dumpRemote->addTask(
-      $this->taskExec("$root/vendor/bin/drush --alias-path='$root/drush/sites' @$target sql-dump --result-file= > $this->projectRoot/target.sql")
+      $this->taskExec("$root/vendor/bin/drush --alias-path='$root/drush/sites' @$target sql-dump --result-file= > $root/target.sql")
         ->printMetadata(FALSE)
         ->printOutput(TRUE)
     );
@@ -144,7 +146,7 @@ class RemoteRebuildCommands extends Tasks {
     $this->io()->text('Running database updates and importing config.');
     $updateResult = $this->taskExec("docker-compose $this->dockerFlags exec cli drush -y updb")
       ->printMetadata(FALSE)
-      ->setVerbosityThreshold(VerbosityThresholdInterface::VERBOSITY_NORMAL)
+      ->setVerbosityThreshold(VerbosityThresholdInterface::VERBOSITY_DEBUG)
       ->run();
     $this->io()->newLine();
     $this->io()
@@ -156,7 +158,7 @@ class RemoteRebuildCommands extends Tasks {
       ->run();
     $updateResult->merge($this->taskExec("docker-compose $this->dockerFlags exec cli drush -y cim")
       ->printMetadata(FALSE)
-      ->setVerbosityThreshold(VerbosityThresholdInterface::VERBOSITY_NORMAL)
+      ->setVerbosityThreshold(VerbosityThresholdInterface::VERBOSITY_DEBUG)
       ->run());
     $this->io()->newLine();
     $this->io()->text('Rebuilding cache after importing config.');

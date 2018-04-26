@@ -271,7 +271,8 @@ class SetupCommands extends Tasks {
       $this->taskExec('pre-commit uninstall')
         ->dir($root)
     );
-    if (!file_exists("$root/.git/hooks/commit-msg")) {
+    $key = $this->config->get('jira_project_key');
+    if (!file_exists("$root/.git/hooks/commit-msg") && !empty($key)) {
       $collection->addTask(
         $this->taskFilesystemStack()
           ->copy("$root/scripts/git/commit-msg-template",

@@ -1,9 +1,9 @@
 ---
-site_shortname: project
-site_theme_name: project
-site_theme_path:
-site_alias_name: project
+site_shortname: dcnyc16
+site_theme_name: dcnyc
+site_theme_path: web/themes/custom/dcnyc
+site_alias_name: dcnyc
 site_folder: default
-site_proxy_origin_url: https://example.com
+site_proxy_origin_url: https://www.drupalcamp.nyc
 
-jira_project_key: KEY
+jira_project_key:

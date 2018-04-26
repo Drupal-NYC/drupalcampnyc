@@ -9,7 +9,10 @@
   <file>./web</file>
   <!--We don't sniff local settings-->
   <exclude-pattern>*/settings\.local</exclude-pattern>
+  <!--We don't sniff pantheon settings-->
+  <exclude-pattern>*/settings.pantheon.php</exclude-pattern>
   <!--We are not going to sniff core files-->
+  <exclude-pattern>*/autoload.php</exclude-pattern>
   <exclude-pattern>*/web/core/*</exclude-pattern>
   <exclude-pattern>*/*default\.settings</exclude-pattern>
   <exclude-pattern>*/*example\.sites</exclude-pattern>

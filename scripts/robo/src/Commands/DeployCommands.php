@@ -90,7 +90,7 @@ class DeployCommands extends Tasks {
     }
     $this->say('Deploying to tag ' . $options['tag']);
     $this->setDeploymentVersionControl($options);
-    $this->getDeploymentDependencies();
+    // $this->getDeploymentDependencies();
     $this->getSanitizedBuild();
     $this->setDeploymentCommit($options);
     $this->setCleanMerge($options);
@@ -117,7 +117,7 @@ class DeployCommands extends Tasks {
     $this->setDeploymentOptions($options);
     $this->say('Deploying to branch ' . $options['branch']);
     $this->setDeploymentVersionControl($options);
-    $this->getDeploymentDependencies();
+    // $this->getDeploymentDependencies();
     $this->getSanitizedBuild();
     $this->setDeploymentCommit($options);
     $this->setCleanMerge($options);
@@ -263,9 +263,9 @@ class DeployCommands extends Tasks {
         }
       }
 
-      $ready = $this->startUp->getFrontEndStatus(TRUE);
+      $ready = $this->getFrontEndStatus(TRUE);
     }
-    $this->startUp->setClearFrontEndFlags();
+    $this->setClearFrontEndFlags();
   }
 
   /**
