@@ -1,0 +1,24 @@
+uuid: 2570b7e0-0d86-4687-8a00-ca140e73e5e4
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - dcnyc
+id: dcnyc_tools
+theme: dcnyc
+region: header
+weight: -7
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

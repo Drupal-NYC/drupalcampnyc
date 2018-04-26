@@ -1,0 +1,30 @@
+uuid: 7999ccf5-f046-4ee1-b900-c25ca7c12fda
+langcode: en
+status: true
+dependencies:
+  module:
+    - dcync_reg_links
+    - system
+  theme:
+    - dcnyc
+id: registrationlinks
+theme: dcnyc
+region: highlighted
+weight: -10
+provider: null
+plugin: reg_links_block
+settings:
+  id: reg_links_block
+  label: 'Registration Links'
+  provider: dcync_reg_links
+  label_display: '0'
+  registration_link: 'http://tinyurl.com/dcnyc17'
+  registration_link_text: 'Register Now!'
+  sponsorship_link: 'http://tinyurl.com/dcnyc17'
+  sponsorship_link_text: 'Sponsor DCNYC17 Now!'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
