@@ -9,17 +9,16 @@ $config['system.performance']['fast_404']['html'] = '<!DOCTYPE html><html><head>
 $settings['trusted_host_patterns'] = [];
 
 /**
- * By checking $_ENV['PANTHEON_ENVIRONMENT'] we know whether we are on Pantheon or
- * not and which Acquia environment.
+ * By checking $_ENV['PANTHEON_ENVIRONMENT'] we know if we are on Pantheon.
  */
-// Load Acquia specific settings files.
+// Load Pantheon specific settings files.
 if (isset($_ENV['PANTHEON_ENVIRONMENT'])) {
   // Load shared Pantheon settings.
   require_once __DIR__ . '/settings.pantheon-additional.php';
 }
-// Load settings suitable outside of Acquia (e.g. local development).
+// Load settings suitable outside of Pantheon (e.g. local development).
 else {
-  // Load share non-Acquia settings if it exists.
+  // Load non-Pantheon settings if it exists.
   $non_pantheon_conf_file_path = __DIR__ . '/settings.non-pantheon.php';
   if (file_exists($non_pantheon_conf_file_path)) {
     require_once $non_pantheon_conf_file_path;
