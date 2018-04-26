@@ -14,7 +14,7 @@ $databases['default']['default'] = array(
   'driver' => 'mysql',
 );
 
-
+$settings['hash_salt'] = '{salt}';
 
 /**
  * Show all error messages, with backtrace information.

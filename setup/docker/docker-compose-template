@@ -35,7 +35,7 @@ services:
     working_dir: /var/www/web/
     environment:
       VIRTUAL_HOST: {site_shortname}.dpulp
-      DOCROOT: /var/www/docroot
+      DOCROOT: /var/www/web
       SERVER_NAME: {site_shortname}.dpulp
     networks:
       - internal

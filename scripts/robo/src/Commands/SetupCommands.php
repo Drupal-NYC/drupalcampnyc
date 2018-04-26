@@ -2,6 +2,7 @@
 
 namespace Ballast\Commands;
 
+use Drupal\Component\Utility\Crypt;
 use Robo\Tasks;
 use Robo\Result;
 use Robo\Contract\VerbosityThresholdInterface;
@@ -116,6 +117,11 @@ class SetupCommands extends Tasks {
     )->rollback(
       $this->taskFilesystemStack()
         ->remove("$drupal/sites/default/services.dev.yml")
+    );
+    $collection->addTask(
+      $this->taskReplaceInFile("$drupal/sites/default/settings.local.php")
+        ->from('{salt}')
+        ->to(Crypt::randomBytesBase64(55))
     );
     $collection->addTask(
       $this->taskReplaceInFile("$drupal/sites/default/settings.local.php")
