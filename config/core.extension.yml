@@ -7,6 +7,8 @@ module:
   color: 0
   comment: 0
   config: 0
+  config_filter: 0
+  config_split: 0
   contact: 0
   contact_storage: 0
   contextual: 0
@@ -47,7 +49,6 @@ module:
   tracker: 0
   update: 0
   user: 0
-  views_ui: 0
   menu_link_content: 1
   views: 10
 theme:

@@ -1,0 +1,16 @@
+uuid: 3401a40a-d7e2-48ed-a4f7-c7a01228e126
+langcode: en
+status: true
+dependencies: {  }
+id: dev
+label: Dev
+folder: ../config_splits/dev
+module:
+  stage_file_proxy: 0
+  views_ui: 0
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0

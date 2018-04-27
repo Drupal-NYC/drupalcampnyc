@@ -29,3 +29,24 @@ if (isset($_ENV['PANTHEON_ENVIRONMENT']) && php_sapi_name() != 'cli') {
     exit();
   }
 }
+
+if (isset($_ENV['PANTHEON_ENVIRONMENT'])) {
+  switch ($_ENV['PANTHEON_ENVIRONMENT']) {
+    case 'dev':
+      break;
+
+    case 'test':
+      break;
+
+    case 'prod':
+      /*
+      if (PHP_SAPI !== 'cli') {
+        $settings['config_readonly'] = TRUE;
+      }
+      */
+      $config['config_split.config_split.dev']['status'] = FALSE;
+      ini_set('display_errors', '0');
+      break;
+
+  }
+}
