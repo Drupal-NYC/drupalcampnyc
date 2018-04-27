@@ -6,7 +6,9 @@
 /web/themes/contrib/
 /web/profiles/contrib/
 /web/libraries/
+web/sites/default/settings.pantheon.php
 bower_components
+
 
 # Ignore sensitive information
 # /web/sites/*/settings.php

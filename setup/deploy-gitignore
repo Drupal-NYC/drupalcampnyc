@@ -6,6 +6,7 @@
 # /web/themes/contrib/
 # /web/profiles/contrib/
 # /web/libraries/
+# web/sites/default/settings.pantheon.php
 # bower_components
 
 # Ignore sensitive information
@@ -16,6 +17,9 @@ codeship.aes
 id_rsa
 id_rsa.pub
 env
+slack.sh
+slack-db-copy.sh
+slack-code-deploy.sh
 
 # Ignore Drupal's file directory
 /web/sites/*/files/
