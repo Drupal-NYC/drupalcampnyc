@@ -1,5 +1,5 @@
-# Ballast
-A local development toolset developed with the support of [Digital Pulp](https://www.digitalpulp.com).
+# DrupalCamp NYC D8
+Uses the Ballast local development toolset developed with the support of [Digital Pulp](https://www.digitalpulp.com).
 
 Key contributors:
   - [Shawn Duncan](https://github.com/FatherShawn)
@@ -30,100 +30,6 @@ managed with this approach.
 NFS they must not be in the chosen folder.
     * The easiest way forward is
 to create a new folder such as `~/DockerSites`.
-
-## Initial Setup
-_After the initial setup, you should delete the Initial Setup section of
-this README._
-
-In the folder chosen or created under _Getting Started_, `composer create-project digitalpulp/ballast  your_project`.
-
-### Edit `setup/config.yml`
-There are some project specific values that should be set in this file. The
-default location for custom themes is `web/themes/custom`. This can be
-altered by adding a `site_theme_path` key to this file and setting it to the
-relative path from the project root to parent directory for custom themes.
-
-### Edit `composer.json`
-There is also a project specific value to set here, which is the path to
-bower components in the custom theme file. Edit the *extra* section to
-add a path to the theme `bower_components` directory.  An example entry
-is shown as the last line in the snippet below:
-
-```json
-{
-"extra": {
-        "installer-types": ["bower-asset"],
-        "installer-paths": {
-            "web/core": ["type:drupal-core"],
-            "web/libraries/{$name}": ["type:drupal-library"],
-            "web/modules/contrib/{$name}": ["type:drupal-module"],
-            "web/profiles/contrib/{$name}": ["type:drupal-profile"],
-            "web/themes/contrib/{$name}": ["type:drupal-theme"],
-            "drush/contrib/{$name}": ["type:drupal-drush"],
-            "web/themes/custom/theme_name/bower_components/{$name}": ["type:bower-asset"]
-        }
-    }
-}
-```
-### Initial Composer Install
-
-You may wish to require an initial line up of contributed modules. (See
-Updates and Maintenance below). If you are not adding modules at first,
-you may run `composer update nothing` to generate an initial
-`composer.lock` file.  Either way, committing the result will speed
-setup for other members of your team.
-
-### Prepare for Codeship Pro
-
-We use [Codeship Pro](https://codeship.com/pricing/pro) to deploy
-projects built on this template.  A free tier is available. All commits
-on the `develop` branch will be built and deployed.
-
-#### Docker Environment Variables
-There are two environment variables and one path which need to be set in
-`codeship-services.yml` found in the root of the project repo:
-
--  front-end : environment : THEME_NAME - The folder/machine name of your custom
-   theme. This folder should be present in `web/themes/custom`. If you set
-   `site_theme_path` in `setup/config.yml` then also set THEME_PATH here to the
-   same value.
--  front-end : working_dir - set this value to the full path in the container to
-   the theme folder.  Usually `/var/www/web/themes/custom/yourtheme`
--  deploy : environment : DEPLOY_TARGET - The url of the git remote to
-   which Codeship will push the build artifact.
-
-#### Encrypted Environment Variables
-Deployment credentials should not be stored in the repo in the clear, but Codeship will decrypt these environment variables on each build. You will need to install the Codeship CLI tool [Jet](https://documentation.codeship.com/pro/builds-and-configuration/cli/#installing-jet) to accomplish these steps.
-
-1. Create a new Codeship Pro project.
-2. Open Project Settings and browse to the _General_ tab.
-3. Scroll down and download the _AES Key_.
-4. Move this key into the project root and rename it `codeship.aes`
-5. Create a new file named `env` (Both this file and `codeship.aes` are
-   set to be ignored by git).
-6. Copy or create a private key that matches the public key installed in
-   your target git remote to the project root or to a `/keys` directory in the project.
-7. Use the ahoy commands to bring up the local project.
-8. Use advanced command `ahoy key-prep path/to/private_key` to get your private
-   key in a one-line format and appended to the `env` file.
-9. Execute `ssh user@git_remote_url` if you have not accessed this git
-   remote before to add the remote to your `~/.ssh/known_hosts`.
-10. Define the environment variables in `env` copying the appropriate line from `~/.ssh/known_hosts`, and the
-    name and email to use when commiting the build like this:
-    ```
-    SSH_PRIVATE_KEY=one-line-key copied from the terminal
-    GIT_KNOWN_HOST=entire line matching the git remote copied from `~/.ssh/known_hosts`
-    GIT_NAME=Codeship-Deploy
-    GIT_EMAIL=name@example.com
-    ```
-11. [Encrypt](https://documentation.codeship.com/pro/builds-and-configuration/environment-variables/#encrypted-environment-variables) the file using Jet: `jet encrypt env env.encrypted`
-12. Remove or move the key created in step 6 - **do not commit** the private key!
-13. Commit `env.encrypted` to the repo.
-
-### Advanced `ahoy` commands for Tech Leads
-There are some additional commands in the `ahoy.yml` file marked "Advanced" which do
-not appear in response to `ahoy --help`  These are intended for tech leads that may need
-to shell in the docker container for some purpose.
 
 
 ## Install the Project
