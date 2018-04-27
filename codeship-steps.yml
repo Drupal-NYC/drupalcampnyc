@@ -1,0 +1,12 @@
+- name: code_quality
+  service: code-quality
+  command: pre-commit.sh
+- name: pull_dependencies
+  tag: master
+  service: deploy
+  command: composer install --no-dev --no-interaction --optimize-autoloader
+- name: deploy
+  tag: master
+  service: deploy
+  command: php scripts/robo/BallastRunner.php deploy
+

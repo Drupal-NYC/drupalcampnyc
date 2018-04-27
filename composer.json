@@ -1,64 +1,107 @@
 {
-    "name": "drupal/drupal",
-    "description": "Drupal is an open source content management platform powering millions of websites and applications.",
+    "name": "digitalpulp/ballast",
+    "description": "A local development toolset for automating Docker setup and Drupal development.",
     "type": "project",
     "license": "GPL-2.0+",
-    "require": {
-        "composer/installers": "^1.0.24",
-        "wikimedia/composer-merge-plugin": "~1.4"
-    },
-    "replace": {
-        "drupal/core": "~8.3"
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
-    "config": {
-        "preferred-install": "dist",
-        "autoloader-suffix": "Drupal8"
-    },
-    "extra": {
-        "_readme": [
-            "By default Drupal loads the autoloader from ./vendor/autoload.php.",
-            "To change the autoloader you can edit ./autoload.php.",
-            "This file specifies the packages.drupal.org repository.",
-            "You can read more about this composer repository at:",
-            "https://www.drupal.org/node/2718229"
-        ],
-        "merge-plugin": {
-            "include": [
-                "core/composer.json"
-            ],
-            "recurse": false,
-            "replace": false,
-            "merge-extra": false
+    "authors": [
+        {
+            "name": "Shawn Duncan",
+            "role": "Project Lead"
         },
-        "installer-paths": {
-            "core": ["type:drupal-core"],
-            "modules/contrib/{$name}": ["type:drupal-module"],
-            "profiles/contrib/{$name}": ["type:drupal-profile"],
-            "themes/contrib/{$name}": ["type:drupal-theme"],
-            "drush/contrib/{$name}": ["type:drupal-drush"],
-            "modules/custom/{$name}": ["type:drupal-custom-module"],
-            "themes/custom/{$name}": ["type:drupal-custom-theme"]
+        {
+          "name": "Nick Main",
+          "role": "Developer"
         }
-    },
-    "autoload": {
-        "psr-4": {
-            "Drupal\\Core\\Composer\\": "core/lib/Drupal/Core/Composer"
-        }
-    },
-    "scripts": {
-        "pre-autoload-dump": "Drupal\\Core\\Composer\\Composer::preAutoloadDump",
-        "post-autoload-dump": [
-          "Drupal\\Core\\Composer\\Composer::ensureHtaccess"
-        ],
-        "post-package-install": "Drupal\\Core\\Composer\\Composer::vendorTestCodeCleanup",
-        "post-package-update": "Drupal\\Core\\Composer\\Composer::vendorTestCodeCleanup"
-    },
+    ],
     "repositories": [
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
         }
-    ]
+    ],
+    "require": {
+        "composer/installers": "^1.2",
+        "consolidation/robo": "^1.0",
+        "cweagans/composer-patches": "^1.6",
+        "drupal-composer/drupal-scaffold": "^2.2",
+        "drupal/console": "^1.0.2",
+        "drupal/contact_storage": "^1.0@beta",
+        "drupal/core": "^8.5",
+        "drupal/google_analytics": "^2.2",
+        "drush/drush": "^9.1",
+        "oomphinc/composer-installers-extender": "^1.1",
+        "symfony/cache": "^3.1",
+        "webflo/drupal-core-strict": "8.5.0",
+        "webflo/drupal-finder": "^1.0.0",
+        "webmozart/path-util": "^2.3"
+    },
+    "require-dev": {
+      "webflo/drupal-core-require-dev": "~8.5.0"
+    },
+    "conflict": {
+        "drupal/drupal": "*"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+          "Ballast\\": "scripts/robo/src"
+        },
+        "classmap": [
+            "scripts/composer/ScriptHandler.php"
+        ]
+    },
+    "scripts": {
+        "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
+        "robo": "@php scripts/robo/BallastRunner.php --ansi",
+        "pre-install-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
+        ],
+        "pre-update-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
+        ],
+        "post-install-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles",
+            "composer robo setup:drupal",
+            "composer robo setup:prerequisites"
+        ],
+        "post-update-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles",
+            "composer robo setup:drupal",
+            "composer robo setup:prerequisites"
+        ]
+    },
+    "extra": {
+        "installer-types": ["bower-asset"],
+        "installer-paths": {
+            "web/core": ["type:drupal-core"],
+            "web/libraries/{$name}": ["type:drupal-library"],
+            "web/modules/contrib/{$name}": ["type:drupal-module"],
+            "web/profiles/contrib/{$name}": ["type:drupal-profile"],
+            "web/themes/contrib/{$name}": ["type:drupal-theme"],
+            "drush/contrib/{$name}": ["type:drupal-drush"]
+        },
+        "drupal-scaffold": {
+          "source": "https://raw.githubusercontent.com/pantheon-systems/drops-8-scaffolding/{version}/{path}",
+          "includes": [
+            "sites/default/default.services.pantheon.preproduction.yml",
+            "sites/default/settings.pantheon.php"
+          ],
+          "excludes": [
+            ".csslintrc",
+            ".editorconfig",
+            ".eslintignore",
+            ".eslintrc.json",
+            ".htaccess",
+            "web.config"
+          ]
+        }
+    }
 }
