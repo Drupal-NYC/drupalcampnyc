@@ -1,21 +1,19 @@
 api_version: 1
 web_docroot: true
 php_version: 7.1
-protected_web_paths:
-  - /hooks
 workflows:
   deploy:
     after:
       - type: webphp
         description: Post deployment site updates.
-        script: hooks/deploy.php
+        script: private/hooks/deploy.php
   sync_code:
     after:
       - type: webphp
         description: Post deployment site updates.
-        script: hooks/deploy.php
+        script: private/hooks/deploy.php
   clone_database:
     after:
       - type: webphp
         description: Post deployment site updates.
-        script: hooks/deploy.php
+        script: private/hooks/deploy.php
