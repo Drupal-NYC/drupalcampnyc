@@ -31,6 +31,11 @@ if (isset($_ENV['PANTHEON_ENVIRONMENT']) && php_sapi_name() != 'cli') {
 }
 
 if (isset($_ENV['PANTHEON_ENVIRONMENT'])) {
+  $settings['trusted_host_patterns'] = [
+    '^.+\.pantheonsite.io$',
+    '^.*drupalcamp.nyc$',
+  ];
+
   switch ($_ENV['PANTHEON_ENVIRONMENT']) {
     case 'dev':
       break;
