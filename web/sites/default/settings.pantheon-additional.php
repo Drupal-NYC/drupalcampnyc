@@ -8,7 +8,7 @@
 if (isset($_ENV['PANTHEON_ENVIRONMENT']) && php_sapi_name() != 'cli') {
   // Redirect to https://$primary_domain in the Live environment.
   if ($_ENV['PANTHEON_ENVIRONMENT'] === 'live') {
-    $primary_domain = 'www.drupalcamp.nyc/';
+    $primary_domain = 'www.drupalcamp.nyc';
   }
   else {
     // Redirect to HTTPS on every Pantheon environment.
@@ -43,7 +43,7 @@ if (isset($_ENV['PANTHEON_ENVIRONMENT'])) {
     case 'test':
       break;
 
-    case 'prod':
+    case 'live':
       /*
       if (PHP_SAPI !== 'cli') {
         $settings['config_readonly'] = TRUE;
