@@ -57,6 +57,29 @@ class RemoteRebuildCommands extends Tasks {
   }
 
   /**
+   * Rebuilds the local site from a remote Pantheon server.
+   *
+   * @param string $environment
+   *   The environment suffix for the drush alias.
+   */
+  public function rebuildPantheon($environment = 'dev') {
+    $this->setInitialConditions();
+    $target = $this->config->get('site_alias_name') . '.' . $environment;
+    if ($this->getRemotePantheonDump($target)) {
+      $this->io()->text('Remote database dumped.');
+      // The following methods throw a \RuntimeException on failure.
+      $this->getImport();
+      $this->getUpdate();
+      $this->getRebuiltTheme();
+      $this->io()->success("Local site rebuilt from $environment");
+    }
+    else {
+      $this->io()
+        ->error('The db dump from the remote system failed to complete');
+    }
+  }
+
+  /**
    * Initialize parameters and services.
    */
   protected function setInitialConditions() {
@@ -96,6 +119,44 @@ class RemoteRebuildCommands extends Tasks {
         ->regex('~Connection to(.*)closed.~')
         ->to('--')
         ->setVerbosityThreshold(VerbosityThresholdInterface::VERBOSITY_DEBUG)
+    );
+    $result = $dumpRemote->setVerbosityThreshold(VerbosityThresholdInterface::VERBOSITY_DEBUG)
+      ->run();
+    return $result instanceof Result && $result->wasSuccessful();
+  }
+
+  /**
+   * Dump the remote database from the host, avoids messing with ssh keys.
+   *
+   * @param string $target
+   *   The full drush alias of the target remote.
+   *
+   * @return bool
+   *   Success of the dump.
+   */
+  protected function getRemotePantheonDump($target) {
+    $root = $this->config->getProjectRoot();
+    $this->io()->text('Dumping remote database');
+    $dumpRemote = $this->collectionBuilder();
+    $dumpRemote->addTask(
+      $this->taskExec("terminus backup:create $target --keep-for=1  --element=db")
+        ->printMetadata(FALSE)
+        ->printOutput(FALSE)
+    );
+    $dumpRemote->addTask(
+      $this->taskExec("terminus backup:get $target --element=db --to=$root/database.sql.gz")
+        ->printMetadata(FALSE)
+        ->printOutput(FALSE)
+    );
+    $dumpRemote->addTask(
+      $this->taskExec("gunzip -c $root/database.sql.gz > $root/target.sql")
+        ->printMetadata(FALSE)
+        ->printOutput(FALSE)
+    );
+    $dumpRemote->addTask(
+      $this->taskFilesystemStack()->remove("$root/database.sql.gz")
+        ->printMetadata(FALSE)
+        ->printOutput(FALSE)
     );
     $result = $dumpRemote->setVerbosityThreshold(VerbosityThresholdInterface::VERBOSITY_DEBUG)
       ->run();
@@ -146,7 +207,7 @@ class RemoteRebuildCommands extends Tasks {
     $this->io()->text('Running database updates and importing config.');
     $updateResult = $this->taskExec("docker-compose $this->dockerFlags exec cli drush -y updb")
       ->printMetadata(FALSE)
-      ->setVerbosityThreshold(VerbosityThresholdInterface::VERBOSITY_DEBUG)
+      ->setVerbosityThreshold(VerbosityThresholdInterface::VERBOSITY_NORMAL)
       ->run();
     $this->io()->newLine();
     $this->io()
@@ -158,7 +219,7 @@ class RemoteRebuildCommands extends Tasks {
       ->run();
     $updateResult->merge($this->taskExec("docker-compose $this->dockerFlags exec cli drush -y cim")
       ->printMetadata(FALSE)
-      ->setVerbosityThreshold(VerbosityThresholdInterface::VERBOSITY_DEBUG)
+      ->setVerbosityThreshold(VerbosityThresholdInterface::VERBOSITY_NORMAL)
       ->run());
     $this->io()->newLine();
     $this->io()->text('Rebuilding cache after importing config.');

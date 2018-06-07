@@ -269,6 +269,10 @@ class SetupCommands extends Tasks {
   protected function setPrecommitHooks() {
     $this->setConfig();
     $root = $this->config->getProjectRoot();
+    if (!file_exists("$root/.git")) {
+      $this->io()->note('Git repository not found.  Precommit will be setup on a later composer install after a .git directory is present.');
+      return;
+    }
     $this->io()->section('Configuring pre-commit linting tool.');
     $collection = $this->collectionBuilder();
     $collection->addTask(
@@ -277,6 +281,7 @@ class SetupCommands extends Tasks {
       $this->taskExec('pre-commit uninstall')
         ->dir($root)
     );
+    // If the JIRA key property is populated, install the commit hook.
     $key = $this->config->get('jira_project_key');
     if (!file_exists("$root/.git/hooks/commit-msg") && !empty($key)) {
       $collection->addTask(
