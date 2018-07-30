@@ -1,10 +1,10 @@
-- name: code_quality
-  service: code-quality
-  command: pre-commit.sh
 - name: pull_dependencies
   tag: master
   service: deploy
   command: composer install --no-dev --no-interaction --optimize-autoloader
+- name: code_quality
+  service: code-quality
+  command: pre-commit.sh
 - name: deploy
   tag: master
   service: deploy
