@@ -155,8 +155,6 @@ class RemoteRebuildCommands extends Tasks {
     );
     $dumpRemote->addTask(
       $this->taskFilesystemStack()->remove("$root/database.sql.gz")
-        ->printMetadata(FALSE)
-        ->printOutput(FALSE)
     );
     $result = $dumpRemote->setVerbosityThreshold(VerbosityThresholdInterface::VERBOSITY_DEBUG)
       ->run();
