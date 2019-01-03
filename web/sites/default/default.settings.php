@@ -755,6 +755,19 @@ $settings['file_scan_ignore_directories'] = [
 $settings['entity_update_batch_size'] = 50;
 
 /**
+ * Include the Pantheon-specific settings file.
+ *
+ * n.b. The settings.pantheon.php file makes some changes
+ *      that affect all envrionments that this site
+ *      exists in.  Always include this file, even in
+ *      a local development environment, to insure that
+ *      the site settings remain consistent.
+ */
+if (file_exists(__DIR__ . '/settings.pantheon.php')) {
+  include __DIR__ . "/settings.pantheon.php";
+}
+
+/**
  * Load local development override configuration, if available.
  *
  * Use settings.local.php to override variables on secondary (staging,
