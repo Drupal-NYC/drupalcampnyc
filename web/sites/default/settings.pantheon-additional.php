@@ -5,6 +5,8 @@
  * Pantheon additional configuration file.
  */
 
+// @codingStandardsIgnoreFile
+
 if (isset($_ENV['PANTHEON_ENVIRONMENT']) && php_sapi_name() != 'cli') {
   // Redirect to https://$primary_domain in the Live environment.
   if ($_ENV['PANTHEON_ENVIRONMENT'] === 'live') {
@@ -19,7 +21,7 @@ if (isset($_ENV['PANTHEON_ENVIRONMENT']) && php_sapi_name() != 'cli') {
     || !isset($_SERVER['HTTP_USER_AGENT_HTTPS'])
     || $_SERVER['HTTP_USER_AGENT_HTTPS'] != 'ON') {
 
-    // Name transaction "redirect" in New Relic for improved reporting (optional).
+    // Name transaction "redirect" in New Relic: improved reporting (optional).
     if (extension_loaded('newrelic')) {
       newrelic_name_transaction("redirect");
     }
@@ -27,6 +29,10 @@ if (isset($_ENV['PANTHEON_ENVIRONMENT']) && php_sapi_name() != 'cli') {
     header('HTTP/1.0 301 Moved Permanently');
     header('Location: https://' . $primary_domain . $_SERVER['REQUEST_URI']);
     exit();
+  }
+  // Drupal 8 Trusted Host Settings.
+  if (isset($settings) && is_array($settings)) {
+    $settings['trusted_host_patterns'] = ['^' . preg_quote($primary_domain) . '$'];
   }
 }
 
@@ -41,9 +47,9 @@ if (isset($_ENV['PANTHEON_ENVIRONMENT'])) {
 
     case 'live':
       /*
-      if (PHP_SAPI !== 'cli') {
-        $settings['config_readonly'] = TRUE;
-      }
+        if (PHP_SAPI !== 'cli') {
+          $settings['config_readonly'] = TRUE;
+        }
       */
       $config['config_split.config_split.dev']['status'] = FALSE;
       ini_set('display_errors', '0');
