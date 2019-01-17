@@ -1,10 +1,13 @@
-- name: pull_dependencies
-  tag: master
+- name: pull_dependencies_with_dev
   service: deploy
-  command: composer install --no-dev --no-interaction --optimize-autoloader
+  command: composer install --no-interaction
 - name: code_quality
   service: code-quality
   command: pre-commit.sh
+- name: remove_dev_dependencies
+  tag: master
+  service: deploy
+  command: composer install --no-dev --no-interaction --optimize-autoloader
 - name: deploy
   tag: master
   service: deploy
