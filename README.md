@@ -1,4 +1,22 @@
 # DrupalCamp NYC D8
+
+drupalcamp.nyc is hosted on Pantheon. You need to be a member of the DrupalCampNYC Pantheon site's "Team" to be able to:
+* Make a manual backup of the site
+* Download a copy of the site's database and/or files (sites/default/files)
+* Deploy to Pantheon's Test or Stage environment
+
+[Our canonical git repository](https://github.com/Drupal-NYC/drupalcampnyc) is on GitHub. You need to be a member of the GitHub Drupal-NYC organization's [DrupalCamp team](https://github.com/orgs/Drupal-NYC/teams/drupalcamp) (link only visible if you are a member) in order to:
+* Push changes to the master branch
+* Accept pull requests
+
+# Local Environment Using Lando
+
+`git clone git@github.com:Drupal-NYC/dcnyc16.git .`
+
+
+Everything below this point involves using Ballast as your local development toolset. You can ignore it if you want to use Lando or another toolset.
+
+# Local Environment Using Ballast
 Uses the Ballast local development toolset developed with the support of [Digital Pulp](https://www.digitalpulp.com).
 
 Key contributors:
