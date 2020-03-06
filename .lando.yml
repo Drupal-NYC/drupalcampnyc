@@ -1,0 +1,10 @@
+name: drupalcampnyc
+recipe: pantheon
+config:
+  framework: drupal8
+  site: drupalcampnyc
+  id: 36d6210e-0ea0-4579-9a00-a8d3ef891b81
+  xdebug: false
+  index: false
+  edge: true
+  cache: true
