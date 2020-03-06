@@ -495,8 +495,9 @@ display:
         type: normal
         title: Sponsors
         menu_name: main
-        enabled: true
+        enabled: false
         expanded: false
+        weight: -40
     cache_metadata:
       max-age: -1
       contexts:

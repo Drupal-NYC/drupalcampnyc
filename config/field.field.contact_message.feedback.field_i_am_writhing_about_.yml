@@ -1,0 +1,21 @@
+uuid: 7e5dd7d1-08d0-49d0-abb4-612f5b6fce05
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.feedback
+    - field.storage.contact_message.field_i_am_writhing_about_
+  module:
+    - options
+id: contact_message.feedback.field_i_am_writhing_about_
+field_name: field_i_am_writhing_about_
+entity_type: contact_message
+bundle: feedback
+label: 'I am writhing about'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

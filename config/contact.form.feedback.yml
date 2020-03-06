@@ -7,11 +7,16 @@ dependencies:
 third_party_settings:
   contact_storage:
     redirect_uri: ''
+    submit_text: 'Send message'
+    show_preview: true
+    disabled_form_message: 'This contact form has been disabled.'
+    maximum_submissions_user: 0
+    page_autoreply_format: plain_text
 id: feedback
 label: 'Contact Us'
 recipients:
-  - joe@bachana.com
-  - sd@shawnduncan.org
+  - vgrozdanoski@drupalnyc.org
+  - jdleonard@drupalnyc.org
 reply: ''
 weight: 0
 message: 'Your message has been sent.'

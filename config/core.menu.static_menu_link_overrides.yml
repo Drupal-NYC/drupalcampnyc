@@ -1,9 +1,9 @@
 definitions:
   contact__site_page:
-    enabled: false
+    weight: -39
     menu_name: main
     parent: ''
-    weight: -41
+    enabled: true
     expanded: true
   standard__front_page:
     weight: -50

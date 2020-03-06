@@ -1,51 +1,52 @@
-uuid: bf6b8ca2-be22-46ce-8700-b3c9120623f7
+uuid: 7bce4dd7-cbe0-4857-8fa6-5537531dbde3
 langcode: en
 status: true
 dependencies:
   config:
     - contact.form.feedback
     - field.field.contact_message.feedback.field_i_am_writhing_about_
+  module:
+    - options
 id: contact_message.feedback.default
 targetEntityType: contact_message
 bundle: feedback
 mode: default
 content:
   field_i_am_writhing_about_:
-    weight: 2
+    weight: 0
+    label: above
     settings: {  }
     third_party_settings: {  }
-    type: options_select
+    type: list_default
     region: content
   mail:
+    weight: 2
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  message:
+    type: basic_string
+    weight: 4
+    label: above
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  name:
     weight: 1
     region: content
-    settings: {  }
-    third_party_settings: {  }
-  message:
-    type: string_textarea
-    weight: 4
+    label: above
     settings:
-      rows: 12
-      placeholder: ''
+      link_to_entity: false
     third_party_settings: {  }
-    region: content
-  name:
-    weight: 0
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  preview:
-    weight: 5
-    region: content
-    settings: {  }
-    third_party_settings: {  }
+    type: string
   subject:
-    type: string_textfield
     weight: 3
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
     region: content
-hidden:
-  copy: true
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+hidden: {  }

@@ -5,5 +5,4 @@ dependencies: {  }
 name: 'Sponsorship Types'
 vid: sponsorship_type
 description: ''
-hierarchy: 0
 weight: 0
