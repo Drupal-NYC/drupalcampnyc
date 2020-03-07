@@ -52,6 +52,10 @@ Start the site: `lando start`
 
 Now everything will run slower :)
 
+## Known Issues
+
+The Ballast toolset is tightly integrated with Composer, which causes problems when using other local environments such as Lando. In particular, settings.local.php is overwritten when certain Composer commands are executed, rendering it useless. Thankfully it is not included by settings.php because `$_ENV['PANTHEON_ENVIRONMENT']` is set by Lando's Pantheon recipe.
+
 # Local Environment Using Ballast
 Uses the Ballast local development toolset developed with the support of [Digital Pulp](https://www.digitalpulp.com).
 

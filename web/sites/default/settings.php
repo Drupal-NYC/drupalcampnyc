@@ -268,6 +268,7 @@ $config_directories = array();
  *
  * @see install_select_profile()
  */
+// Change/remove this at your peril!
 $settings['install_profile'] = 'standard';
 
 /**
@@ -787,6 +788,10 @@ $settings['trusted_host_patterns'] = [];
 if (isset($_ENV['PANTHEON_ENVIRONMENT'])) {
   // Load shared Pantheon settings.
   require_once __DIR__ . '/settings.pantheon-additional.php';
+
+  if ($_ENV['PANTHEON_ENVIRONMENT'] == 'lando') {
+    $settings['skip_permissions_hardening'] = TRUE;
+  }
 }
 // Load settings suitable outside of Pantheon (e.g. local development).
 else {
