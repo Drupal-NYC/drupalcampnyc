@@ -33,6 +33,7 @@
         "drupal/contact_storage": "^1.0@beta",
         "drupal/core-recommended": "^8.8.1",
         "drupal/google_analytics": "^2.2",
+        "drupal/recaptcha": "^2.5",
         "drupal/stage_file_proxy": "^1.0@alpha",
         "drush/drush": "^9.1",
         "oomphinc/composer-installers-extender": "^1.1",
