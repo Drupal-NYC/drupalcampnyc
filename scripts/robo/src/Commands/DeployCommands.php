@@ -45,8 +45,13 @@ class DeployCommands extends Tasks {
     'remote-branch' => NULL,
     'remote' => NULL,
     'build_id' => NULL,
+    'date-tag' => FALSE,
   ]) {
-    if (!empty($options['tag'])) {
+    if (!empty($options['tag']) || $options['date-tag']) {
+      // If the date-tag option is set then create a date based tag.
+      if ($options['date-tag']) {
+        $options['tag'] = date('Y-m-d=H-i');
+      }
       $result = $this->deployTag($options);
     }
     else {
@@ -57,7 +62,7 @@ class DeployCommands extends Tasks {
         ->success('Deployment succeeded.');
     }
     else {
-      throw new Exception('Deployment failed.');
+      throw new \Exception('Deployment failed.');
     }
   }
 
@@ -202,6 +207,7 @@ class DeployCommands extends Tasks {
     // them into the appropriate files with the appropriate permissions.
     $git_host = getenv('GIT_KNOWN_HOST');
     $ssh_key = getenv('SSH_PRIVATE_KEY');
+    $passphrase = getenv('SSHPASS');
     if (empty($git_host)) {
       throw new \UnexpectedValueException('A git host server key must be configured in the encrypted environment variables.');
     }
@@ -227,6 +233,13 @@ class DeployCommands extends Tasks {
         ->chmod('/root/.ssh/id_rsa', 0600)
         ->chmod('/root/.ssh', 0600)
     );
+    if (!empty($passphrase)) {
+      // If there is a passphrase - put it into the agent.
+      // This expects a shell script that is part of digitalpulp/cli container.
+      $collection->addTask(
+        $this->taskExec('/root/ssh-add.sh')
+      );
+    }
     $result = $collection->run();
     if ($result instanceof Result && !$result->wasSuccessful()) {
       throw new \Exception('Unable to set git host key.');

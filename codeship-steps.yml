@@ -12,4 +12,3 @@
   tag: master
   service: deploy
   command: php scripts/robo/BallastRunner.php deploy
-

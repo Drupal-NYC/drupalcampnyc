@@ -24,14 +24,31 @@ class SetupCommands extends Tasks {
   protected $config;
 
   /**
+   * Output next steps for Ballast.
+   */
+  public function setupInstructions() {
+    $this->io()->title('Getting Started');
+    $this->io()->text('If you wish to use Ballast as your local dev setup, run the following commands:');
+    $this->io()->listing([
+      'composer robo setup:drupal',
+      'composer robo setup:prerequisites',
+    ]);
+    $this->io()->newLine();
+    $this->io()
+      ->text('If you have previously installed Ballast on this machine you are now ready to cast-off and launch.');
+    $this->io()
+      ->text('To launch this Drupal site, use the following commands:');
+    $this->io()->listing([
+      'ahoy cast-off',
+      'or: ahoy launch  (if you have already called `ahoy cast-off` in another project.)',
+      'ahoy rebuild',
+    ]);
+  }
+
+  /**
    * Dispatches prerequisite setup tasks by OS.
    */
   public function setupPrerequisites() {
-    $isDev = getenv('COMPOSER_DEV_MODE');
-    if (!$isDev) {
-      // This is a production build - do not build the local dev environment.
-      return;
-    }
     $this->setConfig();
     switch (php_uname('s')) {
       case 'Darwin':
@@ -49,16 +66,6 @@ class SetupCommands extends Tasks {
           'ahoy cast-off',
           'ahoy rebuild',
         ]);
-        $this->io()->newLine();
-        $this->io()
-          ->text('If you have previously installed Ballast on this machine you are now ready to cast-off and launch.');
-        $this->io()
-          ->text('To launch this Drupal site, use the following commands:');
-        $this->io()->listing([
-          'ahoy cast-off (Only needed once after starting up your Mac.)',
-          'ahoy launch (`ahoy cast-off` will call this for you)',
-          'ahoy rebuild',
-        ]);
         break;
 
       default:
@@ -71,11 +78,6 @@ class SetupCommands extends Tasks {
    * Copy values from the config.yml and move drupal settings files into place.
    */
   public function setupDrupal() {
-    $isDev = getenv('COMPOSER_DEV_MODE');
-    if (!$isDev) {
-      // This is a prod build, this all should be in the repo.
-      return;
-    }
     $this->setConfig();
     // Set some simple variables for string expansion.
     $drupal = $this->config->getDrupalRoot();
