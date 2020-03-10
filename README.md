@@ -27,7 +27,7 @@ Note that the git repo already has a `.lando.yml` file so you shouldn't run `lan
 3. Change to that directory (e.g. `cd ~/Sites/drupalcampnyc`)
 4. `git clone git@github.com:Drupal-NYC/drupalcampnyc.git .`
 5. `lando start`
-6. `lando pull --database=live --files=live`
+6. `lando pull --database=live --files=live --code=none`
 
 You now have a fully functional local environment with the latest database and files from the Pantheon site's Live environment, accessible at [https://drupalcampnyc.lndo.site/](https://drupalcampnyc.lndo.site/)
 
@@ -39,7 +39,7 @@ Drush: `lando drush <command>`
 
 Drupal Console: `lando drupal <command>`
 
-Overwrite local database and files from Live: `lando pull --database=live --files=live`
+Overwrite local database and files with that of Live: `lando pull --database=live --files=live`
 
 Turn off Lando: `lando poweroff`
 
@@ -51,10 +51,6 @@ Start the site: `lando start`
 2. `lando rebuild`
 
 Now everything will run slower :)
-
-## Known Issues
-
-The Ballast toolset is tightly integrated with Composer, which causes problems when using other local environments such as Lando. In particular, settings.local.php is overwritten when certain Composer commands are executed, rendering it useless. Thankfully it is not included by settings.php because `$_ENV['PANTHEON_ENVIRONMENT']` is set by Lando's Pantheon recipe.
 
 # Local Environment Using Ballast
 Uses the Ballast local development toolset developed with the support of [Digital Pulp](https://www.digitalpulp.com).
