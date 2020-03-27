@@ -1,285 +1,77 @@
-# DrupalCamp NYC D8
+# Drupal Europe on Drupal 8
 
-[drupalcamp.nyc](https://www.drupalcamp.nyc) is hosted on Pantheon. You need to be a member of the DrupalCampNYC Pantheon site's "Team" to be able to:
-* Make a manual backup of the site
-* Download a copy of the site's database and/or files (sites/default/files)
-* Deploy to Pantheon's Test or Stage environment
+This project is based on the [Drupal project](https://github.com/drupal-composer/drupal-project/blob/8.x/README.md)
+composer template and additional information about it can be found in it's README.md file. 
 
-[Our canonical git repository](https://github.com/Drupal-NYC/drupalcampnyc) is on GitHub. You need to be a member of the GitHub Drupal-NYC organization's [DrupalCamp team](https://github.com/orgs/Drupal-NYC/teams/drupalcamp) (link only works if you are a member) in order to:
-* Push changes to the master branch
-* Approve pull requests
+## Local Development setup
+There are multiple ways of getting a Local Development setup:
 
-When changes are pushed to or merged into the master branch on GitHub, a build should be triggered on CodeShip. You need to be a member of the Drupalnyc [Devs CodeShip team](https://app.codeship.com/orgs/drupalnyc/teams/devs) (link only works if you are a member) to:
-* [View build status and history](https://app.codeship.com/projects/1ea10500-2c56-0136-bbdc-5ed18f0e55cd)
+1. The setups recommended by Amazee.io based on their infrastructure. (**recommended**)
+  1. Setup either Cachalot or Pygmy as [recommended by Amazee.io](https://docs.amazee.io/local_docker_development/local_docker_development.html)
+2. Using [Lando](https://docs.devwithlando.io/) – A configuration for Lando have been included in the code repository and can be initiated by running `lando start`
+3. Run your own flavor of Development environment
 
-The CodeShip build, among other things, deploys the changes to our Pantheon site's Dev environment.
+We are not requiring you to adapt your current favored development environment – but using one of the recommended, allows us better to guide or help you should there be any issues with it.
 
-# Local Environment Using Lando
+### 1.1 Pygmy or Cachalot
+There is a good step-by-step guide to how to get started with either of these.
 
-[Lando documentation](https://docs.lando.dev/)
+- Linux & OS X [Pygmy](https://docs.amazee.io/local_docker_development/pygmy.html)
+- OS X [Cachalot](https://docs.amazee.io/local_docker_development/os_x_cachalot.html)
 
-## Initial Setup
+Following the steps there and once ready to boot-up read the after setup steps.
 
-Note that the git repo already has a `.lando.yml` file so you shouldn't run `lando init`.
+### 2 Lando
+Lando is a docker based environment that works on windows, linux and osx – it is fairly easy to get up and running and once installed it just requires a `lando start` in the root folder.
 
-1. Download and install the latest release of Lando from https://github.com/lando/lando/releases
-2. Create a directory to contain the site (e.g. `mkdir ~/Sites/drupalcampnyc`)
-3. Change to that directory (e.g. `cd ~/Sites/drupalcampnyc`)
-4. `git clone git@github.com:Drupal-NYC/drupalcampnyc.git .`
-5. `lando start`
-6. `lando pull --database=live --files=live --code=none`
+### 3 Your personal flavor of Devleopment environment
+If you pick this option we assume you know what you are doing and can figure out issues related to your local environment by your self, but do ask and we can see what we might be able to do.
 
-You now have a fully functional local environment with the latest database and files from the Pantheon site's Live environment, accessible at [https://drupalcampnyc.lndo.site/](https://drupalcampnyc.lndo.site/)
+## Preparing the local installation
+First you need to setup the `settings.local.php` file, the `settings.php` file is configured to automatically include it if present.
+There is an `example.settings.local.php` file available, it contains the basic required to run the code locally.
+A special thing to notice here is that we are using the [Shield module](https://www.drupal.org/project/shield) to project the Develop/Testing server, this gets disabled on production and on your local environment using the configuration in the example.settings.local.php file.
 
-## Useful Commands
+    $config['shield.settings']['credentials'] = [];
 
-`git push` as normal.
+Now you are ready for including a database into the project, if you haven't already you need to ping @lslinnet, @ChandeepKhosa or @zelfje on slack and provide your public key so that we can have it added to our hosting setup.
+Once you do this you are agreeing to become a data processor with responsibility and by such will be priveleged to personal information about attendees.
 
-Drush: `lando drush <command>`
+    drush sa
+    
+Will list all Site-aliases, these include those bundled from Amazee.io (`@develop` & `@master`) please do not make use of the `@master` unless you know what you are doing.
+To get a working version of the database run:
 
-Drupal Console: `lando drupal <command>`
+    drush -y sql-sync @develop @self
+    
+    drush -y rsync @develop:%files @self:%files
 
-Overwrite local database and files with that of Live: `lando pull --database=live --files=live`
+Or as a one-liner.
 
-Turn off Lando: `lando poweroff`
+    drush -y sql-sync @develop @self && drush -y rsync @develop:%files @self:%files
 
-Start the site: `lando start`
+There is also for Pygmy & Cachalot a wrapper script in the containers that helps you with these calls
 
-## Enable XDebug
+    dsql @develop
+    dfiles @develop
+    
+Both `dsql` and `dfiles` requires you to be using either cachalot or pygmy.
 
-1. Edit .lando.yml and set `xdebug` to `true`.
-2. `lando rebuild`
+### Theming
+In the theme folder `web/themes/drupaleurope` you will find a package.json file, that should be installed using `npm install`.
+When the install is complete it can be started using `npm run watch` which boots the webpack configured compiler and keeps watching for changes.
 
-Now everything will run slower :)
+## Contribute
 
-# Local Environment Using Ballast
-Uses the Ballast local development toolset developed with the support of [Digital Pulp](https://www.digitalpulp.com).
+All changes should be based off the Master branch, Merged into the develop branch for verification and then merged into master once approved.
 
-Key contributors:
-  - [Shawn Duncan](https://github.com/FatherShawn)
-  - [Nick Maine](https://github.com/nickmaine)
+Testing server can be found at http://example.develop.zh2.compact.amazee.io/ 
 
-## A Composer template for Drupal projects with Docker
+    $config['shield.settings']['credentials'] = [
+        'shield' => [
+            'user' => 'example',
+            'pass' => 'example',
+        ],
+    ];
 
-This project template automates [Docker](https://www.docker.com/) based local development with [Drupal Composer](https://github.com/drupal-composer/drupal-project) workflows. The local development automation is
-currently only optimized for macOS but Linux and possibly Windows
-may follow.
-
-- Site dependencies are managed with [Composer](https://getcomposer.org/).
-- Setup and management of Docker is automated.
-
-## Getting Started
-
-1. First you need to [install composer](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx).
-   _Note: The instructions below refer to the [global composer installation](https://getcomposer.org/doc/00-intro.md#globally).
-     You might need to replace `composer` with `php composer.phar`
-     (or similar) for your setup._
-
-2. MacOS users also need to have [Homebrew](https://brew.sh/).
-
-3. Your Docker Sites need a home.
-    * Choose or create a file folder to hold all the site folders for projects
-managed with this approach.
-    * If you have any existing files exported via
-NFS they must not be in the chosen folder.
-    * The easiest way forward is
-to create a new folder such as `~/DockerSites`.
-
-
-## Install the Project
-```
-composer install
-```
-All docker dependencies and Drupal core dependencies along with Drupal
-core will be installed.
-
-You should commit all files not excluded by the .gitignore file.
-
-## What does the template do?
-
-When installing the given `composer.json` some tasks are taken care of:
-
-* Drupal will be installed in the `web`-directory.
-* Autoloader is implemented to use the generated composer autoloader in
-  `vendor/autoload.php`, instead of the one provided by Drupal
-  (`web/vendor/autoload.php`).
-* Modules (packages of type `drupal-module`) will be placed
-  in `web/modules/contrib/`
-* Theme (packages of type `drupal-theme`) will be placed
-  in `web/themes/contrib/`
-* Profiles (packages of type `drupal-profile`) will be placed
-  in `web/profiles/contrib/`
-* Creates default writable versions of `settings.php`
-  and `services.yml`.
-* Creates `web/sites/default/files`-directory.
-* Latest version of drush is installed locally for use
-  at `vendor/bin/drush`.
-* Latest version of DrupalConsole is installed locally for use
-  at `vendor/bin/drupal`.
-* The local machine is checked for dependencies to run the docker
-  development setup.  Any missing dependencies are installed
-  via homebrew. The following are required for Mac:
-    * Ahoy
-    * VirtualBox
-    * Docker
-    * Docker Compose
-    * pre-commit by Yelp
-    * Docker Machine NFS
-* A docker based http-proxy & DNS service is created such that any
-  docker container with host name ending in `.dpulp` has traffic routed
-  from the host to the proxy.  No editing of /etc/hosts required for
-  new projects.
-
-## Updates and Maintenance
-
-### Updating Drupal Core
-
-This project will attempt to keep all of your Drupal Core files
-up-to-date; the project [drupal-composer/drupal-scaffold](https://github.com/drupal-composer/drupal-scaffold) is used
-to ensure that your scaffold files are updated every time drupal/core
-is updated. If you customize any of the "scaffolding" files (commonly
-`.htaccess`), you may need to merge conflicts if any of your modified
-files are updated in a new release of Drupal core.
-
-Follow the steps below to update your core files.
-
-1. Edit `composer.json` and explicitly set the current version on: `drupal/core` `webflo/drupal-core-strict` `webflo/drupal-core-require-dev`
-2. Run `composer update drupal/core webflo/drupal-core-strict webflo/drupal-core-require-dev --with-dependencies` to update
-   Drupal Core and its dependencies.
-2. Run `git diff` to determine if any of the scaffolding files have
-   changed. Review the files for any changes and restore any
-   customizations to `.htaccess` or `robots.txt`.
-3. Commit everything all together in a single commit, so `web` will
-   remain in sync with the `core` when checking out branches or running
-   `git bisect`.
-4. In the event that there are non-trivial conflicts in step 2, you may
-   wish to perform these steps on a branch, and use `git merge`
-   to combine the updated core files with your customized files. This
-   facilitates the use of a [three-way merge tool such as kdiff3](http://www.gitshah.com/2010/12/how-to-setup-kdiff-as-diff-tool-for-git.html). This
-   setup is not necessary if your changes are simple;
-   keeping all of your modifications at the beginning or end of the file
-   is a good strategy to keep merges easy.
-
-### Updating and maintaining `composer.json`
-
-At the _Managing Drupal Projects with Composer_ BOF at DrupalCon
-Baltimore, one of the common pain points was merge conflicts in
-`composer.json` and `composer.lock`.  It was the strong consensus of
-those gathered that for development teams, there should be one
-designated maintainer on the team for these files.  New modules, updates
-and so forth should be requested from the maintainer, who is generally
-the project lead.
-
-With `composer require ...` you can download new dependencies, including
-Drupal contributed modules to your installation. To install the latest
-versions of multiple modules:
-
-```
-composer require drupal/block_visibility_groups drupal/config_split drupal/easy_breadcrumb drupal/focal_point drupal/media_entity_image drupal/media_entity_browser drupal/field_formatter drupal/paragraphs drupal/inline_entity_form drupal/pathauto drupal/page_manager drupal/viewsreference
-```
-
-You also can require bower components:
-
-```
-composer require bower-asset/formstone
-```
-### Local Developement Commands
-The docker best practice is to work in the host and send commands to a
-container when needed.  This project uses [Ahoy](https://github.com/ahoy-cli/ahoy) as an abstraction tool to
-further simplify this flow for developers. Ahoy commands work anywhere
-at or below the root directory of the project.
-
-- `ahoy harbor` -  Build the harbor for your docks.  Run this command
-  _once_ after the _first time_ you `composer install` a dp-docker project.
-- `ahoy cast-off` - Launch the global tools needed for local
-  development. Run this command once after you boot your computer.
-- `ahoy launch` - Launch this project site.
-- `ahoy dock` - Stops this project site and 'returns to port.'
-- `ahoy drush command` - Executes _command_ via drush in the site.
-- `ahoy drupal command` - Executes _command_ via drupal console
-  in the site.
-- `ahoy gulp command` - Executes _command_ via gulp in the site theme
-  folder.
-- `ahoy npm command` - Executes _command_ via npm in the site theme
-  folder.
-- `ahoy npm-update` - Runs 'npm install' and 'npm-shrinkwrap' in the
-  site theme folder.
-- `ahoy compile` - Compile the site theme assets.
-- `ahoy rebuild env` - Sync with a server database and compile front
-  end. Pass an environment argument to use with the drush alias
-  (@shortname.env)
-
-
-
-### Generate `composer.json` from existing project
-
-With using [the "Composer Generate" drush extension](https://www.drupal.org/project/composer_generate)
-you can now generate a basic `composer.json` file from an existing
-project. Note that the generated `composer.json` will differ from this
-project's file. We recommend comparing the resulting output with this
-project's and editing the composer.json to merge them by hand.
-
-
-## FAQ
-
-### Should I commit the contrib modules I download?
-
-Composer recommends **no**. They provide [argumentation against but also
-workrounds if a project decides to do it anyway](https://getcomposer.org/doc/faqs/should-i-commit-the-dependencies-in-my-vendor-directory.md).
-
-### Should I commit the scaffolding files?
-
-The [drupal-scaffold](https://github.com/drupal-composer/drupal-scaffold) plugin can download the scaffold files (like
-index.php, update.php, …) to the web/ directory of your project. We
-generally commit these. If you have not customized those files you could
-choose to not check them into your version control system (e.g. git). If
-that is the case for your project it might be convenient to
-automatically run the drupal-scaffold plugin after every install or
-update of your project. You can achieve that by registering
-`@drupal-scaffold` as post-install and post-update command in your
-composer.json:
-
-```json
-{
-"scripts": {
-    "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
-    "post-install-cmd": [
-        "@drupal-scaffold",
-        "..."
-    ],
-    "post-update-cmd": [
-        "@drupal-scaffold",
-        "..."
-    ]
-  }
-}
-```
-### How can I apply patches to downloaded modules?
-
-If you need to apply patches (depending on the project being modified, a
-pull request is often a better solution), you can do so with the
-[composer-patches](https://github.com/cweagans/composer-patches) plugin.
-
-To add a patch to drupal module foobar insert the patches section in the
-extra section of composer.json:
-```json
-{
-"extra": {
-    "patches": {
-        "drupal/foobar": {
-            "Patch description": "URL to patch"
-        }
-    }
-  }
-}
-```
-
-## Appreciation
-We are grateful for the following open source projects that made this project possible!
-
-- [Drupal](https://www.drupal.org/)
-- [Drupal Composer Project](https://github.com/drupal-composer/drupal-project)
-- [Drupal Docker](http://www.drupaldocker.org/)
-- [Composer](https://getcomposer.org)
-- [Robo](http://robo.li/)
-- [Ahoy](http://www.ahoycli.com/en/latest/)
+Additional information about contribution can be found in [CONTRIBUTE.md](CONTRIBUTING.md)

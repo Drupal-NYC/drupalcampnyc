@@ -1,0 +1,80 @@
+<?php
+
+/**
+ * @file
+ * Install, uninstall and update hooks
+ *
+ * used for enabling, disabling modules, removing content / fields or other operations that can not be done using
+ * configuration management.
+ */
+
+use Drupal\node\Entity\Node;
+use Drupal\paragraphs\Entity\Paragraph;
+
+/**
+ * Fix the header region of all pages.
+ */
+function de_core_update_8001() {
+    $nids = \Drupal::entityQuery('node')
+        ->condition('type', 'page')
+        ->condition('nid', '1', '<>')
+        ->execute();
+
+    $pages = Node::loadMultiple($nids);
+    foreach ($pages as $page) {
+        // Header
+        /** @var Node $page */
+        if ($page->get('field_header')->getValue()) {
+            foreach ($page->get('field_header')->getValue() as $h) {
+                $p = Paragraph::load($h['target_id']);
+                if ($p && $p->getType() == 'deck_1_column') {
+                    $title = $p->get('field_title')->getValue();
+                    $p->delete();
+                }
+            }
+        }
+        if (!isset($title)) {
+            $title = $page->getTitle();
+        }
+        $paragraph = Paragraph::create([
+            'type' => 'deck_header',
+            'field_title' => $title,
+        ]);
+
+        /** @var Paragraph $paragraph */
+        $paragraph->save();
+
+        $page->set('field_header', [
+            [
+                'target_id' => $paragraph->id(),
+                'target_revision_id' => $paragraph->getRevisionId(),
+            ],
+        ]);
+
+        // Sponsorbar
+        $page->set('field_sponsors', [
+            [
+                'target_id' => 'element_list_sponsors',
+                'display_id' => 'block_1',
+                'data' => 'a:5:{s:5:"pager";N;s:8:"argument";s:7:"diamond";s:5:"limit";N;s:6:"offset";N;s:5:"title";N;}',
+            ],
+        ]);
+        $page->save();
+    }
+}
+
+/**
+ * Populate speakers to field_speakers.
+ */
+function de_core_update_8002() {
+  $nids = \Drupal::entityQuery('node')
+    ->condition('type', 'session')
+    ->notExists('field_speakers')
+    ->execute();
+
+  foreach (Node::loadMultiple($nids) as $node) {
+    $user = $node->getOwner();
+    $node->field_speakers->entity = $user;
+    $node->save();
+  }
+}

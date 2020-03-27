@@ -1,0 +1,62 @@
+uuid: acef6d23-59f1-48e2-a0f6-2f02953e81c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.deck_hero.field_background
+    - field.field.paragraph.deck_hero.field_elements
+    - field.field.paragraph.deck_hero.field_icon
+    - field.field.paragraph.deck_hero.field_style
+    - field.field.paragraph.deck_hero.field_title
+    - paragraphs.paragraphs_type.deck_hero
+  module:
+    - empty_fields
+    - entity_reference_revisions
+    - image
+    - text
+id: paragraph.deck_hero.default
+targetEntityType: paragraph
+bundle: deck_hero
+mode: default
+content:
+  field_background:
+    weight: 2
+    label: hidden
+    settings:
+      image_style: ''
+    third_party_settings:
+      empty_fields:
+        handler: ''
+    type: image_url
+    region: content
+  field_elements:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings:
+      empty_fields:
+        handler: ''
+    region: content
+  field_icon:
+    type: entity_reference_entity_view
+    weight: 3
+    label: hidden
+    settings:
+      view_mode: logo
+      link: false
+    third_party_settings:
+      empty_fields:
+        handler: ''
+    region: content
+  field_title:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  field_style: true

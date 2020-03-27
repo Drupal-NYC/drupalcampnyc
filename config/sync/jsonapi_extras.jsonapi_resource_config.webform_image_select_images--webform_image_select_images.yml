@@ -1,0 +1,91 @@
+uuid: 7f231e4b-89a8-4c82-a432-85fe1a4944a6
+langcode: en
+status: true
+dependencies:
+  module:
+    - webform_image_select
+id: webform_image_select_images--webform_image_select_images
+disabled: true
+path: webform_image_select_images/webform_image_select_images
+resourceType: webform_image_select_images--webform_image_select_images
+resourceFields:
+  id:
+    fieldName: id
+    publicName: id
+    enhancer:
+      id: ''
+    disabled: false
+    advancedOptionsIcon: ''
+    enhancer_label: ''
+  uuid:
+    fieldName: uuid
+    publicName: uuid
+    enhancer:
+      id: ''
+    disabled: false
+    advancedOptionsIcon: ''
+    enhancer_label: ''
+  langcode:
+    fieldName: langcode
+    publicName: langcode
+    enhancer:
+      id: ''
+    disabled: false
+    advancedOptionsIcon: ''
+    enhancer_label: ''
+  status:
+    fieldName: status
+    publicName: status
+    enhancer:
+      id: ''
+    disabled: false
+    advancedOptionsIcon: ''
+    enhancer_label: ''
+  dependencies:
+    fieldName: dependencies
+    publicName: dependencies
+    enhancer:
+      id: ''
+    disabled: false
+    advancedOptionsIcon: ''
+    enhancer_label: ''
+  third_party_settings:
+    fieldName: third_party_settings
+    publicName: third_party_settings
+    enhancer:
+      id: ''
+    disabled: false
+    advancedOptionsIcon: ''
+    enhancer_label: ''
+  _core:
+    fieldName: _core
+    publicName: _core
+    enhancer:
+      id: ''
+    disabled: false
+    advancedOptionsIcon: ''
+    enhancer_label: ''
+  label:
+    fieldName: label
+    publicName: label
+    enhancer:
+      id: ''
+    disabled: false
+    advancedOptionsIcon: ''
+    enhancer_label: ''
+  category:
+    fieldName: category
+    publicName: category
+    enhancer:
+      id: ''
+    disabled: false
+    advancedOptionsIcon: ''
+    enhancer_label: ''
+  images:
+    fieldName: images
+    publicName: images
+    enhancer:
+      id: ''
+    disabled: false
+    advancedOptionsIcon: ''
+    enhancer_label: ''

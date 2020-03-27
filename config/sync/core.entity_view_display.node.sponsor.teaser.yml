@@ -1,0 +1,53 @@
+uuid: 64d7482d-c3dc-4a63-92eb-75ed94c02cf3
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.sponsor.field_level
+    - field.field.node.sponsor.field_logo
+    - field.field.node.sponsor.field_module_name
+    - field.field.node.sponsor.field_track_sponsorship
+    - field.field.node.sponsor.field_website
+    - node.type.sponsor
+  module:
+    - empty_fields
+    - user
+id: node.sponsor.teaser
+targetEntityType: node
+bundle: sponsor
+mode: teaser
+content:
+  field_logo:
+    type: entity_reference_entity_view
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      view_mode: logo
+      link: false
+    third_party_settings:
+      empty_fields:
+        handler: ''
+  field_module_name:
+    type: string
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  field_address: true
+  field_contact_name: true
+  field_contact_number: true
+  field_country: true
+  field_e_mail: true
+  field_facebook: true
+  field_level: true
+  field_module: true
+  field_track_sponsorship: true
+  field_twitter: true
+  field_website: true
+  links: true
+  shariff_field: true

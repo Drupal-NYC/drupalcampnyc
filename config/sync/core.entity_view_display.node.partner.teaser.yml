@@ -1,0 +1,43 @@
+uuid: d635275b-c165-40da-9fb6-110daf4e0803
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.partner.body
+    - field.field.node.partner.field_logo
+    - field.field.node.partner.field_partner_type
+    - field.field.node.partner.field_website
+    - node.type.partner
+  module:
+    - empty_fields
+    - user
+id: node.partner.teaser
+targetEntityType: node
+bundle: partner
+mode: teaser
+content:
+  field_logo:
+    type: entity_reference_entity_view
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      view_mode: logo
+      link: false
+    third_party_settings:
+      empty_fields:
+        handler: ''
+  field_partner_type:
+    type: string
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_website: true
+  links: true
+  shariff_field: true

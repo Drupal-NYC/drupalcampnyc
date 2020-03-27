@@ -1,0 +1,23 @@
+uuid: f5026849-6786-486e-9e63-b17ad6a82ce7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_terms
+    - node.type.bof
+id: node.bof.field_terms
+field_name: field_terms
+entity_type: node
+bundle: bof
+label: 'Terms of Service'
+description: 'By organizing a BoF at Drupal Europe you agree to follow the <a href="/terms" target="_blank">Terms of service</a> and by extension of that abide to the <a href="/coc" target="_blank">Code of Conduct</a> for the Conference. If you have any questions about these please <a href="/legal"  target="_blank">get in contact with us</a>, we will handle all requests as confidential.'
+required: true
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'I agree to the Terms of Service for Speakers'
+  off_label: 'I do not agree.'
+field_type: boolean

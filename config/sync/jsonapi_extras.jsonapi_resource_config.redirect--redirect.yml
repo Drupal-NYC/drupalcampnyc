@@ -1,0 +1,91 @@
+uuid: 6c8ca4cb-a754-42b6-8278-4e91a1050602
+langcode: en
+status: true
+dependencies:
+  module:
+    - redirect
+id: redirect--redirect
+disabled: true
+path: redirect/redirect
+resourceType: redirect--redirect
+resourceFields:
+  rid:
+    fieldName: rid
+    publicName: rid
+    enhancer:
+      id: ''
+    disabled: false
+    advancedOptionsIcon: ''
+    enhancer_label: ''
+  uuid:
+    fieldName: uuid
+    publicName: uuid
+    enhancer:
+      id: ''
+    disabled: false
+    advancedOptionsIcon: ''
+    enhancer_label: ''
+  hash:
+    fieldName: hash
+    publicName: hash
+    enhancer:
+      id: ''
+    disabled: false
+    advancedOptionsIcon: ''
+    enhancer_label: ''
+  type:
+    fieldName: type
+    publicName: type
+    enhancer:
+      id: ''
+    disabled: false
+    advancedOptionsIcon: ''
+    enhancer_label: ''
+  uid:
+    fieldName: uid
+    publicName: uid
+    enhancer:
+      id: ''
+    disabled: false
+    advancedOptionsIcon: ''
+    enhancer_label: ''
+  redirect_source:
+    fieldName: redirect_source
+    publicName: redirect_source
+    enhancer:
+      id: ''
+    disabled: false
+    advancedOptionsIcon: ''
+    enhancer_label: ''
+  redirect_redirect:
+    fieldName: redirect_redirect
+    publicName: redirect_redirect
+    enhancer:
+      id: ''
+    disabled: false
+    advancedOptionsIcon: ''
+    enhancer_label: ''
+  language:
+    fieldName: language
+    publicName: language
+    enhancer:
+      id: ''
+    disabled: false
+    advancedOptionsIcon: ''
+    enhancer_label: ''
+  status_code:
+    fieldName: status_code
+    publicName: status_code
+    enhancer:
+      id: ''
+    disabled: false
+    advancedOptionsIcon: ''
+    enhancer_label: ''
+  created:
+    fieldName: created
+    publicName: created
+    enhancer:
+      id: ''
+    disabled: false
+    advancedOptionsIcon: ''
+    enhancer_label: ''

@@ -1,0 +1,135 @@
+uuid: 673aa673-350b-46ed-86d3-0e43b9329f7b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.bof.body
+    - field.field.node.bof.field_ends_at
+    - field.field.node.bof.field_horizontal
+    - field.field.node.bof.field_room
+    - field.field.node.bof.field_start
+    - field.field.node.bof.field_summary
+    - field.field.node.bof.field_terms
+    - field.field.node.bof.field_timeslot
+    - field.field.node.bof.field_type
+    - field.field.node.bof.field_vertical
+    - node.type.bof
+  module:
+    - datetime
+    - empty_fields
+    - field_group
+    - options
+    - text
+    - user
+third_party_settings:
+  field_group:
+    group_info:
+      children:
+        - field_type
+        - field_room
+        - field_start
+        - field_ends_at
+        - field_vertical
+        - field_horizontal
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: table-style
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Info
+id: node.bof.full
+targetEntityType: node
+bundle: bof
+mode: full
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_ends_at:
+    type: datetime_default
+    weight: 3
+    region: content
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: time
+    third_party_settings:
+      empty_fields:
+        handler: ''
+  field_horizontal:
+    weight: 5
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_room:
+    type: entity_reference_label
+    weight: 1
+    region: content
+    label: above
+    settings:
+      link: false
+    third_party_settings:
+      empty_fields:
+        handler: ''
+  field_start:
+    type: datetime_default
+    weight: 2
+    region: content
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: day
+    third_party_settings:
+      empty_fields:
+        handler: ''
+  field_summary:
+    type: text_default
+    weight: 1
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_type:
+    type: list_default
+    weight: 0
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_vertical:
+    type: entity_reference_label
+    weight: 4
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  flag_session_schedule:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_terms: true
+  field_timeslot: true
+  shariff_field: true

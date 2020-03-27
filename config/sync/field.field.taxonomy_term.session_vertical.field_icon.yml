@@ -1,0 +1,28 @@
+uuid: 77e1adfc-cc2d-482e-838b-729e56631632
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_icon
+    - media.type.icon
+    - taxonomy.vocabulary.session_vertical
+id: taxonomy_term.session_vertical.field_icon
+field_name: field_icon
+entity_type: taxonomy_term
+bundle: session_vertical
+label: Icon
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      icon: icon
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

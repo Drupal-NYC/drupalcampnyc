@@ -1,0 +1,15 @@
+uuid: 30e9a1f2-6767-4764-8786-06f7a056dd6e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.element_session_overview.field_session_overview
+    - paragraphs.paragraphs_type.element_session_overview
+id: paragraph.element_session_overview.preview
+targetEntityType: paragraph
+bundle: element_session_overview
+mode: preview
+content: {  }
+hidden:
+  field_session_overview: true

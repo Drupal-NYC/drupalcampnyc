@@ -1,0 +1,9 @@
+uuid: f7f48a71-f56b-4929-aaf3-ff76b06fcd98
+langcode: en
+status: true
+dependencies: {  }
+id: element_tickets_widget
+label: 'Element - Tickets widget'
+icon_uuid: null
+description: 'The pretix Ticket sales iframe widget'
+behavior_plugins: {  }

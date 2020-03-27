@@ -1,0 +1,22 @@
+uuid: 3e913aad-ece1-49b3-9814-dbf4cbb8f21c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupaleurope
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: drupaleurope_messages
+theme: drupaleurope
+region: precontent
+weight: -4
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

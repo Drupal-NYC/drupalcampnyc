@@ -1,0 +1,20 @@
+uuid: 54171724-ff66-4254-8b47-b5cfad301e12
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_u_acad_title_pre
+  module:
+    - user
+id: user.user.field_u_acad_title_pre
+field_name: field_u_acad_title_pre
+entity_type: user
+bundle: user
+label: 'Academic title (prefix)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

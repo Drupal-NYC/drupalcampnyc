@@ -1,0 +1,15 @@
+uuid: c5fdfb57-d564-46b5-9e17-b199a7710ccd
+langcode: en
+status: true
+dependencies: {  }
+id: node__social_event
+label: 'Content: Social event'
+tags:
+  twitter_cards_page_url: '[node:url]'
+  twitter_cards_site: '@example'
+  twitter_cards_image: 'https://example.org/sites/default/files/inline-images/Drupal_Europe_logo_vertical_exclzone.png'
+  twitter_cards_data1: '[node:field_start:date:day]'
+  twitter_cards_type: summary
+  twitter_cards_label1: Time
+  twitter_cards_title: '[node:title]'
+  twitter_cards_description: '[node:field_summary]'

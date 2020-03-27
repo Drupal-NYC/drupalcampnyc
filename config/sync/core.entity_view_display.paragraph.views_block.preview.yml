@@ -1,0 +1,15 @@
+uuid: e81b6331-ba70-4bba-a402-980b681a88b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.views_block.field_pick_view
+    - paragraphs.paragraphs_type.views_block
+id: paragraph.views_block.preview
+targetEntityType: paragraph
+bundle: views_block
+mode: preview
+content: {  }
+hidden:
+  field_pick_view: true

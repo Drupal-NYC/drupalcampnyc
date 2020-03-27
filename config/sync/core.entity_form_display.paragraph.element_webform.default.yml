@@ -1,0 +1,48 @@
+uuid: 4c69db13-5bca-45a0-90c8-768e77b381ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.element_webform.field_access_notice
+    - field.field.paragraph.element_webform.field_webform
+    - paragraphs.paragraphs_type.element_webform
+  module:
+    - content_moderation
+    - text
+    - webform
+id: paragraph.element_webform.default
+targetEntityType: paragraph
+bundle: element_webform
+mode: default
+content:
+  field_access_notice:
+    weight: 2
+    settings:
+      rows: 2
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_webform:
+    weight: 1
+    settings:
+      default_data: true
+    third_party_settings: {  }
+    type: webform_entity_reference_select
+    region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 0
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 3
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  created: true
+  uid: true

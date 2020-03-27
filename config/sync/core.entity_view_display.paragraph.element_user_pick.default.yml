@@ -1,0 +1,26 @@
+uuid: 4cd5276d-bbd1-43e6-bda3-82e42c2e0384
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.element_user_pick.field_select_user
+    - paragraphs.paragraphs_type.element_user_pick
+  module:
+    - empty_fields
+id: paragraph.element_user_pick.default
+targetEntityType: paragraph
+bundle: element_user_pick
+mode: default
+content:
+  field_select_user:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: volunteer_profile
+      link: false
+    third_party_settings:
+      empty_fields:
+        handler: ''
+    type: entity_reference_entity_view
+    region: content
+hidden: {  }

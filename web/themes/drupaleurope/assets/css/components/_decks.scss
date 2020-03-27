@@ -1,0 +1,134 @@
+.deck {
+  @include clearfix;
+  padding: 10px 10px 10px 10px;
+}
+
+.deck,
+.deck-hero .container {
+  opacity: 1;
+  margin: 0 auto;
+}
+// Some configuration in paragraphs allow for nested decks, to fix this issue we ignore the second layer of decks
+.deck .deck {
+  width: inherit;
+  max-width: inherit;
+  opacity: inherit;
+  margin: inherit;
+  padding: 0;
+}
+.deck > * {
+  margin: 0;
+}
+
+.column--wide {
+  flex: 0 0 100%;
+}
+.column--half {
+  flex: 0 0 48%;
+}
+.column--2of3 {
+  flex: 0 0 66%;
+}
+.column--1of3 {
+  flex: 0 0 33%;
+}
+@media (max-width: 667px) {
+  .column--wide {
+    flex: 1;
+  }
+  .column--half {
+    flex: 1;
+  }
+  .column--2of3 {
+    flex: 1;
+  }
+  .column--1of3 {
+    flex: 1;
+  }
+}
+
+.deck {
+  h1,
+  h2 {
+    margin: 0;
+  }
+}
+
+.deck-header.deck--type--deck-header {
+    //padding: 6rem 0 1rem 0;
+    font-size: 3rem;
+}
+
+.deck img {
+  max-width: 100%;
+  height: auto;
+
+  .path-infoscreens & {
+    width: 100%;
+  }
+}
+
+/* To Do: extract h2 styling for re-use (variables) */
+.view-id-taxonomy_term .view-header > h2,
+.view-taxonomy-term .field--name-field-track-sponsors .field__label,
+.view-taxonomy-term .field--name-field-track-chairs .field__label,
+.deck > h2 {
+  text-align: center;
+  font-size: 30px;
+  position: relative;
+  margin-bottom: 40px;
+
+  &:after {
+    background-image: linear-gradient(to right, #33a8e5, #374d9c, #ab2d92);
+    content: "";
+    position: absolute;
+    width: 140px;
+    height: 3px;
+    bottom: -18px;
+    left: calc(50% - 70px);
+  }
+}
+
+@import "decks/hero";
+@import "decks/two_columns";
+
+.element--call-to-action {
+  z-index: 2;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-flow: column;
+  @include clearfix;
+  a {
+    display:inline-block;
+    @include cta;
+    & + a {
+      margin-top: $grid-gap;
+    }
+  }
+  @include responsive(desktop) {
+    margin-bottom: 70px;
+  }
+}
+
+
+.deck-two-column,
+.deck-one-column {
+  .deck--content {
+    padding-bottom: 4rem;
+  }
+}
+
+
+.deck-header.deck--type--deck-header {
+  font-size: 3rem;
+  padding: 3rem 1rem;
+  line-height: 1.5;
+}
+
+/* todo: rethink in case we need a pager in paragraphs */
+.paragraph .pager {
+  display: none;
+}

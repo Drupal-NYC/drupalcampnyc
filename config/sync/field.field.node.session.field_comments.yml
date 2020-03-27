@@ -1,0 +1,21 @@
+uuid: 1e5c3ede-5c42-4bd2-b62d-29fb0c0b96af
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_comments
+    - node.type.session
+  module:
+    - text
+id: node.session.field_comments
+field_name: field_comments
+entity_type: node
+bundle: session
+label: 'Message to the session selection team'
+description: "<p>Is there anything else we need to be aware of? Information about co-speakers? Accessibility requirements? Dates when you are not available to speak? Or maybe something completely different - please let us know.</p>\r\n<p><em>Please note:</em> this field will <b>not</b> be made available to the public, but the Session selection team(s) and the website organization team will be able to view it. If you prefer some information to be handled confidentially please reach out to the organising team using the contact information at our <a href=\"/legal\" target=\"_blank\">Legal page</a></p>"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

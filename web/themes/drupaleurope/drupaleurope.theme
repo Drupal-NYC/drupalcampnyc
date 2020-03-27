@@ -1,0 +1,118 @@
+<?php
+
+
+use Drupal\views\Views;
+
+use Drupal\paragraphs\Entity\Paragraph;
+use Drupal\user\Entity\User;
+
+function drupaleurope_preprocess_paragraph__deck_hero(&$variables) {
+    $paragraph = $variables['paragraph'];
+    $variables['using_background_image'] = FALSE;
+    if (!$paragraph->field_background->isEmpty()) {
+        /** @var \Drupal\file\Entity\File $file */
+        $file = $paragraph->field_background->entity;
+        $image = $file->url();
+        $variables['attributes']['style'][] = "background-image: url('{$image}');";
+        $variables['attributes']['style'][] = "background-size: cover;";
+        $variables['attributes']['style'][] = "background-position: center center;";
+        $variables['using_background_image'] = TRUE;
+    }
+}
+
+function drupaleurope_preprocess_paragraph__element_sessions(&$variables) {
+    $expertise_tid = 'all';
+    $industry_tid = 'all';
+    if ($variables['content']['field_featured'][0]['#markup'] == 'Off') {
+        $featured = 'all';
+    }
+    else {
+        $featured = 1;
+    };
+    $args = [
+        $industry_tid,
+        $expertise_tid,
+        $featured
+    ];
+    // @todo Add Vertical and Horizontal filtering support.
+    //kint($variables['content']['field_vertical']); die();
+    //kint($variables['content']['field_horizontal']); die();
+    $view = Views::getView('element_list_sessions');
+    if (is_object($view)) {
+        $view->setArguments($args);
+        $view->setDisplay('default');
+        $view->preExecute();
+        $view->execute();
+        $variables['rendered_view'] = $view->buildRenderable();
+    }
+}
+
+/**
+ * Implements hook_preprocess_html().
+ */
+function drupaleurope_preprocess_html(&$variables) {
+  $variables['node_edit_form'] = FALSE;
+  if (in_array(\Drupal::routeMatch()->getRouteName(), ['node.add', 'entity.node.edit_form'])) {
+    $variables['node_edit_form'] = TRUE;
+  }
+
+  // Page class based on current internal path.
+  $current_path = \Drupal::service('path.current')->getPath();
+  $current_path = ltrim($current_path, '/');
+  $variables['attributes']['class'][] = 'path-' . \Drupal\Component\Utility\Html::cleanCssIdentifier($current_path);
+
+  $current_uri = \Drupal::request()->getRequestUri();
+  $current_uri = ltrim($current_uri, '/');
+  $current_uri = \Drupal\Component\Utility\Html::cleanCssIdentifier($current_uri);
+  $current_uri = str_replace('cssdebug','', $current_uri);
+  $variables['attributes']['class'][] = 'path-' . $current_uri;
+}
+
+
+/**
+ * Implements hook_preprocess_user().
+ *
+ * Base variables to differentiate between teaser and full-page rendering.
+ */
+function drupaleurope_preprocess_user(&$variables) {
+    $variables['view_mode'] = $variables['elements']['#view_mode'];
+    $user = $variables['user'];
+    $variables['page'] = ($variables['view_mode'] == 'full' && drupaleurope_user_is_page($user));
+}
+
+/**
+ * Given a user it checks against the current page if that user is the one being specifically rendered.
+ *
+ * @param \Drupal\user\UserInterface $user
+ * @return bool
+ */
+function drupaleurope_user_is_page(\Drupal\user\UserInterface $user) {
+    $route_match = \Drupal::routeMatch();
+    if ($route_match->getRouteName() == 'entity.user.canonical') {
+        $page_user = $route_match->getParameter('user');
+    }
+    return (!empty($page_user) ? $page_user->id() == $user->id() : FALSE);
+}
+
+/**
+ * Implements hook_theme_suggestions_user_alter().
+ */
+function drupaleurope_theme_suggestions_user_alter(&$suggestions, $vars, $hook) {
+    // Get view mode - Sanitized.
+    $view_mode = strtr($vars['elements']['#view_mode'], '.', '_');
+
+    $suggestions[] = 'user__' . $view_mode;
+}
+
+/**
+ * Implements hook_preprocess_node().
+ */
+function drupaleurope_preprocess_node(&$variables) {
+  if (!in_array($variables['node']->getType(), ['social_event', 'bof'])) {
+    return;
+  }
+
+  $view_builder = \Drupal::entityTypeManager()->getViewBuilder('user');
+  $variables['author_compact'] = $view_builder->view($variables['node']->getOwner(), 'compact');
+
+}

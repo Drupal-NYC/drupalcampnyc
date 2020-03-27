@@ -1,0 +1,122 @@
+uuid: 5ebba000-557b-44b3-9a95-af07e5a14a6b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.social_event.body
+    - field.field.node.social_event.field_comments
+    - field.field.node.social_event.field_ends_at
+    - field.field.node.social_event.field_room
+    - field.field.node.social_event.field_si_sponsor
+    - field.field.node.social_event.field_start
+    - field.field.node.social_event.field_summary
+    - field.field.node.social_event.field_terms
+    - field.field.node.social_event.field_type
+    - node.type.social_event
+  module:
+    - datetime
+    - empty_fields
+    - field_group
+    - options
+    - text
+    - user
+third_party_settings:
+  field_group:
+    group_info:
+      children:
+        - field_start
+        - field_ends_at
+        - field_room
+      parent_name: ''
+      weight: 2
+      format_type: html_element
+      format_settings:
+        label: Info
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: scheduled-at
+      label: Info
+    group_type_and_track:
+      children:
+        - field_type
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: session-type-and-track
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Type and track'
+id: node.social_event.teaser
+targetEntityType: node
+bundle: social_event
+mode: teaser
+content:
+  field_ends_at:
+    type: datetime_default
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: time
+    third_party_settings:
+      empty_fields:
+        handler: ''
+  field_room:
+    type: entity_reference_label
+    weight: 4
+    region: content
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+  field_start:
+    type: datetime_default
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: day
+    third_party_settings:
+      empty_fields:
+        handler: ''
+  field_summary:
+    type: text_default
+    weight: 1
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_type:
+    type: list_default
+    weight: 0
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  flag_session_schedule:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  content_moderation_control: true
+  field_comments: true
+  field_si_sponsor: true
+  field_terms: true
+  links: true
+  shariff_field: true

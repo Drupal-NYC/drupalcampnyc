@@ -1,0 +1,38 @@
+uuid: d03588eb-440a-49e6-987b-26b775a084c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.element_webform.field_access_notice
+    - field.field.paragraph.element_webform.field_webform
+    - paragraphs.paragraphs_type.element_webform
+  module:
+    - empty_fields
+    - text
+    - webform
+id: paragraph.element_webform.preview
+targetEntityType: paragraph
+bundle: element_webform
+mode: preview
+content:
+  field_access_notice:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_webform:
+    weight: 0
+    label: hidden
+    settings:
+      label: 'Go to [webform:title] webform'
+      dialog: normal
+      attributes: {  }
+    third_party_settings:
+      empty_fields:
+        handler: ''
+    type: webform_entity_reference_link
+    region: content
+hidden: {  }

@@ -1,0 +1,10 @@
+uuid: 76858e41-e8db-410d-b692-a69549310213
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.volunteer_profile
+label: 'Volunteer profile'
+targetEntityType: user
+cache: true

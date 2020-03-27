@@ -1,0 +1,10 @@
+uuid: 06e7cb15-4fb0-471d-a11f-e3163d36ea3e
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.tiny
+label: Tiny
+targetEntityType: user
+cache: true

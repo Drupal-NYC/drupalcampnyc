@@ -1,0 +1,9 @@
+uuid: cd96ad9b-9497-4f13-b28b-0f9466ef9692
+langcode: en
+status: true
+dependencies: {  }
+name: 'User - Dietary restrictions'
+vid: dietary_restrictions
+description: ''
+hierarchy: 0
+weight: 0

@@ -1,0 +1,21 @@
+uuid: efbdeeef-9f2e-43a6-bf1b-b98461cb961d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ends_at
+    - node.type.bof
+  module:
+    - datetime
+id: node.bof.field_ends_at
+field_name: field_ends_at
+entity_type: node
+bundle: bof
+label: 'Ends at'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

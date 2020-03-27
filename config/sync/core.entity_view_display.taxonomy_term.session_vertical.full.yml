@@ -1,0 +1,62 @@
+uuid: e1bf9ba4-0f5f-4d65-80ac-cfbab7daa667
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.full
+    - field.field.taxonomy_term.session_vertical.field_confirmed
+    - field.field.taxonomy_term.session_vertical.field_icon
+    - field.field.taxonomy_term.session_vertical.field_track_chairs
+    - field.field.taxonomy_term.session_vertical.field_track_details
+    - field.field.taxonomy_term.session_vertical.field_track_sponsors
+    - taxonomy.vocabulary.session_vertical
+  module:
+    - empty_fields
+    - entity_reference_revisions
+    - text
+id: taxonomy_term.session_vertical.full
+targetEntityType: taxonomy_term
+bundle: session_vertical
+mode: full
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_icon:
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: large_icon
+      link: false
+    third_party_settings:
+      empty_fields:
+        handler: ''
+    type: entity_reference_entity_view
+    region: content
+  field_track_details:
+    type: entity_reference_revisions_entity_view
+    weight: 4
+    region: content
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+  field_track_sponsors:
+    type: entity_reference_entity_view
+    weight: -4
+    region: content
+    label: above
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings:
+      empty_fields:
+        handler: ''
+hidden:
+  field_confirmed: true
+  field_track_chairs: true

@@ -1,0 +1,20 @@
+uuid: 11d18051-7dc4-4106-a017-15e99ab861bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_u_company
+  module:
+    - user
+id: user.user.field_u_company
+field_name: field_u_company
+entity_type: user
+bundle: user
+label: Company/organization
+description: 'The main company/organization you work for. In case you are a delegate of an association, you can add that in the second field.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

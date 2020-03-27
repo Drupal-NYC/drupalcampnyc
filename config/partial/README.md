@@ -1,0 +1,1 @@
+This directory contains partial configuration to be imported into your Drupal site.

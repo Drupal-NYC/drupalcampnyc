@@ -1,0 +1,23 @@
+uuid: 892f0fc5-9fec-46ae-be1f-5dbb19b2c5fb
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - text
+    - user
+third_party_settings:
+  field_permissions:
+    permission_type: custom
+id: user.field_speaker_profile
+field_name: field_speaker_profile
+entity_type: user
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

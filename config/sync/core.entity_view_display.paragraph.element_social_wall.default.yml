@@ -1,0 +1,24 @@
+uuid: 92bd3615-8f3d-43f7-a9a3-dbaf0aaa6db0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.element_social_wall.field_view
+    - paragraphs.paragraphs_type.element_social_wall
+  module:
+    - viewsreference
+id: paragraph.element_social_wall.default
+targetEntityType: paragraph
+bundle: element_social_wall
+mode: default
+content:
+  field_view:
+    weight: 0
+    label: hidden
+    settings:
+      plugin_types:
+        - block
+    third_party_settings: {  }
+    type: viewsreference_formatter
+    region: content
+hidden: {  }

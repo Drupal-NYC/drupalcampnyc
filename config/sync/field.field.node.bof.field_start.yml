@@ -1,0 +1,21 @@
+uuid: 03192621-16da-49fe-a5f3-9cb08e843135
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_start
+    - node.type.bof
+  module:
+    - datetime
+id: node.bof.field_start
+field_name: field_start
+entity_type: node
+bundle: bof
+label: 'Starts at'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

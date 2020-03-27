@@ -1,0 +1,25 @@
+uuid: 46a3f1ec-a1f4-48cb-8010-dc620c58f851
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_onsite_intro
+  module:
+    - markup
+    - user
+id: user.user.field_onsite_intro
+field_name: field_onsite_intro
+entity_type: user
+bundle: user
+label: 'Onsite intro'
+description: ''
+required: false
+translatable: false
+default_value:
+  - {  }
+default_value_callback: ''
+settings:
+  markup:
+    value: "<p><strong>This information will only be accessed by members of the attendee care team.</strong></p>\r\n"
+    format: basic_html
+field_type: markup

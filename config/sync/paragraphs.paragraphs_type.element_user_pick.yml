@@ -1,0 +1,9 @@
+uuid: 4b7b0cd6-437f-43fb-be10-057549a7aa23
+langcode: en
+status: true
+dependencies: {  }
+id: element_user_pick
+label: 'Element - Pick user'
+icon_uuid: null
+description: 'Hand-pick certain user(s) for special promotion'
+behavior_plugins: {  }

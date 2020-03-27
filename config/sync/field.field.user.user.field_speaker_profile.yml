@@ -1,0 +1,21 @@
+uuid: 13eb8cab-312e-4eb2-bab6-9fbdb7b90853
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_speaker_profile
+  module:
+    - text
+    - user
+id: user.user.field_speaker_profile
+field_name: field_speaker_profile
+entity_type: user
+bundle: user
+label: 'Speaker profile'
+description: 'If you are speaker at Drupal Europe please provide a short text in 3rd person (from the perspective of a track chair, for example).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

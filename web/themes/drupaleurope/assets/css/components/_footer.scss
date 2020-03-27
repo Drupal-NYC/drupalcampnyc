@@ -1,0 +1,120 @@
+/* FOOTER */
+
+.page--pre-footer {
+  @include due-gradient;
+  min-height: 150px;
+  @include clearfix;
+}
+
+.region-footer {
+  display: grid;
+  grid-gap: $grid-gap;
+  grid-template-columns: 3fr 1fr;
+  margin: 2rem auto;
+  max-width: 1150px;
+
+
+}
+.region-prefooter {
+  margin: 2rem auto;
+  max-width: 1150px;
+  background-color: $quaternary-color;
+  border: $grid-gap solid $quaternary-color;
+  box-sizing: content-box;
+
+  h2 {
+    span {
+      color: lighten($secondary-color, 15%);
+    }
+  }
+  ul.menu a.is-active {
+    color: $primary-color;
+  }
+}
+%footer-links {
+  display: block;
+  font-weight: bold;
+  margin: 0.5rem 0;
+  text-decoration: none;
+}
+.menu--footer a {
+  @extend %footer-links;
+  color: $secondary-color;
+
+}
+.menu--pre-footer a {
+  @extend %footer-links;
+  color: $white-color;
+}
+.menu--footer {
+  display: grid;
+  grid-gap: $grid-gap;
+  grid-template-columns: 1fr 1fr 1fr;
+  .menu-item--level-top + h2 {
+    text-transform: uppercase;
+  }
+  a {
+    color: $secondary-color;
+    display: block;
+    font-weight: bold;
+    margin: 0.5rem 0;
+    text-decoration: none;
+  }
+}
+
+.menu--pre-footer {
+  display: grid;
+  grid-gap: $grid-gap;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  @include responsive(mobile) {
+    grid-template-columns: 1fr;
+  }
+}
+.block-social-media-links-block a {
+  color: $secondary-color;
+}
+
+.region-footer .block-menu
+
+footer .footer--sub {
+  background-color: $gray-color;
+  margin-top: 2rem;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.footer-copyright {
+  background-color: $quaternary-color;
+  color: rgb(198, 198, 198);
+  font-size: 0.875rem;
+  display: grid;
+  grid-gap: $grid-gap;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+
+  p {
+    font-size: 0.9rem;
+  }
+  a {
+    /*background-color: rgb(51, 51, 51);*/
+    text-decoration-line: none;
+    color: rgb(198, 198, 198);
+    transition: all 0.2s ease;
+    font-size: 0.875rem;
+    font-weight: bold;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+@include responsive(mobile) {
+  .region-footer, .menu--footer {
+    display: block;
+  }
+  .region-footer {
+    padding: 2rem;
+  }
+}

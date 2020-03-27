@@ -1,0 +1,34 @@
+uuid: d3066ddf-27c0-4099-aeff-8929f616acea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.views_block.field_pick_view
+    - paragraphs.paragraphs_type.views_block
+  module:
+    - content_moderation
+    - viewsreference
+id: paragraph.views_block.default
+targetEntityType: paragraph
+bundle: views_block
+mode: default
+content:
+  field_pick_view:
+    weight: 101
+    settings:
+      match_operator: CONTAINS
+      size: '60'
+      placeholder: ''
+    third_party_settings: {  }
+    type: viewsreference_autocomplete
+    region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 100
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
+  uid: true

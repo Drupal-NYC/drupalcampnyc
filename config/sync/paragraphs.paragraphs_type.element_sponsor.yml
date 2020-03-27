@@ -1,0 +1,9 @@
+uuid: 081a6c0a-9473-4315-8982-309af0aeb747
+langcode: en
+status: true
+dependencies: {  }
+id: element_sponsor
+label: 'Element - Sponsor'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

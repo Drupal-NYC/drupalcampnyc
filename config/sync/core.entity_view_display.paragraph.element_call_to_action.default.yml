@@ -1,0 +1,30 @@
+uuid: 125003bf-5e28-4a54-9857-07d2f8c62dbc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.element_call_to_action.field_link
+    - paragraphs.paragraphs_type.element_call_to_action
+  module:
+    - empty_fields
+    - link
+id: paragraph.element_call_to_action.default
+targetEntityType: paragraph
+bundle: element_call_to_action
+mode: default
+content:
+  field_link:
+    weight: 0
+    label: hidden
+    settings:
+      trim_length: null
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings:
+      empty_fields:
+        handler: nbsp
+    type: link
+    region: content
+hidden: {  }

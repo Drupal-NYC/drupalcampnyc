@@ -1,0 +1,33 @@
+uuid: 10076098-ffbd-4578-85d9-b682994adde7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.logo
+    - field.field.media.vector_graphics.field_media_image_2
+    - media.type.vector_graphics
+  module:
+    - svg_image
+id: media.vector_graphics.logo
+targetEntityType: media
+bundle: vector_graphics
+mode: logo
+content:
+  field_media_image_2:
+    weight: 0
+    label: hidden
+    settings:
+      svg_attributes:
+        width: ''
+        height: ''
+      svg_render_as_image: true
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true

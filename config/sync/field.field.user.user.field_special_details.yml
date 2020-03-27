@@ -1,0 +1,20 @@
+uuid: 764917b7-112d-42b6-8195-6711a93e97fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_special_details
+  module:
+    - user
+id: user.user.field_special_details
+field_name: field_special_details
+entity_type: user
+bundle: user
+label: Details
+description: 'If you could not find the appropriate options above, please note them here. If you opted for childcare, please tell us the age of your child/ren and what else we might need to know.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

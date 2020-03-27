@@ -1,0 +1,10 @@
+uuid: 72af52d2-73ba-4158-9c0d-f00076f938e9
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.large_icon
+label: 'Icon 200px'
+targetEntityType: media
+cache: true

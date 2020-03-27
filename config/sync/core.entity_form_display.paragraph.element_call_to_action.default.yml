@@ -1,0 +1,39 @@
+uuid: 6af7da89-3f24-4b2b-8885-65bf4a4dde9e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.element_call_to_action.field_link
+    - paragraphs.paragraphs_type.element_call_to_action
+  module:
+    - content_moderation
+    - link
+id: paragraph.element_call_to_action.default
+targetEntityType: paragraph
+bundle: element_call_to_action
+mode: default
+content:
+  field_link:
+    weight: 1
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 0
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 2
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  created: true
+  uid: true

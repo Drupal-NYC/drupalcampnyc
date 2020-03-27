@@ -1,0 +1,24 @@
+uuid: c84ea461-0fce-4488-9033-35db92f6fb51
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_u_cat_volunteer
+  module:
+    - user
+id: user.user.field_u_cat_volunteer
+field_name: field_u_cat_volunteer
+entity_type: user
+bundle: user
+label: Volunteer
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

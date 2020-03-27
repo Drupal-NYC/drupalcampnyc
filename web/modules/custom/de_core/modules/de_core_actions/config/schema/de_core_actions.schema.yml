@@ -1,0 +1,3 @@
+action.configuration.de_core_actions_mark_user_as_speaker:
+  type: action_configuration_default
+  label: 'Mark user as Speaker'

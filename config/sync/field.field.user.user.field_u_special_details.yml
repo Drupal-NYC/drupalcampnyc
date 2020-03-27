@@ -1,0 +1,21 @@
+uuid: 395929c8-1a9a-449f-84b5-0f1bc595220a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_u_special_details
+  module:
+    - text
+    - user
+id: user.user.field_u_special_details
+field_name: field_u_special_details
+entity_type: user
+bundle: user
+label: 'Details (deprecated)'
+description: '(replaced by plain textarea)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

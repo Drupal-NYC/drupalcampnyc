@@ -1,0 +1,29 @@
+uuid: 35d8aae1-24ca-412e-ac82-d971edc584a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_webform
+    - paragraphs.paragraphs_type.element_webform
+  module:
+    - webform
+id: paragraph.element_webform.field_webform
+field_name: field_webform
+entity_type: paragraph
+bundle: element_webform
+label: Webform
+description: 'Webforms must first be <a href="/admin/structure/webform" target="_blank">created</a>. '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+  default_data: ''
+  status: open
+  open: ''
+  close: ''
+field_type: webform

@@ -1,0 +1,32 @@
+uuid: 1e539d06-798a-4a92-89b2-fe62c8d57a06
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.views_block.field_pick_view
+    - paragraphs.paragraphs_type.views_block
+  module:
+    - empty_fields
+    - viewsreference
+id: paragraph.views_block.default
+targetEntityType: paragraph
+bundle: views_block
+mode: default
+content:
+  field_pick_view:
+    weight: 0
+    label: hidden
+    settings:
+      plugin_types:
+        block: block
+        default: 0
+        page: 0
+        feed: 0
+        entity_browser: 0
+        attachment: 0
+    third_party_settings:
+      empty_fields:
+        handler: ''
+    type: viewsreference_formatter
+    region: content
+hidden: {  }

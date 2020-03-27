@@ -1,0 +1,24 @@
+uuid: 75add9b0-9066-4290-9fc3-01af2cd4deb7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_u_pub_attendee_list
+  module:
+    - user
+id: user.user.field_u_pub_attendee_list
+field_name: field_u_pub_attendee_list
+entity_type: user
+bundle: user
+label: 'Publish in lists'
+description: '<strong>Uncheck</strong> if you prefer not to figure on the public lists on the conference website.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

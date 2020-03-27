@@ -1,0 +1,9 @@
+uuid: 0d93d21e-5db9-4470-ad27-efc6de54591c
+langcode: en
+status: true
+dependencies: {  }
+name: 'Industry Tracks (Vertical)'
+vid: session_vertical
+description: ''
+hierarchy: 0
+weight: 0

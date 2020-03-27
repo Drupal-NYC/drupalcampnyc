@@ -1,0 +1,24 @@
+uuid: cb3e5920-1fbd-4c2f-a6eb-7d5eeca62a4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.element_user_lists.field_user_view
+    - paragraphs.paragraphs_type.element_user_lists
+  module:
+    - viewsreference
+id: paragraph.element_user_lists.default
+targetEntityType: paragraph
+bundle: element_user_lists
+mode: default
+content:
+  field_user_view:
+    weight: 0
+    label: hidden
+    settings:
+      plugin_types:
+        - block
+    third_party_settings: {  }
+    type: viewsreference_formatter
+    region: content
+hidden: {  }

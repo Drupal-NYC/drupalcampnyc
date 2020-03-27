@@ -1,0 +1,72 @@
+
+
+@mixin flex($vertical, $horizontal) {
+	justify-content: $vertical;
+	align-items: $horizontal;
+	align-content: $horizontal;
+}
+
+
+@mixin transition($time, $type:all) {
+	transition: $type $time ease-in-out;
+}
+
+$break-small: 620px;
+$break-large: 1024px;
+
+@mixin responsive($media) {
+  @if $media == mobile {
+    @media only screen and (max-width: $break-small) { @content; }
+  }
+  @else if $media == tablet {
+    @media only screen and (max-width: $break-large - 1) { @content; }
+  }
+  @else if $media == tabletOnly {
+    @media only screen and (min-width: $break-small + 1) and (max-width: $break-large - 1) { @content; }
+  }
+  @else if $media == desktop {
+    @media only screen and (min-width: $break-large) { @content; }
+  }
+}
+
+@mixin flex-mobile {
+  @include responsive(mobile){
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    width: 100%;
+
+    > * {
+      flex: 0 0 100%;
+      width: 100%;
+      margin: 0;
+      > * {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@mixin multiLineEllipsis($lineHeight: 1.2em, $lineCount: 1, $bgColor: white){
+  overflow: hidden;
+  position: relative;
+  line-height: $lineHeight;
+  max-height: $lineHeight * $lineCount;
+  margin-right: -1em;
+  padding-right: 1em;
+  &:before {
+    content: '...';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 1em;
+    height: 1em;
+    margin-top: 0.2em;
+    background: $bgColor;
+  }
+}

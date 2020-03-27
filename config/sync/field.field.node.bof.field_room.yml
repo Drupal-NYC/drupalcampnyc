@@ -1,0 +1,29 @@
+uuid: bb4eee23-f64e-4629-a9de-4a47ad1aa17e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_room
+    - node.type.bof
+    - taxonomy.vocabulary.room
+id: node.bof.field_room
+field_name: field_room
+entity_type: node
+bundle: bof
+label: Room
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      room: room
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,23 @@
+uuid: 1c6f2fa4-f93d-4329-b523-3b74817a4500
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type
+    - node.type.bof
+  module:
+    - options
+id: node.bof.field_type
+field_name: field_type
+entity_type: node
+bundle: bof
+label: Type
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: bof
+default_value_callback: ''
+settings: {  }
+field_type: list_string

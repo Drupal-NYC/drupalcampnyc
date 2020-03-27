@@ -1,0 +1,13 @@
+uuid: 3ec2cedd-af46-462f-af8d-9a5b0cca4754
+langcode: en
+status: true
+dependencies:
+  module:
+    - de_core_actions
+_core:
+  default_config_hash: pzBN0etuDb3S0__Q9nWdbPcP0nhT5EKaXuvlsRJTjVE
+id: de_core_actions_mark_user_as_speaker
+label: 'Mark user(s) as Speaker'
+type: user
+plugin: mark_user_as_speaker
+configuration: {  }

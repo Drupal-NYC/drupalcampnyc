@@ -1,0 +1,8 @@
+uuid: b2f2dd74-3c0c-40d5-b0e1-df4083c7bf91
+langcode: en
+status: true
+dependencies: {  }
+id: localized_medium
+label: 'Localized medium'
+locked: false
+pattern: 'D, d F - H:i'

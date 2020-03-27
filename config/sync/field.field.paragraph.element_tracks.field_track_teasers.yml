@@ -1,0 +1,70 @@
+uuid: fe9c1f19-d17a-48ed-8a37-a8f32d95a8d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_track_teasers
+    - paragraphs.paragraphs_type.element_tracks
+    - views.view.taxonomy_term_teasers
+  module:
+    - viewsreference
+id: paragraph.element_tracks.field_track_teasers
+field_name: field_track_teasers
+entity_type: paragraph
+bundle: element_tracks
+label: 'Teaser set'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    options:
+      limit: ''
+    display_id: block_tracks
+    data: 'a:5:{s:5:"pager";N;s:6:"offset";N;s:5:"limit";s:0:"";s:5:"title";N;s:8:"argument";N;}'
+    target_uuid: 6d11e3ea-b910-44c4-8e44-a8135cbb958a
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: 0
+  plugin_types:
+    block: block
+    default: 0
+    page: 0
+    feed: 0
+    entity_browser: 0
+  preselect_views:
+    taxonomy_term_teasers: taxonomy_term_teasers
+    block_content: 0
+    comment: 0
+    comments_recent: 0
+    content: 0
+    content_recent: 0
+    element_list_sessions: 0
+    element_list_sponsors: 0
+    files: 0
+    frontpage: 0
+    icon_browser: 0
+    media: 0
+    media_browser: 0
+    moderated_content: 0
+    redirect: 0
+    redirect_404: 0
+    scheduler_scheduled_content: 0
+    sponsors: 0
+    taxonomy_term: 0
+    user_admin_people: 0
+    user_special_views: 0
+    user_views: 0
+    watchdog: 0
+    who_s_new: 0
+    who_s_online: 0
+  enabled_settings:
+    pager: 0
+    offset: 0
+    limit: 0
+    title: 0
+    argument: 0
+field_type: viewsreference

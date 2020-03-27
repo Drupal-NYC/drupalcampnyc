@@ -1,0 +1,22 @@
+uuid: 45add7c5-fde1-4c36-b0bf-7ee96271b1d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.social_event
+  module:
+    - text
+id: node.social_event.body
+field_name: body
+entity_type: node
+bundle: social_event
+label: Description
+description: 'Let people know about all the details. Questions to answer include the noise level, whether smoking is allowed or whether food is available.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

@@ -1,0 +1,40 @@
+uuid: c254881f-fb7f-4331-9474-b4b91b5a12d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.drupal-europe-days
+  module:
+    - de_core
+    - menu_block
+    - system
+  theme:
+    - drupaleurope
+id: drupaleuropedays
+theme: drupaleurope
+region: content
+weight: -8
+provider: null
+plugin: 'menu_block:drupal-europe-days'
+settings:
+  id: 'menu_block:drupal-europe-days'
+  label: 'Drupal Europe Days'
+  provider: menu_block
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand: 0
+  parent: 'drupal-europe-days:'
+  suggestion: drupal_europe_days
+visibility:
+  current_user_page:
+    id: current_user_page
+    show_on_own_page: 0
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+  request_path:
+    id: request_path
+    pages: '/program/schedule/*'
+    negate: false
+    context_mapping: {  }

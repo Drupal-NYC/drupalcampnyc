@@ -1,0 +1,21 @@
+uuid: 93d892e9-c331-4b1e-8e6d-a396ec20ab2b
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.field_u_middle_name
+field_name: field_u_middle_name
+entity_type: user
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,96 @@
+uuid: 7466e85e-cb79-4464-97e2-f6c34b2e6bbc
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.session
+  module:
+    - content_moderation
+id: sessions
+label: Sessions
+type: content_moderation
+type_settings:
+  states:
+    accepted:
+      published: true
+      default_revision: true
+      label: Accepted
+      weight: -6
+    declined:
+      published: false
+      default_revision: true
+      label: Declined
+      weight: -5
+    draft:
+      label: Draft
+      published: false
+      default_revision: false
+      weight: -10
+    needs_review:
+      published: true
+      default_revision: false
+      label: 'Needs review'
+      weight: -8
+    needs_work:
+      published: true
+      default_revision: false
+      label: 'Needs work'
+      weight: -9
+    published:
+      label: Published
+      published: true
+      default_revision: true
+      weight: -7
+  transitions:
+    accept:
+      label: Accept
+      from:
+        - accepted
+        - declined
+        - published
+      to: accepted
+      weight: -5
+    create_new_draft:
+      label: 'Create New Draft'
+      to: draft
+      weight: -10
+      from:
+        - draft
+        - published
+    decline:
+      label: Decline
+      from:
+        - accepted
+        - declined
+        - published
+      to: declined
+      weight: -4
+    needs_work:
+      label: 'Needs work'
+      from:
+        - needs_review
+        - published
+      to: needs_work
+      weight: -9
+    publish:
+      label: Publish
+      to: published
+      weight: -6
+      from:
+        - draft
+        - published
+    ready_for_review:
+      label: 'Ready for review'
+      from:
+        - needs_work
+      to: needs_review
+      weight: -8
+    reviewed_and_ok:
+      label: 'Reviewed and OK'
+      from:
+        - needs_review
+      to: published
+      weight: -7
+  entity_types:
+    node:
+      - session

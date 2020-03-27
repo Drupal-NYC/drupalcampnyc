@@ -1,0 +1,15 @@
+uuid: 30ea308a-2449-41e5-8b50-fca72fd0a3bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.element_testimonial_pick.field_select_user
+    - paragraphs.paragraphs_type.element_testimonial_pick
+id: paragraph.element_testimonial_pick.preview
+targetEntityType: paragraph
+bundle: element_testimonial_pick
+mode: preview
+content: {  }
+hidden:
+  field_select_user: true

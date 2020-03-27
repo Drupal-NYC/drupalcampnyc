@@ -1,0 +1,173 @@
+uuid: b20286f6-b5fc-4bf0-9683-322dd19785fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.session.field_alternative_verticals
+    - field.field.node.session.field_comments
+    - field.field.node.session.field_description
+    - field.field.node.session.field_duration
+    - field.field.node.session.field_ends_at
+    - field.field.node.session.field_featured
+    - field.field.node.session.field_horizontal
+    - field.field.node.session.field_room
+    - field.field.node.session.field_slides
+    - field.field.node.session.field_speaker_experience
+    - field.field.node.session.field_speaker_inclusion
+    - field.field.node.session.field_speakers
+    - field.field.node.session.field_start
+    - field.field.node.session.field_summary
+    - field.field.node.session.field_terms
+    - field.field.node.session.field_type
+    - field.field.node.session.field_vertical
+    - field.field.node.session.field_video
+    - field.field.node.session.field_xp_level
+    - node.type.session
+  module:
+    - datetime
+    - empty_fields
+    - field_group
+    - options
+    - text
+    - user
+third_party_settings:
+  field_group:
+    group_type_and_track:
+      children:
+        - field_type
+        - field_vertical
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        label: 'Type and track'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: session-type-and-track
+      label: 'Type and track'
+    group_scheduled_at:
+      children:
+        - field_start
+        - field_ends_at
+        - field_room
+      parent_name: ''
+      weight: 3
+      format_type: html_element
+      format_settings:
+        label: 'Scheduled at'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: scheduled-at
+      label: 'Scheduled at'
+id: node.session.teaser
+targetEntityType: node
+bundle: session
+mode: teaser
+content:
+  field_ends_at:
+    type: datetime_default
+    weight: 6
+    region: content
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: time
+    third_party_settings:
+      empty_fields:
+        handler: ''
+  field_horizontal:
+    type: entity_reference_label
+    weight: 7
+    region: content
+    label: visually_hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_room:
+    type: entity_reference_label
+    weight: 7
+    region: content
+    label: hidden
+    settings:
+      link: false
+    third_party_settings:
+      empty_fields:
+        handler: ''
+  field_speakers:
+    type: entity_reference_entity_view
+    weight: 1
+    region: content
+    label: visually_hidden
+    settings:
+      view_mode: compact
+      link: false
+    third_party_settings:
+      empty_fields:
+        handler: ''
+  field_start:
+    type: datetime_default
+    weight: 5
+    region: content
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: day
+    third_party_settings:
+      empty_fields:
+        handler: ''
+  field_summary:
+    type: text_trimmed
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      trim_length: 450
+    third_party_settings:
+      empty_fields:
+        handler: nbsp
+  field_type:
+    type: list_default
+    weight: 0
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_vertical:
+    type: entity_reference_label
+    weight: 1
+    region: content
+    label: visually_hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+  flag_session_schedule:
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  content_moderation_control: true
+  field_alternative_verticals: true
+  field_comments: true
+  field_description: true
+  field_duration: true
+  field_featured: true
+  field_slides: true
+  field_speaker_experience: true
+  field_speaker_inclusion: true
+  field_terms: true
+  field_video: true
+  field_xp_level: true
+  links: true
+  shariff_field: true

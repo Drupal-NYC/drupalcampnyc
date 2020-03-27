@@ -1,0 +1,39 @@
+uuid: e6a862ad-c087-4f64-baad-49d3ac74ac06
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.element_sessions.field_featured
+    - field.field.paragraph.element_sessions.field_topic
+    - field.field.paragraph.element_sessions.field_track
+    - paragraphs.paragraphs_type.element_sessions
+id: paragraph.element_sessions.default
+targetEntityType: paragraph
+bundle: element_sessions
+mode: default
+content:
+  field_featured:
+    weight: 0
+    label: hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_topic:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: entity_reference_entity_id
+    region: content
+  field_track:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: entity_reference_entity_id
+    region: content
+hidden: {  }

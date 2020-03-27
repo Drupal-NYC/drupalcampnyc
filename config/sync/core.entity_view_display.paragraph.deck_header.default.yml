@@ -1,0 +1,25 @@
+uuid: c9fe2cb6-342a-432a-9e70-55dabe183489
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.deck_header.field_title
+    - paragraphs.paragraphs_type.deck_header
+  module:
+    - empty_fields
+    - text
+id: paragraph.deck_header.default
+targetEntityType: paragraph
+bundle: deck_header
+mode: default
+content:
+  field_title:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      empty_fields:
+        handler: ''
+    type: text_default
+    region: content
+hidden: {  }

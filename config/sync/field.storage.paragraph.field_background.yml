@@ -1,0 +1,34 @@
+uuid: 392b8a29-d5b2-45fb-b1d5-ddf608a1bb5d
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - file
+    - image
+    - paragraphs
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: paragraph.field_background
+field_name: field_background
+entity_type: paragraph
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

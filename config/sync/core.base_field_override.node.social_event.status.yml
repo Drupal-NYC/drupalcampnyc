@@ -1,0 +1,22 @@
+uuid: 3186886a-e451-468f-8741-e9c81a6c122e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.social_event
+id: node.social_event.status
+field_name: status
+entity_type: node
+bundle: social_event
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

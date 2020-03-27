@@ -1,0 +1,22 @@
+uuid: 15214de8-dd91-4486-ba59-4123e5c20c10
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.session
+id: node.session.status
+field_name: status
+entity_type: node
+bundle: session
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

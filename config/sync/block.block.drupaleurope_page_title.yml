@@ -1,0 +1,35 @@
+uuid: 52627f36-b0e3-49d2-bc30-ca82561f2bc1
+langcode: en
+status: true
+dependencies:
+  module:
+    - de_core
+    - system
+  theme:
+    - drupaleurope
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: drupaleurope_page_title
+theme: drupaleurope
+region: content
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }
+  node_type_if_node:
+    id: node_type_if_node
+    bundles:
+      page: page
+      sponsor: sponsor
+    negate: true
+    context_mapping: {  }

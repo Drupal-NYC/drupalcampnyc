@@ -1,0 +1,23 @@
+uuid: 61c87a63-3634-425f-b205-509bcd84d5f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sort_weight
+    - node.type.partner
+  module:
+    - options
+id: node.partner.field_sort_weight
+field_name: field_sort_weight
+entity_type: node
+bundle: partner
+label: 'Sort weight'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 6
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

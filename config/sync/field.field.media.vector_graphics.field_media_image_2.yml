@@ -1,0 +1,38 @@
+uuid: 4ef2b134-8b26-428d-ac80-cfa57b9c68a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_image_2
+    - media.type.vector_graphics
+  module:
+    - image
+id: media.vector_graphics.field_media_image_2
+field_name: field_media_image_2
+entity_type: media
+bundle: vector_graphics
+label: Image
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]-vector'
+  file_extensions: svg
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

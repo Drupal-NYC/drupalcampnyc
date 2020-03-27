@@ -1,0 +1,9 @@
+uuid: b8824963-f64f-4651-8393-33530821ea6b
+langcode: en
+status: true
+dependencies: {  }
+id: views_block
+label: 'Element - Views block'
+icon_uuid: null
+description: 'Add new views to this element'
+behavior_plugins: {  }

@@ -1,0 +1,21 @@
+uuid: 702c3655-080d-4a86-aafa-c2598d867cf8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type
+    - node.type.program_item
+  module:
+    - options
+id: node.program_item.field_type
+field_name: field_type
+entity_type: node
+bundle: program_item
+label: Type
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

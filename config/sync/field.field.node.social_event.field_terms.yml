@@ -1,0 +1,23 @@
+uuid: 08f48259-5c63-4b90-956b-94cc7ec46335
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_terms
+    - node.type.social_event
+id: node.social_event.field_terms
+field_name: field_terms
+entity_type: node
+bundle: social_event
+label: 'Terms of Service'
+description: 'By organizing a social event around Drupal Europe you agree to follow the <a href="/terms" target="_blank">Terms of service</a> and by extension of that abide to the <a href="/coc" target="_blank">Code of Conduct</a> for the conference. If you have any questions about these please <a href="/legal"  target="_blank">get in contact with us</a>, we will handle all requests as confidential.'
+required: true
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'I agree to the Terms of Service for Speakers'
+  off_label: 'I do not agree.'
+field_type: boolean

@@ -1,0 +1,158 @@
+uuid: 28657bef-2f53-4f3c-b14f-544a7548f98e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.bof.body
+    - field.field.node.bof.field_ends_at
+    - field.field.node.bof.field_horizontal
+    - field.field.node.bof.field_room
+    - field.field.node.bof.field_start
+    - field.field.node.bof.field_summary
+    - field.field.node.bof.field_terms
+    - field.field.node.bof.field_timeslot
+    - field.field.node.bof.field_type
+    - field.field.node.bof.field_vertical
+    - node.type.bof
+  module:
+    - autocomplete_deluxe
+    - content_moderation
+    - path
+    - scheduler
+    - text
+id: node.bof.default
+targetEntityType: node
+bundle: bof
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 3
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_horizontal:
+    weight: 5
+    settings:
+      limit: '25'
+      min_length: '0'
+      delimiter: ''
+      not_found_message_allow: '1'
+      not_found_message: 'The term ''@term'' will be added'
+      new_terms: '1'
+      match_operator: CONTAINS
+      autocomplete_route_name: autocomplete_deluxe.autocomplete
+      target_type: taxonomy_term
+      size: 60
+      selection_handler: default
+    third_party_settings: {  }
+    type: autocomplete_deluxe
+    region: content
+  field_summary:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_terms:
+    weight: 16
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_timeslot:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_vertical:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 14
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 12
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 8
+    region: content
+    third_party_settings: {  }
+  publish_on:
+    type: datetime_timestamp_no_default
+    weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 9
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 6
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+  unpublish_on:
+    type: datetime_timestamp_no_default
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  url_redirects:
+    weight: 13
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_ends_at: true
+  field_room: true
+  field_start: true
+  field_type: true

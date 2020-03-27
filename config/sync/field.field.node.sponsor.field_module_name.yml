@@ -1,0 +1,19 @@
+uuid: dce6afe3-5376-4edf-be31-853e4e2a61d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_module_name
+    - node.type.sponsor
+id: node.sponsor.field_module_name
+field_name: field_module_name
+entity_type: node
+bundle: sponsor
+label: Module
+description: 'In case of module sponsorship please indicate the module.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

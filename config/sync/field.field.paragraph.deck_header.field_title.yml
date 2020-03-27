@@ -1,0 +1,21 @@
+uuid: e524b6f5-1588-4aae-a274-9fa186316749
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.deck_header
+  module:
+    - text
+id: paragraph.deck_header.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: deck_header
+label: Title
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

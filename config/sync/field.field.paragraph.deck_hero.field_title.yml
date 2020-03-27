@@ -1,0 +1,21 @@
+uuid: d31ad153-4f07-4dcb-b707-37805f2da257
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.deck_hero
+  module:
+    - text
+id: paragraph.deck_hero.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: deck_hero
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

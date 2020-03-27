@@ -1,0 +1,9 @@
+uuid: 9ee33130-1fe0-412c-aa52-de5bca8dedcb
+langcode: en
+status: true
+dependencies: {  }
+id: media
+label: 'Element - Media'
+icon_uuid: null
+description: 'A media element of either Video, Image or Audio'
+behavior_plugins: {  }

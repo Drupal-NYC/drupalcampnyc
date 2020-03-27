@@ -1,0 +1,21 @@
+uuid: 8ab26817-bb80-444d-869a-6ecca78e663f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.deck_2_columns
+  module:
+    - text
+id: paragraph.deck_2_columns.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: deck_2_columns
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

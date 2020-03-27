@@ -1,0 +1,20 @@
+uuid: 434bc4fd-ce02-46d0-ba36-466a315b3351
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_ticket_type
+  module:
+    - user
+id: user.user.field_ticket_type
+field_name: field_ticket_type
+entity_type: user
+bundle: user
+label: 'Ticket type'
+description: 'Internal: certain ticket types will be printed on the name tag.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

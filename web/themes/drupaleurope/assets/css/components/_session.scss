@@ -1,0 +1,239 @@
+.page--node-review,
+.page--type-node-form,
+.page-node-type-session {
+  main {
+
+    .form-radios {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: $grid-gap;
+
+      @include responsive(mobile) {
+        display: inherit;
+      }
+      @include responsive(tablet) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .table-style {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      & > * {
+        grid-column: span 2;
+      }
+      @include responsive(mobile) {
+        display: inherit;
+      }
+      @include responsive(tablet) {
+        display: inherit;
+      }
+    }
+    .node__meta {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: $grid-gap;
+      @include responsive(tablet) {
+        grid-template-columns: 1fr 1fr;
+      }
+      @include responsive(mobile) {
+        display: block;
+      }
+    }
+    .node__submitted {
+      display: none;
+    }
+  }
+
+}
+.node--unpublished {
+  border: 2px dashed $secondary-color;
+  padding: 0 1rem 2rem;
+  background-color: lighten( $secondary-color, 90% );
+
+  &:before {
+    content: "Unpublished";
+    display: block;
+    color: $secondary-color;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: .5rem 0 0;
+  }
+}
+
+.view-id-taxonomy_term {
+  .view-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: $grid-gap;
+    @include responsive(mobile) {
+      display: block;
+    }
+  }
+  .view-footer {
+    margin-top: 10rem;
+  }
+}
+
+.view-id-session_proposal_review {
+  .view-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: $grid-gap;
+    @include responsive(mobile) {
+      display: block;
+    }
+  }
+}
+
+.view-id-session_proposal_review.view-display-id-block_2 {
+  .view-content {
+    grid-template-columns: 1fr 1fr 1fr;
+    @include responsive(tablet) {
+      display: block;
+    }
+    @include responsive(mobile) {
+      display: block;
+    }
+  }
+
+  article.node {
+    height: 55rem;
+    @include responsive(tablet) {
+      height: auto;
+    }
+    @include responsive(mobile) {
+      height: auto;
+    }
+  }
+}
+
+.node--type-session.node--view-mode-teaser {
+  background-color: white;
+  -webkit-box-shadow: -6px 18px 78px 3px rgba(0,0,0,.11);
+  -moz-box-shadow: -6px 18px 78px 3px rgba(0,0,0,.11);
+  box-shadow: -6px 18px 78px 3px rgba(0,0,0,.11);
+  padding: 1rem;
+  margin: 1rem 0 2rem;
+}
+.node--type-session.node--view-mode-teaser .field--name-field-speakers {
+  float: none;
+  margin-left: 0;
+}
+.node--type-session.node--view-mode-teaser.node--view-mode-schedule .field--name-field-speakers {
+  margin-bottom: 1rem;
+}
+
+.node--type-session.node--view-mode-teaser .superhero--view-mode-compact {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 1rem 0;
+  justify-content: inherit;
+
+}
+
+.node--type-session.node--view-mode-teaser .superhero--view-mode-compact:first-child {
+  margin: 1rem 0;
+}
+.node--type-session.node--view-mode-teaser .superhero--full-name,
+.node--type-session.node--view-mode-teaser .field--name-field-u-job-title,
+.node--type-session.node--view-mode-teaser .field--name-field-u-company {
+  text-align: left;
+}
+
+.node--view-mode-teaser .field.field--name-field-horizontal div,
+.node--view-mode-full .field.field--name-field-horizontal div.field__item {
+  display: inline;
+}
+.node--view-mode-teaser .field--name-field-horizontal a,
+.node--view-mode-full .field--name-field-horizontal a {
+  background-color: #33a8e5;
+  padding: 0.3rem;
+
+  border-radius: 5px;
+  color: #fff;
+  line-height: 250%;
+  white-space: nowrap;
+  font-size: 85%;
+  &:not(:first-child) {
+    margin: 0.3rem;
+  }
+}
+.node--view-mode-full .field--name-field-horizontal a {
+  margin: 0;
+}
+
+.node--type-session.node--view-mode-teaser h2 {
+  margin: 0;
+}
+
+.node--view-mode-teaser .session-type-and-track div {
+  display: inline;
+}
+.node--view-mode-teaser .field--name-field-vertical::before {
+  content: " in ";
+}
+
+.node--view-mode-teaser .scheduled-at {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.node--view-mode-teaser .scheduled-at div {
+  display: inline;
+}
+.node--view-mode-teaser .field--name-field-ends-at::before {
+  content: " to ";
+}
+.node--view-mode-teaser .field--name-field-room::before {
+  content: " in room ";
+}
+
+// Edit form changes.
+.field--name-field-speakers:not(.field--widget-entity-browser-entity-reference) {
+  float: right;
+}
+.col-right {
+  float: right;
+  margin-left: $grid-gap;
+}
+
+.field--name-field-speakers.field--widget-entity-browser-entity-reference {
+  .details-wrapper {
+    display: grid;
+    grid-template-areas:
+      "desc button"
+      "main main";
+    grid-template-columns: auto 1fr;
+
+  }
+  .details-description {
+    grid-area: desc;
+    display: flex;
+    align-items: center;
+  }
+  div[data-drupal-selector="edit-field-speakers-entity-browser-entity-browser"] {
+    grid-area: button;
+  }
+  .entities-list {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    @include responsive(tablet) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @include responsive(mobile) {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.field-group-fieldset legend {
+  color: $secondary-color;
+  padding: 0 $grid-gap/2;
+  font-size: 1.5em;
+}
+.field-group-fieldset .group-description {
+  color: $primary-color;
+  font-size: 1em;
+}

@@ -1,0 +1,27 @@
+uuid: 47db45b5-46fe-4f2a-8f55-ba06133c0e69
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.media.field_media
+    - paragraphs.paragraphs_type.media
+  module:
+    - empty_fields
+id: paragraph.media.preview
+targetEntityType: paragraph
+bundle: media
+mode: preview
+content:
+  field_media:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: preview
+      link: false
+    third_party_settings:
+      empty_fields:
+        handler: ''
+    region: content
+hidden: {  }

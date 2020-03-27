@@ -1,0 +1,24 @@
+uuid: 533d0ebd-e901-457b-91f5-d69e6b6dd9dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.element_session_overview.field_session_overview
+    - paragraphs.paragraphs_type.element_session_overview
+  module:
+    - viewsreference
+id: paragraph.element_session_overview.default
+targetEntityType: paragraph
+bundle: element_session_overview
+mode: default
+content:
+  field_session_overview:
+    weight: 0
+    label: hidden
+    settings:
+      plugin_types:
+        - block
+    third_party_settings: {  }
+    type: viewsreference_formatter
+    region: content
+hidden: {  }

@@ -1,0 +1,21 @@
+uuid: 6a350b52-5cdb-4eeb-98c5-cf0b338ce1a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_summary
+    - node.type.bof
+  module:
+    - text
+id: node.bof.field_summary
+field_name: field_summary
+entity_type: node
+bundle: bof
+label: Summary
+description: 'Short and on the point summary of what this BoF is all about.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

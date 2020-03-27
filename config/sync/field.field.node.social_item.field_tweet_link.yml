@@ -1,0 +1,23 @@
+uuid: b89dc086-d981-4116-b5cd-eb94b96b9d65
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tweet_link
+    - node.type.social_item
+  module:
+    - link
+id: node.social_item.field_tweet_link
+field_name: field_tweet_link
+entity_type: node
+bundle: social_item
+label: 'Tweet link'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

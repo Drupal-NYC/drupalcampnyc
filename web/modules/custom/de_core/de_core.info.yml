@@ -1,0 +1,9 @@
+name: 'Drupal Europe - Core'
+description: 'The core of the Drupal Europe site, basically wires everything together - duct tape anyone?'
+type: module
+package: DrupalEurope
+core: 8.x
+dependencies:
+  - drupal:media
+  - drupal:content_moderation
+

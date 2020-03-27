@@ -1,0 +1,9 @@
+uuid: fc472da6-dd01-4988-8ccb-e6f80f5015cd
+langcode: en
+status: true
+dependencies: {  }
+name: 'Expertise Topics (Horizontal)'
+vid: session_horizontal
+description: ''
+hierarchy: 0
+weight: 0

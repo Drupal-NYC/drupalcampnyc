@@ -1,0 +1,9 @@
+uuid: 155202d1-554a-4e2f-8371-343ed4ff0276
+langcode: en
+status: true
+dependencies: {  }
+id: deck_2_columns
+label: 'Deck - 2 columns'
+icon_uuid: null
+description: 'A 2 column layout.'
+behavior_plugins: {  }

@@ -1,0 +1,37 @@
+uuid: 7a2d63b7-f322-4c25-b13d-284667d9639d
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.user_speaker_browser
+  module:
+    - views
+name: user_browser
+label: 'User Browser'
+display: modal
+display_configuration:
+  width: ''
+  height: ''
+  link_text: 'Select co-speaker'
+  auto_open: false
+selection_display: multi_step_display
+selection_display_configuration:
+  entity_type: user
+  display: rendered_entity
+  display_settings:
+    view_mode: compact
+  select_text: 'Use selected'
+  selection_hidden: false
+widget_selector: single
+widget_selector_configuration: {  }
+widgets:
+  3d005f31-b837-4d48-b9a9-2f780c5d1983:
+    settings:
+      view: user_speaker_browser
+      view_display: entity_browser_1
+      submit_text: 'Select co-speakers'
+      auto_select: false
+    uuid: 3d005f31-b837-4d48-b9a9-2f780c5d1983
+    weight: 1
+    label: Speakers
+    id: view

@@ -1,0 +1,26 @@
+uuid: b3beeb39-6b62-4eaa-b87e-dbab1002f564
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.element_testimonial_pick.field_select_user
+    - paragraphs.paragraphs_type.element_testimonial_pick
+  module:
+    - empty_fields
+id: paragraph.element_testimonial_pick.default
+targetEntityType: paragraph
+bundle: element_testimonial_pick
+mode: default
+content:
+  field_select_user:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: testimonial
+      link: false
+    third_party_settings:
+      empty_fields:
+        handler: ''
+    type: entity_reference_entity_view
+    region: content
+hidden: {  }

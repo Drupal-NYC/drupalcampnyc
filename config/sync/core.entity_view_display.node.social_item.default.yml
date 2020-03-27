@@ -1,0 +1,30 @@
+uuid: d10fb230-ba08-464c-bb28-7bf7fa71e3b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.social_item.field_tweet_link
+    - node.type.social_item
+  module:
+    - de_core
+    - user
+id: node.social_item.default
+targetEntityType: node
+bundle: social_item
+mode: default
+content:
+  field_tweet_link:
+    weight: 101
+    label: hidden
+    settings:
+      text_length: short
+    third_party_settings: {  }
+    type: linkembed
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  shariff_field: true

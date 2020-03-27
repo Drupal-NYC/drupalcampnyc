@@ -1,0 +1,23 @@
+uuid: b253339d-1e4b-4661-abe7-60a904fc3385
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_layout_full_width
+    - paragraphs.paragraphs_type.deck_1_column
+id: paragraph.deck_1_column.field_layout_full_width
+field_name: field_layout_full_width
+entity_type: paragraph
+bundle: deck_1_column
+label: 'Full width'
+description: 'Should the column be limited to the defined page width, or should it flow to fill the entire width?'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

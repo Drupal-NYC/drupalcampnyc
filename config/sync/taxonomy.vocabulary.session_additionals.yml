@@ -1,0 +1,9 @@
+uuid: e7aa1a77-5a2d-499c-9495-bcb44d57fb50
+langcode: en
+status: true
+dependencies: {  }
+name: 'Session - Helper add-ons'
+vid: session_additionals
+description: 'Helper taxonomy to integrate other content in schedule'
+hierarchy: 0
+weight: 0

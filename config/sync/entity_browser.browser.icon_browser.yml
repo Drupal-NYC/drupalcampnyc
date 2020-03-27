@@ -1,0 +1,59 @@
+uuid: cf115d49-c56a-477f-bbb6-24760894a148
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.icon
+    - views.view.icon_browser
+  module:
+    - dropzonejs_eb_widget
+    - media
+    - views
+name: icon_browser
+label: icon_browser
+display: modal
+display_configuration:
+  width: ''
+  height: ''
+  link_text: 'Select icon'
+  auto_open: false
+selection_display: multi_step_display
+selection_display_configuration:
+  entity_type: media
+  display: rendered_entity
+  display_settings:
+    view_mode: preview
+  select_text: 'Use selected'
+  selection_hidden: false
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  3db9c589-d81b-45dc-a3fb-941164cb6b3c:
+    settings:
+      form_mode: default
+      media_type: icon
+      upload_location: 'public://icon'
+      dropzone_description: 'Drop SVG icon here to upload them'
+      max_filesize: 2048M
+      extensions: svg
+      clientside_resize: false
+      resize_width: null
+      resize_height: null
+      resize_quality: !!float 1
+      resize_method: contain
+      thumbnail_method: contain
+      submit_text: 'Select icon'
+    uuid: 3db9c589-d81b-45dc-a3fb-941164cb6b3c
+    weight: 1
+    label: 'Upload icon'
+    id: dropzonejs_media_entity_inline_entity_form
+  2977a39a-0d73-4358-a885-2362612204d1:
+    settings:
+      view: icon_browser
+      view_display: entity_browser_icons
+      submit_text: 'Select icon'
+      auto_select: false
+    uuid: 2977a39a-0d73-4358-a885-2362612204d1
+    weight: 2
+    label: Icons
+    id: view

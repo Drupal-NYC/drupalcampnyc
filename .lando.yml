@@ -1,10 +1,25 @@
-name: drupalcampnyc
-recipe: pantheon
+name: drupaleurope
+recipe: drupal8
 config:
-  framework: drupal8
-  site: drupalcampnyc
-  id: 36d6210e-0ea0-4579-9a00-a8d3ef891b81
-  xdebug: false
-  index: false
-  edge: true
-  cache: true
+  via: nginx
+  webroot: web
+  database: mariadb:10.1
+
+services:
+  appserver:
+    type: php:7.1
+    xdebug: false
+    build:
+      - "cd $LANDO_MOUNT && composer install"
+  node:
+    type: node:6.15
+    build:
+      - "cd $LANDO_MOUNT/web/themes/drupaleurope && npm install"
+      - "cd $LANDO_MOUNT/web/themes/drupaleurope && npm build"
+
+tooling:
+  npm:
+    service: node
+    cmd: npm --prefix /app/web/themes/drupaleurope
+  node:
+    service: node

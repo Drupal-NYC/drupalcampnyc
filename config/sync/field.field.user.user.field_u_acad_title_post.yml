@@ -1,0 +1,20 @@
+uuid: 1ea1dba8-0bf8-4d85-874a-1042ecb1f234
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_u_acad_title_post
+  module:
+    - user
+id: user.user.field_u_acad_title_post
+field_name: field_u_acad_title_post
+entity_type: user
+bundle: user
+label: 'Academic title (suffix)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

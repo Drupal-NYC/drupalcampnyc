@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="90px" height="95px" viewBox="0 0 90 95" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>plussign</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="85.8693503%" cy="18.3369998%" fx="85.8693503%" fy="18.3369998%" r="83.6380122%" gradientTransform="translate(0.858694,0.183370),scale(0.988889,1.000000),rotate(148.002165),scale(1.000000,0.995871),translate(-0.858694,-0.183370)" id="radialGradient-1">
+            <stop stop-color="#33A8E5" offset="0%"></stop>
+            <stop stop-color="#2B4BA1" offset="57.851559%"></stop>
+            <stop stop-color="#AB2D92" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Plus">
+            <g id="Shadow" opacity="0.253683036" transform="translate(0.000000, 6.000000)" fill="#282828">
+                <path d="M33,32 L33,0 L58,0 L58,32 L90,32 L90,57 L58,57 L58,89 L33,89 L33,57 L0,57 L0,32 L33,32 Z" id="Combined-Shape"></path>
+            </g>
+            <path d="M33,32 L33,0 L58,0 L58,32 L90,32 L90,57 L58,57 L58,89 L33,89 L33,57 L0,57 L0,32 L33,32 Z" id="Combined-Shape" fill="url(#radialGradient-1)"></path>
+        </g>
+    </g>
+</svg>

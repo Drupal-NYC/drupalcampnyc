@@ -1,0 +1,9 @@
+uuid: 00a0b1a2-8167-41c1-a540-3f84527c7331
+langcode: en
+status: true
+dependencies: {  }
+id: element_testimonial_pick
+label: 'Element - Pick testimonial'
+icon_uuid: null
+description: 'Hand-pick certain user(s) to display the testimonial'
+behavior_plugins: {  }

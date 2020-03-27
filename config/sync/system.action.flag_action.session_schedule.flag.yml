@@ -1,0 +1,13 @@
+uuid: a4e620d9-008b-4d8b-8ab8-696badd56990
+langcode: en
+status: true
+dependencies:
+  module:
+    - flag
+id: flag_action.session_schedule.flag
+label: 'Add to my schedule'
+type: node
+plugin: 'flag_action:session_schedule.flag'
+configuration:
+  flag_id: session_schedule
+  flag_action: flag

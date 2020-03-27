@@ -1,0 +1,29 @@
+uuid: 5fa8fa42-19ef-455c-8421-baf4460b1d20
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_room
+    - node.type.social_event
+    - taxonomy.vocabulary.room
+id: node.social_event.field_room
+field_name: field_room
+entity_type: node
+bundle: social_event
+label: Room
+description: 'Specify the room if the event takes place in the venue. If the event is outside the venue, explain the location in the description.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      room: room
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

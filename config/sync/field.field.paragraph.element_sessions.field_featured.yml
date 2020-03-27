@@ -1,0 +1,23 @@
+uuid: 7c480854-fd88-4ade-afee-1db18596270c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_featured
+    - paragraphs.paragraphs_type.element_sessions
+id: paragraph.element_sessions.field_featured
+field_name: field_featured
+entity_type: paragraph
+bundle: element_sessions
+label: 'Featured sessions'
+description: 'Show only sessions marked as featured.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

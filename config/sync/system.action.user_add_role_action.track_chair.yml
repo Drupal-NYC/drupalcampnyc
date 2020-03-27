@@ -1,0 +1,14 @@
+uuid: 308d0714-153c-467e-ac8b-c191767d43fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.track_chair
+  module:
+    - user
+id: user_add_role_action.track_chair
+label: 'Add the Track chair role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: track_chair

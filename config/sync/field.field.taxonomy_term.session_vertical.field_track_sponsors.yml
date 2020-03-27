@@ -1,0 +1,29 @@
+uuid: aed90f95-d50b-4b16-a2c8-41dc17b88754
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_track_sponsors
+    - node.type.sponsor
+    - taxonomy.vocabulary.session_vertical
+id: taxonomy_term.session_vertical.field_track_sponsors
+field_name: field_track_sponsors
+entity_type: taxonomy_term
+bundle: session_vertical
+label: 'Supported by'
+description: 'Selecct track sponsor(s) here.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      sponsor: sponsor
+    sort:
+      field: nid
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,31 @@
+uuid: daf78870-2145-439b-8b76-54f4378ffeb1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.element_call_to_action.field_link
+    - paragraphs.paragraphs_type.element_call_to_action
+  module:
+    - empty_fields
+    - link
+id: paragraph.element_call_to_action.preview
+targetEntityType: paragraph
+bundle: element_call_to_action
+mode: preview
+content:
+  field_link:
+    weight: 0
+    label: above
+    settings:
+      trim_length: 80
+      target: _blank
+      url_only: false
+      url_plain: false
+      rel: '0'
+    third_party_settings:
+      empty_fields:
+        handler: ''
+    type: link
+    region: content
+hidden: {  }

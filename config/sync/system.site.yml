@@ -1,0 +1,15 @@
+uuid: 976667ed-c652-450a-8725-dd5419e5cb97
+name: 'Drupal Europe'
+mail: hello@example.org
+slogan: ''
+page:
+  403: /node/81
+  404: /node/82
+  front: /node/1
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
+mail_notification: ''

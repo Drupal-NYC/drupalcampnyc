@@ -1,0 +1,49 @@
+uuid: b7857948-fe9a-438f-accb-fecb27dfc276
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_primary_column
+    - paragraphs.paragraphs_type.deck_1_column
+    - paragraphs.paragraphs_type.deck_2_columns
+    - paragraphs.paragraphs_type.deck_hero
+  module:
+    - entity_reference_revisions
+id: paragraph.deck_1_column.field_primary_column
+field_name: field_primary_column
+entity_type: paragraph
+bundle: deck_1_column
+label: 'Primary column'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 1
+    target_bundles:
+      deck_1_column: deck_1_column
+      deck_2_columns: deck_2_columns
+      deck_hero: deck_hero
+    target_bundles_drag_drop:
+      deck_1_column:
+        enabled: true
+        weight: 7
+      deck_2_columns:
+        enabled: true
+        weight: 8
+      deck_hero:
+        enabled: true
+        weight: 9
+      element_sessions:
+        weight: 10
+        enabled: false
+      media:
+        weight: 11
+        enabled: false
+      text:
+        weight: 12
+        enabled: false
+field_type: entity_reference_revisions

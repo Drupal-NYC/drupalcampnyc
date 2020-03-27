@@ -1,0 +1,75 @@
+uuid: a57c2e4b-ef1b-4afb-8a57-a8aa4a49aecd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pick_view
+    - paragraphs.paragraphs_type.views_block
+    - views.view.social_events
+  module:
+    - viewsreference
+id: paragraph.views_block.field_pick_view
+field_name: field_pick_view
+entity_type: paragraph
+bundle: views_block
+label: 'Pick view'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    display_id: block_1
+    data: 'a:5:{s:5:"pager";N;s:6:"offset";N;s:5:"limit";N;s:5:"title";N;s:8:"argument";N;}'
+    target_uuid: 54e4f794-bba4-40a4-b037-c1c18307266d
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: 0
+  plugin_types:
+    block: block
+    default: 0
+    page: 0
+    feed: 0
+    entity_browser: 0
+    attachment: 0
+    rest_export: 0
+  preselect_views:
+    partners: partners
+    social_events: social_events
+    block_content: 0
+    content: 0
+    content_recent: 0
+    element_list_sessions: 0
+    element_list_sponsors: 0
+    files: 0
+    frontpage: 0
+    icon_browser: 0
+    media: 0
+    media_browser: 0
+    moderated_content: 0
+    redirect: 0
+    redirect_404: 0
+    scheduler_scheduled_content: 0
+    sessions_export: 0
+    session_proposal_review: 0
+    session_statistics: 0
+    sponsors: 0
+    taxonomy_term: 0
+    taxonomy_term_teasers: 0
+    user_admin_people: 0
+    user_content: 0
+    user_speaker_browser: 0
+    user_special_views: 0
+    user_views: 0
+    watchdog: 0
+    who_s_new: 0
+    who_s_online: 0
+  enabled_settings:
+    pager: 0
+    offset: 0
+    limit: 0
+    title: 0
+    argument: 0
+field_type: viewsreference

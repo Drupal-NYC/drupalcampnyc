@@ -1,0 +1,23 @@
+uuid: 0755838b-6154-4079-8be1-786a085d00af
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_featured
+    - node.type.session
+id: node.session.field_featured
+field_name: field_featured
+entity_type: node
+bundle: session
+label: Featured
+description: 'Should this talk be featured?'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

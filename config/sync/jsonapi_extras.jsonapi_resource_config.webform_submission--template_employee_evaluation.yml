@@ -1,0 +1,163 @@
+uuid: 6a3c67eb-7fce-4e0b-8083-8e8e96bfe01c
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.template_employee_evaluation
+id: webform_submission--template_employee_evaluation
+disabled: true
+path: webform_submission/template_employee_evaluation
+resourceType: webform_submission--template_employee_evaluation
+resourceFields:
+  serial:
+    fieldName: serial
+    publicName: serial
+    enhancer:
+      id: ''
+    disabled: false
+    advancedOptionsIcon: ''
+    enhancer_label: ''
+  sid:
+    fieldName: sid
+    publicName: sid
+    enhancer:
+      id: ''
+    disabled: false
+    advancedOptionsIcon: ''
+    enhancer_label: ''
+  uuid:
+    fieldName: uuid
+    publicName: uuid
+    enhancer:
+      id: ''
+    disabled: false
+    advancedOptionsIcon: ''
+    enhancer_label: ''
+  token:
+    fieldName: token
+    publicName: token
+    enhancer:
+      id: ''
+    disabled: false
+    advancedOptionsIcon: ''
+    enhancer_label: ''
+  uri:
+    fieldName: uri
+    publicName: uri
+    enhancer:
+      id: ''
+    disabled: false
+    advancedOptionsIcon: ''
+    enhancer_label: ''
+  created:
+    fieldName: created
+    publicName: created
+    enhancer:
+      id: ''
+    disabled: false
+    advancedOptionsIcon: ''
+    enhancer_label: ''
+  completed:
+    fieldName: completed
+    publicName: completed
+    enhancer:
+      id: ''
+    disabled: false
+    advancedOptionsIcon: ''
+    enhancer_label: ''
+  changed:
+    fieldName: changed
+    publicName: changed
+    enhancer:
+      id: ''
+    disabled: false
+    advancedOptionsIcon: ''
+    enhancer_label: ''
+  in_draft:
+    fieldName: in_draft
+    publicName: in_draft
+    enhancer:
+      id: ''
+    disabled: false
+    advancedOptionsIcon: ''
+    enhancer_label: ''
+  current_page:
+    fieldName: current_page
+    publicName: current_page
+    enhancer:
+      id: ''
+    disabled: false
+    advancedOptionsIcon: ''
+    enhancer_label: ''
+  remote_addr:
+    fieldName: remote_addr
+    publicName: remote_addr
+    enhancer:
+      id: ''
+    disabled: false
+    advancedOptionsIcon: ''
+    enhancer_label: ''
+  uid:
+    fieldName: uid
+    publicName: uid
+    enhancer:
+      id: ''
+    disabled: false
+    advancedOptionsIcon: ''
+    enhancer_label: ''
+  langcode:
+    fieldName: langcode
+    publicName: langcode
+    enhancer:
+      id: ''
+    disabled: false
+    advancedOptionsIcon: ''
+    enhancer_label: ''
+  webform_id:
+    fieldName: webform_id
+    publicName: webform_id
+    enhancer:
+      id: ''
+    disabled: false
+    advancedOptionsIcon: ''
+    enhancer_label: ''
+  entity_type:
+    fieldName: entity_type
+    publicName: entity_type
+    enhancer:
+      id: ''
+    disabled: false
+    advancedOptionsIcon: ''
+    enhancer_label: ''
+  entity_id:
+    fieldName: entity_id
+    publicName: entity_id
+    enhancer:
+      id: ''
+    disabled: false
+    advancedOptionsIcon: ''
+    enhancer_label: ''
+  locked:
+    fieldName: locked
+    publicName: locked
+    enhancer:
+      id: ''
+    disabled: false
+    advancedOptionsIcon: ''
+    enhancer_label: ''
+  sticky:
+    fieldName: sticky
+    publicName: sticky
+    enhancer:
+      id: ''
+    disabled: false
+    advancedOptionsIcon: ''
+    enhancer_label: ''
+  notes:
+    fieldName: notes
+    publicName: notes
+    enhancer:
+      id: ''
+    disabled: false
+    advancedOptionsIcon: ''
+    enhancer_label: ''

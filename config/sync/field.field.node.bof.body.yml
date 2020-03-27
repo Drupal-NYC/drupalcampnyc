@@ -1,0 +1,22 @@
+uuid: 80cac841-3916-4abf-89ad-0bc622b11399
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.bof
+  module:
+    - text
+id: node.bof.body
+field_name: body
+entity_type: node
+bundle: bof
+label: Description
+description: 'Sell your BoF session here! What should the audience expect, what is the intended outcome?'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

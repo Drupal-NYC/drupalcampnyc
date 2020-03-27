@@ -1,0 +1,48 @@
+uuid: ba596691-347f-432d-8f89-fb7821948806
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.element_sessions.field_featured
+    - field.field.paragraph.element_sessions.field_topic
+    - field.field.paragraph.element_sessions.field_track
+    - paragraphs.paragraphs_type.element_sessions
+  module:
+    - empty_fields
+id: paragraph.element_sessions.preview
+targetEntityType: paragraph
+bundle: element_sessions
+mode: preview
+content:
+  field_featured:
+    weight: 0
+    label: inline
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_topic:
+    type: entity_reference_label
+    weight: 1
+    region: content
+    label: inline
+    settings:
+      link: false
+    third_party_settings:
+      empty_fields:
+        handler: ''
+  field_track:
+    type: entity_reference_label
+    weight: 2
+    region: content
+    label: inline
+    settings:
+      link: false
+    third_party_settings:
+      empty_fields:
+        handler: ''
+hidden: {  }

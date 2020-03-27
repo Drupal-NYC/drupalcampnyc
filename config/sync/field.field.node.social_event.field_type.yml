@@ -1,0 +1,23 @@
+uuid: 8337067a-121b-4489-8255-dc79b06f0cd9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type
+    - node.type.social_event
+  module:
+    - options
+id: node.social_event.field_type
+field_name: field_type
+entity_type: node
+bundle: social_event
+label: Type
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: social
+default_value_callback: ''
+settings: {  }
+field_type: list_string

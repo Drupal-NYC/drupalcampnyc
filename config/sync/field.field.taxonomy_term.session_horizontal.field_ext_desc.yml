@@ -1,0 +1,21 @@
+uuid: 35f21739-c55a-4b91-b21d-e51f805eb6ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_ext_desc
+    - taxonomy.vocabulary.session_horizontal
+  module:
+    - text
+id: taxonomy_term.session_horizontal.field_ext_desc
+field_name: field_ext_desc
+entity_type: taxonomy_term
+bundle: session_horizontal
+label: 'Extended description'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

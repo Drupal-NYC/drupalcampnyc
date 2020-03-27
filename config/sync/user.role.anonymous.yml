@@ -1,0 +1,57 @@
+uuid: e5e3fbd8-519d-446c-82ee-606a1980990c
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access content'
+  - 'access user profiles'
+  - 'display eu cookie compliance popup'
+  - 'use text format restricted_html'
+  - 'view field_access_notice'
+  - 'view field_alternative_verticals'
+  - 'view field_description'
+  - 'view field_duration'
+  - 'view field_featured'
+  - 'view field_si_sponsor'
+  - 'view field_slides'
+  - 'view field_slides_external'
+  - 'view field_speaker'
+  - 'view field_speaker_experience'
+  - 'view field_speaker_inclusion'
+  - 'view field_speaker_profile'
+  - 'view field_speakers'
+  - 'view field_sponsors'
+  - 'view field_track_chairs'
+  - 'view field_track_session_additionals'
+  - 'view field_u_cat_mentor'
+  - 'view field_u_cat_trackchair'
+  - 'view field_u_cat_volunteer'
+  - 'view field_video'
+  - 'view field_xp_level'
+  - 'view media'
+  - 'view own field_si_sponsor'
+  - 'view own field_sponsors'
+  - 'view paragraph content deck_1_column'
+  - 'view paragraph content deck_2_columns'
+  - 'view paragraph content deck_header'
+  - 'view paragraph content deck_hero'
+  - 'view paragraph content element_call_to_action'
+  - 'view paragraph content element_session_overview'
+  - 'view paragraph content element_sessions'
+  - 'view paragraph content element_social_wall'
+  - 'view paragraph content element_sponsor'
+  - 'view paragraph content element_testimonial_pick'
+  - 'view paragraph content element_tickets_widget'
+  - 'view paragraph content element_tracks'
+  - 'view paragraph content element_user_lists'
+  - 'view paragraph content element_user_pick'
+  - 'view paragraph content element_webform'
+  - 'view paragraph content media'
+  - 'view paragraph content text'
+  - 'view paragraph content views_block'

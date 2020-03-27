@@ -1,0 +1,19 @@
+uuid: 43c97d09-f174-4a57-bad7-77550c991b16
+langcode: en
+status: true
+dependencies:
+  module:
+    - text
+    - user
+id: user.field_u_volunteer_about
+field_name: field_u_volunteer_about
+entity_type: user
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
