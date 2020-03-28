@@ -1,77 +1,61 @@
-# Drupal Europe on Drupal 8
+# DrupalCamp NYC D8
 
-This project is based on the [Drupal project](https://github.com/drupal-composer/drupal-project/blob/8.x/README.md)
-composer template and additional information about it can be found in it's README.md file. 
+[drupalcamp.nyc](https://www.drupalcamp.nyc) is hosted on Pantheon. You need to be a member of the [DrupalCampNYC Pantheon site's "Team"](https://dashboard.pantheon.io/sites/36d6210e-0ea0-4579-9a00-a8d3ef891b81) (link only works if you are a member) to be able to:
+* Make a manual backup of the site
+* Download a copy of the site's database and/or files (sites/default/files)
+* Deploy to Pantheon's Test or Stage environment
 
-## Local Development setup
-There are multiple ways of getting a Local Development setup:
+[Our canonical git repository](https://github.com/Drupal-NYC/drupalcampnyc) is on GitHub. You need to be a member of the GitHub Drupal-NYC organization's [DrupalCamp team](https://github.com/orgs/Drupal-NYC/teams/drupalcamp) (link only works if you are a member) in order to:
+* Push changes to the master branch
+* Approve pull requests
 
-1. The setups recommended by Amazee.io based on their infrastructure. (**recommended**)
-  1. Setup either Cachalot or Pygmy as [recommended by Amazee.io](https://docs.amazee.io/local_docker_development/local_docker_development.html)
-2. Using [Lando](https://docs.devwithlando.io/) – A configuration for Lando have been included in the code repository and can be initiated by running `lando start`
-3. Run your own flavor of Development environment
+When changes are pushed to or merged into the master branch on GitHub, a build should be triggered on CodeShip. You need to be a member of the Drupalnyc [Devs CodeShip team](https://app.codeship.com/orgs/drupalnyc/teams/devs) (link only works if you are a member) to:
+* [View build status and history](https://app.codeship.com/projects/1ea10500-2c56-0136-bbdc-5ed18f0e55cd)
 
-We are not requiring you to adapt your current favored development environment – but using one of the recommended, allows us better to guide or help you should there be any issues with it.
+The CodeShip build, among other things, deploys the changes to our Pantheon site's Dev environment.
 
-### 1.1 Pygmy or Cachalot
-There is a good step-by-step guide to how to get started with either of these.
+# Local Environment Using Lando
 
-- Linux & OS X [Pygmy](https://docs.amazee.io/local_docker_development/pygmy.html)
-- OS X [Cachalot](https://docs.amazee.io/local_docker_development/os_x_cachalot.html)
+[Lando documentation](https://docs.lando.dev/)
 
-Following the steps there and once ready to boot-up read the after setup steps.
+## Initial Setup
 
-### 2 Lando
-Lando is a docker based environment that works on windows, linux and osx – it is fairly easy to get up and running and once installed it just requires a `lando start` in the root folder.
+Note that the git repo already has a `.lando.yml` file so you shouldn't run `lando init`.
 
-### 3 Your personal flavor of Devleopment environment
-If you pick this option we assume you know what you are doing and can figure out issues related to your local environment by your self, but do ask and we can see what we might be able to do.
+1. Download and install the latest release of Lando from https://github.com/lando/lando/releases
+2. Create a directory to contain the site (e.g. `mkdir ~/Sites/drupalcampnyc`)
+3. Change to that directory (e.g. `cd ~/Sites/drupalcampnyc`)
+4. `git clone git@github.com:Drupal-NYC/drupalcampnyc.git .`
+5. `git checkout drupaleurope`
+6. `lando start`
+7. Go to https://drupalcampnyc.lndo.site/ and install Drupal "from configuration".
 
-## Preparing the local installation
-First you need to setup the `settings.local.php` file, the `settings.php` file is configured to automatically include it if present.
-There is an `example.settings.local.php` file available, it contains the basic required to run the code locally.
-A special thing to notice here is that we are using the [Shield module](https://www.drupal.org/project/shield) to project the Develop/Testing server, this gets disabled on production and on your local environment using the configuration in the example.settings.local.php file.
+The first time it is run, per .lando.yml, `lando start`:
+* runs `composer install` for the project
+* runs `npm install` in web/themes/drupaleurope
+* runs `npm run build` in web/themes/drupaleurope to compile the theme
 
-    $config['shield.settings']['credentials'] = [];
+You now have a fully functional local environment, accessible at [https://drupalcampnyc.lndo.site/](https://drupalcampnyc.lndo.site/)
 
-Now you are ready for including a database into the project, if you haven't already you need to ping @lslinnet, @ChandeepKhosa or @zelfje on slack and provide your public key so that we can have it added to our hosting setup.
-Once you do this you are agreeing to become a data processor with responsibility and by such will be priveleged to personal information about attendees.
+## Useful Commands
 
-    drush sa
-    
-Will list all Site-aliases, these include those bundled from Amazee.io (`@develop` & `@master`) please do not make use of the `@master` unless you know what you are doing.
-To get a working version of the database run:
+`git push` as normal.
 
-    drush -y sql-sync @develop @self
-    
-    drush -y rsync @develop:%files @self:%files
+Drush: `lando drush <command>`
 
-Or as a one-liner.
+Drupal Console: `lando drupal <command>`
 
-    drush -y sql-sync @develop @self && drush -y rsync @develop:%files @self:%files
+Turn off Lando: `lando poweroff`
 
-There is also for Pygmy & Cachalot a wrapper script in the containers that helps you with these calls
+Start the site: `lando start`
 
-    dsql @develop
-    dfiles @develop
-    
-Both `dsql` and `dfiles` requires you to be using either cachalot or pygmy.
+Build the theme: `lando npm run build`
 
-### Theming
-In the theme folder `web/themes/drupaleurope` you will find a package.json file, that should be installed using `npm install`.
-When the install is complete it can be started using `npm run watch` which boots the webpack configured compiler and keeps watching for changes.
+Build the theme automatically when changed: `lando npm run watch`
 
-## Contribute
+## Enable XDebug
 
-All changes should be based off the Master branch, Merged into the develop branch for verification and then merged into master once approved.
+1. Edit .lando.yml and set `xdebug` to `true`.
+2. `lando rebuild`
 
-Testing server can be found at http://example.develop.zh2.compact.amazee.io/ 
-
-    $config['shield.settings']['credentials'] = [
-        'shield' => [
-            'user' => 'example',
-            'pass' => 'example',
-        ],
-    ];
-
-Additional information about contribution can be found in [CONTRIBUTE.md](CONTRIBUTING.md)
+Now everything will run slower :)
