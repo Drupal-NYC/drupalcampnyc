@@ -6,8 +6,8 @@ id: node__session
 label: 'Content: Session'
 tags:
   twitter_cards_page_url: '[node:url]'
-  twitter_cards_site: '@example'
-  twitter_cards_image: 'https://example.org/sites/default/files/inline-images/Drupal_Europe_logo_vertical_exclzone.png'
+  twitter_cards_site: '@drupalcampnyc'
+  twitter_cards_image: 'https://drupaleurope.org/sites/default/files/inline-images/Drupal_Europe_logo_vertical_exclzone.png'
   twitter_cards_data1: '[node:field_vertical]'
   twitter_cards_type: summary
   twitter_cards_label1: Track

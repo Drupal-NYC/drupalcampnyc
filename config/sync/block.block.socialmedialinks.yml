@@ -32,7 +32,7 @@ settings:
       description: ''
       weight: '-9'
     medium:
-      value: '@example'
+      value: '@drupalcampnyc'
       description: 'Read our blog on Medium'
       weight: '-9'
     contact:

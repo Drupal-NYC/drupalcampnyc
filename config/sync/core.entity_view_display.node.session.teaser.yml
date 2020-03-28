@@ -13,6 +13,7 @@ dependencies:
     - field.field.node.session.field_horizontal
     - field.field.node.session.field_room
     - field.field.node.session.field_slides
+    - field.field.node.session.field_slides_external
     - field.field.node.session.field_speaker_experience
     - field.field.node.session.field_speaker_inclusion
     - field.field.node.session.field_speakers
@@ -28,6 +29,8 @@ dependencies:
     - datetime
     - empty_fields
     - field_group
+    - file
+    - link
     - options
     - text
     - user
@@ -57,7 +60,7 @@ third_party_settings:
         - field_ends_at
         - field_room
       parent_name: ''
-      weight: 3
+      weight: 4
       format_type: html_element
       format_settings:
         label: 'Scheduled at'
@@ -70,6 +73,24 @@ third_party_settings:
         id: ''
         classes: scheduled-at
       label: 'Scheduled at'
+    group_materials:
+      children:
+        - field_slides
+        - field_slides_external
+        - field_video
+      parent_name: ''
+      weight: 3
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: session-materials
+        element: div
+        show_label: true
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Materials
 id: node.session.teaser
 targetEntityType: node
 bundle: session
@@ -88,7 +109,7 @@ content:
         handler: ''
   field_horizontal:
     type: entity_reference_label
-    weight: 7
+    weight: 5
     region: content
     label: visually_hidden
     settings:
@@ -101,6 +122,28 @@ content:
     label: hidden
     settings:
       link: false
+    third_party_settings:
+      empty_fields:
+        handler: ''
+  field_slides:
+    type: file_default
+    weight: 0
+    region: content
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+  field_slides_external:
+    type: link
+    weight: 1
+    region: content
+    label: above
+    settings:
+      trim_length: 80
+      target: _blank
+      url_only: false
+      url_plain: false
+      rel: '0'
     third_party_settings:
       empty_fields:
         handler: ''
@@ -151,8 +194,22 @@ content:
     settings:
       link: true
     third_party_settings: {  }
+  field_video:
+    type: link
+    weight: 2
+    region: content
+    label: above
+    settings:
+      trim_length: 80
+      target: _blank
+      url_only: false
+      url_plain: false
+      rel: '0'
+    third_party_settings:
+      empty_fields:
+        handler: ''
   flag_session_schedule:
-    weight: 8
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -163,11 +220,9 @@ hidden:
   field_description: true
   field_duration: true
   field_featured: true
-  field_slides: true
   field_speaker_experience: true
   field_speaker_inclusion: true
   field_terms: true
-  field_video: true
   field_xp_level: true
   links: true
   shariff_field: true

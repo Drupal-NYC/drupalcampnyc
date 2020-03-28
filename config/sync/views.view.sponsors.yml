@@ -179,7 +179,7 @@ display:
           expose:
             label: ''
           granularity: second
-      title: 'Sponsors of Drupal Europe'
+      title: 'Sponsors of DrupalCampNYC'
       header: {  }
       footer: {  }
       empty: {  }

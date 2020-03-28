@@ -471,10 +471,10 @@ display:
           metatags:
             twitter_cards_type: summary
             twitter_cards_description: 'All talks, panels, workshops, BoFs, contribution opportunities and social events for each day.'
-            twitter_cards_site: '@example'
+            twitter_cards_site: '@drupalcampnyc'
             twitter_cards_title: 'Daily schedule'
-            twitter_cards_site_id: '@example'
-            twitter_cards_image: 'https://example.org/sites/default/files/inline-images/Drupal_Europe_logo_vertical_exclzone.png'
+            twitter_cards_site_id: '@drupalcampnyc'
+            twitter_cards_image: 'https://drupaleurope.org/sites/default/files/inline-images/Drupal_Europe_logo_vertical_exclzone.png'
       path: program/schedule/%
     cache_metadata:
       max-age: -1

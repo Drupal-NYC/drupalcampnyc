@@ -163,7 +163,7 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: tickets@example.org
+      to_mail: camp@drupalnyc.org
       to_options: {  }
       cc_mail: ''
       cc_options: {  }

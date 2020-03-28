@@ -156,7 +156,7 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: hello@example.org
+      to_mail: camp@drupalnyc.org
       to_options: {  }
       cc_mail: ''
       cc_options: {  }

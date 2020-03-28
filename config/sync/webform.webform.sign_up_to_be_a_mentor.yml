@@ -1,9 +1,10 @@
 uuid: b29508a0-c463-4896-aca9-ddfc03c136c0
 langcode: en
-status: open
+status: closed
 dependencies: {  }
 open: null
 close: null
+weight: 0
 uid: 1
 template: false
 archive: false
@@ -102,6 +103,8 @@ settings:
   results_disabled: false
   results_disabled_ignore: false
   token_update: false
+  wizard_progress_link: false
+  wizard_preview_link: false
 access:
   create:
     roles:
@@ -157,7 +160,7 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: hello@example.org
+      to_mail: camp@drupalnyc.org
       to_options: {  }
       cc_mail: ''
       cc_options: {  }

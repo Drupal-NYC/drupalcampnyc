@@ -1,6 +1,6 @@
 uuid: 6d01c7c7-3469-4366-9f66-e5cb2756a345
 langcode: en
-status: open
+status: closed
 dependencies:
   enforced:
     module:
@@ -9,6 +9,7 @@ _core:
   default_config_hash: 54q-eZLQ0xY3g9yFexLIn97Y8F_sByRhO4ima2pMmn4
 open: null
 close: null
+weight: 0
 uid: null
 template: false
 archive: false
@@ -16,7 +17,7 @@ id: contact
 title: Contact
 description: 'Email contact webform with several optional addressees'
 category: ''
-elements: "subject1:\n  '#type': webform_select_other\n  '#title': Subject\n  '#help': 'Please find us help the right addressee by indicating the subject'\n  '#options':\n    ticket: 'Buying a ticket'\n    speaking: 'Speaking at Drupal Europe'\n    sponsoring: Sponsoring\n    volunteering: Volunteering\n    website: 'Website issue'\n    privacy: 'Privacy concerns'\n    accessibility: 'Accessibility question'\n    coc: 'Code of conduct'\n  '#required': true\nname:\n  '#type': textfield\n  '#title': 'Your Name'\n  '#required': true\nemail:\n  '#type': email\n  '#title': 'Your Email'\n  '#required': true\nmessage:\n  '#title': Message\n  '#type': textarea\n  '#required': true\n  '#test': 'Please ignore this email.'\nr_u_real:\n  '#type': textfield\n  '#title': 'Drupal Europe takes place in this country'\n  '#description': 'Spam protection - please type <em>Germany</em> in this field.'\n  '#required': true\nedit_copy_contact:\n  '#type': checkbox\n  '#title': 'Send yourself a copy'\n  '#help': 'Check if you want a copy of this mail sent to yourself.'\nsubject:\n  '#type': textfield\n  '#title': Subject\n  '#states':\n    invisible:\n      '':\n        '': ''\n  '#access_create_roles': {  }\n  '#test': 'Testing contact webform from [site:name]'\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#states':\n    enabled:\n      ':input[name=\"r_u_real\"]':\n        value: Germany\n  '#submit__label': 'Send message'\n"
+elements: "subject1:\n  '#type': webform_select_other\n  '#title': Subject\n  '#help': 'Please find us help the right addressee by indicating the subject'\n  '#options':\n    ticket: 'Buying a ticket'\n    speaking: 'Speaking at DrupalCampNYC'\n    sponsoring: Sponsoring\n    volunteering: Volunteering\n    website: 'Website issue'\n    privacy: 'Privacy concerns'\n    accessibility: 'Accessibility question'\n    coc: 'Code of conduct'\n  '#required': true\nname:\n  '#type': textfield\n  '#title': 'Your Name'\n  '#required': true\nemail:\n  '#type': email\n  '#title': 'Your Email'\n  '#required': true\nmessage:\n  '#title': Message\n  '#type': textarea\n  '#required': true\n  '#test': 'Please ignore this email.'\nr_u_real:\n  '#type': textfield\n  '#title': 'DrupalCampNYC takes place in this country'\n  '#description': 'Spam protection - please type <em>Germany</em> in this field.'\n  '#required': true\nedit_copy_contact:\n  '#type': checkbox\n  '#title': 'Send yourself a copy'\n  '#help': 'Check if you want a copy of this mail sent to yourself.'\nsubject:\n  '#type': textfield\n  '#title': Subject\n  '#states':\n    invisible:\n      '':\n        '': ''\n  '#access_create_roles': {  }\n  '#test': 'Testing contact webform from [site:name]'\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#states':\n    enabled:\n      ':input[name=\"r_u_real\"]':\n        value: Germany\n  '#submit__label': 'Send message'\n"
 css: ''
 javascript: ''
 settings:
@@ -107,6 +108,8 @@ settings:
   results_disabled: false
   results_disabled_ignore: false
   token_update: false
+  wizard_progress_link: false
+  wizard_preview_link: false
 access:
   create:
     roles:
@@ -206,7 +209,7 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: hello@example.org
+      to_mail: camp@drupalnyc.org
       to_options: {  }
       cc_mail: ''
       cc_options: {  }
@@ -247,7 +250,7 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: tickets@example.org
+      to_mail: camp@drupalnyc.org
       to_options: {  }
       cc_mail: ''
       cc_options: {  }
@@ -288,7 +291,7 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: program@example.org
+      to_mail: camp@drupalnyc.org
       to_options: {  }
       cc_mail: ''
       cc_options: {  }
@@ -329,7 +332,7 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: sponsors@example.org
+      to_mail: camp@drupalnyc.org
       to_options: {  }
       cc_mail: ''
       cc_options: {  }
@@ -370,7 +373,7 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: volunteers@example.org
+      to_mail: camp@drupalnyc.org
       to_options: {  }
       cc_mail: ''
       cc_options: {  }
@@ -411,7 +414,7 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: website@example.org
+      to_mail: camp@drupalnyc.org
       to_options: {  }
       cc_mail: ''
       cc_options: {  }
@@ -452,11 +455,11 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: privacy@example.org
+      to_mail: camp@drupalnyc.org
       to_options: {  }
       cc_mail: ''
       cc_options: {  }
-      bcc_mail: {  }
+      bcc_mail: ''
       bcc_options: {  }
       from_mail: '[webform_submission:values:email:raw]'
       from_options: {  }
@@ -493,11 +496,11 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: accessibility@example.org
+      to_mail: camp@drupalnyc.org
       to_options: {  }
       cc_mail: ''
       cc_options: {  }
-      bcc_mail: {  }
+      bcc_mail: ''
       bcc_options: {  }
       from_mail: '[webform_submission:values:email:raw]'
       from_options: {  }
@@ -534,7 +537,7 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: conduct@example.org
+      to_mail: camp@drupalnyc.org
       to_options: {  }
       cc_mail: ''
       cc_options: {  }

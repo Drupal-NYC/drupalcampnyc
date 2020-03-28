@@ -11,7 +11,7 @@ id: node.session.field_slides_external
 field_name: field_slides_external
 entity_type: node
 bundle: session
-label: 'Slides external'
+label: 'Externally hosted slides'
 description: ''
 required: false
 translatable: false

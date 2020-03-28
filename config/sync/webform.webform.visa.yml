@@ -1,9 +1,10 @@
 uuid: 383ec32f-3fdc-41d2-9e6c-da89aa938c2e
 langcode: en
-status: open
+status: closed
 dependencies: {  }
 open: null
 close: null
+weight: 0
 uid: 1
 template: false
 archive: false
@@ -102,6 +103,8 @@ settings:
   results_disabled: false
   results_disabled_ignore: false
   token_update: false
+  wizard_progress_link: false
+  wizard_preview_link: false
 access:
   create:
     roles:
@@ -160,7 +163,7 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: tickets@example.org
+      to_mail: camp@drupalnyc.org
       to_options: {  }
       cc_mail: ''
       cc_options: {  }

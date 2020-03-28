@@ -4,9 +4,10 @@ status: open
 dependencies: {  }
 open: null
 close: null
+weight: 0
 uid: 929
 template: false
-archive: false
+archive: true
 id: european_supporting_partners_rou
 title: 'European Supporting Partners roundtable signup'
 description: ''
@@ -102,6 +103,8 @@ settings:
   results_disabled: false
   results_disabled_ignore: false
   token_update: false
+  wizard_progress_link: false
+  wizard_preview_link: false
 access:
   create:
     roles:
@@ -156,7 +159,7 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: hello@association.drupal.org
+      to_mail: rachel.lawson@association.drupal.org
       to_options: {  }
       cc_mail: ''
       cc_options: {  }

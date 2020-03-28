@@ -1,9 +1,10 @@
 uuid: bea0465b-1c55-4a83-8a45-859f66bf668c
 langcode: en
-status: open
+status: closed
 dependencies: {  }
 open: null
 close: null
+weight: 0
 uid: 1
 template: false
 archive: false
@@ -102,6 +103,8 @@ settings:
   results_disabled: false
   results_disabled_ignore: false
   token_update: false
+  wizard_progress_link: false
+  wizard_preview_link: false
 access:
   create:
     roles:

@@ -12,7 +12,7 @@ field_name: field_speaker_inclusion
 entity_type: node
 bundle: session
 label: Inclusivity
-description: "Drupal Europe wants to increase speaker diversity. Please indicate if you consider yourself belonging to any of the underrepresented groups. Categories chosen based on the \"Big 8\", which is a list of cultural identifiers. If you feel that we have missed something or would like to give feedback on this process, please contact our <a href=\"mailto:hello@example.org\">Program Manager</a>.\r\n"
+description: "DrupalCampNYC wants to increase speaker diversity. Please indicate if you consider yourself belonging to any of the underrepresented groups. Categories chosen based on the \"Big 8\", which is a list of cultural identifiers. If you feel that we have missed something or would like to give feedback on this process, please contact our <a href=\"mailto:camp@drupalnyc.org\">Program Manager</a>.\r\n"
 required: false
 translatable: false
 default_value: {  }

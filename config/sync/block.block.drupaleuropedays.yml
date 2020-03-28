@@ -18,7 +18,7 @@ provider: null
 plugin: 'menu_block:drupal-europe-days'
 settings:
   id: 'menu_block:drupal-europe-days'
-  label: 'Drupal Europe Days'
+  label: 'DrupalCampNYC Days'
   provider: menu_block
   label_display: '0'
   level: 1

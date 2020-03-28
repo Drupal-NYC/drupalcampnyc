@@ -3,6 +3,6 @@ langcode: en
 status: true
 dependencies: {  }
 id: drupal-europe-days
-label: 'Drupal Europe Days'
+label: 'DrupalCampNYC Days'
 description: ''
 locked: false

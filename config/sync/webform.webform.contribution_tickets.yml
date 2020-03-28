@@ -4,6 +4,7 @@ status: scheduled
 dependencies: {  }
 open: '2018-08-02T12:00:00'
 close: '2018-08-31T23:59:59'
+weight: 0
 uid: 728
 template: false
 archive: false
@@ -159,7 +160,7 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: hello@example.org
+      to_mail: camp@drupalnyc.org
       to_options: {  }
       cc_mail: ''
       cc_options: {  }

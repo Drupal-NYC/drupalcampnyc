@@ -12,7 +12,7 @@ field_name: field_speaker_profile
 entity_type: user
 bundle: user
 label: 'Speaker profile'
-description: 'If you are speaker at Drupal Europe please provide a short text in 3rd person (from the perspective of a track chair, for example).'
+description: 'If you are speaker at DrupalCampNYC please provide a short text in 3rd person (from the perspective of a track chair, for example).'
 required: false
 translatable: false
 default_value: {  }

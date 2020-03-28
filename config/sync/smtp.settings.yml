@@ -5,8 +5,8 @@ smtp_port: '25'
 smtp_protocol: standard
 smtp_username: ''
 smtp_password: ''
-smtp_from: website@example.org
-smtp_fromname: 'Drupal Europe'
+smtp_from: camp@drupalnyc.org
+smtp_fromname: 'DrupalCampNYC'
 smtp_client_hostname: ''
 smtp_client_helo: ''
 smtp_allowhtml: '1'

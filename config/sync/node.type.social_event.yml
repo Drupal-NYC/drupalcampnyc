@@ -23,7 +23,7 @@ third_party_settings:
 name: 'Social event'
 type: social_event
 description: 'Social event submission form. Any registered user can access it.'
-help: 'If you are organizing a social event in the course of Drupal Europe you can use this form to apply for a <em>presentation</em> of the event on the conference website. No obligations included for the organizers.'
+help: 'If you are organizing a social event in the course of DrupalCampNYC you can use this form to apply for a <em>presentation</em> of the event on the conference website. No obligations included for the organizers.'
 new_revision: true
 preview_mode: 1
 display_submitted: false
