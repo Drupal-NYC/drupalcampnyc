@@ -28,7 +28,7 @@ Note that the git repo already has a `.lando.yml` file so you shouldn't run `lan
 4. `git clone git@github.com:Drupal-NYC/drupalcampnyc.git .`
 5. `git checkout drupaleurope`
 6. `lando start`
-7. Go to https://drupalcampnyc.lndo.site/ and install Drupal "from configuration".
+7. Go to https://drupalcampnyc.lndo.site/ and install Drupal "from configuration" (slower) or import a starter database from setup/db (faster).
 
 The first time it is run, per .lando.yml, `lando start`:
 * runs `composer install` for the project
