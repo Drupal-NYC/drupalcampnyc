@@ -9,12 +9,19 @@
  * Include the Pantheon-specific settings file.
  *
  * n.b. The settings.pantheon.php file makes some changes
- *      that affect all envrionments that this site
+ *      that affect all environments that this site
  *      exists in.  Always include this file, even in
- *      a local development environment, to insure that
+ *      a local development environment, to ensure that
  *      the site settings remain consistent.
  */
 include __DIR__ . "/settings.pantheon.php";
+
+/**
+ * Place the config directory outside of the Drupal root.
+ */
+$config_directories = array(
+  CONFIG_SYNC_DIRECTORY => dirname(DRUPAL_ROOT) . '/config',
+);
 
 $local_settings = __DIR__ . '/settings.local.php';
 

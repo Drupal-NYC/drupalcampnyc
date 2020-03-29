@@ -129,5 +129,3 @@ $settings['rebuild_access'] = TRUE;
  * directory.
  */
 $settings['skip_permissions_hardening'] = TRUE;
-
-$config_directories[CONFIG_SYNC_DIRECTORY] = '../config/sync';
