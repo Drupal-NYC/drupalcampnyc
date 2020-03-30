@@ -5,5 +5,4 @@ dependencies: {  }
 name: Room
 vid: room
 description: ''
-hierarchy: 0
 weight: 0

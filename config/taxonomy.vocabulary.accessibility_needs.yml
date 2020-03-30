@@ -5,5 +5,4 @@ dependencies: {  }
 name: 'User - Accessibility needs'
 vid: accessibility_needs
 description: ''
-hierarchy: 0
 weight: 0

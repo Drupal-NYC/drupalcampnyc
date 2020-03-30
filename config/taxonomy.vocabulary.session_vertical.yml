@@ -5,5 +5,4 @@ dependencies: {  }
 name: 'Industry Tracks (Vertical)'
 vid: session_vertical
 description: ''
-hierarchy: 0
 weight: 0

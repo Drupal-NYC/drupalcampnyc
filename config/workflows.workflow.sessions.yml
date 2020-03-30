@@ -94,3 +94,4 @@ type_settings:
   entity_types:
     node:
       - session
+  default_moderation_state: draft

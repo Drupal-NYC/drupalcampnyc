@@ -5,5 +5,4 @@ dependencies: {  }
 name: 'User - Dietary restrictions'
 vid: dietary_restrictions
 description: ''
-hierarchy: 0
 weight: 0

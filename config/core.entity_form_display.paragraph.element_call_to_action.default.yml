@@ -6,7 +6,6 @@ dependencies:
     - field.field.paragraph.element_call_to_action.field_link
     - paragraphs.paragraphs_type.element_call_to_action
   module:
-    - content_moderation
     - link
 id: paragraph.element_call_to_action.default
 targetEntityType: paragraph
@@ -21,12 +20,6 @@ content:
     third_party_settings: {  }
     type: link_default
     region: content
-  moderation_state:
-    type: moderation_state_default
-    weight: 0
-    settings: {  }
-    region: content
-    third_party_settings: {  }
   status:
     type: boolean_checkbox
     weight: 2

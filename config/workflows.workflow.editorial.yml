@@ -66,3 +66,4 @@ type_settings:
     node:
       - blog_post
       - page
+  default_moderation_state: draft

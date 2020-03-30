@@ -5,8 +5,6 @@ dependencies:
   config:
     - field.field.paragraph.element_user_pick.field_select_user
     - paragraphs.paragraphs_type.element_user_pick
-  module:
-    - content_moderation
 id: paragraph.element_user_pick.default
 targetEntityType: paragraph
 bundle: element_user_pick
@@ -21,12 +19,6 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
-  moderation_state:
-    type: moderation_state_default
-    weight: 0
-    settings: {  }
-    region: content
-    third_party_settings: {  }
   status:
     type: boolean_checkbox
     weight: 2

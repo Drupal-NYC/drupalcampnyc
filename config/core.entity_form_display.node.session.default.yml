@@ -25,6 +25,7 @@ dependencies:
     - field.field.node.session.field_video
     - field.field.node.session.field_xp_level
     - node.type.session
+    - workflows.workflow.sessions
   module:
     - autocomplete_deluxe
     - content_moderation

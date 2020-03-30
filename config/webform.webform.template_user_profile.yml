@@ -1,14 +1,12 @@
-uuid: b0e07da2-487b-4805-8001-20c9b92b0e2e
 langcode: en
 status: closed
 dependencies:
   enforced:
     module:
       - webform_templates
-_core:
-  default_config_hash: R5tUhqonaVOtC1lvbNDsA0KELk4UwUmCGsg4baEg1HI
 open: null
 close: null
+weight: 0
 uid: null
 template: true
 archive: false
@@ -16,15 +14,20 @@ id: template_user_profile
 title: 'User Profile'
 description: 'A user profile webform template.'
 category: ''
-elements: "account_information:\n  '#title': 'Your Account Information'\n  '#type': fieldset\n  user_name:\n    '#type': textfield\n    '#title': 'User Name'\n  picture:\n    '#type': managed_file\n    '#title': Picture\n    '#description': 'Your virtual face or picture. Pictures larger than 1024x1024 pixels will be scaled down.'\n    '#max_filesize': '2'\n    '#file_extensions': 'gif jpg png svg'\npersonal_information:\n  '#title': 'Your Personal Information'\n  '#type': fieldset\n  first_name:\n    '#title': 'First Name'\n    '#type': textfield\n    '#required': true\n  last_name:\n    '#type': textfield\n    '#title': 'Last Name'\n    '#required': true\n  country:\n    '#type': select\n    '#title': Country\n    '#options': country_names\n  location:\n    '#type': webform_location\n    '#title': Location\n    '#title_display': invisible\n    '#description': 'Your location will be saved and may be shared.'\n    '#geolocation': true\n    '#address__title': Locations\n  languages:\n    '#type': select\n    '#title': 'Languages Spoken'\n    '#description': 'Select one or more languages you speak.'\n    '#multiple': true\n    '#select2': true\n    '#options': languages\n  gender:\n    '#type': radios\n    '#title': Gender\n    '#options': gender\n  biography:\n    '#type': text_format\n    '#title': Biography\n    '#description': 'Please include a short blurb about yourself to let us know who you are outside of Drupal.'\n  website:\n    '#type': url\n    '#title': Website\n  irc:\n    '#type': textfield\n    '#title': IRC\n    '#description': 'The nickname you use on various channels of irc.freenode.net'\n  twitter:\n    '#type': textfield\n    '#title': Twitter\n    '#description': 'Your Twitter handle.'\n  github:\n    '#type': textfield\n    '#title': GitHub\n    '#description': 'Your GitHub user name.'\nwork_information:\n  '#title': 'Your Work Information'\n  '#type': fieldset\n  current_organization:\n    '#type': textfield\n    '#title': 'Current Organization'\n  current_title:\n    '#type': textfield\n    '#title': 'Current Job Title'\n  organizations:\n    '#type': textarea\n    '#title': 'Past Organizations'\n    '#description': 'List companies or institutions you have worked for.'\n  industries:\n    '#type': webform_select_other\n    '#title': 'Industries Worked In'\n    '#options': industry\n    '#multiple': true\n    '#select2': true\nemail_settings:\n  '#title': 'Email addresses'\n  '#type': fieldset\n  email:\n    '#type': email\n    '#title': 'Primary E-mall Address'\n    '#description': 'Enter your primary email addresses, which will be used for all email communications.'\n  emails:\n    '#type': webform_email_multiple\n    '#title': 'Secondary E-mall Addresses'\n    '#description': 'Enter multiple email addresses separated by commas.'\nregional_settings:\n  '#title': 'Regional Settings'\n  '#type': fieldset\n  time_zone:\n    '#type': select\n    '#title': Timezone\n    '#options': time_zones\n  language:\n    '#type': select\n    '#title': 'Preferred Language'\n    '#description': 'This account''s default language for emails, and preferred language for site presentation.'\n    '#options': languages\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': Register\n"
+elements: "account_information:\n  '#title': 'Your Account Information'\n  '#type': fieldset\n  user_name:\n    '#type': textfield\n    '#title': 'User Name'\n  picture:\n    '#type': managed_file\n    '#title': Picture\n    '#description': 'Your virtual face or picture. Pictures larger than 1024x1024 pixels will be scaled down.'\n    '#max_filesize': '2'\n    '#file_extensions': 'gif jpg png svg'\npersonal_information:\n  '#title': 'Your Personal Information'\n  '#type': fieldset\n  first_name:\n    '#title': 'First Name'\n    '#type': textfield\n    '#required': true\n  last_name:\n    '#type': textfield\n    '#title': 'Last Name'\n    '#required': true\n  country:\n    '#type': select\n    '#title': Country\n    '#options': country_names\n  location:\n    '#type': webform_location_geocomplete\n    '#title': Location\n    '#title_display': invisible\n    '#description': 'Your location will be saved and may be shared.'\n    '#geolocation': true\n    '#address__title': Locations\n  languages:\n    '#type': select\n    '#title': 'Languages Spoken'\n    '#description': 'Select one or more languages you speak.'\n    '#multiple': true\n    '#select2': true\n    '#options': languages\n  gender:\n    '#type': radios\n    '#title': Gender\n    '#options': gender\n  biography:\n    '#type': text_format\n    '#title': Biography\n    '#description': 'Please include a short blurb about yourself to let us know who you are outside of Drupal.'\n  website:\n    '#type': url\n    '#title': Website\n  irc:\n    '#type': textfield\n    '#title': IRC\n    '#description': 'The nickname you use on various channels of irc.freenode.net'\n  twitter:\n    '#type': textfield\n    '#title': Twitter\n    '#description': 'Your Twitter handle.'\n  github:\n    '#type': textfield\n    '#title': GitHub\n    '#description': 'Your GitHub user name.'\nwork_information:\n  '#title': 'Your Work Information'\n  '#type': fieldset\n  current_organization:\n    '#type': textfield\n    '#title': 'Current Organization'\n  current_title:\n    '#type': textfield\n    '#title': 'Current Job Title'\n  organizations:\n    '#type': textarea\n    '#title': 'Past Organizations'\n    '#description': 'List companies or institutions you have worked for.'\n  industries:\n    '#type': webform_select_other\n    '#title': 'Industries Worked In'\n    '#options': industry\n    '#multiple': true\n    '#select2': true\nemail_settings:\n  '#title': 'Email addresses'\n  '#type': fieldset\n  email:\n    '#type': email\n    '#title': 'Primary E-mall Address'\n    '#description': 'Enter your primary email addresses, which will be used for all email communications.'\n  emails:\n    '#type': webform_email_multiple\n    '#title': 'Secondary E-mall Addresses'\n    '#description': 'Enter multiple email addresses separated by commas.'\nregional_settings:\n  '#title': 'Regional Settings'\n  '#type': fieldset\n  time_zone:\n    '#type': select\n    '#title': Timezone\n    '#options': time_zones\n  language:\n    '#type': select\n    '#title': 'Preferred Language'\n    '#description': 'This account''s default language for emails, and preferred language for site presentation.'\n    '#options': languages\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': Register\n"
 css: ''
 javascript: ''
 settings:
   ajax: false
   ajax_scroll_top: form
+  ajax_progress_type: ''
+  ajax_effect: ''
+  ajax_speed: null
   page: true
   page_submit_path: ''
   page_confirm_path: ''
+  page_admin_theme: false
+  form_title: both
   form_submit_once: false
   form_exception_message: ''
   form_open_message: ''
@@ -32,6 +35,7 @@ settings:
   form_previous_submissions: true
   form_confidential: false
   form_confidential_message: ''
+  form_remote_addr: true
   form_convert_anonymous: false
   form_prepopulate: false
   form_prepopulate_source_entity: false
@@ -47,16 +51,26 @@ settings:
   form_submit_back: false
   form_autofocus: false
   form_details_toggle: false
-  form_login: false
-  form_login_message: ''
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
   submission_label: ''
   submission_log: false
+  submission_views: {  }
+  submission_views_replace: {  }
   submission_user_columns: {  }
   submission_user_duplicate: false
-  submission_login: false
-  submission_login_message: ''
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
   submission_exception_message: ''
   submission_locked_message: ''
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
   previous_submission_message: ''
   previous_submissions_message: ''
   autofill: false
@@ -65,7 +79,10 @@ settings:
   wizard_progress_bar: true
   wizard_progress_pages: false
   wizard_progress_percentage: false
+  wizard_progress_link: false
+  wizard_progress_states: false
   wizard_start_label: ''
+  wizard_preview_link: false
   wizard_confirmation: true
   wizard_confirmation_label: ''
   wizard_track: ''
@@ -82,6 +99,8 @@ settings:
   draft_auto_save: false
   draft_saved_message: ''
   draft_loaded_message: ''
+  draft_pending_single_message: ''
+  draft_pending_multiple_message: ''
   confirmation_type: page
   confirmation_title: ''
   confirmation_message: ''
@@ -92,12 +111,15 @@ settings:
   confirmation_back_attributes: {  }
   confirmation_exclude_query: false
   confirmation_exclude_token: false
+  confirmation_update: false
   limit_total: null
   limit_total_interval: null
   limit_total_message: ''
+  limit_total_unique: false
   limit_user: null
   limit_user_interval: null
   limit_user_message: ''
+  limit_user_unique: false
   entity_limit_total: null
   entity_limit_total_interval: null
   entity_limit_user: null
@@ -106,6 +128,8 @@ settings:
   purge_days: null
   results_disabled: false
   results_disabled_ignore: false
+  results_customize: false
+  token_view: false
   token_update: false
 access:
   create:
@@ -150,6 +174,10 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
 handlers:
   email_notification:
     id: email
@@ -175,6 +203,8 @@ handlers:
       excluded_elements: {  }
       ignore_access: false
       exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
       html: true
       attachments: false
       twig: false
@@ -183,4 +213,9 @@ handlers:
       return_path: ''
       sender_mail: ''
       sender_name: ''
-      exclude_empty_checkbox: false
+      theme_name: ''
+      parameters: {  }
+variants: {  }
+uuid: b0e07da2-487b-4805-8001-20c9b92b0e2e
+_core:
+  default_config_hash: R5tUhqonaVOtC1lvbNDsA0KELk4UwUmCGsg4baEg1HI

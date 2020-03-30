@@ -8,7 +8,6 @@ dependencies:
     - field.field.paragraph.deck_2_columns.field_title
     - paragraphs.paragraphs_type.deck_2_columns
   module:
-    - content_moderation
     - paragraphs
     - text
 id: paragraph.deck_2_columns.default
@@ -52,12 +51,6 @@ content:
     third_party_settings: {  }
     type: text_textfield
     region: content
-  moderation_state:
-    type: moderation_state_default
-    weight: 3
-    settings: {  }
-    region: content
-    third_party_settings: {  }
   status:
     type: boolean_checkbox
     weight: 4

@@ -13,6 +13,7 @@ dependencies:
     - field.field.node.social_event.field_terms
     - field.field.node.social_event.field_type
     - node.type.social_event
+    - workflows.workflow.social_events
   module:
     - content_moderation
     - datetime

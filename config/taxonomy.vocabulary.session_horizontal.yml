@@ -5,5 +5,4 @@ dependencies: {  }
 name: 'Expertise Topics (Horizontal)'
 vid: session_horizontal
 description: ''
-hierarchy: 0
 weight: 0
