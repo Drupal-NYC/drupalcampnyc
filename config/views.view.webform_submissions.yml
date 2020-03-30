@@ -15,7 +15,6 @@ description: 'Default webform submissions views.'
 tag: ''
 base_table: webform_submission
 base_field: sid
-core: 8.x
 display:
   default:
     display_plugin: default
@@ -585,91 +584,6 @@ display:
         operator: AND
         groups: {  }
       title: 'Webform submissions'
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - url
-        - url.query_args
-        - user
-      tags: {  }
-  embed_default:
-    display_plugin: embed
-    id: embed_default
-    display_title: 'Embed: Default'
-    position: 1
-    display_options:
-      display_extenders: {  }
-      display_description: 'Display submissions.'
-      defaults:
-        fields: true
-        style: false
-        row: false
-        filters: true
-        filter_groups: true
-      style:
-        type: table
-        options:
-          grouping: {  }
-          row_class: ''
-          default_row_class: true
-          override: true
-          sticky: false
-          caption: ''
-          summary: ''
-          description: ''
-          columns:
-            sid: sid
-            in_draft: in_draft
-            created: created
-            remote_addr: remote_addr
-            view_webform_submission: view_webform_submission
-          info:
-            sid:
-              sortable: true
-              default_sort_order: desc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            in_draft:
-              sortable: true
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            created:
-              sortable: true
-              default_sort_order: desc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            remote_addr:
-              sortable: true
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            view_webform_submission:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ' '
-              empty_column: false
-              responsive: ''
-          default: created
-          empty_table: false
-      row:
-        type: fields
-        options:
-          inline: {  }
-          separator: ''
-          hide_empty: false
-          default_field_elements: true
     cache_metadata:
       max-age: -1
       contexts:
@@ -1396,6 +1310,8 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -1436,6 +1352,8 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -1477,6 +1395,8 @@ display:
               anonymous: '0'
               administrator: '0'
               demo_region: '0'
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -1505,6 +1425,91 @@ display:
         - url.query_args
         - user
         - user.permissions
+      tags: {  }
+  embed_default:
+    display_plugin: embed
+    id: embed_default
+    display_title: 'Embed: Default'
+    position: 1
+    display_options:
+      display_extenders: {  }
+      display_description: 'Display submissions.'
+      defaults:
+        fields: true
+        style: false
+        row: false
+        filters: true
+        filter_groups: true
+      style:
+        type: table
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+          override: true
+          sticky: false
+          caption: ''
+          summary: ''
+          description: ''
+          columns:
+            sid: sid
+            in_draft: in_draft
+            created: created
+            remote_addr: remote_addr
+            view_webform_submission: view_webform_submission
+          info:
+            sid:
+              sortable: true
+              default_sort_order: desc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            in_draft:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            created:
+              sortable: true
+              default_sort_order: desc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            remote_addr:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            view_webform_submission:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ' '
+              empty_column: false
+              responsive: ''
+          default: created
+          empty_table: false
+      row:
+        type: fields
+        options:
+          inline: {  }
+          separator: ''
+          hide_empty: false
+          default_field_elements: true
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - user
       tags: {  }
   embed_manage:
     display_plugin: embed
@@ -2281,6 +2286,8 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -2321,6 +2328,8 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -2362,6 +2371,8 @@ display:
               anonymous: '0'
               administrator: '0'
               demo_region: '0'
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -3056,6 +3067,8 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -3096,6 +3109,8 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -3137,6 +3152,8 @@ display:
               anonymous: '0'
               administrator: '0'
               demo_region: '0'
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''

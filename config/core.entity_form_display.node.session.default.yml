@@ -25,7 +25,6 @@ dependencies:
     - field.field.node.session.field_video
     - field.field.node.session.field_xp_level
     - node.type.session
-    - workflows.workflow.sessions
   module:
     - autocomplete_deluxe
     - content_moderation
@@ -327,6 +326,7 @@ content:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
+      match_limit: 10
     region: content
     third_party_settings: {  }
   unpublish_on:

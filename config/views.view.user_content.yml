@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   module:
+    - content_moderation
     - node
     - user
 id: user_content
@@ -12,7 +13,6 @@ description: 'Lists content authored by the user, including drafts'
 tag: ''
 base_table: node_field_data
 base_field: nid
-core: 8.x
 display:
   default:
     display_plugin: default
@@ -287,7 +287,7 @@ display:
           separator: ', '
           field_api_classes: false
           entity_type: node
-          plugin_id: field
+          plugin_id: moderation_state_field
         status:
           id: status
           table: node_field_revision
