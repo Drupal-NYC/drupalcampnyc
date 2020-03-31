@@ -1,3 +1,4 @@
+uuid: 6bad70a4-2b9d-4979-8638-7467e2f36201
 langcode: en
 status: closed
 dependencies: {  }
@@ -207,7 +208,7 @@ handlers:
       from_options: {  }
       from_name: '[webform_submission:values:given_names:raw]'
       subject: 'Speaker ticket refund request'
-      body: "Hello Ticket team,<br />\n[current-user:field_u_first_name] [current-user:field_u_last_name] requested a refund.<br />\n<br />\nPlease gather the information at [webform_submission:url]/table<br />\n<br />\nBest regards, your webform :-)"
+      body: "Hello Ticket team,<br />\r\n[current-user:field_u_first_name] [current-user:field_u_last_name] requested a refund.<br />\r\n<br />\r\nPlease gather the information at [webform_submission:url]/table<br />\r\n<br />\r\nBest regards, your webform :-)"
       excluded_elements:
         given_names: given_names
         surname: surname
@@ -227,4 +228,3 @@ handlers:
       theme_name: ''
       parameters: {  }
 variants: {  }
-uuid: 6bad70a4-2b9d-4979-8638-7467e2f36201

@@ -1,3 +1,4 @@
+uuid: d81a60de-b108-45e7-ab68-6c571f791439
 langcode: en
 status: scheduled
 dependencies: {  }
@@ -203,7 +204,7 @@ handlers:
       from_options: {  }
       from_name: 'Shirt buyer'
       subject: 'Shirt order refinement'
-      body: "Hello Attendee Care Team,<br />\n[current-user:field_u_first_name] [current-user:field_u_last_name] requests a t-shirt refinement.<br />\n<br />\nPlease gather the information at [webform_submission:url]<br />\n<br />\nBest regards, your webform :-)"
+      body: "Hello Attendee Care Team,<br />\r\n[current-user:field_u_first_name] [current-user:field_u_last_name] requests a t-shirt refinement.<br />\r\n<br />\r\nPlease gather the information at [webform_submission:url]<br />\r\n<br />\r\nBest regards, your webform :-)"
       excluded_elements:
         ticket_order_no_: ticket_order_no_
         given_names: given_names
@@ -227,4 +228,3 @@ handlers:
       theme_name: ''
       parameters: {  }
 variants: {  }
-uuid: d81a60de-b108-45e7-ab68-6c571f791439

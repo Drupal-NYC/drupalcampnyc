@@ -1,3 +1,4 @@
+uuid: 067461ba-0d86-485a-847c-30ff5e4192ce
 langcode: en
 status: closed
 dependencies: {  }
@@ -186,7 +187,7 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: rachel.lawson@association.drupal.org
+      to_mail: camp@drupalnyc.org
       to_options: {  }
       cc_mail: ''
       cc_options: {  }
@@ -213,4 +214,3 @@ handlers:
       theme_name: ''
       parameters: {  }
 variants: {  }
-uuid: 067461ba-0d86-485a-847c-30ff5e4192ce

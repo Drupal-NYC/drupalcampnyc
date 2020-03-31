@@ -1,9 +1,12 @@
+uuid: 6d01c7c7-3469-4366-9f66-e5cb2756a345
 langcode: en
 status: closed
 dependencies:
   enforced:
     module:
       - webform
+_core:
+  default_config_hash: 54q-eZLQ0xY3g9yFexLIn97Y8F_sByRhO4ima2pMmn4
 open: null
 close: null
 weight: 0
@@ -250,10 +253,10 @@ handlers:
       body: '[webform_submission:values:message:value]'
       excluded_elements:
         subject1: subject1
-        subject: subject
         name: name
         email: email
         edit_copy_contact: edit_copy_contact
+        subject: subject
       ignore_access: false
       exclude_empty: true
       exclude_empty_checkbox: false
@@ -294,10 +297,10 @@ handlers:
       body: '[webform_submission:values:message:value]'
       excluded_elements:
         subject1: subject1
-        subject: subject
         name: name
         email: email
         edit_copy_contact: edit_copy_contact
+        subject: subject
       ignore_access: false
       exclude_empty: true
       exclude_empty_checkbox: false
@@ -338,10 +341,10 @@ handlers:
       body: '[webform_submission:values:message:value]'
       excluded_elements:
         subject1: subject1
-        subject: subject
         name: name
         email: email
         edit_copy_contact: edit_copy_contact
+        subject: subject
       ignore_access: false
       exclude_empty: true
       exclude_empty_checkbox: false
@@ -382,10 +385,10 @@ handlers:
       body: '[webform_submission:values:message:value]'
       excluded_elements:
         subject1: subject1
-        subject: subject
         name: name
         email: email
         edit_copy_contact: edit_copy_contact
+        subject: subject
       ignore_access: false
       exclude_empty: true
       exclude_empty_checkbox: false
@@ -426,10 +429,10 @@ handlers:
       body: '[webform_submission:values:message:value]'
       excluded_elements:
         subject1: subject1
-        subject: subject
         name: name
         email: email
         edit_copy_contact: edit_copy_contact
+        subject: subject
       ignore_access: false
       exclude_empty: true
       exclude_empty_checkbox: false
@@ -470,10 +473,10 @@ handlers:
       body: '[webform_submission:values:message:value]'
       excluded_elements:
         subject1: subject1
-        subject: subject
         name: name
         email: email
         edit_copy_contact: edit_copy_contact
+        subject: subject
       ignore_access: false
       exclude_empty: true
       exclude_empty_checkbox: false
@@ -514,10 +517,10 @@ handlers:
       body: '[webform_submission:values:message:value]'
       excluded_elements:
         subject1: subject1
-        subject: subject
         name: name
         email: email
         edit_copy_contact: edit_copy_contact
+        subject: subject
       ignore_access: false
       exclude_empty: true
       exclude_empty_checkbox: false
@@ -558,10 +561,10 @@ handlers:
       body: '[webform_submission:values:message:value]'
       excluded_elements:
         subject1: subject1
-        subject: subject
         name: name
         email: email
         edit_copy_contact: edit_copy_contact
+        subject: subject
       ignore_access: false
       exclude_empty: true
       exclude_empty_checkbox: false
@@ -602,10 +605,10 @@ handlers:
       body: '[webform_submission:values:message:value]'
       excluded_elements:
         subject1: subject1
-        subject: subject
         name: name
         email: email
         edit_copy_contact: edit_copy_contact
+        subject: subject
       ignore_access: false
       exclude_empty: true
       exclude_empty_checkbox: false
@@ -621,6 +624,3 @@ handlers:
       theme_name: ''
       parameters: {  }
 variants: {  }
-uuid: 6d01c7c7-3469-4366-9f66-e5cb2756a345
-_core:
-  default_config_hash: 54q-eZLQ0xY3g9yFexLIn97Y8F_sByRhO4ima2pMmn4

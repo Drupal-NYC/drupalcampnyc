@@ -1,3 +1,4 @@
+uuid: 383ec32f-3fdc-41d2-9e6c-da89aa938c2e
 langcode: en
 status: closed
 dependencies: {  }
@@ -200,7 +201,7 @@ handlers:
       from_options: {  }
       from_name: 'Undisclosed attendee'
       subject: 'Visa Invitation Request'
-      body: "Hello Attendee Care Team,<br />\n[current-user:field_u_first_name] [current-user:field_u_last_name] needs a visa invitation.<br />\n<br />\nPlease gather the information at [webform_submission:url]/table<br />\n<br />\nBest regards, your webform :-)"
+      body: "Hello Attendee Care Team,<br />\r\n[current-user:field_u_first_name] [current-user:field_u_last_name] needs a visa invitation.<br />\r\n<br />\r\nPlease gather the information at [webform_submission:url]/table<br />\r\n<br />\r\nBest regards, your webform :-)"
       excluded_elements:
         ticket_order_no_: ticket_order_no_
         invitation_email: invitation_email
@@ -226,4 +227,3 @@ handlers:
       theme_name: ''
       parameters: {  }
 variants: {  }
-uuid: 383ec32f-3fdc-41d2-9e6c-da89aa938c2e
