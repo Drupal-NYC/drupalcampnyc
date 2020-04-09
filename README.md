@@ -9,10 +9,14 @@
 * Push changes to the master branch
 * Approve pull requests
 
+Our [.gitignore file](web/.gitignore) is constructed to prevent "built" files such as those managed by Composer (e.g. Drupal core, contrib modules, and the vendor directory) or other package managers and build tools (e.g. theme dependencies and theme assets) from being added to the repository.
+
 When changes are pushed to or merged into the master branch on GitHub, a build should be triggered on CodeShip. You need to be a member of the Drupalnyc [Devs CodeShip team](https://app.codeship.com/orgs/drupalnyc/teams/devs) (link only works if you are a member) to:
 * [View build status and history](https://app.codeship.com/projects/1ea10500-2c56-0136-bbdc-5ed18f0e55cd)
 
-The CodeShip build, among other things, deploys the changes to our Pantheon site's Dev environment.
+CodeShip, among other things, runs `composer install` and `npm run build`, copies the GitHub repo and the newly built files to the master branch of our Pantheon site's git repository, and performs additional steps to deploy the changes to our Pantheon Dev environment.
+
+Our use of CodeShip for CI has many benefits, but one side effect is that we can't use Pantheon's environments to make any changes to configuration (e.g. site building) because there is no good way to get those changes back to our canonical git repository in GitHub. Thus, we must use local development environments to make configuration changes.
 
 # Local Environment Using Lando
 
@@ -22,18 +26,34 @@ The CodeShip build, among other things, deploys the changes to our Pantheon site
 
 Note that the git repo already has a `.lando.yml` file so you shouldn't run `lando init`.
 
-1. Download and install the latest release of Lando from https://github.com/lando/lando/releases
+1. Download and install the latest release of Lando from https://github.com/lando/lando/releases/latest
 2. Create a directory to contain the site (e.g. `mkdir ~/Sites/drupalcampnyc`)
 3. Change to that directory (e.g. `cd ~/Sites/drupalcampnyc`)
-4. `git clone git@github.com:Drupal-NYC/drupalcampnyc.git .`
+4. If you have been added to the GitHub DrupalCamp Team and have your local SSH public key added to your GitHub account, clone the repository using:
+
+   `git clone git@github.com:Drupal-NYC/drupalcampnyc.git .`
+
+   Otherwise, clone using HTTPS:
+
+   `git clone https://github.com/Drupal-NYC/drupalcampnyc.git .`
+
 5. `git checkout drupaleurope`
 6. `lando start`
-7. Go to https://drupalcampnyc.lndo.site/ and install Drupal "from configuration" (slower) or import a starter database from setup/db (faster).
 
-The first time it is run, per .lando.yml, `lando start`:
-* runs `composer install` for the project
-* runs `npm install` in web/themes/drupaleurope
-* runs `npm run build` in web/themes/drupaleurope to compile the theme
+    Per .lando.yml, when `lando start` is run for the first time and whenever `lando rebuild` is run, the following commands are run:
+    * `composer install` for the project
+    * `npm install` in web/themes/drupaleurope
+    * `npm run build` in web/themes/drupaleurope to compile the theme
+
+7. Time to install Drupal. We want to take advantage of all the configuration that has already been done so we are going to install from config:
+
+    `lando drush si minimal --existing-config`
+
+    Note: installing from config can easily take 10 minutes to complete.
+
+    Alternatively, to save some time and to see some basic content, you can import the latest starter database from the directory setup/db. For example:
+
+    `lando db-import setup/db/2020-03-31-after-update-core-8.8.sql.gz`
 
 You now have a fully functional local environment, accessible at [https://drupalcampnyc.lndo.site/](https://drupalcampnyc.lndo.site/)
 
@@ -52,6 +72,8 @@ Start the site: `lando start`
 Build the theme: `lando npm run build`
 
 Build the theme automatically when changed: `lando npm run watch`
+
+Get a one-time log in URL for user 1: `lando drush uli`
 
 ## Enable XDebug
 
