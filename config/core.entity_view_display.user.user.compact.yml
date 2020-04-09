@@ -142,18 +142,21 @@ content:
     settings:
       image_style: user_picture
       image_link: ''
-      svg_render_as_image: '1'
+      svg_render_as_image: true
       svg_attributes:
-        width: ''
-        height: ''
+        width: null
+        height: null
     third_party_settings:
       empty_fields:
         handler: ''
     label: hidden
 hidden:
+  field_dietary_intro: true
   field_interest_horizontal: true
   field_interest_vertical: true
+  field_onsite_intro: true
   field_speaker: true
+  field_speaker_profile: true
   field_special_details: true
   field_ticket_orderno: true
   field_ticket_type: true

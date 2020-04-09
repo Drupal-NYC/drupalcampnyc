@@ -109,9 +109,12 @@ content:
       link_to_entity: false
     third_party_settings: {  }
 hidden:
+  field_dietary_intro: true
   field_interest_horizontal: true
   field_interest_vertical: true
+  field_onsite_intro: true
   field_speaker: true
+  field_speaker_profile: true
   field_special_details: true
   field_ticket_orderno: true
   field_ticket_type: true

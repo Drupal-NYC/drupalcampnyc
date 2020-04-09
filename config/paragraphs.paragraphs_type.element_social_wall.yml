@@ -5,5 +5,6 @@ dependencies: {  }
 id: element_social_wall
 label: 'Element - Social Wall'
 icon_uuid: null
+icon_default: null
 description: 'A list of the latest 500 social items.'
 behavior_plugins: {  }

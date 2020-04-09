@@ -20,8 +20,8 @@ content:
       image_style: ''
       image_link: file
       svg_attributes:
-        width: ''
-        height: ''
+        width: null
+        height: null
       svg_render_as_image: true
     third_party_settings: {  }
     type: image

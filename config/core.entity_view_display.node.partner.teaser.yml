@@ -38,6 +38,8 @@ content:
     third_party_settings: {  }
 hidden:
   body: true
+  field_partner_category: true
+  field_sort_weight: true
   field_website: true
   links: true
   shariff_field: true

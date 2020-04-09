@@ -5,5 +5,6 @@ dependencies: {  }
 id: element_sessions
 label: 'Element - Sessions'
 icon_uuid: null
+icon_default: null
 description: 'A list of sessions selected based on a set of deliminators'
 behavior_plugins: {  }

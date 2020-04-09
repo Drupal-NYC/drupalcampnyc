@@ -5,5 +5,6 @@ dependencies: {  }
 id: element_user_lists
 label: 'Element - User Lists'
 icon_uuid: null
+icon_default: null
 description: 'For featured speakers, team members etc.'
 behavior_plugins: {  }

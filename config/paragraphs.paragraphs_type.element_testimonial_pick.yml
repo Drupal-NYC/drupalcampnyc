@@ -5,5 +5,6 @@ dependencies: {  }
 id: element_testimonial_pick
 label: 'Element - Pick testimonial'
 icon_uuid: null
+icon_default: null
 description: 'Hand-pick certain user(s) to display the testimonial'
 behavior_plugins: {  }

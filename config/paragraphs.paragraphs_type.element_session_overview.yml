@@ -5,5 +5,6 @@ dependencies: {  }
 id: element_session_overview
 label: 'Element - Session overview'
 icon_uuid: null
+icon_default: null
 description: ''
 behavior_plugins: {  }

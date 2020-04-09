@@ -153,10 +153,10 @@ content:
     settings:
       image_style: user_picture
       image_link: ''
-      svg_render_as_image: '1'
+      svg_render_as_image: true
       svg_attributes:
-        width: ''
-        height: ''
+        width: null
+        height: null
     third_party_settings:
       empty_fields:
         handler: ''

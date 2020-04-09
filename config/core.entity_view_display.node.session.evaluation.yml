@@ -185,6 +185,7 @@ hidden:
   field_ends_at: true
   field_room: true
   field_slides: true
+  field_slides_external: true
   field_speakers: true
   field_start: true
   field_terms: true

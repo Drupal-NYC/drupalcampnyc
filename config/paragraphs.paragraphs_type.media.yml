@@ -5,5 +5,6 @@ dependencies: {  }
 id: media
 label: 'Element - Media'
 icon_uuid: null
+icon_default: null
 description: 'A media element of either Video, Image or Audio'
 behavior_plugins: {  }

@@ -162,6 +162,7 @@ hidden:
   field_duration: true
   field_featured: true
   field_slides: true
+  field_slides_external: true
   field_speaker_experience: true
   field_speaker_inclusion: true
   field_terms: true
