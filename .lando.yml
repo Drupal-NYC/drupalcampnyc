@@ -12,15 +12,15 @@ services:
   appserver:
     overrides:
       environment:
-        DRUSH_OPTIONS_URI: "https://drupalcampnyc.lndo.site"
+        DRUSH_OPTIONS_URI: https://drupalcampnyc.lndo.site
     build:
-      - "cp -n /app/setup/lando/settings.local.php /app/web/sites/default/settings.local.php"
-      - "cd /app && composer install"
+      - cp -n setup/lando/settings.local.php web/sites/default/settings.local.php
+      - composer install
   node:
     type: node:10
     build:
-      - "cd /app/web/themes/drupaleurope && npm install"
-      - "cd /app/web/themes/drupaleurope && npm run build"
+      - cd /app/web/themes/drupaleurope && npm install
+      - cd /app/web/themes/drupaleurope && npm run build
 tooling:
   npm:
     service: node
