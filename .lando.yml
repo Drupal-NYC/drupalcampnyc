@@ -10,15 +10,12 @@ config:
   cache: true
 services:
   appserver:
-    overrides:
-      environment:
-        DRUSH_OPTIONS_URI: https://drupalcampnyc.lndo.site
-    build:
-      - cp -n setup/lando/settings.local.php web/sites/default/settings.local.php
+    run:
+      - cp -n setup/lando-pantheon/settings.local.php web/sites/default/settings.local.php
       - composer install
   node:
     type: node:10
-    build:
+    run:
       - cd /app/web/themes/drupaleurope && npm install
       - cd /app/web/themes/drupaleurope && npm run build
 tooling:

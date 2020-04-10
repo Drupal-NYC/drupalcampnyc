@@ -27,3 +27,6 @@
 
 # Ignore generated css files
 web/themes/drupaleurope/build/
+
+#Ignore Lando local configuration
+.lando.local.yml
