@@ -61,7 +61,7 @@ Note that the git repo already has a `.lando.yml` file so you shouldn't run `lan
 
     Alternatively, to save some time and to see some basic content, you can import the latest starter database from the directory setup/db. For example:
 
-    `lando db-import setup/db/2020-03-31-after-update-core-8.8.sql.gz`
+    `lando db-import setup/db/2020-04-10.sql.gz`
 
 You now have a fully functional local environment, accessible at [https://drupalcampnyc.lndo.site/](https://drupalcampnyc.lndo.site/)
 

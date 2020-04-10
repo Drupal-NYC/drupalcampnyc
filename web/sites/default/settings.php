@@ -35,8 +35,6 @@ if (file_exists($local_services)) {
   $settings['container_yamls'][] = $local_services;
 }
 
-$settings['install_profile'] = 'minimal';
-
 // Public files directory.
 $settings['file_public_path'] = 'sites/default/files';
 // Private files directory.
