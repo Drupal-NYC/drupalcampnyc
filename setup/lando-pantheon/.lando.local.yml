@@ -1,0 +1,8 @@
+name: drupalcampnyc
+config:
+  xdebug: false
+services:
+  appserver:
+    overrides:
+      environment:
+        DRUSH_OPTIONS_URI: https://drupalcampnyc.lndo.site
