@@ -6,3 +6,6 @@ services:
     overrides:
       environment:
         DRUSH_OPTIONS_URI: https://drupalcampnyc.lndo.site
+    run:
+      - cp -n setup/lando-pantheon/settings.local.php web/sites/default/settings.local.php
+      - composer install

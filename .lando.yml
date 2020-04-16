@@ -9,10 +9,6 @@ config:
   edge: true
   cache: true
 services:
-  appserver:
-    run:
-      - cp -n setup/lando-pantheon/settings.local.php web/sites/default/settings.local.php
-      - composer install
   node:
     type: node:10
     run:
