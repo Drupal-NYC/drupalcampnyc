@@ -1,0 +1,38 @@
+{#
+/**
+ * @file
+ * Theme override to present all user data.
+ *
+ * This template is used when viewing a registered user's page,
+ * e.g., example.com/user/123. 123 being the user's ID.
+ *
+ * Available variables:
+ * - content: A list of content items. Use 'content' to print all content, or
+ *   print a subset such as 'content.field_example'. Fields attached to a user
+ *   such as 'user_picture' are available as 'content.user_picture'.
+ * - attributes: HTML attributes for the container element.
+ * - user: A Drupal User entity.
+ *
+ * @see template_preprocess_user()
+ */
+#}
+
+{%
+    set classes = [
+    'superhero',
+    'superhero--view-mode-' ~ view_mode|clean_class,
+]
+%}
+{% set picture = content.user_picture|render %}
+<div{{ attributes.addClass(classes) }}>
+    {% if picture %}
+        {{ picture }}
+    {% else %}
+        <img src="/themes/drupalnyc/user-placeholder.png"/>
+    {% endif %}
+    <div class="superhero--content">
+    {% if content %}
+        {{- content|without('user_picture')|without('field_u_testimonial')|without('field_u_volunteer_about') -}}
+    {% endif %}
+    </div>
+</div>

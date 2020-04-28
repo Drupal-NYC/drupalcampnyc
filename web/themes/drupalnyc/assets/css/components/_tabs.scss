@@ -1,0 +1,16 @@
+/* Administrative tabs moved off main rendering */
+.block-local-tasks-block {
+  position: fixed;
+  right: 0;
+  top: 25%;
+  z-index: 999;
+}
+.block-local-tasks-block li {
+  display: block;
+  width: 120px;
+  background-color: $white-color;
+  margin-right: 0;
+}
+.block-local-tasks-block li:first-child {
+  border-top-left-radius: 5px;
+}

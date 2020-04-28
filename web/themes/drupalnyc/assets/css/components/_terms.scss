@@ -1,0 +1,78 @@
+.field--name-field-track-teasers {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: $grid-gap;
+  place-items: end stretch;
+
+  @include responsive(tablet) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.field--type-viewsreference .taxonomy-term.vocabulary-session-vertical {
+  text-align: center;
+
+  img {
+    width: 200px;
+    margin-right: 0;
+  }
+  h3 {
+    margin: -2rem 0 1rem 0;
+  }
+
+
+}
+.taxonomy-term--view-mode-full {
+ & > img {
+    width: 100%;
+    max-width: 200px;
+    margin-right: 2rem;
+    flex-shrink: 0;
+  }
+  display: flex;
+  align-items: flex-start;
+
+  @include responsive(mobile) {
+    flex-direction: column;
+  }
+}
+.taxonomy-term {
+  @include responsive(tablet) {
+  	grid-column-start: span 2;
+  }
+
+  @include responsive(mobile) {
+  	grid-column-start: span 5;
+    grid-column: span 5;
+  }
+}
+
+.field--name-field-track-sponsors,
+.field--name-field-track-chairs {
+  > .field__items {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+  > .field__item {
+    width: 25%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    @include responsive(tablet) {
+      width: 33.33%;
+    }
+  }
+}
+
+.field--name-field-track-sponsors {
+    margin-bottom: 3rem;
+}
+
+.field--name-field-track-sponsors img {
+    height: 4rem;
+    width: auto;
+}
+
+.field--name-field-track-chairs .field__label {
+    margin-top: 4rem;
+}
