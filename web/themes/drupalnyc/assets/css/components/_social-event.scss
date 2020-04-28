@@ -1,0 +1,52 @@
+.page--node-review,
+.page--type-node-form,
+.page-node-type-social-event {
+  main {
+
+    .table-style {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      @include responsive(mobile) {
+        display: inherit;
+      }
+      @include responsive(tablet) {
+        display: inherit;
+      }
+    }
+
+    .field--name-field-si-sponsor {
+      text-align: center;
+    }
+
+    .node-author {
+      float: right;
+      margin-left: $grid-gap;
+    }
+  }
+}
+
+.view-id-social_events {
+  .view-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: $grid-gap;
+    @include responsive(mobile) {
+      display: block;
+    }
+  }
+}
+
+.node--type-social-event.node--view-mode-teaser {
+  background-color: #fff;
+  -webkit-box-shadow: -6px 18px 78px 3px rgba(0,0,0,.11);
+  -moz-box-shadow: -6px 18px 78px 3px rgba(0,0,0,.11);
+  box-shadow: -6px 18px 78px 3px rgba(0,0,0,.11);
+  padding: 1rem;
+  margin: 1rem 0 2rem;
+}
+.node--type-social-event.node--view-mode-teaser h2 {
+  margin: 0;
+}
+.node--type-social-event.node--view-mode-teaser .table-style {
+  margin-top: 1rem;
+}

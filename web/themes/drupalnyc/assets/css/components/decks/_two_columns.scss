@@ -1,0 +1,11 @@
+// Columns decks
+.deck--two-columns .deck--content {
+  display: grid;
+  grid-gap: $grid-gap;
+  grid-template-columns: repeat(2, 50%);
+
+
+  @include responsive(mobile) {
+  	grid-template-columns: repeat(1, 100%);
+  }
+}

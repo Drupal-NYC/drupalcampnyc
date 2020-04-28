@@ -1,0 +1,108 @@
+// Fixes issue with flex positions of children elements
+.deck-hero,
+.path-frontpage .deck-hero {
+  width: 100%;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  &:before,
+  &:after {
+    content: initial;
+  }
+  color: $white-color;
+
+  display: flex;
+  flex-direction: column-reverse;
+
+  // @todo Fix default background image for hero element
+  background-image: linear-gradient(to left, $primary-color, $tertiary-color, $secondary-color);
+
+  h1 {
+    font-size: 3rem;
+    line-height: 5rem;
+    padding: 1rem 0;
+  }
+
+  .container {
+    margin: 2rem auto 1rem auto;
+  }
+  &--with-icon {
+    .container {
+      display: grid;
+      grid-gap: $grid-gap;
+      grid-template-columns: 300px 1fr;
+
+      @include responsive(mobile) {
+        grid-template-columns: inherit;
+      }
+    }
+
+    img {
+      margin: 1rem 0;
+    }
+    & .deck-hero--content {
+      display:grid;
+      grid-gap: $grid-gap;
+      grid-template-columns: repeat(2, 50%);
+      align-items: flex-end;
+
+      @include responsive(mobile) {
+        grid-template-columns: repeat(1, 100%);
+      }
+    }
+  }
+
+  &--with-background-image {
+    min-height: 50vh;
+  }
+
+  &--no-icon &--content {
+    display:grid;
+    grid-gap: $grid-gap;
+    grid-template-columns: repeat(3, 33%);
+
+    @include responsive(mobile) {
+      grid-template-columns: repeat(1, 100%);
+    }
+
+    a {
+      border: 2px solid #fff;
+      overflow: hidden;
+      padding: .55rem 1.3rem;
+      color: #fff;
+      font-size: 18px;
+      margin: 0;
+      white-space: nowrap;
+      display: inline-block;
+      margin-top: 10px;
+      transition: 0.3s all ease-in-out;
+
+      &:hover,
+      &:focus {
+        background-color: white;
+        color: #a62f92;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &.blue-text-background {
+    .container {
+      background-color: hsla(201, 76%, 77%, 0.75);
+      color: black;
+      padding: 2rem;
+    }
+    a {
+      color: white;
+      background-color: $secondary-color;
+      border-color: $secondary-color;
+    }
+  }
+
+  &.dark-text-background {
+    .container {
+      background-color: hsla(0,0%,0%,.75) ;
+      padding: 2rem;
+    }
+  }
+}

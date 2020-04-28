@@ -1,0 +1,97 @@
+// Should contain colours, viewport and other branding variables.
+
+$font-stack: 'Open Sans', 'Droid Sans', 'Helvetica', sans-serif;
+
+$primary-color: rgb(51, 168, 229);    // light blue
+$secondary-color: rgb(171, 45, 146);  // purple
+$tertiary-color: rgb(55, 77, 156);    // medium blue
+$quaternary-color: rgb(52, 52, 52);   // dark gray
+
+$black-color: rgb(0,0,0);
+$white-color: rgb(255,255,255);
+$gray-color: rgb(248, 248, 248);
+// quinary, senary, septenary, octonary, nonary, and denary
+
+$grid-gap: 1rem;
+
+//$blue: $primary-color;
+
+:root {
+  --font-stack: $font-stack;
+
+  --primary-color: $primary-color;
+  --secondary-color: $secondary-color;
+  --tertiary-color: $tertiary-color;
+  --quaternary-color: $quaternary-color;
+
+  --black-color: $black-color;
+  --white-space: $white-color;
+  --gray-color: $gray-color;
+
+  --grid-gap: $grid-gap;
+}
+
+@mixin due-gradient {
+  background-image: linear-gradient(to right, $primary-color, $tertiary-color, $secondary-color);
+}
+
+@mixin clearfix {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+  & {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+  }
+}
+
+@mixin cta {
+  & {
+    color: $white-color;
+    font-size: 18px;
+    position: relative;
+    text-decoration: none;
+    background-color: $secondary-color;
+    border: 2px solid $white-color;
+    overflow: hidden;
+    padding: 0.55rem 1.3rem;
+    transition: all 0.15s ease;
+  }
+
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: 100%;
+    left: 0;
+    background-color: $primary-color;
+    transition: transform 0.2s cubic-bezier(0.75, 0, 0.125, 1);
+    z-index: -1;
+  }
+  &:after {
+    background-color: $white-color;
+  }
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    color: $secondary-color;
+    border-color: $secondary-color;
+  }
+  &:hover:before,
+  &:hover:after {
+    transform: translate3d(0, 100%, 0);
+  }
+  &:hover:after {
+    transition-delay: 0.175s;
+  }
+  &:active {
+      border-color: $primary-color;
+      background-color: $white-color;
+  }
+}
