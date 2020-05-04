@@ -1,0 +1,18 @@
+- type: parallel
+  name: dependencies
+  tag: drupaleurope
+  steps:
+    - type: serial
+      steps:
+        - service: front-end
+          command: entrypoint.sh
+        - service: front-end
+          command: npm run build
+    - type: serial
+      steps:
+        - service: deploy
+          command: composer install --no-dev --no-interaction --optimize-autoloader
+- name: deploy
+  tag: drupaleurope
+  service: deploy
+  command: vendor/bin/robo deploy --remote-branch=newbrunswick

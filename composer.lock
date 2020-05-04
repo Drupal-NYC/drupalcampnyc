@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "98f94fae7f3c892ba4f6041739aa66ad",
+    "content-hash": "b241d6aee46b022c3b466b069dd1dcdd",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1848,9 +1848,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.0-beta1",
                     "datestamp": "1578911583",
@@ -1899,9 +1896,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-2.2",
                     "datestamp": "1585017179",
@@ -1981,9 +1975,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.10",
                     "datestamp": "1571249584",
@@ -2215,14 +2206,14 @@
                     "homepage": "https://www.drupal.org/user/86970"
                 },
                 {
-                    "name": "murrayw",
-                    "homepage": "https://www.drupal.org/user/595658"
+                    "name": "i-trokhanenko",
+                    "homepage": "https://www.drupal.org/user/3546872"
                 }
             ],
             "description": "Allows an editor to apply a class to paragraphs.",
             "homepage": "https://www.drupal.org/project/classy_paragraphs",
             "support": {
-                "source": "http://cgit.drupalcode.org/classy_paragraphs"
+                "source": "https://git.drupalcode.org/project/classy_paragraphs"
             }
         },
         {
@@ -3074,7 +3065,7 @@
             "description": "Provides CSV as a serialization format.",
             "homepage": "https://www.drupal.org/project/csv_serialization",
             "support": {
-                "source": "http://cgit.drupalcode.org/csv_serialization"
+                "source": "https://git.drupalcode.org/project/csv_serialization"
             }
         },
         {
@@ -3096,9 +3087,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-3.x": "3.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-3.4",
                     "datestamp": "1585763383",
@@ -3189,9 +3177,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.0-alpha8",
                     "datestamp": "1556924587",
@@ -3266,9 +3251,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-2.1",
                     "datestamp": "1556799496",
@@ -3467,7 +3449,7 @@
                     "homepage": "https://www.drupal.org/user/118908"
                 },
                 {
-                    "name": "axel.rutz",
+                    "name": "geek-merlin",
                     "homepage": "https://www.drupal.org/user/229048"
                 },
                 {
@@ -3482,7 +3464,7 @@
             "description": "Provides options for displaying empty fields.",
             "homepage": "https://www.drupal.org/project/empty_fields",
             "support": {
-                "source": "http://cgit.drupalcode.org/empty_fields"
+                "source": "https://git.drupalcode.org/project/empty_fields"
             }
         },
         {
@@ -3573,10 +3555,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev",
-                    "dev-8.x-1.x": "8.1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.7",
                     "datestamp": "1562241181",
@@ -3584,6 +3562,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
                 },
                 "patches_applied": {
                     "Provide inline entity form FieldWidgetDisplay": "https://www.drupal.org/files/issues/2858438_6.patch"
@@ -3668,7 +3649,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-rc3",
-                    "datestamp": "1528884525",
+                    "datestamp": "1553929985",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
@@ -3873,9 +3854,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.0",
                     "datestamp": "1510352885",
@@ -3903,18 +3881,18 @@
                     "homepage": "https://www.drupal.org/user/591438"
                 },
                 {
-                    "name": "swentel",
-                    "homepage": "https://www.drupal.org/user/107403"
+                    "name": "nils.destoop",
+                    "homepage": "https://www.drupal.org/user/361625"
                 },
                 {
-                    "name": "zuuperman",
-                    "homepage": "https://www.drupal.org/user/361625"
+                    "name": "swentel",
+                    "homepage": "https://www.drupal.org/user/107403"
                 }
             ],
             "description": "Provides the field_group module.",
             "homepage": "https://www.drupal.org/project/field_group",
             "support": {
-                "source": "http://cgit.drupalcode.org/field_group"
+                "source": "https://git.drupalcode.org/project/field_group"
             }
         },
         {
@@ -4078,9 +4056,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.30",
                     "datestamp": "1576274288",
@@ -4145,9 +4120,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.0-rc3",
                     "datestamp": "1581640483",
@@ -4250,6 +4222,10 @@
                     "homepage": "https://www.drupal.org/user/47194"
                 },
                 {
+                    "name": "joseph.olstad",
+                    "homepage": "https://www.drupal.org/user/1321830"
+                },
+                {
                     "name": "rjacobs",
                     "homepage": "https://www.drupal.org/user/422459"
                 },
@@ -4289,9 +4265,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-4.x": "4.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-4.3",
                     "datestamp": "1490205830",
@@ -4357,6 +4330,10 @@
             ],
             "authors": [
                 {
+                    "name": "Anybody",
+                    "homepage": "https://www.drupal.org/user/291091"
+                },
+                {
                     "name": "Deciphered",
                     "homepage": "https://www.drupal.org/user/103796"
                 },
@@ -4384,7 +4361,7 @@
             "description": "Defines a field type for markup.",
             "homepage": "https://www.drupal.org/project/markup",
             "support": {
-                "source": "http://cgit.drupalcode.org/markup"
+                "source": "https://git.drupalcode.org/project/markup"
             }
         },
         {
@@ -4406,9 +4383,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.5",
                     "datestamp": "1525200184",
@@ -4447,7 +4421,7 @@
             "description": "Provides configurable blocks of menu links.",
             "homepage": "https://www.drupal.org/project/menu_block",
             "support": {
-                "source": "http://cgit.drupalcode.org/menu_block"
+                "source": "https://git.drupalcode.org/project/menu_block"
             }
         },
         {
@@ -4480,12 +4454,9 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.12",
-                    "datestamp": "1585576662",
+                    "datestamp": "1586025529",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4555,9 +4526,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.11",
                     "datestamp": "1581850829",
@@ -4624,9 +4592,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.6",
                     "datestamp": "1575467285",
@@ -4799,9 +4764,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.1",
                     "datestamp": "1566578555",
@@ -4935,10 +4897,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev",
-                    "dev-8.x-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.4",
                     "datestamp": "1585608547",
@@ -4946,6 +4904,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "branch-alias": {
+                    "dev-8.x-1.x": "1.x-dev"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -5004,9 +4965,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-3.x": "3.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-3.5",
                     "datestamp": "1576429387",
@@ -5064,9 +5022,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.2",
                     "datestamp": "1576094525",
@@ -5226,7 +5181,7 @@
             "description": "The module provides a block that display links (icons) to your profiles on various social networking sites.",
             "homepage": "https://www.drupal.org/project/social_media_links",
             "support": {
-                "source": "http://cgit.drupalcode.org/social_media_links",
+                "source": "https://git.drupalcode.org/project/social_media_links",
                 "issues": "https://www.drupal.org/project/issues/social_media_links"
             }
         },
@@ -5303,9 +5258,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.6",
                     "datestamp": "1577708583",
@@ -5378,9 +5330,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-2.0-alpha6",
                     "datestamp": "1576373887",
@@ -5465,9 +5414,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-5.x": "5.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-5.9",
                     "datestamp": "1584560013",

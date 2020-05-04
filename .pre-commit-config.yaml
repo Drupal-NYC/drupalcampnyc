@@ -14,14 +14,9 @@
     - id: php-lint-all
       files: \.(php|module|inc|install|profile|theme)$
       stages: [commit]
-      exclude: ^(vendor/|web/core/|web/vendor/|web/libraries/|web/sites/default/default|web/sites/default/example|web/modules/contrib/|web/themes/contrib/|web/sites/\w+/files/|web/themes/custom/\w+/node_modules/|web/themes/custom/\w+/libraries/|web/themes/custom/\w+/js/\w\.min.js/)
+      exclude: ^(vendor/|web/core/|web/vendor/|web/libraries/|web/sites/default/default|web/sites/default/example|web/modules/contrib/|web/themes/contrib/|web/sites/\w+/files/|web/themes/custom/\w+/node_modules/|web/themes/custom/\w+/libraries/|web/themes/custom/\w+/js/\w\.min.js/|RoboFile.php)
     - id: php-cs
       stages: [commit]
       files: \.(php|module|inc|install|profile|theme)$
       args: [--standard=./phpcs.xml]
-#- repo: git://github.com/pre-commit/mirrors-eslint
-#  rev: v6.8.0
-#  hooks:
-#    - id: eslint
-#      exclude: ^(vendor/|web/core/|web/vendor/|web/libraries/|web/sites/default/default|web/sites/default/example|web/libraries/|web/modules/contrib/|web/modules/custom/\w+/js/\w+\.min\.js|web/themes/contrib/|web/sites/\w+/files/|web/themes/custom/\w+/node_modules/|web/themes/custom/\w+/libraries/|web/themes/custom/\w+/js/\w+\.min\.js|web/themes/custom/\w+/Gruntfile\.js|ansible/roles/xhprof)
-#      stages: [commit]
+      exclude: ^(vendor/|web/core/|web/vendor/|web/libraries/|web/sites/default/default|web/sites/default/example|web/modules/contrib/|web/themes/contrib/|web/sites/\w+/files/|web/themes/custom/\w+/node_modules/|web/themes/custom/\w+/libraries/|web/themes/custom/\w+/js/\w\.min.js/|RoboFile.php)

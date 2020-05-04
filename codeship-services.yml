@@ -1,0 +1,17 @@
+front-end:
+  image: digitalpulp/front-end:codeship-10
+  working_dir: /var/www/web/themes/drupaleurope
+  volumes_from:
+    - deploy
+  environment:
+    THEME_NAME: drupaleurope
+    THEME_PATH: var/www/web/themes
+deploy:
+  image: digitalpulp/cli:codeship-loaded
+  working_dir: /var/www
+  encrypted_env_file: env.encrypted
+  volumes:
+    - .:/var/www
+  environment:
+    DEPLOY_TARGET: ssh://codeserver.dev.36d6210e-0ea0-4579-9a00-a8d3ef891b81@codeserver.dev.36d6210e-0ea0-4579-9a00-a8d3ef891b81.drush.in:2222/~/repository.git
+
