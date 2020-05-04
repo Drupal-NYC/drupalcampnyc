@@ -5,7 +5,7 @@
     - type: serial
       steps:
         - service: front-end
-          command: entrypoint.sh
+          command: npm ci
         - service: front-end
           command: npm run build
     - type: serial
