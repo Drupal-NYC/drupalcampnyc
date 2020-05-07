@@ -1,0 +1,21 @@
+- type: parallel
+  name: dependencies
+  tag: master
+  steps:
+    - type: serial
+      steps:
+        - service: deploy
+          name: composer_install
+          command: "composer install --no-dev --no-interaction --optimize-autoloader"
+    - type: serial
+      steps:
+        - service: front-end
+          name: npm_install
+          command: npm ci
+        - service: front-end
+          name: build_theme
+          command: npm run build
+- name: deploy
+  tag: master
+  service: deploy
+  command: vendor/bin/robo deploy --remote-branch=newbrunswick
