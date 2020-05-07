@@ -1,0 +1,120 @@
+uuid: 5e7e6fc0-ad98-44a9-968f-016bb1df3a6b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.schedule
+    - field.field.node.program_item.body
+    - field.field.node.program_item.field_ends_at
+    - field.field.node.program_item.field_room
+    - field.field.node.program_item.field_start
+    - field.field.node.program_item.field_summary
+    - field.field.node.program_item.field_type
+    - node.type.program_item
+  module:
+    - datetime
+    - empty_fields
+    - field_group
+    - options
+    - text
+    - user
+third_party_settings:
+  field_group:
+    group_scheduled_at:
+      children:
+        - field_start
+        - field_ends_at
+        - field_room
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: scheduled-at
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Scheduled at'
+    group_ty:
+      children:
+        - field_type
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: session-type-and-track
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Type and track'
+id: node.program_item.schedule
+targetEntityType: node
+bundle: program_item
+mode: schedule
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_ends_at:
+    weight: 5
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: time
+    third_party_settings:
+      empty_fields:
+        handler: ''
+    type: datetime_default
+    region: content
+  field_room:
+    weight: 6
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_start:
+    weight: 4
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: time
+    third_party_settings:
+      empty_fields:
+        handler: ''
+    type: datetime_default
+    region: content
+  field_summary:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_type:
+    type: list_default
+    weight: 0
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  flag_session_schedule:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  links: true
+  shariff_field: true

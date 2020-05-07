@@ -1,0 +1,32 @@
+uuid: ceb9fec5-a74e-4bda-bd2a-70d7f8040c61
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.element_user_pick.field_select_user
+    - paragraphs.paragraphs_type.element_user_pick
+id: paragraph.element_user_pick.default
+targetEntityType: paragraph
+bundle: element_user_pick
+mode: default
+content:
+  field_select_user:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  status:
+    type: boolean_checkbox
+    weight: 2
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  created: true
+  uid: true

@@ -1,0 +1,23 @@
+uuid: 29f8c098-b411-4745-9b40-f14523384443
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_confirmed
+    - taxonomy.vocabulary.session_vertical
+id: taxonomy_term.session_vertical.field_confirmed
+field_name: field_confirmed
+entity_type: taxonomy_term
+bundle: session_vertical
+label: Confirmed
+description: 'Only confirmed tracks will be shown in industry track teasers.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

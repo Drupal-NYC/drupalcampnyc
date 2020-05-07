@@ -1,0 +1,15 @@
+uuid: 61c1bedb-3121-40e0-87b4-4faf4130cb79
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.element_user_pick.field_select_user
+    - paragraphs.paragraphs_type.element_user_pick
+id: paragraph.element_user_pick.preview
+targetEntityType: paragraph
+bundle: element_user_pick
+mode: preview
+content: {  }
+hidden:
+  field_select_user: true

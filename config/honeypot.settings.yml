@@ -1,0 +1,24 @@
+unprotected_forms:
+  - user_login_form
+  - search_form
+  - search_block_form
+  - views_exposed_form
+  - honeypot_settings_form
+protect_all_forms: true
+log: true
+element_name: homepage
+time_limit: 3
+expire: 300
+form_settings:
+  user_register_form: false
+  user_pass: false
+  node_blog_post_form: false
+  node_bof_form: false
+  node_page_form: false
+  node_partner_form: false
+  node_session_form: false
+  node_social_event_form: false
+  node_sponsor_form: false
+  node_webform_form: false
+_core:
+  default_config_hash: 9bVDfWSa_In6VzTXmy04jJ_3ZQobihKjO9isuuUCPaw

@@ -1,0 +1,105 @@
+uuid: 0cb98533-85d1-4458-81db-e0dd59ae3a44
+langcode: en
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.icon_browser
+    - field.field.taxonomy_term.session_vertical.field_confirmed
+    - field.field.taxonomy_term.session_vertical.field_icon
+    - field.field.taxonomy_term.session_vertical.field_track_chairs
+    - field.field.taxonomy_term.session_vertical.field_track_details
+    - field.field.taxonomy_term.session_vertical.field_track_sponsors
+    - taxonomy.vocabulary.session_vertical
+  module:
+    - entity_browser
+    - paragraphs
+    - path
+    - text
+id: taxonomy_term.session_vertical.default
+targetEntityType: taxonomy_term
+bundle: session_vertical
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 3
+    region: content
+    settings:
+      placeholder: ''
+      rows: 5
+    third_party_settings: {  }
+  field_confirmed:
+    weight: 4
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_icon:
+    weight: 1
+    settings:
+      entity_browser: icon_browser
+      field_widget_display: rendered_entity
+      field_widget_edit: true
+      field_widget_remove: true
+      open: true
+      selection_mode: selection_edit
+      field_widget_display_settings:
+        view_mode: preview
+    third_party_settings: {  }
+    type: entity_browser_entity_reference
+    region: content
+  field_track_chairs:
+    weight: 6
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_track_details:
+    type: entity_reference_paragraphs
+    weight: 5
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_track_sponsors:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 100
+    region: content
+    third_party_settings: {  }
+hidden: {  }

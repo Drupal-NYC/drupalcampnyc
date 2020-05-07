@@ -1,0 +1,24 @@
+uuid: 6ff86b13-e33d-4393-82c6-d9f0ee42889c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.element_tracks.field_track_teasers
+    - paragraphs.paragraphs_type.element_tracks
+  module:
+    - viewsreference
+id: paragraph.element_tracks.default
+targetEntityType: paragraph
+bundle: element_tracks
+mode: default
+content:
+  field_track_teasers:
+    weight: 0
+    label: hidden
+    settings:
+      plugin_types:
+        - block
+    third_party_settings: {  }
+    type: viewsreference_formatter
+    region: content
+hidden: {  }

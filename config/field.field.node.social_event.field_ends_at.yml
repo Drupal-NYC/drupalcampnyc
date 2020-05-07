@@ -1,0 +1,21 @@
+uuid: bb555373-06ac-4672-8074-3a492a36ac6c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ends_at
+    - node.type.social_event
+  module:
+    - datetime
+id: node.social_event.field_ends_at
+field_name: field_ends_at
+entity_type: node
+bundle: social_event
+label: 'Ends at'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

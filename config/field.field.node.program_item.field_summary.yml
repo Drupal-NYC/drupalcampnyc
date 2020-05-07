@@ -1,0 +1,21 @@
+uuid: 4b0def2a-9872-4415-93fb-4be7a46cc6c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_summary
+    - node.type.program_item
+  module:
+    - text
+id: node.program_item.field_summary
+field_name: field_summary
+entity_type: node
+bundle: program_item
+label: Summary
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

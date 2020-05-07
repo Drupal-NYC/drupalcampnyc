@@ -1,0 +1,13 @@
+uuid: 7537b12c-2d66-46e8-bde4-4bcd77797ffe
+langcode: en
+status: true
+dependencies: {  }
+id: vector_graphics
+label: 'Vector graphics'
+description: 'As SVG is a higher risk than raster based images so a special permission is required for that.'
+source: image
+queue_thumbnail_downloads: false
+new_revision: true
+source_configuration:
+  source_field: field_media_image_2
+field_map: {  }

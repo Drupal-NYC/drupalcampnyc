@@ -1,0 +1,20 @@
+uuid: ad0df8dc-58d6-41d5-952a-db1c6c879ece
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_u_testimonial
+  module:
+    - user
+id: user.user.field_u_testimonial
+field_name: field_u_testimonial
+entity_type: user
+bundle: user
+label: Testimonial
+description: "Please help us promote the event, tell us what makes DrupalCampNYC or Drupal in general special for you.\r\nBy entering a testimonial text you agree that the organization team submits your text along with your name to third parties."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

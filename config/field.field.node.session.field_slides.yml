@@ -1,0 +1,27 @@
+uuid: f22bdb00-3392-425e-af55-1b386eba7d89
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slides
+    - node.type.session
+  module:
+    - file
+id: node.session.field_slides
+field_name: field_slides
+entity_type: node
+bundle: session
+label: Slides
+description: 'Upload your slides here, if using something exotic like reveal.js or other custom thing please zip it and upload it. Alternatively use the Slides link field instead for an external resource hosting the slides.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'slides/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt pptx pdf key odp sxi zip'
+  max_filesize: '200 MB'
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

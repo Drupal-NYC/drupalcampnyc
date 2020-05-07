@@ -1,0 +1,20 @@
+uuid: 42726a6c-642c-449a-9fd3-cbc4bb4d3fa4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_ticket_orderno
+  module:
+    - user
+id: user.user.field_ticket_orderno
+field_name: field_ticket_orderno
+entity_type: user
+bundle: user
+label: 'Ticket order ID'
+description: 'Will not be disclosed to public. Please enter the 5-digit order ID of your ticket purchase.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

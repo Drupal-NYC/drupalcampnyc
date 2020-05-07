@@ -1,0 +1,132 @@
+uuid: 3648b8e1-9b81-4a08-b720-a06198bcb5eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.social_event.body
+    - field.field.node.social_event.field_comments
+    - field.field.node.social_event.field_ends_at
+    - field.field.node.social_event.field_room
+    - field.field.node.social_event.field_si_sponsor
+    - field.field.node.social_event.field_start
+    - field.field.node.social_event.field_summary
+    - field.field.node.social_event.field_terms
+    - field.field.node.social_event.field_type
+    - node.type.social_event
+  module:
+    - datetime
+    - empty_fields
+    - field_group
+    - options
+    - text
+    - user
+third_party_settings:
+  field_group:
+    group_info:
+      children:
+        - field_type
+        - field_start
+        - field_ends_at
+        - field_room
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: table-style
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Info
+id: node.social_event.full
+targetEntityType: node
+bundle: social_event
+mode: full
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  content_moderation_control:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_ends_at:
+    type: datetime_default
+    weight: 2
+    region: content
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: time
+    third_party_settings:
+      empty_fields:
+        handler: ''
+  field_room:
+    type: entity_reference_label
+    weight: 3
+    region: content
+    label: above
+    settings:
+      link: false
+    third_party_settings:
+      empty_fields:
+        handler: ''
+  field_si_sponsor:
+    weight: 4
+    label: above
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings:
+      empty_fields:
+        handler: ''
+    type: entity_reference_entity_view
+    region: content
+  field_start:
+    type: datetime_default
+    weight: 1
+    region: content
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: day
+    third_party_settings:
+      empty_fields:
+        handler: ''
+  field_summary:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_type:
+    type: list_default
+    weight: 0
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  flag_session_schedule:
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_comments: true
+  field_terms: true
+  shariff_field: true

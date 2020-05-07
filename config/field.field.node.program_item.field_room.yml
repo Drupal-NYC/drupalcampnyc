@@ -1,0 +1,29 @@
+uuid: 9690d0d8-c20d-4be3-a53b-5f79a5951211
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_room
+    - node.type.program_item
+    - taxonomy.vocabulary.room
+id: node.program_item.field_room
+field_name: field_room
+entity_type: node
+bundle: program_item
+label: Room
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      room: room
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

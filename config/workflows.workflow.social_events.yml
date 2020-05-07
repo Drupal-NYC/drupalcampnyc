@@ -1,0 +1,76 @@
+uuid: 790b85ee-8ef5-4a0f-b407-62624fc2322b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.social_event
+  module:
+    - content_moderation
+id: social_events
+label: 'Social events'
+type: content_moderation
+type_settings:
+  states:
+    decline:
+      published: false
+      default_revision: false
+      label: Decline
+      weight: 1
+    draft:
+      label: Draft
+      published: false
+      default_revision: false
+      weight: -3
+    needs_review:
+      published: false
+      default_revision: false
+      label: 'Needs review'
+      weight: -1
+    needs_work:
+      published: false
+      default_revision: false
+      label: 'Needs work'
+      weight: -2
+    published:
+      label: Published
+      published: true
+      default_revision: true
+      weight: 0
+  transitions:
+    create_new_draft:
+      label: 'Create New Draft'
+      to: draft
+      weight: -2
+      from:
+        - draft
+        - needs_review
+        - needs_work
+        - published
+    needs_work:
+      label: 'Needs work'
+      from:
+        - decline
+        - needs_review
+        - needs_work
+        - published
+      to: needs_work
+      weight: 0
+    publish:
+      label: Publish
+      to: published
+      weight: 1
+      from:
+        - decline
+        - needs_review
+        - published
+    ready_for_review:
+      label: 'Ready for review'
+      from:
+        - draft
+        - needs_work
+      to: needs_review
+      weight: -1
+  entity_types:
+    node:
+      - social_event
+  default_moderation_state: draft

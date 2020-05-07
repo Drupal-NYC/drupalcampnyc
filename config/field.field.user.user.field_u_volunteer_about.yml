@@ -1,0 +1,21 @@
+uuid: 7e4073af-424d-42ca-b665-4d7590aed18b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_u_volunteer_about
+  module:
+    - text
+    - user
+id: user.user.field_u_volunteer_about
+field_name: field_u_volunteer_about
+entity_type: user
+bundle: user
+label: 'Volunteer profile'
+description: 'If you are an active volunteer, please enter a short text about yourself which we intend to publish on a dedicated page.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

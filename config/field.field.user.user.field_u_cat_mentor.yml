@@ -1,0 +1,24 @@
+uuid: c54b2216-945b-4da5-a7c6-ee5d30b2f13b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_u_cat_mentor
+  module:
+    - user
+id: user.user.field_u_cat_mentor
+field_name: field_u_cat_mentor
+entity_type: user
+bundle: user
+label: 'Contribution mentor'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

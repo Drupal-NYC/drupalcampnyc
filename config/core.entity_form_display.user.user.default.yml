@@ -1,13 +1,147 @@
-uuid: dfcfcbf1-62e4-4232-ba2c-449fe775d398
+uuid: 9c6d3964-4e6e-4834-96f9-59dcc2eb07d6
 langcode: en
 status: true
 dependencies:
   config:
+    - field.field.user.user.field_dietary_intro
+    - field.field.user.user.field_interest_horizontal
+    - field.field.user.user.field_interest_vertical
+    - field.field.user.user.field_onsite_intro
+    - field.field.user.user.field_speaker
+    - field.field.user.user.field_speaker_profile
+    - field.field.user.user.field_special_details
+    - field.field.user.user.field_ticket_orderno
+    - field.field.user.user.field_ticket_type
+    - field.field.user.user.field_u_acad_title_post
+    - field.field.user.user.field_u_acad_title_pre
+    - field.field.user.user.field_u_accessibility
+    - field.field.user.user.field_u_cat_mentor
+    - field.field.user.user.field_u_cat_orgateam
+    - field.field.user.user.field_u_cat_volunteer
+    - field.field.user.user.field_u_childcare
+    - field.field.user.user.field_u_company
+    - field.field.user.user.field_u_dietary
+    - field.field.user.user.field_u_first_name
+    - field.field.user.user.field_u_job_title
+    - field.field.user.user.field_u_last_name
+    - field.field.user.user.field_u_middle_name
+    - field.field.user.user.field_u_pub_attendee_list
+    - field.field.user.user.field_u_speaker_experience
+    - field.field.user.user.field_u_speaker_inclusion
+    - field.field.user.user.field_u_special_details
+    - field.field.user.user.field_u_testimonial
+    - field.field.user.user.field_u_volunteer_about
     - field.field.user.user.user_picture
-    - image.style.thumbnail
+    - image.style.user_picture
   module:
-    - image
+    - field_group
+    - markup
+    - svg_image
+    - text
     - user
+third_party_settings:
+  field_group:
+    group_user_form:
+      children:
+        - group_user_basic
+        - group_user_internals
+        - group_attendee_info
+        - group_att_special_needs
+        - group_help_promote
+      parent_name: ''
+      weight: 0
+      format_type: accordion
+      format_settings:
+        id: ''
+        classes: ''
+        effect: none
+      label: 'User form'
+    group_user_basic:
+      children:
+        - account
+      parent_name: group_user_form
+      weight: -20
+      format_type: accordion_item
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: open
+        required_fields: true
+        description: ''
+      label: 'User account'
+    group_attendee_info:
+      children:
+        - field_ticket_orderno
+        - field_u_pub_attendee_list
+        - user_picture
+        - field_u_acad_title_pre
+        - field_u_first_name
+        - field_u_middle_name
+        - field_u_last_name
+        - field_u_acad_title_post
+        - field_u_job_title
+        - field_u_company
+      parent_name: group_user_form
+      weight: 15
+      format_type: accordion_item
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        required_fields: true
+        description: ''
+      label: 'Attendee info'
+    group_help_promote:
+      children:
+        - field_u_testimonial
+        - field_u_volunteer_about
+        - field_speaker_profile
+      parent_name: group_user_form
+      weight: 26
+      format_type: accordion_item
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        required_fields: true
+        description: ''
+      label: 'Help promote'
+    group_user_internals:
+      children:
+        - field_speaker
+        - field_u_cat_mentor
+        - field_u_cat_volunteer
+        - field_u_cat_orgateam
+        - field_ticket_type
+      parent_name: group_user_form
+      weight: -10
+      format_type: accordion_item
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        required_fields: true
+        description: ''
+      label: Internals
+    group_att_special_needs:
+      children:
+        - field_onsite_intro
+        - field_dietary_intro
+        - field_u_dietary
+        - field_u_accessibility
+        - field_special_details
+      parent_name: group_user_form
+      weight: 24
+      format_type: accordion_item
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        required_fields: true
+        description: ''
+      label: 'Onsite service'
+_core:
+  default_config_hash: K-1rBM8mTIkFp9RqOC2tMRUukOQ1xbRCfSKK8dEddnA
 id: user.user.default
 targetEntityType: user
 bundle: user
@@ -18,32 +152,184 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  contact:
-    weight: 5
-    region: content
+  field_dietary_intro:
+    weight: 53
     settings: {  }
     third_party_settings: {  }
-  google_analytics:
-    weight: 3
+    type: markup
     region: content
+  field_onsite_intro:
+    weight: 52
     settings: {  }
     third_party_settings: {  }
-  language:
-    weight: 0
+    type: markup
     region: content
+  field_speaker:
+    weight: 2
     settings: {  }
     third_party_settings: {  }
-  timezone:
+    type: options_select
+    region: content
+  field_speaker_profile:
+    weight: 50
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_special_details:
+    weight: 57
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_ticket_orderno:
+    weight: 22
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_ticket_type:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_u_acad_title_post:
+    weight: 29
+    settings:
+      size: 10
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_u_acad_title_pre:
+    weight: 25
+    settings:
+      size: 10
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_u_accessibility:
+    weight: 55
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_u_cat_mentor:
+    weight: 4
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_u_cat_orgateam:
     weight: 6
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
     region: content
+  field_u_cat_volunteer:
+    weight: 5
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_u_company:
+    weight: 31
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_u_dietary:
+    weight: 54
     settings: {  }
     third_party_settings: {  }
+    type: options_select
+    region: content
+  field_u_first_name:
+    weight: 26
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_u_job_title:
+    weight: 30
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_u_last_name:
+    weight: 28
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_u_middle_name:
+    weight: 27
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_u_pub_attendee_list:
+    weight: 23
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_u_testimonial:
+    weight: 48
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_u_volunteer_about:
+    weight: 49
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
   user_picture:
     type: image_image
     settings:
+      preview_image_style: user_picture
       progress_indicator: throbber
-      preview_image_style: thumbnail
     third_party_settings: {  }
-    weight: -1
+    weight: 24
     region: content
-hidden: {  }
+hidden:
+  contact: true
+  field_interest_horizontal: true
+  field_interest_vertical: true
+  field_u_childcare: true
+  field_u_speaker_experience: true
+  field_u_speaker_inclusion: true
+  field_u_special_details: true
+  language: true
+  path: true
+  timezone: true

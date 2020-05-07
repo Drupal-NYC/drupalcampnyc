@@ -1,4 +1,4 @@
-uuid: f26dbeb5-cc26-44d9-882e-46ecc35b269d
+uuid: 897a7fbb-e1f5-4497-b671-ad5e11314250
 langcode: en
 status: true
 dependencies:
@@ -7,32 +7,34 @@ dependencies:
   module:
     - image
     - user
+_core:
+  default_config_hash: Iiq0AttdhgbebJwabSFwQQ1ORn64GoGz0xSZ_eyCJ8A
 id: user.user.user_picture
 field_name: user_picture
 entity_type: user
 bundle: user
 label: Picture
-description: 'Your virtual face or picture.'
+description: 'Please upload your photo for the attendee list.'
 required: false
 translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_extensions: 'png gif jpg jpeg'
   file_directory: 'pictures/[date:custom:Y]-[date:custom:m]'
-  max_filesize: '30 KB'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: 4MB
+  max_resolution: ''
+  min_resolution: 150x150
   alt_field: false
+  alt_field_required: false
   title_field: false
-  max_resolution: 85x85
-  min_resolution: ''
+  title_field_required: false
   default_image:
-    uuid: null
+    uuid: ''
     alt: ''
     title: ''
     width: null
     height: null
-  alt_field_required: false
-  title_field_required: false
   handler: 'default:file'
   handler_settings: {  }
 field_type: image

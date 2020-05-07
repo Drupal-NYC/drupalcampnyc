@@ -1,26 +1,70 @@
-uuid: a0bf450c-9f96-47f3-9949-73429c3bc42b
+uuid: 41d1c361-80db-42ac-ae3c-74ef6ed8bdce
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.page.body
+    - field.field.node.page.field_content
+    - field.field.node.page.field_header
+    - field.field.node.page.field_sponsors
+    - field.field.node.page.field_summary_plain
     - node.type.page
   module:
-    - text
+    - empty_fields
+    - entity_reference_revisions
     - user
+    - viewsreference
+_core:
+  default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
 id: node.page.default
 targetEntityType: node
 bundle: page
 mode: default
 content:
-  body:
-    label: hidden
-    type: text_default
-    weight: 100
+  content_moderation_control:
+    weight: -20
     settings: {  }
     third_party_settings: {  }
     region: content
-  links:
-    weight: 101
+  field_content:
+    type: entity_reference_revisions_entity_view
+    weight: 3
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings:
+      empty_fields:
+        handler: ''
     region: content
-hidden: {  }
+  field_header:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_sponsors:
+    weight: 2
+    label: hidden
+    settings:
+      plugin_types:
+        default: default
+        block: block
+        page: 0
+        feed: 0
+        entity_browser: 0
+    third_party_settings:
+      empty_fields:
+        handler: ''
+    type: viewsreference_formatter
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_summary_plain: true
+  shariff_field: true

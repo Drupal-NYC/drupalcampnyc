@@ -1,0 +1,28 @@
+uuid: d3aba1aa-e3d0-4a48-b262-1586663e29d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_track_chairs
+    - taxonomy.vocabulary.session_vertical
+id: taxonomy_term.session_vertical.field_track_chairs
+field_name: field_track_chairs
+entity_type: taxonomy_term
+bundle: session_vertical
+label: 'Indicate track chairs'
+description: 'To <em>display</em> the track chairs, please add a "User lists" paragraph must be present.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: true
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

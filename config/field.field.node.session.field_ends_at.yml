@@ -1,0 +1,21 @@
+uuid: b78e5a1e-9f85-45eb-a3e9-b7859596f20f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ends_at
+    - node.type.session
+  module:
+    - datetime
+id: node.session.field_ends_at
+field_name: field_ends_at
+entity_type: node
+bundle: session
+label: 'Ends at'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

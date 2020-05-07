@@ -1,0 +1,25 @@
+uuid: e1161f04-a207-4720-b01f-d6e9b7f11648
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.blog_post
+  module:
+    - entity_reference_revisions
+id: node.blog_post.field_content
+field_name: field_content
+entity_type: node
+bundle: blog_post
+label: Content
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles: null
+field_type: entity_reference_revisions

@@ -1,0 +1,31 @@
+uuid: 6405c5b6-c19b-4ea8-82f4-ffa7a96bedcd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.element_sponsor.field_sponsor
+    - paragraphs.paragraphs_type.element_sponsor
+  module:
+    - empty_fields
+    - viewsreference
+id: paragraph.element_sponsor.default
+targetEntityType: paragraph
+bundle: element_sponsor
+mode: default
+content:
+  field_sponsor:
+    weight: 0
+    label: hidden
+    settings:
+      plugin_types:
+        default: default
+        block: block
+        page: 0
+        feed: 0
+        entity_browser: 0
+    third_party_settings:
+      empty_fields:
+        handler: ''
+    type: viewsreference_formatter
+    region: content
+hidden: {  }

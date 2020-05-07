@@ -1,14 +1,21 @@
-- name: pull_dependencies_with_dev
-  service: deploy
-  command: composer install --no-interaction
-- name: code_quality
-  service: code-quality
-  command: pre-commit.sh
-- name: remove_dev_dependencies
+- type: parallel
+  name: dependencies
   tag: master
-  service: deploy
-  command: composer install --no-dev --no-interaction --optimize-autoloader
+  steps:
+    - type: serial
+      steps:
+        - service: deploy
+          name: composer_install
+          command: "composer install --no-dev --no-interaction --optimize-autoloader"
+    - type: serial
+      steps:
+        - service: front-end
+          name: npm_install
+          command: npm ci
+        - service: front-end
+          name: build_theme
+          command: npm run build
 - name: deploy
   tag: master
   service: deploy
-  command: php scripts/robo/BallastRunner.php deploy
+  command: vendor/bin/robo deploy --remote-branch=newbrunswick

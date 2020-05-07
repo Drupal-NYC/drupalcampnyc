@@ -1,0 +1,21 @@
+uuid: 9dc21901-bd3e-45c4-ae8a-5c8cc38be4de
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_start
+    - node.type.session
+  module:
+    - datetime
+id: node.session.field_start
+field_name: field_start
+entity_type: node
+bundle: session
+label: 'Starts at'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

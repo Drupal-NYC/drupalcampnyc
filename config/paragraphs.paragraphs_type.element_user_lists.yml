@@ -1,0 +1,10 @@
+uuid: 2ccf29f8-0a6a-4c2e-8f2f-7dd9f66ebbe3
+langcode: en
+status: true
+dependencies: {  }
+id: element_user_lists
+label: 'Element - User Lists'
+icon_uuid: null
+icon_default: null
+description: 'For featured speakers, team members etc.'
+behavior_plugins: {  }

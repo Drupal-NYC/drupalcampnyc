@@ -1,0 +1,19 @@
+uuid: 20e105d4-e186-4a2c-9f38-e81cdd0ab2a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_summary_plain
+    - node.type.page
+id: node.page.field_summary_plain
+field_name: field_summary_plain
+entity_type: node
+bundle: page
+label: Summary
+description: 'Text used as the description of the page, used for meta-tags and open-graph (not directly visually present on the page).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

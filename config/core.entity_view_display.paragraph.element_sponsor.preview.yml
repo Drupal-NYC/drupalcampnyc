@@ -1,0 +1,15 @@
+uuid: feb2be43-d5d1-4318-b719-1b14644732ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.element_sponsor.field_sponsor
+    - paragraphs.paragraphs_type.element_sponsor
+id: paragraph.element_sponsor.preview
+targetEntityType: paragraph
+bundle: element_sponsor
+mode: preview
+content: {  }
+hidden:
+  field_sponsor: true

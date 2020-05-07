@@ -1,0 +1,21 @@
+uuid: b4cd52d6-c85e-4404-b1ae-69f11371904d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_summary
+    - node.type.social_event
+  module:
+    - text
+id: node.social_event.field_summary
+field_name: field_summary
+entity_type: node
+bundle: social_event
+label: Summary
+description: 'Short and on the point summary of your social event.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

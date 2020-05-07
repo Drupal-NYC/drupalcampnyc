@@ -1,0 +1,6 @@
+services:
+  de_core.de_core_update_speakers:
+    class: Drupal\de_core\Command\UpdateSpeakersCommand
+    arguments: ['@console.drupal_api', '@entity_type.manager']
+    tags:
+      - { name: drupal.command }

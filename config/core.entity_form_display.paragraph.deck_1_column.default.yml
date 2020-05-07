@@ -1,0 +1,53 @@
+uuid: dc8ed187-ed6d-459e-a8d3-26b1ee54cdfd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.deck_1_column.field_layout_full_width
+    - field.field.paragraph.deck_1_column.field_primary_column
+    - field.field.paragraph.deck_1_column.field_title
+    - paragraphs.paragraphs_type.deck_1_column
+  module:
+    - paragraphs
+    - text
+id: paragraph.deck_1_column.default
+targetEntityType: paragraph
+bundle: deck_1_column
+mode: default
+content:
+  field_primary_column:
+    weight: 2
+    settings:
+      title: Element
+      title_plural: Elements
+      edit_mode: open
+      closed_mode: preview
+      autocollapse: none
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+      features:
+        duplicate: duplicate
+        collapse_edit_all: collapse_edit_all
+    third_party_settings: {  }
+    type: paragraphs
+    region: content
+  field_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  status:
+    type: boolean_checkbox
+    weight: 3
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_layout_full_width: true
+  uid: true

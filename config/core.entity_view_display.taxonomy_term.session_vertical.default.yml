@@ -1,0 +1,76 @@
+uuid: 1c4985ac-0df5-49f9-8f1c-ff26ebbf9aba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.session_vertical.field_confirmed
+    - field.field.taxonomy_term.session_vertical.field_icon
+    - field.field.taxonomy_term.session_vertical.field_track_chairs
+    - field.field.taxonomy_term.session_vertical.field_track_details
+    - field.field.taxonomy_term.session_vertical.field_track_sponsors
+    - taxonomy.vocabulary.session_vertical
+  module:
+    - empty_fields
+    - entity_reference_revisions
+    - text
+id: taxonomy_term.session_vertical.default
+targetEntityType: taxonomy_term
+bundle: session_vertical
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_confirmed:
+    weight: 3
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_icon:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: full
+      link: false
+    third_party_settings:
+      empty_fields:
+        handler: ''
+    type: entity_reference_entity_view
+    region: content
+  field_track_chairs:
+    weight: 5
+    label: above
+    settings:
+      link: false
+    third_party_settings:
+      empty_fields:
+        handler: ''
+    type: entity_reference_label
+    region: content
+  field_track_details:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_track_sponsors:
+    weight: 4
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden: {  }

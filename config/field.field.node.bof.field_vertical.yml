@@ -1,0 +1,29 @@
+uuid: 4ae835b2-9031-4a66-9d04-903d2b779f03
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_vertical
+    - node.type.bof
+    - taxonomy.vocabulary.session_vertical
+id: node.bof.field_vertical
+field_name: field_vertical
+entity_type: node
+bundle: bof
+label: 'Industry track'
+description: 'Optionally assign an industry track. The track will show up in the schedule and the BoF will show up on the track page.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      session_vertical: session_vertical
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

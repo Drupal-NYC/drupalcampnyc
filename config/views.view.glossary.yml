@@ -1,4 +1,4 @@
-uuid: bb6df8fe-b3fa-421d-864b-7580544b25be
+uuid: 0527c7e9-88aa-4f05-becc-dffdaab676d5
 langcode: en
 status: false
 dependencies:
@@ -7,6 +7,8 @@ dependencies:
   module:
     - node
     - user
+_core:
+  default_config_hash: _12Vkw1VGBz_s0_W_LLVCrBPpioNSnB6zcd1lUAQubM
 id: glossary
 label: Glossary
 module: node
@@ -445,8 +447,6 @@ display:
         weight: 0
         menu_name: main
         parent: ''
-        enabled: true
-        expanded: false
       display_extenders: {  }
     cache_metadata:
       contexts:

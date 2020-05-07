@@ -1,0 +1,10 @@
+uuid: 0e49da06-5a6b-4245-aed5-e2c08127a93f
+langcode: en
+status: true
+dependencies: {  }
+id: deck_hero
+label: 'Deck - Hero'
+icon_uuid: null
+icon_default: null
+description: "A full-width deck that got an image as a background.\r\nContains a title, and a list of other paragraphs (could be text, CTA's or similar promotional elements)"
+behavior_plugins: {  }

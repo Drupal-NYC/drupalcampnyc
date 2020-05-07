@@ -1,7 +1,9 @@
-uuid: f432198d-08bb-4492-8100-a571e7b4a3e2
+uuid: 9dcf5dcc-cbfd-4ba6-90bb-26b5fed4c497
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: sapEi2YDGoI9yQIT_WgIV2vUdQ6DScH0V3fAyTadAL0
 id: admin
 label: Administration
 description: 'Administrative task links'

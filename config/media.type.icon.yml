@@ -1,0 +1,13 @@
+uuid: ebdca7e3-fcfc-49aa-8a2e-93732959d7cd
+langcode: en
+status: true
+dependencies: {  }
+id: icon
+label: Icon
+description: 'A basic SVG icon'
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_image_1
+field_map: {  }

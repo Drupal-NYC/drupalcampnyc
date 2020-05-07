@@ -1,0 +1,27 @@
+// frontpage hero
+.path-frontpage  {
+	.deck-hero--with-background-image {
+		p {
+			font-size: 18px;
+		}
+		.cta {
+      border: 2px solid #fff;
+      overflow: hidden;
+      padding: .55rem 1.3rem;
+      color: #fff;
+      font-size: 18px;
+      margin: 0;
+      white-space: nowrap;
+      display: inline-block;
+      margin-top: 10px;
+      transition: 0.3s all ease-in-out;
+
+      &:hover {
+        background-color: white;
+        color: #a62f92;
+        text-decoration: none;
+      }
+    }
+	}
+}
+

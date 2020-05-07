@@ -1,9 +1,11 @@
-uuid: e8c0019c-f890-46cc-bd12-180878586c20
+uuid: 1ff991c0-d0f4-43d5-95c7-3855d058ce86
 langcode: en
 status: false
 dependencies:
   module:
     - node
+_core:
+  default_config_hash: ElrtInxGjZd7GaapJ5O9n-ugi2hG2IxFivtgn0tHOsk
 id: node.full
 label: 'Full content'
 targetEntityType: node

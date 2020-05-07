@@ -1,0 +1,30 @@
+uuid: 519bf1fb-273a-4e2f-865e-dc09f024f53e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_u_accessibility
+    - taxonomy.vocabulary.accessibility_needs
+  module:
+    - user
+id: user.user.field_u_accessibility
+field_name: field_u_accessibility
+entity_type: user
+bundle: user
+label: 'Accessibility assistance'
+description: 'We will get back to you and see how we can help.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      accessibility_needs: accessibility_needs
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

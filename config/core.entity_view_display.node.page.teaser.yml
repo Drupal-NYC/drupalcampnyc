@@ -1,28 +1,36 @@
-uuid: d49b5452-4746-469c-b83c-60ff446ef438
+uuid: 39809f13-27a5-48bf-8ee8-a58782e12d4d
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.page.body
+    - field.field.node.page.field_content
+    - field.field.node.page.field_header
+    - field.field.node.page.field_sponsors
+    - field.field.node.page.field_summary_plain
     - node.type.page
   module:
-    - text
     - user
+_core:
+  default_config_hash: cSv5lDnbIgDug475Hdz3woED2XMqYv3awI-J9u1JLbY
 id: node.page.teaser
 targetEntityType: node
 bundle: page
 mode: teaser
 content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
-    weight: 100
-    settings:
-      trim_length: 600
+  content_moderation_control:
+    weight: -20
+    settings: {  }
     third_party_settings: {  }
     region: content
   links:
-    weight: 101
+    weight: 0
     region: content
-hidden: {  }
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_content: true
+  field_header: true
+  field_sponsors: true
+  field_summary_plain: true
+  shariff_field: true

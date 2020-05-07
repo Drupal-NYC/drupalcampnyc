@@ -1,0 +1,626 @@
+uuid: 6d01c7c7-3469-4366-9f66-e5cb2756a345
+langcode: en
+status: closed
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: 54q-eZLQ0xY3g9yFexLIn97Y8F_sByRhO4ima2pMmn4
+open: null
+close: null
+weight: 0
+uid: null
+template: false
+archive: false
+id: contact
+title: Contact
+description: 'Email contact webform with several optional addressees'
+category: ''
+elements: "subject1:\n  '#type': webform_select_other\n  '#title': Subject\n  '#help': 'Please find us help the right addressee by indicating the subject'\n  '#options':\n    ticket: 'Buying a ticket'\n    speaking: 'Speaking at Drupal Europe'\n    sponsoring: Sponsoring\n    volunteering: Volunteering\n    website: 'Website issue'\n    privacy: 'Privacy concerns'\n    accessibility: 'Accessibility question'\n    coc: 'Code of conduct'\n  '#required': true\nname:\n  '#type': textfield\n  '#title': 'Your Name'\n  '#required': true\nemail:\n  '#type': email\n  '#title': 'Your Email'\n  '#required': true\nmessage:\n  '#title': Message\n  '#type': textarea\n  '#required': true\n  '#test': 'Please ignore this email.'\nr_u_real:\n  '#type': textfield\n  '#title': 'Drupal Europe takes place in this country'\n  '#description': 'Spam protection - please type <em>Germany</em> in this field.'\n  '#required': true\nedit_copy_contact:\n  '#type': checkbox\n  '#title': 'Send yourself a copy'\n  '#help': 'Check if you want a copy of this mail sent to yourself.'\nsubject:\n  '#type': textfield\n  '#title': Subject\n  '#states':\n    invisible:\n      '':\n        '': ''\n  '#access_create_roles': {  }\n  '#test': 'Testing contact webform from [site:name]'\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#states':\n    enabled:\n      ':input[name=\"r_u_real\"]':\n        value: Germany\n  '#submit__label': 'Send message'\n"
+css: ''
+javascript: ''
+settings:
+  ajax: false
+  ajax_scroll_top: form
+  ajax_progress_type: ''
+  ajax_effect: ''
+  ajax_speed: null
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  page_admin_theme: false
+  form_title: both
+  form_submit_once: true
+  form_exception_message: ''
+  form_open_message: ''
+  form_close_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_remote_addr: true
+  form_convert_anonymous: false
+  form_prepopulate: true
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_reset: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: true
+  form_unsaved: true
+  form_disable_back: false
+  form_submit_back: false
+  form_autofocus: false
+  form_details_toggle: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
+  submission_label: ''
+  submission_log: false
+  submission_views: {  }
+  submission_views_replace: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  previous_submission_message: ''
+  previous_submissions_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: false
+  wizard_progress_states: false
+  wizard_start_label: ''
+  wizard_preview_link: false
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_track: ''
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  draft_pending_single_message: ''
+  draft_pending_multiple_message: ''
+  confirmation_type: inline
+  confirmation_title: ''
+  confirmation_message: "Your message has been sent. Thanks for reaching out to us.<br />\r\nWe will answer as soon as we can. Busy with organizing a conference, you know."
+  confirmation_url: '<front>'
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  confirmation_update: false
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_total_unique: false
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  results_customize: false
+  token_view: false
+  token_update: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers:
+  email_confirmation:
+    id: email
+    label: 'Email confirmation'
+    handler_id: email_confirmation
+    status: true
+    conditions:
+      disabled:
+        ':input[name="edit_copy_contact"]':
+          unchecked: true
+    weight: -50
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:email:raw]'
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: _default
+      subject: '[webform_submission:values:subject1:raw]'
+      body: '[webform_submission:values:message:value]'
+      excluded_elements:
+        subject: subject
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: true
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      theme_name: ''
+      parameters: {  }
+  email_notification:
+    id: email
+    label: 'Other email notification'
+    handler_id: email_notification
+    status: true
+    conditions:
+      enabled:
+        -
+          ':input[name="subject1[select]"]':
+            empty: true
+        - or
+        -
+          ':input[name="subject1[other]"]':
+            checked: true
+    weight: -41
+    settings:
+      states:
+        - completed
+      to_mail: camp@drupalnyc.org
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_mail: '[webform_submission:values:email:raw]'
+      from_options: {  }
+      from_name: '[webform_submission:values:name:raw]'
+      subject: '[webform_submission:values:subject1:raw]'
+      body: '[webform_submission:values:message:value]'
+      excluded_elements:
+        subject1: subject1
+        name: name
+        email: email
+        edit_copy_contact: edit_copy_contact
+        subject: subject
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: '[webform_submission:values:email:raw]'
+      sender_name: '[webform_submission:values:name:raw]'
+      theme_name: ''
+      parameters: {  }
+  email_notification_tickets:
+    id: email
+    label: 'Ticket team notification'
+    handler_id: email_notification_tickets
+    status: true
+    conditions:
+      enabled:
+        ':input[name="subject1[select]"]':
+          value: ticket
+    weight: -49
+    settings:
+      states:
+        - completed
+      to_mail: camp@drupalnyc.org
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_mail: '[webform_submission:values:email:raw]'
+      from_options: {  }
+      from_name: '[webform_submission:values:name:raw]'
+      subject: '[webform_submission:values:subject1:raw]'
+      body: '[webform_submission:values:message:value]'
+      excluded_elements:
+        subject1: subject1
+        name: name
+        email: email
+        edit_copy_contact: edit_copy_contact
+        subject: subject
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: '[webform_submission:values:email:raw]'
+      sender_name: '[webform_submission:values:name:raw]'
+      theme_name: ''
+      parameters: {  }
+  program_team_notification:
+    id: email
+    label: 'Program team notification'
+    handler_id: program_team_notification
+    status: true
+    conditions:
+      enabled:
+        ':input[name="subject1[select]"]':
+          value: speaking
+    weight: -48
+    settings:
+      states:
+        - completed
+      to_mail: camp@drupalnyc.org
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_mail: '[webform_submission:values:email:raw]'
+      from_options: {  }
+      from_name: '[webform_submission:values:name:raw]'
+      subject: '[webform_submission:values:subject1:raw]'
+      body: '[webform_submission:values:message:value]'
+      excluded_elements:
+        subject1: subject1
+        name: name
+        email: email
+        edit_copy_contact: edit_copy_contact
+        subject: subject
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: '[webform_submission:values:email:raw]'
+      sender_name: '[webform_submission:values:name:raw]'
+      theme_name: ''
+      parameters: {  }
+  sponsoring_team_notification:
+    id: email
+    label: 'Sponsoring team notification'
+    handler_id: sponsoring_team_notification
+    status: true
+    conditions:
+      enabled:
+        ':input[name="subject1[select]"]':
+          value: sponsoring
+    weight: -47
+    settings:
+      states:
+        - completed
+      to_mail: camp@drupalnyc.org
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_mail: '[webform_submission:values:email:raw]'
+      from_options: {  }
+      from_name: '[webform_submission:values:name:raw]'
+      subject: '[webform_submission:values:subject1:raw]'
+      body: '[webform_submission:values:message:value]'
+      excluded_elements:
+        subject1: subject1
+        name: name
+        email: email
+        edit_copy_contact: edit_copy_contact
+        subject: subject
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: '[webform_submission:values:email:raw]'
+      sender_name: '[webform_submission:values:name:raw]'
+      theme_name: ''
+      parameters: {  }
+  volunteering_team_notification:
+    id: email
+    label: 'Volunteering team notification'
+    handler_id: volunteering_team_notification
+    status: true
+    conditions:
+      enabled:
+        ':input[name="subject1[select]"]':
+          value: volunteering
+    weight: -46
+    settings:
+      states:
+        - completed
+      to_mail: camp@drupalnyc.org
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_mail: '[webform_submission:values:email:raw]'
+      from_options: {  }
+      from_name: '[webform_submission:values:name:raw]'
+      subject: '[webform_submission:values:subject1:raw]'
+      body: '[webform_submission:values:message:value]'
+      excluded_elements:
+        subject1: subject1
+        name: name
+        email: email
+        edit_copy_contact: edit_copy_contact
+        subject: subject
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: '[webform_submission:values:email:raw]'
+      sender_name: '[webform_submission:values:name:raw]'
+      theme_name: ''
+      parameters: {  }
+  website_team_notification:
+    id: email
+    label: 'Website team notification'
+    handler_id: website_team_notification
+    status: true
+    conditions:
+      enabled:
+        ':input[name="subject1[select]"]':
+          value: website
+    weight: -45
+    settings:
+      states:
+        - completed
+      to_mail: camp@drupalnyc.org
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_mail: '[webform_submission:values:email:raw]'
+      from_options: {  }
+      from_name: '[webform_submission:values:name:raw]'
+      subject: '[webform_submission:values:subject1:raw]'
+      body: '[webform_submission:values:message:value]'
+      excluded_elements:
+        subject1: subject1
+        name: name
+        email: email
+        edit_copy_contact: edit_copy_contact
+        subject: subject
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: '[webform_submission:values:email:raw]'
+      sender_name: '[webform_submission:values:name:raw]'
+      theme_name: ''
+      parameters: {  }
+  privacy_team_notification:
+    id: email
+    label: 'Privacy team notification'
+    handler_id: privacy_team_notification
+    status: true
+    conditions:
+      enabled:
+        ':input[name="subject1[select]"]':
+          value: privacy
+    weight: -44
+    settings:
+      states:
+        - completed
+      to_mail: camp@drupalnyc.org
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_mail: '[webform_submission:values:email:raw]'
+      from_options: {  }
+      from_name: '[webform_submission:values:name:raw]'
+      subject: '[webform_submission:values:subject1:raw]'
+      body: '[webform_submission:values:message:value]'
+      excluded_elements:
+        subject1: subject1
+        name: name
+        email: email
+        edit_copy_contact: edit_copy_contact
+        subject: subject
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: '[webform_submission:values:email:raw]'
+      sender_name: '[webform_submission:values:name:raw]'
+      theme_name: ''
+      parameters: {  }
+  accessibility_team_notification:
+    id: email
+    label: 'Accessibility team notification'
+    handler_id: accessibility_team_notification
+    status: true
+    conditions:
+      enabled:
+        ':input[name="subject1[select]"]':
+          value: accessibility
+    weight: -43
+    settings:
+      states:
+        - completed
+      to_mail: camp@drupalnyc.org
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_mail: '[webform_submission:values:email:raw]'
+      from_options: {  }
+      from_name: '[webform_submission:values:name:raw]'
+      subject: '[webform_submission:values:subject1:raw]'
+      body: '[webform_submission:values:message:value]'
+      excluded_elements:
+        subject1: subject1
+        name: name
+        email: email
+        edit_copy_contact: edit_copy_contact
+        subject: subject
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: '[webform_submission:values:email:raw]'
+      sender_name: '[webform_submission:values:name:raw]'
+      theme_name: ''
+      parameters: {  }
+  coc_team_notification:
+    id: email
+    label: 'CoC team notification'
+    handler_id: coc_team_notification
+    status: true
+    conditions:
+      enabled:
+        ':input[name="subject1[select]"]':
+          value: coc
+    weight: -42
+    settings:
+      states:
+        - completed
+      to_mail: camp@drupalnyc.org
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_mail: '[webform_submission:values:email:raw]'
+      from_options: {  }
+      from_name: '[webform_submission:values:name:raw]'
+      subject: '[webform_submission:values:subject1:raw]'
+      body: '[webform_submission:values:message:value]'
+      excluded_elements:
+        subject1: subject1
+        name: name
+        email: email
+        edit_copy_contact: edit_copy_contact
+        subject: subject
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: '[webform_submission:values:email:raw]'
+      sender_name: '[webform_submission:values:name:raw]'
+      theme_name: ''
+      parameters: {  }
+variants: {  }

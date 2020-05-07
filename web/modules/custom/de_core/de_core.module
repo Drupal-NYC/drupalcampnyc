@@ -1,0 +1,236 @@
+<?php
+
+use Drupal\Core\Entity\ContentEntityInterface;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\de_core\CustomUserAccessControlHandler;
+use Drupal\taxonomy\Entity\Term;
+use Drupal\views\ViewExecutable;
+
+/**
+ * Implements hook_views_pre_view().
+ */
+function de_core_views_pre_view(ViewExecutable $view, $display_id, array &$args)
+{
+    if ($view->id() != 'taxonomy_term') {
+        return;
+    }
+
+    $display_filters = $view->getDisplay()->getOption('filters');
+    if (!empty($args) && isset($display_filters['tid_raw'])) {
+        $term = Term::load($args[0]);
+        $bundle = $term->bundle();
+        if ($bundle == 'session_vertical') {
+            $display_filters['tid_raw']['value']['value'] = $args[0];
+        }
+        else {
+
+            unset($display_filters['tid_raw']);
+        }
+        $view->getDisplay()->setOption('filters', $display_filters);
+    }
+}
+
+/**
+ * Implements hook_views_pre_execute().
+ */
+function de_core_views_pre_execute(ViewExecutable $view)
+{
+    if ($view->id() !== 'taxonomy_term') {
+        return;
+    }
+
+    $args = $view->args;
+    $term = Term::load($args[0]);
+    if ($term->bundle() != 'session_vertical') {
+        unset($view->header['area']);
+    }
+
+
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_create().
+ */
+function de_core_node_create(\Drupal\Core\Entity\EntityInterface $entity) {
+  $route_name = \Drupal::routeMatch()->getRouteName();
+  if ($entity->bundle() != 'session' || $route_name != 'node.add') {
+    return;
+  }
+  $user = \Drupal::currentUser();
+  $user_entity = \Drupal\user\Entity\User::load($user->id());
+  $entity->field_speakers->entity = $user_entity;
+}
+
+
+/**
+ * Implements hook_entity_type_alter().
+ */
+function de_core_entity_type_alter(array &$entity_types)
+{
+    $entity_types['user']->setHandlerClass('access', CustomUserAccessControlHandler::class);
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function de_core_form_alter(array &$form, FormStateInterface $form_state, $form_id) {
+  if ($form_id == 'node_bof_form') {
+    $form['#validate'][] = 'de_core_bof_form_validate';
+  }
+  $user = \Drupal::currentUser();
+  if ($form_id == 'node_session_edit_form' && !$user->hasPermission('edit any session content')) {
+    $form['title']['#access'] = FALSE;
+    $form['field_start']['#access'] = FALSE;
+    $form['field_ends_at']['#access'] = FALSE;
+    $form['field_comments']['#access'] = FALSE;
+    $form['field_room']['#access'] = FALSE;
+    $form['field_summary']['#access'] = FALSE;
+    $form['field_terms']['#access'] = FALSE;
+    $form['field_type']['#access'] = FALSE;
+    $form['field_vertical']['#access'] = FALSE;
+    $form['field_horizontal']['#access'] = FALSE;
+  }
+}
+
+/**
+ * Custom validation function for BoF node forms to make timeslot unique.
+ */
+function de_core_bof_form_validate(array &$form, FormStateInterface $form_state) {
+  // Making the timeslot field unique.
+  $field_name = 'field_timeslot';
+
+  // Query based on the node table.
+  $query = db_select('node_field_data', 'n');
+  $query->fields('n', array('nid'));
+
+  // Join to match existing nodes with this field value.
+  $table_name = 'node__' . $field_name;
+  $col_name = $field_name . '_value';
+  $values = $form_state->getValues()[$field_name];
+  $field_values = array();
+  foreach ($values as $value) {
+    $field_values[] = $value['value'];
+  }
+  $query->join($table_name, 'f', 'n.nid = f.entity_id');
+  $query->condition('f.' . $col_name, $field_values, 'IN');
+
+  // If we are editing an existing node, it will be in the route.
+  $node = \Drupal::routeMatch()->getParameter('node');
+  if ($node) {
+    // Exclude this existing node from matching.
+    $query->condition('n.nid', $node->id(), '<>');
+  }
+
+  // Run the query and see if we found a conflict.
+  $res = $query->execute()->fetchField();
+  if ($res) {
+    $form_state->setErrorByName($field_name, t('This timeslot is already taken. One BoF timeslot can only be take by one BoF.'));
+    $form_state->setRebuild();
+  }
+}
+
+/**
+ * Alter the field_timeslot widget to filter options based on used bof times.
+ */
+function de_core_field_widget_form_alter(&$element, FormStateInterface $form_state, $context) {
+  // Apply filtering to timeslot field values.
+  $field_name = 'field_timeslot';
+
+  if ($context['items']->getName() == $field_name) {
+    // Query based on the node table.
+    $query = db_select('node_field_data', 'n');
+    $query->fields('n', array('nid'));
+
+    // Join to match existing nodes with values in this field.
+    $table_name = 'node__' . $field_name;
+    $col_name = $field_name . '_value';
+    $query->join($table_name, 'f', 'n.nid = f.entity_id');
+    $query->fields('f', array($col_name));
+
+    // If we are editing an existing node, it will be in the route.
+    $node = \Drupal::routeMatch()->getParameter('node');
+    if ($node) {
+      // Exclude this existing node from matching, so we can keep our slot.
+      $query->condition('n.nid', $node->id(), '<>');
+    }
+
+    // Run the query and remove items already taken.
+    if ($existing_slots = $query->execute()->fetchCol(1)) {
+      foreach($existing_slots as $slot_id) {
+        unset($element['#options'][$slot_id]);
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_entity_presave().
+ */
+function de_core_entity_presave(EntityInterface $entity) {
+  if ($entity instanceof ContentEntityInterface && $entity->bundle() == 'bof') {
+    $timeslot = $entity->field_timeslot->value;
+    $slot_pieces = explode('-', $timeslot);
+    if (count($slot_pieces) == 4) {
+
+      // Some slot was selected, propagate field values based on slot data.
+      // Example slot: Tue-10:30-11:15-339
+      // Break this down to [0] day [1] start [2] end [3] room term id.
+      // Form validation ensured this was a valid slot, so no validation needed.
+
+      $day = '2018-09-';
+      switch ($slot_pieces[0]) {
+        case 'Tue':
+          $day .= '11';
+          break;
+        case 'Wed':
+          $day .= '12';
+          break;
+        case 'Thu':
+          $day .= '13';
+          break;
+      }
+      $entity->field_start = $day . 'T' . $slot_pieces[1] . ':00';
+      $entity->field_ends_at = $day . 'T' . $slot_pieces[2] . ':00';
+      $entity->field_room->target_id = $slot_pieces[3];
+    }
+    else {
+      // Empty out these values if an empty slot was selected, effectively
+      // removing the BoF from the schedule.
+      $entity->field_start = NULL;
+      $entity->field_ends_at = NULL;
+      $entity->field_room->target_id = NULL;
+    }
+  }
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function de_core_form_views_exposed_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  if ($form['#id'] == 'views-exposed-form-schedule-page-1') {
+    $account = \Drupal::currentUser();
+    if ($account->isAnonymous()) {
+      // Hide flag field for anonymous users.
+      $form['flagged']['#access'] = FALSE;
+    }
+    else {
+      // Improve field labels and default value for authenticated.
+      $form['flagged']['#options'][1] = 'Yes';
+      $form['flagged']['#options'][0] = 'No';
+      $form['flagged']['#default_value'] = 'All';
+    }
+  }
+}
+
+/**
+ * Implements hook_honeypot_form_protections_alter().
+ *
+ * Remove honeypot from the bof node.
+ */
+function de_core_honeypot_form_protections_alter(array &$options, array $form)
+{
+  if ($form['form_id']['#value'] == 'node_bof_form') {
+    $options = [];
+  }
+}

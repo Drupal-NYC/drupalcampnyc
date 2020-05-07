@@ -1,0 +1,23 @@
+uuid: 87cd4e7b-5900-4bec-b5b4-3472a3f86fbe
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: expertise_topics
+label: 'Expertise Topics'
+type: 'canonical_entities:taxonomy_term'
+pattern: '/session-by-expertise/[term:name]'
+selection_criteria:
+  432aec3c-e8fe-4c9a-b1ec-01cd84d66336:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      session_horizontal: session_horizontal
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: 432aec3c-e8fe-4c9a-b1ec-01cd84d66336
+selection_logic: and
+weight: -5
+relationships: {  }

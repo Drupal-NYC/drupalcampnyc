@@ -1,0 +1,24 @@
+uuid: 45022e8d-1bdd-4453-bb9f-4ffcdb5fd234
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_access_notice
+    - paragraphs.paragraphs_type.element_webform
+  module:
+    - text
+id: paragraph.element_webform.field_access_notice
+field_name: field_access_notice
+entity_type: paragraph
+bundle: element_webform
+label: 'Access notice'
+description: 'Please enter a message if webform access is restricted to certain roles.'
+required: false
+translatable: false
+default_value:
+  -
+    value: "<p>Please <a href=\"/user/register\">register</a> or <a href=\"/user/login\">log in</a> to have access to this form.</p>\r\n"
+    format: basic_html
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,10 @@
+uuid: b1a10dba-0d9d-453b-afc4-d940242f0aba
+langcode: en
+status: true
+dependencies: {  }
+id: deck_header
+label: 'Deck - Simple Header'
+icon_uuid: null
+icon_default: null
+description: 'A simple header element'
+behavior_plugins: {  }

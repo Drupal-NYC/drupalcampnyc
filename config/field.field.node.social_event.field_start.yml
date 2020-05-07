@@ -1,0 +1,21 @@
+uuid: 7a67fba7-d699-4ec0-a1d4-7ce4e7418d51
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_start
+    - node.type.social_event
+  module:
+    - datetime
+id: node.social_event.field_start
+field_name: field_start
+entity_type: node
+bundle: social_event
+label: 'Starts at'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

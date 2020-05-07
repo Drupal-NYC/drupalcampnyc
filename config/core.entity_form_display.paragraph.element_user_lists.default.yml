@@ -1,0 +1,31 @@
+uuid: 77545134-ca42-4b8a-9976-e273d29059a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.element_user_lists.field_user_view
+    - paragraphs.paragraphs_type.element_user_lists
+  module:
+    - viewsreference
+id: paragraph.element_user_lists.default
+targetEntityType: paragraph
+bundle: element_user_lists
+mode: default
+content:
+  field_user_view:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: viewsreference_select
+    region: content
+  status:
+    type: boolean_checkbox
+    weight: 1
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  created: true
+  moderation_state: true
+  uid: true

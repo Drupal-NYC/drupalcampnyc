@@ -1,0 +1,10 @@
+uuid: 73dfd6ef-8c06-4dcb-8b87-b8ae4ec1a001
+langcode: en
+status: true
+dependencies: {  }
+id: deck_1_column
+label: 'Deck - 1 column'
+icon_uuid: null
+icon_default: null
+description: 'A single column, either full width or limited to page width.'
+behavior_plugins: {  }

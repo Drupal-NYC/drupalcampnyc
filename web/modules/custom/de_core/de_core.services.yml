@@ -1,0 +1,5 @@
+services:
+  infoscreen_headers_subscriber:
+    class: Drupal\de_core\EventSubscriber\InfoScreenHeadersSubscriber
+    tags:
+      - { name: event_subscriber }

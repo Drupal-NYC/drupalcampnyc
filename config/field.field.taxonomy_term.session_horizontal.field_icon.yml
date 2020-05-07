@@ -1,0 +1,28 @@
+uuid: a6eefcdf-482b-4020-a271-b0651890ecba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_icon
+    - media.type.icon
+    - taxonomy.vocabulary.session_horizontal
+id: taxonomy_term.session_horizontal.field_icon
+field_name: field_icon
+entity_type: taxonomy_term
+bundle: session_horizontal
+label: Icon
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      icon: icon
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

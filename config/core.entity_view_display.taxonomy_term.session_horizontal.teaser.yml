@@ -1,0 +1,18 @@
+uuid: a149011a-8667-4362-8bad-f5193217b7af
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.teaser
+    - field.field.taxonomy_term.session_horizontal.field_ext_desc
+    - field.field.taxonomy_term.session_horizontal.field_icon
+    - taxonomy.vocabulary.session_horizontal
+id: taxonomy_term.session_horizontal.teaser
+targetEntityType: taxonomy_term
+bundle: session_horizontal
+mode: teaser
+content: {  }
+hidden:
+  description: true
+  field_ext_desc: true
+  field_icon: true

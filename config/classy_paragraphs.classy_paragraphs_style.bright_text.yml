@@ -1,0 +1,7 @@
+uuid: 9bb9f141-3dbe-4582-aa89-347dad39dcf0
+langcode: en
+status: true
+dependencies: {  }
+id: bright_text
+label: 'Blue text'
+classes: blue-text-background

@@ -1,0 +1,15 @@
+uuid: a4f6cf45-4f35-4e59-bbee-38a3ce600282
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.element_tracks.field_track_teasers
+    - paragraphs.paragraphs_type.element_tracks
+id: paragraph.element_tracks.preview
+targetEntityType: paragraph
+bundle: element_tracks
+mode: preview
+content: {  }
+hidden:
+  field_track_teasers: true

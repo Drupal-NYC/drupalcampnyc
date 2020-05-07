@@ -1,0 +1,33 @@
+uuid: fdf8b41f-e751-4e0c-a7e0-4cf04c82cd84
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - user
+id: user.field_u_speaker_experience
+field_name: field_u_speaker_experience
+entity_type: user
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: firsttime
+      label: 'This will be my first time speaking at a conference of this size'
+    -
+      value: drupalcon
+      label: 'I have spoken at DrupalCon'
+    -
+      value: camps
+      label: 'I have spoken at DrupalCamps'
+    -
+      value: other
+      label: 'I have spoken at other camps/conferences'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

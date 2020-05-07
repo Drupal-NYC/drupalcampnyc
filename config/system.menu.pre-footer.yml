@@ -1,0 +1,8 @@
+uuid: 62efe90e-9141-4181-9767-6332add35511
+langcode: en
+status: true
+dependencies: {  }
+id: pre-footer
+label: Pre-footer
+description: 'Menu items in the pre-footer region, will be shown on select pages.'
+locked: false

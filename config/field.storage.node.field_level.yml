@@ -1,0 +1,42 @@
+uuid: d11b56e7-d938-4b5a-93cc-899e05b33b48
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_level
+field_name: field_level
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: diamond
+      label: Diamond
+    -
+      value: platinum
+      label: Platinum
+    -
+      value: gold
+      label: Gold
+    -
+      value: silver
+      label: Silver
+    -
+      value: module
+      label: 'Only module(s)'
+    -
+      value: owlmain
+      label: 'OWL main sponsor'
+    -
+      value: owlsupporter
+      label: 'OWL supporter'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,19 @@
+uuid: 9e7e5499-0687-4915-91ee-d14dbdaa11bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_partner_type
+    - node.type.partner
+id: node.partner.field_partner_type
+field_name: field_partner_type
+entity_type: node
+bundle: partner
+label: 'Type of partnership'
+description: 'Text to be shown below logo, for example "media partner"'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,230 @@
+uuid: 6bad70a4-2b9d-4979-8638-7467e2f36201
+langcode: en
+status: closed
+dependencies: {  }
+open: null
+close: null
+weight: 0
+uid: 728
+template: false
+archive: false
+id: speaker_refund_request
+title: 'Speaker ticket refund request'
+description: 'Speakers may get a refund for tickets they bought before they have been confirmed and granted a free ticket.'
+category: ''
+elements: "your_session_link_:\n  '#type': url\n  '#title': 'Drupal Europe session page'\n  '#required': true\ni_am_the_designated_speaker_with_a_free_ticket_for_this_session:\n  '#type': checkbox\n  '#title': 'I am the designated speaker with a free ticket for this session'\n  '#description': 'One speaker per session receives a free ticket. If you are the single speaker on this session, please check this box. If your session has multiple speakers, please confirm that you are the one who got the free ticket for this session.'\n  '#required': true\nfree_ticket:\n  '#type': radios\n  '#title': 'Free ticket'\n  '#options':\n    'I used my voucher to obtain a free ticket and my paid ticket was not used by anyone': 'I used my voucher to obtain a free ticket and my paid ticket was not used by anyone'\n    'I did not use a voucher to obtain a free ticket and the paid ticket is the only one I had': 'I did not use a voucher to obtain a free ticket and the paid ticket is the only one I had'\n  '#required': true\norder_no_ticket_paid:\n  '#type': textfield\n  '#title': 'Order code of the ticket paid for'\n  '#minlength': 5\n  '#maxlength': 5\n  '#size': 7\n  '#required': true\norder_no_ticket_free:\n  '#type': textfield\n  '#title': 'Order code of your free speaker ticket'\n  '#minlength': 5\n  '#maxlength': 5\n  '#size': 7\n  '#states':\n    visible:\n      ':input[name=\"free_ticket\"]':\n        value: 'I used my voucher to obtain a free ticket and my paid ticket was not used by anyone'\n    required:\n      ':input[name=\"free_ticket\"]':\n        value: 'I used my voucher to obtain a free ticket and my paid ticket was not used by anyone'\ngiven_names:\n  '#type': textfield\n  '#title': 'First name'\n  '#required': true\n  '#default_value': '[current-user:field_u_first_name]'\nsurname:\n  '#type': textfield\n  '#title': 'Last name'\n  '#required': true\n  '#default_value': '[current-user:field_u_last_name]'\ninvitation_email:\n  '#type': textfield\n  '#title': 'E-mail address'\n  '#input_mask': '''alias'': ''email'''\n  '#required': true\n  '#default_value': '[current-user:mail]'\nrefund_or_donation_:\n  '#type': radios\n  '#title': 'Compensation requested'\n  '#options':\n    'Consider the ticket bought as a donation to the event': 'Consider the ticket bought as a donation to the event'\n    'Please refund the paid ticket cost': 'Please refund the paid ticket cost -- The refund will use the same payment method/account you used.'\n  '#required': true\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': 'Submit request'\n"
+css: ''
+javascript: ''
+settings:
+  ajax: false
+  ajax_scroll_top: form
+  ajax_progress_type: ''
+  ajax_effect: ''
+  ajax_speed: null
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  page_admin_theme: false
+  form_title: both
+  form_submit_once: false
+  form_exception_message: ''
+  form_open_message: ''
+  form_close_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_remote_addr: true
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_reset: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: false
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_autofocus: false
+  form_details_toggle: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
+  submission_label: ''
+  submission_log: false
+  submission_views: {  }
+  submission_views_replace: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  previous_submission_message: ''
+  previous_submissions_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: false
+  wizard_progress_states: false
+  wizard_start_label: ''
+  wizard_preview_link: false
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_track: ''
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  draft_pending_single_message: ''
+  draft_pending_multiple_message: ''
+  confirmation_type: page
+  confirmation_title: ''
+  confirmation_message: ''
+  confirmation_url: ''
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  confirmation_update: false
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_total_unique: false
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  results_customize: false
+  token_view: false
+  token_update: false
+access:
+  create:
+    roles:
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles:
+      - administrator
+      - user_manager
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles:
+      - administrator
+      - user_manager
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles:
+      - administrator
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles:
+      - administrator
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles:
+      - authenticated
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles:
+      - authenticated
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles:
+      - authenticated
+    users: {  }
+    permissions: {  }
+  administer:
+    roles:
+      - administrator
+    users: {  }
+    permissions: {  }
+  test:
+    roles:
+      - content_editor
+      - user_manager
+    users: {  }
+    permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers:
+  email:
+    id: email
+    label: Email
+    handler_id: email
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: camp@drupalnyc.org
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_mail: '[webform_submission:values:invitation_email:raw]'
+      from_options: {  }
+      from_name: '[webform_submission:values:given_names:raw]'
+      subject: 'Speaker ticket refund request'
+      body: "Hello Ticket team,<br />\r\n[current-user:field_u_first_name] [current-user:field_u_last_name] requested a refund.<br />\r\n<br />\r\nPlease gather the information at [webform_submission:url]/table<br />\r\n<br />\r\nBest regards, your webform :-)"
+      excluded_elements:
+        given_names: given_names
+        surname: surname
+        invitation_email: invitation_email
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      theme_name: ''
+      parameters: {  }
+variants: {  }

@@ -1,0 +1,28 @@
+uuid: 0433bb2e-b412-4374-b3c5-358e05f82e8c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_si_sponsor
+    - node.type.social_event
+    - node.type.sponsor
+id: node.social_event.field_si_sponsor
+field_name: field_si_sponsor
+entity_type: node
+bundle: social_event
+label: 'Sponsored by'
+description: 'Sponsor of social event'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      sponsor: sponsor
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,21 @@
+uuid: 2bf60454-c23e-4958-a47e-cd76c5a8277e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_comments
+    - node.type.social_event
+  module:
+    - text
+id: node.social_event.field_comments
+field_name: field_comments
+entity_type: node
+bundle: social_event
+label: 'Message to the organizers'
+description: '<p>This field will <b>not</b> be made available to the public. The website/organization team will be able to view it.</p>'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

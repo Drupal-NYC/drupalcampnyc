@@ -1,0 +1,23 @@
+uuid: 0266b7ab-f5fb-4f64-994d-afc8083bc571
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_partner_category
+    - node.type.partner
+  module:
+    - options
+id: node.partner.field_partner_category
+field_name: field_partner_category
+entity_type: node
+bundle: partner
+label: 'Partner category'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: owl
+default_value_callback: ''
+settings: {  }
+field_type: list_string

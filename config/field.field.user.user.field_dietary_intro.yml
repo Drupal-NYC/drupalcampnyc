@@ -1,0 +1,25 @@
+uuid: dc678da3-6632-48d3-892c-9e19792d0188
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_dietary_intro
+  module:
+    - markup
+    - user
+id: user.user.field_dietary_intro
+field_name: field_dietary_intro
+entity_type: user
+bundle: user
+label: 'Dietary intro'
+description: ''
+required: false
+translatable: false
+default_value:
+  - {  }
+default_value_callback: ''
+settings:
+  markup:
+    value: "<p>If you need or prefer a special diet, please let us know.</p>\r\n"
+    format: basic_html
+field_type: markup

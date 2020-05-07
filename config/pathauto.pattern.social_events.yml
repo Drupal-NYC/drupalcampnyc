@@ -1,0 +1,22 @@
+uuid: a38039ab-325a-418b-b09d-81575b4b51b2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: social_events
+label: 'Social events'
+type: 'canonical_entities:node'
+pattern: '/social-event/[node:title]'
+selection_criteria:
+  ae5b97d8-d918-4825-8d24-6137c7e8defc:
+    id: node_type
+    bundles:
+      social_event: social_event
+    negate: false
+    context_mapping:
+      node: node
+    uuid: ae5b97d8-d918-4825-8d24-6137c7e8defc
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,22 @@
+uuid: abbc7266-a976-41b8-9de2-c433c8846e75
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - user
+third_party_settings:
+  field_permissions:
+    permission_type: custom
+id: user.field_u_cat_volunteer
+field_name: field_u_cat_volunteer
+entity_type: user
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

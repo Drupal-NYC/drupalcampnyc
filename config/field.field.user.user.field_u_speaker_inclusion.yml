@@ -1,0 +1,21 @@
+uuid: 8805e95d-0444-4351-b3d9-9043fe8c4b2a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_u_speaker_inclusion
+  module:
+    - options
+    - user
+id: user.user.field_u_speaker_inclusion
+field_name: field_u_speaker_inclusion
+entity_type: user
+bundle: user
+label: Inclusivity
+description: "Categories chosen based on the \"Big 8\", which is a list of cultural identifiers. If you feel that we have missed something or would like to give feedback on this process, please contact our <a href=\"mailto:camp@drupalnyc.org\">Program Manager</a>.\r\n"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

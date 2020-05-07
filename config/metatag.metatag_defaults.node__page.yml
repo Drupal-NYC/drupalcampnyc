@@ -1,0 +1,13 @@
+uuid: 8fc1040f-b67f-4ffc-bd28-32723dbaac65
+langcode: en
+status: true
+dependencies: {  }
+id: node__page
+label: 'Content: Basic page'
+tags:
+  twitter_cards_page_url: '[node:url]'
+  twitter_cards_site: '@drupalcampnyc'
+  twitter_cards_image: 'https://drupaleurope.org/sites/default/files/inline-images/Drupal_Europe_logo_vertical_exclzone.png'
+  twitter_cards_type: summary
+  twitter_cards_title: '[node:title]'
+  twitter_cards_description: '[node:field_summary_plain]'

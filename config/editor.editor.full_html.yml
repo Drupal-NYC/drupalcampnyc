@@ -1,4 +1,4 @@
-uuid: ad409a4d-6cc3-4a62-ae00-d94102de217a
+uuid: 8ee281da-f101-4408-9be1-26a9343b374b
 langcode: en
 status: true
 dependencies:
@@ -6,6 +6,8 @@ dependencies:
     - filter.format.full_html
   module:
     - ckeditor
+_core:
+  default_config_hash: 967ijj7p6i7rwrYl7r08WQFeCY_c23YAh0h8u-w_CXM
 format: full_html
 editor: ckeditor
 settings:

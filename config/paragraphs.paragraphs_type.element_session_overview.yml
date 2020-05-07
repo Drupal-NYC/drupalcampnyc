@@ -1,0 +1,10 @@
+uuid: e1c5652c-805d-4e43-963f-f009ec14c033
+langcode: en
+status: true
+dependencies: {  }
+id: element_session_overview
+label: 'Element - Session overview'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

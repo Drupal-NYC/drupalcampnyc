@@ -1,0 +1,28 @@
+uuid: 9caa5d01-6353-4b75-a2c8-357ff207fc3c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_select_user
+    - paragraphs.paragraphs_type.element_testimonial_pick
+id: paragraph.element_testimonial_pick.field_select_user
+field_name: field_select_user
+entity_type: paragraph
+bundle: element_testimonial_pick
+label: 'Select user(s)'
+description: 'Hand-pick certain user(s) to display testimonial'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

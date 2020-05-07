@@ -1,0 +1,17 @@
+uuid: 5fb0c118-16cc-4cb3-a3ab-c7392c6e5975
+langcode: en
+status: true
+dependencies: {  }
+id: speaker
+label: Speaker
+weight: 6
+is_admin: null
+permissions:
+  - 'create field_slides'
+  - 'create field_slides_external'
+  - 'edit own field_slides'
+  - 'edit own field_slides_external'
+  - 'use sessions transition accept'
+  - 'view own field_slides'
+  - 'view own field_slides_external'
+  - 'view own field_video'

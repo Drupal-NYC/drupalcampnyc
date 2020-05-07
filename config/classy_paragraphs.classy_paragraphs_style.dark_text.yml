@@ -1,0 +1,7 @@
+uuid: 43bdd12b-699f-4ca9-a7f2-a9246175ecd0
+langcode: en
+status: true
+dependencies: {  }
+id: dark_text
+label: 'Dark text'
+classes: dark-text-background

@@ -1,0 +1,5 @@
+description: 'Drupal Europe speaker role updater.'
+options: {}
+arguments: {}
+messages:
+    success: 'Updated all speakers with the correct role.'

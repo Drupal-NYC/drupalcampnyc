@@ -1,0 +1,8 @@
+uuid: 15a92cde-cfff-40b6-9ceb-15df9b18f3d8
+langcode: en
+status: true
+dependencies: {  }
+id: user-cta
+label: 'Call to Action'
+description: 'CtA on user profile'
+locked: false

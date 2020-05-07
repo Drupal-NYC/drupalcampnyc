@@ -1,0 +1,61 @@
+uuid: 9c668880-48dc-455e-b6c9-6e8133690ba8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.element_sessions.field_featured
+    - field.field.paragraph.element_sessions.field_topic
+    - field.field.paragraph.element_sessions.field_track
+    - paragraphs.paragraphs_type.element_sessions
+  module:
+    - field_group
+third_party_settings:
+  field_group:
+    group_filtering:
+      children:
+        - field_featured
+        - field_topic
+        - field_track
+      parent_name: ''
+      weight: 0
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: 'Limit the listed sessions by these filters'
+        required_fields: true
+      label: Filtering
+id: paragraph.element_sessions.default
+targetEntityType: paragraph
+bundle: element_sessions
+mode: default
+content:
+  field_featured:
+    weight: 101
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_topic:
+    weight: 102
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_track:
+    weight: 103
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  status:
+    type: boolean_checkbox
+    weight: 2
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  created: true
+  uid: true

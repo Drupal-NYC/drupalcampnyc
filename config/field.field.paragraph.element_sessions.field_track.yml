@@ -1,0 +1,27 @@
+uuid: d0b1c240-89d3-4c58-88cb-370a9d3046d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_track
+    - paragraphs.paragraphs_type.element_sessions
+id: paragraph.element_sessions.field_track
+field_name: field_track
+entity_type: paragraph
+bundle: element_sessions
+label: Track
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles: {  }
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

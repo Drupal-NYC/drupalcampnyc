@@ -1,0 +1,72 @@
+uuid: df787c4d-c172-44cb-8103-e577941c6c13
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_user_view
+    - paragraphs.paragraphs_type.element_user_lists
+    - views.view.user_views
+  module:
+    - viewsreference
+id: paragraph.element_user_lists.field_user_view
+field_name: field_user_view
+entity_type: paragraph
+bundle: element_user_lists
+label: 'User view'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    options:
+      pager: some
+      limit: ''
+      argument: ''
+    display_id: block_speakers_featured
+    data: 'a:5:{s:5:"pager";s:4:"some";s:6:"offset";N;s:5:"limit";s:0:"";s:5:"title";N;s:8:"argument";s:0:"";}'
+    target_uuid: 50444c5d-c738-405a-994c-b2c3a878adfa
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: 0
+  plugin_types:
+    block: block
+    default: 0
+    page: 0
+    feed: 0
+    entity_browser: 0
+  preselect_views:
+    user_special_views: user_special_views
+    user_views: user_views
+    block_content: 0
+    comment: 0
+    comments_recent: 0
+    content: 0
+    content_recent: 0
+    element_list_sessions: 0
+    element_list_sponsors: 0
+    files: 0
+    frontpage: 0
+    icon_browser: 0
+    media: 0
+    media_browser: 0
+    moderated_content: 0
+    redirect: 0
+    redirect_404: 0
+    scheduler_scheduled_content: 0
+    sponsors: 0
+    taxonomy_term: 0
+    taxonomy_term_teasers: 0
+    user_admin_people: 0
+    watchdog: 0
+    who_s_new: 0
+    who_s_online: 0
+  enabled_settings:
+    limit: limit
+    pager: 0
+    offset: 0
+    title: 0
+    argument: 0
+field_type: viewsreference

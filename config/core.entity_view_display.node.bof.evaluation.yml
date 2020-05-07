@@ -1,0 +1,66 @@
+uuid: 5937cd3e-abac-4ef1-960a-c1aa477f94ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.evaluation
+    - field.field.node.bof.body
+    - field.field.node.bof.field_ends_at
+    - field.field.node.bof.field_horizontal
+    - field.field.node.bof.field_room
+    - field.field.node.bof.field_start
+    - field.field.node.bof.field_summary
+    - field.field.node.bof.field_terms
+    - field.field.node.bof.field_timeslot
+    - field.field.node.bof.field_type
+    - field.field.node.bof.field_vertical
+    - node.type.bof
+  module:
+    - text
+    - user
+id: node.bof.evaluation
+targetEntityType: node
+bundle: bof
+mode: evaluation
+content:
+  body:
+    label: above
+    type: text_default
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_horizontal:
+    weight: 4
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_summary:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  flag_session_schedule:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_ends_at: true
+  field_room: true
+  field_start: true
+  field_terms: true
+  field_timeslot: true
+  field_type: true
+  field_vertical: true
+  shariff_field: true

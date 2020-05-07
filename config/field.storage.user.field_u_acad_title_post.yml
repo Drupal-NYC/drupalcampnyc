@@ -1,0 +1,21 @@
+uuid: e2c756e9-0dbb-4e52-bf73-2bd00462f299
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.field_u_acad_title_post
+field_name: field_u_acad_title_post
+entity_type: user
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

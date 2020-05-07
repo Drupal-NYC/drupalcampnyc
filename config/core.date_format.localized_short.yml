@@ -1,0 +1,8 @@
+uuid: 613dc568-a5d9-41e5-b9ef-b5915786bc2a
+langcode: en
+status: true
+dependencies: {  }
+id: localized_short
+label: 'Localized short'
+locked: false
+pattern: 'd M - H:i'

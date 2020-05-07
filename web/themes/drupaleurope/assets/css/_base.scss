@@ -1,0 +1,225 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/OpenSans-Regular-webfont.eot');
+  src: local('OpenSans-Regular'),
+  url('../fonts/OpenSans-Regular-webfont.eot?iefix') format('embedded-opentype'),
+  url('../fonts/OpenSans-Regular-webfont.woff') format('woff'),
+  url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NexaBold';
+  src: url('../fonts/NexaBold.eot');
+  src: local('NexaBold'),
+  url('../fonts/NexaBold.eot?iefix') format('embedded-opentype'),
+  url('../fonts/NexaBold.woff') format('woff'),
+  url('../fonts/NexaBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+  /* font-size: 100%; never do that */
+}
+html {
+  font-size: 100%;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  margin: 0;
+  font-size: 14px; /* to revision */
+  line-height: 150%;
+  font-family: $font-stack;
+}
+@media (max-width: 667px) {
+  body {
+    font-size: 1.25rem;
+  }
+}
+p,
+article {
+  width: 100%;
+}
+
+a {
+  color: $secondary-color;
+  text-decoration: none;
+}
+a:focus, a:hover, a:active {
+  text-decoration: underline;
+}
+a.anchor {
+  color: white;
+}
+a.navbar-brand:visited,
+.container a.anchor{
+  color: black;
+}
+a.anchor,
+a.navbar-brand:hover {
+  text-decoration: none;
+}
+a.cta {
+  display:inline-block;
+  @include cta;
+}
+hr {
+  margin: 1rem 0;
+  border: 0;
+  height: .25rem;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#33a8e5+0,374d9c+50,ab2d92+100 */
+  background: $primary-color; /* Old browsers */
+  background: -moz-linear-gradient(left, $primary-color 0%, $tertiary-color 50%, $secondary-color 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, $primary-color 0%,$tertiary-color 50%,$secondary-color 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, $primary-color 0%,$tertiary-color 50%,$secondary-color 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$primary-color}', endColorstr='#{$secondary-color}',GradientType=1 ); /* IE6-9 */
+}
+h1 {
+  font-weight: normal;
+}
+
+h1, h2, h3  {
+  font-weight: normal;
+  font-family: 'NexaBold';
+}
+
+table {
+  width: 100%;
+
+  tr {
+    border-bottom: solid 1px #bababa;
+  }
+  th,
+  td {
+    padding: 6px 2em 6px 0;
+  }
+  th {
+    text-align: left;
+  }
+}
+
+form {
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="date"],
+  input[type="url"],
+  select,
+  textarea {
+    line-height: normal;
+    padding: 10px 15px;
+    border: rgba(52, 52, 52, 0.4) solid 1px;
+    border-radius: 0;
+    -webkit-appearance: none;
+    background-color: white;
+  }
+  select:not([multiple]) {
+    background-image: url(/themes/drupaleurope/arrow-down.svg);
+    padding-right: 40px;
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 15px) 50%;
+    cursor: pointer;
+  }
+  select[multiple] {
+    @include clearfix;
+  }
+  input[type="submit"] {
+    border: 2px solid $secondary-color;
+    font-size: 18px;
+    padding: .55rem 1.3rem;
+    transition: all .15s ease;
+    background-color: $secondary-color;
+    color: white;
+
+    &:hover {
+      background: white;
+      color: $secondary-color;
+    }
+  }
+  .description, .webform-required {
+    color: #666666;
+  }
+
+  .form-disabled #edit-actions-submit {
+    background-color: #999 !important;
+    color: #fff !important
+  }
+
+  .js-form-item {
+    label {
+      min-width: 160px;
+      display: inline-block;
+    }
+    .js-form-item.js-form-type-select {
+      label {
+        display: block;
+      }
+    }
+    .js-form-type-textarea {
+      label {
+        //      color: #ab2e92;
+        padding: 1rem 0 1rem 0;
+      }
+    }
+  }
+
+    &.views-exposed-form {
+        margin-bottom: 2rem;
+
+        input[type="submit"] {
+            margin-top: 0;
+        }
+        .js-form-item {
+            margin-right: 2rem;
+
+            label {
+                min-width: auto;
+                padding-right: 1rem;
+            }
+        }
+    }
+}
+
+form.webform-submission-speaker-refund-request-form .js-form-item label {
+  min-width: 280px;
+}
+
+.region-content .block {
+  @include clearfix;
+  width: 79%;
+  max-width: 1150px;
+  opacity: 1;
+  margin: 2rem auto;
+}
+.path-frontpage .region-content .block {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+}
+@media (max-width: 1024px) {
+  .region-content .block {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    width: 100%;
+    max-width: none;
+  }
+  .path-frontpage .region-content .block {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+
+
+.block-system-main-block {
+  padding-bottom: 4rem;
+}
+
+.user-logged-in .field--name-field-access-notice {
+    display: none;
+}

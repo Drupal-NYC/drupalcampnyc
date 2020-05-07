@@ -1,0 +1,30 @@
+uuid: 20bab992-8d5d-42d0-9d30-6037056f73af
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_logo
+    - media.type.icon
+    - media.type.image
+    - node.type.partner
+id: node.partner.field_logo
+field_name: field_logo
+entity_type: node
+bundle: partner
+label: Logo
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      icon: icon
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: icon
+field_type: entity_reference

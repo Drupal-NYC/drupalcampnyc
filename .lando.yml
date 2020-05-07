@@ -8,3 +8,15 @@ config:
   index: false
   edge: true
   cache: true
+services:
+  node:
+    type: node:10
+    run:
+      - cd /app/web/themes/drupaleurope && npm install
+      - cd /app/web/themes/drupaleurope && npm run build
+tooling:
+  npm:
+    service: node
+    cmd: npm --prefix /app/web/themes/drupaleurope
+  node:
+    service: node

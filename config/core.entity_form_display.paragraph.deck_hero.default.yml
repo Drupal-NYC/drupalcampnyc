@@ -1,0 +1,84 @@
+uuid: 3d2b0a0b-218a-45c3-ac88-2db85fdd5a97
+langcode: en
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.icon_browser
+    - field.field.paragraph.deck_hero.field_background
+    - field.field.paragraph.deck_hero.field_elements
+    - field.field.paragraph.deck_hero.field_icon
+    - field.field.paragraph.deck_hero.field_style
+    - field.field.paragraph.deck_hero.field_title
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.deck_hero
+  module:
+    - entity_browser
+    - paragraphs
+    - svg_image
+    - text
+id: paragraph.deck_hero.default
+targetEntityType: paragraph
+bundle: deck_hero
+mode: default
+content:
+  field_background:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_elements:
+    type: paragraphs
+    weight: 3
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: preview
+      autocollapse: none
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+    third_party_settings: {  }
+    region: content
+  field_icon:
+    weight: 2
+    settings:
+      entity_browser: icon_browser
+      field_widget_display: rendered_entity
+      field_widget_edit: true
+      field_widget_remove: true
+      open: true
+      selection_mode: selection_edit
+      field_widget_display_settings:
+        view_mode: logo
+    third_party_settings: {  }
+    type: entity_browser_entity_reference
+    region: content
+  field_style:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  status:
+    type: boolean_checkbox
+    weight: 4
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  created: true
+  moderation_state: true
+  uid: true

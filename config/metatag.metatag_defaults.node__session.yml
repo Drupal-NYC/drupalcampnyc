@@ -1,0 +1,17 @@
+uuid: a2afe94f-d538-4396-8c62-0721ffabe585
+langcode: en
+status: true
+dependencies: {  }
+id: node__session
+label: 'Content: Session'
+tags:
+  twitter_cards_page_url: '[node:url]'
+  twitter_cards_site: '@drupalcampnyc'
+  twitter_cards_image: 'https://drupaleurope.org/sites/default/files/inline-images/Drupal_Europe_logo_vertical_exclzone.png'
+  twitter_cards_data1: '[node:field_vertical]'
+  twitter_cards_type: summary
+  twitter_cards_label1: Track
+  twitter_cards_title: '[node:title]'
+  twitter_cards_label2: Time
+  twitter_cards_data2: '[node:field_start:date:day]'
+  twitter_cards_description: '[node:field_summary]'

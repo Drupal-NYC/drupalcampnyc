@@ -1,0 +1,10 @@
+uuid: 2e68dad3-75ec-48a9-9406-dbabf2f8eaa9
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.speaker_profile
+label: 'Speaker profile'
+targetEntityType: user
+cache: true

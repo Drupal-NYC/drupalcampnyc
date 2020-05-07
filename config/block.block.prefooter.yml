@@ -1,0 +1,27 @@
+uuid: 0ac5ab44-4e0e-4bdd-b996-07f15be3b927
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.pre-footer
+  module:
+    - menu_block
+  theme:
+    - drupaleurope
+id: prefooter
+theme: drupaleurope
+region: prefooter
+weight: -6
+provider: null
+plugin: 'menu_block:pre-footer'
+settings:
+  id: 'menu_block:pre-footer'
+  label: Pre-footer
+  provider: menu_block
+  label_display: '0'
+  level: 1
+  depth: 2
+  expand: 1
+  parent: 'pre-footer:'
+  suggestion: pre_footer
+visibility: {  }

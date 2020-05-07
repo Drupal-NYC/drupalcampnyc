@@ -1,0 +1,22 @@
+uuid: abc9fcc7-ae27-4351-a3b5-e7cb6cf20129
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: bof
+label: Bofs
+type: 'canonical_entities:node'
+pattern: '/bof/[node:title]'
+selection_criteria:
+  504a3726-e4e9-43a9-bf28-49d9b938662d:
+    id: node_type
+    bundles:
+      bof: bof
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 504a3726-e4e9-43a9-bf28-49d9b938662d
+selection_logic: and
+weight: -5
+relationships: {  }

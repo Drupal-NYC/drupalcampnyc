@@ -1,0 +1,71 @@
+uuid: 8f00ee6f-7442-4c17-b01b-04721f52492a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_elements
+    - paragraphs.paragraphs_type.deck_hero
+    - paragraphs.paragraphs_type.element_call_to_action
+    - paragraphs.paragraphs_type.media
+    - paragraphs.paragraphs_type.text
+  module:
+    - entity_reference_revisions
+id: paragraph.deck_hero.field_elements
+field_name: field_elements
+entity_type: paragraph
+bundle: deck_hero
+label: Elements
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      media: media
+      text: text
+      element_call_to_action: element_call_to_action
+    target_bundles_drag_drop:
+      deck_hero:
+        weight: 2
+        enabled: false
+      media:
+        enabled: true
+        weight: 4
+      text:
+        enabled: true
+        weight: 6
+      deck_1_column:
+        weight: 7
+        enabled: false
+      deck_2_columns:
+        weight: 8
+        enabled: false
+      element_sessions:
+        weight: 10
+        enabled: false
+      deck_header:
+        weight: 16
+        enabled: false
+      element_call_to_action:
+        enabled: true
+        weight: 18
+      element_sponsor:
+        weight: 20
+        enabled: false
+      element_tickets_widget:
+        weight: 21
+        enabled: false
+      element_tracks:
+        weight: 22
+        enabled: false
+      element_user_lists:
+        weight: 23
+        enabled: false
+      element_webform:
+        weight: 24
+        enabled: false
+field_type: entity_reference_revisions

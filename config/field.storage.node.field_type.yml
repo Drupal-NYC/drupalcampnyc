@@ -1,0 +1,55 @@
+uuid: 3034693d-efff-414a-94fa-14e212244b24
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+    - options
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_type
+field_name: field_type
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: talk
+      label: Talk
+    -
+      value: panel
+      label: Panel
+    -
+      value: workshop
+      label: Workshop
+    -
+      value: event
+      label: Event
+    -
+      value: bof
+      label: BoF
+    -
+      value: training
+      label: Training
+    -
+      value: break
+      label: Break
+    -
+      value: contribution
+      label: Contribution
+    -
+      value: social
+      label: 'Social event'
+    -
+      value: other
+      label: Other
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

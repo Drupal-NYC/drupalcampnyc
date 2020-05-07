@@ -1,0 +1,21 @@
+uuid: 579b80d0-cfc0-4318-ae2f-15c49e1f2831
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.element_tickets_widget
+id: paragraph.element_tickets_widget.default
+targetEntityType: paragraph
+bundle: element_tickets_widget
+mode: default
+content:
+  status:
+    type: boolean_checkbox
+    weight: 1
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  created: true
+  uid: true

@@ -1,0 +1,91 @@
+uuid: a8ddef2a-f94d-40ef-a0b6-f27089c68a0a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_primary_column
+    - paragraphs.paragraphs_type.deck_2_columns
+    - paragraphs.paragraphs_type.element_call_to_action
+    - paragraphs.paragraphs_type.element_testimonial_pick
+    - paragraphs.paragraphs_type.element_user_pick
+    - paragraphs.paragraphs_type.element_webform
+    - paragraphs.paragraphs_type.media
+    - paragraphs.paragraphs_type.text
+    - paragraphs.paragraphs_type.views_block
+  module:
+    - entity_reference_revisions
+id: paragraph.deck_2_columns.field_primary_column
+field_name: field_primary_column
+entity_type: paragraph
+bundle: deck_2_columns
+label: 'Primary column'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      media: media
+      text: text
+      element_call_to_action: element_call_to_action
+      element_testimonial_pick: element_testimonial_pick
+      element_user_pick: element_user_pick
+      element_webform: element_webform
+      views_block: views_block
+    target_bundles_drag_drop:
+      deck_2_columns:
+        weight: 5
+        enabled: false
+      deck_hero:
+        weight: 6
+        enabled: false
+      media:
+        enabled: true
+        weight: 7
+      text:
+        enabled: true
+        weight: 8
+      deck_1_column:
+        weight: 16
+        enabled: false
+      deck_header:
+        weight: 18
+        enabled: false
+      element_call_to_action:
+        enabled: true
+        weight: 20
+      element_sessions:
+        weight: 21
+        enabled: false
+      element_sponsor:
+        weight: 22
+        enabled: false
+      element_testimonial_pick:
+        enabled: true
+        weight: 23
+      element_tickets_widget:
+        weight: 24
+        enabled: false
+      element_session_overview:
+        weight: 24
+        enabled: false
+      element_tracks:
+        weight: 25
+        enabled: false
+      element_user_lists:
+        weight: 26
+        enabled: false
+      element_user_pick:
+        enabled: true
+        weight: 27
+      element_webform:
+        enabled: true
+        weight: 28
+      views_block:
+        enabled: true
+        weight: 34
+field_type: entity_reference_revisions

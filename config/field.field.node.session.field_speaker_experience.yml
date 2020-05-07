@@ -1,0 +1,21 @@
+uuid: 56af6155-7732-41f1-9018-a28b4655e032
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_speaker_experience
+    - node.type.session
+  module:
+    - options
+id: node.session.field_speaker_experience
+field_name: field_speaker_experience
+entity_type: node
+bundle: session
+label: 'Speaking experience'
+description: 'It is not a precondition that you have speaking experience. On the contrary, we want to encourage first-time speakers.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

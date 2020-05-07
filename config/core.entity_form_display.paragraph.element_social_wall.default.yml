@@ -1,0 +1,28 @@
+uuid: 863a3560-db50-4d39-be28-6fea66574364
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.element_social_wall.field_view
+    - paragraphs.paragraphs_type.element_social_wall
+  module:
+    - viewsreference
+id: paragraph.element_social_wall.default
+targetEntityType: paragraph
+bundle: element_social_wall
+mode: default
+content:
+  field_view:
+    weight: 101
+    settings:
+      match_operator: CONTAINS
+      size: '60'
+      placeholder: ''
+      match_limit: 10
+    third_party_settings: {  }
+    type: viewsreference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

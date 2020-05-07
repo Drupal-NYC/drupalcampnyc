@@ -1,0 +1,37 @@
+uuid: 2311e54c-9691-4345-8280-11a38dd56d6a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.large_icon
+    - field.field.media.vector_graphics.field_media_image_2
+    - image.style.medium
+    - media.type.vector_graphics
+  module:
+    - empty_fields
+    - svg_image
+id: media.vector_graphics.large_icon
+targetEntityType: media
+bundle: vector_graphics
+mode: large_icon
+content:
+  field_media_image_2:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: ''
+      svg_render_as_image: true
+      svg_attributes:
+        width: null
+        height: null
+    third_party_settings:
+      empty_fields:
+        handler: ''
+    type: image
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true

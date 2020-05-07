@@ -1,0 +1,331 @@
+uuid: 04c70db3-6e31-4458-8c50-e15933e2f339
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+    - options
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_timeslot
+field_name: field_timeslot
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Tue-10:30-11:15-357'
+      label: 'Tuesday 10:30-11:15 in 2.05 Palladium'
+    -
+      value: 'Tue-10:30-11:15-352'
+      label: 'Tuesday 10:30-11:15 in 2.06 Argentum'
+    -
+      value: 'Tue-10:30-11:15-353'
+      label: 'Tuesday 10:30-11:15 in 2.08 Platinum'
+    -
+      value: 'Tue-10:30-11:15-354'
+      label: 'Tuesday 10:30-11:15 in 3.04 Europium'
+    -
+      value: 'Tue-10:30-11:15-355'
+      label: 'Tuesday 10:30-11:15 in 3.07 Argon'
+    -
+      value: 'Tue-10:30-11:15-356'
+      label: 'Tuesday 10:30-11:15 in 3.10 Hidrogenium'
+    -
+      value: 'Tue-11:30-12:15-357'
+      label: 'Tuesday 11:30-12:15 in 2.05 Palladium'
+    -
+      value: 'Tue-11:30-12:15-352'
+      label: 'Tuesday 11:30-12:15 in 2.06 Argentum'
+    -
+      value: 'Tue-11:30-12:15-353'
+      label: 'Tuesday 11:30-12:15 in 2.08 Platinum'
+    -
+      value: 'Tue-11:30-12:15-354'
+      label: 'Tuesday 11:30-12:15 in 3.04 Europium'
+    -
+      value: 'Tue-11:30-12:15-355'
+      label: 'Tuesday 11:30-12:15 in 3.07 Argon'
+    -
+      value: 'Tue-11:30-12:15-356'
+      label: 'Tuesday 11:30-12:15 in 3.10 Hidrogenium'
+    -
+      value: 'Tue-13:45-14:30-357'
+      label: 'Tuesday 13:45-14:30 in 2.05 Palladium'
+    -
+      value: 'Tue-13:45-14:30-352'
+      label: 'Tuesday 13:45-14:30 in 2.06 Argentum'
+    -
+      value: 'Tue-13:45-14:30-353'
+      label: 'Tuesday 13:45-14:30 in 2.08 Platinum'
+    -
+      value: 'Tue-13:45-14:30-354'
+      label: 'Tuesday 13:45-14:30 in 3.04 Europium'
+    -
+      value: 'Tue-13:45-14:30-355'
+      label: 'Tuesday 13:45-14:30 in 3.07 Argon'
+    -
+      value: 'Tue-13:45-14:30-356'
+      label: 'Tuesday 13:45-14:30 in 3.10 Hidrogenium'
+    -
+      value: 'Tue-14:45-15:30-357'
+      label: 'Tuesday 14:45-15:30 in 2.05 Palladium'
+    -
+      value: 'Tue-14:45-15:30-352'
+      label: 'Tuesday 14:45-15:30 in 2.06 Argentum'
+    -
+      value: 'Tue-14:45-15:30-353'
+      label: 'Tuesday 14:45-15:30 in 2.08 Platinum'
+    -
+      value: 'Tue-14:45-15:30-354'
+      label: 'Tuesday 14:45-15:30 in 3.04 Europium'
+    -
+      value: 'Tue-14:45-15:30-355'
+      label: 'Tuesday 14:45-15:30 in 3.07 Argon'
+    -
+      value: 'Tue-14:45-15:30-356'
+      label: 'Tuesday 14:45-15:30 in 3.10 Hidrogenium'
+    -
+      value: 'Tue-16:00-16:45-357'
+      label: 'Tuesday 16:00-16:45 in 2.05 Palladium'
+    -
+      value: 'Tue-16:00-16:45-352'
+      label: 'Tuesday 16:00-16:45 in 2.06 Argentum'
+    -
+      value: 'Tue-16:00-16:45-353'
+      label: 'Tuesday 16:00-16:45 in 2.08 Platinum'
+    -
+      value: 'Tue-16:00-16:45-354'
+      label: 'Tuesday 16:00-16:45 in 3.04 Europium'
+    -
+      value: 'Tue-16:00-16:45-355'
+      label: 'Tuesday 16:00-16:45 in 3.07 Argon'
+    -
+      value: 'Tue-16:00-16:45-356'
+      label: 'Tuesday 16:00-16:45 in 3.10 Hidrogenium'
+    -
+      value: 'Tue-17:00-17:45-357'
+      label: 'Tuesday 17:00-17:45 in 2.05 Palladium'
+    -
+      value: 'Tue-17:00-17:45-352'
+      label: 'Tuesday 17:00-17:45 in 2.06 Argentum'
+    -
+      value: 'Tue-17:00-17:45-353'
+      label: 'Tuesday 17:00-17:45 in 2.08 Platinum'
+    -
+      value: 'Tue-17:00-17:45-354'
+      label: 'Tuesday 17:00-17:45 in 3.04 Europium'
+    -
+      value: 'Tue-17:00-17:45-355'
+      label: 'Tuesday 17:00-17:45 in 3.07 Argon'
+    -
+      value: 'Tue-17:00-17:45-356'
+      label: 'Tuesday 17:00-17:45 in 3.10 Hidrogenium'
+    -
+      value: 'Wed-10:30-11:15-345'
+      label: 'Wednesday 10:30-11:15 in 2.04 Titanium (conference room layout)'
+    -
+      value: 'Wed-10:30-11:15-357'
+      label: 'Wednesday 10:30-11:15 in 2.05 Palladium'
+    -
+      value: 'Wed-10:30-11:15-352'
+      label: 'Wednesday 10:30-11:15 in 2.06 Argentum'
+    -
+      value: 'Wed-10:30-11:15-353'
+      label: 'Wednesday 10:30-11:15 in 2.08 Platinum'
+    -
+      value: 'Wed-10:30-11:15-354'
+      label: 'Wednesday 10:30-11:15 in 3.04 Europium'
+    -
+      value: 'Wed-10:30-11:15-356'
+      label: 'Wednesday 10:30-11:15 in 3.10 Hidrogenium'
+    -
+      value: 'Wed-11:30-12:15-345'
+      label: 'Wednesday 11:30-12:15 in 2.04 Titanium (conference room layout)'
+    -
+      value: 'Wed-11:30-12:15-357'
+      label: 'Wednesday 11:30-12:15 in 2.05 Palladium'
+    -
+      value: 'Wed-11:30-12:15-352'
+      label: 'Wednesday 11:30-12:15 in 2.06 Argentum'
+    -
+      value: 'Wed-11:30-12:15-353'
+      label: 'Wednesday 11:30-12:15 in 2.08 Platinum'
+    -
+      value: 'Wed-11:30-12:15-354'
+      label: 'Wednesday 11:30-12:15 in 3.04 Europium'
+    -
+      value: 'Wed-11:30-12:15-356'
+      label: 'Wednesday 11:30-12:15 in 3.10 Hidrogenium'
+    -
+      value: 'Wed-13:45-14:30-345'
+      label: 'Wednesday 13:45-14:30 in 2.04 Titanium (conference room layout)'
+    -
+      value: 'Wed-13:45-14:30-357'
+      label: 'Wednesday 13:45-14:30 in 2.05 Palladium'
+    -
+      value: 'Wed-13:45-14:30-352'
+      label: 'Wednesday 13:45-14:30 in 2.06 Argentum'
+    -
+      value: 'Wed-13:45-14:30-353'
+      label: 'Wednesday 13:45-14:30 in 2.08 Platinum'
+    -
+      value: 'Wed-13:45-14:30-354'
+      label: 'Wednesday 13:45-14:30 in 3.04 Europium'
+    -
+      value: 'Wed-13:45-14:30-356'
+      label: 'Wednesday 13:45-14:30 in 3.10 Hidrogenium'
+    -
+      value: 'Wed-14:45-15:30-345'
+      label: 'Wednesday 14:45-15:30 in 2.04 Titanium (conference room layout)'
+    -
+      value: 'Wed-14:45-15:30-357'
+      label: 'Wednesday 14:45-15:30 in 2.05 Palladium'
+    -
+      value: 'Wed-14:45-15:30-352'
+      label: 'Wednesday 14:45-15:30 in 2.06 Argentum'
+    -
+      value: 'Wed-14:45-15:30-353'
+      label: 'Wednesday 14:45-15:30 in 2.08 Platinum'
+    -
+      value: 'Wed-14:45-15:30-354'
+      label: 'Wednesday 14:45-15:30 in 3.04 Europium'
+    -
+      value: 'Wed-14:45-15:30-356'
+      label: 'Wednesday 14:45-15:30 in 3.10 Hidrogenium'
+    -
+      value: 'Wed-16:00-16:45-345'
+      label: 'Wednesday 16:00-16:45 in 2.04 Titanium (conference room layout)'
+    -
+      value: 'Wed-16:00-16:45-357'
+      label: 'Wednesday 16:00-16:45 in 2.05 Palladium'
+    -
+      value: 'Wed-16:00-16:45-352'
+      label: 'Wednesday 16:00-16:45 in 2.06 Argentum'
+    -
+      value: 'Wed-16:00-16:45-353'
+      label: 'Wednesday 16:00-16:45 in 2.08 Platinum'
+    -
+      value: 'Wed-16:00-16:45-354'
+      label: 'Wednesday 16:00-16:45 in 3.04 Europium'
+    -
+      value: 'Wed-16:00-16:45-356'
+      label: 'Wednesday 16:00-16:45 in 3.10 Hidrogenium'
+    -
+      value: 'Wed-17:00-17:45-345'
+      label: 'Wednesday 17:00-17:45 in 2.04 Titanium (conference room layout)'
+    -
+      value: 'Wed-17:00-17:45-357'
+      label: 'Wednesday 17:00-17:45 in 2.05 Palladium'
+    -
+      value: 'Wed-17:00-17:45-352'
+      label: 'Wednesday 17:00-17:45 in 2.06 Argentum'
+    -
+      value: 'Wed-17:00-17:45-353'
+      label: 'Wednesday 17:00-17:45 in 2.08 Platinum'
+    -
+      value: 'Wed-17:00-17:45-354'
+      label: 'Wednesday 17:00-17:45 in 3.04 Europium'
+    -
+      value: 'Wed-17:00-17:45-356'
+      label: 'Wednesday 17:00-17:45 in 3.10 Hidrogenium'
+    -
+      value: 'Thu-10:30-11:15-357'
+      label: 'Thursday 10:30-11:15 in 2.05 Palladium'
+    -
+      value: 'Thu-10:30-11:15-352'
+      label: 'Thursday 10:30-11:15 in 2.06 Argentum'
+    -
+      value: 'Thu-10:30-11:15-353'
+      label: 'Thursday 10:30-11:15 in 2.08 Platinum'
+    -
+      value: 'Thu-10:30-11:15-354'
+      label: 'Thursday 10:30-11:15 in 3.04 Europium'
+    -
+      value: 'Thu-10:30-11:15-356'
+      label: 'Thursday 10:30-11:15 in 3.10 Hidrogenium'
+    -
+      value: 'Thu-11:30-12:15-357'
+      label: 'Thursday 11:30-12:15 in 2.05 Palladium'
+    -
+      value: 'Thu-11:30-12:15-352'
+      label: 'Thursday 11:30-12:15 in 2.06 Argentum'
+    -
+      value: 'Thu-11:30-12:15-353'
+      label: 'Thursday 11:30-12:15 in 2.08 Platinum'
+    -
+      value: 'Thu-11:30-12:15-354'
+      label: 'Thursday 11:30-12:15 in 3.04 Europium'
+    -
+      value: 'Thu-11:30-12:15-356'
+      label: 'Thursday 11:30-12:15 in 3.10 Hidrogenium'
+    -
+      value: 'Thu-13:45-14:30-357'
+      label: 'Thursday 13:45-14:30 in 2.05 Palladium'
+    -
+      value: 'Thu-13:45-14:30-352'
+      label: 'Thursday 13:45-14:30 in 2.06 Argentum'
+    -
+      value: 'Thu-13:45-14:30-353'
+      label: 'Thursday 13:45-14:30 in 2.08 Platinum'
+    -
+      value: 'Thu-13:45-14:30-354'
+      label: 'Thursday 13:45-14:30 in 3.04 Europium'
+    -
+      value: 'Thu-13:45-14:30-356'
+      label: 'Thursday 13:45-14:30 in 3.10 Hidrogenium'
+    -
+      value: 'Thu-14:45-15:30-357'
+      label: 'Thursday 14:45-15:30 in 2.05 Palladium'
+    -
+      value: 'Thu-14:45-15:30-352'
+      label: 'Thursday 14:45-15:30 in 2.06 Argentum'
+    -
+      value: 'Thu-14:45-15:30-353'
+      label: 'Thursday 14:45-15:30 in 2.08 Platinum'
+    -
+      value: 'Thu-14:45-15:30-354'
+      label: 'Thursday 14:45-15:30 in 3.04 Europium'
+    -
+      value: 'Thu-14:45-15:30-356'
+      label: 'Thursday 14:45-15:30 in 3.10 Hidrogenium'
+    -
+      value: 'Thu-16:00-16:45-357'
+      label: 'Thursday 16:00-16:45 in 2.05 Palladium'
+    -
+      value: 'Thu-16:00-16:45-352'
+      label: 'Thursday 16:00-16:45 in 2.06 Argentum'
+    -
+      value: 'Thu-16:00-16:45-353'
+      label: 'Thursday 16:00-16:45 in 2.08 Platinum'
+    -
+      value: 'Thu-16:00-16:45-354'
+      label: 'Thursday 16:00-16:45 in 3.04 Europium'
+    -
+      value: 'Thu-16:00-16:45-356'
+      label: 'Thursday 16:00-16:45 in 3.10 Hidrogenium'
+    -
+      value: 'Thu-17:00-17:45-357'
+      label: 'Thursday 17:00-17:45 in 2.05 Palladium'
+    -
+      value: 'Thu-17:00-17:45-352'
+      label: 'Thursday 17:00-17:45 in 2.06 Argentum'
+    -
+      value: 'Thu-17:00-17:45-353'
+      label: 'Thursday 17:00-17:45 in 2.08 Platinum'
+    -
+      value: 'Thu-17:00-17:45-354'
+      label: 'Thursday 17:00-17:45 in 3.04 Europium'
+    -
+      value: 'Thu-17:00-17:45-356'
+      label: 'Thursday 17:00-17:45 in 3.10 Hidrogenium'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

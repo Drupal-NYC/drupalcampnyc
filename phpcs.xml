@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<ruleset name="DP Standard">
+<ruleset name="DrupalCampNYC">
   <description>We use this file to customize options so that phpcs can be run without arguments.</description>
   <config name="installed_paths" value="vendor/drupal/coder/coder_sniffer"/>
   <!-- Uncomment this line to allow "Warning" level issues into the codebase.
@@ -27,14 +27,20 @@
   <exclude-pattern>*/sites/*/*.aliases.drushrc.php</exclude-pattern>
   <exclude-pattern>*/drush/aliases/*</exclude-pattern>
   <exclude-pattern>*/drush/drushrc.php</exclude-pattern>
-  <!--Exclude the acquia-utils directory as it is also often just copied from Acquia-->
-  <exclude-pattern>*/acquia-utils/*</exclude-pattern>
   <!--Exclude various files in custom themes-->
   <exclude-pattern>*/themes/custom/*/node_modules/*</exclude-pattern>
   <exclude-pattern>*/themes/custom/*/js/*/*.min.js</exclude-pattern>
   <exclude-pattern>*/themes/custom/*/bower_components/*</exclude-pattern>
+  <exclude-pattern>*/themes/drupaleurope/node_modules/*</exclude-pattern>
   <!--Exclude CSS compiled in the theme-->
   <exclude-pattern>*/themes/custom/*/css/*</exclude-pattern>
+  <exclude-pattern>*/themes/drupaleurope/*/css/*</exclude-pattern>
+  <!--Exclude existing DrupalEurope files-->
+  <exclude-pattern>scripts/composer/ScriptHandler.php</exclude-pattern>
+  <exclude-pattern>drush/policy.drush.inc</exclude-pattern>
+  <exclude-pattern>*/themes/drupaleurope/*</exclude-pattern>
+  <exclude-pattern>*/modules/custom/de_core/*</exclude-pattern>
+  <exclude-pattern>scripts/composer/ScriptHandler.php</exclude-pattern>
   <!--Exclude external libraries added by composer in the repo root-->
   <!--which don't get sniffed by default but could be in the list of files from-->
   <!--a git commit.-->

@@ -1,0 +1,62 @@
+uuid: 5843cd17-d5cd-4667-a1c0-c1de7452acac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sponsor
+    - paragraphs.paragraphs_type.element_sponsor
+  module:
+    - viewsreference
+id: paragraph.element_sponsor.field_sponsor
+field_name: field_sponsor
+entity_type: paragraph
+bundle: element_sponsor
+label: Sponsor
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: 0
+  plugin_types:
+    block: block
+    default: 0
+    page: 0
+    feed: 0
+    entity_browser: 0
+  preselect_views:
+    element_list_sponsors: element_list_sponsors
+    block_content: 0
+    comment: 0
+    comments_recent: 0
+    content: 0
+    content_recent: 0
+    element_list_sessions: 0
+    files: 0
+    frontpage: 0
+    icon_browser: 0
+    media: 0
+    media_browser: 0
+    moderated_content: 0
+    redirect: 0
+    redirect_404: 0
+    scheduler_scheduled_content: 0
+    sponsors: 0
+    taxonomy_term: 0
+    taxonomy_term_teasers: 0
+    user_admin_people: 0
+    user_views: 0
+    watchdog: 0
+    who_s_new: 0
+    who_s_online: 0
+  enabled_settings:
+    argument: argument
+    pager: 0
+    limit: limit
+    offset: 0
+    title: 0
+field_type: viewsreference

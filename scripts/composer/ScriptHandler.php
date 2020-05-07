@@ -13,9 +13,6 @@ use DrupalFinder\DrupalFinder;
 use Symfony\Component\Filesystem\Filesystem;
 use Webmozart\PathUtil\Path;
 
-/**
- * Class ScriptHandler customized for DP.
- */
 class ScriptHandler {
 
   public static function createRequiredFiles(Event $event) {
@@ -45,7 +42,7 @@ class ScriptHandler {
       require_once $drupalRoot . '/core/includes/install.inc';
       $settings['config_directories'] = [
         CONFIG_SYNC_DIRECTORY => (object) [
-          'value' => Path::makeRelative($drupalFinder->getComposerRoot() . '/config', $drupalRoot),
+          'value' => Path::makeRelative($drupalFinder->getComposerRoot() . '/config/sync', $drupalRoot),
           'required' => TRUE,
         ],
       ];
@@ -75,9 +72,6 @@ class ScriptHandler {
    * installation after going through the lengthy process of compiling and
    * downloading the Composer dependencies.
    *
-   * @param \Composer\Script\Event $event
-   *   The composer event.
-   *
    * @see https://github.com/composer/composer/pull/5035
    */
   public static function checkComposerVersion(Event $event) {
@@ -97,8 +91,8 @@ class ScriptHandler {
     if ($version === '@package_version@' || $version === '@package_branch_alias_version@') {
       $io->writeError('<warning>You are running a development version of Composer. If you experience problems, please update Composer to the latest stable version.</warning>');
     }
-    elseif (Comparator::lessThan($version, '1.5.0')) {
-      $io->writeError('<error>Ballast requires Composer version 1.5.0 or higher. Please update your Composer before continuing. Try `composer self-update`</error>.');
+    elseif (Comparator::lessThan($version, '1.0.0')) {
+      $io->writeError('<error>Drupal-project requires Composer version 1.0.0 or higher. Please update your Composer before continuing</error>.');
       exit(1);
     }
   }

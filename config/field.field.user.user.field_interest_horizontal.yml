@@ -1,0 +1,30 @@
+uuid: 9e27e5e7-f034-4932-bdf6-7b03b29ebcc2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_interest_horizontal
+    - taxonomy.vocabulary.session_horizontal
+  module:
+    - user
+id: user.user.field_interest_horizontal
+field_name: field_interest_horizontal
+entity_type: user
+bundle: user
+label: 'Expertise topics'
+description: 'Pick the topics matching your expertise/interest most.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      session_horizontal: session_horizontal
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

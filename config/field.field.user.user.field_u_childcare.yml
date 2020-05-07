@@ -1,0 +1,24 @@
+uuid: e6496750-984e-4db9-8411-e8bfd9c612c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_u_childcare
+  module:
+    - user
+id: user.user.field_u_childcare
+field_name: field_u_childcare
+entity_type: user
+bundle: user
+label: Childcare
+description: 'Check if you are interested in a childcare service during the course of the conference. Provide further information in the Details field.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

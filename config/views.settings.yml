@@ -1,19 +1,20 @@
-display_extenders: {  }
+display_extenders:
+  - metatag_display_extender
 skip_cache: false
 sql_signature: false
 ui:
   show:
     additional_queries: false
-    advanced_column: false
-    master_display: false
+    advanced_column: true
+    master_display: true
     performance_statistics: false
     preview_information: true
     sql_query:
-      enabled: false
-      where: above
+      enabled: true
+      where: below
     display_embed: false
   always_live_preview: true
-  exposed_filter_any_label: old_any
+  exposed_filter_any_label: new_any
 field_rewrite_elements:
   div: DIV
   span: SPAN
@@ -44,3 +45,5 @@ field_rewrite_elements:
   ins: INS
   q: Q
   s: S
+_core:
+  default_config_hash: RaRd9EIcwA4u3qCSRLL8EnCicbda1kV__ASmVbyehvQ

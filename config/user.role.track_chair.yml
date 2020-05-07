@@ -1,0 +1,43 @@
+uuid: 2eb15187-0331-4732-94a2-cfbef12cb873
+langcode: en
+status: true
+dependencies: {  }
+id: track_chair
+label: 'Track chair'
+weight: 5
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'access media overview'
+  - 'access toolbar'
+  - 'create audio media'
+  - 'create field_track_chairs'
+  - 'create field_u_cat_trackchair'
+  - 'create file media'
+  - 'create image media'
+  - 'create media'
+  - 'create video media'
+  - 'delete media'
+  - 'delete own session content'
+  - 'edit any session content'
+  - 'edit field_speaker'
+  - 'edit field_track_chairs'
+  - 'edit own audio media'
+  - 'edit own field_track_chairs'
+  - 'edit own file media'
+  - 'edit own image media'
+  - 'edit own video media'
+  - 'edit terms in session_horizontal'
+  - 'edit terms in session_vertical'
+  - 'revert session revisions'
+  - 'schedule publishing of nodes'
+  - 'update media'
+  - 'use sessions transition accept'
+  - 'use sessions transition decline'
+  - 'use sessions transition needs_work'
+  - 'use sessions transition publish'
+  - 'use sessions transition ready_for_review'
+  - 'use sessions transition reviewed_and_ok'
+  - 'view field_track_session_additionals'
+  - 'view session revisions'
+  - 'view the administration theme'

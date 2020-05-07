@@ -8,8 +8,9 @@ features:
   comment_user_verification: true
   favicon: true
   node_user_picture: true
-  logo: true
 logo:
   path: ''
   url: ''
   use_default: true
+_core:
+  default_config_hash: 9rAU4Pku7eMBQxauQqAgjzlcicFZ2As6zEa6zvTlCB8

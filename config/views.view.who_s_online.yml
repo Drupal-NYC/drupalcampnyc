@@ -1,9 +1,11 @@
-uuid: 76fe093b-9e6a-4d45-a808-8c4f949c00a7
+uuid: c413323d-0766-4b65-914c-559d8fa5f839
 langcode: en
 status: true
 dependencies:
   module:
     - user
+_core:
+  default_config_hash: m0vmYmhrzMR6S_IC0UlK0Cl-q5lEvL8-EbxbbcDtk34
 id: who_s_online
 label: 'Who''s online block'
 module: user
@@ -137,9 +139,6 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
-            placeholder: ''
-            min_placeholder: ''
-            max_placeholder: ''
             operator_limit_selection: false
             operator_list: {  }
           is_grouped: false

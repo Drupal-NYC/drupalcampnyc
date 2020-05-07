@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: de_core_actions_mark_user_as_speaker
+label: 'Mark user(s) as Speaker'
+type: user
+plugin: mark_user_as_speaker
+configuration: {  }

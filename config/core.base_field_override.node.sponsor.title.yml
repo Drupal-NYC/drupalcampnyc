@@ -1,4 +1,4 @@
-uuid: 4a481953-def6-4bcb-b502-2a3cdd1b3805
+uuid: 35974693-d7bc-44dd-b083-f388861a6b99
 langcode: en
 status: true
 dependencies:
@@ -8,7 +8,7 @@ id: node.sponsor.title
 field_name: title
 entity_type: node
 bundle: sponsor
-label: 'Company Name'
+label: Name
 description: ''
 required: true
 translatable: true

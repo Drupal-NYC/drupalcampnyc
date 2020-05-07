@@ -1,0 +1,10 @@
+uuid: 170c96bb-add8-4b4e-ba81-5c947971fb3c
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.testimonial
+label: Testimonial
+targetEntityType: user
+cache: true

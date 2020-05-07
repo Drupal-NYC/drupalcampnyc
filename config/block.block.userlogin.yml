@@ -1,0 +1,26 @@
+uuid: bc2cc11d-2bb8-407e-987b-c891b06838d0
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - user
+  theme:
+    - drupaleurope
+id: userlogin
+theme: drupaleurope
+region: content
+weight: -4
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: 'User login'
+  provider: user
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/81
+    negate: false
+    context_mapping: {  }

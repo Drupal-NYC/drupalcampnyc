@@ -1,0 +1,27 @@
+uuid: d32b76a8-67e2-4f7e-81e7-8fd4e42191eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.social_item.field_tweet_link
+    - node.type.social_item
+  module:
+    - de_core
+    - user
+id: node.social_item.teaser
+targetEntityType: node
+bundle: social_item
+mode: teaser
+content:
+  field_tweet_link:
+    type: linkembed
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      text_length: short
+    third_party_settings: {  }
+hidden:
+  links: true
+  shariff_field: true

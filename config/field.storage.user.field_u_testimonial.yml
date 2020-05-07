@@ -1,0 +1,19 @@
+uuid: 54fee523-0f1e-47fa-93e4-529b4f672b09
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.field_u_testimonial
+field_name: field_u_testimonial
+entity_type: user
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

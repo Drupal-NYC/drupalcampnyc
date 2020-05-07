@@ -1,0 +1,21 @@
+uuid: 821a118b-7ec0-4652-a006-069465345d94
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_timeslot
+    - node.type.bof
+  module:
+    - options
+id: node.bof.field_timeslot
+field_name: field_timeslot
+entity_type: node
+bundle: bof
+label: Timeslot
+description: 'All currently available timeslots (if any) are listed here. You can unschedule a BoF to free up a timeslot. Saved updates are reflected immediately in the online schedule.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

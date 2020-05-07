@@ -1,10 +1,12 @@
-uuid: be5ae171-1dcd-4208-9900-b841edefdd13
+uuid: 172ea168-5f2e-465b-87f1-8fc45c7222e2
 langcode: en
 status: true
 dependencies:
   module:
     - file
     - user
+_core:
+  default_config_hash: rRWxAX-IQkJ5viACQRovRkC784EyCl9493GU_G23n2Q
 id: files
 label: Files
 module: file
@@ -247,7 +249,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Mime type'
+          label: 'MIME type'
           exclude: false
           alter:
             alter_text: false
@@ -595,7 +597,6 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
-            placeholder: ''
             operator_limit_selection: false
             operator_list: {  }
           is_grouped: false
@@ -626,7 +627,7 @@ display:
           exposed: true
           expose:
             operator_id: filemime_op
-            label: 'Mime type'
+            label: 'MIME type'
             description: ''
             use_operator: false
             operator: filemime_op
@@ -638,7 +639,6 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
-            placeholder: ''
             operator_limit_selection: false
             operator_list: {  }
           is_grouped: false
@@ -747,8 +747,6 @@ display:
         menu_name: admin
         weight: 0
         context: ''
-        enabled: true
-        expanded: false
       display_description: ''
       defaults:
         pager: true
@@ -1121,9 +1119,6 @@ display:
           admin_label: 'File usage'
           required: true
       display_extenders: {  }
-      menu:
-        enabled: true
-        expanded: false
     cache_metadata:
       contexts:
         - 'languages:language_interface'

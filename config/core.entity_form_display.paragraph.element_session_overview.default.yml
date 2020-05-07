@@ -1,0 +1,30 @@
+uuid: 04e91327-6222-4983-825d-3d4b2df2d3b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.element_session_overview.field_session_overview
+    - paragraphs.paragraphs_type.element_session_overview
+  module:
+    - viewsreference
+id: paragraph.element_session_overview.default
+targetEntityType: paragraph
+bundle: element_session_overview
+mode: default
+content:
+  field_session_overview:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: viewsreference_select
+    region: content
+  status:
+    type: boolean_checkbox
+    weight: 2
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  created: true
+  uid: true

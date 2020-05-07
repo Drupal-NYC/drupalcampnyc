@@ -1,0 +1,59 @@
+uuid: 45ed210c-97ff-43b8-93e9-1d74df402519
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_track_details
+    - paragraphs.paragraphs_type.deck_1_column
+    - paragraphs.paragraphs_type.deck_2_columns
+    - paragraphs.paragraphs_type.deck_hero
+    - taxonomy.vocabulary.session_vertical
+  module:
+    - entity_reference_revisions
+id: taxonomy_term.session_vertical.field_track_details
+field_name: field_track_details
+entity_type: taxonomy_term
+bundle: session_vertical
+label: 'Track details'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      deck_1_column: deck_1_column
+      deck_2_columns: deck_2_columns
+      deck_hero: deck_hero
+    target_bundles_drag_drop:
+      deck_1_column:
+        enabled: true
+        weight: 10
+      deck_2_columns:
+        enabled: true
+        weight: 11
+      deck_hero:
+        enabled: true
+        weight: 12
+      element_sessions:
+        weight: 13
+        enabled: false
+      element_sponsor:
+        weight: 14
+        enabled: false
+      element_user_lists:
+        weight: 15
+        enabled: false
+      element_webform:
+        weight: 16
+        enabled: false
+      media:
+        weight: 17
+        enabled: false
+      text:
+        weight: 18
+        enabled: false
+field_type: entity_reference_revisions

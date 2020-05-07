@@ -1,0 +1,28 @@
+base:
+  version: 1.x
+  css:
+    theme:
+      build/css/main.css: {}
+  js:
+    build/js/main.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal.ajax
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery.once
+infoscreen:
+  version: 1.x
+  css:
+    theme:
+      build/css/infoscreen.css: {}
+  js:
+    build/js/infoscreen.js: {}
+
+ticketsystem:
+  version: 1.x
+  css:
+    theme:
+      'https://tickets.example.org/drupalev/drupal-europe-2018/widget/v1.css': { type: external }
+  js:
+    'https://tickets.example.org/widget/v1.en.js': { type: external }

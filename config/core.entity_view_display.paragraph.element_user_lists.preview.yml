@@ -1,0 +1,15 @@
+uuid: 3cb297f0-9a35-4ad3-bbc7-aab8d63d253c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.element_user_lists.field_user_view
+    - paragraphs.paragraphs_type.element_user_lists
+id: paragraph.element_user_lists.preview
+targetEntityType: paragraph
+bundle: element_user_lists
+mode: preview
+content: {  }
+hidden:
+  field_user_view: true

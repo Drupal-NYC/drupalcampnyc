@@ -1,0 +1,66 @@
+uuid: e07eebe6-1c75-4359-b811-5c96efda0c62
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_header
+    - node.type.page
+    - paragraphs.paragraphs_type.deck_header
+    - paragraphs.paragraphs_type.deck_hero
+  module:
+    - entity_reference_revisions
+id: node.page.field_header
+field_name: field_header
+entity_type: node
+bundle: page
+label: Header
+description: 'A header element acting as Page title or similar goes here.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      deck_header: deck_header
+      deck_hero: deck_hero
+    target_bundles_drag_drop:
+      deck_1_column:
+        weight: 11
+        enabled: false
+      deck_2_columns:
+        weight: 12
+        enabled: false
+      deck_header:
+        enabled: true
+        weight: 13
+      deck_hero:
+        enabled: true
+        weight: 13
+      element_sessions:
+        weight: 14
+        enabled: false
+      element_sponsor:
+        weight: 15
+        enabled: false
+      element_tracks:
+        weight: 16
+        enabled: false
+      element_user_lists:
+        weight: 17
+        enabled: false
+      element_webform:
+        weight: 18
+        enabled: false
+      element_tickets_widget:
+        weight: 19
+        enabled: false
+      media:
+        weight: 19
+        enabled: false
+      text:
+        weight: 20
+        enabled: false
+field_type: entity_reference_revisions

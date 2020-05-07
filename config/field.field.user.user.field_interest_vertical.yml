@@ -1,0 +1,30 @@
+uuid: 4b9511a4-1db3-4e43-99d4-652c03830504
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_interest_vertical
+    - taxonomy.vocabulary.session_vertical
+  module:
+    - user
+id: user.user.field_interest_vertical
+field_name: field_interest_vertical
+entity_type: user
+bundle: user
+label: 'Industry tracks'
+description: 'Pick the track(s) that you are most likely to follow.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      session_vertical: session_vertical
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

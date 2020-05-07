@@ -1,0 +1,21 @@
+uuid: f2685d30-cff6-48c2-adf5-460d4dc43bcd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_summary
+    - node.type.session
+  module:
+    - text
+id: node.session.field_summary
+field_name: field_summary
+entity_type: node
+bundle: session
+label: Summary
+description: 'The elevator pitch, short and on the point summary of what this session is all about!'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

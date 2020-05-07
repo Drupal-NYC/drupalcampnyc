@@ -1,0 +1,8 @@
+uuid: 353b8285-6b1e-4dbd-aeb4-cad958b0452f
+langcode: en
+status: true
+dependencies: {  }
+id: drupal-europe-days
+label: 'DrupalCampNYC Days'
+description: ''
+locked: false

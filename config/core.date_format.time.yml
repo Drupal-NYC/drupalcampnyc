@@ -1,0 +1,8 @@
+uuid: 716bb3df-db17-4698-b6d3-f2bea709977d
+langcode: en
+status: true
+dependencies: {  }
+id: time
+label: Time
+locked: false
+pattern: 'H:i'

@@ -1,0 +1,35 @@
+uuid: 3fab0fb2-6bba-4af0-b1a4-7e84d006a1d5
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: session_schedule
+label: 'Favourite content'
+bundles:
+  - bof
+  - program_item
+  - session
+  - social_event
+entity_type: node
+global: false
+weight: 0
+flag_short: 'Mark favourite'
+flag_long: 'Add this session to your favourite items.'
+flag_message: ''
+unflag_short: 'Unmark favourite'
+unflag_long: 'Remove this session from your favourite items.'
+unflag_message: ''
+unflag_denied_text: ''
+flag_type: 'entity:node'
+link_type: ajax_link
+flagTypeConfig:
+  show_in_links:
+    full: full
+    teaser: teaser
+  show_as_field: true
+  show_on_form: false
+  show_contextual_link: false
+  extra_permissions:
+    owner: '0'
+linkTypeConfig: {  }

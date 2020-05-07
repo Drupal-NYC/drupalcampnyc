@@ -1,0 +1,10 @@
+uuid: 27dd2c8c-e5f9-4560-876c-847e027fe9be
+langcode: en
+status: true
+dependencies: {  }
+id: text
+label: 'Element - Text'
+icon_uuid: null
+icon_default: null
+description: 'A simple text box.'
+behavior_plugins: {  }
