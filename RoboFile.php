@@ -82,7 +82,7 @@ class RoboFile extends Tasks {
     $this->getSanitizedBuild();
     $this->setDeploymentCommit($options);
     $this->setCleanMerge($options);
-    //return $this->getPushResult($options);
+    return $this->getPushResult($options);
   }
 
   /**
@@ -113,9 +113,8 @@ class RoboFile extends Tasks {
         $options['commit-msg'] .= ' Build ID: ' . $options['build_id'];
       }
     }
-    $remote_name = $this->config->get('site_alias_name');
     // Store for later use.
-    $options['remote_name'] = $remote_name;
+    $options['remote_name'] = 'pantheon';
   }
 
   /**
