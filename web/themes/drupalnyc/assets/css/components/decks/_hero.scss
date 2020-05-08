@@ -15,7 +15,7 @@
   flex-direction: column-reverse;
 
   // @todo Fix default background image for hero element
-  background-image: linear-gradient(to left, $primary-color, $tertiary-color, $secondary-color);
+  background-image: linear-gradient(to left, $secondary-color, $tertiary-color, $primary-color);
 
   h1 {
     font-size: 3rem;
