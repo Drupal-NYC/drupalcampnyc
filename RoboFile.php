@@ -177,7 +177,7 @@ class RoboFile extends Tasks {
     $this->say('Finding any CHANGELOG.txt');
     $changelog = new Finder();
     $changelog
-      ->in($this->config->getProjectRoot())
+      ->in($this->getProjectRoot())
       ->files()
       ->name('CHANGELOG.txt');
     $this->say($changelog->count() . ' CHANGELOG.txt files found');
