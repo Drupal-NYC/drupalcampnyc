@@ -26,7 +26,7 @@ Our use of CodeShip for CI has many benefits, but one side effect is that we can
 
 Note that the git repo already has a `.lando.yml` file so you shouldn't run `lando init`.
 
-1. Download and install the latest release of Lando from https://github.com/lando/lando/releases/latest
+1. Download and install the [latest release of Lando](https://github.com/lando/lando/releases/latest)
 2. Create a directory to contain the site (e.g. `mkdir ~/Sites/drupalcampnyc`)
 3. Change to that directory (e.g. `cd ~/Sites/drupalcampnyc`)
 4. If you have your local SSH public key [added to your GitHub account](https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account) (recommended), clone the repository using:
@@ -37,8 +37,7 @@ Note that the git repo already has a `.lando.yml` file so you shouldn't run `lan
 
    `git clone https://github.com/Drupal-NYC/drupalcampnyc.git .`
 
-5. `git checkout drupaleurope`
-6. If you are a member (on Pantheon) of the DrupalCampNYC Pantheon site's "Team", copy the Pantheon-enabled local Lando config:
+5. If you are a member (on Pantheon) of the DrupalCampNYC Pantheon site's "Team", copy the Pantheon-enabled local Lando config:
 
     `cp setup/lando-pantheon/.lando.local.yml .`
 
@@ -46,14 +45,14 @@ Note that the git repo already has a `.lando.yml` file so you shouldn't run `lan
 
     `cp setup/lando-basic/.lando.local.yml .`
 
-7. `lando start`
+6. `lando start`
 
     Per .lando.yml and .lando.local.yml, when `lando start` is run for the first time and whenever `lando rebuild` is run, the following commands are run inside the container:
     * `composer install` for the project
     * `npm install` in web/themes/drupaleurope
     * `npm run build` in web/themes/drupaleurope to compile the theme
 
-8. Time to install Drupal. We want to take advantage of all the configuration that has already been done so we are going to install from config:
+7. Time to install Drupal. We want to take advantage of all the configuration that has already been done so we are going to install from config:
 
     `lando drush si minimal --existing-config`
 
