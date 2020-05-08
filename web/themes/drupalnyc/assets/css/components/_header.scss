@@ -1,5 +1,5 @@
 .region-header {
-  @include due-gradient;
+  @include nyc-gradient;
   position: fixed;
   display: flex;
   top: 0;
@@ -41,7 +41,7 @@ body:not(.iframe) {
 }
 
 .site-logo {
-  background: url("../../images/logo-horizoontal.svg");
+  background: url("/themes/drupalnyc/logo.svg");
   width: 220px;
   height: 75px;
   background-size: 220px 75px;
