@@ -3,19 +3,18 @@
   tag: master
   steps:
     - type: serial
+      service: deploy
       steps:
-        - service: deploy
-          name: composer_install
-          command: "composer install --no-dev --no-interaction --optimize-autoloader"
+        - name: composer_install
+          command: composer install --no-dev --no-interaction --optimize-autoloader
     - type: serial
+      service: front-end
       steps:
-        - service: front-end
-          name: npm_install
+        - name: npm_install
           command: npm ci
-        - service: front-end
-          name: build_theme
+        - name: build_theme
           command: npm run build
 - name: deploy
   tag: master
   service: deploy
-  command: vendor/bin/robo deploy --remote-branch=newbrunswick
+  command: vendor/bin/robo deploy
