@@ -4,9 +4,12 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.user.token
+    - field.field.user.user.field_dietary_intro
     - field.field.user.user.field_interest_horizontal
     - field.field.user.user.field_interest_vertical
+    - field.field.user.user.field_onsite_intro
     - field.field.user.user.field_speaker
+    - field.field.user.user.field_speaker_profile
     - field.field.user.user.field_special_details
     - field.field.user.user.field_ticket_orderno
     - field.field.user.user.field_ticket_type
@@ -53,6 +56,7 @@ third_party_settings:
         id: ''
         classes: ''
       label: 'Full name'
+      region: content
     group_company:
       children:
         - field_u_company
@@ -69,6 +73,7 @@ third_party_settings:
         effect: none
         speed: fast
       label: Company
+      region: content
 _core:
   default_config_hash: V51QPCKkgNREKtSmB9Iu2wmAMEpktVpnzklWaZV8UYo
 id: user.user.token

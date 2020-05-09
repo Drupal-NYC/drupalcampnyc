@@ -41,6 +41,7 @@ third_party_settings:
         effect: none
         speed: fast
       label: 'Scheduled at'
+      region: content
     group_type_and_track:
       children:
         - field_type
@@ -57,6 +58,7 @@ third_party_settings:
         effect: none
         speed: fast
       label: 'Type and track'
+      region: content
 id: node.social_event.schedule
 targetEntityType: node
 bundle: social_event

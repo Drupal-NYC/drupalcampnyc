@@ -42,6 +42,7 @@ third_party_settings:
         id: ''
         classes: scheduled-at
       label: Info
+      region: content
     group_type_and_track:
       children:
         - field_type
@@ -58,6 +59,7 @@ third_party_settings:
         effect: none
         speed: fast
       label: 'Type and track'
+      region: content
 id: node.social_event.teaser
 targetEntityType: node
 bundle: social_event

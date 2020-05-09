@@ -54,6 +54,7 @@ third_party_settings:
         id: ''
         classes: ''
       label: Subject
+      region: content
     group_category:
       children:
         - field_vertical
@@ -71,6 +72,7 @@ third_party_settings:
         id: ''
         classes: ''
       label: Category
+      region: content
     group_speaker_info:
       children:
         - field_speaker_experience
@@ -84,6 +86,7 @@ third_party_settings:
         description: ''
         required_fields: true
       label: Speaker
+      region: content
     group_resources:
       children:
         - field_slides_external
@@ -97,6 +100,7 @@ third_party_settings:
         description: 'Please provide either a link to the slides presented or upload them here.'
         required_fields: true
       label: Resources
+      region: content
 id: node.session.default
 targetEntityType: node
 bundle: session

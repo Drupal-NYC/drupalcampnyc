@@ -13,6 +13,7 @@ dependencies:
     - field.field.node.session.field_horizontal
     - field.field.node.session.field_room
     - field.field.node.session.field_slides
+    - field.field.node.session.field_slides_external
     - field.field.node.session.field_speaker_experience
     - field.field.node.session.field_speaker_inclusion
     - field.field.node.session.field_speakers
@@ -53,6 +54,7 @@ third_party_settings:
         effect: none
         speed: fast
       label: Details
+      region: content
     group_speaker_background:
       children:
         - field_speaker_experience
@@ -71,6 +73,7 @@ third_party_settings:
         effect: none
         speed: fast
       label: 'Speaker Background'
+      region: content
 id: node.session.evaluation
 targetEntityType: node
 bundle: session

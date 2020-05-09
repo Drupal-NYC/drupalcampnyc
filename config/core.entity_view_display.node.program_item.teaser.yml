@@ -38,6 +38,7 @@ third_party_settings:
         effect: none
         speed: fast
       label: 'Scheduled at'
+      region: content
     group_ty:
       children:
         - field_type
@@ -54,6 +55,7 @@ third_party_settings:
         effect: none
         speed: fast
       label: 'Type and track'
+      region: content
 id: node.program_item.teaser
 targetEntityType: node
 bundle: program_item

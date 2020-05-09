@@ -25,6 +25,7 @@ third_party_settings:
         description: 'Limit the listed sessions by these filters'
         required_fields: true
       label: Filtering
+      region: content
 id: paragraph.element_sessions.default
 targetEntityType: paragraph
 bundle: element_sessions

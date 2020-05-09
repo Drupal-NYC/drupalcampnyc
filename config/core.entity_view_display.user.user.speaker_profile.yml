@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.user.speaker_profile
+    - field.field.user.user.field_dietary_intro
     - field.field.user.user.field_interest_horizontal
     - field.field.user.user.field_interest_vertical
     - field.field.user.user.field_onsite_intro
@@ -62,6 +63,7 @@ third_party_settings:
         id: ''
         classes: ''
       label: 'Full name'
+      region: content
 _core:
   default_config_hash: V51QPCKkgNREKtSmB9Iu2wmAMEpktVpnzklWaZV8UYo
 id: user.user.speaker_profile

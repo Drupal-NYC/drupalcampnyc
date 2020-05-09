@@ -33,6 +33,7 @@ third_party_settings:
         description: ''
         required_fields: true
       label: 'Sponsorship details'
+      region: content
 id: node.sponsor.default
 targetEntityType: node
 bundle: sponsor

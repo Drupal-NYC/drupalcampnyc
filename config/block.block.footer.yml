@@ -19,6 +19,8 @@ settings:
   label: 'Footer menu'
   provider: menu_block
   label_display: '0'
+  follow: false
+  follow_parent: child
   level: 1
   depth: 2
   expand: 1

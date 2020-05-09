@@ -45,6 +45,7 @@ third_party_settings:
         effect: none
         speed: fast
       label: Info
+      region: content
 id: node.bof.full
 targetEntityType: node
 bundle: bof

@@ -53,6 +53,7 @@ third_party_settings:
         effect: none
         speed: fast
       label: Info
+      region: content
 id: node.session.default
 targetEntityType: node
 bundle: session

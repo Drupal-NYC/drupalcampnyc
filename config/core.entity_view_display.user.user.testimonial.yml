@@ -4,9 +4,13 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.user.testimonial
+    - field.field.user.user.field_dietary_intro
     - field.field.user.user.field_interest_horizontal
     - field.field.user.user.field_interest_vertical
+    - field.field.user.user.field_onsite_intro
     - field.field.user.user.field_speaker
+    - field.field.user.user.field_speaker_profile
+    - field.field.user.user.field_special_details
     - field.field.user.user.field_ticket_orderno
     - field.field.user.user.field_ticket_type
     - field.field.user.user.field_u_acad_title_post
@@ -57,6 +61,7 @@ third_party_settings:
         effect: none
         speed: fast
       label: 'Full name'
+      region: content
 _core:
   default_config_hash: V51QPCKkgNREKtSmB9Iu2wmAMEpktVpnzklWaZV8UYo
 id: user.user.testimonial

@@ -59,6 +59,7 @@ third_party_settings:
         effect: none
         speed: fast
       label: Info
+      region: content
     group_div:
       children:
         - field_speakers
@@ -77,6 +78,7 @@ third_party_settings:
         id: ''
         classes: col-right
       label: Right
+      region: content
 id: node.session.full
 targetEntityType: node
 bundle: session

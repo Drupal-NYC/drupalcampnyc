@@ -21,6 +21,8 @@ settings:
   label: 'DrupalCampNYC Days'
   provider: menu_block
   label_display: '0'
+  follow: false
+  follow_parent: child
   level: 1
   depth: 0
   expand: 0

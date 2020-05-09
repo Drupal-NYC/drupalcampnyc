@@ -56,6 +56,7 @@ third_party_settings:
         classes: ''
         effect: none
       label: 'User form'
+      region: content
     group_user_basic:
       children:
         - account
@@ -69,6 +70,7 @@ third_party_settings:
         required_fields: true
         description: ''
       label: 'User account'
+      region: content
     group_attendee_info:
       children:
         - field_ticket_orderno
@@ -91,6 +93,7 @@ third_party_settings:
         required_fields: true
         description: ''
       label: 'Attendee info'
+      region: content
     group_help_promote:
       children:
         - field_u_testimonial
@@ -106,6 +109,7 @@ third_party_settings:
         required_fields: true
         description: ''
       label: 'Help promote'
+      region: content
     group_user_internals:
       children:
         - field_speaker
@@ -123,6 +127,7 @@ third_party_settings:
         required_fields: true
         description: ''
       label: Internals
+      region: content
     group_att_special_needs:
       children:
         - field_onsite_intro
@@ -140,6 +145,7 @@ third_party_settings:
         required_fields: true
         description: ''
       label: 'Onsite service'
+      region: content
 _core:
   default_config_hash: K-1rBM8mTIkFp9RqOC2tMRUukOQ1xbRCfSKK8dEddnA
 id: user.user.default

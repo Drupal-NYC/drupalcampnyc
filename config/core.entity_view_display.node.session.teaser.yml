@@ -54,6 +54,7 @@ third_party_settings:
         id: ''
         classes: session-type-and-track
       label: 'Type and track'
+      region: content
     group_scheduled_at:
       children:
         - field_start
@@ -73,6 +74,7 @@ third_party_settings:
         id: ''
         classes: scheduled-at
       label: 'Scheduled at'
+      region: content
     group_materials:
       children:
         - field_slides
@@ -91,6 +93,7 @@ third_party_settings:
         effect: none
         speed: fast
       label: Materials
+      region: content
 id: node.session.teaser
 targetEntityType: node
 bundle: session
