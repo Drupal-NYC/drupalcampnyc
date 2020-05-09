@@ -9,7 +9,6 @@ module:
   breakpoint: 0
   ckeditor: 0
   classy_paragraphs: 0
-  color: 0
   config: 0
   config_filter: 0
   config_ignore: 0
@@ -26,7 +25,6 @@ module:
   dblog: 0
   de_core: 0
   de_core_actions: 0
-  default_content: 0
   devel: 0
   dropzonejs: 0
   dropzonejs_eb_widget: 0
@@ -45,7 +43,6 @@ module:
   file: 0
   filter: 0
   flag: 0
-  hal: 0
   help: 0
   history: 0
   honeypot: 0
@@ -63,7 +60,6 @@ module:
   metatag_views: 0
   node: 0
   options: 0
-  page_cache: 0
   paragraphs_type_permissions: 0
   path: 0
   path_alias: 0
@@ -76,14 +72,11 @@ module:
   scheduler: 0
   serialization: 0
   shariff: 0
-  shield: 0
-  shortcut: 0
   simple_sitemap: 0
   smart_trim: 0
   smtp: 0
   social_media_links: 0
   svg_image: 0
-  syslog: 0
   system: 0
   taxonomy: 0
   text: 0
@@ -95,7 +88,6 @@ module:
   viewsreference: 0
   webform: 0
   webform_image_select: 0
-  webform_location_geocomplete: 0
   webform_node: 0
   webform_scheduled_email: 0
   webform_submission_log: 0
@@ -107,12 +99,10 @@ module:
   views: 10
   paragraphs: 11
   minimal: 1000
-  eu_cookie_compliance: 1001
 theme:
   stable: 0
   classy: 0
   seven: 0
-  bartik: 0
   drupaleurope: 0
   adminimal_theme: 0
 profile: minimal
