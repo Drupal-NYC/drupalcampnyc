@@ -41,7 +41,7 @@
         "drupal/field_permissions": "^1.0",
         "drupal/flag": "^4.0",
         "drupal/honeypot": "^2.0",
-        "drupal/inline_entity_form": "^1.0",
+        "drupal/inline_entity_form": "1.0.0-rc3",
         "drupal/linkit": "^4.3",
         "drupal/markup": "^1.0",
         "drupal/menu_block": "^1.5",
