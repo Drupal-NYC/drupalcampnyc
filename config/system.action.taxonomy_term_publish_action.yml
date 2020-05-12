@@ -1,0 +1,11 @@
+uuid: 7d4ae7ff-b656-4bed-84ba-0af3a43c2ce5
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term_publish_action
+label: 'Publish taxonomy term'
+type: taxonomy_term
+plugin: 'entity:publish_action:taxonomy_term'
+configuration: {  }

@@ -1,0 +1,12 @@
+uuid: 313dd1bd-bae5-429c-bea1-0d7ec4f6ef3e
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+id: province_names
+label: 'Province names'
+category: Geographic
+likert: false
+options: "Alberta: Alberta\n'British Columbia': 'British Columbia'\nManitoba: Manitoba\n'New Brunswick': 'New Brunswick'\n'Newfoundland and Labrador': 'Newfoundland and Labrador'\n'Nova Scotia': 'Nova Scotia'\n'Northwest Territories': 'Northwest Territories'\nNunavut: Nunavut\nOntario: Ontario\n'Prince Edward Island': 'Prince Edward Island'\nQuebec: Quebec\nSaskatchewan: Saskatchewan\nYukon: Yukon\n"

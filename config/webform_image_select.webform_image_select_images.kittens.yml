@@ -1,0 +1,11 @@
+uuid: cc5e7125-41cc-4530-ae9f-88b75be332f0
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform_image_select
+id: kittens
+label: 'Cute Kittens'
+category: Animals
+images: "kitten_1:\n  text: 'Cute Kitten 1'\n  src: 'http://placekitten.com/220/200'\nkitten_2:\n  text: 'Cute Kitten 2'\n  src: 'http://placekitten.com/180/200'\nkitten_3:\n  text: 'Cute Kitten 3'\n  src: 'http://placekitten.com/130/200'\nkitten_4:\n  text: 'Cute Kitten 4'\n  src: 'http://placekitten.com/270/200'\n"
