@@ -65,7 +65,6 @@ module:
   redirect_404: 0
   redis: 0
   rest: 0
-  restui: 0
   scheduler: 0
   serialization: 0
   shariff: 0
