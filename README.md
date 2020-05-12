@@ -99,7 +99,7 @@ Now everything will run slower :)
 
 You must run composer inside the Lando container by using `lando composer` instead of `composer`.
 
-Why? For performance reasons, lando.yml is configured to disable syncing of files in the `vendor" and `node_modules` directories. For this reason, running vanilla `composer` commands in your terminal will not behave as expected.
+Why? For performance reasons, lando.yml is configured to disable syncing of files in the `vendor` and `node_modules` directories. For this reason, running vanilla `composer` commands in your terminal will not behave as expected.
 
 If you prefer to take the performance hit (and use `composer`) rather than have to use `lando composer`, you should be able to override the excludes in lando.local.yml by adding an exclude similar to `"!vendor"`.
 
