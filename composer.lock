@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9f8df97d7236e0122c90a236a8516f26",
+    "content-hash": "f7ad844cbbb6b96c6d2652e7e481c722",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1830,54 +1830,6 @@
             "time": "2019-03-30T10:41:38+00:00"
         },
         {
-            "name": "drupal/access_unpublished",
-            "version": "1.0.0-beta2",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/access_unpublished.git",
-                "reference": "8.x-1.0-beta2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/access_unpublished-8.x-1.0-beta2.zip",
-                "reference": "8.x-1.0-beta2",
-                "shasum": "a279d526c72e7aa62058577cee884e6831f99ea5"
-            },
-            "require": {
-                "drupal/core": "^8.7.7 || ^9"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.0-beta2",
-                    "datestamp": "1587397369",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "chr.fritsch",
-                    "homepage": "https://www.drupal.org/user/2103716"
-                },
-                {
-                    "name": "martin_klima",
-                    "homepage": "https://www.drupal.org/user/2784335"
-                }
-            ],
-            "description": "Grants access to view unpublished content to anyone who has a unique URL and appropriate permissions.",
-            "homepage": "https://www.drupal.org/project/access_unpublished",
-            "support": {
-                "source": "https://git.drupalcode.org/project/access_unpublished"
-            }
-        },
-        {
             "name": "drupal/admin_toolbar",
             "version": "2.2.0",
             "source": {
@@ -2118,53 +2070,6 @@
             }
         },
         {
-            "name": "drupal/bulk_update_fields",
-            "version": "2.0.0-alpha3",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/bulk_update_fields.git",
-                "reference": "8.x-2.0-alpha3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/bulk_update_fields-8.x-2.0-alpha3.zip",
-                "reference": "8.x-2.0-alpha3",
-                "shasum": "202b685136ccbd06ba743814043cc18a37341b7b"
-            },
-            "require": {
-                "drupal/core": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-2.0-alpha3",
-                    "datestamp": "1579789088",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "el1_1el",
-                    "homepage": "https://www.drupal.org/user/1795292"
-                }
-            ],
-            "description": "Bulk update fields from one value to another",
-            "homepage": "https://www.drupal.org/project/bulk_update_fields",
-            "support": {
-                "source": "https://git.drupalcode.org/project/bulk_update_fields"
-            }
-        },
-        {
             "name": "drupal/classy_paragraphs",
             "version": "1.0.0-beta1",
             "source": {
@@ -2344,65 +2249,6 @@
                 "source": "http://cgit.drupalcode.org/config_ignore",
                 "issues": "http://drupal.org/project/config_ignore",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
-            }
-        },
-        {
-            "name": "drupal/config_selector",
-            "version": "2.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/config_selector.git",
-                "reference": "8.x-2.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/config_selector-8.x-2.0.zip",
-                "reference": "8.x-2.0",
-                "shasum": "046f0306f188a7744bc7f84634c02467afaeac8b"
-            },
-            "require": {
-                "drupal/core": "^8.8 || ^9"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-2.0",
-                    "datestamp": "1574425685",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "alexpott",
-                    "homepage": "https://www.drupal.org/user/157725"
-                },
-                {
-                    "name": "chr.fritsch",
-                    "homepage": "https://www.drupal.org/user/2103716"
-                },
-                {
-                    "name": "daniel.bosen",
-                    "homepage": "https://www.drupal.org/user/404865"
-                },
-                {
-                    "name": "mtodor",
-                    "homepage": "https://www.drupal.org/user/3453049"
-                }
-            ],
-            "description": "A utility module that enables different versions of optional configuration to be selected on module install.",
-            "homepage": "https://www.drupal.org/project/config_selector",
-            "support": {
-                "source": "https://git.drupalcode.org/project/config_selector"
             }
         },
         {
@@ -3159,79 +3005,6 @@
             }
         },
         {
-            "name": "drupal/default_content",
-            "version": "1.0.0-alpha9",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/default_content.git",
-                "reference": "8.x-1.0-alpha9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/default_content-8.x-1.0-alpha9.zip",
-                "reference": "8.x-1.0-alpha9",
-                "shasum": "e8d5cc6ae96b14e882852512fbf5887e752146a0"
-            },
-            "require": {
-                "drupal/core": "^8.7.7 || ^9"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.0-alpha9",
-                    "datestamp": "1588280141",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Alpha releases are not covered by Drupal security advisories."
-                    }
-                },
-                "drush": {
-                    "services": {
-                        "drush.services.yml": "^9"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Berdir",
-                    "homepage": "https://www.drupal.org/user/214652"
-                },
-                {
-                    "name": "Sam152",
-                    "homepage": "https://www.drupal.org/user/1485048"
-                },
-                {
-                    "name": "andypost",
-                    "homepage": "https://www.drupal.org/user/118908"
-                },
-                {
-                    "name": "benjy",
-                    "homepage": "https://www.drupal.org/user/1852732"
-                },
-                {
-                    "name": "dawehner",
-                    "homepage": "https://www.drupal.org/user/99340"
-                },
-                {
-                    "name": "jibran",
-                    "homepage": "https://www.drupal.org/user/1198144"
-                },
-                {
-                    "name": "larowlan",
-                    "homepage": "https://www.drupal.org/user/395439"
-                }
-            ],
-            "description": "Imports default content when a module is enabled",
-            "homepage": "https://www.drupal.org/project/default_content",
-            "support": {
-                "source": "https://git.drupalcode.org/project/default_content"
-            }
-        },
-        {
             "name": "drupal/devel",
             "version": "2.1.0",
             "source": {
@@ -3741,110 +3514,6 @@
             }
         },
         {
-            "name": "drupal/eu_cookie_compliance",
-            "version": "1.9.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/eu-cookie-compliance.git",
-                "reference": "8.x-1.9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/eu_cookie_compliance-8.x-1.9.zip",
-                "reference": "8.x-1.9",
-                "shasum": "1dd57c3fe517d907c0a44bee4ef73f30e98993d3"
-            },
-            "require": {
-                "drupal/core": "^8.8 || ^9"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.9",
-                    "datestamp": "1588751057",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Marcin Pajdzik",
-                    "homepage": "https://www.drupal.org/u/marcin-pajdzik",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Sven Berg Ryen",
-                    "homepage": "https://www.drupal.org/u/svenryen",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "See other contributors",
-                    "homepage": "https://www.drupal.org/node/1538032/committers"
-                },
-                {
-                    "name": "achton",
-                    "homepage": "https://www.drupal.org/user/712454"
-                },
-                {
-                    "name": "blairski",
-                    "homepage": "https://www.drupal.org/user/120835"
-                },
-                {
-                    "name": "dakku",
-                    "homepage": "https://www.drupal.org/user/97634"
-                },
-                {
-                    "name": "grzegorz.bartman",
-                    "homepage": "https://www.drupal.org/user/363120"
-                },
-                {
-                    "name": "id.tornado",
-                    "homepage": "https://www.drupal.org/user/2754049"
-                },
-                {
-                    "name": "killua99",
-                    "homepage": "https://www.drupal.org/user/699418"
-                },
-                {
-                    "name": "mibfire",
-                    "homepage": "https://www.drupal.org/user/155136"
-                },
-                {
-                    "name": "naveenvalecha",
-                    "homepage": "https://www.drupal.org/user/2665733"
-                },
-                {
-                    "name": "nielsaers",
-                    "homepage": "https://www.drupal.org/user/752444"
-                },
-                {
-                    "name": "svenryen",
-                    "homepage": "https://www.drupal.org/user/667244"
-                }
-            ],
-            "description": "This module aims at making the website compliant with the new EU cookie regulation.",
-            "homepage": "https://drupal.org/project/eu_cookie_compliance",
-            "keywords": [
-                "Cookie",
-                "CookieCompliance",
-                "Drupal",
-                "GDPR"
-            ],
-            "support": {
-                "source": "https://cgit.drupalcode.org/eu-cookie-compliance",
-                "docs": "https://www.drupal.org/project/eu_cookie_compliance",
-                "forum": "https://drupal.stackexchange.com/search?q=eu+cookie+compliance",
-                "issues": "https://www.drupal.org/project/issues/eu_cookie_compliance?version=8.x",
-                "irc": "irc://irc.freenode.org/drupal-contribute"
-            }
-        },
-        {
             "name": "drupal/field_group",
             "version": "3.0.0",
             "source": {
@@ -4189,71 +3858,6 @@
             "homepage": "https://www.drupal.org/project/inline_entity_form",
             "support": {
                 "source": "https://git.drupalcode.org/project/inline_entity_form"
-            }
-        },
-        {
-            "name": "drupal/libraries",
-            "version": "3.0.0-alpha1",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/libraries.git",
-                "reference": "8.x-3.0-alpha1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/libraries-8.x-3.0-alpha1.zip",
-                "reference": "8.x-3.0-alpha1",
-                "shasum": "bb07036b1eaeea7d736fc7e72416238830cd8d67"
-            },
-            "require": {
-                "drupal/core": "~8.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-3.x": "3.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-3.0-alpha1",
-                    "datestamp": "1517046484",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Alpha releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Pol",
-                    "homepage": "https://www.drupal.org/user/47194"
-                },
-                {
-                    "name": "joseph.olstad",
-                    "homepage": "https://www.drupal.org/user/1321830"
-                },
-                {
-                    "name": "rjacobs",
-                    "homepage": "https://www.drupal.org/user/422459"
-                },
-                {
-                    "name": "sun",
-                    "homepage": "https://www.drupal.org/user/54136"
-                },
-                {
-                    "name": "tstoeckler",
-                    "homepage": "https://www.drupal.org/user/107158"
-                }
-            ],
-            "description": "Allows version-dependent and shared usage of external libraries in Drupal.",
-            "homepage": "http://drupal.org/project/libraries",
-            "support": {
-                "source": "http://cgit.drupalcode.org/libraries",
-                "issues": "http://drupal.org/project/issues/libraries",
-                "irc": "irc://irc.freenode.org/drupal-contribute"
             }
         },
         {
@@ -4948,76 +4552,6 @@
             "support": {
                 "source": "https://drupal.org/project/shariff",
                 "issues": "https://drupal.org/project/issues/shariff"
-            }
-        },
-        {
-            "name": "drupal/shield",
-            "version": "1.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/shield.git",
-                "reference": "8.x-1.4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/shield-8.x-1.4.zip",
-                "reference": "8.x-1.4",
-                "shasum": "0c3950fa9a2614958d5f7488da9ff357f794723e"
-            },
-            "require": {
-                "drupal/core": "^8.6 || ^9"
-            },
-            "require-dev": {
-                "drupal/key": "^1.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.4",
-                    "datestamp": "1585608547",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                },
-                "branch-alias": {
-                    "dev-8.x-1.x": "1.x-dev"
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "badjava",
-                    "homepage": "https://www.drupal.org/user/83372"
-                },
-                {
-                    "name": "chx",
-                    "homepage": "https://www.drupal.org/user/9446"
-                },
-                {
-                    "name": "geek-merlin",
-                    "homepage": "https://www.drupal.org/user/229048"
-                },
-                {
-                    "name": "japerry",
-                    "homepage": "https://www.drupal.org/user/45640"
-                },
-                {
-                    "name": "kalman.hosszu",
-                    "homepage": "https://www.drupal.org/user/267481"
-                },
-                {
-                    "name": "pkiraly",
-                    "homepage": "https://www.drupal.org/user/352587"
-                }
-            ],
-            "description": "Creates a general shield for the site.",
-            "homepage": "https://www.drupal.org/project/shield",
-            "support": {
-                "source": "https://git.drupalcode.org/project/shield"
             }
         },
         {
@@ -11945,5 +11479,6 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }
