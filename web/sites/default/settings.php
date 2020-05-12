@@ -43,6 +43,16 @@ $settings['file_private_path'] = 'sites/default/private-files';
 $settings['hash_salt'] = 'qAFNzv5CKdoOx1A6O1HBELEGAJuTbPd2N9nTayafIkzuHWvMaJcO8MXsHP8C24Vb94jorerLjQ';
 
 if (defined('PANTHEON_ENVIRONMENT')) {
+  // If we're in the Live or Test environments...
+  if (in_array(PANTHEON_ENVIRONMENT, ['test', 'live'])) {
+    // Disable development modules and config.
+    $config['config_split.config_split.development']['status'] = FALSE;
+  }
+  else {
+    // Enable development modules and config.
+    $config['config_split.config_split.development']['status'] = TRUE;
+  }
+
   // Include the Redis services.yml file. Adjust the path if you installed to a contrib or other subdirectory.
   $settings['container_yamls'][] = 'modules/contrib/redis/example.services.yml';
 
@@ -58,4 +68,9 @@ if (defined('PANTHEON_ENVIRONMENT')) {
 
   // Set Redis to not get the cache_form (no performance difference).
   $settings['cache']['bins']['form']      = 'cache.backend.database';
+}
+// Non-Pantheon environments.
+else {
+  // Enable development modules and config.
+  $config['config_split.config_split.development']['status'] = TRUE;
 }

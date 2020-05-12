@@ -12,8 +12,7 @@ module:
   config: 0
   config_filter: 0
   config_ignore: 0
-  config_update: 0
-  config_update_ui: 0
+  config_split: 0
   content_moderation: 0
   contextual: 0
   csv_serialization: 0
@@ -25,7 +24,6 @@ module:
   dblog: 0
   de_core: 0
   de_core_actions: 0
-  devel: 0
   dropzonejs: 0
   dropzonejs_eb_widget: 0
   dynamic_page_cache: 0
@@ -39,7 +37,6 @@ module:
   field: 0
   field_group: 0
   field_permissions: 0
-  field_ui: 0
   file: 0
   filter: 0
   flag: 0
@@ -82,9 +79,7 @@ module:
   text: 0
   token: 0
   toolbar: 0
-  update: 0
   user: 0
-  views_ui: 0
   viewsreference: 0
   webform: 0
   webform_image_select: 0
@@ -92,7 +87,6 @@ module:
   webform_scheduled_email: 0
   webform_submission_log: 0
   webform_templates: 0
-  webform_ui: 0
   workflows: 0
   menu_link_content: 1
   pathauto: 1
