@@ -47,6 +47,9 @@ if (defined('PANTHEON_ENVIRONMENT')) {
   if (in_array(PANTHEON_ENVIRONMENT, ['test', 'live'])) {
     // Disable development modules and config.
     $config['config_split.config_split.development']['status'] = FALSE;
+
+    // Don't allow configuration to be modified.
+    $settings['config_readonly'] = TRUE;
   }
   else {
     // Enable development modules and config.

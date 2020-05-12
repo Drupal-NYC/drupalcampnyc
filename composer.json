@@ -25,6 +25,8 @@
         "drupal/autocomplete_deluxe": "^1.0",
         "drupal/classy_paragraphs": "^1.0",
         "drupal/config_ignore": "^2.2",
+        "drupal/config_ignore_readonly": "^1.1",
+        "drupal/config_readonly": "^1.0@beta",
         "drupal/config_split": "^1.5",
         "drupal/config_update": "^1.7",
         "drupal/console": "^1.9",
