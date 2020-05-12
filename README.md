@@ -68,6 +68,10 @@ You now have a fully functional local environment, accessible at [https://drupal
 
 `git push` as normal.
 
+The following commands must be run with their lando prefix so that they are run inside the Lando container.
+
+Composer: `lando composer <command>`
+
 Drush: `lando drush <command>`
 
 Drupal Console: `lando drupal <command>`
@@ -82,9 +86,21 @@ Build the theme automatically when changed: `lando npm run watch`
 
 Get a one-time log in URL for user 1: `lando drush uli`
 
-## Enable XDebug
+## XDebug
+
+To enable XDebug:
 
 1. Edit .lando.local.yml and set `xdebug` to `true`.
 2. `lando rebuild`
 
 Now everything will run slower :)
+
+## Using Composer
+
+You must run composer inside the Lando container by using `lando composer` instead of `composer`.
+
+Why? For performance reasons, lando.yml is configured to disable syncing of files in the `vendor" and `node_modules` directories. For this reason, running vanilla `composer` commands in your terminal will not behave as expected.
+
+If you prefer to take the performance hit (and use `composer`) rather than have to use `lando composer`, you should be able to override the excludes in lando.local.yml by adding an exclude similar to `"!vendor"`.
+
+Lando's [Performance documentation](https://docs.lando.dev/config/performance.html) explains further.
