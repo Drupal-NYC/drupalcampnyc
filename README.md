@@ -104,3 +104,7 @@ Why? For performance reasons, lando.yml is configured to disable syncing of file
 If you prefer to take the performance hit (and use `composer`) rather than have to use `lando composer`, you should be able to override the excludes in lando.local.yml by adding an exclude similar to `"!vendor"`.
 
 Lando's [Performance documentation](https://docs.lando.dev/config/performance.html) explains further.
+
+### Composer Scaffold
+
+We use Drupal's [core-composer-scaffold](https://github.com/drupal/core-composer-scaffold) to place and manage files provided by Drupal core or Pantheon.

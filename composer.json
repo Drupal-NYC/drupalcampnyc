@@ -1,6 +1,6 @@
 {
-    "name": "drupaleurope/drupal_europe",
-    "description": "Drupal Europe",
+    "name": "drupal-nyc/drupalcampnyc",
+    "description": "DrupalCampNYC website",
     "type": "project",
     "license": "GPL-2.0-or-later",
     "authors": [ ],
@@ -18,7 +18,6 @@
         "bower-asset/dropzone": "^5.7",
         "consolidation/robo": "^1.4",
         "cweagans/composer-patches": "^1.6",
-        "drupal-composer/drupal-scaffold": "^2.6",
         "drupal/admin_toolbar": "^2.2",
         "drupal/adminimal_admin_toolbar": "^1.11",
         "drupal/adminimal_theme": "^1.5",
@@ -31,6 +30,7 @@
         "drupal/config_update": "^1.7",
         "drupal/console": "^1.9",
         "drupal/core": "^8.8",
+        "drupal/core-composer-scaffold": "^8.8",
         "drupal/core-recommended": "8.8.5",
         "drupal/csv_serialization": "^2.0",
         "drupal/ctools": "^3.4",
@@ -66,6 +66,7 @@
         "drupal/webform": "^5.12",
         "drush/drush": "^9.7.2",
         "oomphinc/composer-installers-extender": "^1.1",
+        "pantheon-systems/drupal-integrations": "^8.0",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3"
     },
@@ -81,27 +82,16 @@
     "config": {
         "sort-packages": true
     },
-    "autoload": {
-        "classmap": [
-            "scripts/composer/ScriptHandler.php"
-        ]
-    },
-    "scripts": {
-        "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
-        "pre-install-cmd": [
-            "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
-        ],
-        "pre-update-cmd": [
-            "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
-        ],
-        "post-install-cmd": [
-            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
-        ],
-        "post-update-cmd": [
-            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
-        ]
-    },
     "extra": {
+        "drupal-scaffold": {
+            "locations": {
+                "web-root": "web/"
+            },
+            "allowed-packages": [
+                "drupal/core",
+                "pantheon-systems/drupal-integrations"
+            ]
+        },
         "installer-types": [
             "bower-asset",
             "npm-asset"
@@ -116,7 +106,9 @@
             "web/modules/contrib/{$name}": ["type:drupal-module"],
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
-            "drush/contrib/{$name}": ["type:drupal-drush"]
+            "drush/Commands/contrib/{$name}": ["type:drupal-drush"],
+            "web/modules/custom/{$name}": ["type:drupal-custom-module"],
+            "web/themes/custom/{$name}": ["type:drupal-custom-theme"]
         },
         "enable-patching": true,
         "patches": {
