@@ -44,7 +44,7 @@ $settings['hash_salt'] = 'qAFNzv5CKdoOx1A6O1HBELEGAJuTbPd2N9nTayafIkzuHWvMaJcO8M
 
 if (defined('PANTHEON_ENVIRONMENT')) {
   // If we're in the Live or Test environments...
-  if (in_array(PANTHEON_ENVIRONMENT, ['test', 'live'])) {
+  if (in_array($_ENV['PANTHEON_ENVIRONMENT'], ['test', 'live'])) {
     // Disable development modules and config.
     $config['config_split.config_split.development']['status'] = FALSE;
 
