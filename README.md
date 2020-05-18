@@ -108,3 +108,14 @@ Lando's [Performance documentation](https://docs.lando.dev/config/performance.ht
 ### Composer Scaffold
 
 We use Drupal's [core-composer-scaffold](https://github.com/drupal/core-composer-scaffold) to place and manage files provided by Drupal core or Pantheon.
+
+# Credits
+
+We are grateful to Drupal Europe 2018 for providing their [codebase](https://www.drupal.org/project/drupaleurope_website), which we adopted and improved upon.
+
+# Collaborate
+To collaborate in real-time, please join us in the #camp-website channel of [DrupalNYC Slack](https://www.drupalnyc.org/slack).
+
+To collaborate with us and other camps on a shared codebase for future camps, please join us in the #event-website-starterkit channel of the [Drupal Event Organizers](https://www.drupal.org/community/event-organizers) Slack.
+
+We encourage merge requests.
