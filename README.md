@@ -39,28 +39,36 @@ Note that the git repo already has a `.lando.yml` file so you shouldn't run `lan
 
 5. If you are a member (on Pantheon) of the DrupalCampNYC Pantheon site's "Team", copy the Pantheon-enabled local Lando config:
 
-    `cp setup/lando-pantheon/.lando.local.yml .`
+   `cp setup/lando-pantheon/.lando.local.yml .`
 
-    Otherwise, copy the non-Pantheon local Lando config:
+   Otherwise, copy the non-Pantheon local Lando config:
 
-    `cp setup/lando-basic/.lando.local.yml .`
+   `cp setup/lando-basic/.lando.local.yml .`
 
 6. `lando start`
 
-    Per .lando.yml and .lando.local.yml, when `lando start` is run for the first time and whenever `lando rebuild` is run, the following commands are run inside the container:
-    * `composer install` for the project
-    * `npm install` in web/themes/drupaleurope
-    * `npm run build` in web/themes/drupaleurope to compile the theme
+   Per .lando.yml and .lando.local.yml, when `lando start` is run for the first time and whenever `lando rebuild` is run, the following commands are run inside the container:
+   * `composer install` for the project
+   * `npm install` in web/themes/drupaleurope
+   * `npm run build` in web/themes/drupaleurope to compile the theme
 
-7. Time to install Drupal. We want to take advantage of all the configuration that has already been done so we are going to install from config:
+7. For a fresh Drupal installation that takes advantage of all the configuration that has already been done, install from config:
 
-    `lando drush si minimal --existing-config`
+   `lando drush si minimal --existing-config`
 
-    Note: installing from config can easily take 10 minutes to complete.
+   Note: installing from config can easily take 10 minutes to complete.
 
-    Alternatively, to save some time and to see some basic content, you can import the latest starter database from the directory setup/db. For example:
+   If you are a member (on Pantheon) of the DrupalCampNYC Pantheon site's "Team", you probably instead want to "Refresh from Pantheon" per the next section.
 
-    `lando db-import setup/db/2020-04-10.sql.gz`
+## Refresh from Pantheon
+
+To replace your local environment's database and files with that of our Test environment (canonical until the site goes live), ensure that you are using the Pantheon lando.local.yml described under "Initial Setup" above, ensure that you are a member of the Pantheon site's "Team", then:
+1. `lando pull`
+2. `lando drush cim`
+
+Note that this will overwrite your local database and files. The `lando drush cim` ensures that your local environment uses the development-specific configuration (e.g. enables Devel).
+
+Once the site is live, this section (and .lando.yml) needs to be updated to reflect the use of the Live environment.
 
 You now have a fully functional local environment, accessible at [https://drupalcampnyc.lndo.site/](https://drupalcampnyc.lndo.site/)
 

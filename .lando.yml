@@ -20,6 +20,15 @@ tooling:
     cmd: npm --prefix /app/web/themes/drupaleurope
   node:
     service: node
+  pull:
+    options:
+      code:
+        default: none
+      database:
+        default: test
+      files:
+        default: test
+  push: disabled
 excludes:
   - vendor
   - web/themes/drupaleurope/node_modules
