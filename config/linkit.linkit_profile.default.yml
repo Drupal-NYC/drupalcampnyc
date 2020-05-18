@@ -1,0 +1,31 @@
+uuid: d1afcf61-35ca-40d9-a644-4fbaa5cbad80
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: default
+label: Default
+description: ''
+matchers:
+  9f22c4e2-c6c5-4f5b-8f47-1ab32d174ef2:
+    uuid: 9f22c4e2-c6c5-4f5b-8f47-1ab32d174ef2
+    id: 'entity:node'
+    weight: 0
+    settings:
+      include_unpublished: true
+      metadata: ''
+      bundles:
+        blog_post: blog_post
+        bof: bof
+        page: page
+        partner: partner
+        program_item: program_item
+        session: session
+        social_event: social_event
+        social_item: social_item
+        sponsor: sponsor
+        webform: webform
+      group_by_bundle: true
+      substitution_type: canonical
+      limit: 200

@@ -193,6 +193,7 @@ permissions:
   - 'use social_events transition needs_work'
   - 'use social_events transition publish'
   - 'use social_events transition ready_for_review'
+  - 'use text format basic_html'
   - 'use text format full_html'
   - 'use text format restricted_html'
   - 'view all media revisions'
