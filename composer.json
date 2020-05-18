@@ -114,6 +114,9 @@
         "patches": {
             "drupal/diff": {
                 "Back button for comparison page": "https://www.drupal.org/files/issues/back_button_for-2853193-4.patch"
+            },
+            "drupal/core": {
+                "Can't access config sync page": "https://www.drupal.org/files/issues/2020-05-11/3100712-views-36-PASS.patch"
             }
         }
     }

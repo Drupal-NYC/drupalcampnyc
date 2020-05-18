@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f01fe05011c76282e8817f4a83d4ebdb",
+    "content-hash": "ed015e89a3212ee12eb961169f1bc87d",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2904,6 +2904,9 @@
                         "[web-root]/profiles/README.txt": "assets/scaffold/files/profiles.README.txt",
                         "[web-root]/themes/README.txt": "assets/scaffold/files/themes.README.txt"
                     }
+                },
+                "patches_applied": {
+                    "Can't access config sync page": "https://www.drupal.org/files/issues/2020-05-11/3100712-views-36-PASS.patch"
                 }
             },
             "autoload": {
