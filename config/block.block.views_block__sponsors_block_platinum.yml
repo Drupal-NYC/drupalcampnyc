@@ -1,6 +1,6 @@
 uuid: 7386babf-892e-4a57-b91f-1009caff712d
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.sponsors
@@ -32,6 +32,6 @@ visibility:
       user: '@user.current_user_context:current_user'
   request_path:
     id: request_path
-    pages: /node/717
+    pages: ''
     negate: true
     context_mapping: {  }

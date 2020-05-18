@@ -3,8 +3,8 @@ name: 'DrupalCampNYC 2020'
 mail: camp@drupalnyc.org
 slogan: ''
 page:
-  403: /node/81
-  404: /node/82
+  403: ''
+  404: ''
   front: /node/1
 admin_compact_mode: false
 weight_select_max: 100

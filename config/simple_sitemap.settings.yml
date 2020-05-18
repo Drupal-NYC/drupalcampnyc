@@ -1,6 +1,6 @@
 max_links: 2000
 cron_generate: true
-cron_generate_interval: 0
+cron_generate_interval: 1
 remove_duplicates: true
 skip_untranslated: false
 base_url: ''
@@ -13,3 +13,6 @@ enabled_entity_types:
 _core:
   default_config_hash: vFARRSP9-YgEArfDNYmRSg0cNFOgZPxqziffIalgLbU
 default_variant: default
+xsl: true
+disable_language_hreflang: false
+generate_duration: 10000

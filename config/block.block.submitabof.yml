@@ -1,11 +1,8 @@
 uuid: e49d4fb1-3fc5-4134-a8c7-e4bdc31394b0
 langcode: en
-status: true
+status: false
 dependencies:
-  content:
-    - 'block_content:basic:19214c0e-023f-414d-b6bd-38aaab22b3c2'
   module:
-    - block_content
     - de_core
     - system
   theme:

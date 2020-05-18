@@ -32,6 +32,6 @@ visibility:
       user: '@user.current_user_context:current_user'
   request_path:
     id: request_path
-    pages: "/node/717\r\n"
+    pages: ''
     negate: true
     context_mapping: {  }
