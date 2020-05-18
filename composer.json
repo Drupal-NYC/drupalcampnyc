@@ -112,6 +112,9 @@
         },
         "enable-patching": true,
         "patches": {
+            "drupal/config_readonly": {
+                "Don't block content menu links reordering": "https://www.drupal.org/files/issues/2018-04-01/config-readonly-2892631-18.patch"
+            },
             "drupal/diff": {
                 "Back button for comparison page": "https://www.drupal.org/files/issues/back_button_for-2853193-4.patch"
             },
