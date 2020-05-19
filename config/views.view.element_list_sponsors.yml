@@ -150,7 +150,7 @@ display:
           field: type
           relationship: none
           group_type: group
-          admin_label: 'Limit to sessions'
+          admin_label: 'Limit to sponsors'
           operator: in
           value:
             sponsor: sponsor
