@@ -23,7 +23,6 @@ permissions:
   - 'edit field_speaker'
   - 'edit field_track_chairs'
   - 'edit own audio media'
-  - 'edit own field_track_chairs'
   - 'edit own file media'
   - 'edit own image media'
   - 'edit own video media'
