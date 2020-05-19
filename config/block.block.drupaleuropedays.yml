@@ -13,7 +13,7 @@ dependencies:
 id: drupaleuropedays
 theme: drupaleurope
 region: content
-weight: -8
+weight: -4
 provider: null
 plugin: 'menu_block:drupal-europe-days'
 settings:

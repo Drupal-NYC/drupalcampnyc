@@ -12,7 +12,7 @@ dependencies:
 id: views_block__session_proposal_review_block_flagged
 theme: drupaleurope
 region: content
-weight: -3
+weight: -5
 provider: null
 plugin: 'views_block:session_proposal_review-block_flagged'
 settings:

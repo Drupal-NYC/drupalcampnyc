@@ -12,7 +12,7 @@ _core:
 id: drupaleurope_page_title
 theme: drupaleurope
 region: content
-weight: -7
+weight: -9
 provider: null
 plugin: page_title_block
 settings:

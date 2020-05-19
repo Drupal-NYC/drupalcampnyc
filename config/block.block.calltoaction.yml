@@ -14,7 +14,7 @@ dependencies:
 id: calltoaction
 theme: drupaleurope
 region: content
-weight: -5
+weight: -6
 provider: null
 plugin: 'menu_block:user-cta'
 settings:

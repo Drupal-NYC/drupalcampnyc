@@ -9,7 +9,7 @@ _core:
 id: drupaleurope_local_tasks
 theme: drupaleurope
 region: precontent
-weight: -2
+weight: -8
 provider: null
 plugin: local_tasks_block
 settings:
