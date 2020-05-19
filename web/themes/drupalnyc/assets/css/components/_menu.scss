@@ -15,10 +15,11 @@
 .menu-item {
   margin: 0;
 }
-
+// was 10% & 65% leaving 25% for user menu (branding / nav / user menu)
+// now 50% & 30% leaving 20% for user menu
 // handling of the main menu. including dropdowns
 .menu--main {
-  flex: 1 2 65%;
+  flex: 1 2 30%;
   justify-content: flex-end;
 
   @include responsive(desktop) {
