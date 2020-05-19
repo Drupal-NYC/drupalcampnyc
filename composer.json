@@ -49,6 +49,7 @@
         "drupal/markup": "^1.0",
         "drupal/menu_block": "^1.5",
         "drupal/metatag": "^1.12",
+        "drupal/pantheon_advanced_page_cache": "^1.0",
         "drupal/paragraphs": "^1.11",
         "drupal/pathauto": "^1.8",
         "drupal/redirect": "^1.6",
