@@ -1,4 +1,7 @@
 .region-header {
+
+  border-bottom: 2px solid green;
+
   @include due-gradient;
   position: fixed;
   display: flex;
@@ -41,13 +44,18 @@ body:not(.iframe) {
 }
 
 .site-logo {
-  background: url("../../images/logo-horizoontal.svg");
-  width: 220px;
-  height: 75px;
-  background-size: 220px 75px;
+  background-image: url("/themes/drupalnyc/logo-xx.svg");
+  margin: 0.5rem 1rem;
+  padding: 0;
+  width: 5rem;
+  height: 5rem;
+  background-size: 4rem 4rem;
+  background-repeat: no-repeat;
+  background-position: center;
   display: block;
+  float: left;
   img {
-    display: none;
+    display: inline;
   }
 
   @media only screen and (max-width: 500px) {
@@ -60,25 +68,28 @@ body:not(.iframe) {
   }
 }
 .site-name {
-  display: none;
+  display: block;
+  padding-top: 0.5rem;
+
 }
 
 .region-header a {
   color: $white-color;
-  font-size: 1.25rem;
-  display: block;
+  font-weight: bold;
+  font-size: 2.5rem;
+  line-height: 1;
 }
 
 .region-header a.is-active {
   color: $tertiary-color;
 }
+// was 10% & 65% leaving 25% for user menu (branding / nav / user menu)
+// now 30% & 50% leaving 20% for user menu
 .block-system-branding-block {
-  flex: 1 1 10%;
-
+  width: 50%;
   img {
     max-width: 100%;
-    height: 70px;
-    padding: 5px 10px;
+    height: auto;
   }
 }
 
@@ -86,7 +97,7 @@ body:not(.iframe) {
   .page--header {
     a.site-logo {
       @include transition(0.3s);
-      opacity: 0;
+      opacity: 1;
     }
     &.fade-in a.site-logo {
       opacity: 1;
