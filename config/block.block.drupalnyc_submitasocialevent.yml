@@ -1,0 +1,38 @@
+uuid: 02b77103-3bdf-4e0f-8c42-928f56b81521
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:9d6ee8ba-c760-41de-9b10-7e4ad30fd8ca'
+  module:
+    - block_content
+    - de_core
+    - system
+  theme:
+    - drupalnyc
+id: drupalnyc_submitasocialevent
+theme: drupalnyc
+region: content
+weight: -1
+provider: null
+plugin: 'block_content:9d6ee8ba-c760-41de-9b10-7e4ad30fd8ca'
+settings:
+  id: 'block_content:9d6ee8ba-c760-41de-9b10-7e4ad30fd8ca'
+  label: 'Submit a social event'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  current_user_page:
+    id: current_user_page
+    show_on_own_page: 0
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+  request_path:
+    id: request_path
+    pages: "/program/schedule/monday\r\n/program/schedule/tuesday\r\n/program/schedule/wednesday\r\n/program/schedule/thursday\r\n/program/schedule/friday"
+    negate: false
+    context_mapping: {  }

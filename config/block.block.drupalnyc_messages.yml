@@ -1,0 +1,22 @@
+uuid: fc101e56-5c1a-4a55-98b0-792b9b9ce5c0
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupalnyc
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: drupalnyc_messages
+theme: drupalnyc
+region: precontent
+weight: -4
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,34 @@
+uuid: 296c9efe-2282-4f49-999d-03fd2e4176ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - de_core
+    - menu_block
+  theme:
+    - drupalnyc
+id: drupalnyc_mainnavigation
+theme: drupalnyc
+region: header
+weight: -5
+provider: null
+plugin: 'menu_block:main'
+settings:
+  id: 'menu_block:main'
+  label: 'Main navigation'
+  provider: menu_block
+  label_display: '0'
+  level: 1
+  depth: 2
+  expand: 1
+  parent: 'main:'
+  suggestion: main
+visibility:
+  current_user_page:
+    id: current_user_page
+    show_on_own_page: 0
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
