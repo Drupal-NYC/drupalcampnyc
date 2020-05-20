@@ -68,6 +68,9 @@
       @include nyc-gradient;
       background-attachment: fixed;
     }
+    .menu-item {
+      background: none;
+    }
     // Top level items
     > .menu-item {
       margin: 0 3.5vw 0 0;
