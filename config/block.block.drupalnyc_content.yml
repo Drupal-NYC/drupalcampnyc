@@ -1,0 +1,22 @@
+uuid: c2f54bc5-376d-490a-8663-d741994956eb
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupalnyc
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: drupalnyc_content
+theme: drupalnyc
+region: content
+weight: -6
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

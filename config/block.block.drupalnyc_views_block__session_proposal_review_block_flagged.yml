@@ -1,0 +1,32 @@
+uuid: 368ee1a5-314a-4c61-a453-dcb03b0c22c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.session_proposal_review
+  module:
+    - de_core
+    - views
+  theme:
+    - drupalnyc
+id: drupalnyc_views_block__session_proposal_review_block_flagged
+theme: drupalnyc
+region: content
+weight: -3
+provider: null
+plugin: 'views_block:session_proposal_review-block_flagged'
+settings:
+  id: 'views_block:session_proposal_review-block_flagged'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  pager: view
+visibility:
+  current_user_page:
+    id: current_user_page
+    show_on_own_page: 1
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

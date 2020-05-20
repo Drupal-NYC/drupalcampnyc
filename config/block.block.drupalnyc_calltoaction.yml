@@ -1,0 +1,48 @@
+uuid: be5b0bd0-8d81-42d7-b894-df4a976aa9d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.user-cta
+  module:
+    - de_core
+    - menu_block
+    - system
+    - user
+  theme:
+    - drupalnyc
+id: drupalnyc_calltoaction
+theme: drupalnyc
+region: content
+weight: -5
+provider: null
+plugin: 'menu_block:user-cta'
+settings:
+  id: 'menu_block:user-cta'
+  label: 'Call to Action'
+  provider: menu_block
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand: 0
+  parent: 'user-cta:'
+  suggestion: user_cta
+visibility:
+  request_path:
+    id: request_path
+    pages: '/user/*'
+    negate: false
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+  current_user_page:
+    id: current_user_page
+    show_on_own_page: 1
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
