@@ -1,0 +1,14 @@
+.messages.messages--error {
+  DISPLAY: NONE;
+  }
+
+body.path-theming-basic .node__content .field__items > .field__item::before {
+  content: 'SAMPLE DECK ITEM';
+  display: block;
+  color: magenta;
+  margin: 0 0 0 3px;
+  }
+body.path-theming-basic .node__content .field__items > .field__item {
+  margin-top: 20px;
+  border: 5px solid magenta;
+  }
