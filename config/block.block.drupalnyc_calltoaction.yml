@@ -1,6 +1,6 @@
 uuid: be5b0bd0-8d81-42d7-b894-df4a976aa9d8
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.user-cta
@@ -22,9 +22,11 @@ settings:
   label: 'Call to Action'
   provider: menu_block
   label_display: '0'
+  follow: false
+  follow_parent: child
   level: 1
   depth: 0
-  expand: 0
+  expand: false
   parent: 'user-cta:'
   suggestion: user_cta
 visibility:

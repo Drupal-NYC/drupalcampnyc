@@ -1,6 +1,6 @@
 uuid: 7a08cde8-608b-4cb6-95b4-15832d664cce
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.drupal-europe-days
@@ -13,7 +13,7 @@ dependencies:
 id: drupalnyc_drupaleuropedays
 theme: drupalnyc
 region: content
-weight: -8
+weight: -6
 provider: null
 plugin: 'menu_block:drupal-europe-days'
 settings:
@@ -21,9 +21,11 @@ settings:
   label: 'DrupalCampNYC Days'
   provider: menu_block
   label_display: '0'
+  follow: false
+  follow_parent: child
   level: 1
   depth: 0
-  expand: 0
+  expand: false
   parent: 'drupal-europe-days:'
   suggestion: drupal_europe_days
 visibility:

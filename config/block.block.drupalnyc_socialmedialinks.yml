@@ -19,94 +19,94 @@ settings:
   provider: social_media_links
   label_display: visible
   platforms:
+    twitter:
+      value: DrupalCampNYC
+      description: 'Follow us on Twitter'
+      weight: '-32'
     drupal_slack:
-      value: messages/C70PEFHUK
-      description: '(join drupal slack first - https://drupal.org/slack/)'
-      weight: '-10'
+      value: slack
+      description: 'Find us in DrupalNYC Slack'
+      weight: '-31'
     behance:
       value: ''
       description: ''
-      weight: '-10'
+      weight: '-30'
     bitbucket:
       value: ''
       description: ''
-      weight: '-9'
+      weight: '-29'
     medium:
-      value: '@drupalcampnyc'
-      description: 'Read our blog on Medium'
-      weight: '-9'
+      value: ''
+      description: ''
+      weight: '-28'
     contact:
       value: ''
       description: ''
-      weight: '-8'
+      weight: '-27'
     drupal:
       value: ''
       description: ''
-      weight: '-7'
+      weight: '-26'
     email:
       value: ''
       description: ''
-      weight: '-6'
+      weight: '-25'
     facebook:
-      value: drupaleurope
-      description: 'Find us on Facebook'
-      weight: '-5'
+      value: ''
+      description: ''
+      weight: '-24'
     flickr:
       value: ''
       description: ''
-      weight: '-4'
+      weight: '-23'
     github:
       value: ''
       description: ''
-      weight: '-3'
+      weight: '-22'
     googleplus:
       value: ''
       description: ''
-      weight: '-2'
+      weight: '-21'
     instagram:
       value: ''
       description: ''
-      weight: '-1'
+      weight: '-20'
     linkedin:
-      value: company/drupal-europe/
-      description: 'Find us on LinkedIn'
-      weight: '0'
+      value: ''
+      description: ''
+      weight: '-19'
     pinterest:
       value: ''
       description: ''
-      weight: '1'
+      weight: '-18'
     rss:
       value: ''
       description: ''
-      weight: '2'
+      weight: '-17'
     slideshare:
       value: ''
       description: ''
-      weight: '3'
+      weight: '-16'
     tumblr:
       value: ''
       description: ''
-      weight: '4'
-    twitter:
-      value: 'DrupalEurope?lang=en'
-      description: 'Follow us on Twitter'
-      weight: '5'
+      weight: '-15'
     vimeo:
       value: ''
       description: ''
-      weight: '6'
+      weight: '-14'
     vkontakte:
       value: ''
       description: ''
-      weight: '7'
+      weight: '-13'
     youtube:
       value: ''
       description: ''
-      weight: '8'
+      weight: '-12'
     youtube_channel:
       value: ''
       description: ''
-      weight: '9'
+      weight: '-11'
   appearance:
     orientation: h
     show_name: 0

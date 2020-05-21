@@ -1,6 +1,6 @@
 uuid: 368ee1a5-314a-4c61-a453-dcb03b0c22c0
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.session_proposal_review
