@@ -1,4 +1,4 @@
-uuid: 3aa76c22-77ec-4503-b02f-02035049fb57
+uuid: 29575c8c-52b5-4f87-a910-8705a42f1ab0
 langcode: en
 status: true
 dependencies:
@@ -6,14 +6,13 @@ dependencies:
     - views.view.sponsors
   module:
     - de_core
-    - system
     - views
   theme:
     - drupalnyc
-id: drupalnyc_views_block__sponsors_block_diamond
+id: views_block__sponsors_block_diamond_2
 theme: drupalnyc
 region: content
-weight: -7
+weight: -6
 provider: null
 plugin: 'views_block:sponsors-block_diamond'
 settings:
@@ -30,8 +29,3 @@ visibility:
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'
-  request_path:
-    id: request_path
-    pages: "/node/717\r\n"
-    negate: true
-    context_mapping: {  }

@@ -12,26 +12,26 @@ type: list_string
 settings:
   allowed_values:
     -
+      value: venue
+      label: 'Times Square (Venue)'
+    -
       value: diamond
-      label: Diamond
+      label: 'Big Apple (Diamond)'
     -
       value: platinum
-      label: Platinum
+      label: 'Gotham (Platinum)'
     -
       value: gold
-      label: Gold
+      label: 'New Amsterdam (Gold)'
     -
       value: silver
-      label: Silver
+      label: 'Industrialist (Silver)'
     -
-      value: module
-      label: 'Only module(s)'
+      value: homegrown
+      label: Homegrown
     -
-      value: owlmain
-      label: 'OWL main sponsor'
-    -
-      value: owlsupporter
-      label: 'OWL supporter'
+      value: tristate
+      label: Tri-State
   allowed_values_function: ''
 module: options
 locked: false

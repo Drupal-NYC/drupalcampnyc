@@ -143,6 +143,8 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
@@ -150,8 +152,6 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -299,100 +299,20 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
-  block_modulesponsors:
+  block_homegrown:
     display_plugin: block
-    id: block_modulesponsors
-    display_title: 'Block Modules'
-    position: 6
+    id: block_homegrown
+    display_title: 'Block Homegrown'
+    position: 2
     display_options:
-      display_extenders: {  }
-      title: 'Module Sponsors'
+      display_extenders:
+        metatag_display_extender: {  }
+      title: 'Tri-State sponsors'
       defaults:
         title: false
         filters: false
         filter_groups: false
       display_description: ''
-      filters:
-        status:
-          value: '1'
-          table: node_field_data
-          field: status
-          plugin_id: boolean
-          entity_type: node
-          entity_field: status
-          id: status
-          expose:
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-          group: 1
-        field_level_value:
-          id: field_level_value
-          table: node__field_level
-          field: field_level_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: or
-          value:
-            module: module
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            reduce: false
-            operator_limit_selection: false
-            operator_list: {  }
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: false
-          plugin_id: list_field
-      filter_groups:
-        operator: AND
-        groups:
-          1: AND
-      block_hide_empty: true
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - 'user.node_grants:view'
-        - user.permissions
-      tags: {  }
-  block_owl_mainsponsors:
-    display_plugin: block
-    id: block_owl_mainsponsors
-    display_title: 'Block OWL Supporters'
-    position: 8
-    display_options:
-      display_extenders: {  }
-      title: Diamond
-      defaults:
-        title: false
-        filters: false
-        filter_groups: false
-      display_description: 'Open Web Lounge supporting sponsors'
       block_hide_empty: true
       filters:
         status:
@@ -417,7 +337,7 @@ display:
           admin_label: ''
           operator: or
           value:
-            owlmain: owlmain
+            homegrown: homegrown
           group: 1
           exposed: false
           expose:
@@ -426,6 +346,8 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
@@ -433,8 +355,6 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -587,6 +507,8 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
@@ -594,8 +516,6 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -616,6 +536,170 @@ display:
           1: AND
       block_description: 'Silver Sponsors'
       block_hide_empty: true
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  block_tristate:
+    display_plugin: block
+    id: block_tristate
+    display_title: 'Block Tri-State'
+    position: 2
+    display_options:
+      display_extenders:
+        metatag_display_extender: {  }
+      title: 'Tri-State sponsors'
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      block_hide_empty: true
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+          group: 1
+        field_level_value:
+          id: field_level_value
+          table: node__field_level
+          field: field_level_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            tristate: tristate
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          plugin_id: list_field
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  block_venue:
+    display_plugin: block
+    id: block_venue
+    display_title: 'Block Venue'
+    position: 2
+    display_options:
+      display_extenders:
+        metatag_display_extender: {  }
+      title: 'Venue sponsor'
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      block_hide_empty: true
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+          group: 1
+        field_level_value:
+          id: field_level_value
+          table: node__field_level
+          field: field_level_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            venue: venue
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          plugin_id: list_field
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
     cache_metadata:
       max-age: -1
       contexts:

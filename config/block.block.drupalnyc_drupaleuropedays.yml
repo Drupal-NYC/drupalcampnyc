@@ -13,7 +13,7 @@ dependencies:
 id: drupalnyc_drupaleuropedays
 theme: drupalnyc
 region: content
-weight: -6
+weight: -5
 provider: null
 plugin: 'menu_block:drupal-europe-days'
 settings:
