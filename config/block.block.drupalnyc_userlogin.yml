@@ -1,0 +1,26 @@
+uuid: 8f3ce7c4-302b-48f6-9de5-2b0522359f65
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - user
+  theme:
+    - drupalnyc
+id: drupalnyc_userlogin
+theme: drupalnyc
+region: content
+weight: -4
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: 'User login'
+  provider: user
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/81
+    negate: false
+    context_mapping: {  }

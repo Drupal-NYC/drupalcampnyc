@@ -1,0 +1,583 @@
+.deck--sponsors--banner {
+  display: none;
+}
+
+body.path-infoscreen {
+  padding-top: 0;
+  height: 920px;
+  width: 1920px;
+
+  .block-page-title-block {
+    display: none;
+  }
+}
+.region-content .block {
+  max-width:none;
+}
+body.path-infoscreen-parking {
+  padding: 50px 25px 25px 25px;
+  background-image: url(/themes/drupalnyc/assets/images/U1-2-background.jpg);
+  background-color: #000;
+  box-sizing: border-box;
+  
+  width: 1360px;
+  height: 768px;
+  background-size: 1360px 768px;
+
+  width: 1360px;
+  height: 768px;
+  background-size: 1360px 768px;
+
+  font-size: 2em;
+  line-height: 1.4em;
+  color: #fff;
+  font-weight: bold;
+
+  .page--main {
+    padding: 25px;
+  }
+
+
+  td {
+    padding: .45em .5em .5em .25em;
+  }
+  .field--name-field-body {
+    width: 55%;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px 25px 40px 25px;
+  }
+  table tr {
+    border-bottom: 2px solid #fff;
+  }
+
+  .region-content .block {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+body.path-infoscreen-m12 {
+  padding: 25px;
+  height: 1080px;
+  width: 1920px;
+  background-image: linear-gradient(to right, #33a8e5, #ab2d92, #374D9C);
+  box-sizing: border-box;
+
+  font-size: 1.75em;
+  line-height: 1.4em;
+
+  .page--main {
+    background-color: #fff;
+    padding: 25px;
+    height: 1030px;
+    width: 1870px;
+  }
+  .deck--content {
+    display: block;
+  }
+  h2 {
+    margin: 0 0 1em;
+  }
+
+  td {
+    padding: .5em 2em .5em .25em;
+  }
+
+  .region-content .block {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+body.path-infoscreen-general {
+  height: 1360px;
+  width: 768px;
+}
+body.path-node-707 {
+  height: 1360px;
+  width: 768px;
+
+  .field--type-viewsreference h2 {
+    display: none;
+  }
+  h1.deck-header.deck--type--deck-header {
+    display: none;
+  }
+  .view-infoscreen-announcements .view-content article.node--promoted {
+    padding-top: 20px;
+    .paragraph h2 {
+      display: block;
+    }
+    .field__item section.deck:first-child:before {
+      display: none;
+    }
+  }
+  .deck--content p {
+    text-align: center;
+  }
+  .field__item section.deck {
+    padding: 0;
+    &:first-child:before {
+      width: 175px;
+      background: url(/themes/drupalnyc/build/images/logo-horizoontal.9108a945.svg) 0 0 no-repeat;
+      height: 60px;
+      position: absolute;
+      z-index: 2018;
+      left: 590px;
+      top: 10px;
+      content: "";
+    }
+  }
+  .deck > h2 {
+    color: #fff;
+    font-size: 30px;
+    line-height: 40px;
+    padding: 20px 0 20px 15px;
+    margin: 0;
+    text-align: left;
+    background-color: #aa2d92;
+    background-image: linear-gradient(to right, #33a8e5, #374d9c, #ab2d92);
+  }
+}
+body.path-infoscreen-tasr {
+  height: 650px;
+  width: 1366px;
+
+  .view-infoscreen-announcements {
+    display: none;
+  }
+}
+body.path-infoscreen-general,
+body.path-infoscreen-tasr,
+body.path-node-707 {
+  padding: 0px;
+
+  .view-infoscreens-general  {
+    position: relative;
+
+    .view-header {
+      position: absolute;
+      top: 15px;
+      right: 10px;
+      z-index: 2018;
+    }
+
+    .view-grouping {
+      padding: 20px 0;
+      margin-bottom: 4000px;
+
+      .view-grouping-header {
+        font-size: 40px;
+        line-height: 50px;
+        text-align: left;
+        color: white;
+        padding: 5px 0 0 10px;
+        background-color: #aa2d92; // fallback
+        background-image: linear-gradient(to right, #33a8e5, #374d9c, #ab2d92);
+        font-family: NexaBold;
+      }
+    }
+    .view-grouping:first-child {
+      padding-top: 0;
+    }
+
+    .view-grouping-content {
+      table {
+        position: relative;
+
+        tr {
+          border-bottom: solid 1px #33a8e5;
+        }
+        tr:last-child {
+          border-bottom: none;
+        }
+      }
+      caption {
+        font-size: 20px;
+        text-align: left;
+        background-color: #aa2d92; // fallback
+        background-image: linear-gradient(to right, #33a8e5, #374d9c, #ab2d92);
+        color: white;
+        padding: 10px 12px;
+        margin: 10px 0;
+        font-weight: bold;
+      }
+      .views-field-field-room {
+        width: 140px;
+        padding: 10px 5px 10px 12px;
+      }
+      .views-field-field-type {
+        width: 80px;
+        padding-right: 0;
+      }
+      .views-field-field-icon {
+        position: relative;
+        width: 50px;
+
+        img {
+          width: 45px;
+          top: 0;
+          position: absolute;
+        }
+      }
+    }
+    .view-grouping-content .views-table:first-child caption {
+      margin-top: 0;
+    }
+  }
+
+  .schedule-Contribution .views-field-field-type {
+    color: #fff;
+  }
+
+  .schedule-Break {
+    position: absolute;
+    top: 14px;
+    left: 100px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+
+    .views-field-field-type {
+      display: none;
+    }
+  }
+
+  .region-content .block {
+    width: 100%;
+  }
+
+  .view-infoscreen-announcements {
+    .view-content {
+      position: absolute;
+      top: 1210px;
+      left: 0;
+      height: 150px;
+      background-color: rgb(171, 45, 146);
+      width: 768px;
+      color: #fff;
+
+      .views-row {
+        display: none;
+      }
+
+      article {
+        padding: 0 20px;
+        h2 a {
+          display: none;
+        }
+        p {
+          margin: 5px 0;
+        }
+        .deck {
+          padding: 0;
+        }
+        .deck-one-column .deck--content,
+        .deck-two-column .deck--content {
+          padding-bottom: 0;
+        }
+        .deck-header.deck--type--deck-header {
+          padding: 0 0 10px 0;
+          font-size: 30px;
+          display: block;
+          margin-bottom: 0;
+        }
+        .paragraph h2 {
+          line-height: 25px;
+          margin-top: 0.2rem;
+        }
+      }
+    }
+    .newsdots {
+      position: absolute;
+      top: 1325px;
+      height: 15px;
+      width: 100%;
+      color: #fff;
+      text-align: center;
+      z-index: 2018;
+      font-size: 20px;
+    }
+  }
+}
+
+body.path-infoscreen,
+body.path-infoscreen-m12,
+body.path-infoscreen-parking,
+body.path-infoscreen-tasr,
+body.path-infoscreen-general,
+body.path-node-707,
+body.path-infoscreen-thanks {
+  overflow: hidden;
+
+  #block-views-block-sponsors-block-diamond,
+  #block-views-block-sponsors-block-platinum {
+    display: none;
+  }
+
+  .view-id-room {
+    padding: 50px;
+    width: 1920px;
+    font-size: 40px;
+    line-height: 45px;
+    background-image: linear-gradient(to right, #33a8e5, #ab2d92, #374D9C);
+    box-sizing: border-box;
+
+    .view-content {
+      background: #fff;
+      padding: 50px;
+      height: 870px;
+      position: relative;
+    }
+
+    .views-row {
+      display: none;
+    }
+
+    .views-field-field-start,
+    .views-field-field-start div,
+    .views-field-field-ends-at,
+    .views-field-field-ends-at div {
+      display: inline;
+    }
+
+    .views-field-field-ends-at:before {
+      content: " - ";
+    }
+
+    .views-row:first-child {
+      position: absolute;
+      top: 50px;
+      width: 1820px;
+      display: block;
+
+      .views-field-title {
+        @include multiLineEllipsis(100px, 3, white);
+
+        font-size: 80px;
+        margin-right: 350px;
+        font-family: NexaBold;
+        color: #000;
+      }
+
+      .views-field-field-icon {
+        position: absolute;
+        top: -100px;
+        right: 0px;
+        width: 450px;
+
+        img {
+          width: 450px;
+        }
+      }
+
+      .views-row-first-header {
+        font-family: NexaBold;
+        color: $primary-color;
+      }
+    }
+
+    .views-row:nth-child(2) {
+      position: absolute;
+      bottom: 50px;
+      width: 1820px;
+      display: block;
+
+      &:before {
+        content: "Next";
+        font-size: 35px;
+        line-height: 50px;
+        font-family: NexaBold;
+        color: $primary-color;
+      }
+
+      .views-field-title {
+        @include multiLineEllipsis(50px, 2, white);
+
+        font-size: 40px;
+        font-family: NexaBold;
+        color: #000;
+      }
+      .views-field-field-icon {
+        display: none;
+      }
+    }
+  }
+
+  .region-content .block {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+// 3,840x2,160
+// 4k monitors
+body.path-infoscreen-s1,
+body.path-infoscreen-s2,
+body.path-infoscreen-s4 {
+  width: 2160px;
+  height: 3840px;
+  .region-content .block {
+    max-width: inherit;
+  }
+  .schedule-Break {
+    position: absolute;
+    top: 2rem;
+    left: 320px;
+    font-weight: bold;
+    font-size: 4rem;
+    color: #fff;
+  }
+  .view-infoscreens-general {
+    .view-header {
+      img {
+        width: 25rem;
+      }
+    }
+    .view-grouping {
+      .view-grouping-header {
+        font-size: 8rem;
+        line-height: 9rem;
+      }
+      caption {
+        font-size: 4rem;
+        line-height: 6rem;
+      }
+
+      .views-field-field-room {
+        width: 560px;
+        padding: 25px 5px 25px 12px;
+      }
+      .views-field-field-type {
+        width: 320px;
+        padding-right: 0;
+      }
+      .views-field-field-icon {
+        position: relative;
+        width: 50px;
+
+        img {
+          width: 4.5rem;
+          top: 1rem;
+          position: absolute;
+        }
+      }
+
+    }
+  }
+
+  .view-infoscreen-announcements .newsdots {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    top: auto;
+    height: 5rem;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    z-index: 2018;
+    font-size: 4rem;
+  }
+  .view-infoscreen-announcements .view-content {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    top: auto;
+    height: 300px;
+    background-color: #ab2d92;
+    width: 100%;
+    color: #fff;
+    font-size: inherit;
+    line-height: inherit;
+  }
+  .view-infoscreen-announcements .view-content article .deck-header.deck--type--deck-header {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+  .view-infoscreen-announcements .view-content article .paragraph h2 {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+  tbody {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  &.path-node-707 {
+
+    p {
+      display: flex;
+      align-items: center;
+      img {
+        width: 80%;
+        margin: 10rem auto;
+      }
+    }
+    .deck > h2 {
+      font-size: 8rem;
+      line-height: 9rem;
+    }
+    .field__item section.deck:first-child:before {
+      width: 26rem;
+      background: url(/themes/drupalnyc/build/images/logo-horizoontal.9108a945.svg) 0 0 no-repeat;
+      height: 9rem;
+      position: absolute;
+      z-index: 2018;
+      left: auto;
+      right: 0;
+      top: 1rem;
+      content: "";
+      background-size: 25rem;
+    }
+  }
+}
+
+
+.path-infoscreen-social-wall {
+  #block-views-block-sponsors-block-diamond,
+  #block-views-block-sponsors-block-platinum {
+    display: none;
+  }
+
+  overflow: hidden;
+  background-image: linear-gradient(to right, #33a8e5, #374d9c, #ab2d92);
+  .deck--type--deck-header {
+    text-align: center;
+    color: white;
+  }
+  .deck--type--deck-1-column {
+    h2 {
+      text-align: center;
+      display: block;
+      font-size: 1rem;
+      color: white;
+    }
+  }
+  .region-content .block {
+    width: 100%;
+    margin: 0;
+  }
+  .grid-item {
+    width: 20%;
+    padding: .5rem;
+    blockquote {
+      display:none;
+    }
+  }
+  .twitter-tweet-rendered {
+    margin: 0 !important;
+    width: auto !important;
+  }
+}
+
+.infoscreen-debug {
+  display:none;
+  position: absolute;
+  top:0;
+  right:0;
+  background-color:white;
+  padding:.25rem;
+  border-left:1px dashed black;
+  border-bottom:1px dashed black;
+  color: black;
+}
+

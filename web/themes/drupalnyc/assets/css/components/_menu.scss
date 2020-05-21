@@ -1,0 +1,338 @@
+// Basic menu handling
+.menu {
+  list-style: none outside;
+  margin-left: 1em; /* LTR */
+  padding: 0;
+  text-align: left; /* LTR */
+}
+
+[dir="rtl"] ul.menu {
+  margin-left: 0;
+  margin-right: 1em;
+  text-align: right;
+}
+
+.menu-item {
+  margin: 0;
+}
+// was 10% & 65% leaving 25% for user menu (branding / nav / user menu)
+// now 50% & 30% leaving 20% for user menu
+// handling of the main menu. including dropdowns
+.menu--main {
+  flex: 1 2 30%;
+  justify-content: flex-end;
+
+  @include responsive(desktop) {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+
+    .menu-item {
+      position: relative;
+    }
+    .menu-item > .menu {
+      visibility: hidden;
+      opacity: 0;
+      display: none;
+
+      min-width: (10 * $grid-gap);
+      position: absolute;
+      margin-left: -20px;
+      padding-top: -1 * (10 * $grid-gap);
+
+      .menu-item {
+        white-space: nowrap;
+        border-top: 2px solid transparent;
+        &:hover {
+          background-image: inherit;
+          background-color: rgba($quaternary-color, 0.75);
+          border-top: 2px solid white;
+        }
+      }
+      a {
+        padding: 0.4rem 0.8rem;
+        font-size: 16px;
+      }
+    }
+
+    .menu-item:hover > .menu,
+    .menu-item:focus-within > .menu {
+      visibility: visible;
+      opacity: 1;
+      display: block;
+      padding-top: 0;
+    }
+
+    .menu-item {
+      @include nyc-gradient;
+      background-attachment: fixed;
+    }
+    .menu-item {
+      background: none;
+    }
+    // Top level items
+    > .menu-item {
+      margin: 0 3.5vw 0 0;
+      &:last-child {
+        margin-right: 2vw;
+      }
+      // Only the top level link element
+      & > a {
+        font-size: 18px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+
+        &:before {
+          content: "";
+          position: absolute;
+          background-color: transparent;
+          height: 5px;
+          width: 100%;
+          top: -50px;
+          transition: all 0.15s ease;
+        }
+        &:hover:before,
+        &:focus-within:before {
+          background-color: $white-color;
+          top: 0;
+        }
+      }
+      &.menu-item--expanded {
+        & > a:after {
+          content: "";
+          height: 24px;
+          width: 10px;
+          background-image: url("../../images/plussign.svg");
+          background-size: contain;
+          background-repeat: no-repeat;
+          filter: brightness(0) invert(1);
+          transition: all 0.3s ease;
+          animation: 0.5s cubic-bezier(0.59, 1.68, 0.64, 0.82) 0.3s 1 fadein
+            forwards;
+          margin-left: 5px;
+          opacity: 0;
+        }
+      }
+    }
+    a {
+      text-decoration: none;
+    }
+
+    a.is-active {
+      color: $white-color;
+    }
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+$menu-width: 90vw;
+
+.mobile--page--header {
+  .block-system-branding-block {
+    position: absolute;
+    left: calc(50% - 110px);
+    @media only screen and (max-width: 500px) {
+      left: calc(50% - 33px);
+    }
+  }
+  .region-header {
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  nav.block-menu.menu--main {
+    overflow-x: scroll;
+    position: fixed;
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 80px;
+    width: $menu-width;
+    left: 0;
+    transform: translate(-$menu-width);
+    background: white;
+    @include transition(0.3s);
+    -webkit-box-shadow: inset -15px 0px 27px -1px rgba(0, 0, 0, 0.21);
+    -moz-box-shadow: inset -15px 0px 27px -1px rgba(0, 0, 0, 0.21);
+    box-shadow: inset -15px 0px 27px -1px rgba(0, 0, 0, 0.21);
+
+    .menu--main {
+      top: 0;
+      position: absolute;
+    }
+
+    &.open {
+      transform: translate(0);
+    }
+    a {
+      color: black;
+      height: auto;
+      padding: 1rem 0;
+
+      font-size: 1.1rem;
+
+      &.is-active {
+        color: $secondary-color;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .menu {
+    margin: 0;
+    margin-left: 1rem;
+  }
+  .menu-item--expanded {
+    & > a:after {
+      content: "";
+      display: inline-block;
+      height: 1.2rem;
+      width: 10px;
+      background-image: url("../../images/plussign.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      filter: brightness(0);
+      margin-left: 5px;
+    }
+    & > a.is-active:after {
+      // Magic (trying to hit the $secondary-color)
+      filter: invert(0.5) sepia(1) saturate(5) hue-rotate(267deg)
+        brightness(0.7);
+    }
+  }
+  .hamburger {
+    position: fixed;
+    height: 80px;
+    width: 80px;
+    top: 0;
+    z-index: 6;
+    cursor: pointer;
+
+    span {
+      background-color: white;
+      width: 40px;
+      height: 3px;
+      position: absolute;
+      left: 20px;
+      &:nth-child(1) {
+        top: 32px;
+      }
+      &:nth-child(2) {
+        top: 41px;
+      }
+      &:nth-child(3) {
+        top: 50px;
+      }
+    }
+  }
+}
+
+main {
+  // Breaks the tabs menu.
+  //transform: translate(0);
+  @include transition(0.3s);
+
+  &.mobile-menu-opened {
+    transform: translate($menu-width);
+  }
+}
+
+.page--header {
+  display: block;
+
+  @include responsive(tablet) {
+    display: none;
+  }
+}
+
+.mobile--page--header {
+  display: none;
+
+  @include responsive(tablet) {
+    display: block;
+  }
+}
+
+html,
+body {
+  @include responsive(tablet) {
+    width: 100%;
+    overflow-x: hidden;
+
+    nav.block-menu.menu--account a {
+      border: none;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+nav.menu--account {
+  height: 100%;
+  margin-right: 1.25rem;
+
+  @include responsive(desktop) {
+    flex: 0 0 auto;
+    margin: 0 1.5vw;
+  }
+}
+
+ul.menu--account {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  margin: 0;
+  height: 100%;
+
+  @include responsive(desktop) {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  li {
+    @include responsive(desktop) {
+      margin-right: 1.2vw;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  a {
+    color: $white-color;
+    font-size: 18px;
+    margin: 0;
+    position: relative;
+    text-decoration: none;
+    border: 2px solid $white-color;
+    overflow: hidden;
+    padding: 0.55rem 1.2vw;
+    transition: all 0.15s ease;
+
+    &:hover {
+      color: $secondary-color;
+      background-color: $white-color;
+    }
+
+    &.is-active {
+      color: $white-color;
+    }
+  }
+}
+
+.user-logged-in .menu--account a[href="/user/register"] {
+  display: none;
+}

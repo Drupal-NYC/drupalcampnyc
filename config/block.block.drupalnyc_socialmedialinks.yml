@@ -1,0 +1,127 @@
+uuid: 6e8a8708-ebd9-4cea-984f-a32c84903ac2
+langcode: en
+status: true
+dependencies:
+  module:
+    - de_core
+    - social_media_links
+  theme:
+    - drupalnyc
+id: drupalnyc_socialmedialinks
+theme: drupalnyc
+region: footer
+weight: -4
+provider: null
+plugin: social_media_links_block
+settings:
+  id: social_media_links_block
+  label: Connect
+  provider: social_media_links
+  label_display: visible
+  platforms:
+    drupal_slack:
+      value: messages/C70PEFHUK
+      description: '(join drupal slack first - https://drupal.org/slack/)'
+      weight: '-10'
+    behance:
+      value: ''
+      description: ''
+      weight: '-10'
+    bitbucket:
+      value: ''
+      description: ''
+      weight: '-9'
+    medium:
+      value: '@drupalcampnyc'
+      description: 'Read our blog on Medium'
+      weight: '-9'
+    contact:
+      value: ''
+      description: ''
+      weight: '-8'
+    drupal:
+      value: ''
+      description: ''
+      weight: '-7'
+    email:
+      value: ''
+      description: ''
+      weight: '-6'
+    facebook:
+      value: drupaleurope
+      description: 'Find us on Facebook'
+      weight: '-5'
+    flickr:
+      value: ''
+      description: ''
+      weight: '-4'
+    github:
+      value: ''
+      description: ''
+      weight: '-3'
+    googleplus:
+      value: ''
+      description: ''
+      weight: '-2'
+    instagram:
+      value: ''
+      description: ''
+      weight: '-1'
+    linkedin:
+      value: company/drupal-europe/
+      description: 'Find us on LinkedIn'
+      weight: '0'
+    pinterest:
+      value: ''
+      description: ''
+      weight: '1'
+    rss:
+      value: ''
+      description: ''
+      weight: '2'
+    slideshare:
+      value: ''
+      description: ''
+      weight: '3'
+    tumblr:
+      value: ''
+      description: ''
+      weight: '4'
+    twitter:
+      value: 'DrupalEurope?lang=en'
+      description: 'Follow us on Twitter'
+      weight: '5'
+    vimeo:
+      value: ''
+      description: ''
+      weight: '6'
+    vkontakte:
+      value: ''
+      description: ''
+      weight: '7'
+    youtube:
+      value: ''
+      description: ''
+      weight: '8'
+    youtube_channel:
+      value: ''
+      description: ''
+      weight: '9'
+  appearance:
+    orientation: h
+    show_name: 0
+  link_attributes:
+    target: '<none>'
+    rel: '<none>'
+  iconset:
+    style: 'fontawesome:2x'
+    installed_iconsets:
+      fontawesome:
+        examples: ''
+visibility:
+  current_user_page:
+    id: current_user_page
+    show_on_own_page: 0
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
