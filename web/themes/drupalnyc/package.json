@@ -3,7 +3,7 @@
     "@symfony/webpack-encore": "^0.30.2",
     "image-webpack-loader": "^6.0.0",
     "node-sass": "^4.14.1",
-    "sass-loader": "^7.3.1"
+    "sass-loader": "^8.0.2"
   },
   "license": "UNLICENSED",
   "private": true,
