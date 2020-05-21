@@ -10,7 +10,7 @@ dependencies:
 id: submitabof
 theme: drupaleurope
 region: content
-weight: -2
+weight: -1
 provider: null
 plugin: 'block_content:19214c0e-023f-414d-b6bd-38aaab22b3c2'
 settings:

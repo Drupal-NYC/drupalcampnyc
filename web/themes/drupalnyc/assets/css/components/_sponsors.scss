@@ -38,6 +38,9 @@
   }
 }
 
+.deck--sponsors--level-venue img {
+  width: 90%;
+}
 .deck--sponsors--level-diamond img {
   width: 90%;
 }
@@ -112,6 +115,7 @@
   }
 }
 
+.region-content .block-views-blocksponsors-block-venue,
 .region-content .block-views-blocksponsors-block-diamond,
 .region-content .block-views-blocksponsors-block-platinum {
   display: flex;
@@ -144,6 +148,7 @@
   }
 }
 
+.region-content .block-views-blocksponsors-block-venue,
 .region-content .block-views-blocksponsors-block-diamond {
   border-top: none;
   border-bottom: solid 1px #ebe6e6;
@@ -159,9 +164,7 @@
     display: inline;
   }
 }
-body.path-frontpage .block-views-blocksponsors-block-diamond {
-  display: none;
-}
+
 .deck--sponsors--banner {
   display: none;
 }

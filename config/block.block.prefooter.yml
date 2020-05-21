@@ -11,7 +11,7 @@ dependencies:
 id: prefooter
 theme: drupaleurope
 region: prefooter
-weight: -10
+weight: -9
 provider: null
 plugin: 'menu_block:pre-footer'
 settings:

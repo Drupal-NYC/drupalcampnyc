@@ -10,7 +10,7 @@ dependencies:
 id: userlogin
 theme: drupaleurope
 region: content
-weight: -3
+weight: -2
 provider: null
 plugin: user_login_block
 settings:

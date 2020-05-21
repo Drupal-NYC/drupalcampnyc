@@ -70,12 +70,5 @@
  *   in different view modes.
  */
 #}
-{% if node.field_website.getValue().0.uri %}
-<a href="{{ node.field_website.getValue().0.uri }}" target="_blank" rel="noopener">
-    {{ content.field_logo }}
-    {{ content|without('field_logo') }}
-</a>
-
-{% else %}
-    <h1>Missing URL!</h1>
-{% endif %}
+{{ content.field_logo }}
+{{ content|without('field_logo') }}

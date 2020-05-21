@@ -1,23 +1,22 @@
-uuid: 7386babf-892e-4a57-b91f-1009caff712d
+uuid: 30015f3a-e4ce-4ef0-b2ff-2406b28d963a
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - views.view.sponsors
   module:
     - de_core
-    - system
     - views
   theme:
     - drupaleurope
-id: views_block__sponsors_block_platinum
+id: views_block__sponsors_block_venue
 theme: drupaleurope
 region: content
-weight: 0
+weight: -5
 provider: null
-plugin: 'views_block:sponsors-block_platinum'
+plugin: 'views_block:sponsors-block_venue'
 settings:
-  id: 'views_block:sponsors-block_platinum'
+  id: 'views_block:sponsors-block_venue'
   label: ''
   provider: views
   label_display: visible
@@ -30,8 +29,3 @@ visibility:
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'
-  request_path:
-    id: request_path
-    pages: ''
-    negate: true
-    context_mapping: {  }

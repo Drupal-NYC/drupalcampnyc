@@ -1,4 +1,4 @@
-uuid: 629a0fca-a47e-4eb2-ae82-e238f6efc4f1
+uuid: b9e67b00-91bf-4d61-b0d0-4e7bb3c31cbc
 langcode: en
 status: true
 dependencies:
@@ -8,15 +8,15 @@ dependencies:
     - de_core
     - views
   theme:
-    - drupaleurope
-id: views_block__sponsors_block_diamond
-theme: drupaleurope
+    - drupalnyc
+id: views_block__sponsors_block_venue_2
+theme: drupalnyc
 region: content
-weight: -4
+weight: -7
 provider: null
-plugin: 'views_block:sponsors-block_diamond'
+plugin: 'views_block:sponsors-block_venue'
 settings:
-  id: 'views_block:sponsors-block_diamond'
+  id: 'views_block:sponsors-block_venue'
   label: ''
   provider: views
   label_display: visible

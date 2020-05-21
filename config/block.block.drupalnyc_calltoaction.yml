@@ -14,7 +14,7 @@ dependencies:
 id: drupalnyc_calltoaction
 theme: drupalnyc
 region: content
-weight: -5
+weight: -4
 provider: null
 plugin: 'menu_block:user-cta'
 settings:

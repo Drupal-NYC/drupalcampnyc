@@ -1,6 +1,6 @@
 uuid: af1b3712-fd93-4563-86cc-92a3dc85dd3f
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.session_proposal_review
@@ -12,7 +12,7 @@ dependencies:
 id: views_block__session_proposal_review_block_flagged
 theme: drupaleurope
 region: content
-weight: -5
+weight: -6
 provider: null
 plugin: 'views_block:session_proposal_review-block_flagged'
 settings:
