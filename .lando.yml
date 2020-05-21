@@ -32,3 +32,4 @@ tooling:
 excludes:
   - vendor
   - web/themes/drupaleurope/node_modules
+  - web/themes/drupalnyc/node_modules
