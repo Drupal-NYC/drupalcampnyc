@@ -51,6 +51,7 @@ codeship.aes
 
 # Ignore generated theme files
 /web/themes/drupaleurope/build/
+/web/themes/drupalnyc/build/
 /web/themes/**/node_modules/
 
 # Ignore Lando local configuration
