@@ -5,7 +5,9 @@ dependencies:
   config:
     - system.menu.account
   module:
+    - de_core
     - system
+    - user
   theme:
     - drupaleurope
 _core:
@@ -24,4 +26,17 @@ settings:
   level: 1
   depth: 1
   expand_all_items: false
-visibility: {  }
+visibility:
+  current_user_page:
+    id: current_user_page
+    show_on_own_page: 0
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
