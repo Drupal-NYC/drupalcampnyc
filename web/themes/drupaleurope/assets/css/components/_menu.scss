@@ -18,7 +18,7 @@
 
 // handling of the main menu. including dropdowns
 .menu--main {
-  flex: 1 2 60%;
+  flex: 1 2 30%;
   justify-content: flex-end;
 
   @include responsive(desktop) {
