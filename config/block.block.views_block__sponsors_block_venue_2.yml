@@ -6,6 +6,7 @@ dependencies:
     - views.view.sponsors
   module:
     - de_core
+    - system
     - views
   theme:
     - drupalnyc
@@ -29,3 +30,8 @@ visibility:
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'
+  request_path:
+    id: request_path
+    pages: /sponsors
+    negate: true
+    context_mapping: {  }
