@@ -31,6 +31,7 @@
 
 # Ignore sensitive information
 /web/sites/*/settings.local.php
+/web/sites/*/services.local.yml
 /keys
 env
 codeship.aes
