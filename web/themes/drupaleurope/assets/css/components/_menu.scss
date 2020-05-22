@@ -18,7 +18,7 @@
 
 // handling of the main menu. including dropdowns
 .menu--main {
-  flex: 1 2 65%;
+  flex: 1 2 30%;
   justify-content: flex-end;
 
   @include responsive(desktop) {
@@ -134,16 +134,8 @@
 $menu-width: 90vw;
 
 .mobile--page--header {
-  .block-system-branding-block {
-    position: absolute;
-    left: calc(50% - 110px);
-    @media only screen and (max-width: 500px) {
-      left: calc(50% - 33px);
-    }
-  }
   .region-header {
     align-items: flex-end;
-    justify-content: flex-end;
   }
   nav.block-menu.menu--main {
     overflow-x: scroll;
