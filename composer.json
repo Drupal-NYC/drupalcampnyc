@@ -31,7 +31,7 @@
         "drupal/console": "^1.9",
         "drupal/core": "^8.8",
         "drupal/core-composer-scaffold": "^8.8",
-        "drupal/core-recommended": "8.8.5",
+        "drupal/core-recommended": "8.8.6",
         "drupal/csv_serialization": "^2.0",
         "drupal/ctools": "^3.4",
         "drupal/devel": "^2.1",
@@ -49,8 +49,8 @@
         "drupal/markup": "^1.0",
         "drupal/menu_block": "^1.5",
         "drupal/metatag": "^1.12",
-        "drupal/pantheon_advanced_page_cache": "^1.0",
-        "drupal/paragraphs": "^1.11",
+        "drupal/pantheon_advanced_page_cache": "^1.1",
+        "drupal/paragraphs": "^1.12",
         "drupal/pathauto": "^1.8",
         "drupal/redirect": "^1.6",
         "drupal/redis": "^1.4",
@@ -72,7 +72,7 @@
         "webmozart/path-util": "^2.3"
     },
     "require-dev": {
-        "drupal/core-dev": "8.8.5",
+        "drupal/core-dev": "8.8.6",
         "zaporylie/composer-drupal-optimizations": "^1.1"
     },
     "conflict": {
