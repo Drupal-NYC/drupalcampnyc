@@ -1,4 +1,0 @@
-dependencies:
-  enforced:
-    module:
-      - devel
