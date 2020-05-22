@@ -40,29 +40,6 @@ body:not(.iframe) {
   padding-top: 80px;
 }
 
-.site-logo {
-  background: url("../../images/logo-horizoontal.svg");
-  width: 220px;
-  height: 75px;
-  background-size: 220px 75px;
-  display: block;
-  img {
-    display: none;
-  }
-
-  @media only screen and (max-width: 500px) {
-    background: none;
-    width: auto;
-
-    img {
-      display: block;
-    }
-  }
-}
-.site-name {
-  display: none;
-}
-
 .region-header a {
   color: $white-color;
   font-size: 1.25rem;
@@ -73,26 +50,26 @@ body:not(.iframe) {
   color: $tertiary-color;
 }
 .block-system-branding-block {
-  flex: 1 1 10%;
+  display: flex;
+  align-items: center;
 
   img {
     max-width: 100%;
     height: 70px;
     padding: 5px 10px;
   }
-}
 
-.path-frontpage {
-  .page--header {
-    a.site-logo {
-      @include transition(0.3s);
-      opacity: 0;
-    }
-    &.fade-in a.site-logo {
-      opacity: 1;
+  @media only screen and (max-width: 1023px) {
+    position: relative;
+    left: 80px;
+    align-self: center;
+
+    img {
+      display: block;
     }
   }
+
+  .site-name > a {
+    font-size: 2rem;
+  }
 }
-
-
-
