@@ -50,7 +50,7 @@ if (defined('PANTHEON_ENVIRONMENT')) {
 
     // Don't allow configuration to be modified.
     $settings['config_readonly'] = TRUE;
-    
+
     // But do allow menus to be reordered.
     $settings['config_readonly_whitelist_patterns'] = [
       'system.menu.*',
@@ -60,6 +60,67 @@ if (defined('PANTHEON_ENVIRONMENT')) {
   else {
     // Enable development modules and config.
     $config['config_split.config_split.development']['status'] = TRUE;
+  }
+
+  // See https://pantheon.io/docs/redirects
+  if (php_sapi_name() != 'cli') {
+    // Redirect to https://$primary_domain in the Live environment
+    if ($_ENV['PANTHEON_ENVIRONMENT'] === 'live') {
+      // Replace www.example.com with your registered domain name.
+      $primary_domain = '2020.drupalcamp.nyc';
+    }
+    else {
+      // Redirect to HTTPS on every Pantheon environment.
+      $primary_domain = $_SERVER['HTTP_HOST'];
+    }
+
+    if ($_SERVER['HTTP_HOST'] != $primary_domain) {
+      // Name transaction "redirect" in New Relic for improved reporting.
+      if (extension_loaded('newrelic')) {
+        newrelic_name_transaction("redirect");
+      }
+
+      // By default, redirect to the request URI.
+      $destination = $_SERVER['REQUEST_URI'];
+
+      // Redirect to specific pages for known www requests (some of these can't
+      // be handled by the redirect module because of path collisions).
+      if ($_SERVER['HTTP_HOST'] == 'www.drupalcamp.nyc') {
+        switch ($_SERVER['REQUEST_URI']) {
+          case '/node/11': // About
+          case '/node/30': // What's Going On
+            $destination = '/';
+            break;
+          case '/contact':
+            $destination = '/how-to-sponsor';
+            break;
+          case '/local-eateries':
+          case '/node/5': // Venue
+            $destination = '/venue';
+            break;
+          case '/our-sponsors':
+            $destination = '/sponsors';
+            break;
+          case '/Program':
+            $destination = '/program';
+            break;
+          case '/credit':
+            $destination = '/volunteers';
+            break;
+        }
+      }
+
+      header('HTTP/1.0 301 Moved Permanently');
+      header('Location: https://' . $primary_domain . $destination);
+      exit();
+    }
+    else {
+      // Redirects from the primary domain HTTP to HTTPS are handled by Pantheon
+      // via pantheon.yml's "enforce_https" option.
+    }
+
+    // Drupal 8 Trusted Host Settings
+    $settings['trusted_host_patterns'] = array('^'. preg_quote($primary_domain) .'$');
   }
 
   // Include the Redis services.yml file. Adjust the path if you installed to a contrib or other subdirectory.
