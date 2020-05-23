@@ -30,8 +30,12 @@ display:
         options:
           perm: 'view paragraph content element_user_lists'
       cache:
-        type: tag
-        options: {  }
+        type: time
+        options:
+          results_lifespan: 3600
+          results_lifespan_custom: 0
+          output_lifespan: 3600
+          output_lifespan_custom: 0
       query:
         type: views_query
         options:
@@ -579,7 +583,8 @@ display:
     display_title: 'Block Orga Team'
     position: 1
     display_options:
-      display_extenders: {  }
+      display_extenders:
+        metatag_display_extender: {  }
       title: ''
       defaults:
         title: false
@@ -734,10 +739,10 @@ display:
         groups:
           1: AND
       sorts:
-        created:
-          id: created
-          table: users_field_data
-          field: created
+        random:
+          id: random
+          table: views
+          field: random
           relationship: none
           group_type: group
           admin_label: ''
@@ -745,12 +750,9 @@ display:
           exposed: false
           expose:
             label: ''
-          granularity: hour
-          entity_type: user
-          entity_field: created
-          plugin_id: date
+          plugin_id: random
     cache_metadata:
-      max-age: -1
+      max-age: 0
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
