@@ -24,8 +24,8 @@ settings:
       value: gold
       label: 'New Amsterdam (Gold)'
     -
-      value: silver
-      label: 'Industrialist (Silver)'
+      value: community
+      label: 'Industrialist (Community)'
     -
       value: homegrown
       label: Homegrown
