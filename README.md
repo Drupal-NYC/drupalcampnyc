@@ -62,13 +62,11 @@ Note that the git repo already has a `.lando.yml` file so you shouldn't run `lan
 
 ## Refresh from Pantheon
 
-To replace your local environment's database and files with that of our Test environment (canonical until the site goes live), ensure that you are using the Pantheon lando.local.yml described under "Initial Setup" above, ensure that you are a member of the Pantheon site's "Team", then:
+To replace your local environment's database and files with that of our Live environment, ensure that you are using the Pantheon lando.local.yml described under "Initial Setup" above, ensure that you are a member of the Pantheon site's "Team", then:
 1. `lando pull`
 2. `lando drush cim`
 
 Note that this will overwrite your local database and files. The `lando drush cim` ensures that your local environment uses the development-specific configuration (e.g. enables Devel).
-
-Once the site is live, this section (and .lando.yml) needs to be updated to reflect the use of the Live environment.
 
 You now have a fully functional local environment, accessible at [https://drupalcampnyc.lndo.site/](https://drupalcampnyc.lndo.site/)
 

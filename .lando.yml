@@ -25,9 +25,9 @@ tooling:
       code:
         default: none
       database:
-        default: test
+        default: live
       files:
-        default: test
+        default: live
   push: disabled
 excludes:
   - vendor
