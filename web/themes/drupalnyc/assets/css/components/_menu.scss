@@ -140,10 +140,11 @@ $menu-width: 90vw;
 .mobile--page--header {
   .block-system-branding-block {
     position: absolute;
-    left: calc(50% - 110px);
-    @media only screen and (max-width: 500px) {
-      left: calc(50% - 33px);
-    }
+    top: 0;
+    left: calc(50% - 79px);
+    //@media only screen and (max-width: 500px) {
+    //  left: calc(50% - 33px);
+    //}
   }
   .region-header {
     align-items: flex-end;
