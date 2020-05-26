@@ -31,7 +31,7 @@ Our use of CodeShip for CI has many benefits, but one side effect is that we can
 Note that the git repo already has a `.lando.yml` file so you shouldn't run `lando init`.
 
 1. Download and install the [latest release of Lando](https://github.com/lando/lando/releases/latest)
-2. Create a directory to contain the site (e.g. `mkdir ~/Sites/drupalcampnyc`)
+2. Create a directory to contain the site (e.g. `mkdir ~/Sites/drupalcampnyc`). To avoid file permission issues, it is strongly recommended that this directory be located within your home folder.
 3. Change to that directory (e.g. `cd ~/Sites/drupalcampnyc`)
 4. If you have your local SSH public key [added to your GitHub account](https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account) (recommended), clone the repository using:
 
@@ -44,6 +44,8 @@ Note that the git repo already has a `.lando.yml` file so you shouldn't run `lan
 5. If you are a member (on Pantheon) of the DrupalCampNYC Pantheon site's "Team", copy the Pantheon-enabled local Lando config:
 
    `cp setup/lando-pantheon/.lando.local.yml .`
+
+   And be sure that you have [uploaded your public SSH key to Pantheon](https://pantheon.io/docs/ssh-keys#add-your-ssh-key-to-pantheon).
 
    Otherwise, copy the non-Pantheon local Lando config:
 
