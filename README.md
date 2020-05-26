@@ -1,4 +1,8 @@
-# DrupalCamp NYC D8
+# DrupalCampNYC Website
+
+Anyone can install this website locally even without being involved in DrupalCampNYC, but the website will have no content and the frontpage will point to a nonexistent page node until you create content and change the frontpage configuration.
+
+# DrupalCampNYC DevOps
 
 [drupalcamp.nyc](https://www.drupalcamp.nyc) is hosted on Pantheon. You need to be a member of the [DrupalCampNYC Pantheon site's "Team"](https://dashboard.pantheon.io/sites/36d6210e-0ea0-4579-9a00-a8d3ef891b81) (link only works if you are a member) to be able to:
 * Make a manual backup of the site
