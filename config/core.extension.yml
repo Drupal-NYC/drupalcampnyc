@@ -58,6 +58,7 @@ module:
   metatag_twitter_cards: 0
   metatag_views: 0
   node: 0
+  nyc_core: 0
   options: 0
   pantheon_advanced_page_cache: 0
   paragraphs_type_permissions: 0
