@@ -175,3 +175,26 @@ body.path-frontpage .deck--sponsors--banner {
 .paragraph--type--element-sponsor + .paragraph--type--element-sponsor {
   margin-top: 3rem;
 }
+
+table.sponsorship-table {
+  th {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  td {
+    text-align: center;
+  }
+
+  th:first-child {
+    text-align: left;
+  }
+
+  td:first-child {
+    text-align: right;
+  }
+
+  span.secondary {
+    font-size: 12px;
+  }
+}
