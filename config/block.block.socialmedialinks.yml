@@ -23,37 +23,37 @@ settings:
       value: DrupalCampNYC
       description: 'Follow us on Twitter'
       weight: '-32'
+    facebook:
+      value: Drupalcampnyc/
+      description: 'Find us on Facebook'
+      weight: '-31'
     drupal_slack:
       value: slack
       description: ''
-      weight: '-31'
+      weight: '-30'
     behance:
       value: ''
       description: ''
-      weight: '-30'
+      weight: '-29'
     bitbucket:
       value: ''
       description: ''
-      weight: '-29'
+      weight: '-28'
     medium:
       value: ''
       description: 'Read our blog on Medium'
-      weight: '-28'
+      weight: '-27'
     contact:
       value: ''
       description: ''
-      weight: '-27'
+      weight: '-26'
     drupal:
       value: ''
       description: ''
-      weight: '-26'
+      weight: '-25'
     email:
       value: ''
       description: ''
-      weight: '-25'
-    facebook:
-      value: ''
-      description: 'Find us on Facebook'
       weight: '-24'
     flickr:
       value: ''
