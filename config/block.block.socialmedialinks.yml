@@ -22,14 +22,18 @@ settings:
     twitter:
       value: DrupalCampNYC
       description: 'Follow us on Twitter'
-      weight: '-32'
+      weight: '-33'
     facebook:
       value: Drupalcampnyc/
       description: 'Find us on Facebook'
-      weight: '-31'
+      weight: '-32'
     drupal_slack:
       value: slack
-      description: ''
+      description: 'Chat in our Slack community'
+      weight: '-31'
+    drupalnyc:
+      value: /
+      description: 'Visit the DrupalNYC website'
       weight: '-30'
     behance:
       value: ''
