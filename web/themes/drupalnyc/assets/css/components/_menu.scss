@@ -15,11 +15,10 @@
 .menu-item {
   margin: 0;
 }
-// was 10% & 65% leaving 25% for user menu (branding / nav / user menu)
-// now 50% & 30% leaving 20% for user menu
+
 // handling of the main menu. including dropdowns
 .menu--main {
-  flex: 1 2 30%;
+  flex: 1 2 65%;
   justify-content: flex-end;
 
   @include responsive(desktop) {
@@ -65,11 +64,8 @@
     }
 
     .menu-item {
-      @include nyc-gradient;
+      @include due-gradient;
       background-attachment: fixed;
-    }
-    .menu-item {
-      background: none;
     }
     // Top level items
     > .menu-item {
