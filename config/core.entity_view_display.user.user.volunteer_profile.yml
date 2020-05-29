@@ -33,11 +33,11 @@ dependencies:
     - field.field.user.user.field_u_testimonial
     - field.field.user.user.field_u_volunteer_about
     - field.field.user.user.user_picture
-    - image.style.user_picture
+    - responsive_image.styles.user_picture
   module:
     - empty_fields
     - field_group
-    - svg_image
+    - svg_image_responsive
     - text
     - user
 third_party_settings:
@@ -148,16 +148,16 @@ content:
     settings: {  }
     third_party_settings: {  }
   user_picture:
-    type: image
+    type: responsive_image
     weight: 0
     region: content
     settings:
-      image_style: user_picture
+      responsive_image_style: user_picture
       image_link: ''
-      svg_render_as_image: true
+      svg_render_as_image: '1'
       svg_attributes:
-        width: null
-        height: null
+        width: ''
+        height: ''
     third_party_settings:
       empty_fields:
         handler: ''

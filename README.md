@@ -1,4 +1,8 @@
-# DrupalCamp NYC D8
+# DrupalCampNYC Website
+
+Anyone can install this website locally even without being involved in DrupalCampNYC, but the website will have no content and the frontpage will point to a nonexistent page node until you create content and change the frontpage configuration.
+
+# DrupalCampNYC DevOps
 
 [drupalcamp.nyc](https://www.drupalcamp.nyc) is hosted on Pantheon. You need to be a member of the [DrupalCampNYC Pantheon site's "Team"](https://dashboard.pantheon.io/sites/36d6210e-0ea0-4579-9a00-a8d3ef891b81) (link only works if you are a member) to be able to:
 * Make a manual backup of the site
@@ -27,7 +31,7 @@ Our use of CodeShip for CI has many benefits, but one side effect is that we can
 Note that the git repo already has a `.lando.yml` file so you shouldn't run `lando init`.
 
 1. Download and install the [latest release of Lando](https://github.com/lando/lando/releases/latest)
-2. Create a directory to contain the site (e.g. `mkdir ~/Sites/drupalcampnyc`)
+2. Create a directory to contain the site (e.g. `mkdir ~/Sites/drupalcampnyc`). To avoid file permission issues, it is strongly recommended that this directory be located within your home folder.
 3. Change to that directory (e.g. `cd ~/Sites/drupalcampnyc`)
 4. If you have your local SSH public key [added to your GitHub account](https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account) (recommended), clone the repository using:
 
@@ -40,6 +44,8 @@ Note that the git repo already has a `.lando.yml` file so you shouldn't run `lan
 5. If you are a member (on Pantheon) of the DrupalCampNYC Pantheon site's "Team", copy the Pantheon-enabled local Lando config:
 
    `cp setup/lando-pantheon/.lando.local.yml .`
+
+   And be sure that you have [uploaded your public SSH key to Pantheon](https://pantheon.io/docs/ssh-keys#add-your-ssh-key-to-pantheon).
 
    Otherwise, copy the non-Pantheon local Lando config:
 
@@ -64,9 +70,10 @@ Note that the git repo already has a `.lando.yml` file so you shouldn't run `lan
 
 To replace your local environment's database and files with that of our Live environment, ensure that you are using the Pantheon lando.local.yml described under "Initial Setup" above, ensure that you are a member of the Pantheon site's "Team", then:
 1. `lando pull`
-2. `lando drush cim`
+2. `lando drush cr`
+3. `lando drush cim`
 
-Note that this will overwrite your local database and files. The `lando drush cim` ensures that your local environment uses the development-specific configuration (e.g. enables Devel).
+Note that this will overwrite your local database and files without prompt. The `lando drush cim` ensures that your local environment uses the development-specific configuration (e.g. enables Devel).
 
 You now have a fully functional local environment, accessible at [https://drupalcampnyc.lndo.site/](https://drupalcampnyc.lndo.site/)
 

@@ -1,0 +1,15 @@
+uuid: fccaa6b6-9a41-403d-8483-30e02462024e
+langcode: en
+status: true
+dependencies: {  }
+name: user_picture_2x
+label: 'User picture (2x)'
+effects:
+  d36c36b3-3066-4eba-adb6-f3767347f741:
+    uuid: d36c36b3-3066-4eba-adb6-f3767347f741
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 300
+      height: 300
+      anchor: center-center
