@@ -21,6 +21,7 @@ module:
   ctools: 0
   ctools_block: 0
   ctools_views: 0
+  datalayer: 0
   datetime: 0
   datetime_range: 0
   dblog: 0
@@ -42,6 +43,7 @@ module:
   file: 0
   filter: 0
   flag: 0
+  google_tag: 0
   help: 0
   history: 0
   honeypot: 0

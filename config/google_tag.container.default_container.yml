@@ -1,0 +1,53 @@
+uuid: 7da69959-2ca4-4e54-941a-e1357d458c7f
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - de_core
+    - webform
+id: default_container
+label: 'Default Container'
+weight: 0
+container_id: GTM-KJVG3N6
+data_layer: dataLayer
+include_classes: false
+whitelist_classes: "google\nnonGooglePixels\nnonGoogleScripts\nnonGoogleIframes"
+blacklist_classes: "customScripts\ncustomPixels"
+include_environment: true
+environment_id: env-7
+environment_token: RCeOkCkKhSzZumh-hhqhUw
+path_toggle: 'exclude listed'
+path_list: ''
+role_toggle: 'exclude listed'
+role_list: {  }
+status_toggle: 'exclude listed'
+status_list: "403\n404"
+conditions:
+  current_user_page:
+    id: current_user_page
+    show_on_own_page: 0
+    negate: 0
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles: {  }
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  'entity_bundle:webform_submission':
+    id: 'entity_bundle:webform_submission'
+    bundles: {  }
+    negate: false
+    context_mapping:
+      webform_submission: '@webform.webform_submission_route_context:webform_submission'
+  node_type_if_node:
+    id: node_type_if_node
+    bundles: {  }
+    negate: 0
+  webform:
+    id: webform
+    webforms: {  }
+    negate: false
+    context_mapping: {  }

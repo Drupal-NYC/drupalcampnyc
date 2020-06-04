@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "30036e2ef88153f5a11242474bb4704d",
+    "content-hash": "2421ddbaf8a0037f09c9e25e3930c864",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3205,6 +3205,75 @@
             }
         },
         {
+            "name": "drupal/datalayer",
+            "version": "1.0.0-beta2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/datalayer.git",
+                "reference": "8.x-1.0-beta2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/datalayer-8.x-1.0-beta2.zip",
+                "reference": "8.x-1.0-beta2",
+                "shasum": "53723500a8cf6f7e0a1dcc877e769d1bddebf3c6"
+            },
+            "require": {
+                "drupal/core": "^8.0 || ^9.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-beta2",
+                    "datestamp": "1579986781",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Josh Lind",
+                    "homepage": "https://www.drupal.org/u/doublejosh",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "bighappyface",
+                    "homepage": "https://www.drupal.org/user/2513682"
+                },
+                {
+                    "name": "blake.thompson",
+                    "homepage": "https://www.drupal.org/user/1803642"
+                },
+                {
+                    "name": "doublejosh",
+                    "homepage": "https://www.drupal.org/user/199720"
+                },
+                {
+                    "name": "josephdpurcell",
+                    "homepage": "https://www.drupal.org/user/2944035"
+                }
+            ],
+            "description": "Output page meta data for client-side availability.",
+            "homepage": "https://www.drupal.org/project/datalayer",
+            "keywords": [
+                "Data Layer",
+                "Drupal"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/datalayer",
+                "issues": "https://www.drupal.org/project/issues/datalayer"
+            }
+        },
+        {
             "name": "drupal/devel",
             "version": "2.1.0",
             "source": {
@@ -3910,6 +3979,50 @@
             "homepage": "https://www.drupal.org/project/flag",
             "support": {
                 "source": "https://git.drupalcode.org/project/flag"
+            }
+        },
+        {
+            "name": "drupal/google_tag",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/google_tag.git",
+                "reference": "8.x-1.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/google_tag-8.x-1.3.zip",
+                "reference": "8.x-1.3",
+                "shasum": "2619d19c9a6b1d8f7a2d0c2715d009cf3b11d697"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.3",
+                    "datestamp": "1581709967",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL 2.0"
+            ],
+            "authors": [
+                {
+                    "name": "solotandem",
+                    "homepage": "https://www.drupal.org/user/240748"
+                }
+            ],
+            "description": "Allows your website analytics to be managed using Google Tag Manager.",
+            "homepage": "https://www.drupal.org/project/google_tag",
+            "support": {
+                "source": "https://git.drupalcode.org/project/google_tag"
             }
         },
         {

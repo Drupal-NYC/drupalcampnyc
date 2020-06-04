@@ -1,0 +1,51 @@
+add_page_meta: true
+output_terms: false
+output_fields: false
+group: false
+lib_helper: false
+entity_meta:
+  vid: vid
+  created: '0'
+  langcode: '0'
+  name: '0'
+  status: '0'
+  uid: '0'
+  uuid: '0'
+enable_ia: false
+ia_depth: 4
+ia_category_primary: pathComponent0
+ia_category_sub: pathComponent
+vocabs:
+  accessibility_needs: '0'
+  dietary_restrictions: '0'
+  room: '0'
+  session_additionals: '0'
+  session_horizontal: '0'
+  session_vertical: '0'
+expose_user_details: '*'
+expose_user_details_roles:
+  authenticated: '0'
+  administrator: '0'
+  content_editor: '0'
+  user_manager: '0'
+  track_chair: '0'
+  speaker: '0'
+current_user_meta:
+  roles: roles
+  name: '0'
+  mail: '0'
+  created: '0'
+  access: '0'
+expose_user_details_fields: false
+entity_title: entityTitle
+entity_type: entityType
+entity_bundle: entityBundle
+entity_identifier: entityId
+group_label: groupLabel
+drupal_language: siteLanguage
+drupal_country: siteCountry
+site_name: siteName
+key_replacements:
+  - ''
+_core:
+  default_config_hash: N67AkcKPlikWJbwxABv6MSMpGuXe36qWZfH88pEzeqc
