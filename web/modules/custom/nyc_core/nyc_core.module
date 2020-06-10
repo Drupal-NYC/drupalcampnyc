@@ -1,0 +1,27 @@
+<?php
+
+/**
+ * Implements hook_metatags_attachments_alter().
+ */
+function nyc_core_metatags_attachments_alter(array &$metatag_attachments) {
+  // We'll set the robots noindex metatag for the following nodes:
+  $nids_to_noindex = [
+    15, // Thank You Sponsor
+  ];
+
+  // Get the current node's NID if applicable
+  $nid = \Drupal::routeMatch()->getRawParameter('node');
+
+  if (isset($nid) && in_array($nid, $nids_to_noindex)) {
+    $metatag_attachments['#attached']['html_head'][] = [
+      0 => [
+        '#tag' => 'meta',
+        '#attributes' => [
+          'name' => 'robots',
+          'content' => 'noindex'
+        ]
+      ],
+      1 => 'robots'
+    ];
+  }
+}
