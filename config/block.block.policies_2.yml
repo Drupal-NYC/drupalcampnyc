@@ -1,0 +1,38 @@
+uuid: b099b840-e4c0-4e82-9aea-de8ace28297b
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.policies
+  module:
+    - de_core
+    - menu_block
+  theme:
+    - drupalnyc
+id: policies_2
+theme: drupalnyc
+region: footer
+weight: -9
+provider: null
+plugin: 'menu_block:policies'
+settings:
+  id: 'menu_block:policies'
+  label: Policies
+  provider: menu_block
+  label_display: visible
+  follow: false
+  follow_parent: child
+  level: 1
+  depth: 1
+  expand: true
+  parent: 'policies:'
+  suggestion: policies
+  label_type: block
+  label_link: false
+visibility:
+  current_user_page:
+    id: current_user_page
+    show_on_own_page: 0
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

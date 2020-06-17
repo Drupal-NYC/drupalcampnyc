@@ -1,0 +1,38 @@
+uuid: 11568a35-01b2-4cc3-b94a-b54a782abac4
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.policies
+  module:
+    - de_core
+    - menu_block
+  theme:
+    - drupaleurope
+id: policies
+theme: drupaleurope
+region: footer
+weight: -10
+provider: null
+plugin: 'menu_block:policies'
+settings:
+  id: 'menu_block:policies'
+  label: Policies
+  provider: menu_block
+  label_display: visible
+  follow: false
+  follow_parent: child
+  level: 1
+  depth: 1
+  expand: true
+  parent: 'policies:'
+  suggestion: policies
+  label_type: block
+  label_link: false
+visibility:
+  current_user_page:
+    id: current_user_page
+    show_on_own_page: 0
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
