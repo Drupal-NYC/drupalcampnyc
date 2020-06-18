@@ -53,7 +53,7 @@ Note that the git repo already has a `.lando.yml` file so you shouldn't run `lan
 
 6. `lando start`
 
-   Per .lando.yml and .lando.local.yml, when `lando start` is run for the first time and whenever `lando rebuild` is run, the following commands are run inside the container:
+   Note (don't run these commands): per .lando.yml and .lando.local.yml, when `lando start` is run for the first time and whenever `lando rebuild` is run, the following commands are run inside the container:
    * `composer install` for the project
    * `npm install` in web/themes/drupaleurope
    * `npm run build` in web/themes/drupaleurope to compile the theme
