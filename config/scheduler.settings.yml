@@ -19,3 +19,4 @@ time_letters: hHgGisaA
 time_only_format: 'H:i:s'
 _core:
   default_config_hash: JOzWPTQNpL0mkZGbvh0o7T1wKYyGfC3DHHiwhjw2YhU
+default_show_message_after_update: true
