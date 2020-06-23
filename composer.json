@@ -29,9 +29,9 @@
         "drupal/config_split": "^1.5",
         "drupal/config_update": "^1.7",
         "drupal/console": "^1.9",
-        "drupal/core": "^8.8",
-        "drupal/core-composer-scaffold": "^8.8",
-        "drupal/core-recommended": "8.8.6",
+        "drupal/core": "^8.9",
+        "drupal/core-composer-scaffold": "^8.9",
+        "drupal/core-recommended": "8.9.1",
         "drupal/csv_serialization": "^2.0",
         "drupal/ctools": "^3.4",
         "drupal/datalayer": "^1.0",
@@ -74,7 +74,7 @@
         "webmozart/path-util": "^2.3"
     },
     "require-dev": {
-        "drupal/core-dev": "8.8.6",
+        "drupal/core-dev": "8.9.1",
         "zaporylie/composer-drupal-optimizations": "^1.1"
     },
     "conflict": {
@@ -120,9 +120,6 @@
             },
             "drupal/diff": {
                 "Back button for comparison page": "https://www.drupal.org/files/issues/back_button_for-2853193-4.patch"
-            },
-            "drupal/core": {
-                "Can't access config sync page": "https://www.drupal.org/files/issues/2020-05-11/3100712-views-36-PASS.patch"
             }
         }
     }
