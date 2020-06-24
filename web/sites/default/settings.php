@@ -73,14 +73,16 @@ if (defined('PANTHEON_ENVIRONMENT')) {
     // Disable development modules and config.
     $config['config_split.config_split.development']['status'] = FALSE;
 
-    // Don't allow configuration to be modified.
-    $settings['config_readonly'] = TRUE;
+    // If we're using the Drupal UI...
+    if (PHP_SAPI !== 'cli') {
+      // Don't allow configuration to be modified.
+      $settings['config_readonly'] = TRUE;
 
-    // But do allow menus to be reordered.
-    $settings['config_readonly_whitelist_patterns'] = [
-      'system.menu.*',
-    ];
-
+      // But do allow menus to be reordered.
+      $settings['config_readonly_whitelist_patterns'] = [
+        'system.menu.*',
+      ];
+    }
   }
   else {
     // Enable development modules and config.
