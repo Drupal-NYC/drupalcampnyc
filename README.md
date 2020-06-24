@@ -71,7 +71,8 @@ Note that the git repo already has a `.lando.yml` file so you shouldn't run `lan
 To replace your local environment's database and files with that of our Live environment, ensure that you are using the Pantheon lando.local.yml described under "Initial Setup" above, ensure that you are a member of the Pantheon site's "Team", then:
 1. `lando pull`
 2. `lando drush cr`
-3. `lando drush cim`
+3. `lando drush updb`
+4. `lando drush cim`
 
 Note that this will overwrite your local database and files without prompt. The `lando drush cim` ensures that your local environment uses the development-specific configuration (e.g. enables Devel).
 
