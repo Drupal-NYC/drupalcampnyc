@@ -23,7 +23,8 @@
   ]
   
 %}
-	<div{{attributes.removeAttribute('id','').addClass(classes)}}>
+	<div{{attributes.addClass(classes)|without('id','')}}>
+
 
 		{% block content %}
 			{% if site_logo %}
