@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.sponsor.field_level
     - field.field.node.sponsor.field_logo
     - field.field.node.sponsor.field_module_name
+    - field.field.node.sponsor.field_sponsor_description
     - field.field.node.sponsor.field_track_sponsorship
     - field.field.node.sponsor.field_website
     - node.type.sponsor
@@ -46,6 +47,7 @@ hidden:
   field_facebook: true
   field_level: true
   field_module: true
+  field_sponsor_description: true
   field_track_sponsorship: true
   field_twitter: true
   field_website: true
