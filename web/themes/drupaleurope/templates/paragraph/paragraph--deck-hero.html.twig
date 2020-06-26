@@ -39,13 +39,15 @@
  */
 #}
 {% set icon_content = content.field_icon|render %}
+{% set has_bg = content.field_background|render %}
+
 {%
     set classes = [
     'deck',
     'deck-hero',
     'deck--type--' ~ paragraph.bundle|clean_class,
     view_mode ? 'deck--view-mode--' ~ view_mode|clean_class,
-    using_background_image ? 'deck-hero--with-background-image',
+	has_bg ? 'deck-hero--with-background-image',
     icon_content ? 'deck-hero--with-icon',
     icon_content is empty ? 'deck-hero--no-icon',
 ]
@@ -56,16 +58,26 @@
     icon_content ? 'visually-hidden',
 ]
 %}
+{% set hero_bg =  content.field_background[0]['#markup'] %}
+
 {% block paragraph %}
-    <section{{ attributes.addClass(classes) }}>
-        <div class="container">
-        {% block content %}
-            {{ icon_content }}
-            <h1{{ header_attributes.addClass(header_classes) }}>{{ content.field_title }}</h1>
-            <div class="deck--content deck-hero--content">
-                {{ content|without('field_background')|without('field_title')|without('field_icon') }}
-            </div>
-        {% endblock %}
-        </div>
-    </section>
-{% endblock paragraph %}
+
+
+	{% if content.field_background[0]['#markup'] is not empty %}
+		<section{{attributes.addClass(classes)}} style="background-image:url({{ hero_bg }});">
+		{% else %}
+			<section{{attributes.addClass(classes)}}>
+			{% endif %}
+
+
+			<div class="container">
+				{% block content %}
+					{{ icon_content }}
+					<h1{{header_attributes.addClass(header_classes)}}>{{ content.field_title }}</h1>
+					<div class="deck--content deck-hero--content">
+						{{ content|without('field_background')|without('field_title')|without('field_icon') }}
+					</div>
+				{% endblock %}
+			</div>
+		</section>
+	{% endblock paragraph %}
