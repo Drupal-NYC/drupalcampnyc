@@ -42,39 +42,42 @@
  * @see html.html.twig
  */
 #}
-<header role="banner" class="page--header">
-    {{ page.header }}
-</header>
-<header class="mobile--page--header">
-    <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-    {{ page.header }}
+
+<header role="banner" class="mobile--page--header">
+	<div class="hamburger">
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+	{{ page.header }}
 </header>
 
 <main role="main" class="page--main page--node">
-    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
-    {{ page.precontent }}
-    {{ page.content }}
+	<a id="main-content" tabindex="-1"></a>
+	{# link is in html.html.twig #}
+	{{ page.precontent }}
+	{{ page.content }}
 </main>
 
 {%  if page.prefooter %}
-    <div class="page--pre-footer">
-        {{ page.prefooter }}
-    </div>
+	<div class="page--pre-footer">
+		{{ page.prefooter }}
+	</div>
 {% endif %}
 
 {% if page.footer %}
-    <footer role="contentinfo" class="page--footer">
-        {{ page.footer }}
-        <div class="footer-copyright">
-            <p><a href="{{ path('entity.node.canonical', {'node': 3}) }}">DrupalCampNYC 2020 Code of Conduct</a></p>
-            <p>Get in touch: <a href="mailto:camp@drupalnyc.org">camp@drupalnyc.org</a></p>
-            <p>Hosting by <a href="https://pantheon.io/" target="_blank" rel="noopener">Pantheon</a></p>
-        </div>
-    </footer>
+	<footer role="contentinfo" class="page--footer">
+		{{ page.footer }}
+		<div class="footer-copyright">
+			<p>
+				<a href="/">DrupalCampNYC 2020</a>
+			</p>
+			<p>Get in touch:
+				<a href="mailto:camp@drupalnyc.org">camp@drupalnyc.org</a>
+			</p>
+			<p>Hosting by
+				<a href="https://pantheon.io/" target="_blank" rel="noopener">Pantheon</a>
+			</p>
+		</div>
+	</footer>
 {% endif %}
-
-

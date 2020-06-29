@@ -1,21 +1,22 @@
 // Should contain colours, viewport and other branding variables.
 
-$font-stack: 'Open Sans', 'Droid Sans', 'Helvetica', sans-serif;
+$font-stack: 'Open Sans',
+'Droid Sans',
+'Helvetica',
+sans-serif;
 
-$primary-color:     #5dcbfc; // cyan
-$secondary-color:   #ea6202; // orange
-$tertiary-color:    #5bbf02; // green
+$primary-color: #5dcbfc; // cyan
+$secondary-color: #ea6202; // orange
+$tertiary-color: #5bbf02; // green
 $quinary-color:     #fed530; // gold
-$quaternary-color:  rgb(52, 52, 52);   // dark gray
+$quaternary-color: rgb(52, 52, 52); // dark gray
 
-$black-color: rgb(0,0,0);
-$white-color: rgb(255,255,255);
+$black-color: rgb(0, 0, 0);
+$white-color: rgb(255, 255, 255);
 $gray-color: rgb(204, 204, 204);
 // senary, septenary, octonary, nonary, and denary
 
 $grid-gap: 1rem;
-
-//$blue: $primary-color;
 
 :root {
   --font-stack: $font-stack;
@@ -58,29 +59,33 @@ $grid-gap: 1rem;
 }
 
 @mixin clearfix {
+
   &:before,
   &:after {
     content: "";
     display: table;
   }
+
   &:after {
     clear: both;
   }
+
   & {
-    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+    zoom: 1;
+    /* For IE 6/7 (trigger hasLayout) */
   }
 }
 
 @mixin cta {
   & {
     color: $white-color;
-    font-size: 18px;
+    font-size: 2rem;
     position: relative;
     text-decoration: none;
     background-color: $secondary-color;
     border: 2px solid $white-color;
     overflow: hidden;
-    padding: 0.55rem 1.3rem;
+    padding: 1rem 2rem;
     transition: all 0.15s ease;
   }
 
@@ -96,24 +101,29 @@ $grid-gap: 1rem;
     transition: transform 0.2s cubic-bezier(0.75, 0, 0.125, 1);
     z-index: -1;
   }
+
   &:after {
     background-color: $white-color;
   }
+
   &:hover,
   &:focus {
     background-color: transparent;
     color: $secondary-color;
     border-color: $secondary-color;
   }
+
   &:hover:before,
   &:hover:after {
     transform: translate3d(0, 100%, 0);
   }
+
   &:hover:after {
     transition-delay: 0.175s;
   }
+
   &:active {
-      border-color: $primary-color;
-      background-color: $white-color;
+    border-color: $primary-color;
+    background-color: $white-color;
   }
 }

@@ -43,19 +43,46 @@ $settings['file_private_path'] = 'sites/default/private-files';
 $settings['hash_salt'] = 'qAFNzv5CKdoOx1A6O1HBELEGAJuTbPd2N9nTayafIkzuHWvMaJcO8MXsHP8C24Vb94jorerLjQ';
 
 if (defined('PANTHEON_ENVIRONMENT')) {
+  switch ($_ENV['PANTHEON_ENVIRONMENT']) {
+    case 'dev':
+      // Google Tag Manager Container Environment "Dev".
+      $config['google_tag.container.default_container']['environment_id'] = 'env-6';
+      $config['google_tag.container.default_container']['environment_token'] = 'yTTLjPSSRKmYgMzokq7MsA';
+      break;
+
+    case 'test':
+      // Google Tag Manager Container Environment "Test".
+      $config['google_tag.container.default_container']['environment_id'] = 'env-5';
+      $config['google_tag.container.default_container']['environment_token'] = 'd_NFGurg69G7CSIlfeZwrQ';
+      break;
+
+    case 'live':
+      // Google Tag Manager Container Environment "Live".
+      $config['google_tag.container.default_container']['environment_id'] = 'env-1';
+      $config['google_tag.container.default_container']['environment_token'] = 'KwMHOkAq9Tuv1BoGue_3Og';
+      break;
+
+    default:
+      // Google Tag Manager Container Environment "Other".
+      $config['google_tag.container.default_container']['environment_id'] = 'env-7';
+      $config['google_tag.container.default_container']['environment_token'] = 'RCeOkCkKhSzZumh-hhqhUw';
+  }
+
   // If we're in the Live or Test environments...
   if (in_array($_ENV['PANTHEON_ENVIRONMENT'], ['test', 'live'])) {
     // Disable development modules and config.
     $config['config_split.config_split.development']['status'] = FALSE;
 
-    // Don't allow configuration to be modified.
-    $settings['config_readonly'] = TRUE;
+    // If we're using the Drupal UI...
+    if (PHP_SAPI !== 'cli') {
+      // Don't allow configuration to be modified.
+      $settings['config_readonly'] = TRUE;
 
-    // But do allow menus to be reordered.
-    $settings['config_readonly_whitelist_patterns'] = [
-      'system.menu.*',
-    ];
-
+      // But do allow menus to be reordered.
+      $settings['config_readonly_whitelist_patterns'] = [
+        'system.menu.*',
+      ];
+    }
   }
   else {
     // Enable development modules and config.
@@ -143,4 +170,8 @@ if (defined('PANTHEON_ENVIRONMENT')) {
 else {
   // Enable development modules and config.
   $config['config_split.config_split.development']['status'] = TRUE;
+
+  // Google Tag Manager Container Environment "Other".
+  $config['google_tag.container.default_container']['environment_id'] = 'env-7';
+  $config['google_tag.container.default_container']['environment_token'] = 'RCeOkCkKhSzZumh-hhqhUw';
 }

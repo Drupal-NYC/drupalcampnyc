@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\de_core\Plugin\SocialMediaLinks\Platform;
+namespace Drupal\nyc_core\Plugin\SocialMediaLinks\Platform;
 
 use Drupal\social_media_links\PlatformBase;
 

@@ -1,0 +1,5 @@
+name: 'DrupalCampNYC - Core'
+description: 'The core of the DrupalCampNYC site, basically wires everything together - duct tape anyone?'
+type: module
+package: DrupalCampNYC
+core_version_requirement: ^8 || ^9

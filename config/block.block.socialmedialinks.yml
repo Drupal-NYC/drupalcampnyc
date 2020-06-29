@@ -10,7 +10,7 @@ dependencies:
 id: socialmedialinks
 theme: drupaleurope
 region: footer
-weight: -4
+weight: -9
 provider: null
 plugin: social_media_links_block
 settings:
@@ -22,38 +22,42 @@ settings:
     twitter:
       value: DrupalCampNYC
       description: 'Follow us on Twitter'
+      weight: '-33'
+    facebook:
+      value: Drupalcampnyc/
+      description: 'Find us on Facebook'
       weight: '-32'
     drupal_slack:
       value: slack
-      description: ''
+      description: 'Chat in our Slack community'
       weight: '-31'
+    drupalnyc:
+      value: /
+      description: 'Visit the DrupalNYC website'
+      weight: '-30'
     behance:
       value: ''
       description: ''
-      weight: '-30'
+      weight: '-29'
     bitbucket:
       value: ''
       description: ''
-      weight: '-29'
+      weight: '-28'
     medium:
       value: ''
       description: 'Read our blog on Medium'
-      weight: '-28'
+      weight: '-27'
     contact:
       value: ''
       description: ''
-      weight: '-27'
+      weight: '-26'
     drupal:
       value: ''
       description: ''
-      weight: '-26'
+      weight: '-25'
     email:
       value: ''
       description: ''
-      weight: '-25'
-    facebook:
-      value: ''
-      description: 'Find us on Facebook'
       weight: '-24'
     flickr:
       value: ''
