@@ -13,6 +13,20 @@
   }
 }
 
+.site-name {
+  display: none;
+}
+
+.region-header a {
+  color: $white-color;
+  font-size: 1.25rem;
+  display: block;
+}
+
+.region-header a.is-active {
+  color: $tertiary-color;
+}
+
 // Fix toolbar positions...
 .toolbar-horizontal.toolbar-fixed .region-header {
   top: 39px;
@@ -40,47 +54,15 @@ body:not(.iframe) {
   padding-top: 80px;
 }
 
-.site-logo {
-  background: url("/themes/drupalnyc/dcnyc2020-logo.png");
-  margin: 0.3rem 0 0 0.4rem;
+.block-system-branding-block a.site-logo {
+  /*---- this height indirectly defines the size of the logo, except on the home page prior to scroll (see SCALE below for that size) -----*/
+  height: 91px;
+  margin: 0.3rem 0 0 0.3rem;
   padding: 0;
-  width: 157px;
-  height: 93px;
-  background-size: contain;
-  background-repeat: no-repeat;
   img {
-    display: none;
-  }
-
-/*  @media only screen and (max-width: 500px) {
-    background: none;
+    display: inline;
     width: auto;
-
-    img {
-      display: block;
-    }
-  }*/
-}
-.site-name {
-  display: none;
-}
-
-.region-header a {
-  color: $white-color;
-  font-size: 1.25rem;
-  display: block;
-}
-
-.region-header a.is-active {
-  color: $tertiary-color;
-}
-.block-system-branding-block {
-  flex: 1 1 10%;
-
-  img {
-    max-width: 100%;
-    height: 70px;
-    padding: 5px 10px;
+    height: 100%;
   }
 }
 
@@ -88,14 +70,23 @@ body:not(.iframe) {
   .page--header {
     a.site-logo {
       transform-origin: 0 0;
-      @include transition(0.3s);
       transform: scale(3);
     }
+/*----- scale value above is logo size when homepage loads, scale value below is after home page has been scrolled--should be(1) to match not-front pages -----*/
     &.fade-in a.site-logo {
       transform: scale(1);
+      @include transition(0.3s);
     }
   }
 }
 
 
+/*.block-system-branding-block {
+  flex: 1 1 10%;
 
+  img {
+    max-width: 100%;
+    height: 70px;
+    padding: 5px 10px;
+  }
+}*/

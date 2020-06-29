@@ -33,7 +33,7 @@ $grid-gap: 1rem;
 }
 
 @mixin due-gradient {
-  background-image: linear-gradient(to left,
+  background-image: linear-gradient(to right,
     $primary-color,
     $tertiary-color,
     $secondary-color,
@@ -50,7 +50,7 @@ $grid-gap: 1rem;
 }
 
 @mixin due-gradient-reversed {
-  background-image: linear-gradient(to right,
+  background-image: linear-gradient(to left,
     $primary-color,
     $tertiary-color,
     $secondary-color,
