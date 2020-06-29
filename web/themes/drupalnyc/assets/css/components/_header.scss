@@ -54,6 +54,8 @@ body:not(.iframe) {
   padding-top: 80px;
 }
 
+/*----- LOGO PLACEMENT -----*/
+
 .block-system-branding-block a.site-logo {
   /*---- this height indirectly defines the size of the logo, except on the home page prior to scroll (see SCALE below for that size) -----*/
   height: 91px;
@@ -63,16 +65,22 @@ body:not(.iframe) {
     display: inline;
     width: auto;
     height: 100%;
+
+      /*----- max-height below defines size of centered logo on mobile -----*/
+      @media only screen and (max-width: 1023px) {
+      max-height: 100px;
+      }
   }
 }
 
+/*----- home page logo animation -----*/
 .path-frontpage {
   .page--header {
     a.site-logo {
       transform-origin: 0 0;
       transform: scale(3);
     }
-/*----- scale value above is logo size when homepage loads, scale value below is after home page has been scrolled--should be(1) to match not-front pages -----*/
+/*----- scale value above is logo size when homepage loads, scale value below is after home page has been scrolled {should be scale(1) to match not-front pages} -----*/
     &.fade-in a.site-logo {
       transform: scale(1);
       @include transition(0.3s);
@@ -81,12 +89,3 @@ body:not(.iframe) {
 }
 
 
-/*.block-system-branding-block {
-  flex: 1 1 10%;
-
-  img {
-    max-width: 100%;
-    height: 70px;
-    padding: 5px 10px;
-  }
-}*/
