@@ -29,6 +29,9 @@
 
     .menu-item {
       position: relative;
+      //added 2020-05-29 ccaajj
+      font-weight: 600;
+
     }
     .menu-item > .menu {
       visibility: hidden;
@@ -45,7 +48,9 @@
         border-top: 2px solid transparent;
         &:hover {
           background-image: inherit;
-          background-color: rgba($quaternary-color, 0.75);
+          //background-color: rgba($quaternary-color, 0.75);
+          //changed to opaque equiv for accessibility
+          background-color: #676767;
           border-top: 2px solid white;
         }
       }

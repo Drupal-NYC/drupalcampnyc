@@ -47,6 +47,8 @@ article {
 
 a {
   color: $secondary-color;
+  //darkened version of orange for better contrast
+  //color: #ea4902;
   text-decoration: none;
 }
 a:focus, a:hover, a:active {

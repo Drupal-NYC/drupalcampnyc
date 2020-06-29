@@ -84,17 +84,15 @@ body:not(.iframe) {
   }
 }
 
-.page--header {
-}
-
 .path-frontpage {
   .page--header {
     a.site-logo {
-      //@include transition(0.3s);
-      opacity: 1;
+      transform-origin: 0 0;
+      @include transition(0.3s);
+      transform: scale(3);
     }
     &.fade-in a.site-logo {
-      opacity: 1;
+      transform: scale(1);
     }
   }
 }

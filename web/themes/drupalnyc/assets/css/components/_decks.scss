@@ -79,7 +79,7 @@
   margin-bottom: 40px;
 
   &:after {
-    background-image: linear-gradient(to right, #33a8e5, #374d9c, #ab2d92);
+    @include due-gradient-reversed;
     content: "";
     position: absolute;
     width: 140px;
