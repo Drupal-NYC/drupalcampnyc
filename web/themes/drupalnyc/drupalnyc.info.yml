@@ -1,6 +1,6 @@
 name: Drupal NYC
 type: theme
-description: A theme for drupalnyc.org and drupalcampnyc built from the theme for the Drupal Europe conference site.
+description: A theme for DrupalCampNYC 2020 based on the Drupal Europe 2018 codebase
 core: 8.x
 base theme: classy
 regions:
@@ -9,7 +9,7 @@ regions:
   content: Content
   prefooter: Pre-footer
   footer: Footer
-screenshot: idNY-logo.png
+screenshot: screenshot.png
 
 stylesheets-remove:
   - "@eu_cookie_compliance/css/eu_cookie_compliance.css"

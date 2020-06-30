@@ -46,7 +46,8 @@ article {
 }
 
 a {
-  color: $secondary-color;
+  // darkened version of orange for better contrast
+  color: #d03a00;
   text-decoration: none;
 }
 a:focus, a:hover, a:active {
@@ -196,11 +197,7 @@ form.webform-submission-speaker-refund-request-form .js-form-item label {
   opacity: 1;
   margin: 2rem auto;
 }
-.path-frontpage .region-content .block {
-  width: 100%;
-  max-width: none;
-  margin: 0;
-}
+
 @media (max-width: 1024px) {
   .region-content .block {
     padding-left: 1.25rem;

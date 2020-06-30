@@ -5,20 +5,18 @@ $font-stack: 'Open Sans',
 'Helvetica',
 sans-serif;
 
-$primary-color: rgb(51, 168, 229); // light blue
-// $secondary-color: rgb(171, 45, 146);  // purple
-$secondary-color: rgb(255, 127, 63); // orange
-$tertiary-color: rgb(55, 77, 156); // medium blue
+$primary-color: #5dcbfc; // cyan
+$secondary-color: #ea6202; // orange
+$tertiary-color: #5bbf02; // green
+$quinary-color:     #fed530; // gold
 $quaternary-color: rgb(52, 52, 52); // dark gray
 
 $black-color: rgb(0, 0, 0);
 $white-color: rgb(255, 255, 255);
-$gray-color: rgb(248, 248, 248);
-// quinary, senary, septenary, octonary, nonary, and denary
+$gray-color: rgb(204, 204, 204);
+// senary, septenary, octonary, nonary, and denary
 
 $grid-gap: 1rem;
-
-//$blue: $primary-color;
 
 :root {
   --font-stack: $font-stack;
@@ -36,11 +34,28 @@ $grid-gap: 1rem;
 }
 
 @mixin due-gradient {
-  background-image: linear-gradient(to right, $primary-color, $tertiary-color, $secondary-color);
+  background-image: linear-gradient(to right,
+    $primary-color,
+    $tertiary-color,
+    $secondary-color,
+  );
 }
 
-@mixin nyc-gradient {
-  background-image: linear-gradient(to right, $secondary-color, $primary-color, $tertiary-color);
+@mixin due-gradient-new {
+  background-image: linear-gradient(to left,
+    $primary-color,
+    $tertiary-color,
+    $quinary-color,
+    $secondary-color,
+  );
+}
+
+@mixin due-gradient-reversed {
+  background-image: linear-gradient(to left,
+    $primary-color,
+    $tertiary-color,
+    $secondary-color,
+  );
 }
 
 @mixin clearfix {

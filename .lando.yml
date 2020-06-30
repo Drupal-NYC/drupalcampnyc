@@ -12,12 +12,12 @@ services:
   node:
     type: node:10
     run:
-      - cd /app/web/themes/drupaleurope && npm install
-      - cd /app/web/themes/drupaleurope && npm run build
+      - cd /app/web/themes/drupalnyc && npm install
+      - cd /app/web/themes/drupalnyc && npm run build
 tooling:
   npm:
     service: node
-    cmd: npm --prefix /app/web/themes/drupaleurope
+    cmd: npm --prefix /app/web/themes/drupalnyc
   node:
     service: node
   pull:
