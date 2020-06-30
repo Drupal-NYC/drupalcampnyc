@@ -9,9 +9,9 @@ regions:
   content: Content
   prefooter: Pre-footer
   footer: Footer
-screenshot: drupaleurope-icon-logo.png
+screenshot: idNY-logo.png
 
 stylesheets-remove:
-  - '@eu_cookie_compliance/css/eu_cookie_compliance.css'
-  - '@eu_cookie_compliance/css/eu_cookie_compliance.bare.css'
-  - '@classy/css/components/menu.css'
+  - "@eu_cookie_compliance/css/eu_cookie_compliance.css"
+  - "@eu_cookie_compliance/css/eu_cookie_compliance.bare.css"
+  - "@classy/css/components/menu.css"
