@@ -62,11 +62,11 @@ body:not(.iframe) {
 
 
 .site-logo {
-  background: url("/themes/drupalnyc/dcnyc2020-logo.png");
+  background: url("/themes/drupalnyc/logo.svg");
   margin: 0.3rem 0 0 0.4rem;
   padding: 0;
-  width: 157px;
-  height: 93px;
+  width: 115px;
+  height: 68px;
   background-size: contain;
   background-repeat: no-repeat;
 
@@ -83,6 +83,8 @@ body:not(.iframe) {
 
     img {
       display: block;
+      width: 110px;
+      height: 65px;
     }
   }
 
