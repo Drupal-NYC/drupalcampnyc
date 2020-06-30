@@ -5,17 +5,19 @@
   max-width: initial;
   padding: 0;
   margin: 0;
+
   &:before,
   &:after {
     content: initial;
   }
+
   color: $white-color;
 
   display: flex;
   flex-direction: column-reverse;
 
   // @todo Fix default background image for hero element
-  background-image: linear-gradient(to left, $secondary-color, $tertiary-color, $primary-color);
+  background-image: linear-gradient(to left, $primary-color, $tertiary-color, $secondary-color);
 
   h1 {
     font-size: 3rem;
@@ -26,6 +28,7 @@
   .container {
     margin: 2rem auto 1rem auto;
   }
+
   &--with-icon {
     .container {
       display: grid;
@@ -39,11 +42,14 @@
 
     img {
       margin: 1rem 0;
+      background-color: #ffffff9e;
+      padding: 1em;
     }
+
     & .deck-hero--content {
-      display:grid;
+      display: grid;
       grid-gap: $grid-gap;
-      grid-template-columns: repeat(2, 50%);
+      grid-template-columns: repeat(2, 70%);
       align-items: flex-end;
 
       @include responsive(mobile) {
@@ -53,11 +59,11 @@
   }
 
   &--with-background-image {
-    min-height: 50vh;
+    min-height: 60vh;
   }
 
   &--no-icon &--content {
-    display:grid;
+    display: grid;
     grid-gap: $grid-gap;
     grid-template-columns: repeat(3, 33%);
 
@@ -92,6 +98,7 @@
       color: black;
       padding: 2rem;
     }
+
     a {
       color: white;
       background-color: $secondary-color;
@@ -101,8 +108,21 @@
 
   &.dark-text-background {
     .container {
-      background-color: hsla(0,0%,0%,.75) ;
+      background-color: hsla(0, 0%, 0%, .75);
       padding: 2rem;
     }
   }
+}
+
+.path-frontpage {
+  .deck-hero {
+    background-size: cover;
+    background-position: center 77%;
+  }
+}
+
+.path-frontpage .region-content .block {
+  width: 100%;
+  max-width: none;
+  margin: 0;
 }

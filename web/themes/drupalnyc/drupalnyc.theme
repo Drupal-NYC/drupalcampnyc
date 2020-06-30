@@ -11,12 +11,12 @@ function drupalnyc_preprocess_paragraph__deck_hero(&$variables) {
     $variables['using_background_image'] = FALSE;
     if (!$paragraph->field_background->isEmpty()) {
         /** @var \Drupal\file\Entity\File $file */
-//        $file = $paragraph->field_background->entity;
-//        $image = $file->url();
-//        $variables['attributes']['style'][] = "background-image: url('{$image}');";
-//        $variables['attributes']['style'][] = "background-size: cover;";
+        $file = $paragraph->field_background->entity;
+        $image = $file->url();
+        $variables['attributes']['style'][] = "background-image: url('{$image}');";
+        $variables['attributes']['style'][] = "background-size: cover;";
 //        $variables['attributes']['style'][] = "background-position: center center;";
-//        $variables['using_background_image'] = TRUE;
+        $variables['using_background_image'] = TRUE;
     }
 }
 
