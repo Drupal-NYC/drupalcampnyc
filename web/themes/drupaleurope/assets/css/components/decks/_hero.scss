@@ -49,7 +49,7 @@
     & .deck-hero--content {
       display: grid;
       grid-gap: $grid-gap;
-      grid-template-columns: repeat(2, 50%);
+      grid-template-columns: repeat(2, 70%);
       align-items: flex-end;
 
       @include responsive(mobile) {
