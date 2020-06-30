@@ -46,9 +46,8 @@ article {
 }
 
 a {
-  color: $secondary-color;
-  //darkened version of orange for better contrast
-  //color: #ea4902;
+  // darkened version of orange for better contrast
+  color: #d03a00;
   text-decoration: none;
 }
 a:focus, a:hover, a:active {
