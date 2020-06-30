@@ -1,0 +1,8 @@
+uuid: 6a01ebef-b15f-45a9-8396-ff6d7a6f1e41
+langcode: en
+status: true
+dependencies: {  }
+id: policies
+label: Policies
+description: 'Policies footer menu'
+locked: false

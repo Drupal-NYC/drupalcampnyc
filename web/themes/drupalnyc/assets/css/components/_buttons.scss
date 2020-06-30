@@ -1,0 +1,41 @@
+@mixin button-bg($bg) {
+  background: $bg;
+
+  &:hover {
+    background: darken($bg, 8%);
+    transition: all 0.3s ease;
+  }
+
+  &:active {
+    background: darken($bg, 25%);
+  }
+}
+
+.btn {
+  color: white;
+  text-decoration: none;
+  padding: .5rem 1rem;
+  border-radius: 3px;
+  font-size: 1rem;
+
+  &.btn-lg {
+    font-size: 1.8rem;
+  }
+
+}
+
+.btn-color-1 {
+  @include button-bg($primary-color);
+}
+
+.btn-color-2 {
+  @include button-bg($secondary-color);
+}
+
+.btn-color-3 {
+  @include button-bg($tertiary-color)
+}
+
+a.btn {
+  text-decoration: none;
+}

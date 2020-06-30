@@ -15,13 +15,15 @@
   flex: 0 0 3;
   width: 100%;
   row-span: 3;
-  color: rgba($quaternary-color,.4);
+  color: rgba($quaternary-color, .4);
   font-size: 1em;
   text-align: center;
+
   &:after {
     display: none;
     margin-bottom: 0;
   }
+
   margin: 2rem 0 0 0;
 }
 
@@ -33,6 +35,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
   @media (max-width: 667px) {
     width: 50%
   }
@@ -41,20 +44,25 @@
 .deck--sponsors--level-venue img {
   width: 90%;
 }
+
 .deck--sponsors--level-diamond img {
   width: 90%;
 }
+
 .deck--sponsors--level-platinum img {
   width: 80%;
 }
+
 .deck--sponsors--level-gold img {
   width: 70%;
 }
+
 .deck--sponsors--level-silver img {
   width: 50%;
   max-height: 120px;
   padding: 1em 0;
 }
+
 .deck--sponsors--level-module img {
   max-height: 120px;
 }
@@ -67,10 +75,12 @@
   h2 {
     grid-column: 1 / span 3;
   }
+
   img {
     width: 60%;
     align-self: center;
   }
+
   a {
     display: grid;
     grid-template-rows: 2fr 1fr;
@@ -82,24 +92,25 @@
       text-decoration: none;
     }
   }
+
   .field--name-field-module-name .field__item {
     color: black;
 
-//    &:before {
-//      content: "+";
-//      margin-right: .5rem;
-//    }
+    //    &:before {
+    //      content: "+";
+    //      margin-right: .5rem;
+    //    }
   }
 }
 
 .deck--sponsors--banner {
-    padding-left: 0;
-    margin: 0;
-    padding-top: 0;
-    width: 100%;
-    max-width: 100%;
-    border-bottom: solid 1px #ebe6e6;
-    margin-bottom: 4rem;
+  padding-left: 0;
+  margin: 0;
+  padding-top: 0;
+  width: 100%;
+  max-width: 100%;
+  border-bottom: solid 1px #ebe6e6;
+  margin-bottom: 4rem;
 
   a {
     width: auto;
@@ -135,6 +146,7 @@
     text-align: center;
     width: 100%;
   }
+
   a {
     width: auto;
     padding: 0 30px;
@@ -157,9 +169,11 @@
   img {
     max-width: 150px;
   }
+
   h2 {
     margin: 2rem 0 0;
   }
+
   .views-row {
     display: inline;
   }
@@ -168,11 +182,12 @@
 .deck--sponsors--banner {
   display: none;
 }
+
 body.path-frontpage .deck--sponsors--banner {
   display: flex;
 }
 
-.paragraph--type--element-sponsor + .paragraph--type--element-sponsor {
+.paragraph--type--element-sponsor+.paragraph--type--element-sponsor {
   margin-top: 3rem;
 }
 
@@ -196,5 +211,114 @@ table.sponsorship-table {
 
   span.secondary {
     font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+
+  .flip-scroll .cf:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+
+  .flip-scroll * html .cf {
+    zoom: 1;
+  }
+
+  .flip-scroll *:first-child+html .cf {
+    zoom: 1;
+  }
+
+  .flip-scroll {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .flip-scroll table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  .flip-scroll th,
+  .flip-scroll td {
+    margin: 0;
+    vertical-align: top;
+  }
+
+  .flip-scroll th {
+    text-align: left;
+    line-height: 1.3em;
+
+  }
+
+  .flip-scroll table {
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+
+  .flip-scroll thead {
+    display: block;
+    float: left;
+  }
+
+  .flip-scroll tbody {
+    display: block;
+    width: auto;
+    position: relative;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .flip-scroll thead tr {
+    display: block;
+  }
+
+  .flip-scroll th {
+    display: block;
+    text-align: right;
+    min-height: 55px;
+    padding: 4px 8px 4px 4px;
+  }
+
+  .flip-scroll tbody tr {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .flip-scroll td {
+    display: block;
+    min-height: 55px;
+    text-align: center;
+    padding: 5px;
+    line-height: 1.3em;
+    font-size: 16px;
+    text-align: center !important;
+  }
+
+  /* sort out borders */
+  .flip-scroll th {
+    border-bottom: 0;
+    border-left: 0;
+  }
+
+  .flip-scroll td {
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+  }
+
+  .flip-scroll tbody tr {
+    border-left: 1px solid #babcbf;
+  }
+
+  .flip-scroll th:last-child,
+  .flip-scroll td:last-child {
+    border-bottom: 1px solid #babcbf;
   }
 }

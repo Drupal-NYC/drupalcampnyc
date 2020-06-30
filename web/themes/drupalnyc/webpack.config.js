@@ -19,7 +19,7 @@ Encore
   // uncomment if you use Sass/SCSS files
   .enableSassLoader(function (sassOptions) {}, {
     resolveUrlLoader: true,
-    sourceMap: true,
+    //sourceMap: true,
   });
 
 const config = Encore.getWebpackConfig();
