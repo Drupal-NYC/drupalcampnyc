@@ -1,0 +1,23 @@
+uuid: c808ce17-b7dd-41f8-a5e5-ec42540e187d
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+    - text
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_sponsor_description
+field_name: field_sponsor_description
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

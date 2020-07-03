@@ -4,14 +4,18 @@ status: true
 dependencies:
   config:
     - field.field.node.sponsor.field_level
-    - field.field.node.sponsor.field_logo
     - field.field.node.sponsor.field_module_name
+    - field.field.node.sponsor.field_sponsor_description
+    - field.field.node.sponsor.field_sponsor_logo
     - field.field.node.sponsor.field_track_sponsorship
     - field.field.node.sponsor.field_website
     - node.type.sponsor
   module:
+    - empty_fields
     - link
     - options
+    - svg_image
+    - text
     - user
 id: node.sponsor.default
 targetEntityType: node
@@ -25,15 +29,6 @@ content:
     third_party_settings: {  }
     type: list_default
     region: content
-  field_logo:
-    type: entity_reference_entity_view
-    weight: 1
-    label: hidden
-    settings:
-      view_mode: default
-      link: false
-    third_party_settings: {  }
-    region: content
   field_module_name:
     weight: 4
     label: hidden
@@ -41,6 +36,28 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: content
+  field_sponsor_description:
+    weight: 6
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_sponsor_logo:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+      svg_render_as_image: true
+      svg_attributes:
+        width: 400
+        height: null
+    third_party_settings:
+      empty_fields:
+        handler: ''
+    type: image
     region: content
   field_track_sponsorship:
     weight: 5
