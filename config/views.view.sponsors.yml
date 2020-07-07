@@ -121,7 +121,7 @@ display:
           settings:
             image_style: ''
             image_link: ''
-            svg_render_as_image: false
+            svg_render_as_image: true
             svg_attributes:
               width: null
               height: null
@@ -355,7 +355,7 @@ display:
           settings:
             image_style: ''
             image_link: content
-            svg_render_as_image: false
+            svg_render_as_image: true
             svg_attributes:
               width: null
               height: null
@@ -447,7 +447,7 @@ display:
           settings:
             image_style: ''
             image_link: content
-            svg_render_as_image: false
+            svg_render_as_image: true
             svg_attributes:
               width: null
               height: null
@@ -600,7 +600,7 @@ display:
           settings:
             image_style: ''
             image_link: content
-            svg_render_as_image: false
+            svg_render_as_image: true
             svg_attributes:
               width: null
               height: null
@@ -753,9 +753,9 @@ display:
           settings:
             image_style: ''
             image_link: content
-            svg_render_as_image: false
+            svg_render_as_image: true
             svg_attributes:
-              width: 400
+              width: null
               height: null
           group_column: ''
           group_columns: {  }
@@ -906,7 +906,7 @@ display:
           settings:
             image_style: ''
             image_link: content
-            svg_render_as_image: false
+            svg_render_as_image: true
             svg_attributes:
               width: null
               height: null
@@ -1059,7 +1059,7 @@ display:
           settings:
             image_style: ''
             image_link: content
-            svg_render_as_image: false
+            svg_render_as_image: true
             svg_attributes:
               width: null
               height: null
@@ -1212,7 +1212,7 @@ display:
           settings:
             image_style: ''
             image_link: content
-            svg_render_as_image: false
+            svg_render_as_image: true
             svg_attributes:
               width: null
               height: null
