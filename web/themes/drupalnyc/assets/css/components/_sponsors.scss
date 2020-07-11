@@ -41,6 +41,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 1.4em 0;
 
   @media (max-width: 667px) {
     width: 80%;
@@ -50,6 +51,7 @@
 
 .deck--sponsors--level-venue img {
   width: 100%;
+  padding: 0 1.4em;
 }
 
 .deck--sponsors--level-diamond img {
@@ -62,6 +64,18 @@
 
 .deck--sponsors--level-gold img {
   width: 70%;
+}
+
+.deck--sponsors--level-homegrown img {
+  width: 60%;
+}
+
+.deck--sponsors--level-community img {
+  width: 50%;
+}
+
+.deck--sponsors--level-tri-state img {
+  width: 40%;
 }
 
 .deck--sponsors--level-silver img {
