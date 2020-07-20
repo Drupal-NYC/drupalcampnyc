@@ -5,30 +5,19 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.sponsor.field_level
-    - field.field.node.sponsor.field_logo
     - field.field.node.sponsor.field_module_name
+    - field.field.node.sponsor.field_sponsor_description
+    - field.field.node.sponsor.field_sponsor_logo
     - field.field.node.sponsor.field_track_sponsorship
     - field.field.node.sponsor.field_website
     - node.type.sponsor
   module:
-    - empty_fields
     - user
 id: node.sponsor.teaser
 targetEntityType: node
 bundle: sponsor
 mode: teaser
 content:
-  field_logo:
-    type: entity_reference_entity_view
-    weight: 0
-    region: content
-    label: hidden
-    settings:
-      view_mode: logo
-      link: false
-    third_party_settings:
-      empty_fields:
-        handler: ''
   field_module_name:
     type: string
     weight: 1
@@ -46,6 +35,8 @@ hidden:
   field_facebook: true
   field_level: true
   field_module: true
+  field_sponsor_description: true
+  field_sponsor_logo: true
   field_track_sponsorship: true
   field_twitter: true
   field_website: true

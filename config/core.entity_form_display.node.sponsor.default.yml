@@ -3,20 +3,22 @@ langcode: en
 status: true
 dependencies:
   config:
-    - entity_browser.browser.icon_browser
     - field.field.node.sponsor.field_level
-    - field.field.node.sponsor.field_logo
     - field.field.node.sponsor.field_module_name
+    - field.field.node.sponsor.field_sponsor_description
+    - field.field.node.sponsor.field_sponsor_logo
     - field.field.node.sponsor.field_track_sponsorship
     - field.field.node.sponsor.field_website
+    - image.style.thumbnail
     - node.type.sponsor
   module:
     - content_moderation
-    - entity_browser
     - field_group
     - link
     - path
     - scheduler
+    - svg_image
+    - text
 third_party_settings:
   field_group:
     group_sponsorship:
@@ -25,7 +27,7 @@ third_party_settings:
         - field_module_name
         - field_track_sponsorship
       parent_name: ''
-      weight: 3
+      weight: 4
       format_type: fieldset
       format_settings:
         id: ''
@@ -41,7 +43,7 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 5
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -51,20 +53,6 @@ content:
     third_party_settings: {  }
     type: options_select
     region: content
-  field_logo:
-    weight: 2
-    settings:
-      entity_browser: icon_browser
-      field_widget_display: rendered_entity
-      field_widget_edit: true
-      field_widget_remove: true
-      open: true
-      selection_mode: selection_edit
-      field_widget_display_settings:
-        view_mode: preview
-    third_party_settings: {  }
-    type: entity_browser_entity_reference
-    region: content
   field_module_name:
     weight: 3
     settings:
@@ -72,6 +60,22 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_sponsor_description:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_sponsor_logo:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
     region: content
   field_track_sponsorship:
     weight: 4
@@ -93,13 +97,13 @@ content:
     region: content
   moderation_state:
     type: moderation_state_default
-    weight: 13
+    weight: 14
     settings: {  }
     region: content
     third_party_settings: {  }
   path:
     type: path
-    weight: 8
+    weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -107,12 +111,12 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 6
+    weight: 7
     region: content
     third_party_settings: {  }
   publish_on:
     type: datetime_timestamp_no_default
-    weight: 9
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -120,14 +124,14 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 12
+    weight: 13
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 7
+    weight: 8
     region: content
     third_party_settings: {  }
   title:
@@ -140,7 +144,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 4
+    weight: 5
     settings:
       match_operator: CONTAINS
       size: 60
@@ -150,12 +154,12 @@ content:
     third_party_settings: {  }
   unpublish_on:
     type: datetime_timestamp_no_default
-    weight: 10
+    weight: 11
     region: content
     settings: {  }
     third_party_settings: {  }
   url_redirects:
-    weight: 11
+    weight: 12
     region: content
     settings: {  }
     third_party_settings: {  }

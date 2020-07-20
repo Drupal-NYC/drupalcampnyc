@@ -28,35 +28,54 @@ settings:
     page: 0
     feed: 0
     entity_browser: 0
+    rest_export: 0
+    attachment: 0
+    embed: 0
   preselect_views:
-    element_list_sponsors: element_list_sponsors
+    all_favorited: 0
     block_content: 0
-    comment: 0
-    comments_recent: 0
+    bofs: 0
     content: 0
     content_recent: 0
     element_list_sessions: 0
+    element_list_sponsors: 0
     files: 0
     frontpage: 0
     icon_browser: 0
+    infoscreens_general: 0
+    infoscreen_announcements: 0
     media: 0
     media_browser: 0
     moderated_content: 0
+    partners: 0
     redirect: 0
     redirect_404: 0
+    room: 0
+    schedule: 0
     scheduler_scheduled_content: 0
+    schedule_api: 0
+    sessions_export: 0
+    session_proposal_review: 0
+    session_statistics: 0
+    social_events: 0
+    social_wall: 0
     sponsors: 0
     taxonomy_term: 0
     taxonomy_term_teasers: 0
+    users_export: 0
     user_admin_people: 0
+    user_content: 0
+    user_speaker_browser: 0
+    user_special_views: 0
     user_views: 0
     watchdog: 0
+    webform_submissions: 0
     who_s_new: 0
     who_s_online: 0
   enabled_settings:
     argument: argument
-    pager: 0
     limit: limit
     offset: 0
+    pager: 0
     title: 0
 field_type: viewsreference

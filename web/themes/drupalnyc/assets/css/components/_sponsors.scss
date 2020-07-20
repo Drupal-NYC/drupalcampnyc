@@ -27,6 +27,12 @@
   margin: 2rem 0 0 0;
 }
 
+.deck--sponsors {
+  .viewsreference--view-title {
+    display: none !important;
+  }
+}
+
 .deck--sponsors a {
   flex: 0 0 1;
   width: 33%;
@@ -35,14 +41,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 1.4em 0;
 
   @media (max-width: 667px) {
-    width: 50%
+    width: 80%;
+    margin-bottom: 1rem;
   }
 }
 
 .deck--sponsors--level-venue img {
-  width: 90%;
+  width: 100%;
+  padding: 0 1.4em;
 }
 
 .deck--sponsors--level-diamond img {
@@ -57,6 +66,18 @@
   width: 70%;
 }
 
+.deck--sponsors--level-homegrown img {
+  width: 60%;
+}
+
+.deck--sponsors--level-community img {
+  width: 50%;
+}
+
+.deck--sponsors--level-tri-state img {
+  width: 40%;
+}
+
 .deck--sponsors--level-silver img {
   width: 50%;
   max-height: 120px;
@@ -64,8 +85,9 @@
 }
 
 .deck--sponsors--level-module img {
-  max-height: 120px;
+  max-height: 121px;
 }
+
 
 .deck--sponsors--level-module {
 
@@ -150,11 +172,12 @@
   a {
     width: auto;
     padding: 0 30px;
+    align-self: center;
   }
 
   img {
     width: auto;
-    height: 70px;
+    height: auto;
     margin: 0;
     transition: .3s all ease-in-out;
   }
@@ -321,4 +344,23 @@ table.sponsorship-table {
   .flip-scroll td:last-child {
     border-bottom: 1px solid #babcbf;
   }
+}
+
+.page-node-type-sponsor {
+  #block-drupalnyc-content {
+
+    @media (min-width: 800px) {
+      width: 60% !important;
+
+
+    }
+
+    .field--name-field-sponsor-description {
+      margin-bottom: 2rem;
+    }
+
+
+
+  }
+
 }
