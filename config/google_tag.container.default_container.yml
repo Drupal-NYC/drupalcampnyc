@@ -30,24 +30,7 @@ conditions:
     negate: 0
     context_mapping:
       user: '@user.current_user_context:current_user'
-  'entity_bundle:node':
-    id: 'entity_bundle:node'
-    bundles: {  }
-    negate: false
-    context_mapping:
-      node: '@node.node_route_context:node'
-  'entity_bundle:webform_submission':
-    id: 'entity_bundle:webform_submission'
-    bundles: {  }
-    negate: false
-    context_mapping:
-      webform_submission: '@webform.webform_submission_route_context:webform_submission'
   node_type_if_node:
     id: node_type_if_node
     bundles: {  }
     negate: 0
-  webform:
-    id: webform
-    webforms: {  }
-    negate: false
-    context_mapping: {  }
