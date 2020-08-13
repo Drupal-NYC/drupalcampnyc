@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e89d01c870c630d1081e858ae1953074",
+    "content-hash": "b02cf26a21814fe65dcc76396b678ea4",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2929,7 +2929,9 @@
                         "[web-root]/themes/README.txt": "assets/scaffold/files/themes.README.txt"
                     }
                 },
-                "patches_applied": []
+                "patches_applied": {
+                    "Update status can get stuck": "https://www.drupal.org/files/issues/2920285-update-status.patch"
+                }
             },
             "autoload": {
                 "psr-4": {
