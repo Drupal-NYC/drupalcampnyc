@@ -8,6 +8,7 @@
   opacity: 1;
   margin: 0 auto;
 }
+
 // Some configuration in paragraphs allow for nested decks, to fix this issue we ignore the second layer of decks
 .deck .deck {
   width: inherit;
@@ -16,38 +17,47 @@
   margin: inherit;
   padding: 0;
 }
-.deck > * {
+
+.deck>* {
   margin: 0;
 }
 
 .column--wide {
   flex: 0 0 100%;
 }
+
 .column--half {
   flex: 0 0 48%;
 }
+
 .column--2of3 {
   flex: 0 0 66%;
 }
+
 .column--1of3 {
   flex: 0 0 33%;
 }
+
 @media (max-width: 667px) {
   .column--wide {
     flex: 1;
   }
+
   .column--half {
     flex: 1;
   }
+
   .column--2of3 {
     flex: 1;
   }
+
   .column--1of3 {
     flex: 1;
   }
 }
 
 .deck {
+
   h1,
   h2 {
     margin: 0;
@@ -55,8 +65,8 @@
 }
 
 .deck-header.deck--type--deck-header {
-    //padding: 6rem 0 1rem 0;
-    font-size: 3rem;
+  //padding: 6rem 0 1rem 0;
+  font-size: 3rem;
 }
 
 .deck img {
@@ -69,10 +79,10 @@
 }
 
 /* To Do: extract h2 styling for re-use (variables) */
-.view-id-taxonomy_term .view-header > h2,
+.view-id-taxonomy_term .view-header>h2,
 .view-taxonomy-term .field--name-field-track-sponsors .field__label,
 .view-taxonomy-term .field--name-field-track-chairs .field__label,
-.deck > h2 {
+.deck>h2 {
   text-align: center;
   font-size: 30px;
   position: relative;
@@ -101,13 +111,16 @@
   align-content: center;
   flex-flow: column;
   @include clearfix;
+
   a {
-    display:inline-block;
+    display: inline-block;
     @include cta;
-    & + a {
+
+    &+a {
       margin-top: $grid-gap;
     }
   }
+
   @include responsive(desktop) {
     margin-bottom: 70px;
   }
@@ -117,7 +130,7 @@
 .deck-two-column,
 .deck-one-column {
   .deck--content {
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
   }
 }
 

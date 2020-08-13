@@ -17,6 +17,38 @@
   display: none;
 }
 
+.site-slogan {
+
+  position: absolute;
+  font-weight: bold;
+
+  color: $white-color;
+
+  @media only screen and (min-width: 900px) {
+    top: 20px;
+    left: 150px;
+    width: 20em;
+
+  }
+
+
+
+  @media only screen and (max-width: 899px) {
+    top: 14px;
+    left: 144px;
+    width: 106px;
+    line-height: 1.3em;
+    font-size: 10px;
+  }
+
+  @media only screen and (max-width: 374px) {
+    left: 124px;
+  }
+
+
+}
+
+
 .region-header a {
   color: $white-color;
   font-size: 1.25rem;
@@ -186,5 +218,14 @@ body:not(.iframe) {
         @include transition(0.3s);
       }
     }
+
+
   }
+}
+
+p.credit {
+  font-size: 80%;
+  margin-top: 0;
+  margin-bottom: 2em;
+  line-height: 1.3em;
 }

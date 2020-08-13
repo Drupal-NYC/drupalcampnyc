@@ -39,3 +39,48 @@
 a.btn {
   text-decoration: none;
 }
+
+.button-row-4 {
+  @media only screen and (max-width: 699px) {
+    display: block;
+    //height: 100%;
+  }
+
+  @media only screen and (min-width: 700px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+
+
+
+
+  .btn {
+    @media only screen and (max-width: 699px) {
+      display: block;
+      //height: 100%;
+      margin-bottom: 1rem;
+    }
+
+    @media only screen and (min-width: 700px) {
+      margin-right: 2vw;
+    }
+
+    padding-top: 1.7rem;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+    padding-bottom: 1.2rem;
+
+    text-align: center;
+    min-height: 85px;
+
+  }
+
+  .small {
+    font-size: 50%;
+    line-height: 0.3em;
+  }
+}

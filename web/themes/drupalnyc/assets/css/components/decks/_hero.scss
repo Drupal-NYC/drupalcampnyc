@@ -14,7 +14,8 @@
   color: $white-color;
 
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
+  //flex-direction: column-reverse;
 
   // @todo Fix default background image for hero element
   background-image: linear-gradient(to left, $primary-color, $tertiary-color, $secondary-color);
@@ -32,11 +33,29 @@
   &--with-icon {
     .container {
       display: grid;
-      grid-gap: $grid-gap;
-      grid-template-columns: 300px 1fr;
 
-      @include responsive(mobile) {
+      @media only screen and (min-width: 700px) {
+        grid-template-columns: 1fr 1fr 400px;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        grid-template-areas: "left middle right";
+
+        // display: grid;
+        // grid-gap: $grid-gap;
+        //grid-template-columns: 300px 1fr;
+
+      }
+
+
+      @media only screen and (max-width: 699px) {
         grid-template-columns: inherit;
+      }
+
+      img {
+
+        @media only screen and (min-width: 700px) {
+          grid-area: right;
+        }
       }
     }
 
@@ -59,7 +78,13 @@
   }
 
   &--with-background-image {
-    min-height: 60vh;
+    @include responsive(desktop) {
+      min-height: 50vh;
+    }
+
+    @include responsive(mobile) {
+      min-height: 30vh;
+    }
   }
 
   &--no-icon &--content {
@@ -116,8 +141,18 @@
 
 .path-frontpage {
   .deck-hero {
+
     background-size: cover;
-    background-position: center 77%;
+
+    @media only screen and (max-width: 1599px) {
+      background-position: center 60%;
+    }
+
+    @media only screen and (min-width: 1600px) {
+      background-position: center 80%;
+    }
+
+
   }
 }
 
