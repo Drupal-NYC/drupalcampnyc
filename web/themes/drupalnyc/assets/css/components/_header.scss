@@ -21,34 +21,30 @@
 
   position: absolute;
   font-weight: bold;
-
   color: $white-color;
 
   @media only screen and (min-width: 900px) {
     top: 20px;
     left: 150px;
     width: 20em;
-
   }
 
-
-
   @media only screen and (max-width: 899px) {
-    top: 14px;
+    top: 20px;
     left: 144px;
     width: 106px;
     line-height: 1.3em;
     font-size: 10px;
-    text-align: center;
   }
 
   @media only screen and (max-width: 374px) {
+    top: 20px;
     left: 124px;
-    text-align: center;
   }
-
-
 }
+
+
+
 
 
 .region-header a {
