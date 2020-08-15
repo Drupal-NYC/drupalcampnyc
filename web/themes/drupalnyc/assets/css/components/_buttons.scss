@@ -19,13 +19,17 @@
   font-size: 1rem;
 
   &.btn-lg {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 1em;
+    text-align: center;
+    line-height: 1em;
   }
 
 }
 
 .btn-color-1 {
-  @include button-bg($primary-color);
+  @include button-bg(#0273bb);
 }
 
 .btn-color-2 {
@@ -33,9 +37,43 @@
 }
 
 .btn-color-3 {
-  @include button-bg($tertiary-color)
+  @include button-bg(#3da50a);
 }
 
 a.btn {
   text-decoration: none;
+}
+
+.button-row-4 {
+  @media only screen and (max-width: 699px) {
+    display: block;
+  }
+
+  @media only screen and (min-width: 700px) {
+    display: flex;
+    justify-content: center;
+    width: 1024px;
+    max-width: 100%;
+    margin: auto;
+
+  }
+
+
+  .btn {
+    @media only screen and (max-width: 699px) {
+      display: block;
+      margin-bottom: 1rem;
+    }
+
+    @media only screen and (min-width: 700px) {
+      margin-right: 2vw;
+    }
+
+  }
+
+  .small {
+    font-size: 50%;
+    line-height: 0.3em;
+
+  }
 }
