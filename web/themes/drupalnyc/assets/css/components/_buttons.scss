@@ -19,8 +19,11 @@
   font-size: 1rem;
 
   &.btn-lg {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-weight: bold;
+    padding: 1em;
+    text-align: center;
+    line-height: 1em;
   }
 
 }
@@ -44,39 +47,27 @@ a.btn {
 .button-row-4 {
   @media only screen and (max-width: 699px) {
     display: block;
-    //height: 100%;
   }
 
   @media only screen and (min-width: 700px) {
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    margin: 0;
+    width: 1024px;
+    max-width: 100%;
+    margin: auto;
+
   }
-
-
-
 
 
   .btn {
     @media only screen and (max-width: 699px) {
       display: block;
-      //height: 100%;
       margin-bottom: 1rem;
     }
 
     @media only screen and (min-width: 700px) {
       margin-right: 2vw;
     }
-
-    padding-top: 1.7rem;
-    padding-left: 1.4rem;
-    padding-right: 1.4rem;
-    padding-bottom: 1.2rem;
-
-    text-align: center;
-    min-height: 88px;
 
   }
 
