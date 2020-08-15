@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ec6108e5b8bcd8d1ea83177150faecae",
+    "content-hash": "c37e32492eaa398eafc73d0c35fc8015",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1976,6 +1976,115 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/adminimal_theme",
                 "issues": "https://www.drupal.org/project/issues/adminimal_theme"
+            }
+        },
+        {
+            "name": "drupal/allowed_formats",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/allowed_formats.git",
+                "reference": "8.x-1.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/allowed_formats-8.x-1.3.zip",
+                "reference": "8.x-1.3",
+                "shasum": "4c3c036d7b41428d6e22b61f1219de0ab012feec"
+            },
+            "require": {
+                "drupal/core": "^8.7.7 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.3",
+                    "datestamp": "1592909219",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "floretan",
+                    "homepage": "https://www.drupal.org/user/66163"
+                }
+            ],
+            "description": "Limit which text formats are available for each field instance.",
+            "homepage": "https://www.drupal.org/project/allowed_formats",
+            "support": {
+                "source": "https://git.drupalcode.org/project/allowed_formats"
+            }
+        },
+        {
+            "name": "drupal/auto_entitylabel",
+            "version": "3.0.0-beta3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/auto_entitylabel.git",
+                "reference": "8.x-3.0-beta3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/auto_entitylabel-8.x-3.0-beta3.zip",
+                "reference": "8.x-3.0-beta3",
+                "shasum": "466358949b485461a77d600e3aa27af7b72b4eec"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-3.0-beta3",
+                    "datestamp": "1595625626",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Pravin Ajaaz",
+                    "homepage": "https://www.drupal.org/user/2910049"
+                },
+                {
+                    "name": "RenatoG",
+                    "homepage": "https://www.drupal.org/user/3326031"
+                },
+                {
+                    "name": "bforchhammer",
+                    "homepage": "https://www.drupal.org/user/216396"
+                },
+                {
+                    "name": "colan",
+                    "homepage": "https://www.drupal.org/user/58704"
+                },
+                {
+                    "name": "diqidoq",
+                    "homepage": "https://www.drupal.org/user/1001934"
+                },
+                {
+                    "name": "purushotam.rai",
+                    "homepage": "https://www.drupal.org/user/3193859"
+                }
+            ],
+            "description": "Allows hiding of entity label fields and automatic label creation.",
+            "homepage": "https://www.drupal.org/project/auto_entitylabel",
+            "support": {
+                "source": "https://git.drupalcode.org/project/auto_entitylabel",
+                "issues": "https://www.drupal.org/project/issues/auto_entitylabel"
             }
         },
         {
@@ -4481,6 +4590,51 @@
                 "source": "https://git.drupalcode.org/project/metatag",
                 "issues": "https://www.drupal.org/project/issues/metatag",
                 "docs": "https://www.drupal.org/docs/8/modules/metatag"
+            }
+        },
+        {
+            "name": "drupal/override_node_options",
+            "version": "2.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/override_node_options.git",
+                "reference": "8.x-2.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/override_node_options-8.x-2.5.zip",
+                "reference": "8.x-2.5",
+                "shasum": "dd4862278f16f04857aa7c5fc69b31ddf85bae62"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.5",
+                    "datestamp": "1591363789",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Oliver Davies",
+                    "homepage": "https://www.drupal.org/user/381388",
+                    "email": "oliver@oliverdavies.uk"
+                }
+            ],
+            "description": "Allows permissions to be set on each node option such as published and authoring information.",
+            "homepage": "https://www.drupal.org/project/override_node_options",
+            "support": {
+                "source": "https://git.drupalcode.org/project/override_node_options"
             }
         },
         {
@@ -11652,6 +11806,7 @@
             "keywords": [
                 "tokenizer"
             ],
+            "abandoned": true,
             "time": "2019-09-17T06:23:10+00:00"
         },
         {
@@ -12715,7 +12870,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "drupal/auto_entitylabel": 10
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],

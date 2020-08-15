@@ -3,6 +3,8 @@ module:
   admin_toolbar_links_access_filter: 0
   admin_toolbar_tools: 0
   adminimal_admin_toolbar: 0
+  allowed_formats: 0
+  auto_entitylabel: 0
   autocomplete_deluxe: 0
   block: 0
   block_content: 0
@@ -62,6 +64,7 @@ module:
   node: 0
   nyc_core: 0
   options: 0
+  override_node_options: 0
   pantheon_advanced_page_cache: 0
   paragraphs_type_permissions: 0
   path: 0

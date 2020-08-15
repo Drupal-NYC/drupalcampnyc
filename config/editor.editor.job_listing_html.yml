@@ -1,0 +1,46 @@
+uuid: 64a9aa98-e0b1-41f3-9411-61b66f8d846a
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.job_listing_html
+  module:
+    - ckeditor
+format: job_listing_html
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formatting
+          items:
+            - Bold
+            - Italic
+            - Format
+        -
+          name: Links
+          items:
+            - DrupalLink
+            - DrupalUnlink
+        -
+          name: Lists
+          items:
+            - BulletedList
+            - NumberedList
+  plugins:
+    stylescombo:
+      styles: ''
+    drupallink:
+      linkit_enabled: false
+      linkit_profile: ''
+    language:
+      language_list: un
+image_upload:
+  status: false
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null
