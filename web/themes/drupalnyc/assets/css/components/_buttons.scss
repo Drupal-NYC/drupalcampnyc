@@ -20,12 +20,13 @@
 
   &.btn-lg {
     font-size: 1.8rem;
+    font-weight: bold;
   }
 
 }
 
 .btn-color-1 {
-  @include button-bg($primary-color);
+  @include button-bg(#0273bb);
 }
 
 .btn-color-2 {
@@ -33,7 +34,7 @@
 }
 
 .btn-color-3 {
-  @include button-bg($tertiary-color)
+  @include button-bg(#3da50a);
 }
 
 a.btn {
@@ -75,12 +76,13 @@ a.btn {
     padding-bottom: 1.2rem;
 
     text-align: center;
-    min-height: 85px;
+    min-height: 88px;
 
   }
 
   .small {
     font-size: 50%;
     line-height: 0.3em;
+
   }
 }
