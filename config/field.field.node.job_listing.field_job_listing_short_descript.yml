@@ -1,0 +1,29 @@
+uuid: 68f566fa-ccc7-44af-a5ed-0899a17d0e49
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_job_listing_short_descript
+    - node.type.job_listing
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    basic_html: basic_html
+    restricted_html: '0'
+    full_html: '0'
+    job_listing_html: '0'
+    plain_text: '0'
+id: node.job_listing.field_job_listing_short_descript
+field_name: field_job_listing_short_descript
+entity_type: node
+bundle: job_listing
+label: 'Job Listing Short Description'
+description: 'This is the Short Description of the particular Sponsor that appears on the main Jobs Listing page'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

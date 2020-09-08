@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.job_listing.field_job_description
+    - field.field.node.job_listing.field_job_listing_short_descript
     - field.field.node.job_listing.field_job_sponsor
     - node.type.job_listing
   module:
@@ -16,7 +17,7 @@ bundle: job_listing
 mode: default
 content:
   field_job_description:
-    weight: 1
+    weight: 2
     label: hidden
     settings: {  }
     third_party_settings: {  }
@@ -34,5 +35,6 @@ content:
       empty_fields:
         handler: ''
 hidden:
+  field_job_listing_short_descript: true
   links: true
   shariff_field: true

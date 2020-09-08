@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.job_listing.field_job_description
+    - field.field.node.job_listing.field_job_listing_short_descript
     - field.field.node.job_listing.field_job_sponsor
     - node.type.job_listing
   module:
@@ -21,5 +22,6 @@ content:
     region: content
 hidden:
   field_job_description: true
+  field_job_listing_short_descript: true
   field_job_sponsor: true
   shariff_field: true

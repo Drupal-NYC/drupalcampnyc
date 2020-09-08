@@ -3,11 +3,13 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.storage.node.field_job_listing_short_descript
     - field.storage.node.field_sponsor_logo
     - node.type.job_listing
   module:
     - node
     - svg_image
+    - text
     - user
 id: job_listings
 label: 'Job listings'
@@ -53,11 +55,52 @@ display:
         options:
           offset: 0
       style:
-        type: default
+        type: table
         options:
           grouping: {  }
           row_class: ''
           default_row_class: true
+          override: true
+          sticky: false
+          caption: ''
+          summary: ''
+          description: ''
+          columns:
+            view_node: view_node
+            field_sponsor_logo: view_node
+            view_node_1: view_node_1
+            field_job_listing_short_descript: field_sponsor_logo
+          info:
+            view_node:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_sponsor_logo:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            view_node_1:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_job_listing_short_descript:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+          default: '-1'
+          empty_table: false
       row:
         type: fields
         options:
@@ -196,11 +239,11 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
-            alter_text: false
-            text: ''
-            make_link: false
+            alter_text: true
+            text: '{{ field_job_description }} '
+            make_link: true
             path: ''
             absolute: false
             external: false
@@ -236,11 +279,73 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          text: 'View job listings'
+          text: ''
           output_url_as_text: false
           absolute: false
           entity_type: node
           plugin_id: entity_link
+        field_job_listing_short_descript:
+          id: field_job_listing_short_descript
+          table: node__field_job_listing_short_descript
+          field: field_job_listing_short_descript
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: true
+            path: '{{ view_node }}'
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: text_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
       filters:
         status:
           value: '1'
@@ -268,21 +373,18 @@ display:
             operator_limit_selection: false
             operator_list: {  }
       sorts:
-        changed:
-          id: changed
-          table: node_field_data
-          field: changed
+        field_job_title_value:
+          id: field_job_title_value
+          table: node__field_job_title
+          field: field_job_title_value
           relationship: none
           group_type: group
           admin_label: ''
-          order: DESC
+          order: ASC
           exposed: false
           expose:
             label: ''
-          granularity: second
-          entity_type: node
-          entity_field: changed
-          plugin_id: date
+          plugin_id: standard
       header: {  }
       footer: {  }
       empty:
@@ -320,6 +422,7 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
+        - 'config:field.storage.node.field_job_listing_short_descript'
         - 'config:field.storage.node.field_sponsor_logo'
   job_listings_block:
     display_plugin: block
@@ -345,4 +448,5 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
+        - 'config:field.storage.node.field_job_listing_short_descript'
         - 'config:field.storage.node.field_sponsor_logo'

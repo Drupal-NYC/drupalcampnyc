@@ -18,6 +18,7 @@ permissions:
   - 'view field_description'
   - 'view field_duration'
   - 'view field_featured'
+  - 'view field_job_sponsor'
   - 'view field_si_sponsor'
   - 'view field_slides'
   - 'view field_slides_external'
