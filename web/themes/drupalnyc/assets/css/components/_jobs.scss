@@ -18,6 +18,10 @@
       width: 80%;
       margin: auto
     }
+
+    tr:last-child {
+      border-bottom: none;
+    }
   }
 }
 
