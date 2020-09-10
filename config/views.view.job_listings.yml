@@ -373,11 +373,11 @@ display:
             operator_limit_selection: false
             operator_list: {  }
       sorts:
-        field_job_title_value:
-          id: field_job_title_value
-          table: node__field_job_title
-          field: field_job_title_value
-          relationship: none
+        field_sponsor_priority_value:
+          id: field_sponsor_priority_value
+          table: node__field_sponsor_priority
+          field: field_sponsor_priority_value
+          relationship: field_job_sponsor
           group_type: group
           admin_label: ''
           order: ASC

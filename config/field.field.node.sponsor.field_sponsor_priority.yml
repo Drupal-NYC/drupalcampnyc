@@ -1,0 +1,23 @@
+uuid: 22e3ff62-58b0-43d4-a95a-0603b6a23814
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sponsor_priority
+    - node.type.sponsor
+id: node.sponsor.field_sponsor_priority
+field_name: field_sponsor_priority
+entity_type: node
+bundle: sponsor
+label: 'Sponsor weight'
+description: "This is used to sort things based first on sponsor level then on how soon we received payment. Add the base level value:\r\nVenue: 0\r\nDiamond: 100\r\nPlatinum: 200\r\nGold: 300\r\nHomegrown: 400\r\nCommunity: 500\r\nTri-State: 600\r\n\r\nThen add n where n is the order in which we received payment from the sponsor at that level.\r\n\r\nFor example, the second Gols sponsor we receive payment from would have a weight of 302."
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: 699
+  prefix: ''
+  suffix: ''
+field_type: integer
