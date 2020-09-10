@@ -9,7 +9,6 @@ dependencies:
   module:
     - node
     - svg_image
-    - text
     - user
 id: job_listings
 label: 'Job listings'
@@ -68,8 +67,7 @@ display:
           columns:
             view_node: view_node
             field_sponsor_logo: view_node
-            view_node_1: view_node_1
-            field_job_listing_short_descript: field_sponsor_logo
+            field_job_listing_short_descript: field_job_listing_short_descript
           info:
             view_node:
               sortable: false
@@ -79,13 +77,6 @@ display:
               empty_column: false
               responsive: ''
             field_sponsor_logo:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            view_node_1:
               sortable: false
               default_sort_order: asc
               align: ''
@@ -116,7 +107,7 @@ display:
           field: view_node
           relationship: none
           group_type: group
-          admin_label: 'URL to content'
+          admin_label: 'URL to sponsor job listings'
           label: ''
           exclude: true
           alter:
@@ -160,6 +151,59 @@ display:
           hide_alter_empty: true
           text: view
           output_url_as_text: true
+          absolute: false
+          entity_type: node
+          plugin_id: entity_link
+        view_node_1:
+          id: view_node_1
+          table: node
+          field: view_node
+          relationship: none
+          group_type: group
+          admin_label: 'Link: Read full job listings'
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          text: 'Read full job listings'
+          output_url_as_text: false
           absolute: false
           entity_type: node
           plugin_id: entity_link
@@ -231,59 +275,6 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
-        view_node_1:
-          id: view_node_1
-          table: node
-          field: view_node
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: true
-          alter:
-            alter_text: true
-            text: '{{ field_job_description }} '
-            make_link: true
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          text: ''
-          output_url_as_text: false
-          absolute: false
-          entity_type: node
-          plugin_id: entity_link
         field_job_listing_short_descript:
           id: field_job_listing_short_descript
           table: node__field_job_listing_short_descript
@@ -294,9 +285,9 @@ display:
           label: ''
           exclude: false
           alter:
-            alter_text: false
-            text: ''
-            make_link: true
+            alter_text: true
+            text: '{{ field_job_listing_short_descript }} {{ view_node_1 }}'
+            make_link: false
             path: '{{ view_node }}'
             absolute: false
             external: false
@@ -333,7 +324,7 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: text_default
+          type: basic_string
           settings: {  }
           group_column: value
           group_columns: {  }
