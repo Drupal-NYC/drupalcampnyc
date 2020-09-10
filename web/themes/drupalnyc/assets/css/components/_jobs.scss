@@ -29,6 +29,7 @@
   img {
     @media (min-width: 800px) {
       width: 300px;
+      max-width: 300px;
     }
 
     @media only screen and (max-width: 799px) {
