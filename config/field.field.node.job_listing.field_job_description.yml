@@ -19,8 +19,8 @@ id: node.job_listing.field_job_description
 field_name: field_job_description
 entity_type: node
 bundle: job_listing
-label: 'Job description(s)'
-description: 'Please provide descriptions of any jobs for which you are hiring. Feel free to include links to any supporting materials such as your website or recruitment tools.'
+label: 'Company and job description(s)'
+description: 'Please provide descriptions of any jobs for which you are hiring and any information about your company that you wish to convey. Feel free to include links to any supporting materials such as your website or recruitment tools. This can be as long as you want.'
 required: true
 translatable: false
 default_value: {  }
