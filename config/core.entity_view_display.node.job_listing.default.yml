@@ -1,0 +1,40 @@
+uuid: 14274444-7044-4ca3-9e49-f6a044a4555f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.job_listing.field_job_description
+    - field.field.node.job_listing.field_job_listing_short_descript
+    - field.field.node.job_listing.field_job_sponsor
+    - node.type.job_listing
+  module:
+    - empty_fields
+    - text
+    - user
+id: node.job_listing.default
+targetEntityType: node
+bundle: job_listing
+mode: default
+content:
+  field_job_description:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_job_sponsor:
+    type: entity_reference_entity_view
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings:
+      empty_fields:
+        handler: ''
+hidden:
+  field_job_listing_short_descript: true
+  links: true
+  shariff_field: true

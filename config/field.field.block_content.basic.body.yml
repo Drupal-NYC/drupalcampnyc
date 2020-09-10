@@ -6,7 +6,15 @@ dependencies:
     - block_content.type.basic
     - field.storage.block_content.body
   module:
+    - allowed_formats
     - text
+third_party_settings:
+  allowed_formats:
+    basic_html: basic_html
+    restricted_html: restricted_html
+    full_html: full_html
+    plain_text: plain_text
+    job_listing_html: '0'
 _core:
   default_config_hash: R__6wc-rMfFMO8d7jcgqnqiA92j8spKhcc5MiqecrMc
 id: block_content.basic.body

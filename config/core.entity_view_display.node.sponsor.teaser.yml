@@ -8,24 +8,34 @@ dependencies:
     - field.field.node.sponsor.field_module_name
     - field.field.node.sponsor.field_sponsor_description
     - field.field.node.sponsor.field_sponsor_logo
+    - field.field.node.sponsor.field_sponsor_priority
     - field.field.node.sponsor.field_track_sponsorship
     - field.field.node.sponsor.field_website
     - node.type.sponsor
   module:
+    - empty_fields
+    - svg_image
     - user
 id: node.sponsor.teaser
 targetEntityType: node
 bundle: sponsor
 mode: teaser
 content:
-  field_module_name:
-    type: string
-    weight: 1
+  field_sponsor_logo:
+    type: image
+    weight: 0
     region: content
     label: hidden
     settings:
-      link_to_entity: false
-    third_party_settings: {  }
+      image_style: ''
+      image_link: content
+      svg_render_as_image: true
+      svg_attributes:
+        width: null
+        height: null
+    third_party_settings:
+      empty_fields:
+        handler: ''
 hidden:
   field_address: true
   field_contact_name: true
@@ -35,8 +45,9 @@ hidden:
   field_facebook: true
   field_level: true
   field_module: true
+  field_module_name: true
   field_sponsor_description: true
-  field_sponsor_logo: true
+  field_sponsor_priority: true
   field_track_sponsorship: true
   field_twitter: true
   field_website: true

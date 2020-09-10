@@ -1,0 +1,29 @@
+uuid: decffd0d-a51e-4595-9d3f-3558f3c9fd12
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_job_description
+    - node.type.job_listing
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    job_listing_html: job_listing_html
+    basic_html: '0'
+    restricted_html: '0'
+    full_html: '0'
+    plain_text: '0'
+id: node.job_listing.field_job_description
+field_name: field_job_description
+entity_type: node
+bundle: job_listing
+label: 'Company and job description(s)'
+description: 'Please provide descriptions of any jobs for which you are hiring and any information about your company that you wish to convey. Feel free to include links to any supporting materials such as your website or recruitment tools. This can be as long as you want.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

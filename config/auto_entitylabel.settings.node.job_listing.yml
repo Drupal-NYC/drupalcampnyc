@@ -1,0 +1,6 @@
+status: 1
+pattern: 'Job Listings for [node:field_job_sponsor:entity:title]'
+escape: false
+dependencies:
+  config:
+    - node.type.job_listing

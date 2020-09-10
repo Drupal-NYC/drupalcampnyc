@@ -1,17 +1,17 @@
-uuid: 554b11d5-fb8c-4919-8d10-465a66613c7f
+uuid: 3df8afdd-65f8-448a-9c84-2c1aee05ae7c
 langcode: en
 status: true
 dependencies:
   module:
     - field_permissions
-    - paragraphs
+    - node
     - text
 third_party_settings:
   field_permissions:
     permission_type: public
-id: paragraph.field_body
-field_name: field_body
-entity_type: paragraph
+id: node.field_job_description
+field_name: field_job_description
+entity_type: node
 type: text_long
 settings: {  }
 module: text

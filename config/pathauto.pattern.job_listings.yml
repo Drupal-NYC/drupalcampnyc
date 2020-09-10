@@ -1,0 +1,22 @@
+uuid: 5c4d67ad-b89d-4311-b445-cc5f93cf6464
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: job_listings
+label: 'Job listings'
+type: 'canonical_entities:node'
+pattern: '/sponsor/[node:field_job_sponsor:entity:title]/jobs'
+selection_criteria:
+  e4ab300d-bfe1-4235-bc9d-76288606e802:
+    id: node_type
+    bundles:
+      job_listing: job_listing
+    negate: false
+    context_mapping:
+      node: node
+    uuid: e4ab300d-bfe1-4235-bc9d-76288606e802
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,27 @@
+uuid: f156b9f2-9f25-46c0-9a67-aade8ac90dda
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.job_listing.field_job_description
+    - field.field.node.job_listing.field_job_listing_short_descript
+    - field.field.node.job_listing.field_job_sponsor
+    - node.type.job_listing
+  module:
+    - user
+id: node.job_listing.teaser
+targetEntityType: node
+bundle: job_listing
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_job_description: true
+  field_job_listing_short_descript: true
+  field_job_sponsor: true
+  shariff_field: true

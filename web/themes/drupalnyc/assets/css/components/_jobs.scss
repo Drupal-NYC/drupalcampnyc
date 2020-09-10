@@ -1,0 +1,54 @@
+.page-node-type-job-listing {
+  .field--name-field-sponsor-logo {
+    img {
+      @media (min-width: 800px) {
+        width: 400px;
+      }
+
+      @media only screen and (max-width: 799px) {
+        width: 95%;
+      }
+    }
+  }
+}
+
+.view-job-listings {
+  .views-view-table {
+    @media (min-width: 800px) {
+      width: 80%;
+      margin: auto
+    }
+
+    tr:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+.views-field-field-sponsor-logo {
+  img {
+    @media (min-width: 800px) {
+      width: 300px;
+      max-width: 300px;
+    }
+
+    @media only screen and (max-width: 799px) {
+      width: 95%;
+    }
+  }
+}
+
+td.views-field-field-job-listing-short-descript {
+  @media only screen and (max-width: 799px) {
+    font-size: 1rem;
+    line-height: 1.4em;
+    padding: 6px 0 6px 2em;
+  }
+}
+
+td.views-field-field-sponsor-logo {
+  @media only screen and (max-width: 799px) {
+    width: 44%;
+    padding: 0;
+  }
+}

@@ -1,0 +1,19 @@
+uuid: cc6d07d1-fe37-414d-997f-069867c2f836
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_job_listing_short_descript
+    - node.type.job_listing
+id: node.job_listing.field_job_listing_short_descript
+field_name: field_job_listing_short_descript
+entity_type: node
+bundle: job_listing
+label: 'Short description'
+description: "<p>This appears next to your logo on the main <a href=\"/job-listings\">job listings page</a>. A link to your full job listings page with the text \" Read full job listings\" is added to the end of this short description so please end your short description with a period, exclamation mark, or question mark.</p>\r\n\r\n<p>Example:<br />\r\n\"We are currently hiring back-end developers, customer support staff, and designers in Portland, OR and Rome, Italy. We offer flexible schedules and great benefits!\"</p>"
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

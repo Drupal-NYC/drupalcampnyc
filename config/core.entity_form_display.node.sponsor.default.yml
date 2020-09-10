@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.sponsor.field_module_name
     - field.field.node.sponsor.field_sponsor_description
     - field.field.node.sponsor.field_sponsor_logo
+    - field.field.node.sponsor.field_sponsor_priority
     - field.field.node.sponsor.field_track_sponsorship
     - field.field.node.sponsor.field_website
     - image.style.thumbnail
@@ -76,6 +77,13 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
+    region: content
+  field_sponsor_priority:
+    weight: 26
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
     region: content
   field_track_sponsorship:
     weight: 4
