@@ -1,21 +1,20 @@
-uuid: cbb93d14-860a-4bf0-9826-2353a021e0b5
+uuid: 3b2f78ed-f849-432f-ac7e-e2d747ac0430
 langcode: en
 status: true
 dependencies:
   module:
     - field_permissions
     - node
-    - text
 third_party_settings:
   field_permissions:
     permission_type: public
 id: node.field_job_listing_short_descript
 field_name: field_job_listing_short_descript
 entity_type: node
-type: text
+type: string_long
 settings:
-  max_length: 255
-module: text
+  case_sensitive: false
+module: core
 locked: false
 cardinality: 1
 translatable: true
