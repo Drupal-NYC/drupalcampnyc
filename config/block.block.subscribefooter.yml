@@ -1,0 +1,32 @@
+uuid: e64b98b5-d1b6-4d06-a7e9-531e94c67e0c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:46b119e3-50c9-48e3-8cee-d253d72fbe3c'
+  module:
+    - block_content
+    - de_core
+  theme:
+    - drupalnyc
+id: subscribefooter
+theme: drupalnyc
+region: prefooter
+weight: -10
+provider: null
+plugin: 'block_content:46b119e3-50c9-48e3-8cee-d253d72fbe3c'
+settings:
+  id: 'block_content:46b119e3-50c9-48e3-8cee-d253d72fbe3c'
+  label: 'Subscribe footer'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  current_user_page:
+    id: current_user_page
+    show_on_own_page: 0
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
