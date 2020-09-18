@@ -32,6 +32,9 @@ settings:
     -
       value: tristate
       label: Tri-State
+    -
+      value: inkind
+      label: In-Kind
   allowed_values_function: ''
 module: options
 locked: false
