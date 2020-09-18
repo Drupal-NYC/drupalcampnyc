@@ -49,12 +49,6 @@
   }
 }
 
-.deck--sponsors--level-venue img {
-  width: 60%;
-  padding: 0 1.4em;
-}
-
-
 .deck--sponsors--level-diamond img {
   width: 90%;
 }
@@ -75,14 +69,17 @@
   width: 50%;
 }
 
+.deck--sponsors--level-venue img {
+  width: 45%;
+  padding: 0 1.4em;
+}
+
 .deck--sponsors--level-tri-state img {
   width: 40%;
 }
 
-.deck--sponsors--level-silver img {
-  width: 50%;
-  max-height: 120px;
-  padding: 1em 0;
+.deck--sponsors--level-inkind img {
+  width: 35%;
 }
 
 .deck--sponsors--level-module img {
