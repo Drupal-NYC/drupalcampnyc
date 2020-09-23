@@ -17,6 +17,26 @@
   display: none;
 }
 
+body.user-logged-in {
+  .site-slogan {
+
+
+    @media only screen and (max-width: 1240px) and (min-width: 1023px) {
+      width: 130px;
+      font-size: 12px;
+      line-height: 1em;
+      left: 130px;
+
+    }
+
+    @media only screen and (max-width: 550px) {
+      display: none;
+
+    }
+  }
+
+}
+
 .site-slogan {
 
   position: absolute;
@@ -31,8 +51,8 @@
 
   @media only screen and (max-width: 899px) {
     top: 20px;
-    left: 144px;
-    width: 106px;
+    left: 130px;
+    width: 120px;
     line-height: 1.3em;
     font-size: 10px;
   }
@@ -69,6 +89,14 @@
 .toolbar-vertical.toolbar-fixed .region-header {
   top: 39px;
 }
+
+.user-logged-in.toolbar-vertical.toolbar-fixed .region-header {
+  top: 39px;
+}
+
+
+
+
 
 .toolbar-tray-horizontal ul li.menu-item--expanded.hover-intent ul {
   z-index: 2;

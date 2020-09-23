@@ -1,9 +1,11 @@
 // Basic menu handling
 .menu {
   list-style: none outside;
-  margin-left: 1em; /* LTR */
+  margin-left: 1em;
+  /* LTR */
   padding: 0;
-  text-align: left; /* LTR */
+  text-align: left;
+  /* LTR */
 }
 
 [dir="rtl"] ul.menu {
@@ -33,7 +35,8 @@
       font-weight: 600;
 
     }
-    .menu-item > .menu {
+
+    .menu-item>.menu {
       visibility: hidden;
       opacity: 0;
       display: none;
@@ -46,6 +49,7 @@
       .menu-item {
         white-space: nowrap;
         border-top: 2px solid transparent;
+
         &:hover {
           background-image: inherit;
           //background-color: rgba($quaternary-color, 0.75);
@@ -54,14 +58,15 @@
           border-top: 2px solid white;
         }
       }
+
       a {
         padding: 0.4rem 0.8rem;
         font-size: 16px;
       }
     }
 
-    .menu-item:hover > .menu,
-    .menu-item:focus-within > .menu {
+    .menu-item:hover>.menu,
+    .menu-item:focus-within>.menu {
       visibility: visible;
       opacity: 1;
       display: block;
@@ -72,14 +77,17 @@
       @include due-gradient;
       background-attachment: fixed;
     }
+
     // Top level items
-    > .menu-item {
+    >.menu-item {
       margin: 0 3.5vw 0 0;
+
       &:last-child {
         margin-right: 2vw;
       }
+
       // Only the top level link element
-      & > a {
+      &>a {
         font-size: 18px;
         height: 80px;
         display: flex;
@@ -94,14 +102,16 @@
           top: -50px;
           transition: all 0.15s ease;
         }
+
         &:hover:before,
         &:focus-within:before {
           background-color: $white-color;
           top: 0;
         }
       }
+
       &.menu-item--expanded {
-        & > a:after {
+        &>a:after {
           content: "";
           height: 24px;
           width: 10px;
@@ -110,13 +120,13 @@
           background-repeat: no-repeat;
           filter: brightness(0) invert(1);
           transition: all 0.3s ease;
-          animation: 0.5s cubic-bezier(0.59, 1.68, 0.64, 0.82) 0.3s 1 fadein
-            forwards;
+          animation: 0.5s cubic-bezier(0.59, 1.68, 0.64, 0.82) 0.3s 1 fadein forwards;
           margin-left: 5px;
           opacity: 0;
         }
       }
     }
+
     a {
       text-decoration: none;
     }
@@ -131,12 +141,26 @@
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
 
 $menu-width: 90vw;
+
+.user-logged-in.toolbar-vertical.toolbar-fixed .mobile--page--header {
+
+  @media only screen and (max-width: 1023px) {
+    .hamburger {
+
+      top: 25px !important;
+    }
+  }
+}
+
+
+
 
 .mobile--page--header {
   .block-system-branding-block {
@@ -147,10 +171,12 @@ $menu-width: 90vw;
     //  left: calc(50% - 33px);
     //}
   }
+
   .region-header {
     align-items: flex-end;
     justify-content: flex-end;
   }
+
   nav.block-menu.menu--main {
     overflow-x: scroll;
     position: fixed;
@@ -176,6 +202,7 @@ $menu-width: 90vw;
     &.open {
       transform: translate(0);
     }
+
     a {
       color: black;
       height: auto;
@@ -194,8 +221,9 @@ $menu-width: 90vw;
     margin: 0;
     margin-left: 1rem;
   }
+
   .menu-item--expanded {
-    & > a:after {
+    &>a:after {
       content: "";
       display: inline-block;
       height: 1.2rem;
@@ -206,13 +234,17 @@ $menu-width: 90vw;
       filter: brightness(0);
       margin-left: 5px;
     }
-    & > a.is-active:after {
+
+    &>a.is-active:after {
       // Magic (trying to hit the $secondary-color)
-      filter: invert(0.5) sepia(1) saturate(5) hue-rotate(267deg)
-        brightness(0.7);
+      filter: invert(0.5) sepia(1) saturate(5) hue-rotate(267deg) brightness(0.7);
     }
   }
+
+
+
   .hamburger {
+
     position: fixed;
     height: 80px;
     width: 80px;
@@ -226,12 +258,15 @@ $menu-width: 90vw;
       height: 3px;
       position: absolute;
       left: 20px;
+
       &:nth-child(1) {
         top: 32px;
       }
+
       &:nth-child(2) {
         top: 41px;
       }
+
       &:nth-child(3) {
         top: 50px;
       }
@@ -278,6 +313,8 @@ body {
     }
   }
 }
+
+
 
 nav.menu--account {
   height: 100%;
