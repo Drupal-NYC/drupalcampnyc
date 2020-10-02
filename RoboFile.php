@@ -357,4 +357,29 @@ class RoboFile extends Tasks {
     return $this->projectRoot;
   }
 
+  /**
+   * Prep a key to be one line and append to env file.
+   *
+   * @param string $key
+   *   The key.
+   */
+  public function keyPrep($key) {
+    $root = $this->getProjectRoot();
+    $key_contents = file_get_contents("$root/$key");
+    $one_line = str_replace(["\r", "\n"], '\\n',
+      $key_contents);
+    $result = $this->taskWriteToFile("$root/env")
+      ->append(TRUE)
+      ->line("SSH_PRIVATE_KEY=$one_line")
+      ->setVerbosityThreshold(VerbosityThresholdInterface::VERBOSITY_DEBUG)
+      ->run();
+    if ($result instanceof Result && $result->wasSuccessful()) {
+      $this->io()
+        ->success("The key has been processed and appended to the env file.");
+    }
+    else {
+      $this->io()->error('Error message: ' . $result->getMessage());
+    }
+  }
+
 }
