@@ -31,7 +31,7 @@ class CustomUserAccessControlHandler extends UserAccessControlHandler {
             if ($account->id() !== $entity->id()) {
                 // Blocking all users that do now want to be shown in a public list.
                 $public_listing = $entity->get('field_u_pub_attendee_list')->getValue();
-                if ($public_listing[0]['value'] == '0') {
+                if (isset($public_listing[0]) && $public_listing[0]['value'] == '0') {
                     return AccessResult::forbidden();
                 }
             }
