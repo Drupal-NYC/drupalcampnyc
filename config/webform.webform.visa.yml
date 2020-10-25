@@ -1,3 +1,4 @@
+uuid: 383ec32f-3fdc-41d2-9e6c-da89aa938c2e
 langcode: en
 status: closed
 dependencies: {  }
@@ -197,6 +198,7 @@ handlers:
   email:
     id: email
     label: Email
+    notes: ''
     handler_id: email
     status: true
     conditions: {  }
@@ -240,4 +242,3 @@ handlers:
       theme_name: ''
       parameters: {  }
 variants: {  }
-uuid: 383ec32f-3fdc-41d2-9e6c-da89aa938c2e

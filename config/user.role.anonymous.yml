@@ -15,7 +15,6 @@ permissions:
   - 'use text format restricted_html'
   - 'view field_access_notice'
   - 'view field_alternative_verticals'
-  - 'view field_description'
   - 'view field_duration'
   - 'view field_featured'
   - 'view field_job_sponsor'

@@ -1,3 +1,4 @@
+uuid: 876a8b1f-45e8-492c-b60a-07cc3630d5f1
 langcode: en
 status: closed
 dependencies:
@@ -196,6 +197,7 @@ handlers:
   email_confirmation:
     id: email
     label: 'Email confirmation'
+    notes: ''
     handler_id: email_confirmation
     status: true
     conditions: {  }
@@ -232,6 +234,7 @@ handlers:
   email_notification:
     id: email
     label: 'Email notification'
+    notes: ''
     handler_id: email_notification
     status: true
     conditions: {  }
@@ -281,6 +284,5 @@ handlers:
       theme_name: ''
       parameters: {  }
 variants: {  }
-uuid: 876a8b1f-45e8-492c-b60a-07cc3630d5f1
 _core:
   default_config_hash: Xp4FW243g2TYZvBrKegtZqVP6rhef8Ybw5v1bSns-iQ

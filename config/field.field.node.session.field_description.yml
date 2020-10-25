@@ -11,16 +11,16 @@ dependencies:
 third_party_settings:
   allowed_formats:
     basic_html: basic_html
-    restricted_html: restricted_html
-    full_html: full_html
-    plain_text: plain_text
+    restricted_html: '0'
+    full_html: '0'
     job_listing_html: '0'
+    plain_text: '0'
 id: node.session.field_description
 field_name: field_description
 entity_type: node
 bundle: session
 label: Description
-description: 'Sell your session here! Why should this session be selected? What makes it unique? and quite important what should the audience expect?'
+description: ''
 required: true
 translatable: false
 default_value: {  }

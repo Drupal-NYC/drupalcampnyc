@@ -1,3 +1,4 @@
+uuid: 067461ba-0d86-485a-847c-30ff5e4192ce
 langcode: en
 status: closed
 dependencies: {  }
@@ -193,6 +194,7 @@ handlers:
   rachel_e_mail:
     id: email
     label: 'Rachel e-mail'
+    notes: ''
     handler_id: rachel_e_mail
     status: true
     conditions: {  }
@@ -227,4 +229,3 @@ handlers:
       theme_name: ''
       parameters: {  }
 variants: {  }
-uuid: 067461ba-0d86-485a-847c-30ff5e4192ce

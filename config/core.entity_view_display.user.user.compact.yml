@@ -38,6 +38,7 @@ dependencies:
     - empty_fields
     - field_group
     - svg_image_responsive
+    - text
     - user
 third_party_settings:
   field_group:
@@ -69,6 +70,13 @@ targetEntityType: user
 bundle: user
 mode: compact
 content:
+  field_speaker_profile:
+    type: text_default
+    weight: 2
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
   field_u_acad_title_post:
     type: string
     weight: 8
@@ -89,29 +97,9 @@ content:
     third_party_settings:
       empty_fields:
         handler: ''
-  field_u_company:
-    type: string
-    weight: 3
-    region: content
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings:
-      empty_fields:
-        handler: nbsp
   field_u_first_name:
     type: string
     weight: 5
-    region: content
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings:
-      empty_fields:
-        handler: nbsp
-  field_u_job_title:
-    type: string
-    weight: 2
     region: content
     label: hidden
     settings:
@@ -160,7 +148,6 @@ hidden:
   field_interest_vertical: true
   field_onsite_intro: true
   field_speaker: true
-  field_speaker_profile: true
   field_special_details: true
   field_ticket_orderno: true
   field_ticket_type: true
@@ -169,7 +156,9 @@ hidden:
   field_u_cat_orgateam: true
   field_u_cat_volunteer: true
   field_u_childcare: true
+  field_u_company: true
   field_u_dietary: true
+  field_u_job_title: true
   field_u_pub_attendee_list: true
   field_u_speaker_experience: true
   field_u_speaker_inclusion: true

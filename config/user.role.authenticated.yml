@@ -33,7 +33,6 @@ permissions:
   - 'use text format basic_html'
   - 'use text format job_listing_html'
   - 'view field_alternative_verticals'
-  - 'view field_description'
   - 'view field_duration'
   - 'view field_featured'
   - 'view field_si_sponsor'
