@@ -5,4 +5,4 @@ dependencies: {  }
 id: day
 label: 'Day and time'
 locked: false
-pattern: 'M j, l H:i'
+pattern: 'l, M j g:i a'
