@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.session.field_ends_at
     - field.field.node.session.field_featured
     - field.field.node.session.field_room
+    - field.field.node.session.field_session_level
     - field.field.node.session.field_slides
     - field.field.node.session.field_slides_external
     - field.field.node.session.field_speakers
@@ -187,6 +188,7 @@ hidden:
   content_moderation_control: true
   field_description: true
   field_featured: true
+  field_session_level: true
   flag_session_schedule: true
   links: true
   shariff_field: true

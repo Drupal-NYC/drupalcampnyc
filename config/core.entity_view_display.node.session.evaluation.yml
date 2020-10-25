@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.session.field_ends_at
     - field.field.node.session.field_featured
     - field.field.node.session.field_room
+    - field.field.node.session.field_session_level
     - field.field.node.session.field_slides
     - field.field.node.session.field_slides_external
     - field.field.node.session.field_speakers
@@ -106,6 +107,7 @@ content:
 hidden:
   field_ends_at: true
   field_room: true
+  field_session_level: true
   field_slides: true
   field_slides_external: true
   field_speakers: true
