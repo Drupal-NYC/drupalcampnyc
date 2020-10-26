@@ -165,7 +165,9 @@ content:
       format_type: day
     third_party_settings:
       empty_fields:
-        handler: ''
+        handler: text
+        settings:
+          empty_text: TBA
   field_type:
     weight: 6
     label: above
