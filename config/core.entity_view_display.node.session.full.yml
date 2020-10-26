@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.session.field_featured
     - field.field.node.session.field_room
     - field.field.node.session.field_session_level
+    - field.field.node.session.field_session_sponsor
     - field.field.node.session.field_slides
     - field.field.node.session.field_slides_external
     - field.field.node.session.field_speakers
@@ -77,7 +78,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_description:
-    weight: 6
+    weight: 5
     label: visually_hidden
     settings: {  }
     third_party_settings: {  }
@@ -111,9 +112,19 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
+  field_session_sponsor:
+    type: entity_reference_label
+    weight: 9
+    region: content
+    label: inline
+    settings:
+      link: true
+    third_party_settings:
+      empty_fields:
+        handler: ''
   field_slides:
     type: file_default
-    weight: 7
+    weight: 6
     region: content
     label: above
     settings:
@@ -121,7 +132,7 @@ content:
     third_party_settings: {  }
   field_slides_external:
     type: link
-    weight: 8
+    weight: 7
     region: content
     label: above
     settings:
@@ -164,7 +175,7 @@ content:
     region: content
   field_video:
     type: link
-    weight: 9
+    weight: 8
     region: content
     label: above
     settings:

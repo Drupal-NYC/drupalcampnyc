@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.session.field_featured
     - field.field.node.session.field_room
     - field.field.node.session.field_session_level
+    - field.field.node.session.field_session_sponsor
     - field.field.node.session.field_slides
     - field.field.node.session.field_slides_external
     - field.field.node.session.field_speakers
@@ -114,6 +115,16 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_select
+    region: content
+  field_session_sponsor:
+    weight: 27
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   field_slides:
     type: file_generic
