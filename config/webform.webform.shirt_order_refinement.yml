@@ -1,3 +1,4 @@
+uuid: d81a60de-b108-45e7-ab68-6c571f791439
 langcode: en
 status: scheduled
 dependencies: {  }
@@ -200,6 +201,7 @@ handlers:
   email:
     id: email
     label: Email
+    notes: ''
     handler_id: email
     status: true
     conditions: {  }
@@ -241,4 +243,3 @@ handlers:
       theme_name: ''
       parameters: {  }
 variants: {  }
-uuid: d81a60de-b108-45e7-ab68-6c571f791439

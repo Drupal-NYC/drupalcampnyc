@@ -35,6 +35,9 @@ settings:
     -
       value: inkind
       label: In-Kind
+    -
+      value: none
+      label: None
   allowed_values_function: ''
 module: options
 locked: false

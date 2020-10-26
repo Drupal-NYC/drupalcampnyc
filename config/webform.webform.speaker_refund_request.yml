@@ -1,3 +1,4 @@
+uuid: 6bad70a4-2b9d-4979-8638-7467e2f36201
 langcode: en
 status: closed
 dependencies: {  }
@@ -204,6 +205,7 @@ handlers:
   email:
     id: email
     label: Email
+    notes: ''
     handler_id: email
     status: true
     conditions: {  }
@@ -241,4 +243,3 @@ handlers:
       theme_name: ''
       parameters: {  }
 variants: {  }
-uuid: 6bad70a4-2b9d-4979-8638-7467e2f36201

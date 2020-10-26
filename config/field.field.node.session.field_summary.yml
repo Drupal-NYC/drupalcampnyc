@@ -10,18 +10,18 @@ dependencies:
     - text
 third_party_settings:
   allowed_formats:
-    basic_html: basic_html
-    restricted_html: restricted_html
-    full_html: full_html
     plain_text: plain_text
+    basic_html: '0'
+    restricted_html: '0'
+    full_html: '0'
     job_listing_html: '0'
 id: node.session.field_summary
 field_name: field_summary
 entity_type: node
 bundle: session
 label: Summary
-description: 'The elevator pitch, short and on the point summary of what this session is all about!'
-required: false
+description: ''
+required: true
 translatable: true
 default_value: {  }
 default_value_callback: ''

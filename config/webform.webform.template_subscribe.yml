@@ -1,3 +1,4 @@
+uuid: 625880ce-402c-40b6-a917-25cb9a58bf43
 langcode: en
 status: closed
 dependencies:
@@ -196,6 +197,7 @@ handlers:
   email_notification:
     id: email
     label: 'Email Notification'
+    notes: ''
     handler_id: email_notification
     status: true
     conditions: {  }
@@ -230,6 +232,5 @@ handlers:
       theme_name: ''
       parameters: {  }
 variants: {  }
-uuid: 625880ce-402c-40b6-a917-25cb9a58bf43
 _core:
   default_config_hash: vnZKWmDVCTTaiKV3WCfyyxl-ydocqD23kEAOxBODuEI

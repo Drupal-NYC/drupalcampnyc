@@ -4,26 +4,19 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.session.field_alternative_verticals
-    - field.field.node.session.field_comments
     - field.field.node.session.field_description
-    - field.field.node.session.field_duration
     - field.field.node.session.field_ends_at
     - field.field.node.session.field_featured
-    - field.field.node.session.field_horizontal
     - field.field.node.session.field_room
+    - field.field.node.session.field_session_level
+    - field.field.node.session.field_session_sponsor
     - field.field.node.session.field_slides
     - field.field.node.session.field_slides_external
-    - field.field.node.session.field_speaker_experience
-    - field.field.node.session.field_speaker_inclusion
     - field.field.node.session.field_speakers
     - field.field.node.session.field_start
     - field.field.node.session.field_summary
-    - field.field.node.session.field_terms
     - field.field.node.session.field_type
-    - field.field.node.session.field_vertical
     - field.field.node.session.field_video
-    - field.field.node.session.field_xp_level
     - node.type.session
   module:
     - datetime
@@ -39,12 +32,10 @@ third_party_settings:
     group_type_and_track:
       children:
         - field_type
-        - field_vertical
       parent_name: ''
       weight: 0
       format_type: html_element
       format_settings:
-        label: 'Type and track'
         element: div
         show_label: false
         label_element: h3
@@ -64,7 +55,6 @@ third_party_settings:
       weight: 4
       format_type: html_element
       format_settings:
-        label: 'Scheduled at'
         element: div
         show_label: false
         label_element: h3
@@ -110,14 +100,6 @@ content:
     third_party_settings:
       empty_fields:
         handler: ''
-  field_horizontal:
-    type: entity_reference_label
-    weight: 5
-    region: content
-    label: visually_hidden
-    settings:
-      link: true
-    third_party_settings: {  }
   field_room:
     type: entity_reference_label
     weight: 7
@@ -189,14 +171,6 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-  field_vertical:
-    type: entity_reference_label
-    weight: 1
-    region: content
-    label: visually_hidden
-    settings:
-      link: true
-    third_party_settings: {  }
   field_video:
     type: link
     weight: 2
@@ -211,21 +185,12 @@ content:
     third_party_settings:
       empty_fields:
         handler: ''
-  flag_session_schedule:
-    weight: 6
-    region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   content_moderation_control: true
-  field_alternative_verticals: true
-  field_comments: true
   field_description: true
-  field_duration: true
   field_featured: true
-  field_speaker_experience: true
-  field_speaker_inclusion: true
-  field_terms: true
-  field_xp_level: true
+  field_session_level: true
+  field_session_sponsor: true
+  flag_session_schedule: true
   links: true
   shariff_field: true

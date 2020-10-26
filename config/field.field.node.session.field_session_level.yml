@@ -1,23 +1,21 @@
-uuid: 401a52ac-c677-48a9-bd4c-6185c6f5ba74
+uuid: 0773dd02-36fe-4e82-a0fb-f30deb1c485a
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_duration
+    - field.storage.node.field_session_level
     - node.type.session
   module:
     - options
-id: node.session.field_duration
-field_name: field_duration
+id: node.session.field_session_level
+field_name: field_session_level
 entity_type: node
 bundle: session
-label: Duration
+label: Level
 description: ''
-required: true
+required: false
 translatable: false
-default_value:
-  -
-    value: normal
+default_value: {  }
 default_value_callback: ''
 settings: {  }
 field_type: list_string

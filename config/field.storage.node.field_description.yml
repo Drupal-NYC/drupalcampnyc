@@ -8,7 +8,7 @@ dependencies:
     - text
 third_party_settings:
   field_permissions:
-    permission_type: custom
+    permission_type: public
 id: node.field_description
 field_name: field_description
 entity_type: node

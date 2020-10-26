@@ -1,3 +1,4 @@
+uuid: 9939bf53-a21e-4758-beb8-3621b677b9e3
 langcode: en
 status: open
 dependencies: {  }
@@ -193,6 +194,7 @@ handlers:
   rachel_e_mail:
     id: email
     label: 'Rachel e-mail'
+    notes: ''
     handler_id: rachel_e_mail
     status: true
     conditions: {  }
@@ -227,4 +229,3 @@ handlers:
       theme_name: ''
       parameters: {  }
 variants: {  }
-uuid: 9939bf53-a21e-4758-beb8-3621b677b9e3

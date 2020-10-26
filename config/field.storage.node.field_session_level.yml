@@ -1,4 +1,4 @@
-uuid: 64725a92-0572-4820-873d-198599bc9aae
+uuid: 38e718a0-3095-45ec-a522-54d6cce14f2d
 langcode: en
 status: true
 dependencies:
@@ -8,28 +8,22 @@ dependencies:
     - options
 third_party_settings:
   field_permissions:
-    permission_type: custom
-id: node.field_duration
-field_name: field_duration
+    permission_type: public
+id: node.field_session_level
+field_name: field_session_level
 entity_type: node
 type: list_string
 settings:
   allowed_values:
     -
-      value: normal
-      label: '45 minutes'
+      value: beginner
+      label: Beginner
     -
-      value: short
-      label: '20 minutes'
+      value: intermediate
+      label: Intermediate
     -
-      value: workshop
-      label: '2 hours (workshop)'
-    -
-      value: fifteen
-      label: '15 minutes'
-    -
-      value: ninety
-      label: '90 minutes'
+      value: advanced
+      label: Advanced
   allowed_values_function: ''
 module: options
 locked: false

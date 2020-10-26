@@ -4,29 +4,22 @@ status: true
 dependencies:
   config:
     - entity_browser.browser.user_browser
-    - field.field.node.session.field_alternative_verticals
-    - field.field.node.session.field_comments
     - field.field.node.session.field_description
-    - field.field.node.session.field_duration
     - field.field.node.session.field_ends_at
     - field.field.node.session.field_featured
-    - field.field.node.session.field_horizontal
     - field.field.node.session.field_room
+    - field.field.node.session.field_session_level
+    - field.field.node.session.field_session_sponsor
     - field.field.node.session.field_slides
     - field.field.node.session.field_slides_external
-    - field.field.node.session.field_speaker_experience
-    - field.field.node.session.field_speaker_inclusion
     - field.field.node.session.field_speakers
     - field.field.node.session.field_start
     - field.field.node.session.field_summary
-    - field.field.node.session.field_terms
     - field.field.node.session.field_type
-    - field.field.node.session.field_vertical
     - field.field.node.session.field_video
-    - field.field.node.session.field_xp_level
     - node.type.session
+    - workflows.workflow.sessions
   module:
-    - autocomplete_deluxe
     - content_moderation
     - datetime
     - entity_browser
@@ -48,7 +41,6 @@ third_party_settings:
       weight: 1
       format_type: details
       format_settings:
-        label: Subject
         open: true
         required_fields: true
         id: ''
@@ -56,17 +48,11 @@ third_party_settings:
       label: Subject
       region: content
     group_category:
-      children:
-        - field_vertical
-        - field_alternative_verticals
-        - field_horizontal
-        - field_xp_level
-        - field_duration
+      children: {  }
       parent_name: ''
-      weight: 3
+      weight: 4
       format_type: details
       format_settings:
-        label: Category
         open: true
         required_fields: true
         id: ''
@@ -74,11 +60,9 @@ third_party_settings:
       label: Category
       region: content
     group_speaker_info:
-      children:
-        - field_speaker_experience
-        - field_speaker_inclusion
+      children: {  }
       parent_name: ''
-      weight: 4
+      weight: 5
       format_type: fieldset
       format_settings:
         id: ''
@@ -92,7 +76,7 @@ third_party_settings:
         - field_slides_external
         - field_slides
       parent_name: ''
-      weight: 20
+      weight: 17
       format_type: fieldset
       format_settings:
         id: ''
@@ -108,35 +92,10 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 10
+    weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_alternative_verticals:
-    weight: 41
-    settings:
-      limit: '2'
-      min_length: '0'
-      delimiter: ''
-      not_found_message: 'The term ''@term'' will be added'
-      not_found_message_allow: 0
-      new_terms: 0
-      match_operator: CONTAINS
-      autocomplete_route_name: autocomplete_deluxe.autocomplete
-      target_type: taxonomy_term
-      size: 60
-      selection_handler: default
-    third_party_settings: {  }
-    type: autocomplete_deluxe
-    region: content
-  field_comments:
-    weight: 5
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-    type: text_textarea
-    region: content
   field_description:
     weight: 25
     settings:
@@ -145,47 +104,27 @@ content:
     third_party_settings: {  }
     type: text_textarea
     region: content
-  field_duration:
-    weight: 44
-    settings: {  }
-    third_party_settings: {  }
-    type: options_buttons
-    region: content
   field_ends_at:
-    weight: 19
+    weight: 16
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
-  field_featured:
-    type: boolean_checkbox
-    weight: 16
-    region: content
-    settings:
-      display_label: true
-    third_party_settings: {  }
-  field_horizontal:
-    weight: 42
-    settings:
-      limit: '25'
-      min_length: '0'
-      delimiter: ''
-      not_found_message: 'The term ''@term'' will be added'
-      new_terms: '1'
-      not_found_message_allow: 0
-      match_operator: CONTAINS
-      autocomplete_route_name: autocomplete_deluxe.autocomplete
-      target_type: taxonomy_term
-      size: 60
-      selection_handler: default
-    third_party_settings: {  }
-    type: autocomplete_deluxe
-    region: content
-  field_room:
-    weight: 17
+  field_session_level:
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     type: options_select
+    region: content
+  field_session_sponsor:
+    weight: 27
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   field_slides:
     type: file_generic
@@ -202,20 +141,8 @@ content:
     third_party_settings: {  }
     type: link_default
     region: content
-  field_speaker_experience:
-    weight: 15
-    settings: {  }
-    third_party_settings: {  }
-    type: options_buttons
-    region: content
-  field_speaker_inclusion:
-    weight: 16
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
   field_speakers:
-    weight: 2
+    weight: 3
     settings:
       entity_browser: user_browser
       field_widget_display: rendered_entity
@@ -230,7 +157,7 @@ content:
     type: entity_browser_entity_reference
     region: content
   field_start:
-    weight: 18
+    weight: 15
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
@@ -243,48 +170,29 @@ content:
     third_party_settings: {  }
     type: text_textarea
     region: content
-  field_terms:
-    weight: 6
-    settings:
-      display_label: false
-    third_party_settings: {  }
-    type: boolean_checkbox
-    region: content
   field_type:
     weight: 22
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
     region: content
-  field_vertical:
-    weight: 40
-    settings: {  }
-    third_party_settings: {  }
-    type: options_buttons
-    region: content
   field_video:
     type: link_default
-    weight: 22
+    weight: 18
     region: content
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
-  field_xp_level:
-    weight: 43
-    settings: {  }
-    third_party_settings: {  }
-    type: options_buttons
-    region: content
   moderation_state:
     type: moderation_state_default
-    weight: 7
+    weight: 6
     settings: {  }
     region: content
     third_party_settings: {  }
   path:
     type: path
-    weight: 8
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -292,12 +200,12 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 12
+    weight: 11
     region: content
     third_party_settings: {  }
   publish_on:
     type: datetime_timestamp_no_default
-    weight: 14
+    weight: 13
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -305,14 +213,14 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 11
+    weight: 10
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 13
+    weight: 12
     region: content
     third_party_settings: {  }
   title:
@@ -335,13 +243,15 @@ content:
     third_party_settings: {  }
   unpublish_on:
     type: datetime_timestamp_no_default
-    weight: 15
+    weight: 14
     region: content
     settings: {  }
     third_party_settings: {  }
   url_redirects:
-    weight: 9
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_featured: true
+  field_room: true

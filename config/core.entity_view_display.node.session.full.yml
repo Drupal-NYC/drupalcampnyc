@@ -4,26 +4,19 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.full
-    - field.field.node.session.field_alternative_verticals
-    - field.field.node.session.field_comments
     - field.field.node.session.field_description
-    - field.field.node.session.field_duration
     - field.field.node.session.field_ends_at
     - field.field.node.session.field_featured
-    - field.field.node.session.field_horizontal
     - field.field.node.session.field_room
+    - field.field.node.session.field_session_level
+    - field.field.node.session.field_session_sponsor
     - field.field.node.session.field_slides
     - field.field.node.session.field_slides_external
-    - field.field.node.session.field_speaker_experience
-    - field.field.node.session.field_speaker_inclusion
     - field.field.node.session.field_speakers
     - field.field.node.session.field_start
     - field.field.node.session.field_summary
-    - field.field.node.session.field_terms
     - field.field.node.session.field_type
-    - field.field.node.session.field_vertical
     - field.field.node.session.field_video
-    - field.field.node.session.field_xp_level
     - node.type.session
   module:
     - datetime
@@ -39,13 +32,10 @@ third_party_settings:
     group_session_characteristics:
       children:
         - field_type
-        - field_xp_level
-        - field_duration
+        - field_session_level
         - field_room
         - field_start
         - field_ends_at
-        - field_vertical
-        - field_horizontal
       parent_name: ''
       weight: 4
       format_type: html_element
@@ -63,12 +53,10 @@ third_party_settings:
     group_div:
       children:
         - field_speakers
-        - flag_session_schedule
       parent_name: ''
       weight: 3
       format_type: html_element
       format_settings:
-        label: Right
         element: div
         show_label: false
         label_element: h3
@@ -90,18 +78,11 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_description:
-    weight: 6
+    weight: 5
     label: visually_hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
-    region: content
-  field_duration:
-    weight: 7
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
     region: content
   field_ends_at:
     type: datetime_default
@@ -114,14 +95,6 @@ content:
     third_party_settings:
       empty_fields:
         handler: ''
-  field_horizontal:
-    weight: 12
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
   field_room:
     type: entity_reference_label
     weight: 8
@@ -132,9 +105,26 @@ content:
     third_party_settings:
       empty_fields:
         handler: ''
+  field_session_level:
+    type: list_default
+    weight: 7
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_session_sponsor:
+    type: entity_reference_label
+    weight: 9
+    region: content
+    label: inline
+    settings:
+      link: true
+    third_party_settings:
+      empty_fields:
+        handler: ''
   field_slides:
     type: file_default
-    weight: 7
+    weight: 6
     region: content
     label: above
     settings:
@@ -142,7 +132,7 @@ content:
     third_party_settings: {  }
   field_slides_external:
     type: link
-    weight: 8
+    weight: 7
     region: content
     label: above
     settings:
@@ -175,32 +165,19 @@ content:
       format_type: day
     third_party_settings:
       empty_fields:
-        handler: ''
-  field_summary:
-    weight: 5
-    label: visually_hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: content
+        handler: text
+        settings:
+          empty_text: TBA
   field_type:
-    weight: 5
+    weight: 6
     label: above
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
-  field_vertical:
-    weight: 11
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
   field_video:
     type: link
-    weight: 9
+    weight: 8
     region: content
     label: above
     settings:
@@ -212,18 +189,6 @@ content:
     third_party_settings:
       empty_fields:
         handler: ''
-  field_xp_level:
-    weight: 6
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
-    region: content
-  flag_session_schedule:
-    weight: 5
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   links:
     weight: 1
     region: content
@@ -235,9 +200,6 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
-  field_alternative_verticals: true
-  field_comments: true
   field_featured: true
-  field_speaker_experience: true
-  field_speaker_inclusion: true
-  field_terms: true
+  field_summary: true
+  flag_session_schedule: true

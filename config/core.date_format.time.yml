@@ -5,4 +5,4 @@ dependencies: {  }
 id: time
 label: Time
 locked: false
-pattern: 'H:i'
+pattern: 'g:i a'

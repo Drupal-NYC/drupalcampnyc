@@ -1,3 +1,4 @@
+uuid: 6d01c7c7-3469-4366-9f66-e5cb2756a345
 langcode: en
 status: closed
 dependencies:
@@ -196,6 +197,7 @@ handlers:
   email_confirmation:
     id: email
     label: 'Email confirmation'
+    notes: ''
     handler_id: email_confirmation
     status: true
     conditions:
@@ -236,6 +238,7 @@ handlers:
   email_notification:
     id: email
     label: 'Other email notification'
+    notes: ''
     handler_id: email_notification
     status: true
     conditions:
@@ -285,6 +288,7 @@ handlers:
   email_notification_tickets:
     id: email
     label: 'Ticket team notification'
+    notes: ''
     handler_id: email_notification_tickets
     status: true
     conditions:
@@ -329,6 +333,7 @@ handlers:
   program_team_notification:
     id: email
     label: 'Program team notification'
+    notes: ''
     handler_id: program_team_notification
     status: true
     conditions:
@@ -373,6 +378,7 @@ handlers:
   sponsoring_team_notification:
     id: email
     label: 'Sponsoring team notification'
+    notes: ''
     handler_id: sponsoring_team_notification
     status: true
     conditions:
@@ -417,6 +423,7 @@ handlers:
   volunteering_team_notification:
     id: email
     label: 'Volunteering team notification'
+    notes: ''
     handler_id: volunteering_team_notification
     status: true
     conditions:
@@ -461,6 +468,7 @@ handlers:
   website_team_notification:
     id: email
     label: 'Website team notification'
+    notes: ''
     handler_id: website_team_notification
     status: true
     conditions:
@@ -505,6 +513,7 @@ handlers:
   privacy_team_notification:
     id: email
     label: 'Privacy team notification'
+    notes: ''
     handler_id: privacy_team_notification
     status: true
     conditions:
@@ -549,6 +558,7 @@ handlers:
   accessibility_team_notification:
     id: email
     label: 'Accessibility team notification'
+    notes: ''
     handler_id: accessibility_team_notification
     status: true
     conditions:
@@ -593,6 +603,7 @@ handlers:
   coc_team_notification:
     id: email
     label: 'CoC team notification'
+    notes: ''
     handler_id: coc_team_notification
     status: true
     conditions:
@@ -635,6 +646,5 @@ handlers:
       theme_name: ''
       parameters: {  }
 variants: {  }
-uuid: 6d01c7c7-3469-4366-9f66-e5cb2756a345
 _core:
   default_config_hash: 54q-eZLQ0xY3g9yFexLIn97Y8F_sByRhO4ima2pMmn4

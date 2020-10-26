@@ -1,0 +1,29 @@
+uuid: 9d3df337-a210-4b94-884c-04b9f2b53c68
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_session_sponsor
+    - node.type.session
+    - node.type.sponsor
+id: node.session.field_session_sponsor
+field_name: field_session_sponsor
+entity_type: node
+bundle: session
+label: 'Courtesy of'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      sponsor: sponsor
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

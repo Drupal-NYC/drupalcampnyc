@@ -1,14 +1,11 @@
 uuid: 312a8918-d119-4849-aeb7-25b2aec6990a
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.evaluation
     - core.entity_view_mode.node.teaser
-    - field.storage.node.field_alternative_verticals
-    - field.storage.node.field_duration
     - field.storage.node.field_horizontal
-    - field.storage.node.field_speaker_inclusion
     - field.storage.node.field_speakers
     - field.storage.node.field_type
     - field.storage.node.field_vertical
@@ -25,8 +22,6 @@ dependencies:
     - user.role.user_manager
     - views.view.session_statistics
     - workflows.workflow.sessions
-  content:
-    - 'taxonomy_term:session_horizontal:ae7fbd68-f465-4f7f-8295-ea3ec2e5178a'
   module:
     - content_moderation
     - datetime
@@ -444,69 +439,6 @@ display:
           group_columns: {  }
           group_rows: true
           delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
-        field_alternative_verticals:
-          id: field_alternative_verticals
-          table: node__field_alternative_verticals
-          field: field_alternative_verticals
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: 'Alternative industry verticals'
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: target_id
-          type: entity_reference_label
-          settings:
-            link: true
-          group_column: target_id
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 2
           delta_offset: 0
           delta_reversed: false
           delta_first_last: false
@@ -969,7 +901,6 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_alternative_verticals'
         - 'config:field.storage.node.field_vertical'
   block_1:
     display_plugin: block
@@ -3781,7 +3712,6 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_alternative_verticals'
         - 'config:field.storage.node.field_vertical'
   page_sessions_oveview:
     display_plugin: page
@@ -4110,69 +4040,6 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
-        field_alternative_verticals:
-          id: field_alternative_verticals
-          table: node__field_alternative_verticals
-          field: field_alternative_verticals
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: Alternative(s)
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: target_id
-          type: entity_reference_label
-          settings:
-            link: false
-          group_column: target_id
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 2
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
         field_horizontal:
           id: field_horizontal
           table: node__field_horizontal
@@ -4354,130 +4221,6 @@ display:
           group_columns: {  }
           group_rows: true
           delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
-        field_duration:
-          id: field_duration
-          table: node__field_duration
-          field: field_duration
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: Duration
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: list_default
-          settings: {  }
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
-        field_speaker_inclusion:
-          id: field_speaker_inclusion
-          table: node__field_speaker_inclusion
-          field: field_speaker_inclusion
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: Inclusivity
-          exclude: false
-          alter:
-            alter_text: true
-            text: "{% if (field_speaker_inclusion__value != 'none') and (field_speaker_inclusion is not empty) %}\n✔️\n{% endif %}"
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: list_default
-          settings: {  }
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 1
           delta_offset: 0
           delta_reversed: false
           delta_first_last: false
@@ -4769,10 +4512,7 @@ display:
         - 'user.node_grants:view'
         - user.roles
       tags:
-        - 'config:field.storage.node.field_alternative_verticals'
-        - 'config:field.storage.node.field_duration'
         - 'config:field.storage.node.field_horizontal'
-        - 'config:field.storage.node.field_speaker_inclusion'
         - 'config:field.storage.node.field_speakers'
         - 'config:field.storage.node.field_type'
         - 'config:field.storage.node.field_vertical'
