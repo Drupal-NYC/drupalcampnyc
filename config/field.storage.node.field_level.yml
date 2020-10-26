@@ -36,8 +36,8 @@ settings:
       value: inkind
       label: In-Kind
     -
-      value: none
-      label: None
+      value: training
+      label: Training
   allowed_values_function: ''
 module: options
 locked: false
