@@ -54,6 +54,7 @@
         "drupal/markup": "^1.0",
         "drupal/maxlength": "^1.0",
         "drupal/menu_block": "^1.6",
+        "drupal/message_banner": "^1.2",
         "drupal/metatag": "^1.15",
         "drupal/override_node_options": "^2.6",
         "drupal/pantheon_advanced_page_cache": "^1.2",
@@ -77,8 +78,6 @@
         "pantheon-systems/drupal-integrations": "^8.0",
         "webflo/drupal-finder": "^1.2",
         "webmozart/path-util": "^2.3"
-    },
-    "require-dev": {
     },
     "conflict": {
         "drupal/drupal": "*"

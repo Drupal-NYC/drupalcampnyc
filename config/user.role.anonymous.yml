@@ -35,6 +35,7 @@ permissions:
   - 'view field_video'
   - 'view field_xp_level'
   - 'view media'
+  - 'view message banner'
   - 'view own field_si_sponsor'
   - 'view own field_sponsors'
   - 'view paragraph content deck_1_column'

@@ -60,6 +60,7 @@ module:
   media: 0
   menu_block: 0
   menu_ui: 0
+  message_banner: 0
   metatag: 0
   metatag_twitter_cards: 0
   metatag_views: 0

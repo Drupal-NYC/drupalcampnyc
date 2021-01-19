@@ -51,6 +51,7 @@ permissions:
   - 'view field_video'
   - 'view field_xp_level'
   - 'view media'
+  - 'view message banner'
   - 'view own field_comments'
   - 'view own field_si_sponsor'
   - 'view own field_speaker'
