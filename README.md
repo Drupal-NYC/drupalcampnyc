@@ -101,14 +101,10 @@ Build the theme automatically when changed: `lando npm run watch`
 
 Get a one-time log in URL for user 1: `lando drush uli`
 
-## XDebug
+## Using XDebug
 
-To enable XDebug:
 
-1. Edit .lando.local.yml and set `xdebug` to `true`.
-2. `lando rebuild`
-
-Now everything will run slower :)
+XDebug debugging is enabled, but for performance reasons, [start_with_request](https://xdebug.org/docs/all_settings#start_with_request) is set to "trigger" so you'll need to trigger XDEBUG per request. Alternatively you can create a custom php.ini based on .lando/php.ini and [override](https://docs.lando.dev/config/lando.html#override-file) the active php.ini in .lando.local.yml (which you may need to create).
 
 ## Using Composer
 

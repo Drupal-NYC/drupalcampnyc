@@ -4,10 +4,13 @@ config:
   framework: drupal8
   site: drupalcampnyc
   id: 36d6210e-0ea0-4579-9a00-a8d3ef891b81
-  xdebug: false
+  xdebug: true
   index: false
   edge: true
   cache: true
+  config:
+    php: setup/php.ini
+  composer_version: 2
 services:
   node:
     type: node:10
