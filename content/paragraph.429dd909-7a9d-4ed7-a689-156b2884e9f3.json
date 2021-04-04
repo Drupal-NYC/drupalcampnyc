@@ -1,0 +1,82 @@
+{
+    "uuid": [
+        {
+            "value": "429dd909-7a9d-4ed7-a689-156b2884e9f3"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "deck_1_column",
+            "target_type": "paragraphs_type",
+            "target_uuid": "73dfd6ef-8c06-4dcb-8b87-b8ae4ec1a001"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-11-10T23:34:58+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "field_layout_full_width": [
+        {
+            "value": false
+        }
+    ],
+    "field_primary_column": [
+        {
+            "target_type": "paragraph",
+            "target_uuid": "398437aa-4deb-45f8-a8c3-7d7ba3c6cbee"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "0a5d3d6c-99e1-4a1d-8b9e-863a19f498ac"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "cec0cb06-0902-4bb6-b247-4e83ffdae888"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "fe41800e-d8d5-4eb7-9ada-41d4363bc02c"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "f972cfcb-400f-4d7b-ab9d-be3141e04884"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "26ff6cde-5bbc-436a-a165-a776d30d8521"
+        }
+    ],
+    "field_title": [
+        {
+            "value": "Friday's interactive activities",
+            "format": "basic_html"
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "uuid": [
+        {
+            "value": "353b31af-ec4a-428d-a7cc-263728d409ec"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-15T03:57:54+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [],
+    "field_body": [
+        {
+            "value": "<p>Examples of the types of sessions you can expect to choose from include:<\/p>\r\n\r\n<ul>\r\n\t<li>Tools to help you with Drupal<\/li>\r\n\t<li>Installing Drupal for the first time<\/li>\r\n\t<li>CiviCRM and Drupal<\/li>\r\n\t<li>Contributing<\/li>\r\n\t<li>Module development<\/li>\r\n\t<li>Drupal 9<\/li>\r\n\t<li>D7 and D8 end of life and what to expect<\/li>\r\n\t<li>Symfony<\/li>\r\n\t<li>Agile web development&nbsp;<\/li>\r\n\t<li>Continuous integration &amp; deployment<\/li>\r\n<\/ul>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

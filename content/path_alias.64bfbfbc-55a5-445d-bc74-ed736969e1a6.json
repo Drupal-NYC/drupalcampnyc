@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "64bfbfbc-55a5-445d-bc74-ed736969e1a6"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "und"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/webform\/template_job_seeker_profile\/submissions"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/form\/template-job-seeker-profile\/submissions"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

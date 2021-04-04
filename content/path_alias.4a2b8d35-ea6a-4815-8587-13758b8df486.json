@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "4a2b8d35-ea6a-4815-8587-13758b8df486"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "und"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/webform\/template_user_profile\/confirmation"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/form\/template-user-profile\/confirmation"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

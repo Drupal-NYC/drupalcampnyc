@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "64b9f19f-20ff-449e-b532-30265feb1bbc"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/webform\/template_contact\/confirmation"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/form\/template-contact\/confirmation"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

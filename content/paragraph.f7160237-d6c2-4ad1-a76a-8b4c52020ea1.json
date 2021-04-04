@@ -1,0 +1,51 @@
+{
+    "uuid": [
+        {
+            "value": "f7160237-d6c2-4ad1-a76a-8b4c52020ea1"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-20T13:38:29+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "field_body": [
+        {
+            "value": "<p>DrupalCampNYC 2020 is an event that brings together a community of professionals from around the world who use, develop, design, and support the Drupal platform.&nbsp;<\/p>\r\n\r\n<p>We are dedicated to providing a safe, inclusive, welcoming, professional, and harassment-free conference experience for everyone regardless of gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, age, religion, and any other status protected by laws in which the conference or program is being held.&nbsp;<\/p>\r\n\r\n<p>Along with providing a safe and inclusive environment, we welcome everyone to participate to the fullest extent possible.&nbsp;<\/p>\r\n\r\n<p>In 2020 we will be:<\/p>\r\n\r\n<ul>\r\n\t<li>Devoting at least 25% of all sessions to speakers of underrepresented groups or first-time speakers<\/li>\r\n\t<li>Reaching out to underrepresented groups to encourage their participation in our conference<\/li>\r\n\t<li>Committed to having a diverse organizing team<\/li>\r\n\t<li>Hosting our conference at a virtual venue that will maximize accessibility and inclusion<\/li>\r\n\t<li>Inviting prospective attendees to let us know how else we can serve their needs<\/li>\r\n<\/ul>\r\n\r\n<p>The<a data-entity-substitution=\"canonical\" data-entity-type=\"node\" data-entity-uuid=\"f89704ce-06a7-4de1-8668-e61104583bdb\" href=\"\/node\/3\"> DrupalCampNYC 2020 Code of Conduct<\/a> ensures we collectively create this kind of experience and describes how we will enforce this code throughout the event.<br \/>\r\n&nbsp;<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

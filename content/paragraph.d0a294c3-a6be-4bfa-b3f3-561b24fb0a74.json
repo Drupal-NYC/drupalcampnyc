@@ -1,0 +1,51 @@
+{
+    "uuid": [
+        {
+            "value": "d0a294c3-a6be-4bfa-b3f3-561b24fb0a74"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-08-19T22:20:47+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "field_body": [
+        {
+            "value": "<p align=\"center\">We are extremely grateful to Microsoft Reactor for offering&nbsp;the Microsoft Conference Center as our venue before COVID-19 made having a physical conference impossible.<\/p>\r\n",
+            "format": "full_html"
+        }
+    ]
+}

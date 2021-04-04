@@ -1,0 +1,51 @@
+{
+    "uuid": [
+        {
+            "value": "d8da32c7-a1d0-4b18-a3fc-1d1381936264"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-20T14:06:04+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "field_body": [
+        {
+            "value": "<p>The Drupal community in New York City reflects all that we value about our city and open source software. Our city is richly diverse. Our neighbors represent every continent around the world, and perhaps every country. Wherever you are from, whatever else may be your passion, your culture, or your history, if you are curious about or expert in creating digital experiences with Drupal we welcome you to DrupalCampNYC. We want to share with you our enthusiasm for this software and share with you this collaborative, creative community of designers and developers.<\/p>\r\n\r\n<p>Shawn Duncan, Chair<br \/>\r\nDrupalNYC<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

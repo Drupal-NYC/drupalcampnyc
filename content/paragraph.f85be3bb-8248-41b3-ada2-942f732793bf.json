@@ -1,0 +1,47 @@
+{
+    "uuid": [
+        {
+            "value": "f85be3bb-8248-41b3-ada2-942f732793bf"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-11-10T16:56:26+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [],
+    "field_body": [
+        {
+            "value": "<h3>&nbsp;<\/h3>\r\n\r\n<h3>Drupal Coffee Exchange<\/h3>\r\n\r\n<p>Many of us in the Drupal community enjoy coffee, let's get together online and talk about the magic elixir that many of us use to fuel our days.<br \/>\r\nThis is also an excellent opportunity to have a retrospective for the traditional Drupal Coffee Exchange that is organized every quarter...Don't know about the exchange?? That's alright, come and get acquainted. Grab a cup of your favorite brew and chat among friends.<\/p>\r\n\r\n<p><br \/>\r\nTo help facilitate any sort of coffee-related discussions, we created the #coffee-exchange channel on Drupal Slack.<\/p>\r\n\r\n<p><strong>Discussion led by:<\/strong> All of us!!<\/p>\r\n\r\n<p><strong>Time:<\/strong> 12:00 - 12:45 pm EST<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

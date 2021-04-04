@@ -1,0 +1,147 @@
+{
+    "uuid": [
+        {
+            "value": "a3ad6b24-ca14-4e63-9412-b5781d32cd25"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "session",
+            "target_type": "node_type",
+            "target_uuid": "477ef8ff-1e7b-42da-9e07-67abfdce9a09"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-10-26T05:19:32+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "revision_uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "b4e3a33f-17e1-4a0e-8ad3-36abaf6eebec"
+        }
+    ],
+    "revision_log": [],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "1e5d5c0c-b4fb-4364-a60e-7794df5d794b"
+        }
+    ],
+    "title": [
+        {
+            "value": "Upgrading to Drupal 9 using the Migrate API"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-10-26T04:09:49+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-10-26T05:19:32+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "moderation_state": [
+        {
+            "value": "published"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/training\/upgrading-drupal-9-using-migrate-api",
+            "langcode": "en",
+            "pathauto": 0
+        }
+    ],
+    "publish_on": [],
+    "unpublish_on": [],
+    "field_description": [
+        {
+            "value": "<p>Drupal 9 is out! Learn to use the Migrate API to upgrade your Drupal 6\/7 site to Drupal 8\/9. In this training you will know what tools are available to accomplish the task and how to use them. You will also learn how to plan and execute successful migration projects. The examples include how to perform changes in site architecture between the sites and tips on troubleshooting issues. Migration of different field types will be presented.<\/p>\r\n\r\n<h2>Learning Objectives<\/h2>\r\n\r\n<ul>\r\n\t<li>Understand the different approaches to upgrading your site to Drupal 9 using the Migrate API.<\/li>\r\n\t<li>Learn to plan and execute migration projects.<\/li>\r\n\t<li>Move nodes, users, and other entities into the new site.<\/li>\r\n<\/ul>\r\n\r\n<h2>Target Audience<\/h2>\r\n\r\n<p>Individuals and organizations who want to upgrade their Drupal 6\/7 sites to Drupal 8\/9. They will learn about the workflow and thought process to execute a successful upgrade project.<\/p>\r\n\r\n<p>To get the most out of the training a local installation is needed. Installing Drupal locally using composer is recommended. Drush needs to be installed in order to run migrations from the command line.<\/p>\r\n\r\n<h2>Prerequisites<\/h2>\r\n\r\n<p>To get the most out of this session, attendees should be familiar with Migrate API concepts. You can learn about them <a href=\"https:\/\/understanddrupal.com\/31-days-of-migrations\">here<\/a>. You can also have a look at <a href=\"https:\/\/www.youtube.com\/watch?v=eBP2vQIwx-o\">this video<\/a> for an overview of the Migrate API.<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ],
+    "field_ends_at": [
+        {
+            "value": "2020-11-14T13:30:00-05:00"
+        }
+    ],
+    "field_featured": [
+        {
+            "value": false
+        }
+    ],
+    "field_room": [],
+    "field_session_level": [
+        {
+            "value": "beginner"
+        }
+    ],
+    "field_session_sponsor": [
+        {
+            "target_type": "node",
+            "target_uuid": "ab9ffb0a-d265-43f9-ae4b-101560614223"
+        }
+    ],
+    "field_slides": [],
+    "field_slides_external": [],
+    "field_speakers": [
+        {
+            "target_type": "user",
+            "target_uuid": "1e5d5c0c-b4fb-4364-a60e-7794df5d794b"
+        }
+    ],
+    "field_start": [
+        {
+            "value": "2020-11-14T09:30:00-05:00"
+        }
+    ],
+    "field_summary": [
+        {
+            "value": "Drupal 9 is out! Learn to use the Migrate API to upgrade your Drupal 6\/7 site to Drupal 8\/9. In this training you will know what tools are available to accomplish the task and how to use them. You will also learn how to plan and execute successful migration projects.",
+            "format": "plain_text"
+        }
+    ],
+    "field_type": [
+        {
+            "value": "training"
+        }
+    ],
+    "field_video": []
+}

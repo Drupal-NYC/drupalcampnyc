@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "a14a438d-c8d7-4872-a0e2-45be942613be"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/node\/633d7f82-1632-4d4f-8c28-fa951d6c2eab"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/how-to-sponsor"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

@@ -1,0 +1,125 @@
+{
+    "uuid": [
+        {
+            "value": "dcc48b37-1d52-4c99-b79f-8d3c776ba61d"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "sponsor",
+            "target_type": "node_type",
+            "target_uuid": "4be1da86-de47-4f5d-9938-a52b9ea555a8"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-10-02T17:50:25+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "revision_uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "61ce98e6-826b-46fb-bbc9-abd8a7461137"
+        }
+    ],
+    "revision_log": [],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "61ce98e6-826b-46fb-bbc9-abd8a7461137"
+        }
+    ],
+    "title": [
+        {
+            "value": "The Weekly Drop"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-10-02T16:40:45+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-10-02T17:58:59+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "moderation_state": [],
+    "path": [
+        {
+            "alias": "\/sponsor\/the-weekly-drop",
+            "langcode": "en",
+            "pathauto": 0
+        }
+    ],
+    "publish_on": [],
+    "unpublish_on": [],
+    "field_level": [
+        {
+            "value": "inkind"
+        }
+    ],
+    "field_module_name": [],
+    "field_sponsor_description": [
+        {
+            "value": "<p>The best Drupal news and links delivered to your inbox every week.<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ],
+    "field_sponsor_logo": [
+        {
+            "alt": "The Weekly Drop logo",
+            "title": "",
+            "width": 414,
+            "height": 307,
+            "target_type": "file",
+            "target_uuid": "d6dd6978-e6f0-4650-92da-0c0de6791c8b"
+        }
+    ],
+    "field_sponsor_priority": [
+        {
+            "value": 701
+        }
+    ],
+    "field_track_sponsorship": [],
+    "field_website": [
+        {
+            "uri": "http:\/\/www.theweeklydrop.com\/",
+            "title": "",
+            "options": []
+        }
+    ]
+}

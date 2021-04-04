@@ -1,0 +1,125 @@
+{
+    "uuid": [
+        {
+            "value": "3af6316f-f42b-42d4-a249-ed62aa81a7b0"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "sponsor",
+            "target_type": "node_type",
+            "target_uuid": "4be1da86-de47-4f5d-9938-a52b9ea555a8"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-10-14T02:58:30+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "revision_uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "61ce98e6-826b-46fb-bbc9-abd8a7461137"
+        }
+    ],
+    "revision_log": [],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "61ce98e6-826b-46fb-bbc9-abd8a7461137"
+        }
+    ],
+    "title": [
+        {
+            "value": "FFW"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-10-14T02:56:17+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-10-14T02:59:06+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": true
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "moderation_state": [],
+    "path": [
+        {
+            "alias": "\/sponsor\/ffw",
+            "langcode": "en",
+            "pathauto": 1
+        }
+    ],
+    "publish_on": [],
+    "unpublish_on": [],
+    "field_level": [
+        {
+            "value": "gold"
+        }
+    ],
+    "field_module_name": [],
+    "field_sponsor_description": [
+        {
+            "value": "<p>FFW is a global digital agency that partners with multinational brands to define, build, &amp; optimize Digital Experience Platforms (DXP) that drive results, with a focus on digital experience operations in terms of Experience, Technology &amp; Data.<\/p>\r\n\r\n<p>Success to us isn\u2019t launching a project. It\u2019s creating exceptional experiences around web as a foundational digital channel for our clients and their customers throughout their entire journeys.<\/p>\r\n\r\n<p>More importantly,&nbsp;we judge our success by how well our clients create and scale their CX through these channels.<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ],
+    "field_sponsor_logo": [
+        {
+            "alt": "FFW logo",
+            "title": "",
+            "width": 64,
+            "height": 64,
+            "target_type": "file",
+            "target_uuid": "9730c0d1-2122-416e-88c7-66f44f8e07a3"
+        }
+    ],
+    "field_sponsor_priority": [
+        {
+            "value": 301
+        }
+    ],
+    "field_track_sponsorship": [],
+    "field_website": [
+        {
+            "uri": "https:\/\/ffwagency.com\/",
+            "title": "",
+            "options": []
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "uuid": [
+        {
+            "value": "5048d986-47fb-463f-9f48-df9a007ec0ff"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-10-20T20:27:44+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "field_body": [
+        {
+            "value": "<p>Thank you for registering for DrupalCampNYC 2020! If you haven't already, be sure to <a href=\"https:\/\/nyc.us17.list-manage.com\/subscribe?u=8e760065071213ae345293359&amp;id=74bcf09452&amp;group[12134][32768]=1&amp;group[12134][2048]=1&amp;group[12134][4096]=1&amp;&amp;group[12134][8192]=1&amp;group[12134][16384]=1\">join our mailing list<\/a>.<\/p>\r\n\r\n<p>We'll be in touch soon with more details.<\/p>\r\n\r\n<p>Need to <a href=\"https:\/\/ti.to\/drupalcampnyc\/2020\">register someone else<\/a>?<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

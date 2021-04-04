@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "e189ddbb-c020-4023-bd10-68123e571e2b"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "und"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/webform\/template_issue\/submissions"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/form\/template-issue\/submissions"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

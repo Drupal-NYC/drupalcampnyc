@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "f42a5302-70a6-4e23-afca-9399dfdf1ee6"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/node\/309a15b2-2420-40eb-aec7-9f31a9746898"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/registration-thank-you"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

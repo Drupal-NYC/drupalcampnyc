@@ -1,0 +1,52 @@
+{
+    "uuid": [
+        {
+            "value": "f9d94ab7-277b-40d7-85de-4175ebd8233d"
+        }
+    ],
+    "hash": [
+        {
+            "value": "S_IZcpGFjysQiyzTnXx3PxRDmx891rmeXrzFBSvKuuI"
+        }
+    ],
+    "type": [
+        {
+            "value": "redirect"
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "b4e3a33f-17e1-4a0e-8ad3-36abaf6eebec"
+        }
+    ],
+    "redirect_source": [
+        {
+            "path": "page\/interactive-activities",
+            "query": []
+        }
+    ],
+    "redirect_redirect": [
+        {
+            "uri": "internal:\/node\/58",
+            "title": null,
+            "options": []
+        }
+    ],
+    "language": [
+        {
+            "value": "en"
+        }
+    ],
+    "status_code": [
+        {
+            "value": 301
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-11-11T16:52:23+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ]
+}

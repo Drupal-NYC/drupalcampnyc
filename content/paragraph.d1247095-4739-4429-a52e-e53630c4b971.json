@@ -1,0 +1,51 @@
+{
+    "uuid": [
+        {
+            "value": "d1247095-4739-4429-a52e-e53630c4b971"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "deck_header",
+            "target_type": "paragraphs_type",
+            "target_uuid": "b1a10dba-0d9d-453b-afc4-d940242f0aba"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-15T05:09:50+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "field_title": [
+        {
+            "value": "Contribution Day",
+            "format": "basic_html"
+        }
+    ]
+}

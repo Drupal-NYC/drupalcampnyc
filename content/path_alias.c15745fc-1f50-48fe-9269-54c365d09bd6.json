@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "c15745fc-1f50-48fe-9269-54c365d09bd6"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/webform\/template_registration\/submissions"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/form\/template-registration\/submissions"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

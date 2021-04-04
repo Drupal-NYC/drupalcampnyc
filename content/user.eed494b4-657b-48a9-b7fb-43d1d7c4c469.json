@@ -1,0 +1,144 @@
+{
+    "uid": [
+        {
+            "value": 52
+        }
+    ],
+    "uuid": [
+        {
+            "value": "eed494b4-657b-48a9-b7fb-43d1d7c4c469"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "preferred_langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "preferred_admin_langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "name": [
+        {
+            "value": "john"
+        }
+    ],
+    "mail": [],
+    "timezone": [
+        {
+            "value": "America\/New_York"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-10-26T03:20:54+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-10-26T04:32:15+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "roles": [],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "path": [
+        {
+            "alias": null,
+            "pid": null,
+            "langcode": "en",
+            "pathauto": 1
+        }
+    ],
+    "field_dietary_intro": [],
+    "field_interest_horizontal": [],
+    "field_interest_vertical": [],
+    "field_onsite_intro": [],
+    "field_speaker": [
+        {
+            "value": "no"
+        }
+    ],
+    "field_speaker_profile": [
+        {
+            "value": "<p>John Berube is a software engineer based in New York. He works at the New York Public Library as a back end engineer for the library\u2019s website development team. He has been using Drupal since 2009 and has earned an Acquia Grand Master Certification in Drupal 8.<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ],
+    "field_special_details": [],
+    "field_ticket_orderno": [],
+    "field_ticket_type": [],
+    "field_u_acad_title_post": [],
+    "field_u_acad_title_pre": [],
+    "field_u_accessibility": [],
+    "field_u_cat_mentor": [
+        {
+            "value": false
+        }
+    ],
+    "field_u_cat_orgateam": [
+        {
+            "value": false
+        }
+    ],
+    "field_u_cat_volunteer": [
+        {
+            "value": false
+        }
+    ],
+    "field_u_childcare": [
+        {
+            "value": false
+        }
+    ],
+    "field_u_company": [],
+    "field_u_dietary": [],
+    "field_u_first_name": [
+        {
+            "value": "John"
+        }
+    ],
+    "field_u_job_title": [],
+    "field_u_last_name": [
+        {
+            "value": "Berube"
+        }
+    ],
+    "field_u_middle_name": [],
+    "field_u_pub_attendee_list": [
+        {
+            "value": true
+        }
+    ],
+    "field_u_speaker_experience": [],
+    "field_u_speaker_inclusion": [],
+    "field_u_special_details": [],
+    "field_u_testimonial": [],
+    "field_u_volunteer_about": [],
+    "user_picture": [
+        {
+            "alt": "",
+            "title": "",
+            "width": 503,
+            "height": 503,
+            "target_type": "file",
+            "target_uuid": "1e5e0620-63f1-44f1-bdaf-ed5518c92bec"
+        }
+    ]
+}

@@ -1,0 +1,125 @@
+{
+    "uuid": [
+        {
+            "value": "ab9ffb0a-d265-43f9-ae4b-101560614223"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "sponsor",
+            "target_type": "node_type",
+            "target_uuid": "4be1da86-de47-4f5d-9938-a52b9ea555a8"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-10-26T05:12:45+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "revision_uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "b4e3a33f-17e1-4a0e-8ad3-36abaf6eebec"
+        }
+    ],
+    "revision_log": [],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "b4e3a33f-17e1-4a0e-8ad3-36abaf6eebec"
+        }
+    ],
+    "title": [
+        {
+            "value": "UnderstandDrupal.com"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-10-26T05:12:13+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-10-26T05:18:13+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": true
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "moderation_state": [],
+    "path": [
+        {
+            "alias": "\/sponsor\/understanddrupalcom",
+            "langcode": "en",
+            "pathauto": 1
+        }
+    ],
+    "publish_on": [],
+    "unpublish_on": [],
+    "field_level": [
+        {
+            "value": "training"
+        }
+    ],
+    "field_module_name": [],
+    "field_sponsor_description": [
+        {
+            "value": "<p>UnderstandDrupal.com produces articles, books, and video courses about Drupal and ReactJS in English, Spanish, and French. We also provide on-demand, remote training.<\/p>\r\n\r\n<p>Checkout out our latest course on Drupal migrations. It distills years of experience into a series of video tutorials to help you leverage the Migrate API effectively! You will learn different migration concepts and how they work together through practical examples. Do you need to migrate data from CSV and JSON files? What about migrating into paragraphs or media entities? Are you having troubles updating previously migrated data? All of that and much more is covered. Along the way, we will give you tips for writing and executing migrations. We also explain how to debug migration when they fail. No previous migration experience is required! And no need to be a developer either. This course was prepared with site builders in mind. That being said, tips and tricks for developers are sprinkled all over the place.<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ],
+    "field_sponsor_logo": [
+        {
+            "alt": "UnderstandDrupal.com logo",
+            "title": "",
+            "width": 400,
+            "height": 414,
+            "target_type": "file",
+            "target_uuid": "e907631a-3ec9-468e-8057-6bb0a5827ab2"
+        }
+    ],
+    "field_sponsor_priority": [
+        {
+            "value": 750
+        }
+    ],
+    "field_track_sponsorship": [],
+    "field_website": [
+        {
+            "uri": "https:\/\/understanddrupal.com\/migrations",
+            "title": "",
+            "options": []
+        }
+    ]
+}

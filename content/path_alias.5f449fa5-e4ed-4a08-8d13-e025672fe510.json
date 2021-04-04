@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "5f449fa5-e4ed-4a08-8d13-e025672fe510"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/node\/0cb8f678-027d-433f-b9a8-ded83250e990"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/session\/modernizing-nycs-radio-news-using-drupal-aws-and-salesforce"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

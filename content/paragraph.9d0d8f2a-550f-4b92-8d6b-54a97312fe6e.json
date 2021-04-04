@@ -1,0 +1,47 @@
+{
+    "uuid": [
+        {
+            "value": "9d0d8f2a-550f-4b92-8d6b-54a97312fe6e"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-11-10T16:42:13+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [],
+    "field_body": [
+        {
+            "value": "<h3>&nbsp;<\/h3>\r\n\r\n<h3>Drupal Hosting Options<\/h3>\r\n\r\n<p>We'll discuss the pros and cons of the different hosting options and tools. Commercial hosting vs Self hosting. Costs, Issues and Trends. It'll be an open discussion so come join us and bring your questions.<\/p>\r\n\r\n<p><strong>Discussion led by:<\/strong> Salim Lakhani<\/p>\r\n\r\n<p><strong>Time:<\/strong> 2:00 - 2:45 pm EST<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

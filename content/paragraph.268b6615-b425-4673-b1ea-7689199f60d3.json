@@ -1,0 +1,51 @@
+{
+    "uuid": [
+        {
+            "value": "268b6615-b425-4673-b1ea-7689199f60d3"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-20T14:18:37+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "field_body": [
+        {
+            "value": "<p>We look forward to hearing from you at <a href=\"mailto:camp-sponsor@drupalnyc.org\">camp-sponsor@drupalnyc.org<\/a> with questions about DrupalCampNYC 2020 (virtual) and your opportunities to sponsor our program. Considering sponsoring, but not ready to commit or want a reminder? Please <a href=\"mailto:camp-sponsor@drupalnyc.org\">email us<\/a> so we can keep you in the loop.<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

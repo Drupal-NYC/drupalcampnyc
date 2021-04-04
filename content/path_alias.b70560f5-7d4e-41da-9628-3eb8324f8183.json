@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "b70560f5-7d4e-41da-9628-3eb8324f8183"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/node\/2bd4cd77-7d9f-4847-b18b-086c53e28112"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/mailing-list-thank-you"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

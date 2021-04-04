@@ -1,0 +1,164 @@
+{
+    "uid": [
+        {
+            "value": 3
+        }
+    ],
+    "uuid": [
+        {
+            "value": "61ce98e6-826b-46fb-bbc9-abd8a7461137"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "preferred_langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "preferred_admin_langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "name": [
+        {
+            "value": "jdleonard"
+        }
+    ],
+    "mail": [
+        {
+            "value": "jdleonard@drupalnyc.org"
+        }
+    ],
+    "timezone": [
+        {
+            "value": "America\/New_York"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-14T22:13:09+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-11-06T04:18:47+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "roles": [
+        {
+            "target_id": "content_editor",
+            "target_type": "user_role",
+            "target_uuid": "e2f9db5d-14a8-4d39-93f0-20129d653360"
+        },
+        {
+            "target_id": "user_manager",
+            "target_type": "user_role",
+            "target_uuid": "7717e696-e9e1-4673-85e5-ddc1ef388f57"
+        },
+        {
+            "target_id": "track_chair",
+            "target_type": "user_role",
+            "target_uuid": "2eb15187-0331-4732-94a2-cfbef12cb873"
+        },
+        {
+            "target_id": "speaker",
+            "target_type": "user_role",
+            "target_uuid": "5fb0c118-16cc-4cb3-a3ab-c7392c6e5975"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "path": [
+        {
+            "alias": null,
+            "pid": null,
+            "langcode": "en",
+            "pathauto": 1
+        }
+    ],
+    "field_dietary_intro": [],
+    "field_interest_horizontal": [],
+    "field_interest_vertical": [],
+    "field_onsite_intro": [],
+    "field_speaker": [
+        {
+            "value": "no"
+        }
+    ],
+    "field_speaker_profile": [],
+    "field_special_details": [],
+    "field_ticket_orderno": [],
+    "field_ticket_type": [],
+    "field_u_acad_title_post": [],
+    "field_u_acad_title_pre": [],
+    "field_u_accessibility": [],
+    "field_u_cat_mentor": [
+        {
+            "value": false
+        }
+    ],
+    "field_u_cat_orgateam": [
+        {
+            "value": true
+        }
+    ],
+    "field_u_cat_volunteer": [
+        {
+            "value": false
+        }
+    ],
+    "field_u_childcare": [
+        {
+            "value": false
+        }
+    ],
+    "field_u_company": [],
+    "field_u_dietary": [],
+    "field_u_first_name": [
+        {
+            "value": "JD"
+        }
+    ],
+    "field_u_job_title": [],
+    "field_u_last_name": [
+        {
+            "value": "Leonard"
+        }
+    ],
+    "field_u_middle_name": [],
+    "field_u_pub_attendee_list": [
+        {
+            "value": true
+        }
+    ],
+    "field_u_speaker_experience": [],
+    "field_u_speaker_inclusion": [],
+    "field_u_special_details": [],
+    "field_u_testimonial": [],
+    "field_u_volunteer_about": [],
+    "user_picture": [
+        {
+            "alt": "",
+            "title": "",
+            "width": 1583,
+            "height": 1583,
+            "target_type": "file",
+            "target_uuid": "24e20f99-ae0b-4c12-bd12-f226984f4273"
+        }
+    ]
+}

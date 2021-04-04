@@ -1,0 +1,51 @@
+{
+    "uuid": [
+        {
+            "value": "bc6e7235-4d62-40fe-8002-779e125996cc"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-15T03:58:50+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "field_body": [
+        {
+            "value": "<p>The DrupalNYC <a href=\"\/community\">community<\/a> is a vibrant and diverse group. We are among the longest standing and largest Drupal user groups in the world and we have been hosting Drupal camps since 2006.<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

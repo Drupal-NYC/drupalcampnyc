@@ -1,0 +1,107 @@
+{
+    "uuid": [
+        {
+            "value": "586df998-af57-4d0c-a563-c08d5120232f"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "job_listing",
+            "target_type": "node_type",
+            "target_uuid": "1ff38401-987d-48de-be77-a35f601fe6c4"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-10-14T03:18:53+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "revision_uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "61ce98e6-826b-46fb-bbc9-abd8a7461137"
+        }
+    ],
+    "revision_log": [],
+    "status": [
+        {
+            "value": false
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "64039f91-1145-4bea-a62f-57778a985c0e"
+        }
+    ],
+    "title": [
+        {
+            "value": "Job Listings for FFW"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-10-14T03:18:53+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-10-14T03:18:53+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "moderation_state": [],
+    "path": [
+        {
+            "alias": "\/sponsor\/ffw\/jobs",
+            "langcode": "en",
+            "pathauto": 0
+        }
+    ],
+    "publish_on": [],
+    "unpublish_on": [],
+    "field_job_description": [
+        {
+            "value": "<p>Company and job descriptions(s) go here.<\/p>\r\n",
+            "format": "job_listing_html"
+        }
+    ],
+    "field_job_listing_short_descript": [
+        {
+            "value": "Short description goes here."
+        }
+    ],
+    "field_job_sponsor": [
+        {
+            "target_type": "node",
+            "target_uuid": "3af6316f-f42b-42d4-a249-ed62aa81a7b0"
+        }
+    ]
+}

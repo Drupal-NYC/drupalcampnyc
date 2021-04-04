@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "3da03f38-4b8d-4b83-adab-6f338e96c85b"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/node\/55d03ff8-a81c-4fc9-92a6-6d22a73377e5"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/session\/lightning-talks"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

@@ -1,0 +1,55 @@
+{
+    "uuid": [
+        {
+            "value": "c01880a7-486f-432b-bfd0-432f44a12a14"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "d6eb66d1-cfff-40d6-a130-ca95762489a0"
+        }
+    ],
+    "filename": [
+        {
+            "value": "IMG_20190121_111105_185 copy.jpg"
+        }
+    ],
+    "uri": [
+        {
+            "value": "public:\/\/pictures\/2020-05\/IMG_20190121_111105_185 copy.jpg"
+        }
+    ],
+    "filemime": [
+        {
+            "value": "image\/jpeg"
+        }
+    ],
+    "filesize": [
+        {
+            "value": 853877
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-27T19:16:02+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-05-27T19:16:15+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ]
+}

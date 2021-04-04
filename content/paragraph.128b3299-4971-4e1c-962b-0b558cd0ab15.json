@@ -1,0 +1,47 @@
+{
+    "uuid": [
+        {
+            "value": "128b3299-4971-4e1c-962b-0b558cd0ab15"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-10-21T14:24:17+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [],
+    "field_body": [
+        {
+            "value": "<h2>&nbsp;<\/h2>\r\n\r\n<h3><a data-entity-substitution=\"canonical\" data-entity-type=\"node\" data-entity-uuid=\"53b8e4b5-f322-493b-b5f5-1a2f2b5fe584\" href=\"\/node\/47\">Project Management for Drupal Projects<\/a><\/h3>\r\n\r\n<p>This training is designed to help organization project managers, product owners, decision-makers, and stakeholders understand Drupal, how it differs from other systems and what needs to be done differently to get the most out of Drupal.<\/p>\r\n\r\n<p>Presented by Ray Saltini from FFW<\/p>\r\n\r\n<p>Saturday, November 14 - 9:30am - 1:30pm ET<\/p>\r\n\r\n<p><strong>Level<\/strong>: Beginner<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

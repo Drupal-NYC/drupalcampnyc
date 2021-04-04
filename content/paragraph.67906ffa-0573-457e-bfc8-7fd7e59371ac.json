@@ -1,0 +1,62 @@
+{
+    "uuid": [
+        {
+            "value": "67906ffa-0573-457e-bfc8-7fd7e59371ac"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "deck_1_column",
+            "target_type": "paragraphs_type",
+            "target_uuid": "73dfd6ef-8c06-4dcb-8b87-b8ae4ec1a001"
+        }
+    ],
+    "status": [
+        {
+            "value": false
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-15T03:57:40+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "field_layout_full_width": [
+        {
+            "value": false
+        }
+    ],
+    "field_primary_column": [
+        {
+            "target_type": "paragraph",
+            "target_uuid": "353b31af-ec4a-428d-a7cc-263728d409ec"
+        }
+    ],
+    "field_title": [
+        {
+            "value": "Types of sessions",
+            "format": "basic_html"
+        }
+    ]
+}

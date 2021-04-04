@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "9f5fc4f7-63bf-4ace-8184-0b883f1bf7cc"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/node\/53b8e4b5-f322-493b-b5f5-1a2f2b5fe584"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/training\/project-management-drupal-projects"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

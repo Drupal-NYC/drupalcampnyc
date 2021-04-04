@@ -1,0 +1,55 @@
+{
+    "uuid": [
+        {
+            "value": "945c7b3e-4568-437f-a575-17539ce3be01"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "b4e3a33f-17e1-4a0e-8ad3-36abaf6eebec"
+        }
+    ],
+    "filename": [
+        {
+            "value": "oliver_davies.jpg"
+        }
+    ],
+    "uri": [
+        {
+            "value": "public:\/\/pictures\/2020-10\/oliver_davies.jpg"
+        }
+    ],
+    "filemime": [
+        {
+            "value": "image\/jpeg"
+        }
+    ],
+    "filesize": [
+        {
+            "value": 14046
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-10-26T04:27:11+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-10-26T04:27:21+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ]
+}

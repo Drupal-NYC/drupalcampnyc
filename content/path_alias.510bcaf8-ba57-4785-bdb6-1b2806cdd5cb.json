@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "510bcaf8-ba57-4785-bdb6-1b2806cdd5cb"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/node\/0892383f-89ee-497d-8cf8-7f887f6f8a0f"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/sponsor\/contegix"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "uuid": [
+        {
+            "value": "12f7f3c2-b52c-4fa7-b048-14b8aa4f6314"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "views_block",
+            "target_type": "paragraphs_type",
+            "target_uuid": "b8824963-f64f-4651-8393-33530821ea6b"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-09-10T21:36:25+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [],
+    "field_pick_view": [
+        {
+            "target_id": "job_listings",
+            "display_id": "job_listings_block",
+            "data": "a:5:{s:8:\"argument\";N;s:5:\"pager\";N;s:5:\"limit\";N;s:5:\"title\";N;s:6:\"offset\";N;}",
+            "target_type": "view",
+            "target_uuid": "6ebb1607-b108-47c7-bdaf-93b08831ca2a"
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "uuid": [
+        {
+            "value": "063ecb01-6ff2-41c6-ae92-dad3e48d265e"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-10-21T14:18:43+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "field_body": [
+        {
+            "value": "<h2>&nbsp;<\/h2>\r\n\r\n<h3><a data-entity-substitution=\"canonical\" data-entity-type=\"node\" data-entity-uuid=\"54eaddc9-1832-465d-8b13-ae010f156d52\" href=\"\/node\/44\">Web Accessibility Deep-Dive Training (CANCELLED)<\/a><\/h3>\r\n\r\n<p>This training course is a crash-course in web accessibility concepts targeted towards content managers, designers and developers working in Drupal tasked to create an \"accessible website\".&nbsp;<\/p>\r\n\r\n<p>Presented by Aimee Hannaford from Spatial Path<\/p>\r\n\r\n<p>CANCELLED<\/p>\r\n\r\n<p><strong>Level<\/strong>: Beginner<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

@@ -1,0 +1,112 @@
+{
+    "uuid": [
+        {
+            "value": "329db9c4-bdd6-4e8a-9394-f71d6da861de"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "page",
+            "target_type": "node_type",
+            "target_uuid": "942f533c-e329-4b51-a8fc-1a43795a48ba"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-09-10T21:43:14+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "revision_uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "61ce98e6-826b-46fb-bbc9-abd8a7461137"
+        }
+    ],
+    "revision_log": [],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "61ce98e6-826b-46fb-bbc9-abd8a7461137"
+        }
+    ],
+    "title": [
+        {
+            "value": "Job Listings"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-09-10T21:35:36+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-09-10T21:43:14+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "moderation_state": [
+        {
+            "value": "published"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/job-listings",
+            "langcode": "en",
+            "pathauto": 0
+        }
+    ],
+    "publish_on": [],
+    "unpublish_on": [],
+    "field_content": [
+        {
+            "target_type": "paragraph",
+            "target_uuid": "56fb2442-d4ae-4819-893e-501e336c8903"
+        }
+    ],
+    "field_header": [
+        {
+            "target_type": "paragraph",
+            "target_uuid": "25d226be-04f1-40a3-a428-bb3358e7dfe8"
+        }
+    ],
+    "field_sponsors": [],
+    "field_summary_plain": [
+        {
+            "value": "Job listings from our sponsors."
+        }
+    ]
+}

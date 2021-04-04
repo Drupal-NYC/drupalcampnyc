@@ -1,0 +1,116 @@
+{
+    "uuid": [
+        {
+            "value": "f4e08310-fba8-4ca2-bf32-04327b6bc41d"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "page",
+            "target_type": "node_type",
+            "target_uuid": "942f533c-e329-4b51-a8fc-1a43795a48ba"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-11-12T17:20:14+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "revision_uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "b4e3a33f-17e1-4a0e-8ad3-36abaf6eebec"
+        }
+    ],
+    "revision_log": [],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "61ce98e6-826b-46fb-bbc9-abd8a7461137"
+        }
+    ],
+    "title": [
+        {
+            "value": "Sessions"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-15T05:08:27+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-11-12T17:20:14+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "moderation_state": [
+        {
+            "value": "published"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/sessions",
+            "langcode": "en",
+            "pathauto": 0
+        }
+    ],
+    "publish_on": [],
+    "unpublish_on": [],
+    "field_content": [
+        {
+            "target_type": "paragraph",
+            "target_uuid": "86bf2e1a-f106-4d02-bc91-7a5e8cb0b916"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "654b41d5-c614-4c36-9bb7-edee1cf31a81"
+        }
+    ],
+    "field_header": [
+        {
+            "target_type": "paragraph",
+            "target_uuid": "c5aaa5f6-bc2d-427d-ac26-31059ef0d934"
+        }
+    ],
+    "field_sponsors": [],
+    "field_summary_plain": [
+        {
+            "value": "Learn about the session content we will be offering."
+        }
+    ]
+}

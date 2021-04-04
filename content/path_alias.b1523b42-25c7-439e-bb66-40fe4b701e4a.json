@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "b1523b42-25c7-439e-bb66-40fe4b701e4a"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/node\/f89704ce-06a7-4de1-8668-e61104583bdb"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/code-of-conduct"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

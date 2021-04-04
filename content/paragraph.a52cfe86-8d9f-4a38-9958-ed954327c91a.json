@@ -1,0 +1,51 @@
+{
+    "uuid": [
+        {
+            "value": "a52cfe86-8d9f-4a38-9958-ed954327c91a"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-22T23:11:55+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "field_body": [
+        {
+            "value": "<p>As environmentally conscious citizens, we highly recommend using public transportation to get to NYC and to the venue. Also, nearby parking is scarce and extremely expensive (~$150\/day)!<\/p>\r\n\r\n<p>Your favorite mapping or public transit app likely includes good support for New York City, but we suggest that you take a look at the <a href=\"https:\/\/citymapper.com\/nyc?set_region=us-nyc\">Citymapper<\/a> website and mobile apps, which also support ride sharing, bike sharing, ferry, train, and walking directions.<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

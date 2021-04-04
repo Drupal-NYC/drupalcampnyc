@@ -1,0 +1,55 @@
+{
+    "uuid": [
+        {
+            "value": "e45f5323-9b1b-43ec-a6a0-2ab934310692"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "496a0b9d-52d2-4c06-a5ec-792cbecf437a"
+        }
+    ],
+    "filename": [
+        {
+            "value": "AP-portrait.jpg"
+        }
+    ],
+    "uri": [
+        {
+            "value": "public:\/\/pictures\/2020-08\/AP-portrait.jpg"
+        }
+    ],
+    "filemime": [
+        {
+            "value": "image\/jpeg"
+        }
+    ],
+    "filesize": [
+        {
+            "value": 761450
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-08-06T14:07:12+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-08-06T14:08:03+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ]
+}

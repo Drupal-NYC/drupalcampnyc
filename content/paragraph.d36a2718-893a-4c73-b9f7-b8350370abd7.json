@@ -1,0 +1,62 @@
+{
+    "uuid": [
+        {
+            "value": "d36a2718-893a-4c73-b9f7-b8350370abd7"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "deck_1_column",
+            "target_type": "paragraphs_type",
+            "target_uuid": "73dfd6ef-8c06-4dcb-8b87-b8ae4ec1a001"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-09-17T15:21:08+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "field_layout_full_width": [
+        {
+            "value": false
+        }
+    ],
+    "field_primary_column": [
+        {
+            "target_type": "paragraph",
+            "target_uuid": "af0b33e8-9c35-4f7f-96a4-bfd117b449f2"
+        }
+    ],
+    "field_title": [
+        {
+            "value": "Subscribe",
+            "format": "basic_html"
+        }
+    ]
+}

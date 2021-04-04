@@ -1,0 +1,47 @@
+{
+    "uuid": [
+        {
+            "value": "08761475-45d3-4139-a4d7-406f0204a945"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-10-21T17:56:49+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [],
+    "field_body": [
+        {
+            "value": "<p>&nbsp;<\/p>\r\n\r\n<h3><a data-entity-substitution=\"canonical\" data-entity-type=\"node\" data-entity-uuid=\"0cb8f678-027d-433f-b9a8-ded83250e990\" href=\"\/node\/37\">Modernizing NYC's radio news using Drupal, AWS, and SalesForce<\/a><\/h3>\r\n\r\n<p>Since 1989, large media distributors and news agencies across North America have been using ANPA-1312 to standardize the content and structure of text-based news articles. A majority of journalists, independent writers, and news agency managers still compose their articles, upload code-friendly content through an FTP network, and release on the wire. Much of this work is done in forgotten rooms on outdated hardware. Thanks to the standard format, however, the content can still be aggregated into the newswire. Fast forward almost 30 years later, in 2018, when a major NYC-based radio station invested in an industry-disrupting solution leveraging Drupal, new groups module, AWS SQS, and SalesForce. The resulting service? An app that allows newswire uploads from phone, tablet, or desktop computer. From anywhere around the world, the app categorizes data so even writers unfamiliar with the ANPA format can submit their articles on the wire. The modern UI offers dramatic usability improvements, like allowing talk-show hosts and radio-station reporters to build show rundowns, content customizability, and edited article access across networks. Spend an hour with me as I talk about some of the challenges faced while building a custom workaround for NYC\u2019s biggest internet radio station and renovating the ANPA standard.&nbsp;<br \/>\r\n&nbsp;<\/p>\r\n\r\n<p><strong>Presented by:<\/strong> Boris Smirnov from Drupal Contractors&nbsp;by Esteemed<\/p>\r\n\r\n<p>Friday, November 13 - Time: <strong>2:00 PM-2:45 PM EST<\/strong><\/p>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

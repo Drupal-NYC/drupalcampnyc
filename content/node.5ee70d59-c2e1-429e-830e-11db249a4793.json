@@ -1,0 +1,112 @@
+{
+    "uuid": [
+        {
+            "value": "5ee70d59-c2e1-429e-830e-11db249a4793"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "page",
+            "target_type": "node_type",
+            "target_uuid": "942f533c-e329-4b51-a8fc-1a43795a48ba"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-11-12T17:20:58+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "revision_uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "b4e3a33f-17e1-4a0e-8ad3-36abaf6eebec"
+        }
+    ],
+    "revision_log": [],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "61ce98e6-826b-46fb-bbc9-abd8a7461137"
+        }
+    ],
+    "title": [
+        {
+            "value": "Program & Schedule"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-15T05:07:22+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-11-12T17:20:58+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "moderation_state": [
+        {
+            "value": "published"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/program",
+            "langcode": "en",
+            "pathauto": 0
+        }
+    ],
+    "publish_on": [],
+    "unpublish_on": [],
+    "field_content": [
+        {
+            "target_type": "paragraph",
+            "target_uuid": "8246cab3-785b-4f3b-a245-e378b7085f1a"
+        }
+    ],
+    "field_header": [
+        {
+            "target_type": "paragraph",
+            "target_uuid": "cc18e8f2-2813-4461-a179-a6ecb15b5b8d"
+        }
+    ],
+    "field_sponsors": [],
+    "field_summary_plain": [
+        {
+            "value": "The program to expect at DrupalCampNYC 2020."
+        }
+    ]
+}

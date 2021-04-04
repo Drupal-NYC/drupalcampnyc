@@ -1,0 +1,55 @@
+{
+    "uuid": [
+        {
+            "value": "d2935129-7d60-4c90-ad9b-d7c9216508f2"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "3541195f-ad7e-45cc-b404-fba4c6504527"
+        }
+    ],
+    "filename": [
+        {
+            "value": "Reactor-logo-Dark.svg"
+        }
+    ],
+    "uri": [
+        {
+            "value": "public:\/\/2020-07\/Reactor-logo-Dark.svg"
+        }
+    ],
+    "filemime": [
+        {
+            "value": "image\/svg+xml"
+        }
+    ],
+    "filesize": [
+        {
+            "value": 14598
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-07-22T22:59:20+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-07-22T22:59:45+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "ec17b39d-ebb5-453a-af2f-a8ec81de7bd3"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/webform\/training_proposal\/confirmation"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/form\/training\/confirmation"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

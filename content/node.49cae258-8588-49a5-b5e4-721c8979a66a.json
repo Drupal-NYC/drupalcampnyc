@@ -1,0 +1,147 @@
+{
+    "uuid": [
+        {
+            "value": "49cae258-8588-49a5-b5e4-721c8979a66a"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "session",
+            "target_type": "node_type",
+            "target_uuid": "477ef8ff-1e7b-42da-9e07-67abfdce9a09"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-10-26T05:19:22+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "revision_uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "b4e3a33f-17e1-4a0e-8ad3-36abaf6eebec"
+        }
+    ],
+    "revision_log": [],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "1e5d5c0c-b4fb-4364-a60e-7794df5d794b"
+        }
+    ],
+    "title": [
+        {
+            "value": "Getting started with React.js"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-10-26T03:29:20+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-10-26T05:19:22+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "moderation_state": [
+        {
+            "value": "published"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/training\/getting-started-reactjs",
+            "langcode": "en",
+            "pathauto": 0
+        }
+    ],
+    "publish_on": [],
+    "unpublish_on": [],
+    "field_description": [
+        {
+            "value": "<p>React.js has become one of the top players in the JavaScript libraries world. Drupal has recently adopted the library to create admin interfaces. WordPress has rebuilt its WYSIWYG editor using React. This training aims to explain the basic concepts outside of the context of any particular CMS implementation. Throughout the training, a static site will be converted into a React application.<\/p>\r\n\r\n<p>Learning objectives:<\/p>\r\n\r\n<ul>\r\n\t<li>What are the benefits of using React.js?<\/li>\r\n\t<li>How much ES6 do I need to know?<\/li>\r\n\t<li>What is a component and how to create it?<\/li>\r\n\t<li>How to make components reusable?<\/li>\r\n\t<li>What are props, proptypes, and state?<\/li>\r\n\t<li>What are hooks?<\/li>\r\n\t<li>What is JSX and what about separation of concerns?<\/li>\r\n<\/ul>\r\n",
+            "format": "basic_html"
+        }
+    ],
+    "field_ends_at": [
+        {
+            "value": "2020-11-12T13:30:00-05:00"
+        }
+    ],
+    "field_featured": [
+        {
+            "value": false
+        }
+    ],
+    "field_room": [],
+    "field_session_level": [
+        {
+            "value": "beginner"
+        }
+    ],
+    "field_session_sponsor": [
+        {
+            "target_type": "node",
+            "target_uuid": "b5596c9b-8f7e-46b0-80f0-410a484b5704"
+        }
+    ],
+    "field_slides": [],
+    "field_slides_external": [],
+    "field_speakers": [
+        {
+            "target_type": "user",
+            "target_uuid": "1e5d5c0c-b4fb-4364-a60e-7794df5d794b"
+        }
+    ],
+    "field_start": [
+        {
+            "value": "2020-11-12T09:30:00-05:00"
+        }
+    ],
+    "field_summary": [
+        {
+            "value": "React.js has become one of the top players in the JavaScript libraries world. Drupal has recently adopted the library to create admin interfaces. WordPress has rebuilt its WYSIWYG editor using React. This training aims to explain the basic concepts outside of the context of any particular CMS implementation. Throughout the training, a static site will be converted into a React application.",
+            "format": "plain_text"
+        }
+    ],
+    "field_type": [
+        {
+            "value": "training"
+        }
+    ],
+    "field_video": []
+}

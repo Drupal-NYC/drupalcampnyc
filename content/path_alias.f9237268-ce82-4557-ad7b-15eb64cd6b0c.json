@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "f9237268-ce82-4557-ad7b-15eb64cd6b0c"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/node\/7d113274-9e98-477a-942a-e990646e089f"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/session\/challenges-migrating-uft-drupal-6-drupal-8"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

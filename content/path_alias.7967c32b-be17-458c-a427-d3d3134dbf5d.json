@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "7967c32b-be17-458c-a427-d3d3134dbf5d"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/node\/211b5f6f-0f34-4b9e-809a-a74a8c906bb2"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/venue-old"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

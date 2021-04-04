@@ -1,0 +1,51 @@
+{
+    "uuid": [
+        {
+            "value": "bd07e0a3-4774-414e-ad66-e00a8b9ef518"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-22T23:57:11+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "field_body": [
+        {
+            "value": "<p>Want to do good? DrupalCampNYC is 100% volunteer-driven. We would absolutely love your help. Every skill is welcome.<\/p>\r\n\r\n<p><strong>We need help with:<\/strong><\/p>\r\n\r\n<ul>\r\n\t<li>Greeting &amp; checking-in people at the event<\/li>\r\n\t<li>Helping people find rooms<\/li>\r\n\t<li>Getting the word out<\/li>\r\n\t<li>Setting up event rooms<\/li>\r\n\t<li>Monitoring session rooms<\/li>\r\n\t<li>Breaking down \/ cleaning up<\/li>\r\n<\/ul>\r\n\r\n<p>Please email <a href=\"mailto:camp-volunteer@drupalnyc.org\">camp-volunteer@drupalnyc.org<\/a> to get involved!<\/p>\r\n\r\n<p>Meet our existing <a data-entity-substitution=\"canonical\" data-entity-type=\"node\" data-entity-uuid=\"c9412c89-d652-4690-b979-e1b5b13f6d80\" href=\"\/node\/8\">organizers and volunteers<\/a>.<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

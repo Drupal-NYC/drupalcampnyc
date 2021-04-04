@@ -1,0 +1,47 @@
+{
+    "uuid": [
+        {
+            "value": "c95e3154-9212-4e17-aeb6-24a4d263eaea"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-10-21T14:20:21+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [],
+    "field_body": [
+        {
+            "value": "<h2>&nbsp;<\/h2>\r\n\r\n<h3><a data-entity-substitution=\"canonical\" data-entity-type=\"node\" data-entity-uuid=\"61f7105c-2905-4a61-8b29-51fe8fd42ceb\" href=\"\/node\/45\">Automated testing and test driven development in Drupal 8<\/a><\/h3>\r\n\r\n<p>In this workshop, we\u2019ll cover the methodology, approaches and terminology involved with automated testing, look at some examples and work through some exercises, and then take a test driven development approach to creating a new Drupal module.<\/p>\r\n\r\n<p>Presented by Oliver Davies<\/p>\r\n\r\n<p>Saturday, November 14 - 9:30am - 1:30pm ET<\/p>\r\n\r\n<p><strong>Level<\/strong>: Intermediate<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

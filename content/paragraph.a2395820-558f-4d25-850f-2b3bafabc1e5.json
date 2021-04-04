@@ -1,0 +1,51 @@
+{
+    "uuid": [
+        {
+            "value": "a2395820-558f-4d25-850f-2b3bafabc1e5"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-15T03:57:25+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "field_body": [
+        {
+            "value": "<ul>\r\n\t<li>New York City&nbsp;flavor and attitude! How you doin\u2019?!?<\/li>\r\n\t<li>Great <a href=\"\/community\">community<\/a><\/li>\r\n\t<li>Engaging, hand-picked NY-themed&nbsp;<a href=\"\/sessions\">sessions<\/a><\/li>\r\n\t<li>A focus on opportunities for attendees to interact professionally and socially (see <a data-entity-substitution=\"canonical\" data-entity-type=\"node\" data-entity-uuid=\"969850cb-2c96-4e38-a477-6d87893b793a\" href=\"\/node\/58\">Interactive Activities<\/a>)<\/li>\r\n\t<li>Hands-on <a href=\"\/trainings\">trainings<\/a><\/li>\r\n\t<li><a href=\"\/bofs\">BoFs<\/a>&nbsp;(Have one&nbsp;in mind?&nbsp;<a href=\"https:\/\/docs.google.com\/forms\/d\/e\/1FAIpQLSfXitjJ6yashN4VV7irCTMaWvIZw5E-Hzi83xuOF0-YUBtD6Q\/viewform\">Submit a BoF<\/a>&nbsp;and we'll get it scheduled and promoted in advance!)<\/li>\r\n\t<li><a href=\"\/contribution-day\">Opportunities to contribute<\/a>, even for those brand-new to Drupal<\/li>\r\n\t<li>Lots of Drupal fun<\/li>\r\n<\/ul>\r\n\r\n<p>For more detail, please see our <a data-entity-substitution=\"canonical\" data-entity-type=\"node\" data-entity-uuid=\"5ee70d59-c2e1-429e-830e-11db249a4793\" href=\"\/node\/9\">Program and Schedule<\/a>.<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

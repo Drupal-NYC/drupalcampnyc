@@ -1,0 +1,116 @@
+{
+    "uuid": [
+        {
+            "value": "309a15b2-2420-40eb-aec7-9f31a9746898"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "page",
+            "target_type": "node_type",
+            "target_uuid": "942f533c-e329-4b51-a8fc-1a43795a48ba"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-10-20T20:31:44+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "revision_uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "61ce98e6-826b-46fb-bbc9-abd8a7461137"
+        }
+    ],
+    "revision_log": [],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "61ce98e6-826b-46fb-bbc9-abd8a7461137"
+        }
+    ],
+    "title": [
+        {
+            "value": "Thank you for registering"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-10-20T20:26:20+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-10-20T20:31:44+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "moderation_state": [
+        {
+            "value": "published"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/registration-thank-you",
+            "langcode": "en",
+            "pathauto": 0
+        }
+    ],
+    "publish_on": [],
+    "unpublish_on": [],
+    "field_content": [
+        {
+            "target_type": "paragraph",
+            "target_uuid": "6720b59c-351e-4cab-b187-24ed9e5a1de6"
+        }
+    ],
+    "field_header": [
+        {
+            "target_type": "paragraph",
+            "target_uuid": "5c352c06-0dce-48f4-bdfc-7e32b40acdc3"
+        }
+    ],
+    "field_sponsors": [
+        {
+            "target_id": "element_list_sponsors",
+            "display_id": "block_1",
+            "data": "a:5:{s:8:\"argument\";s:7:\"diamond\";s:5:\"pager\";N;s:5:\"limit\";N;s:5:\"title\";N;s:6:\"offset\";N;}",
+            "target_type": "view",
+            "target_uuid": "50501e00-dad8-4e62-92f3-73e647ea1c8b"
+        }
+    ],
+    "field_summary_plain": []
+}

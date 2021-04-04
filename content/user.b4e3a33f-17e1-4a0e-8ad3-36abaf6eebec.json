@@ -1,0 +1,98 @@
+{
+    "uid": [
+        {
+            "value": 1
+        }
+    ],
+    "uuid": [
+        {
+            "value": "b4e3a33f-17e1-4a0e-8ad3-36abaf6eebec"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "preferred_langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "preferred_admin_langcode": [],
+    "name": [
+        {
+            "value": "admin"
+        }
+    ],
+    "mail": [
+        {
+            "value": "admin@example.com"
+        }
+    ],
+    "timezone": [
+        {
+            "value": "UTC"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-08T18:29:37+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-05-08T18:29:37+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "roles": [],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "path": [
+        {
+            "alias": null,
+            "pid": null,
+            "langcode": "en",
+            "pathauto": 0
+        }
+    ],
+    "field_dietary_intro": [],
+    "field_interest_horizontal": [],
+    "field_interest_vertical": [],
+    "field_onsite_intro": [],
+    "field_speaker": [],
+    "field_speaker_profile": [],
+    "field_special_details": [],
+    "field_ticket_orderno": [],
+    "field_ticket_type": [],
+    "field_u_acad_title_post": [],
+    "field_u_acad_title_pre": [],
+    "field_u_accessibility": [],
+    "field_u_cat_mentor": [],
+    "field_u_cat_orgateam": [],
+    "field_u_cat_volunteer": [],
+    "field_u_childcare": [],
+    "field_u_company": [],
+    "field_u_dietary": [],
+    "field_u_first_name": [],
+    "field_u_job_title": [],
+    "field_u_last_name": [],
+    "field_u_middle_name": [],
+    "field_u_pub_attendee_list": [],
+    "field_u_speaker_experience": [],
+    "field_u_speaker_inclusion": [],
+    "field_u_special_details": [],
+    "field_u_testimonial": [],
+    "field_u_volunteer_about": [],
+    "user_picture": []
+}

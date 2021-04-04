@@ -1,0 +1,47 @@
+{
+    "uuid": [
+        {
+            "value": "4967e7b3-6b80-4f7c-b3b4-db3a9089fbce"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-22T23:57:40+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [],
+    "field_body": [
+        {
+            "value": "<p>Are you good at getting the word out? If you are a student, you post where appropriate online and offline Post on social media Mention the event at other meetups Let others in your company know<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

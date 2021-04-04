@@ -1,0 +1,144 @@
+{
+    "uid": [
+        {
+            "value": 42
+        }
+    ],
+    "uuid": [
+        {
+            "value": "644e9019-08f4-4b22-a370-9762fbcfa9db"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "preferred_langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "preferred_admin_langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "name": [
+        {
+            "value": "suzanne"
+        }
+    ],
+    "mail": [],
+    "timezone": [
+        {
+            "value": "America\/New_York"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-10-26T03:08:29+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-10-26T04:53:30+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "roles": [],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "path": [
+        {
+            "alias": null,
+            "pid": null,
+            "langcode": "en",
+            "pathauto": 1
+        }
+    ],
+    "field_dietary_intro": [],
+    "field_interest_horizontal": [],
+    "field_interest_vertical": [],
+    "field_onsite_intro": [],
+    "field_speaker": [
+        {
+            "value": "no"
+        }
+    ],
+    "field_speaker_profile": [
+        {
+            "value": "<p>Co-founder &amp; Drupal Practice Lead<\/p>\r\n\r\n<p>Suzanne oversees Evolving\u2019s Web\u2019s design, user experience, and development work. She also provides in-depth Drupal training to clients and thought leadership to the Drupal community.<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ],
+    "field_special_details": [],
+    "field_ticket_orderno": [],
+    "field_ticket_type": [],
+    "field_u_acad_title_post": [],
+    "field_u_acad_title_pre": [],
+    "field_u_accessibility": [],
+    "field_u_cat_mentor": [
+        {
+            "value": false
+        }
+    ],
+    "field_u_cat_orgateam": [
+        {
+            "value": false
+        }
+    ],
+    "field_u_cat_volunteer": [
+        {
+            "value": false
+        }
+    ],
+    "field_u_childcare": [
+        {
+            "value": false
+        }
+    ],
+    "field_u_company": [],
+    "field_u_dietary": [],
+    "field_u_first_name": [
+        {
+            "value": "Suzanne"
+        }
+    ],
+    "field_u_job_title": [],
+    "field_u_last_name": [
+        {
+            "value": "Dergacheva"
+        }
+    ],
+    "field_u_middle_name": [],
+    "field_u_pub_attendee_list": [
+        {
+            "value": true
+        }
+    ],
+    "field_u_speaker_experience": [],
+    "field_u_speaker_inclusion": [],
+    "field_u_special_details": [],
+    "field_u_testimonial": [],
+    "field_u_volunteer_about": [],
+    "user_picture": [
+        {
+            "alt": "",
+            "title": "",
+            "width": 300,
+            "height": 300,
+            "target_type": "file",
+            "target_uuid": "88aaefef-cab4-4fab-aa28-198803d72b36"
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "f1b6fd44-20dd-4fda-b401-2d58399859f5"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/node\/61f7105c-2905-4a61-8b29-51fe8fd42ceb"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/training\/automated-testing-and-test-driven-development-drupal-8"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

@@ -1,0 +1,107 @@
+{
+    "uuid": [
+        {
+            "value": "db2b074c-a5f8-4b11-ab5e-1ee201b01084"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "job_listing",
+            "target_type": "node_type",
+            "target_uuid": "1ff38401-987d-48de-be77-a35f601fe6c4"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-10-13T23:12:32+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "revision_uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "4d60223f-8a34-4e89-b13e-ad5d907db918"
+        }
+    ],
+    "revision_log": [],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "4d60223f-8a34-4e89-b13e-ad5d907db918"
+        }
+    ],
+    "title": [
+        {
+            "value": "Job Listings for Kanopi Studios"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-09-17T19:03:23+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-10-13T23:12:32+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "moderation_state": [],
+    "path": [
+        {
+            "alias": "\/sponsor\/kanopi-studios\/jobs",
+            "langcode": "en",
+            "pathauto": 0
+        }
+    ],
+    "publish_on": [],
+    "unpublish_on": [],
+    "field_job_description": [
+        {
+            "value": "<p><a href=\"https:\/\/kanopi.com\/\">Kanopi Studios<\/a> is a Design, Development &amp; Support Agency with a fully distributed team of 45 people who are experts in WordPress &amp; Drupal.<\/p>\r\n\r\n<p>We design, build, and support websites for clients who want to make a positive impact. All done with craftsmanship, a bit of whimsy, and the desire for a better web.<\/p>\r\n\r\n<p>We are several open positions for immediate hire:<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<ul>\r\n\t<li><a href=\"https:\/\/apply.workable.com\/kanopi\/j\/8B131E0ECA\/\">Drupal Tech Lead - Remote (US)<\/a><\/li>\r\n\t<li><a href=\"https:\/\/apply.workable.com\/kanopi\/j\/5434CF217B\/\">Full Stack Drupal Developer - Remote<\/a><\/li>\r\n\t<li><a href=\"https:\/\/apply.workable.com\/kanopi\/j\/74084A7E24\/\">Website Support Project Manager \/ Producer - Remote<\/a><\/li>\r\n\t<li><a href=\"https:\/\/apply.workable.com\/kanopi\/j\/11939B97CC\/\">WordPress Engineer - Remote<\/a><\/li>\r\n\t<li><a href=\"https:\/\/apply.workable.com\/kanopi\/j\/6E4A255A22\/\">WordPress Technical Lead - Remote<\/a><\/li>\r\n<\/ul>\r\n\r\n<p>Don\u2019t see an opening that\u2019s a perfect fit? That\u2019s okay \u2014 reach out to us anyway. We are not always hiring, but we are always looking for qualified talent based in the USA and Canada to add to our ever-growing group of \u201cKanopians.\u201d Our project teams and company needs are always changing; what may not be a fit today might be exactly what we\u2019re looking for a month, six months, or a year from now.&nbsp;<\/p>\r\n\r\n<p>And, who knows? We might have friends in other places looking for someone just like you! After all, nothing ventured, nothing gained!<\/p>\r\n\r\n<p>No staffing agencies or overseas applications, please.<\/p>\r\n",
+            "format": "job_listing_html"
+        }
+    ],
+    "field_job_listing_short_descript": [
+        {
+            "value": "Kanopi Studios is currently hiring project managers, WordPress Engineers, and WordPress Technical Leads. We are a 100% distributed company."
+        }
+    ],
+    "field_job_sponsor": [
+        {
+            "target_type": "node",
+            "target_uuid": "d17dd2d3-3de7-4944-b4e5-1702137a4e46"
+        }
+    ]
+}

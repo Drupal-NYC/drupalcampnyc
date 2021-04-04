@@ -1,0 +1,125 @@
+{
+    "uuid": [
+        {
+            "value": "81c775bb-04a3-4ebe-b5ee-0b84882b9933"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "sponsor",
+            "target_type": "node_type",
+            "target_uuid": "4be1da86-de47-4f5d-9938-a52b9ea555a8"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-10-26T05:24:41+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "revision_uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "b4e3a33f-17e1-4a0e-8ad3-36abaf6eebec"
+        }
+    ],
+    "revision_log": [],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "b4e3a33f-17e1-4a0e-8ad3-36abaf6eebec"
+        }
+    ],
+    "title": [
+        {
+            "value": "Oliver Davies"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-10-26T05:24:24+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-10-26T05:26:47+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": true
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "moderation_state": [],
+    "path": [
+        {
+            "alias": "\/sponsor\/oliver-davies",
+            "langcode": "en",
+            "pathauto": 1
+        }
+    ],
+    "publish_on": [],
+    "unpublish_on": [],
+    "field_level": [
+        {
+            "value": "training"
+        }
+    ],
+    "field_module_name": [],
+    "field_sponsor_description": [
+        {
+            "value": "<p>Oliver Davies (opdavies) is a full-stack Developer and Systems Administrator based in South Wales, UK. He is a PHP specialist, long-time Drupal community member, and Drupal 8 Grand Master, who splits his time between his day job as a Senior Software Engineer for Inviqa, working for freelance clients, writing books and courses, and contributing to and maintaining open source projects.<\/p>\r\n\r\n<p>Oliver is an advocate of automated testing and test driven development (TDD), and has introduced it to several development teams and mentored Developers through the process of writing their first tests.<\/p>\r\n\r\n<p>He has presented a talk and workshop on testing and TDD with Drupal at various conferences and meetups, and is currently writing a book on the subject called \"TDD - Test Driven Drupal\".<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ],
+    "field_sponsor_logo": [
+        {
+            "alt": "Oliver Davies logo",
+            "title": "",
+            "width": 64,
+            "height": 64,
+            "target_type": "file",
+            "target_uuid": "30265ee3-b69b-40cc-bac6-5fe462ed9439"
+        }
+    ],
+    "field_sponsor_priority": [
+        {
+            "value": 750
+        }
+    ],
+    "field_track_sponsorship": [],
+    "field_website": [
+        {
+            "uri": "https:\/\/www.oliverdavies.uk",
+            "title": "",
+            "options": []
+        }
+    ]
+}

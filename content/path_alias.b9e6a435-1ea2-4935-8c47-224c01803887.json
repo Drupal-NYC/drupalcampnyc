@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "b9e6a435-1ea2-4935-8c47-224c01803887"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/webform\/template_registration\/confirmation"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/form\/template-registration\/confirmation"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

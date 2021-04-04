@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "267ddfdf-284e-4bea-a7c5-d77c00f5d89c"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/webform\/template_subscribe\/drafts"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/form\/template-subscribe\/drafts"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

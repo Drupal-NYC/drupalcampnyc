@@ -1,0 +1,51 @@
+{
+    "uuid": [
+        {
+            "value": "6917367a-3069-4238-b027-f5fb3cb8a85a"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-22T23:53:52+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "field_body": [
+        {
+            "value": "<p>As a part of DrupalCampNYC 2020, we\u2019re including an afternoon&nbsp;Drupal Contribution Day. It\u2019s a great way for anybody to \u201ccontribute\u201d to the Drupal project - no coding experience necessary. The goal is to make Drupal better, together.<\/p>\r\n\r\n<p>It is a great opportunity to meet new people and collaborate with the Drupal Community, and of course, learn from the best. There are many ways to get involved.<\/p>\r\n\r\n<p><a href=\"https:\/\/www.drupal.org\/contribute\">https:\/\/www.drupal.org\/contribute<\/a><\/p>\r\n\r\n<p>You can work on things like:<\/p>\r\n\r\n<ul>\r\n\t<li><a href=\"https:\/\/www.drupal.org\/governance\/doc-working-group\">Documentation<\/a>\r\n\r\n\t<ul>\r\n\t\t<li>Help write instructions or rewrite confusing instructions in plain language<\/li>\r\n\t<\/ul>\r\n\t<\/li>\r\n\t<li>Code sprints\r\n\t<ul>\r\n\t\t<li>Fix bugs or work on features in Drupal core, contrib modules, or related tools<\/li>\r\n\t<\/ul>\r\n\t<\/li>\r\n\t<li><a href=\"https:\/\/groups.drupal.org\/usability\">Design and usability<\/a>\r\n\t<ul>\r\n\t\t<li>Are you helping someone who has never used Drupal before? Or are you new to Drupal yourself? Do you have specialized knowledge in web accessibility and other standards?&nbsp;<\/li>\r\n\t\t<li>UX<\/li>\r\n\t<\/ul>\r\n\t<\/li>\r\n\t<li><a href=\"https:\/\/www.drupal.org\/docs\/8\/testing\">Testing<\/a>\r\n\t<ul>\r\n\t\t<li>If you have a keen eye for detail or just a knack for breaking things, you can help Drupal with testing.<\/li>\r\n\t\t<li>Unit tests<\/li>\r\n\t\t<li>Kernel tests<\/li>\r\n\t\t<li>Functional tests<\/li>\r\n\t\t<li>Accessibility testing<\/li>\r\n\t<\/ul>\r\n\t<\/li>\r\n\t<li><a href=\"https:\/\/localize.drupal.org\/translate\">Translations<\/a>\r\n\t<ul>\r\n\t\t<li>Translate Drupal to your language<\/li>\r\n\t<\/ul>\r\n\t<\/li>\r\n\t<li><a href=\"https:\/\/groups.drupal.org\/marketing-drupal\">Marketing<\/a>\r\n\t<ul>\r\n\t\t<li>Help get the word out about Drupal! Put your graphic design skills or marketing savvy to work to promote Drupal and spread the word!<\/li>\r\n\t<\/ul>\r\n\t<\/li>\r\n<\/ul>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

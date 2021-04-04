@@ -1,0 +1,93 @@
+{
+    "uuid": [
+        {
+            "value": "241fbe7a-6357-4840-9b6c-4e68fec82ac0"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "bundle": [
+        {
+            "target_id": "icon",
+            "target_type": "media_type",
+            "target_uuid": "ebdca7e3-fcfc-49aa-8a2e-93732959d7cd"
+        }
+    ],
+    "revision_created": [
+        {
+            "value": "2020-07-01T19:46:59+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "revision_user": [],
+    "revision_log_message": [],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "3541195f-ad7e-45cc-b404-fba4c6504527"
+        }
+    ],
+    "name": [
+        {
+            "value": "Drupal Camp NYC 2020"
+        }
+    ],
+    "thumbnail": [
+        {
+            "alt": "Drupal Camp NYC 2020 Logo",
+            "title": null,
+            "width": null,
+            "height": null,
+            "target_type": "file",
+            "target_uuid": "252649c6-57b3-4ab8-a455-ed0a3b14020b"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-07-01T19:46:14+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-07-01T19:46:14+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "path": [
+        {
+            "alias": null,
+            "pid": null,
+            "langcode": "en",
+            "pathauto": 0
+        }
+    ],
+    "field_media_image_1": [
+        {
+            "alt": "Drupal Camp NYC 2020 Logo",
+            "title": "",
+            "width": 544,
+            "height": 321,
+            "target_type": "file",
+            "target_uuid": "252649c6-57b3-4ab8-a455-ed0a3b14020b"
+        }
+    ]
+}

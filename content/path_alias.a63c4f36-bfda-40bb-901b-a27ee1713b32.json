@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "a63c4f36-bfda-40bb-901b-a27ee1713b32"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/node\/383e4b0e-d292-4bfe-863e-c6c83d9d9d30"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/sponsor\/pantheon"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "4e3672ef-d1f7-4563-9dbd-98182fce2362"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/node\/d17dd2d3-3de7-4944-b4e5-1702137a4e46"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/sponsor\/kanopi-studios"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

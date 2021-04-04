@@ -1,0 +1,55 @@
+{
+    "uuid": [
+        {
+            "value": "d6dd6978-e6f0-4650-92da-0c0de6791c8b"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "61ce98e6-826b-46fb-bbc9-abd8a7461137"
+        }
+    ],
+    "filename": [
+        {
+            "value": "twd-square-logo-optimized_0.png"
+        }
+    ],
+    "uri": [
+        {
+            "value": "public:\/\/2020-10\/twd-square-logo-optimized_0.png"
+        }
+    ],
+    "filemime": [
+        {
+            "value": "image\/png"
+        }
+    ],
+    "filesize": [
+        {
+            "value": 22338
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-10-02T17:58:34+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-10-02T17:58:37+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ]
+}

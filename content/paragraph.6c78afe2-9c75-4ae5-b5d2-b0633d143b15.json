@@ -1,0 +1,51 @@
+{
+    "uuid": [
+        {
+            "value": "6c78afe2-9c75-4ae5-b5d2-b0633d143b15"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-22T23:58:52+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "field_body": [
+        {
+            "value": "<p>\u201cCome for the Software, Stay for the Community\u201d<\/p>\r\n\r\n<p>The Drupal Association (DA) is dedicated to fostering and supporting the Drupal software project, the community and its growth. The DA helps the Drupal community with funding, infrastructure, education, promotion, distribution, and online collaboration at <a href=\"https:\/\/www.drupal.org\/drupalorg\">Drupal.org.<\/a><\/p>\r\n\r\n<p>The work of the Drupal Association is funded by you, the Drupal Community.<\/p>\r\n\r\n<p>We encourage all attendees of DrupalCampNYC 2020 to <a href=\"https:\/\/www.drupal.org\/association\/individual-membership\">become members<\/a> of the Drupal Association so the DA can continue their critical work that benefits us all.<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

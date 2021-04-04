@@ -1,0 +1,47 @@
+{
+    "uuid": [
+        {
+            "value": "0e0d213c-5012-418b-8cbf-8b47e0e9d1c3"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-10-21T14:10:40+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [],
+    "field_body": [
+        {
+            "value": "<h2>&nbsp;<\/h2>\r\n\r\n<h3><a data-entity-substitution=\"canonical\" data-entity-type=\"node\" data-entity-uuid=\"d44940aa-c6a3-4a06-8708-1657f704e82e\" href=\"\/node\/41\">User Experience for Drupal Site Builders<\/a><\/h3>\r\n\r\n<p>Drupal is a powerful tool for building rich digital experiences. Drupal projects often revolve around producing, displaying and organizing content effectively. This course will walk you through the process of creating an effective user experience and content strategy, and planning out how to implement that strategy in Drupal. Whether you're creating a brand new website, migrating to Drupal, or improving on an existing project, you'll learn techniques that will help you build a solid content strategy and a user experience that speaks to your audiences. &nbsp;<\/p>\r\n\r\n<p>Presented by Suzanne Dergacheva and Annika Oeser from Evolving Web<\/p>\r\n\r\n<p>Thursday, November 12 - 2:30pm - 5:30pm ET<\/p>\r\n\r\n<p><strong>Level<\/strong>: Beginner<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

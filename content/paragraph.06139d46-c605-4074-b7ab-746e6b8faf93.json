@@ -1,0 +1,47 @@
+{
+    "uuid": [
+        {
+            "value": "06139d46-c605-4074-b7ab-746e6b8faf93"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-10-23T12:11:44+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [],
+    "field_body": [
+        {
+            "value": "<p>&nbsp;<\/p>\r\n\r\n<h3><a data-entity-substitution=\"canonical\" data-entity-type=\"node\" data-entity-uuid=\"e1be2b23-7423-40c9-a66b-bad350755958\" href=\"\/node\/38\">How NYPL Leverages Free Tools for CI\/CD<\/a><\/h3>\r\n\r\n<p>Learn how the New York Public Library&nbsp;is making the switch to Drupal 8 using more modern techniques for development and deployment. We'll cover what tools we use for site building, local development and deployment to self-hosted or third-party hosting environments.&nbsp;<\/p>\r\n\r\n<p><strong>Presented by:<\/strong>&nbsp;Greg Kallenberg and John Berube from The New York Public Library.<\/p>\r\n\r\n<p>Friday, November 13 - Time:<strong> 3:00 PM-3:45 PM EST<\/strong><\/p>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

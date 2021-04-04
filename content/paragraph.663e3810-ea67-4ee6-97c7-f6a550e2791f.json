@@ -1,0 +1,51 @@
+{
+    "uuid": [
+        {
+            "value": "663e3810-ea67-4ee6-97c7-f6a550e2791f"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-09-10T21:41:36+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "field_body": [
+        {
+            "value": "<p>We welcome you to browse our sponsor's&nbsp;job listings. Interested in posting here? <a data-entity-substitution=\"canonical\" data-entity-type=\"node\" data-entity-uuid=\"633d7f82-1632-4d4f-8c28-fa951d6c2eab\" href=\"\/node\/6\">Learn how to sponsor<\/a>.<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "uuid": [
+        {
+            "value": "f972cfcb-400f-4d7b-ab9d-be3141e04884"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-11-10T23:35:09+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [],
+    "field_body": [
+        {
+            "value": "<h3>&nbsp;<\/h3>\r\n\r\n<h3>Trivia<\/h3>\r\n\r\n<p>A wide variety of subjects will be covered from pop culture, music, NYC history &amp; geography, open source, and more! Test your knowledge!<\/p>\r\n\r\n<p><strong>Hosted by:<\/strong> Job Gregory<\/p>\r\n\r\n<p><strong>Time:<\/strong>&nbsp;3:00 - 3:45 pm EST<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

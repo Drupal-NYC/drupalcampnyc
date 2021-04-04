@@ -1,0 +1,51 @@
+{
+    "uuid": [
+        {
+            "value": "c86d68c8-898b-48a7-aa74-95d41016eec0"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-20T13:44:43+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "field_body": [
+        {
+            "value": "<p>We encourage both planned and spontaneous BoFs at DrupalCampNYC 2020 and will reserve (virtual) space for people to gather on Friday, November 13th.<\/p>\r\n\r\n<p>Have a BoF in mind? <a href=\"https:\/\/docs.google.com\/forms\/d\/e\/1FAIpQLSfXitjJ6yashN4VV7irCTMaWvIZw5E-Hzi83xuOF0-YUBtD6Q\/viewform\">Submit a BoF<\/a> and we'll get your BoF scheduled and promoted in advance!<\/p>\r\n\r\n<p>Email <a href=\"mailto:camp-session@drupalnyc.org\">camp-session@drupalnyc.org<\/a> with any questions.<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

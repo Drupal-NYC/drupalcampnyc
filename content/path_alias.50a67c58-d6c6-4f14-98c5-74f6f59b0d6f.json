@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "50a67c58-d6c6-4f14-98c5-74f6f59b0d6f"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/node\/54eaddc9-1832-465d-8b13-ae010f156d52"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/training\/web-accessibility-deep-dive-training"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

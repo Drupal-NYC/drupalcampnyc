@@ -1,0 +1,55 @@
+{
+    "uuid": [
+        {
+            "value": "8a9aa27a-04bb-4855-9af5-7ece279ae2b3"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "018a1885-24f1-42bc-bad3-f34ac41891cd"
+        }
+    ],
+    "filename": [
+        {
+            "value": "qbp-422k.jpg"
+        }
+    ],
+    "uri": [
+        {
+            "value": "public:\/\/2020-09\/qbp-422k.jpg"
+        }
+    ],
+    "filemime": [
+        {
+            "value": "image\/jpeg"
+        }
+    ],
+    "filesize": [
+        {
+            "value": 432506
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-09-10T21:24:23+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-09-10T21:24:30+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ]
+}

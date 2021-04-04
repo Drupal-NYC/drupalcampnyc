@@ -1,0 +1,128 @@
+{
+    "uuid": [
+        {
+            "value": "211b5f6f-0f34-4b9e-809a-a74a8c906bb2"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "page",
+            "target_type": "node_type",
+            "target_uuid": "942f533c-e329-4b51-a8fc-1a43795a48ba"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-08-14T01:29:57+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "revision_uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "61ce98e6-826b-46fb-bbc9-abd8a7461137"
+        }
+    ],
+    "revision_log": [],
+    "status": [
+        {
+            "value": false
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "61ce98e6-826b-46fb-bbc9-abd8a7461137"
+        }
+    ],
+    "title": [
+        {
+            "value": "Venue"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-15T04:24:33+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-08-14T01:29:57+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "moderation_state": [
+        {
+            "value": "archived"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/venue-old",
+            "langcode": "en",
+            "pathauto": 0
+        }
+    ],
+    "publish_on": [],
+    "unpublish_on": [],
+    "field_content": [
+        {
+            "target_type": "paragraph",
+            "target_uuid": "450497b1-c44b-44ee-9f3f-f7591d9273ec"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "3a93dae3-ac4d-4a12-8c65-4390870b0e3e"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "1a558a7b-cacb-4c6f-bd59-ad82e8463f9c"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "286733f9-c50c-4a93-a96c-0e0eba3ede81"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "f3f41d11-58a5-4f7b-92ee-b614a0f315d1"
+        }
+    ],
+    "field_header": [
+        {
+            "target_type": "paragraph",
+            "target_uuid": "6155fb50-145a-4bff-9b47-938183fe6077"
+        }
+    ],
+    "field_sponsors": [],
+    "field_summary_plain": [
+        {
+            "value": "The Microsoft Conference Center is our venue thanks to the generosity of Microsoft Reactor."
+        }
+    ]
+}

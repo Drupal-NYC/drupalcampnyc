@@ -1,0 +1,47 @@
+{
+    "uuid": [
+        {
+            "value": "398437aa-4deb-45f8-a8c3-7d7ba3c6cbee"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-11-11T00:02:09+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [],
+    "field_body": [
+        {
+            "value": "<h3>Who's Hiring \/&nbsp;Who's Looking \/ Networking<\/h3>\r\n\r\n<p>If you're looking for new opportunities, new employees, or new friends, this is your jam.&nbsp;<\/p>\r\n\r\n<p><strong>Hosted by:<\/strong>&nbsp;Job Gregory<\/p>\r\n\r\n<p><strong>Time:<\/strong>&nbsp;10:20 am - 10:45 am EST<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

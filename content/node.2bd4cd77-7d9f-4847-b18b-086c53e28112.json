@@ -1,0 +1,120 @@
+{
+    "uuid": [
+        {
+            "value": "2bd4cd77-7d9f-4847-b18b-086c53e28112"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "page",
+            "target_type": "node_type",
+            "target_uuid": "942f533c-e329-4b51-a8fc-1a43795a48ba"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-09-22T20:06:37+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "revision_uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "61ce98e6-826b-46fb-bbc9-abd8a7461137"
+        }
+    ],
+    "revision_log": [],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "61ce98e6-826b-46fb-bbc9-abd8a7461137"
+        }
+    ],
+    "title": [
+        {
+            "value": "Thanks for joining our mailing list"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-09-08T18:22:41+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-09-22T20:06:37+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "moderation_state": [
+        {
+            "value": "published"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/mailing-list-thank-you",
+            "langcode": "en",
+            "pathauto": 0
+        }
+    ],
+    "publish_on": [],
+    "unpublish_on": [],
+    "field_content": [
+        {
+            "target_type": "paragraph",
+            "target_uuid": "1d444435-2d9d-4716-aac0-2c7d79fa55b4"
+        }
+    ],
+    "field_header": [
+        {
+            "target_type": "paragraph",
+            "target_uuid": "b8d7d826-1780-4712-8025-135ecd2f30fb"
+        }
+    ],
+    "field_sponsors": [
+        {
+            "target_id": "element_list_sponsors",
+            "display_id": "block_1",
+            "data": "a:5:{s:8:\"argument\";s:7:\"diamond\";s:5:\"pager\";N;s:5:\"limit\";N;s:5:\"title\";N;s:6:\"offset\";N;}",
+            "target_type": "view",
+            "target_uuid": "50501e00-dad8-4e62-92f3-73e647ea1c8b"
+        }
+    ],
+    "field_summary_plain": [
+        {
+            "value": "Thank you for joining our mailing list."
+        }
+    ]
+}

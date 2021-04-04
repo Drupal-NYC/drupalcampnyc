@@ -1,0 +1,55 @@
+{
+    "uuid": [
+        {
+            "value": "30265ee3-b69b-40cc-bac6-5fe462ed9439"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "b4e3a33f-17e1-4a0e-8ad3-36abaf6eebec"
+        }
+    ],
+    "filename": [
+        {
+            "value": "oliver_davies.svg"
+        }
+    ],
+    "uri": [
+        {
+            "value": "public:\/\/2020-10\/oliver_davies.svg"
+        }
+    ],
+    "filemime": [
+        {
+            "value": "image\/svg+xml"
+        }
+    ],
+    "filesize": [
+        {
+            "value": 6282
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-10-26T05:24:41+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-10-26T05:26:47+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ]
+}

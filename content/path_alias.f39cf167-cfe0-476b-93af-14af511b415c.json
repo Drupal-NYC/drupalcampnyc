@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "f39cf167-cfe0-476b-93af-14af511b415c"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "und"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/webform\/template_subscribe\/confirmation"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/form\/template-subscribe\/confirmation"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

@@ -1,0 +1,55 @@
+{
+    "uuid": [
+        {
+            "value": "55fa4131-143f-4b89-af8e-2f34c2de3a74"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "fd5ec908-2bad-4ebe-ab40-ae629297ed5f"
+        }
+    ],
+    "filename": [
+        {
+            "value": "drupal-camp.jpg"
+        }
+    ],
+    "uri": [
+        {
+            "value": "public:\/\/pictures\/2020-08\/drupal-camp.jpg"
+        }
+    ],
+    "filemime": [
+        {
+            "value": "image\/jpeg"
+        }
+    ],
+    "filesize": [
+        {
+            "value": 45484
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-08-24T19:39:42+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-08-24T19:39:46+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ]
+}

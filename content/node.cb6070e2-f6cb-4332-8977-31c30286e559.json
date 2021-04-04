@@ -1,0 +1,166 @@
+{
+    "uuid": [
+        {
+            "value": "cb6070e2-f6cb-4332-8977-31c30286e559"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "session",
+            "target_type": "node_type",
+            "target_uuid": "477ef8ff-1e7b-42da-9e07-67abfdce9a09"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-11-11T21:36:09+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "revision_uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "b4e3a33f-17e1-4a0e-8ad3-36abaf6eebec"
+        }
+    ],
+    "revision_log": [],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "b4e3a33f-17e1-4a0e-8ad3-36abaf6eebec"
+        }
+    ],
+    "title": [
+        {
+            "value": "Launching a career in Drupal as a working adult"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-11-11T21:26:52+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-11-11T21:36:09+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "moderation_state": [
+        {
+            "value": "published"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/session\/launching-career-drupal-working-adult",
+            "langcode": "en",
+            "pathauto": 1
+        }
+    ],
+    "publish_on": [],
+    "unpublish_on": [],
+    "field_description": [
+        {
+            "value": "<p>Changes in the communications landscape have significantly altered the major industries and types of jobs where members of the Communications Workers of America (CWA)&nbsp;work. Members \u2013&nbsp;all workers \u2013&nbsp;must be prepared with new skills to earn a living in this changing new world of work.<\/p>\r\n\r\n<p>The CWA Joint Training Initiative was formed to offer a coordinated public and technical response to these conditions and to provide an alternative learning path to working adult members, their dependents, and families.<\/p>\r\n\r\n<p>For working adult learners, the difficulty in managing work schedules, child care responsibilities, coming up with expensive course tuition, fees, and deposits; not to mention overcoming socio-cultural bias and other built-in obstacles makes accessing appropriately tailored-training \u2013 and employment opportunities \u2013&nbsp;a serious challenge.<\/p>\r\n\r\n<p>Employment for all computer and information technology occupations, nationwide, is projected to grow 13 percent from 2016 to 2026, faster than the average for all occupations. Software Development is expected grow even faster, at 24%. (Note: these are \"pre-pandemic\"&nbsp;estimates)<\/p>\r\n\r\n<p>The latest Bureau of Labor Statistics from 2018 record a participation rate for women nationally working as &nbsp;\"computer and information systems managers\" as 27%. When ethnic disparities are applied, barriers to entry are raised further, with rates hovering at 5 to 6% for African-Americans and Hispanics.<\/p>\r\n\r\n<p>Within the more narrowly defined job title \"software developers, applications and systems software\" the percentage of women coders sinks to 19.3%, with African-Americans representing only 3.9% and Hispanics 7.9% by these same measurements.<\/p>\r\n\r\n<p>To address these disparities and provide greater opportunities for its members and their families, the Communications Workers of America Local 1180 and its signatory partners have provided training for working adults&nbsp;since 2015 under a joint, collaborative Labor Management Committee (LMC).<\/p>\r\n\r\n<p>Emphasis is placed on collaboration and developing a team of highly-trained communications workers to deal with the challenges of the current moment.<\/p>\r\n\r\n<p>Apprentices access cross-disciplinary teams, with the goal of developing those skills essential to design, build, and maintain communications networks. Different tools are employed throughout the training and apprenticeship, including Drupal.<\/p>\r\n\r\n<p>Classes and course assignments are completed on evenings and weekends; successful program graduates may then go on to work as developer apprentices who \"earn while they learn.\"<\/p>\r\n\r\n<p>In a single location, 30 workers out of 100 initial registrants have passed successfully through the Join Training pre-apprenticeship, becoming eligible for employment and more intensive, full-time training.<\/p>\r\n\r\n<p>CWA training has been available so far exclusively to qualified members and their families, due to space limitations (we currently have 3 computer labs). However, the 2020-2021 Academic Year offers the opportunity for expanded digital training including distance learning that will accommodate qualified learners.<\/p>\r\n\r\n<p>A commitment to technology \"in the public interest\" unifies the goals and practices of the parties to the agreement.<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ],
+    "field_ends_at": [
+        {
+            "value": "2020-11-13T12:45:00-05:00"
+        }
+    ],
+    "field_featured": [
+        {
+            "value": false
+        }
+    ],
+    "field_room": [],
+    "field_session_level": [
+        {
+            "value": "beginner"
+        }
+    ],
+    "field_session_sponsor": [],
+    "field_slides": [],
+    "field_slides_external": [],
+    "field_speakers": [
+        {
+            "target_type": "user",
+            "target_uuid": "12f94dc4-4d05-4651-be7f-614466c67aeb"
+        },
+        {
+            "target_type": "user",
+            "target_uuid": "3ac3c2f5-1df3-475f-9029-a5c298851ba4"
+        },
+        {
+            "target_type": "user",
+            "target_uuid": "558a0159-0a28-4eb1-a1e4-efd3d50d1146"
+        },
+        {
+            "target_type": "user",
+            "target_uuid": "fb784dde-642a-4297-9bc1-499d397c019a"
+        },
+        {
+            "target_type": "user",
+            "target_uuid": "29e0c1c8-1896-4a48-bad9-4b839e323bc0"
+        },
+        {
+            "target_type": "user",
+            "target_uuid": "8aacb79f-fed9-406a-8964-8cbafecf8186"
+        },
+        {
+            "target_type": "user",
+            "target_uuid": "900f4e72-9cb4-4b90-8a5b-d836490b3f39"
+        }
+    ],
+    "field_start": [
+        {
+            "value": "2020-11-13T12:00:00-05:00"
+        }
+    ],
+    "field_summary": [
+        {
+            "value": "Learn how the Communication Workers of America provides training (including developing Drupal expertise) to its union members through its Joint Training Initiative.",
+            "format": "plain_text"
+        }
+    ],
+    "field_type": [
+        {
+            "value": "talk"
+        }
+    ],
+    "field_video": []
+}

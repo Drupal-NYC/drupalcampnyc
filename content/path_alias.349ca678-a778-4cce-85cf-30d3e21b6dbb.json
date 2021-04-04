@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "349ca678-a778-4cce-85cf-30d3e21b6dbb"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/node\/127a4595-fe15-4152-9f60-2c4d6806c890"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/sponsor\/drupaleasy\/jobs"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "9cae18a8-77d0-47ce-88ea-87cfa30d6c3f"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "und"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/webform\/template_job_application\/drafts"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/form\/template-job-application\/drafts"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

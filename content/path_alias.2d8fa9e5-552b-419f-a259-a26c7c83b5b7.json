@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "2d8fa9e5-552b-419f-a259-a26c7c83b5b7"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "und"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/webform\/contribution_tickets\/submissions"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/form\/contribution-tickets\/submissions"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

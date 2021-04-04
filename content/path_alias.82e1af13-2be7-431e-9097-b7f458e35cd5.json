@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "82e1af13-2be7-431e-9097-b7f458e35cd5"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "und"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/webform\/contribution_tickets\/drafts"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/form\/contribution-tickets\/drafts"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

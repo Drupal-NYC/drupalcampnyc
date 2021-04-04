@@ -1,0 +1,107 @@
+{
+    "uuid": [
+        {
+            "value": "127a4595-fe15-4152-9f60-2c4d6806c890"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "job_listing",
+            "target_type": "node_type",
+            "target_uuid": "1ff38401-987d-48de-be77-a35f601fe6c4"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-09-17T18:57:10+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "revision_uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "61ce98e6-826b-46fb-bbc9-abd8a7461137"
+        }
+    ],
+    "revision_log": [],
+    "status": [
+        {
+            "value": false
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "6e30305e-a54b-451f-8280-a937764d5808"
+        }
+    ],
+    "title": [
+        {
+            "value": "Job Listings for DrupalEasy"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-09-17T18:57:10+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-09-17T18:57:10+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "moderation_state": [],
+    "path": [
+        {
+            "alias": "\/sponsor\/drupaleasy\/jobs",
+            "langcode": "en",
+            "pathauto": 1
+        }
+    ],
+    "publish_on": [],
+    "unpublish_on": [],
+    "field_job_description": [
+        {
+            "value": "<p>Company and job descriptions(s) go here.<\/p>\r\n",
+            "format": "job_listing_html"
+        }
+    ],
+    "field_job_listing_short_descript": [
+        {
+            "value": "Short description goes here."
+        }
+    ],
+    "field_job_sponsor": [
+        {
+            "target_type": "node",
+            "target_uuid": "e31350f7-09a3-4a51-8c91-e2bbd8b86c6b"
+        }
+    ]
+}

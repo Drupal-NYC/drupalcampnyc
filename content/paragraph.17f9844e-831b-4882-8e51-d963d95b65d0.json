@@ -1,0 +1,94 @@
+{
+    "uuid": [
+        {
+            "value": "17f9844e-831b-4882-8e51-d963d95b65d0"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "deck_1_column",
+            "target_type": "paragraphs_type",
+            "target_uuid": "73dfd6ef-8c06-4dcb-8b87-b8ae4ec1a001"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-11-10T16:41:42+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "field_layout_full_width": [
+        {
+            "value": false
+        }
+    ],
+    "field_primary_column": [
+        {
+            "target_type": "paragraph",
+            "target_uuid": "55af582c-4b34-429a-9892-82bc2f8e2176"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "f85be3bb-8248-41b3-ada2-942f732793bf"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "a8feeda9-0264-444b-bdd6-16e32ad1525d"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "9d0d8f2a-550f-4b92-8d6b-54a97312fe6e"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "0dc84e66-3671-446c-9991-e096be7c8c2f"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "25d19118-d16e-4b80-b9e8-9b15a15ce684"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "7c425ebb-bb61-4176-8e00-7668074a01bb"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "7633e910-9486-46ef-b499-c39e497efa4d"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "763b2bbb-d71b-4f7f-9a96-9ab82d3fc218"
+        }
+    ],
+    "field_title": [
+        {
+            "value": "Accepted BoFs and Panels",
+            "format": "basic_html"
+        }
+    ]
+}

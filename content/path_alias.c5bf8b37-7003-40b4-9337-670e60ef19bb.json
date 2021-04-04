@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "c5bf8b37-7003-40b4-9337-670e60ef19bb"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/node\/6a457d37-9298-42d5-96b7-af30bfef6cb3"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/sponsor\/kalamuna"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

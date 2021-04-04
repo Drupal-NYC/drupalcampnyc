@@ -1,0 +1,55 @@
+{
+    "uuid": [
+        {
+            "value": "9730c0d1-2122-416e-88c7-66f44f8e07a3"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "61ce98e6-826b-46fb-bbc9-abd8a7461137"
+        }
+    ],
+    "filename": [
+        {
+            "value": "ffw.svg"
+        }
+    ],
+    "uri": [
+        {
+            "value": "public:\/\/2020-10\/ffw.svg"
+        }
+    ],
+    "filemime": [
+        {
+            "value": "image\/svg+xml"
+        }
+    ],
+    "filesize": [
+        {
+            "value": 1843
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-10-14T02:58:30+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-10-14T02:59:06+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "uuid": [
+        {
+            "value": "a8cf37aa-18ad-41d0-a685-fe224a79600f"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-10-21T14:03:40+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [],
+    "field_body": [
+        {
+            "value": "<h3><a data-entity-substitution=\"canonical\" data-entity-type=\"node\" data-entity-uuid=\"49cae258-8588-49a5-b5e4-721c8979a66a\" href=\"\/node\/39\">Getting started with React.js<\/a><\/h3>\r\n\r\n<p>React.js has become one of the top players in the JavaScript libraries world. Drupal has recently adopted the library to create admin interfaces. WordPress has rebuilt its WYSIWYG editor using React. This training aims to explain the basic concepts outside of the context of any particular CMS implementation. Throughout the training, a static site will be converted into a React application.<\/p>\r\n\r\n<p>Presented by Mauricio Dinarte from Agaric<\/p>\r\n\r\n<p>Thursday, November 12 - 9:30am - 1:30pm ET<\/p>\r\n\r\n<p><strong>Level:<\/strong> Beginner<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

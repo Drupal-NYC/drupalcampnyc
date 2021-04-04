@@ -1,0 +1,55 @@
+{
+    "uuid": [
+        {
+            "value": "9272142a-c36d-4bc7-bd58-a7644a8d446e"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "b4e3a33f-17e1-4a0e-8ad3-36abaf6eebec"
+        }
+    ],
+    "filename": [
+        {
+            "value": "mediacurrent-training.svg"
+        }
+    ],
+    "uri": [
+        {
+            "value": "public:\/\/2020-10\/mediacurrent-training.svg"
+        }
+    ],
+    "filemime": [
+        {
+            "value": "image\/svg+xml"
+        }
+    ],
+    "filesize": [
+        {
+            "value": 8937
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-10-26T05:22:21+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-10-26T05:23:02+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ]
+}

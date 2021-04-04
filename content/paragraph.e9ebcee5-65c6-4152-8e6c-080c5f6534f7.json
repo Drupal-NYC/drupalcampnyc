@@ -1,0 +1,51 @@
+{
+    "uuid": [
+        {
+            "value": "e9ebcee5-65c6-4152-8e6c-080c5f6534f7"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-22T23:55:28+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "field_body": [
+        {
+            "value": "<p>Birds of a Feather sessions (or BoFs) are informal gatherings of like-minded individuals who wish to discuss a certain topic without a pre-planned agenda. BoFs allow groups to meet and discuss issues relating to regular conference sessions and talk out common problems facing the community.<\/p>\r\n\r\n<p>Have fun and learn! BoFs exist to provide attendees with an inclusive, informal environment in which to share ideas freely. BoFs can be serious and a great way to gather the people you\u2019ve been working remotely with on a project in a space to deep dive on a topic, but they can also be fun as well. Knitting BoF? Why not?<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

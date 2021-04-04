@@ -1,0 +1,152 @@
+{
+    "uuid": [
+        {
+            "value": "90938625-5c98-4d22-9e05-4b25b8ec7962"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "page",
+            "target_type": "node_type",
+            "target_uuid": "942f533c-e329-4b51-a8fc-1a43795a48ba"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-10-14T03:08:26+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "revision_uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "61ce98e6-826b-46fb-bbc9-abd8a7461137"
+        }
+    ],
+    "revision_log": [],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "61ce98e6-826b-46fb-bbc9-abd8a7461137"
+        }
+    ],
+    "title": [
+        {
+            "value": "Sponsors"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-15T04:52:51+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-10-14T03:08:26+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "moderation_state": [
+        {
+            "value": "published"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/sponsors",
+            "langcode": "en",
+            "pathauto": 0
+        }
+    ],
+    "publish_on": [],
+    "unpublish_on": [],
+    "field_content": [
+        {
+            "target_type": "paragraph",
+            "target_uuid": "f5b7721f-35da-4089-adc2-0f5fcdd1f809"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "5760494e-7f5c-4ca3-9679-d8815b1495e6"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "c639477e-3b75-4163-a6ef-95625ad2399c"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "ae45546c-92b4-46dc-ac8c-6561ae12753b"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "e6f3dc35-ae78-47ea-b2d3-974e5248b54f"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "d34d032f-5515-48f6-a496-83f8e6051244"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "5c1a5399-c11b-49fe-9efe-3e1be3d9ae6f"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "ce7597b2-3bcf-46e9-837a-64d7c9950113"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "e5601f4d-f560-4edf-b98e-2ce929ea513e"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "14555af1-d946-425b-a817-b34e0b28ccc4"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "1e6b286a-fcb4-4228-91b5-fb8a65c4be61"
+        }
+    ],
+    "field_header": [
+        {
+            "target_type": "paragraph",
+            "target_uuid": "e091e222-46a3-47f7-b7df-53d745f53b0b"
+        }
+    ],
+    "field_sponsors": [],
+    "field_summary_plain": [
+        {
+            "value": "DrupalCampNYC 2020 would not be possible without the generosity of our sponsors."
+        }
+    ]
+}

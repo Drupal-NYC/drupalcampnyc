@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "c3c0824f-5bf6-473f-b375-e4697c1bbd39"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/node\/3d39e251-d563-46ae-a152-75958eb2a8db"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/sponsor\/drupal-contractors-esteemed"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

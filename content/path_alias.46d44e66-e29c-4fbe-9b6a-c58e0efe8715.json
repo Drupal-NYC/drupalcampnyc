@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "46d44e66-e29c-4fbe-9b6a-c58e0efe8715"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/node\/4f74f835-e870-4e09-bb97-7dd7935c39aa"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/training\/front-end-web-development-foundations-community-edition"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

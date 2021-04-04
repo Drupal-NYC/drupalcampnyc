@@ -1,0 +1,55 @@
+{
+    "uuid": [
+        {
+            "value": "7733a162-2eac-4d2a-9c37-4e58cf1c470f"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "61ce98e6-826b-46fb-bbc9-abd8a7461137"
+        }
+    ],
+    "filename": [
+        {
+            "value": "pantheon.svg"
+        }
+    ],
+    "uri": [
+        {
+            "value": "public:\/\/2020-10\/pantheon.svg"
+        }
+    ],
+    "filemime": [
+        {
+            "value": "image\/svg+xml"
+        }
+    ],
+    "filesize": [
+        {
+            "value": 7745
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-10-14T03:05:55+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-10-14T03:07:24+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ]
+}

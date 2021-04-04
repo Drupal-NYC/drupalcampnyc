@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "f075d390-bb67-449e-a26f-4919be106bc8"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/node\/e31350f7-09a3-4a51-8c91-e2bbd8b86c6b"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/sponsor\/drupaleasy"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

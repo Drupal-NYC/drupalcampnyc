@@ -1,0 +1,147 @@
+{
+    "uuid": [
+        {
+            "value": "6aab70a6-d5e3-4bc2-a3e9-ef863212aa5f"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "session",
+            "target_type": "node_type",
+            "target_uuid": "477ef8ff-1e7b-42da-9e07-67abfdce9a09"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-10-26T04:59:07+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "revision_uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "b4e3a33f-17e1-4a0e-8ad3-36abaf6eebec"
+        }
+    ],
+    "revision_log": [],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "9c480ecc-433f-4ae3-9915-e360b7571210"
+        }
+    ],
+    "title": [
+        {
+            "value": "Analytics Pro: Own your Data and Put it to the Service of your Cause"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-10-26T03:42:00+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-10-26T04:59:07+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "moderation_state": [
+        {
+            "value": "published"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/training\/analytics-pro-own-your-data-and-put-it-service-your-cause",
+            "langcode": "en",
+            "pathauto": 0
+        }
+    ],
+    "publish_on": [],
+    "unpublish_on": [],
+    "field_description": [
+        {
+            "value": "<p>In one day, we will take you from data curious to data capable. From concept to application, we will empower your use of Google\u2019s Analytics, Data Studio, and Tag Manager products to deliver reports that drive change.<\/p>\r\n\r\n<p>We will learn how to use the Google Analytics interface more efficiently, so we can find the information we are looking for and analyze it. We will define basic metrics and explain why common ones such as Bounce Rate and Session Duration are misleading. We will create custom segments to slice and dice our data, and create goals to make analysis a breeze. Event tracking, custom alerts, filters and a slew of other topics will be covered. Whether you are new to web analytics or need a refresher, there will be massive takeaways!<\/p>\r\n\r\n<p>Once we are confident with GA, we will switch gears and show you how best to visualize your data using Google Data Studio. We\u2019ll start with some basics, like leveraging templates to get you started and quickly show how you can incorporate hundreds of data sources outside of the Google Stack into your reports. We\u2019ll also talk strategy and governance.<\/p>\r\n\r\n<p>Last but not least we will cover Google Tag Manager. GTM helps make advanced tagging and tracking easier, even for non-developers. However, general knowledge of HTML and HTML elements will be helpful as we talk about tracking specific items on a page. We will briefly cover ecommerce and provide some sample dataLayer snippets, to help you get started. We will show you how to debug in real-time using dataSlayer and the native Preview mode.<\/p>\r\n\r\n<p>Most importantly, we\u2019ll look at all these tools holistically and strategically. We\u2019ll pair up theory with practical exercises using the google app store dataset. At the end of the day, and optionally over lunch, we\u2019ll offer clinics to improve your analytics and data practices on your existing site. A take-away guide will also be provided offering key recommendations.<\/p>\r\n\r\n<h2>Learning Objectives<\/h2>\r\n\r\n<h3>Strategic Objectives<\/h3>\r\n\r\n<ul>\r\n\t<li>Using search and secondary dimensions effectively in the UI<\/li>\r\n\t<li>Learn which metrics are important and why some are misleading<\/li>\r\n\t<li>Using the right reports for the job<\/li>\r\n\t<li>Create goals to make campaign analysis a breeze<\/li>\r\n\t<li>Setup filters to ensure data is clean<\/li>\r\n\t<li>Create custom alerts to provide real time notifications when something unexpected happens<\/li>\r\n\t<li>Create custom segments to slice and dice your data<\/li>\r\n<\/ul>\r\n\r\n<h3>Technical Objectives<\/h3>\r\n\r\n<ul>\r\n\t<li>Apply tags, triggers, and variables to achieve structured outcomes<\/li>\r\n\t<li>Create your own event tracking in GTM using:<\/li>\r\n\t<li>Scroll Tracking<\/li>\r\n\t<li>Phone Clicks<\/li>\r\n\t<li>Email Clicks<\/li>\r\n\t<li>File Downloads<\/li>\r\n\t<li>CTAs such as \u201cDonate Now\u201d&nbsp;<\/li>\r\n\t<li>Setup basic event tagging via GTM<\/li>\r\n\t<li>Make your life easier by importing \u201crecipes\u201d<\/li>\r\n\t<li>Use views and filters in Google Analytics to deliver results<\/li>\r\n\t<li>Deploy 3rd party software via GTM<\/li>\r\n\t<li>Use connectors such as SuperMetrics to bring hundreds of data sources into Google Data Studio<\/li>\r\n\t<li>Leverage Google Data Studio templates<\/li>\r\n\t<li>Create global filters in Google Data Studio<\/li>\r\n<\/ul>\r\n",
+            "format": "basic_html"
+        }
+    ],
+    "field_ends_at": [
+        {
+            "value": "2020-11-12T13:30:00-05:00"
+        }
+    ],
+    "field_featured": [
+        {
+            "value": false
+        }
+    ],
+    "field_room": [],
+    "field_session_level": [
+        {
+            "value": "beginner"
+        }
+    ],
+    "field_session_sponsor": [
+        {
+            "target_type": "node",
+            "target_uuid": "6a457d37-9298-42d5-96b7-af30bfef6cb3"
+        }
+    ],
+    "field_slides": [],
+    "field_slides_external": [],
+    "field_speakers": [
+        {
+            "target_type": "user",
+            "target_uuid": "9c480ecc-433f-4ae3-9915-e360b7571210"
+        }
+    ],
+    "field_start": [
+        {
+            "value": "2020-11-12T09:30:00-05:00"
+        }
+    ],
+    "field_summary": [
+        {
+            "value": "In one day, we will take you from data curious to data capable. From concept to application, we will empower your use of Google\u2019s Analytics, Data Studio, and Tag Manager products to deliver reports that drive change.",
+            "format": "plain_text"
+        }
+    ],
+    "field_type": [
+        {
+            "value": "training"
+        }
+    ],
+    "field_video": []
+}

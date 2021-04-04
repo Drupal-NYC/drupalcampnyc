@@ -1,0 +1,125 @@
+{
+    "uuid": [
+        {
+            "value": "d17dd2d3-3de7-4944-b4e5-1702137a4e46"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "sponsor",
+            "target_type": "node_type",
+            "target_uuid": "4be1da86-de47-4f5d-9938-a52b9ea555a8"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-07-22T23:04:58+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "revision_uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "3541195f-ad7e-45cc-b404-fba4c6504527"
+        }
+    ],
+    "revision_log": [],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "3541195f-ad7e-45cc-b404-fba4c6504527"
+        }
+    ],
+    "title": [
+        {
+            "value": "Kanopi Studios"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-07-22T23:04:13+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-09-14T20:41:19+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": true
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "moderation_state": [],
+    "path": [
+        {
+            "alias": "\/sponsor\/kanopi-studios",
+            "langcode": "en",
+            "pathauto": 1
+        }
+    ],
+    "publish_on": [],
+    "unpublish_on": [],
+    "field_level": [
+        {
+            "value": "community"
+        }
+    ],
+    "field_module_name": [],
+    "field_sponsor_description": [
+        {
+            "value": "<p>We design, build and support websites for clients who want to make a positive impact.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Clients choose&nbsp;Kanopi&nbsp;because of our deep expertise, our careful balance between custom and contributed solutions, and our thoughtful approach to being innovative while minimizing technical debt.<br \/>\r\n<br \/>\r\nClients STAY with&nbsp;Kanopi&nbsp;because of our holistic approach: we support your website at any step in its life-cycle, be it a new build, or making iterative improvements to your existing code base and design.<br \/>\r\n<br \/>\r\nNo matter where you are in the lifecycle of your site, we can meet you there.<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ],
+    "field_sponsor_logo": [
+        {
+            "alt": "Kanopi Studios",
+            "title": "",
+            "width": 1153,
+            "height": 483,
+            "target_type": "file",
+            "target_uuid": "08d4d3ec-ad1f-4914-a5d4-7f8dd669ecac"
+        }
+    ],
+    "field_sponsor_priority": [
+        {
+            "value": 502
+        }
+    ],
+    "field_track_sponsorship": [],
+    "field_website": [
+        {
+            "uri": "https:\/\/kanopi.com\/",
+            "title": "",
+            "options": []
+        }
+    ]
+}

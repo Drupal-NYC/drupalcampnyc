@@ -1,0 +1,55 @@
+{
+    "uuid": [
+        {
+            "value": "3e8c5f56-5390-48cc-a20d-ae1f0c771d7e"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "61ce98e6-826b-46fb-bbc9-abd8a7461137"
+        }
+    ],
+    "filename": [
+        {
+            "value": "Drupal Contractors.svg"
+        }
+    ],
+    "uri": [
+        {
+            "value": "public:\/\/2020-08\/Drupal Contractors.svg"
+        }
+    ],
+    "filemime": [
+        {
+            "value": "image\/svg+xml"
+        }
+    ],
+    "filesize": [
+        {
+            "value": 7003
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-08-19T22:17:02+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-08-19T22:17:49+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "uuid": [
+        {
+            "value": "a8feeda9-0264-444b-bdd6-16e32ad1525d"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-11-11T18:58:13+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [],
+    "field_body": [
+        {
+            "value": "<h3>&nbsp;<\/h3>\r\n\r\n<h3>Drupal Recipes<\/h3>\r\n\r\n<p>Drupal Recipes is a user group driven initiative to contribute to Drupal Community Documentation for site owners, managers and builders.<\/p>\r\n\r\n<p><strong>Discussion led by:<\/strong> Andrew Olson and Bob Snodgrass<\/p>\r\n\r\n<p><strong>Time:<\/strong>&nbsp;12:00 - 12:45 pm EST<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

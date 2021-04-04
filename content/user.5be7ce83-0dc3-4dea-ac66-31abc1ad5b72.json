@@ -1,0 +1,144 @@
+{
+    "uid": [
+        {
+            "value": 39
+        }
+    ],
+    "uuid": [
+        {
+            "value": "5be7ce83-0dc3-4dea-ac66-31abc1ad5b72"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "preferred_langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "preferred_admin_langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "name": [
+        {
+            "value": "oliver"
+        }
+    ],
+    "mail": [],
+    "timezone": [
+        {
+            "value": "America\/New_York"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-10-26T03:05:50+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-10-26T04:27:21+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "roles": [],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "path": [
+        {
+            "alias": null,
+            "pid": null,
+            "langcode": "en",
+            "pathauto": 1
+        }
+    ],
+    "field_dietary_intro": [],
+    "field_interest_horizontal": [],
+    "field_interest_vertical": [],
+    "field_onsite_intro": [],
+    "field_speaker": [
+        {
+            "value": "no"
+        }
+    ],
+    "field_speaker_profile": [
+        {
+            "value": "<p>Oliver Davies (@opdavies) has been building websites since 2007, and speaking at meetups and conferences since 2012. He is a Full Stack Developer and an Acquia certified Drupal Grand Master, who also has experience developing with Symfony, Laravel, Sculpin and Vue.js, as well as with DevOps and systems administration.<\/p>\r\n\r\n<p>He is a Senior Software Engineer and Technical Team Lead at Inviqa, a Drupal core contributor and mentor, and an open source and contribution advocate.<\/p>\r\n\r\n<p>He regularly blogs and gives talks on various topics, maintains and contributes to various open source projects, and organises the PHP South Wales user group.<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ],
+    "field_special_details": [],
+    "field_ticket_orderno": [],
+    "field_ticket_type": [],
+    "field_u_acad_title_post": [],
+    "field_u_acad_title_pre": [],
+    "field_u_accessibility": [],
+    "field_u_cat_mentor": [
+        {
+            "value": false
+        }
+    ],
+    "field_u_cat_orgateam": [
+        {
+            "value": false
+        }
+    ],
+    "field_u_cat_volunteer": [
+        {
+            "value": false
+        }
+    ],
+    "field_u_childcare": [
+        {
+            "value": false
+        }
+    ],
+    "field_u_company": [],
+    "field_u_dietary": [],
+    "field_u_first_name": [
+        {
+            "value": "Oliver"
+        }
+    ],
+    "field_u_job_title": [],
+    "field_u_last_name": [
+        {
+            "value": "Davies"
+        }
+    ],
+    "field_u_middle_name": [],
+    "field_u_pub_attendee_list": [
+        {
+            "value": true
+        }
+    ],
+    "field_u_speaker_experience": [],
+    "field_u_speaker_inclusion": [],
+    "field_u_special_details": [],
+    "field_u_testimonial": [],
+    "field_u_volunteer_about": [],
+    "user_picture": [
+        {
+            "alt": "",
+            "title": "",
+            "width": 280,
+            "height": 280,
+            "target_type": "file",
+            "target_uuid": "945c7b3e-4568-437f-a575-17539ce3be01"
+        }
+    ]
+}

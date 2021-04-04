@@ -1,0 +1,125 @@
+{
+    "uuid": [
+        {
+            "value": "28ea7b0d-fa54-4bd6-b492-a6a9d712ee55"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "sponsor",
+            "target_type": "node_type",
+            "target_uuid": "4be1da86-de47-4f5d-9938-a52b9ea555a8"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-10-26T05:22:21+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "revision_uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "b4e3a33f-17e1-4a0e-8ad3-36abaf6eebec"
+        }
+    ],
+    "revision_log": [],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "b4e3a33f-17e1-4a0e-8ad3-36abaf6eebec"
+        }
+    ],
+    "title": [
+        {
+            "value": "Mediacurrent Training"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-10-26T05:20:25+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-10-26T05:23:02+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": true
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "moderation_state": [],
+    "path": [
+        {
+            "alias": "\/sponsor\/mediacurrent-training",
+            "langcode": "en",
+            "pathauto": 1
+        }
+    ],
+    "publish_on": [],
+    "unpublish_on": [],
+    "field_level": [
+        {
+            "value": "training"
+        }
+    ],
+    "field_module_name": [],
+    "field_sponsor_description": [
+        {
+            "value": "<p>We are your single source digital partner for development, design, strategy, and training. We also offer ongoing Drupal support options. The quality of our work allows organizations to grow while saving significant money over time. Mediacurrent is consistently ranked among the top-ten Drupal contributors worldwide because of commitment to giving back and the community. Our team is passionate about contributing to Open Source in an effort to pay it forward to the software we love.<\/p>\r\n\r\n<p>As a training partner, Mediacurrent conducts in-person and online training workshops for the community, clients, and our own team. We build custom training curriculums for small and large teams and our unique approach to training is what sets us apart. In addition, our team consistently shares their skills and knowledge through blog posts, case studies, and video tutorials.<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ],
+    "field_sponsor_logo": [
+        {
+            "alt": "Mediacurrent Training logo",
+            "title": "",
+            "width": 2340,
+            "height": 1151,
+            "target_type": "file",
+            "target_uuid": "9272142a-c36d-4bc7-bd58-a7644a8d446e"
+        }
+    ],
+    "field_sponsor_priority": [
+        {
+            "value": 750
+        }
+    ],
+    "field_track_sponsorship": [],
+    "field_website": [
+        {
+            "uri": "https:\/\/www.mediacurrent.com\/training\/",
+            "title": "",
+            "options": []
+        }
+    ]
+}

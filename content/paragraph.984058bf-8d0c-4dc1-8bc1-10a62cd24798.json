@@ -1,0 +1,51 @@
+{
+    "uuid": [
+        {
+            "value": "984058bf-8d0c-4dc1-8bc1-10a62cd24798"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-22T22:48:56+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "field_body": [
+        {
+            "value": "<div style=\"overflow-x: auto;\">\r\n<table class=\"table sponsorship-table\">\r\n\t<thead>\r\n\t\t<tr>\r\n\t\t\t<th>Feature<\/th>\r\n\t\t\t<th>Industrialist<br \/>\r\n\t\t\t(Community)<\/th>\r\n\t\t\t<th>New Amsterdam<br \/>\r\n\t\t\t(Gold)<\/th>\r\n\t\t\t<th>Gotham<br \/>\r\n\t\t\t(Platinum)<\/th>\r\n\t\t\t<th>Big Apple<br \/>\r\n\t\t\t(Diamond)<\/th>\r\n\t\t<\/tr>\r\n\t<\/thead>\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td># available<\/td>\r\n\t\t\t<td>unlimited<\/td>\r\n\t\t\t<td>8<\/td>\r\n\t\t\t<td>6<\/td>\r\n\t\t\t<td>4<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<td>Contribution<\/td>\r\n\t\t\t<td>$250<\/td>\r\n\t\t\t<td>$1,000<\/td>\r\n\t\t\t<td>$2,000<\/td>\r\n\t\t\t<td>$3,000<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<td>Job listing<br \/>\r\n\t\t\t<span class=\"secondary\">on website<\/span><\/td>\r\n\t\t\t<td>\u2b24<\/td>\r\n\t\t\t<td>\u2b24<\/td>\r\n\t\t\t<td>\u2b24<\/td>\r\n\t\t\t<td>\u2b24<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<td>Sponsor detail page on website<br \/>\r\n\t\t\t<span class=\"secondary\">with link to company website<\/span><\/td>\r\n\t\t\t<td>\u2b24<\/td>\r\n\t\t\t<td>\u2b24<\/td>\r\n\t\t\t<td>\u2b24<\/td>\r\n\t\t\t<td>\u2b24<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<td>Visual priority on website<br \/>\r\n\t\t\t<span class=\"secondary\">and other marketing materials*<\/span><\/td>\r\n\t\t\t<td>5th<\/td>\r\n\t\t\t<td>3rd<\/td>\r\n\t\t\t<td>2nd<\/td>\r\n\t\t\t<td>1st<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<td>Logo on website<br \/>\r\n\t\t\t<span class=\"secondary\">and other marketing materials<\/span><\/td>\r\n\t\t\t<td>&nbsp;<\/td>\r\n\t\t\t<td>Small<\/td>\r\n\t\t\t<td>Medium<\/td>\r\n\t\t\t<td>Large<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<td>Social media messages<br \/>\r\n\t\t\t<span class=\"secondary\">during event<\/span><\/td>\r\n\t\t\t<td>&nbsp;<\/td>\r\n\t\t\t<td>\u2b24<\/td>\r\n\t\t\t<td>\u2b24<\/td>\r\n\t\t\t<td>\u2b24<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<td>Social media messages<br \/>\r\n\t\t\t<span class=\"secondary\">before and after event<\/span><\/td>\r\n\t\t\t<td>&nbsp;<\/td>\r\n\t\t\t<td>&nbsp;<\/td>\r\n\t\t\t<td>\u2b24<\/td>\r\n\t\t\t<td>\u2b24<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<td>Virtual sponsor booth<br \/>\r\n\t\t\t<span class=\"secondary\">during sessions<\/span><\/td>\r\n\t\t\t<td>&nbsp;<\/td>\r\n\t\t\t<td>&nbsp;<\/td>\r\n\t\t\t<td>\u2b24<\/td>\r\n\t\t\t<td>\u2b24<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<td>Named thank you<br \/>\r\n\t\t\t<span class=\"secondary\">during opening and closing sessions<\/span><\/td>\r\n\t\t\t<td>&nbsp;<\/td>\r\n\t\t\t<td>&nbsp;<\/td>\r\n\t\t\t<td>\u2b24<\/td>\r\n\t\t\t<td>\u2b24<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<td>Custom promotional slide<br \/>\r\n\t\t\t<span class=\"secondary\">during opening and closing sessions<\/span><\/td>\r\n\t\t\t<td>&nbsp;<\/td>\r\n\t\t\t<td>&nbsp;<\/td>\r\n\t\t\t<td>&nbsp;<\/td>\r\n\t\t\t<td>\u2b24<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<td>Logo<br \/>\r\n\t\t\t<span class=\"secondary\">in attendee emails<\/span><\/td>\r\n\t\t\t<td>&nbsp;<\/td>\r\n\t\t\t<td>&nbsp;<\/td>\r\n\t\t\t<td>&nbsp;<\/td>\r\n\t\t\t<td>\u2b24<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<td>Logo<br \/>\r\n\t\t\t<span class=\"secondary\">on every page of website<\/span><\/td>\r\n\t\t\t<td>&nbsp;<\/td>\r\n\t\t\t<td>&nbsp;<\/td>\r\n\t\t\t<td>&nbsp;<\/td>\r\n\t\t\t<td>\u2b24<\/td>\r\n\t\t<\/tr>\r\n\t<\/tbody>\r\n<\/table>\r\n<\/div>\r\n\r\n<p>* Relative to other generally available sponsorship levels.<\/p>\r\n",
+            "format": "full_html"
+        }
+    ]
+}

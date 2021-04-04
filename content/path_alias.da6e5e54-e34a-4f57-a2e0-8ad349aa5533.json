@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "da6e5e54-e34a-4f57-a2e0-8ad349aa5533"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/node\/c9412c89-d652-4690-b979-e1b5b13f6d80"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/volunteers"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

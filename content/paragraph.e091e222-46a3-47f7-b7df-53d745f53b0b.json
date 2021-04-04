@@ -1,0 +1,51 @@
+{
+    "uuid": [
+        {
+            "value": "e091e222-46a3-47f7-b7df-53d745f53b0b"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "deck_header",
+            "target_type": "paragraphs_type",
+            "target_uuid": "b1a10dba-0d9d-453b-afc4-d940242f0aba"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-15T04:53:00+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "field_title": [
+        {
+            "value": "Sponsors",
+            "format": "basic_html"
+        }
+    ]
+}

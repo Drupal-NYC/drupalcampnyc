@@ -1,0 +1,51 @@
+{
+    "uuid": [
+        {
+            "value": "789bc105-5515-4666-ba79-3906804d2168"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-22T23:52:11+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "field_body": [
+        {
+            "value": "<p>Our Contribution Day will occur on Saturday, November 14th starting at 2pm EST. If you're new to contributing, join the <a data-entity-substitution=\"canonical\" data-entity-type=\"node\" data-entity-uuid=\"06e0108c-6c0a-4f46-847a-a154ca910470\" href=\"\/node\/56\">First Time Contributor Workshop<\/a>&nbsp;at 2pm EST (no need to be a developer!) or if you're a seasoned contributor, dive right in.<\/p>\r\n\r\n<p>Our Contribution Day will take place within our virtual conference platform, Hopin.<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

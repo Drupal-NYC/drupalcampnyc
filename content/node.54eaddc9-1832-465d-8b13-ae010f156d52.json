@@ -1,0 +1,139 @@
+{
+    "uuid": [
+        {
+            "value": "54eaddc9-1832-465d-8b13-ae010f156d52"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "session",
+            "target_type": "node_type",
+            "target_uuid": "477ef8ff-1e7b-42da-9e07-67abfdce9a09"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-11-09T21:10:28+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "revision_uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "b4e3a33f-17e1-4a0e-8ad3-36abaf6eebec"
+        }
+    ],
+    "revision_log": [],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "83ca06bb-7ba4-4378-94aa-d50002a42a9e"
+        }
+    ],
+    "title": [
+        {
+            "value": "Web Accessibility Deep-Dive Training (CANCELLED)"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-10-26T04:02:00+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-11-09T21:10:28+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "moderation_state": [
+        {
+            "value": "published"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/training\/web-accessibility-deep-dive-training",
+            "langcode": "en",
+            "pathauto": 0
+        }
+    ],
+    "publish_on": [],
+    "unpublish_on": [],
+    "field_description": [
+        {
+            "value": "<p>Note: this training has been CANCELLED.<\/p>\r\n\r\n<p>This training course is a crash-course in web accessibility concepts targeted towards content managers, designers and developers working in Drupal tasked to create an \"accessible website\".&nbsp;<\/p>\r\n\r\n<p>We will explore accessibility laws, principles and methods of compliance through a variety of channels and uses cases. We\u2019ll start with a basic understanding of what accessibility is and touch on a broad topic of areas accessibility affects your website.<\/p>\r\n\r\n<p>Get started with web accessibility and become an advocate for inclusion on the web with this training.<\/p>\r\n\r\n<p>We\u2019ll cover:<\/p>\r\n\r\n<ul>\r\n\t<li>Accessibility: What and Why?<\/li>\r\n\t<li>Understanding disabilities and challenges.<\/li>\r\n\t<li>Laws, standards, and organizations (beyond the WCAG 2.0\/2.1)<\/li>\r\n\t<li>Conformance Testing<\/li>\r\n\t<li>Accessible Elements of the Web\r\n\t<ul>\r\n\t\t<li>Media<\/li>\r\n\t\t<li>Content<\/li>\r\n\t\t<li>Markup<\/li>\r\n\t\t<li>Documents<\/li>\r\n\t\t<li>Forms<\/li>\r\n\t<\/ul>\r\n\t<\/li>\r\n<\/ul>\r\n",
+            "format": "basic_html"
+        }
+    ],
+    "field_ends_at": [],
+    "field_featured": [
+        {
+            "value": false
+        }
+    ],
+    "field_room": [],
+    "field_session_level": [
+        {
+            "value": "beginner"
+        }
+    ],
+    "field_session_sponsor": [
+        {
+            "target_type": "node",
+            "target_uuid": "ffa91f12-cc32-44fd-8c45-c4a508f83d18"
+        }
+    ],
+    "field_slides": [],
+    "field_slides_external": [],
+    "field_speakers": [
+        {
+            "target_type": "user",
+            "target_uuid": "83ca06bb-7ba4-4378-94aa-d50002a42a9e"
+        }
+    ],
+    "field_start": [],
+    "field_summary": [
+        {
+            "value": "This training course is a crash-course in web accessibility concepts targeted towards content managers, designers and developers working in Drupal tasked to create an \"accessible website\".",
+            "format": "plain_text"
+        }
+    ],
+    "field_type": [
+        {
+            "value": "training"
+        }
+    ],
+    "field_video": []
+}

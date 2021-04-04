@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "81bbb376-d34f-49f2-aa78-7e3022a9c6cb"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "und"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/webform\/template_session_evaluation\/submissions"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/form\/template-session-evaluation\/submissions"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

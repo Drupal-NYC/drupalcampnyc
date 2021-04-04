@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "b2e51de0-89fc-4fe0-a28b-3663366cd647"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/node\/90938625-5c98-4d22-9e05-4b25b8ec7962"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/sponsors"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

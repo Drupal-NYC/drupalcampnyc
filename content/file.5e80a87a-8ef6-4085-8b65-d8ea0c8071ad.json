@@ -1,0 +1,55 @@
+{
+    "uuid": [
+        {
+            "value": "5e80a87a-8ef6-4085-8b65-d8ea0c8071ad"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "018a1885-24f1-42bc-bad3-f34ac41891cd"
+        }
+    ],
+    "filename": [
+        {
+            "value": "pat-head-shot-380.jpg"
+        }
+    ],
+    "uri": [
+        {
+            "value": "public:\/\/pictures\/2020-06\/pat-head-shot-380.jpg"
+        }
+    ],
+    "filemime": [
+        {
+            "value": "image\/jpeg"
+        }
+    ],
+    "filesize": [
+        {
+            "value": 43063
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-06-30T19:38:32+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-06-30T19:38:58+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ]
+}

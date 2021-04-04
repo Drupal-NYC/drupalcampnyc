@@ -1,0 +1,52 @@
+{
+    "uuid": [
+        {
+            "value": "0b264559-278e-4cd6-9e87-9522a636cae8"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "element_call_to_action",
+            "target_type": "paragraphs_type",
+            "target_uuid": "ea3bb556-ba6d-435f-9504-52fd77b4027a"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-06-23T02:56:23+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "field_link": [
+        {
+            "uri": "https:\/\/ti.to\/drupalcampnyc\/2020-sponsorship",
+            "title": "Place order for sponsorship",
+            "options": []
+        }
+    ]
+}

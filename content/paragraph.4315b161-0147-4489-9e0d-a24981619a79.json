@@ -1,0 +1,51 @@
+{
+    "uuid": [
+        {
+            "value": "4315b161-0147-4489-9e0d-a24981619a79"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-22T23:09:31+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "field_body": [
+        {
+            "value": "<p>Microsoft Conference Center<br \/>\r\n11 Times Square (640 8th Avenue)<br \/>\r\nNew York, NY 10036<\/p>\r\n\r\n<p><a href=\"https:\/\/goo.gl\/maps\/HaQVWJXF8nwaF9ih7\">Google Map<\/a><\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

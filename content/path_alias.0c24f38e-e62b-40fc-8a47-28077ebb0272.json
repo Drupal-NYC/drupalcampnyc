@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "0c24f38e-e62b-40fc-8a47-28077ebb0272"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/webform\/european_customer_roundtable_sig\/confirmation"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/form\/european-customer-roundtable-sig\/confirmation"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

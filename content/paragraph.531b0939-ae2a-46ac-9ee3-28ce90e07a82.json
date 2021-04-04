@@ -1,0 +1,51 @@
+{
+    "uuid": [
+        {
+            "value": "531b0939-ae2a-46ac-9ee3-28ce90e07a82"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-22T23:10:36+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "field_body": [
+        {
+            "value": "<ul>\r\n\t<li>Across the street from Port Authority (buses and subway)<\/li>\r\n\t<li>Within two blocks of 12 subway lines<\/li>\r\n\t<li>One subway stop from Grand Central Terminal (Metro-North, Amtrak)<\/li>\r\n\t<li>One subway stop away from Penn Station (NJ Transit and Amtrak)<\/li>\r\n<\/ul>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

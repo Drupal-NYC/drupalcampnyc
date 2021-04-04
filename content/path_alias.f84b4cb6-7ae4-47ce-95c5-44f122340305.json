@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "f84b4cb6-7ae4-47ce-95c5-44f122340305"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/node\/b5596c9b-8f7e-46b0-80f0-410a484b5704"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/sponsor\/agaric"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

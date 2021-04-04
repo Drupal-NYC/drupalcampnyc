@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "525533fe-49df-44b3-b244-9d2292140199"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/webform\/shirt_order_refinement"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/form\/shirt-order-refinement"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

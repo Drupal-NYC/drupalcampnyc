@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "831cc041-3cf9-415a-b9da-1bf78750b8a0"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/node\/b1224713-2aaa-4653-93f7-c75b81e554dd"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/session\/striving-inclusion-through-accessible-design"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

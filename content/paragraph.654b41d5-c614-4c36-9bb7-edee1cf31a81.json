@@ -1,0 +1,82 @@
+{
+    "uuid": [
+        {
+            "value": "654b41d5-c614-4c36-9bb7-edee1cf31a81"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "deck_1_column",
+            "target_type": "paragraphs_type",
+            "target_uuid": "73dfd6ef-8c06-4dcb-8b87-b8ae4ec1a001"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-10-21T17:51:48+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "field_layout_full_width": [
+        {
+            "value": false
+        }
+    ],
+    "field_primary_column": [
+        {
+            "target_type": "paragraph",
+            "target_uuid": "70e108f9-0221-4b3e-a862-4e7e81ccf672"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "eecfd849-73bb-482d-89fc-528722016358"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "bf2d9095-e2c2-41cd-92d3-651593fe5cbc"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "08761475-45d3-4139-a4d7-406f0204a945"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "06139d46-c605-4074-b7ab-746e6b8faf93"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "b7754502-aba9-47c4-8ee1-ee6ffaa87c0c"
+        }
+    ],
+    "field_title": [
+        {
+            "value": "Confirmed sessions",
+            "format": "basic_html"
+        }
+    ]
+}

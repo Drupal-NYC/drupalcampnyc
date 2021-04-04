@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "c42617db-ad5a-4537-8544-6eb4f60fd778"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/node\/db2b074c-a5f8-4b11-ab5e-1ee201b01084"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/sponsor\/kanopi-studios\/jobs"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "uuid": [
+        {
+            "value": "82cef9db-e9fe-4f1c-ae33-fac1b2514848"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-10-21T14:16:06+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [],
+    "field_body": [
+        {
+            "value": "<h2>&nbsp;<\/h2>\r\n\r\n<h3><a data-entity-substitution=\"canonical\" data-entity-type=\"node\" data-entity-uuid=\"4f74f835-e870-4e09-bb97-7dd7935c39aa\" href=\"\/node\/43\">Front-End Web Development Foundations - Community Edition<\/a><\/h3>\r\n\r\n<p><span><span><span><span><span><span>Learn the front-end development skills to build modern, responsive, and large-scale websites with HTML5, CSS3, and JavaScript ES6.&nbsp; Front-end development is a critical aspect of software development. This is why the demand for skilled front-end developers keeps growing.<\/span><\/span><\/span><\/span><\/span><\/span><\/p>\r\n\r\n<p>Presented by Mario Hernandez from Media Current<\/p>\r\n\r\n<p>Thursday, November 12 - 9:30am - 5:30pm ET<\/p>\r\n\r\n<p><strong>Level<\/strong>: Intermediate<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "uuid": [
+        {
+            "value": "0dc84e66-3671-446c-9991-e096be7c8c2f"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-11-12T14:54:21+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [],
+    "field_body": [
+        {
+            "value": "<h3>&nbsp;<\/h3>\r\n\r\n<h3>Drupal Ladder initiative<\/h3>\r\n\r\n<p>Drupal Ladder is built for technologists to learn, share, and contribute to the Drupal Community. It is an effort to enable a collaborative place where the beginners can get guidance from the diehard Drupal community posting various information in the form of instructions, how-to guides, or videos in a sequential manner.<br \/>\r\n<br \/>\r\nWith the passion to share the knowledge of Drupal, the Drupal ladder provides a platform for the people interested in Drupal to share their ideas with others who are unable to taste the fun of playing with it. You can contribute as much or as less as you want to share your Drupal story. Whether you are an experienced drupalier who wants to share your creative freedom or a newbie willing to master Drupal - Drupal Ladder is for everyone.<br \/>\r\n<br \/>\r\nhttp:\/\/drupalladder.org\/<\/p>\r\n\r\n<p><strong>Discussion led by:<\/strong> Divyanshi Parihar<\/p>\r\n\r\n<p><strong>Time:<\/strong> 2:00 - 2:45 pm EST<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

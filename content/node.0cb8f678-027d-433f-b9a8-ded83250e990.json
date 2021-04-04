@@ -1,0 +1,138 @@
+{
+    "uuid": [
+        {
+            "value": "0cb8f678-027d-433f-b9a8-ded83250e990"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "session",
+            "target_type": "node_type",
+            "target_uuid": "477ef8ff-1e7b-42da-9e07-67abfdce9a09"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-11-12T19:26:02+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "revision_uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "78c2be76-9592-468c-8dfa-4f42d4b8326b"
+        }
+    ],
+    "revision_log": [],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "039bf7c4-fb41-493a-8131-b425af361c51"
+        }
+    ],
+    "title": [
+        {
+            "value": "Modernizing NYC's radio news using Drupal, AWS, and SalesForce"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-10-26T03:26:40+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-11-12T19:26:02+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "moderation_state": [
+        {
+            "value": "published"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/session\/modernizing-nycs-radio-news-using-drupal-aws-and-salesforce",
+            "langcode": "en",
+            "pathauto": 1
+        }
+    ],
+    "publish_on": [],
+    "unpublish_on": [],
+    "field_description": [
+        {
+            "value": "<p>Since 1989, large media distributors and news agencies across North America have been using ANPA-1312 to standardize the content and structure of text-based news articles. A majority of journalists, independent writers, and news agency managers still compose their articles, upload code-friendly content through an FTP network, and release on the wire. Much of this work is done in forgotten rooms on outdated hardware. Thanks to the standard format, however, the content can still be aggregated into the newswire. Fast forward almost 30 years later, in 2018, when a major NYC-based radio station invested in an industry-disrupting solution leveraging Drupal, new groups module, AWS SQS, and SalesForce. The resulting service? An app that allows newswire uploads from phone, tablet, or desktop computer. From anywhere around the world, the app categorizes data so even writers unfamiliar with the ANPA format can submit their articles on the wire. The modern UI offers dramatic usability improvements, like allowing talk-show hosts and radio-station reporters to build show rundowns, content customizability, and edited article access across networks. Spend an hour with me as I talk about some of the challenges faced while building a custom workaround for NYC\u2019s biggest internet radio station and renovating the ANPA standard.<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ],
+    "field_ends_at": [
+        {
+            "value": "2020-11-13T14:45:00-05:00"
+        }
+    ],
+    "field_featured": [
+        {
+            "value": false
+        }
+    ],
+    "field_room": [],
+    "field_session_level": [],
+    "field_session_sponsor": [],
+    "field_slides": [],
+    "field_slides_external": [],
+    "field_speakers": [
+        {
+            "target_type": "user",
+            "target_uuid": "039bf7c4-fb41-493a-8131-b425af361c51"
+        }
+    ],
+    "field_start": [
+        {
+            "value": "2020-11-13T14:00:00-05:00"
+        }
+    ],
+    "field_summary": [
+        {
+            "value": "Since 1989, large media distributors and news agencies across North America have been using ANPA-1312 to standardize the content and structure of text-based news articles. A majority of journalists, independent writers, and news agency managers still compose their articles, upload code-friendly content through an FTP network, and release on the wire. Much of this work is done in forgotten rooms on outdated hardware. Thanks to the standard format, however, the content can still be aggregated into the newswire. Fast forward almost 30 years later, in 2018, when a major NYC-based radio station invested in an industry-disrupting solution leveraging Drupal, new groups module, AWS SQS, and SalesForce. The resulting service? An app that allows newswire uploads from phone, tablet, or desktop computer. From anywhere around the world, the app categorizes data so even writers unfamiliar with the ANPA format can submit their articles on the wire. The modern UI offers dramatic usability improvements, like allowing talk-show hosts and radio-station reporters to build show rundowns, content customizability, and edited article access across networks. Spend an hour with me as I talk about some of the challenges faced while building a custom workaround for NYC\u2019s biggest internet radio station and renovating the ANPA standard.",
+            "format": "plain_text"
+        }
+    ],
+    "field_type": [
+        {
+            "value": "talk"
+        }
+    ],
+    "field_video": []
+}

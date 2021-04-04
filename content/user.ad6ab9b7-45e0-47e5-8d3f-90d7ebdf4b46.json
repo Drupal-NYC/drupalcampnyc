@@ -1,0 +1,140 @@
+{
+    "uid": [
+        {
+            "value": 38
+        }
+    ],
+    "uuid": [
+        {
+            "value": "ad6ab9b7-45e0-47e5-8d3f-90d7ebdf4b46"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "preferred_langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "preferred_admin_langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "name": [
+        {
+            "value": "mario"
+        }
+    ],
+    "mail": [],
+    "timezone": [
+        {
+            "value": "America\/New_York"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-10-26T03:05:10+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-10-26T04:51:20+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "roles": [],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "path": [
+        {
+            "alias": null,
+            "pid": null,
+            "langcode": "en",
+            "pathauto": 1
+        }
+    ],
+    "field_dietary_intro": [],
+    "field_interest_horizontal": [],
+    "field_interest_vertical": [],
+    "field_onsite_intro": [],
+    "field_speaker": [],
+    "field_speaker_profile": [
+        {
+            "value": "<p>Mario is the Head of Learning at Mediacurrent with over 10 years of public speaking and training experience. He is a regular speaker and trainer at tech conferences including Drupal Camps in Los Angeles, San Diego, San Francisco, Washington DC, and others. Mario is a co-host of the Mediacurrent podcast where guest speakers discuss Open Source solutions.<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ],
+    "field_special_details": [],
+    "field_ticket_orderno": [],
+    "field_ticket_type": [],
+    "field_u_acad_title_post": [],
+    "field_u_acad_title_pre": [],
+    "field_u_accessibility": [],
+    "field_u_cat_mentor": [
+        {
+            "value": false
+        }
+    ],
+    "field_u_cat_orgateam": [
+        {
+            "value": false
+        }
+    ],
+    "field_u_cat_volunteer": [
+        {
+            "value": false
+        }
+    ],
+    "field_u_childcare": [
+        {
+            "value": false
+        }
+    ],
+    "field_u_company": [],
+    "field_u_dietary": [],
+    "field_u_first_name": [
+        {
+            "value": "Mario"
+        }
+    ],
+    "field_u_job_title": [],
+    "field_u_last_name": [
+        {
+            "value": "Hernandez"
+        }
+    ],
+    "field_u_middle_name": [],
+    "field_u_pub_attendee_list": [
+        {
+            "value": true
+        }
+    ],
+    "field_u_speaker_experience": [],
+    "field_u_speaker_inclusion": [],
+    "field_u_special_details": [],
+    "field_u_testimonial": [],
+    "field_u_volunteer_about": [],
+    "user_picture": [
+        {
+            "alt": "",
+            "title": "",
+            "width": 280,
+            "height": 280,
+            "target_type": "file",
+            "target_uuid": "e26ad872-8450-46d8-aa4a-333b87681c02"
+        }
+    ]
+}

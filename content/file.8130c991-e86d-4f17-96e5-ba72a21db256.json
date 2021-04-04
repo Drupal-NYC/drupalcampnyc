@@ -1,0 +1,55 @@
+{
+    "uuid": [
+        {
+            "value": "8130c991-e86d-4f17-96e5-ba72a21db256"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "b4e3a33f-17e1-4a0e-8ad3-36abaf6eebec"
+        }
+    ],
+    "filename": [
+        {
+            "value": "BlackMesh_400x91.png"
+        }
+    ],
+    "uri": [
+        {
+            "value": "public:\/\/2020-10\/BlackMesh_400x91.png"
+        }
+    ],
+    "filemime": [
+        {
+            "value": "image\/png"
+        }
+    ],
+    "filesize": [
+        {
+            "value": 17465
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-10-28T20:54:17+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-10-28T20:54:33+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ]
+}

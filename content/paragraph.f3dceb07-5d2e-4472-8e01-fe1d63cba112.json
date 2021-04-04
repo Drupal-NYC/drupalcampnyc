@@ -1,0 +1,51 @@
+{
+    "uuid": [
+        {
+            "value": "f3dceb07-5d2e-4472-8e01-fe1d63cba112"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-22T23:58:34+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "field_body": [
+        {
+            "value": "<p>DrupalNYC Incorporated is a New York nonprofit 501(c)(3) corporation dedicated to supporting the Drupal community within the City of New York to both share knowledge about and collaborate in the development of Drupal. The corporation serves as an umbrella, currently supporting DrupalCampNYC and the monthly DrupalNYC meetups -- the NYC Drupal User Group (DUG). Learn more at <a href=\"https:\/\/www.drupalnyc.org\/\">DrupalNYC.org<\/a>.<\/p>\r\n\r\n<h3>DrupalNYC Meetups<\/h3>\r\n\r\n<p>We meet monthly in NYC (or virtually as circumstances require) and share about building and using Drupal sites and contributing back to the Drupal project.<\/p>\r\n\r\n<p>All are welcome to attend the <a href=\"https:\/\/www.meetup.com\/drupalnyc\/\">DrupalNYC meetups<\/a>. At each meetup, there will be one or more lightning talks and presentations as well as an opportunity for any new or old Drupalers to ask Drupal questions and get answers, socialize, and network. Please join us!<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

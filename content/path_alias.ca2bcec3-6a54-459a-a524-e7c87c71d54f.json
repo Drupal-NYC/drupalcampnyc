@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "ca2bcec3-6a54-459a-a524-e7c87c71d54f"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/node\/2235ff07-bad9-47a3-889e-a650e053ec57"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/training\/introduction-drupal"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

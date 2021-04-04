@@ -1,0 +1,51 @@
+{
+    "uuid": [
+        {
+            "value": "90a19611-c786-414e-85d5-2068ed532891"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-22T23:53:20+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "field_body": [
+        {
+            "value": "<p>By joining us you will have the opportunity to gain knowledge from your peers, or you can work on your own, allowing everyone to help the thousands of people who will benefit from your contribution.<\/p>\r\n\r\n<p>We will split into groups and work on Drupal issues.<\/p>\r\n\r\n<p>Not a coder or never have contributed? That\u2019s perfectly fine! There will be mentors available for those who need a little help to get started. Interested in being a mentor? Please email <a href=\"mailto:camp-volunteer@drupalnyc.org\">camp-volunteer@drupalnyc.org<\/a>.<\/p>\r\n\r\n<p>We will also have a <a href=\"https:\/\/2020.drupalcamp.nyc\/session\/first-time-contribution-workshop\">Contribution Workshop&nbsp;for first-time contributors<\/a>. Not everyone who collaborates on open source projects is an expert or developer. Smaller tasks help the less experienced gain confidence and experience, which, in turn, leads to more contributions. Code is important, and so are all the other parts.<\/p>\r\n\r\n<p>Besides contributing back to the community, participating in Contribution Day is a great opportunity for learning and casual professional networking.<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

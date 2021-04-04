@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "3a007986-adac-43dc-97a4-990d986e4f64"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/webform\/template_job_application\/submissions"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/form\/template-job-application\/submissions"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

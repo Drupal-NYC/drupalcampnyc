@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "ac805da0-b66b-4574-9019-0db09f402eab"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "und"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/webform\/contact\/drafts"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/form\/contact\/drafts"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

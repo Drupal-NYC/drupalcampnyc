@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "eacfa7c8-1497-41a3-bbe9-a8a072cf8734"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/node\/586df998-af57-4d0c-a563-c08d5120232f"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/sponsor\/ffw\/jobs"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

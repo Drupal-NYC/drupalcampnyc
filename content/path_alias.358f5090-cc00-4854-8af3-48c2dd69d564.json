@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "358f5090-cc00-4854-8af3-48c2dd69d564"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/node\/042223a7-9a40-406b-9fe0-9299eb975afb"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/thank-you-sponsor"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

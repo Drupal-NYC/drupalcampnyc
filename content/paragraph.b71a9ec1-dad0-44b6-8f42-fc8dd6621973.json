@@ -1,0 +1,51 @@
+{
+    "uuid": [
+        {
+            "value": "b71a9ec1-dad0-44b6-8f42-fc8dd6621973"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-22T23:35:13+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "field_body": [
+        {
+            "value": "<p>We are proud of the DrupalNYC community!<\/p>\r\n\r\n<p>In addition to those available to all companies, we invite local companies (see definition below) to choose from two additional discounted sponsorship opportunities:<\/p>\r\n\r\n<div style=\"overflow-x: auto;\">\r\n<table class=\"table sponsorship-table\">\r\n\t<thead>\r\n\t\t<tr>\r\n\t\t\t<th>Feature<\/th>\r\n\t\t\t<th>Tri-State<\/th>\r\n\t\t\t<th>Homegrown<\/th>\r\n\t\t<\/tr>\r\n\t<\/thead>\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td># available<\/td>\r\n\t\t\t<td>unlimited<\/td>\r\n\t\t\t<td>unlimited<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<td>Contribution<\/td>\r\n\t\t\t<td>$200<\/td>\r\n\t\t\t<td>$900<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<td>Same benefits as<br \/>\r\n\t\t\t<span class=\"secondary\">(see above opportunities)<\/span><\/td>\r\n\t\t\t<td>Industrialist<\/td>\r\n\t\t\t<td>Gold<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<td>Visual priority on website<br \/>\r\n\t\t\t<span class=\"secondary\">and other marketing materials<\/span><\/td>\r\n\t\t\t<td>6th<\/td>\r\n\t\t\t<td>4th<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<td>Highlighted as local<br \/>\r\n\t\t\t<span class=\"secondary\">in marketing materials<\/span><\/td>\r\n\t\t\t<td>\u2b24<\/td>\r\n\t\t\t<td>\u2b24<\/td>\r\n\t\t<\/tr>\r\n\t<\/tbody>\r\n<\/table>\r\n<\/div>\r\n",
+            "format": "full_html"
+        }
+    ]
+}

@@ -1,0 +1,55 @@
+{
+    "uuid": [
+        {
+            "value": "6ecfdacb-a5ad-48e9-a4cb-5498bcf2f465"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "b4e3a33f-17e1-4a0e-8ad3-36abaf6eebec"
+        }
+    ],
+    "filename": [
+        {
+            "value": "UnderstandDrupal.png"
+        }
+    ],
+    "uri": [
+        {
+            "value": "public:\/\/2020-10\/UnderstandDrupal.png"
+        }
+    ],
+    "filemime": [
+        {
+            "value": "image\/png"
+        }
+    ],
+    "filesize": [
+        {
+            "value": 106586
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-10-26T05:12:45+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-10-26T05:13:43+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ]
+}

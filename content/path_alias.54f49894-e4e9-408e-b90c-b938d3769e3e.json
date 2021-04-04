@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "54f49894-e4e9-408e-b90c-b938d3769e3e"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/node\/d47a6c75-81d2-4fff-8b07-f14ad5af2b64"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/sponsor\/kalamuna\/jobs"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "uuid": [
+        {
+            "value": "8465ab46-f2f1-482d-a18f-b494822a95b8"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-29T23:35:33+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "field_body": [
+        {
+            "value": "<p>Thank you for supporting DrupalCampNYC! If you have any questions, please see <a data-entity-substitution=\"canonical\" data-entity-type=\"node\" data-entity-uuid=\"633d7f82-1632-4d4f-8c28-fa951d6c2eab\" href=\"\/node\/6\">How to Sponsor<\/a> for details or get in touch: <a href=\"mailto:camp-sponsor@drupalnyc.org\">camp-sponsor@drupalnyc.org<\/a><\/p>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "uuid": [
+        {
+            "value": "d8c46548-9d5c-422b-9a53-93f7b7e33c38"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-15T03:55:10+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "field_body": [
+        {
+            "value": "<p>The non-profit DrupalNYC&nbsp;Incorporated and the DrupalNYC community proudly present&nbsp;DrupalCampNYC 2020, the first virtual NYC Drupal conference!<\/p>\r\n\r\n<p>Connect with hundreds of members of the Drupal community from the tri-state area and beyond to collaborate, share knowledge, see old friends, make new friends, find new business opportunities, and help grow the Drupal project.<\/p>\r\n\r\n<p>As you might expect, this year the camp will be virtual in light of COVID-19.<\/p>\r\n\r\n<p>We are still extremely grateful to Microsoft Reactor for having committed to providing the Microsoft Conference Center as our venue before COVID-19 made having a physical conference impossible.<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

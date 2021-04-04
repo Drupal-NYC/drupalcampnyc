@@ -1,0 +1,52 @@
+{
+    "uuid": [
+        {
+            "value": "60adb65d-c546-412c-9650-478d9bd82ae1"
+        }
+    ],
+    "hash": [
+        {
+            "value": "WbAZtlZmDAv6rGnRzeP4mFBf-BfrZ5Vc4Fk9VdrTks0"
+        }
+    ],
+    "type": [
+        {
+            "value": "redirect"
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "61ce98e6-826b-46fb-bbc9-abd8a7461137"
+        }
+    ],
+    "redirect_source": [
+        {
+            "path": "sponsor\/kanopi-studios\/jobs-0",
+            "query": []
+        }
+    ],
+    "redirect_redirect": [
+        {
+            "uri": "internal:\/node\/29",
+            "title": null,
+            "options": []
+        }
+    ],
+    "language": [
+        {
+            "value": "en"
+        }
+    ],
+    "status_code": [
+        {
+            "value": 301
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-09-18T03:03:45+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ]
+}

@@ -1,0 +1,125 @@
+{
+    "uuid": [
+        {
+            "value": "0892383f-89ee-497d-8cf8-7f887f6f8a0f"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "sponsor",
+            "target_type": "node_type",
+            "target_uuid": "4be1da86-de47-4f5d-9938-a52b9ea555a8"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-10-28T17:59:03+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "revision_uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "4d60223f-8a34-4e89-b13e-ad5d907db918"
+        }
+    ],
+    "revision_log": [],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "4d60223f-8a34-4e89-b13e-ad5d907db918"
+        }
+    ],
+    "title": [
+        {
+            "value": "Contegix"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-10-28T17:58:34+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-10-28T20:54:33+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": true
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "moderation_state": [],
+    "path": [
+        {
+            "alias": "\/sponsor\/contegix",
+            "langcode": "en",
+            "pathauto": 1
+        }
+    ],
+    "publish_on": [],
+    "unpublish_on": [],
+    "field_level": [
+        {
+            "value": "community"
+        }
+    ],
+    "field_module_name": [],
+    "field_sponsor_description": [
+        {
+            "value": "<p>Experience the most complete offering of Drupal managed hosting services on the market, tailored to your unique needs, powered by our BlackMesh Platform. With our proactive monitoring and management services for your complex Drupal environment, you can stay focused on strategy and development and not worry about the technical implementation. We\u2019re FedRAMP, PCI DSS, and HIPAA compliant, so we can manage your most secure applications. Our new Advisor offering gives you access to our best practices, enhanced monitoring, our 24x7x365 support team for critical response, and designated engineers who are focused on continuously refining your solution.<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ],
+    "field_sponsor_logo": [
+        {
+            "alt": "BlackMesh by Contegix logo",
+            "title": "",
+            "width": 400,
+            "height": 91,
+            "target_type": "file",
+            "target_uuid": "8130c991-e86d-4f17-96e5-ba72a21db256"
+        }
+    ],
+    "field_sponsor_priority": [
+        {
+            "value": 505
+        }
+    ],
+    "field_track_sponsorship": [],
+    "field_website": [
+        {
+            "uri": "https:\/\/www.contegix.com\/drupal",
+            "title": "",
+            "options": []
+        }
+    ]
+}

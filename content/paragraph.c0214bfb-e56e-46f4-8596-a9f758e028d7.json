@@ -1,0 +1,51 @@
+{
+    "uuid": [
+        {
+            "value": "c0214bfb-e56e-46f4-8596-a9f758e028d7"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-15T03:58:11+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "field_body": [
+        {
+            "value": "<p>We are extremely grateful to Microsoft Reactor for providing us with the Microsoft Conference Center as <a href=\"\/venue\">our venue<\/a>. Located by the Port Authority and Times Square, the Microsoft Conference Center is easy to get to whether you\u2019re coming from across town or across an ocean.<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

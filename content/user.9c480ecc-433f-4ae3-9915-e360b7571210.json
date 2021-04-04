@@ -1,0 +1,144 @@
+{
+    "uid": [
+        {
+            "value": 40
+        }
+    ],
+    "uuid": [
+        {
+            "value": "9c480ecc-433f-4ae3-9915-e360b7571210"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "preferred_langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "preferred_admin_langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "name": [
+        {
+            "value": "vadim"
+        }
+    ],
+    "mail": [],
+    "timezone": [
+        {
+            "value": "America\/New_York"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-10-26T03:06:41+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-10-26T04:43:41+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "roles": [],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "path": [
+        {
+            "alias": null,
+            "pid": null,
+            "langcode": "en",
+            "pathauto": 1
+        }
+    ],
+    "field_dietary_intro": [],
+    "field_interest_horizontal": [],
+    "field_interest_vertical": [],
+    "field_onsite_intro": [],
+    "field_speaker": [
+        {
+            "value": "no"
+        }
+    ],
+    "field_speaker_profile": [
+        {
+            "value": "<p>Vadim Tchernine, Senior Analyst at Kalamuna, is a data-driven digital marketer with over 10 years experience in both agency and client-side organizations. He's developed and implemented measurement methodologies for dozens of Fortune 500 companies in order to have a streamlined approach to dealing with data &amp; analytics. This includes creating tracking plans, setting up targets, KPIs, creating dashboards, reports, and more. He has worked with brands like American Express, Home Depot, Fiat Chrysler, Red Lobster, and Dairy Queen. He now uses his knowledge to help smaller organizations and institutions get the most out of their data.<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ],
+    "field_special_details": [],
+    "field_ticket_orderno": [],
+    "field_ticket_type": [],
+    "field_u_acad_title_post": [],
+    "field_u_acad_title_pre": [],
+    "field_u_accessibility": [],
+    "field_u_cat_mentor": [
+        {
+            "value": false
+        }
+    ],
+    "field_u_cat_orgateam": [
+        {
+            "value": false
+        }
+    ],
+    "field_u_cat_volunteer": [
+        {
+            "value": false
+        }
+    ],
+    "field_u_childcare": [
+        {
+            "value": false
+        }
+    ],
+    "field_u_company": [],
+    "field_u_dietary": [],
+    "field_u_first_name": [
+        {
+            "value": "Vadim"
+        }
+    ],
+    "field_u_job_title": [],
+    "field_u_last_name": [
+        {
+            "value": "Tchernine"
+        }
+    ],
+    "field_u_middle_name": [],
+    "field_u_pub_attendee_list": [
+        {
+            "value": true
+        }
+    ],
+    "field_u_speaker_experience": [],
+    "field_u_speaker_inclusion": [],
+    "field_u_special_details": [],
+    "field_u_testimonial": [],
+    "field_u_volunteer_about": [],
+    "user_picture": [
+        {
+            "alt": "",
+            "title": "",
+            "width": 683,
+            "height": 1024,
+            "target_type": "file",
+            "target_uuid": "f041a9a9-7999-457d-a4a9-c83bb29a9386"
+        }
+    ]
+}

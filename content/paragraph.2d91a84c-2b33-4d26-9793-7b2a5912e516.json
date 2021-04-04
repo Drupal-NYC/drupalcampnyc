@@ -1,0 +1,65 @@
+{
+    "uuid": [
+        {
+            "value": "2d91a84c-2b33-4d26-9793-7b2a5912e516"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "deck_hero",
+            "target_type": "paragraphs_type",
+            "target_uuid": "0e49da06-5a6b-4245-aed5-e2c08127a93f"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-15T03:52:38+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "field_background": [],
+    "field_elements": [
+        {
+            "target_type": "paragraph",
+            "target_uuid": "f88ccf6c-05c3-414e-bf70-2cce035ec2a3"
+        }
+    ],
+    "field_icon": [
+        {
+            "target_type": "media",
+            "target_uuid": "a59512eb-5667-4231-b88e-943b877c310b"
+        }
+    ],
+    "field_style": [],
+    "field_title": [
+        {
+            "value": "DrupalCampNYC 2020",
+            "format": "basic_html"
+        }
+    ]
+}

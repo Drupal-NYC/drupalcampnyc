@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "ba7f5fec-912d-4dc5-92ac-fad80c48e014"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/webform\/journalist_signup\/confirmation"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/form\/journalist-signup\/confirmation"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

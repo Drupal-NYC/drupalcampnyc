@@ -1,0 +1,55 @@
+{
+    "uuid": [
+        {
+            "value": "b74f9d2b-73cc-43e0-82c8-7e6457084d37"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "6767db39-7c53-40c7-88ff-b59e2d96a9c0"
+        }
+    ],
+    "filename": [
+        {
+            "value": "HeadShot.jpeg"
+        }
+    ],
+    "uri": [
+        {
+            "value": "public:\/\/pictures\/2020-08\/HeadShot.jpeg"
+        }
+    ],
+    "filemime": [
+        {
+            "value": "image\/jpeg"
+        }
+    ],
+    "filesize": [
+        {
+            "value": 11375
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-08-11T22:50:39+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-08-11T22:50:53+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ]
+}

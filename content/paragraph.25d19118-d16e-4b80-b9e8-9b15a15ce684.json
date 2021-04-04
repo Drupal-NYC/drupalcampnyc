@@ -1,0 +1,47 @@
+{
+    "uuid": [
+        {
+            "value": "25d19118-d16e-4b80-b9e8-9b15a15ce684"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-11-10T16:58:50+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [],
+    "field_body": [
+        {
+            "value": "<h3>&nbsp;<\/h3>\r\n\r\n<h3>Linux for Developers<\/h3>\r\n\r\n<p>Using Linux as a desktop environment for developers has great benefits. There are also issues. If you are considering a switch or have switched already, this BoF is for you. We will talk about using Linux as your daily driver.&nbsp;<\/p>\r\n\r\n<p><strong>Discussion led by:<\/strong> Matthew Obert<\/p>\r\n\r\n<p><strong>Time:<\/strong> 3:00pm&nbsp; - 3:45 pm EST<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

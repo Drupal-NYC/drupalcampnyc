@@ -1,0 +1,55 @@
+{
+    "uuid": [
+        {
+            "value": "2656839e-3042-42c0-9ed1-32dd29c46132"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "b4e3a33f-17e1-4a0e-8ad3-36abaf6eebec"
+        }
+    ],
+    "filename": [
+        {
+            "value": "Palantir.net_.svg"
+        }
+    ],
+    "uri": [
+        {
+            "value": "public:\/\/2020-09\/Palantir.net_.svg"
+        }
+    ],
+    "filemime": [
+        {
+            "value": "image\/svg+xml"
+        }
+    ],
+    "filesize": [
+        {
+            "value": 4200
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-09-10T20:08:22+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-09-10T20:09:10+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ]
+}

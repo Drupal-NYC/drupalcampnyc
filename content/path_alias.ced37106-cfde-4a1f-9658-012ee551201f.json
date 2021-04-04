@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "ced37106-cfde-4a1f-9658-012ee551201f"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/node\/81c775bb-04a3-4ebe-b5ee-0b84882b9933"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/sponsor\/oliver-davies"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

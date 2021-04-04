@@ -1,0 +1,151 @@
+{
+    "uuid": [
+        {
+            "value": "d44940aa-c6a3-4a06-8708-1657f704e82e"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "session",
+            "target_type": "node_type",
+            "target_uuid": "477ef8ff-1e7b-42da-9e07-67abfdce9a09"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-10-26T05:31:52+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "revision_uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "b4e3a33f-17e1-4a0e-8ad3-36abaf6eebec"
+        }
+    ],
+    "revision_log": [],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "644e9019-08f4-4b22-a370-9762fbcfa9db"
+        }
+    ],
+    "title": [
+        {
+            "value": "User Experience for Drupal Site Builders"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-10-26T03:47:53+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-10-26T05:31:52+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "moderation_state": [
+        {
+            "value": "published"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/training\/user-experience-drupal-site-builders",
+            "langcode": "en",
+            "pathauto": 0
+        }
+    ],
+    "publish_on": [],
+    "unpublish_on": [],
+    "field_description": [
+        {
+            "value": "<p>Drupal is a powerful tool for building rich digital experiences. Drupal projects often revolve around producing, displaying and organizing content effectively. This course will walk you through the process of creating an effective user experience and content strategy, and planning out how to implement that strategy in Drupal. Whether you're creating a brand new website, migrating to Drupal, or improving on an existing project, you'll learn techniques that will help you build a solid content strategy and a user experience that speaks to your audiences.<\/p>\r\n\r\n<p>You'll come away from the course with knowledge of: &nbsp;<\/p>\r\n\r\n<ul>\r\n\t<li>Defining your audiences and their objectives<\/li>\r\n\t<li>Content inventories and audits<\/li>\r\n\t<li>Analyzing content from a Drupal perspective<\/li>\r\n\t<li>Translating client and business needs into an information architecture<\/li>\r\n\t<li>Strategies for using taxonomies and landing pages effectively<\/li>\r\n\t<li>Creating a great experience for content editors<\/li>\r\n<\/ul>\r\n",
+            "format": "basic_html"
+        }
+    ],
+    "field_ends_at": [
+        {
+            "value": "2020-11-12T17:30:00-05:00"
+        }
+    ],
+    "field_featured": [
+        {
+            "value": false
+        }
+    ],
+    "field_room": [],
+    "field_session_level": [
+        {
+            "value": "beginner"
+        }
+    ],
+    "field_session_sponsor": [
+        {
+            "target_type": "node",
+            "target_uuid": "8870b7ef-e276-4356-ba45-a5323a74e8f7"
+        }
+    ],
+    "field_slides": [],
+    "field_slides_external": [],
+    "field_speakers": [
+        {
+            "target_type": "user",
+            "target_uuid": "644e9019-08f4-4b22-a370-9762fbcfa9db"
+        },
+        {
+            "target_type": "user",
+            "target_uuid": "0dbcd55b-a3c7-4bf5-bfb4-57fe11f98349"
+        }
+    ],
+    "field_start": [
+        {
+            "value": "2020-11-12T14:30:00-05:00"
+        }
+    ],
+    "field_summary": [
+        {
+            "value": "Drupal is a powerful tool for building rich digital experiences. Drupal projects often revolve around producing, displaying and organizing content effectively. This course will walk you through the process of creating an effective user experience and content strategy, and planning out how to implement that strategy in Drupal. Whether you're creating a brand new website, migrating to Drupal, or improving on an existing project, you'll learn techniques that will help you build a solid content strategy and a user experience that speaks to your audiences.",
+            "format": "plain_text"
+        }
+    ],
+    "field_type": [
+        {
+            "value": "training"
+        }
+    ],
+    "field_video": []
+}

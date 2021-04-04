@@ -1,0 +1,51 @@
+{
+    "uuid": [
+        {
+            "value": "f43672c5-e93e-4863-bcdb-fa7b03331db1"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-08-15T17:52:13+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "field_body": [
+        {
+            "value": "<div class=\"button-row-4\"><a class=\"btn btn-lg btn-color-1\" data-entity-substitution=\"canonical\" data-entity-type=\"node\" data-entity-uuid=\"5ee70d59-c2e1-429e-830e-11db249a4793\" href=\"\/node\/9\" role=\"button\">View schedule<\/a>&nbsp;<a class=\"btn btn-lg btn-color-2\" href=\"https:\/\/hopin.com\/events\/drupalcampnyc-2020?code=b2db991f2c5726ba08924d4e7a2b\" role=\"button\">Join Hopin<\/a>&nbsp;<a class=\"btn btn-lg btn-color-3\" href=\"https:\/\/nyc.us17.list-manage.com\/subscribe?u=8e760065071213ae345293359&amp;id=74bcf09452&amp;group[12134][32768]=1&amp;group[12134][2048]=1&amp;group[12134][4096]=1&amp;&amp;group[12134][8192]=1&amp;group[12134][16384]=1\" role=\"button\">Subscribe for updates<\/a> <a class=\"btn btn-lg btn-color-1\" href=\"https:\/\/ti.to\/drupalcampnyc\/2020\" role=\"button\">Register now<\/a><\/div>",
+            "format": "full_html"
+        }
+    ]
+}

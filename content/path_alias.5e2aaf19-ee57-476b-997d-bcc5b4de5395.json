@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "5e2aaf19-ee57-476b-997d-bcc5b4de5395"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/node\/b7da9812-e8ec-4daf-aac7-3bd9e4e6cd9e"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/sponsor\/contegix\/jobs"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

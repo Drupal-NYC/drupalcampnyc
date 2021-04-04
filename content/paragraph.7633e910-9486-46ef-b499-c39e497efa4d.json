@@ -1,0 +1,47 @@
+{
+    "uuid": [
+        {
+            "value": "7633e910-9486-46ef-b499-c39e497efa4d"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-11-10T17:02:55+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [],
+    "field_body": [
+        {
+            "value": "<h3>&nbsp;<\/h3>\r\n\r\n<h3>First Time ALL the Time<\/h3>\r\n\r\n<p>We all have to solve \"simple\" challenges made difficult by a complex site. Where do you find your answers? How do you learn on the run when under the gun?<\/p>\r\n\r\n<p><strong>Discussion led by:<\/strong> Jamie Valentin<\/p>\r\n\r\n<p><strong>Time:<\/strong>&nbsp;4:00 - 4:45 pm EST<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

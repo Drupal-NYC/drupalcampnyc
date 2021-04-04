@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "24ce0490-a719-43a4-896c-d3efc97295ed"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/node\/f4e08310-fba8-4ca2-bf32-04327b6bc41d"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/sessions"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

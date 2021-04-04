@@ -1,0 +1,143 @@
+{
+    "uuid": [
+        {
+            "value": "06e0108c-6c0a-4f46-847a-a154ca910470"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "session",
+            "target_type": "node_type",
+            "target_uuid": "477ef8ff-1e7b-42da-9e07-67abfdce9a09"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-11-14T03:42:41+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "revision_uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "b4e3a33f-17e1-4a0e-8ad3-36abaf6eebec"
+        }
+    ],
+    "revision_log": [],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "4d60223f-8a34-4e89-b13e-ad5d907db918"
+        }
+    ],
+    "title": [
+        {
+            "value": "First Time Contribution Workshop"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-10-30T15:20:49+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-11-14T03:42:41+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "moderation_state": [
+        {
+            "value": "published"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/training\/first-time-contribution-workshop",
+            "langcode": "en",
+            "pathauto": 0
+        }
+    ],
+    "publish_on": [],
+    "unpublish_on": [],
+    "field_description": [
+        {
+            "value": "<p>Come for the code, stay for the community.<br \/>\r\n<br \/>\r\nDrupal thrives on community contributions in the form of patches and documentation to both contributed modules and core. This helps the project move forward and stay relevant.<br \/>\r\n<br \/>\r\nNot everyone who works on open source projects is a senior developer. Drupal is built through lots of little tasks. Smaller tasks help people increase confidence and gain experience, which, in turn, leads to more contributions. We'll build on each other's strengths to learn how to navigate the issue queue while having fun trying new things.<br \/>\r\n<br \/>\r\nBut how does one become a contributor?<br \/>\r\n<br \/>\r\nTogether we will go through the process of creating an issue, writing a patch, uploading the fix to Drupal.org, reviewing the patch for RTBC (reviewed and tested by the community) and more. We'll even take a look at the upcoming GitLab contribution process because specific tools and processes change over time.<br \/>\r\n<br \/>\r\nPrerequisites:<\/p>\r\n\r\n<ul>\r\n\t<li>A basic understanding of Drupal and maybe the command line (but not necessary)<\/li>\r\n\t<li>A computer<\/li>\r\n<\/ul>\r\n\r\n<p>This activity will take place within <a href=\"https:\/\/hopin.com\/events\/drupalcampnyc-2020?code=b2db991f2c5726ba08924d4e7a2b\">Hopin<\/a>.<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ],
+    "field_ends_at": [
+        {
+            "value": "2020-11-14T15:30:00-05:00"
+        }
+    ],
+    "field_featured": [
+        {
+            "value": false
+        }
+    ],
+    "field_room": [],
+    "field_session_level": [],
+    "field_session_sponsor": [
+        {
+            "target_type": "node",
+            "target_uuid": "d17dd2d3-3de7-4944-b4e5-1702137a4e46"
+        }
+    ],
+    "field_slides": [],
+    "field_slides_external": [],
+    "field_speakers": [
+        {
+            "target_type": "user",
+            "target_uuid": "4d60223f-8a34-4e89-b13e-ad5d907db918"
+        }
+    ],
+    "field_start": [
+        {
+            "value": "2020-11-14T14:00:00-05:00"
+        }
+    ],
+    "field_summary": [
+        {
+            "value": "Not everyone who works on open source projects is a senior developer. Drupal is built through lots of little tasks. Smaller tasks help people increase confidence and gain experience, which, in turn, leads to more contributions. We'll build on each other's strengths to learn how to navigate the issue queue while having fun trying new things.\r\n",
+            "format": "plain_text"
+        }
+    ],
+    "field_type": [
+        {
+            "value": "workshop"
+        }
+    ],
+    "field_video": []
+}

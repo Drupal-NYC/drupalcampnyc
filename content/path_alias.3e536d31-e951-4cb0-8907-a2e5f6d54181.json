@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "3e536d31-e951-4cb0-8907-a2e5f6d54181"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/node\/4ee49cca-5a78-499f-8ef4-bfda1b9308c0"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/sponsor\/palantirnet\/jobs"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

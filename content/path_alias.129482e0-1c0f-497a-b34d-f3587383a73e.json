@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "129482e0-1c0f-497a-b34d-f3587383a73e"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/node\/aff0dcbf-53c2-44b9-8ffc-92630f10d79b"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/contribution-day"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

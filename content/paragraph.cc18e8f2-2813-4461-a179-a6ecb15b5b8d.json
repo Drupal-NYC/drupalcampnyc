@@ -1,0 +1,51 @@
+{
+    "uuid": [
+        {
+            "value": "cc18e8f2-2813-4461-a179-a6ecb15b5b8d"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "deck_header",
+            "target_type": "paragraphs_type",
+            "target_uuid": "b1a10dba-0d9d-453b-afc4-d940242f0aba"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-15T05:07:41+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "field_title": [
+        {
+            "value": "Program and Schedule",
+            "format": "basic_html"
+        }
+    ]
+}

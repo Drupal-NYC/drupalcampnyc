@@ -1,0 +1,47 @@
+{
+    "uuid": [
+        {
+            "value": "0a5d3d6c-99e1-4a1d-8b9e-863a19f498ac"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-11-11T00:08:31+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [],
+    "field_body": [
+        {
+            "value": "<h3>&nbsp;<\/h3>\r\n\r\n<h3>Open Mic - if you can make it here, you can make it anywhere<\/h3>\r\n\r\n<p>Bring your best NY joke or&nbsp;do a tight 5 on airplane food, now is your chance to become New York famous for a New York minute.&nbsp;<\/p>\r\n\r\n<p><strong>Hosted by:<\/strong>&nbsp;Scott Wolpow &amp; Alex Ross<\/p>\r\n\r\n<p><strong>Time:<\/strong>&nbsp;11:00 am - 11:45 am EST<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

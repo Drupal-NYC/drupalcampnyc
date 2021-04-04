@@ -1,0 +1,136 @@
+{
+    "uuid": [
+        {
+            "value": "ec5e64af-7d52-4e6c-9c32-8825ac38c8c7"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "page",
+            "target_type": "node_type",
+            "target_uuid": "942f533c-e329-4b51-a8fc-1a43795a48ba"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-05-28T22:47:46+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "revision_uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "61ce98e6-826b-46fb-bbc9-abd8a7461137"
+        }
+    ],
+    "revision_log": [
+        {
+            "value": "typo"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "61ce98e6-826b-46fb-bbc9-abd8a7461137"
+        }
+    ],
+    "title": [
+        {
+            "value": "Community"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-15T04:59:36+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-05-28T22:47:46+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "moderation_state": [
+        {
+            "value": "published"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/community",
+            "langcode": "en",
+            "pathauto": 0
+        }
+    ],
+    "publish_on": [],
+    "unpublish_on": [],
+    "field_content": [
+        {
+            "target_type": "paragraph",
+            "target_uuid": "d688707f-7bf9-40ff-9167-c14945e10bb9"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "36b56158-dc15-4272-83ca-a9cf9ba00174"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "0d300286-aeca-446e-9921-73c2198dfa15"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "1c40257e-0e8a-4b0c-a6cb-84be8daf1302"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "f7d92d7f-3563-475e-a542-ab9d07f61481"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "e7a810c6-2304-414f-ad4e-11d308102c32"
+        }
+    ],
+    "field_header": [
+        {
+            "target_type": "paragraph",
+            "target_uuid": "60a9f9fe-e0be-4c3f-bcb8-fbee4d715bdf"
+        }
+    ],
+    "field_sponsors": [],
+    "field_summary_plain": [
+        {
+            "value": "Volunteer opportunities and information about the local DrupalNYC community"
+        }
+    ]
+}

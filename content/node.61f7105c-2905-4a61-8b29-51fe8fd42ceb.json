@@ -1,0 +1,147 @@
+{
+    "uuid": [
+        {
+            "value": "61f7105c-2905-4a61-8b29-51fe8fd42ceb"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "session",
+            "target_type": "node_type",
+            "target_uuid": "477ef8ff-1e7b-42da-9e07-67abfdce9a09"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-10-26T05:27:34+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "revision_uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "b4e3a33f-17e1-4a0e-8ad3-36abaf6eebec"
+        }
+    ],
+    "revision_log": [],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "5be7ce83-0dc3-4dea-ac66-31abc1ad5b72"
+        }
+    ],
+    "title": [
+        {
+            "value": "Automated testing and test driven development in Drupal 8"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-10-26T04:06:02+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-10-26T05:27:34+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "moderation_state": [
+        {
+            "value": "published"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/training\/automated-testing-and-test-driven-development-drupal-8",
+            "langcode": "en",
+            "pathauto": 0
+        }
+    ],
+    "publish_on": [],
+    "unpublish_on": [],
+    "field_description": [
+        {
+            "value": "<p>Testing is important... Why? It allows developers to add new features and edit and refactor existing code without the worry of adding regressions, reduces the reliance on manual testing to discover bugs, and by taking a test driven approach, your implementation code is leaner and easier to maintain.<\/p>\r\n\r\n<p>Since Drupal 8, Drupal has shipped with PHPUnit and uses it for its unit, integration and functional tests. Also, with testing as one of the Drupal core gates, with tests needing to be included with every new feature or bug fix, and core\u2019s 100% pass rate policy, testing has become an essential skill when contributing to core, or when working on your own projects.<\/p>\r\n\r\n<p>In this workshop, we\u2019ll cover the methodology, approaches and terminology involved with automated testing, look at some examples and work through some exercises, and then take a test driven development approach to creating a new Drupal module.<\/p>\r\n\r\n<h2>Following this workshop, attendees should:<\/h2>\r\n\r\n<ul>\r\n\t<li>Know what types of tests are available in Drupal 8<\/li>\r\n\t<li>Understand the different approaches to testing<\/li>\r\n\t<li>Know how to add tests to existing code<\/li>\r\n\t<li>Understand the concepts of test driven development (TDD) and how to use apply them when writing new code<\/li>\r\n<\/ul>\r\n\r\n<h2>Prerequisites<\/h2>\r\n\r\n<ul>\r\n\t<li>A good working knowledge of Drupal and PHP<\/li>\r\n\t<li>A laptop with a local copy of Drupal 8 for running tests locally<\/li>\r\n\t<li>Recommended: PhpStorm or Visual Studio Code for editing code<\/li>\r\n<\/ul>\r\n",
+            "format": "basic_html"
+        }
+    ],
+    "field_ends_at": [
+        {
+            "value": "2020-11-14T13:30:00-05:00"
+        }
+    ],
+    "field_featured": [
+        {
+            "value": false
+        }
+    ],
+    "field_room": [],
+    "field_session_level": [
+        {
+            "value": "intermediate"
+        }
+    ],
+    "field_session_sponsor": [
+        {
+            "target_type": "node",
+            "target_uuid": "81c775bb-04a3-4ebe-b5ee-0b84882b9933"
+        }
+    ],
+    "field_slides": [],
+    "field_slides_external": [],
+    "field_speakers": [
+        {
+            "target_type": "user",
+            "target_uuid": "5be7ce83-0dc3-4dea-ac66-31abc1ad5b72"
+        }
+    ],
+    "field_start": [
+        {
+            "value": "2020-11-14T09:30:00-05:00"
+        }
+    ],
+    "field_summary": [
+        {
+            "value": "In this workshop, we\u2019ll cover the methodology, approaches and terminology involved with automated testing, look at some examples and work through some exercises, and then take a test driven development approach to creating a new Drupal module.",
+            "format": "plain_text"
+        }
+    ],
+    "field_type": [
+        {
+            "value": "training"
+        }
+    ],
+    "field_video": []
+}

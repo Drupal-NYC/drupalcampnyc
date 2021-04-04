@@ -1,0 +1,125 @@
+{
+    "uuid": [
+        {
+            "value": "e31350f7-09a3-4a51-8c91-e2bbd8b86c6b"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "sponsor",
+            "target_type": "node_type",
+            "target_uuid": "4be1da86-de47-4f5d-9938-a52b9ea555a8"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-07-22T23:03:18+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "revision_uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "3541195f-ad7e-45cc-b404-fba4c6504527"
+        }
+    ],
+    "revision_log": [],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "3541195f-ad7e-45cc-b404-fba4c6504527"
+        }
+    ],
+    "title": [
+        {
+            "value": "DrupalEasy"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-07-22T23:02:43+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-09-14T20:40:52+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": true
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "moderation_state": [],
+    "path": [
+        {
+            "alias": "\/sponsor\/drupaleasy",
+            "langcode": "en",
+            "pathauto": 1
+        }
+    ],
+    "publish_on": [],
+    "unpublish_on": [],
+    "field_level": [
+        {
+            "value": "community"
+        }
+    ],
+    "field_module_name": [],
+    "field_sponsor_description": [
+        {
+            "value": "<p>DrupalEasy&nbsp;provides training, consulting, project coaching, and media (articles, videos, and podcasts) related to modern, best-practice-focused&nbsp;Drupal&nbsp;development. Our flagship workshop, the online, live-instructor, 12-week&nbsp;Drupal&nbsp;Career Online has been delivered multiple times per year since 2011.<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ],
+    "field_sponsor_logo": [
+        {
+            "alt": "DrupalEasy",
+            "title": "",
+            "width": 790,
+            "height": 131,
+            "target_type": "file",
+            "target_uuid": "4fea5644-a9e4-4ba4-b2df-4ba3c1d67459"
+        }
+    ],
+    "field_sponsor_priority": [
+        {
+            "value": 503
+        }
+    ],
+    "field_track_sponsorship": [],
+    "field_website": [
+        {
+            "uri": "https:\/\/www.drupaleasy.com\/",
+            "title": "",
+            "options": []
+        }
+    ]
+}

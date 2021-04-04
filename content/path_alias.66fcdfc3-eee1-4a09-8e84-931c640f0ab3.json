@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "66fcdfc3-eee1-4a09-8e84-931c640f0ab3"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/node\/e1be2b23-7423-40c9-a66b-bad350755958"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/session\/how-nypl-leverages-free-tools-cicd"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

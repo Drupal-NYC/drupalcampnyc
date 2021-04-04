@@ -1,0 +1,51 @@
+{
+    "uuid": [
+        {
+            "value": "d485b47e-b808-47b3-b4e2-eec6a6928db9"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-22T23:33:51+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "field_body": [
+        {
+            "value": "<p>DrupalCampNYC 2020 brings together hundreds of people from the tri-state area and from across the globe who use, develop, design, and support the Drupal project. New York City has one of the largest Drupal communities in the world. In 2020 we anticipate at least 300 attendees, including job-seekers, freelancers, and business decision-makers from some of the largest brands who leverage Drupal. Through our marketing efforts, your brand can reach thousands more&nbsp;Drupalers from the NYC-area and beyond.<\/p>\r\n\r\n<p>The conference is run by the 501(c)(3) non-profit DrupalNYC Incorporated and its all-volunteer organizing team. Without our sponsors, we would not be able to offer DrupalCampNYC 2020 for free to attendees and thus we would not be able to attract such a diverse range of attendees and do our part to help shape Drupal talent for years to come.<\/p>\r\n\r\n<p>Your sponsorship also funds our contribution day, during which many Drupal community members contribute directly to the Drupal project through code, documentation, testing, project management, design, and more. These open-source and community contributions benefit the greater Drupal community, including our sponsors.<\/p>\r\n\r\n<p>Thank you in advance for your support.<\/p>\r\n\r\n<p>- Your DrupalCampNYC 2020 Organizers<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

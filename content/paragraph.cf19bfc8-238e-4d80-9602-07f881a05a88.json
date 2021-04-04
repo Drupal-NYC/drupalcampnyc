@@ -1,0 +1,60 @@
+{
+    "uuid": [
+        {
+            "value": "cf19bfc8-238e-4d80-9602-07f881a05a88"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "deck_hero",
+            "target_type": "paragraphs_type",
+            "target_uuid": "0e49da06-5a6b-4245-aed5-e2c08127a93f"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-15T05:18:57+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "field_background": [],
+    "field_elements": [],
+    "field_icon": [
+        {
+            "target_type": "media",
+            "target_uuid": "8f32fcd2-0702-4798-bb97-dc0977e4d5a1"
+        }
+    ],
+    "field_style": [],
+    "field_title": [
+        {
+            "value": "Microsoft Conference Center",
+            "format": "basic_html"
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "uuid": [
+        {
+            "value": "053e1ce9-ca73-41b1-acc2-15dbae12fcfa"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-15T03:56:56+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "field_body": [
+        {
+            "value": "<ul>\r\n\t<li>Thursday, November 12 - trainings<\/li>\r\n\t<li>Friday, November 13 - NY-themed sessions, BoFs, and opportunities to interact<\/li>\r\n\t<li>Saturday, November 14 - trainings and Contribution Day<\/li>\r\n<\/ul>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

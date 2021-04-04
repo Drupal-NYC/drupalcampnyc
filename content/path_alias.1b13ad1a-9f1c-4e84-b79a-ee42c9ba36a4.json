@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "1b13ad1a-9f1c-4e84-b79a-ee42c9ba36a4"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/node\/49cae258-8588-49a5-b5e4-721c8979a66a"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/training\/getting-started-reactjs"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

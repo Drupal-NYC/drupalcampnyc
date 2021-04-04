@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "9340cd46-c72e-4b9b-b725-f2452ee05753"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/webform\/template_feedback\/drafts"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/form\/template-feedback\/drafts"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

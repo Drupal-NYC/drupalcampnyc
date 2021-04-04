@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "cc0b7d30-d539-4ba8-b6d4-2d707dc2e6d0"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/node\/fae84486-96d9-4fbf-af14-97335af9a743"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/sponsor\/drupal-contractors-esteemed\/jobs"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "uuid": [
+        {
+            "value": "fe41800e-d8d5-4eb7-9ada-41d4363bc02c"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-11-11T00:00:10+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [],
+    "field_body": [
+        {
+            "value": "<h3>&nbsp;<\/h3>\r\n\r\n<h3>Drupal Helpdesk and Bring Your Pet<\/h3>\r\n\r\n<p>Open session to ask specific Drupal questions or problems you're facing. And, whether you have a question to ask or want to help others with their questions, feel free to bring and&nbsp;introduce your furry friend. My cat codes in C.<\/p>\r\n\r\n<p><strong>Hosted by:<\/strong>&nbsp;Scott Wolpow<\/p>\r\n\r\n<p><strong>Time:<\/strong>&nbsp;2:00 - 2:45 pm EST<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

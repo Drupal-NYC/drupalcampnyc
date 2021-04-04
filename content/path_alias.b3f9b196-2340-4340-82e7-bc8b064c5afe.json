@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "b3f9b196-2340-4340-82e7-bc8b064c5afe"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/node\/a3ad6b24-ca14-4e63-9412-b5781d32cd25"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/training\/upgrading-drupal-9-using-migrate-api"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

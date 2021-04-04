@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "81e88687-bca6-4a23-be62-70f9c55ab9c7"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/node\/969850cb-2c96-4e38-a477-6d87893b793a"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/interactive-activities"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

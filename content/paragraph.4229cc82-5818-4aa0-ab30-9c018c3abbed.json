@@ -1,0 +1,47 @@
+{
+    "uuid": [
+        {
+            "value": "4229cc82-5818-4aa0-ab30-9c018c3abbed"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-08-15T17:52:06+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [],
+    "field_body": [
+        {
+            "value": "<p class=\"credit\">Photo by: Mitch Waxman<br \/>\r\nLogo by: John Clapps<\/p>\r\n",
+            "format": "full_html"
+        }
+    ]
+}

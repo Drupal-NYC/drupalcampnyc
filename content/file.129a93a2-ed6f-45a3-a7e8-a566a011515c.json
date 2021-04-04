@@ -1,0 +1,55 @@
+{
+    "uuid": [
+        {
+            "value": "129a93a2-ed6f-45a3-a7e8-a566a011515c"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "b4e3a33f-17e1-4a0e-8ad3-36abaf6eebec"
+        }
+    ],
+    "filename": [
+        {
+            "value": "agaric.svg"
+        }
+    ],
+    "uri": [
+        {
+            "value": "public:\/\/2020-10\/agaric.svg"
+        }
+    ],
+    "filemime": [
+        {
+            "value": "image\/svg+xml"
+        }
+    ],
+    "filesize": [
+        {
+            "value": 4977
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-10-26T05:10:53+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-10-26T05:12:04+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ]
+}

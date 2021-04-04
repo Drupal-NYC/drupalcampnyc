@@ -1,0 +1,51 @@
+{
+    "uuid": [
+        {
+            "value": "af0b33e8-9c35-4f7f-96a4-bfd117b449f2"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-09-17T15:22:00+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "field_body": [
+        {
+            "value": "<p>We look forward to letting you know more about DrupalCampNYC 2020, including details of our program&nbsp;and opportunities to get involved!<\/p>\r\n\r\n<p><!-- Begin Mailchimp Signup Form --><\/p>\r\n<link href=\"\/\/cdn-images.mailchimp.com\/embedcode\/horizontal-slim-10_7.css\" rel=\"stylesheet\" type=\"text\/css\" \/>\r\n<style type=\"text\/css\">#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}\r\n\t\/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.\r\n\t   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. *\/\r\n<\/style>\r\n<p>&nbsp;<\/p>\r\n\r\n<div id=\"mc_embed_signup\">\r\n<form action=\"https:\/\/nyc.us17.list-manage.com\/subscribe\/post?u=8e760065071213ae345293359&amp;id=74bcf09452\" class=\"validate\" id=\"mc-embedded-subscribe-form\" method=\"post\" name=\"mc-embedded-subscribe-form\" novalidate=\"\" target=\"_blank\">\r\n<div id=\"mc_embed_signup_scroll\"><label for=\"mce-EMAIL\">Get the latest news<\/label> <input class=\"email\" id=\"mce-EMAIL\" name=\"EMAIL\" placeholder=\"email address\" required=\"\" type=\"email\" value=\"\" \/> <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->\r\n<div aria-hidden=\"true\" style=\"position: absolute; left: -5000px;\"><input name=\"b_8e760065071213ae345293359_74bcf09452\" tabindex=\"-1\" type=\"text\" value=\"\" \/><\/div>\r\n\r\n<div class=\"clear\"><input class=\"button\" id=\"mc-embedded-subscribe\" name=\"subscribe\" type=\"submit\" value=\"Subscribe\" \/><\/div>\r\n<\/div>\r\n<\/form>\r\n<\/div>\r\n<!--End mc_embed_signup-->\r\n\r\n<p>&nbsp;<\/p>\r\n",
+            "format": "full_html"
+        }
+    ]
+}

@@ -1,0 +1,107 @@
+{
+    "uuid": [
+        {
+            "value": "830739e3-8448-4e81-b7a3-c17d9ac2348f"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "job_listing",
+            "target_type": "node_type",
+            "target_uuid": "1ff38401-987d-48de-be77-a35f601fe6c4"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-10-14T03:33:22+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "revision_uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "61ce98e6-826b-46fb-bbc9-abd8a7461137"
+        }
+    ],
+    "revision_log": [],
+    "status": [
+        {
+            "value": false
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "e1870fe7-2129-406f-ac90-9708c27aed30"
+        }
+    ],
+    "title": [
+        {
+            "value": "Job Listings for Pantheon"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-10-14T03:33:22+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-10-14T03:33:22+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "moderation_state": [],
+    "path": [
+        {
+            "alias": "\/sponsor\/pantheon\/jobs",
+            "langcode": "en",
+            "pathauto": 0
+        }
+    ],
+    "publish_on": [],
+    "unpublish_on": [],
+    "field_job_description": [
+        {
+            "value": "<p>Company and job descriptions(s) go here.<\/p>\r\n",
+            "format": "job_listing_html"
+        }
+    ],
+    "field_job_listing_short_descript": [
+        {
+            "value": "Short description goes here."
+        }
+    ],
+    "field_job_sponsor": [
+        {
+            "target_type": "node",
+            "target_uuid": "383e4b0e-d292-4bfe-863e-c6c83d9d9d30"
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "eb20dece-d598-4a4b-8e2b-1c561393fa94"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/node\/d5c03251-5641-443a-871d-479fd7f4d5cb"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/trainings"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

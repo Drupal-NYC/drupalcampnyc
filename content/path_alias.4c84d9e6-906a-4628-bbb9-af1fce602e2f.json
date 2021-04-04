@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "4c84d9e6-906a-4628-bbb9-af1fce602e2f"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "und"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/webform\/european_customer_roundtable_sig\/drafts"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/form\/european-customer-roundtable-sig\/drafts"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

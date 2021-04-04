@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "faa3a28a-c4e4-4d42-8a58-3fa2e4cc73c1"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "und"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/webform\/european_supporting_partners_rou\/drafts"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/form\/european-supporting-partners-rou\/drafts"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

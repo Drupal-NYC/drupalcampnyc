@@ -1,0 +1,142 @@
+{
+    "uuid": [
+        {
+            "value": "b1224713-2aaa-4653-93f7-c75b81e554dd"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "session",
+            "target_type": "node_type",
+            "target_uuid": "477ef8ff-1e7b-42da-9e07-67abfdce9a09"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-11-10T23:04:34+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "revision_uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "3541195f-ad7e-45cc-b404-fba4c6504527"
+        }
+    ],
+    "revision_log": [],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "7cbd3023-5c9f-4125-bc6a-ecdb9c3ebf6c"
+        }
+    ],
+    "title": [
+        {
+            "value": "Striving for Inclusion Through Accessible Design"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-10-26T03:22:53+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-11-10T23:04:34+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "moderation_state": [
+        {
+            "value": "published"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/session\/striving-inclusion-through-accessible-design",
+            "langcode": "en",
+            "pathauto": 1
+        }
+    ],
+    "publish_on": [],
+    "unpublish_on": [],
+    "field_description": [
+        {
+            "value": "<p>In this talk, the NYU Stern UX team will discuss accessibility and the importance of accessible design. We will cover the design process the Stern UX team went through bring the portal up to WCAG 2.0 AA standards. We will highlight some of the challenges we encountered implementing the accessible design in Drupal 8.<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ],
+    "field_ends_at": [
+        {
+            "value": "2020-11-13T11:45:00-05:00"
+        }
+    ],
+    "field_featured": [
+        {
+            "value": false
+        }
+    ],
+    "field_room": [],
+    "field_session_level": [],
+    "field_session_sponsor": [],
+    "field_slides": [],
+    "field_slides_external": [],
+    "field_speakers": [
+        {
+            "target_type": "user",
+            "target_uuid": "7cbd3023-5c9f-4125-bc6a-ecdb9c3ebf6c"
+        },
+        {
+            "target_type": "user",
+            "target_uuid": "67f0132f-1c66-4a23-bc0b-3cd71234d052"
+        }
+    ],
+    "field_start": [
+        {
+            "value": "2020-11-13T11:00:00-05:00"
+        }
+    ],
+    "field_summary": [
+        {
+            "value": "In this talk, the NYU Stern UX team will discuss accessibility and the importance of accessible design. We will cover the design process the Stern UX team went through bring the portal up to WCAG 2.0 AA standards. We will highlight some of the challenges we encountered implementing the accessible design in Drupal 8. ",
+            "format": "plain_text"
+        }
+    ],
+    "field_type": [
+        {
+            "value": "talk"
+        }
+    ],
+    "field_video": []
+}

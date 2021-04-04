@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "5d6ff95a-dead-4ecd-a5a2-c3c80288a0d4"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "und"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/webform\/template_subscribe\/drafts"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/form\/template-subscribe\/drafts"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

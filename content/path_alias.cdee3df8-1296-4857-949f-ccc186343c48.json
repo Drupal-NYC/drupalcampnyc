@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "cdee3df8-1296-4857-949f-ccc186343c48"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/node\/ffa91f12-cc32-44fd-8c45-c4a508f83d18"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/sponsor\/spatial-path"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

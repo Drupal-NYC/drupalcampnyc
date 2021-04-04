@@ -1,0 +1,147 @@
+{
+    "uuid": [
+        {
+            "value": "53b8e4b5-f322-493b-b5f5-1a2f2b5fe584"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "session",
+            "target_type": "node_type",
+            "target_uuid": "477ef8ff-1e7b-42da-9e07-67abfdce9a09"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-10-26T04:56:13+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "revision_uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "b4e3a33f-17e1-4a0e-8ad3-36abaf6eebec"
+        }
+    ],
+    "revision_log": [],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "a488cfed-d0c7-4878-be13-8edd84289acb"
+        }
+    ],
+    "title": [
+        {
+            "value": "Project Management for Drupal Projects"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-10-26T04:13:10+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-10-26T04:56:13+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "moderation_state": [
+        {
+            "value": "published"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/training\/project-management-drupal-projects",
+            "langcode": "en",
+            "pathauto": 0
+        }
+    ],
+    "publish_on": [],
+    "unpublish_on": [],
+    "field_description": [
+        {
+            "value": "<p>Open Source Drupal Development is a specialty and so is Drupal Project Management. What can you do to ensure your next Drupal project is a huge success for your organization or clients? Join senior FFW staff as they share their experience working with some of the largest and most complex projects ever built and help you understand and implement best practices at every stage of your project.&nbsp;<\/p>\r\n\r\n<p>This training is designed to help organization project managers, product owners, decision-makers, and stakeholders understand Drupal, how it differs from other systems, and what needs to be done differently to get the most out of Drupal. We discuss the various stages of Drupal project development from planning to maintenance and provide practical guidance on how you can support your team to deliver the best possible outcomes at each stage.<\/p>\r\n\r\n<p>Whether you are a seasoned PM new to Drupal or have just been volunteered to manage a project in your 'spare time,' this class focuses on everything you need to know about Drupal to help you manage projects more successfully.&nbsp;<\/p>\r\n\r\n<h2>Target Audience<\/h2>\r\n\r\n<ul>\r\n\t<li>Newcomers to Drupal 8 and those looking to deepen their understanding of how to plan and build successful Drupal web applications<\/li>\r\n\t<li>Project Managers, Product Owners, and other project leadership<\/li>\r\n<\/ul>\r\n",
+            "format": "basic_html"
+        }
+    ],
+    "field_ends_at": [
+        {
+            "value": "2020-11-14T13:30:00-05:00"
+        }
+    ],
+    "field_featured": [
+        {
+            "value": false
+        }
+    ],
+    "field_room": [],
+    "field_session_level": [
+        {
+            "value": "beginner"
+        }
+    ],
+    "field_session_sponsor": [
+        {
+            "target_type": "node",
+            "target_uuid": "3af6316f-f42b-42d4-a249-ed62aa81a7b0"
+        }
+    ],
+    "field_slides": [],
+    "field_slides_external": [],
+    "field_speakers": [
+        {
+            "target_type": "user",
+            "target_uuid": "a488cfed-d0c7-4878-be13-8edd84289acb"
+        }
+    ],
+    "field_start": [
+        {
+            "value": "2020-11-14T09:30:00-05:00"
+        }
+    ],
+    "field_summary": [
+        {
+            "value": "This training is designed to help organization project managers, product owners, decision-makers, and stakeholders understand Drupal, how it differs from other systems and what needs to be done differently to get the most out of Drupal.",
+            "format": "plain_text"
+        }
+    ],
+    "field_type": [
+        {
+            "value": "training"
+        }
+    ],
+    "field_video": []
+}

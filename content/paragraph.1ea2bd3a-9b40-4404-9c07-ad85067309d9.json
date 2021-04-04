@@ -1,0 +1,47 @@
+{
+    "uuid": [
+        {
+            "value": "1ea2bd3a-9b40-4404-9c07-ad85067309d9"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-10-30T15:26:37+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [],
+    "field_body": [
+        {
+            "value": "<p>&nbsp;<\/p>\r\n\r\n<h3><a href=\"https:\/\/2020.drupalcamp.nyc\/session\/first-time-contribution-workshop\">First Time Contribution Workshop<\/a><\/h3>\r\n\r\n<p>Not everyone who works on open source projects is a senior developer. Drupal is built through lots of little tasks. Smaller tasks help people increase confidence and gain experience, which, in turn, leads to more contributions. We'll build on each other's strengths to learn how to navigate the issue queue while having fun trying new things.<\/p>\r\n\r\n<p>Presented by AmyJune Hineline from Kanopi Studios<\/p>\r\n\r\n<p>Saturday, November 14 - 2:00pm - 3:30pm ET<\/p>\r\n\r\n<p><strong>Level<\/strong>: Everyone<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

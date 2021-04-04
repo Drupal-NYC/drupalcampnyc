@@ -1,0 +1,107 @@
+{
+    "uuid": [
+        {
+            "value": "fae84486-96d9-4fbf-af14-97335af9a743"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "job_listing",
+            "target_type": "node_type",
+            "target_uuid": "1ff38401-987d-48de-be77-a35f601fe6c4"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-10-02T18:16:02+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "revision_uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "c2a7580c-229a-4ead-be9c-6085e6e2f25c"
+        }
+    ],
+    "revision_log": [],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "c2a7580c-229a-4ead-be9c-6085e6e2f25c"
+        }
+    ],
+    "title": [
+        {
+            "value": "Job Listings for Drupal Contractors by Esteemed"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-09-10T21:33:53+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-10-02T18:16:02+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "moderation_state": [],
+    "path": [
+        {
+            "alias": "\/sponsor\/drupal-contractors-esteemed\/jobs",
+            "langcode": "en",
+            "pathauto": 1
+        }
+    ],
+    "publish_on": [],
+    "unpublish_on": [],
+    "field_job_description": [
+        {
+            "value": "<p><a href=\"https:\/\/app.drupalcontractors.com\">Drupal Contractors<\/a>&nbsp;is&nbsp;400+ members and growing. Every day, we connect employers with pre-screened Drupal resources they can trust. Drupal developers can also network with colleagues, or get referrals if they need an extra pair of hands on a project or in their own business. Check out our jobs below.<\/p>\r\n\r\n<p><a href=\"https:\/\/app.drupalcontractors.com\/job\/drupal-developer-100-remote-contract-agency-experienced\">Drupal Developer (Contract) - Remote<\/a><\/p>\r\n\r\n<p><a href=\"https:\/\/app.drupalcontractors.com\/job\/drupal-blogger\">Drupal Blogger - Remote<\/a><br \/>\r\n<br \/>\r\n<a href=\"https:\/\/app.drupalcontractors.com\/job\/drupal-developer-100-remote-contract-agency-experienced\">Mid-level Drupal Developer - Remote<\/a><\/p>\r\n\r\n<p>Looking for other opportunities? From meeting other developers to hearing about jobs as soon as we secure them, there's plenty of opportunity on Slack.&nbsp;<a href=\"https:\/\/app.drupalcontractors.com\/getting-started\">Register your profile<\/a> and get started earning.<\/p>\r\n",
+            "format": "job_listing_html"
+        }
+    ],
+    "field_job_listing_short_descript": [
+        {
+            "value": "Drupal Contractors is currently hiring front-end, back-end, and full-stack Drupal developers at all levels of experience. "
+        }
+    ],
+    "field_job_sponsor": [
+        {
+            "target_type": "node",
+            "target_uuid": "3d39e251-d563-46ae-a152-75958eb2a8db"
+        }
+    ]
+}

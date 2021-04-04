@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "6766a789-43a7-475e-bc21-eef8ba35a2b1"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/node\/8870b7ef-e276-4356-ba45-a5323a74e8f7"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/sponsor\/evolving-web"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

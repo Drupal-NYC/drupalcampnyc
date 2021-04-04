@@ -1,0 +1,51 @@
+{
+    "uuid": [
+        {
+            "value": "8ecdf200-3e8b-45e3-8100-725d8ffc04a5"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-10-21T16:41:39+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "field_body": [
+        {
+            "value": "<p>We are pleased&nbsp;to offer half-day and full-day&nbsp;trainings as part of DrupalCampNYC 2020 on Thursday, November 12th and&nbsp;Saturday, November 14th.<\/p>\r\n\r\n<p>This is a great way for you to continue to develop your Drupal knowledge through hands-on learning directly from Drupal pros.<\/p>\r\n\r\n<p>All trainings will be held via Zoom meeting. Zoom details for each training will be provided to those who <a href=\"https:\/\/ti.to\/drupalcampnyc\/2020\">register<\/a> for that training.<\/p>\r\n\r\n<p>Excited? Join <strong>#camp-discuss<\/strong> on <a href=\"https:\/\/www.drupalnyc.org\/slack\">DrupalNYC Slack<\/a> or follow us on <a href=\"https:\/\/twitter.com\/drupalcampnyc\">Twitter<\/a> to be alerted when we have more to share.<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "d0726142-6474-4b1b-874d-304809618051"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/webform\/contribution_tickets\/confirmation"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/form\/contribution-tickets\/confirmation"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

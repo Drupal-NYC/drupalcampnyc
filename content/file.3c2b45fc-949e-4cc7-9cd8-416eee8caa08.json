@@ -1,0 +1,55 @@
+{
+    "uuid": [
+        {
+            "value": "3c2b45fc-949e-4cc7-9cd8-416eee8caa08"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "4d60223f-8a34-4e89-b13e-ad5d907db918"
+        }
+    ],
+    "filename": [
+        {
+            "value": "buckshot_smiling.jpg"
+        }
+    ],
+    "uri": [
+        {
+            "value": "public:\/\/pictures\/2020-05\/buckshot_smiling.jpg"
+        }
+    ],
+    "filemime": [
+        {
+            "value": "image\/jpeg"
+        }
+    ],
+    "filesize": [
+        {
+            "value": 17339
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-18T22:49:45+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-05-18T22:50:38+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ]
+}

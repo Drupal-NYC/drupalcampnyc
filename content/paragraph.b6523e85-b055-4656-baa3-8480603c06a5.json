@@ -1,0 +1,51 @@
+{
+    "uuid": [
+        {
+            "value": "b6523e85-b055-4656-baa3-8480603c06a5"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-22T23:11:17+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "field_body": [
+        {
+            "value": "<ul>\r\n\t<li>ADA-compliant step-free access to all of the spaces we will be using<\/li>\r\n\t<li>Male, female, and gender-neutral bathrooms, all with wheelchair stalls<\/li>\r\n\t<li>Dedicated conference room for nursing\/feeding mothers\r\n\t<ul>\r\n\t\t<li>With advance notice, we can make refrigeration available for milk<\/li>\r\n\t<\/ul>\r\n\t<\/li>\r\n<\/ul>\r\n\r\n<p>If you have any questions, concerns, or potentially unmet needs, please get in touch and we\u2019ll do our best to help: <a href=\"mailto:camp-venue@drupalnyc.org\">camp-venue@drupalnyc.org<\/a><\/p>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

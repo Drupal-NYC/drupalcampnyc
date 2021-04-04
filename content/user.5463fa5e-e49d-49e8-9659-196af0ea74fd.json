@@ -1,0 +1,144 @@
+{
+    "uid": [
+        {
+            "value": 46
+        }
+    ],
+    "uuid": [
+        {
+            "value": "5463fa5e-e49d-49e8-9659-196af0ea74fd"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "preferred_langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "preferred_admin_langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "name": [
+        {
+            "value": "carolyn"
+        }
+    ],
+    "mail": [],
+    "timezone": [
+        {
+            "value": "America\/New_York"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-10-26T03:12:46+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-10-26T04:30:26+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "roles": [],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "path": [
+        {
+            "alias": null,
+            "pid": null,
+            "langcode": "en",
+            "pathauto": 1
+        }
+    ],
+    "field_dietary_intro": [],
+    "field_interest_horizontal": [],
+    "field_interest_vertical": [],
+    "field_onsite_intro": [],
+    "field_speaker": [
+        {
+            "value": "no"
+        }
+    ],
+    "field_speaker_profile": [
+        {
+            "value": "<p>Carolyn Shannon is Manager of Technical Documentation at Pantheon. A seasoned digital services manager, Carolyn has focused for more than a decade on building sites with great content and information architecture, especially using the Drupal and WordPress CMS platforms. She is a writer, Drupalista, and former NAGW board member, having worked in the local government space for more than a decade.<\/p>\r\n\r\n<p>Carolyn is passionate about how good user experience, accessibility, and inclusive design creates loyal customers and drives results. She has delivered numerous talks on accessibility and inclusive design, and is founder of Pantheon's Accessibility Workgroup.<\/p>\r\n\r\n<p>In her spare time, Carolyn is a runner and a knitter (though not usually at the same time) and enjoys music, poetry, and hiking with her family.<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ],
+    "field_special_details": [],
+    "field_ticket_orderno": [],
+    "field_ticket_type": [],
+    "field_u_acad_title_post": [],
+    "field_u_acad_title_pre": [],
+    "field_u_accessibility": [],
+    "field_u_cat_mentor": [
+        {
+            "value": false
+        }
+    ],
+    "field_u_cat_orgateam": [
+        {
+            "value": false
+        }
+    ],
+    "field_u_cat_volunteer": [
+        {
+            "value": false
+        }
+    ],
+    "field_u_childcare": [
+        {
+            "value": false
+        }
+    ],
+    "field_u_company": [],
+    "field_u_dietary": [],
+    "field_u_first_name": [
+        {
+            "value": "Carolyn"
+        }
+    ],
+    "field_u_job_title": [],
+    "field_u_last_name": [
+        {
+            "value": "Shannon"
+        }
+    ],
+    "field_u_middle_name": [],
+    "field_u_pub_attendee_list": [
+        {
+            "value": true
+        }
+    ],
+    "field_u_speaker_experience": [],
+    "field_u_speaker_inclusion": [],
+    "field_u_special_details": [],
+    "field_u_testimonial": [],
+    "field_u_volunteer_about": [],
+    "user_picture": [
+        {
+            "alt": "",
+            "title": "",
+            "width": 540,
+            "height": 540,
+            "target_type": "file",
+            "target_uuid": "f60f7ac1-9c59-45b6-8fb2-05cbb75315de"
+        }
+    ]
+}

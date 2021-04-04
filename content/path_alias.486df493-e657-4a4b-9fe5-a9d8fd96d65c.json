@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "486df493-e657-4a4b-9fe5-a9d8fd96d65c"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/node\/258c25c9-f185-4d85-8dc6-1037001d68a9"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/bofs"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

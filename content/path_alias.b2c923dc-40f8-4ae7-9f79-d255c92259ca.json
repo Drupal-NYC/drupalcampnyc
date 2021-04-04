@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "b2c923dc-40f8-4ae7-9f79-d255c92259ca"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/node\/ab9ffb0a-d265-43f9-ae4b-101560614223"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/sponsor\/understanddrupalcom"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

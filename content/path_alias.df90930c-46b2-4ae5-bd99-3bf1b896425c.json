@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "df90930c-46b2-4ae5-bd99-3bf1b896425c"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/node\/5ee70d59-c2e1-429e-830e-11db249a4793"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/program"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

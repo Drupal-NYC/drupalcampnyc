@@ -1,0 +1,47 @@
+{
+    "uuid": [
+        {
+            "value": "c9daa2ae-521a-46fd-82c6-1111339efc87"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-15T03:59:34+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [],
+    "field_body": [
+        {
+            "value": "<p>Join <strong>#camp-discuss<\/strong> on DrupalNYC Slack or <a href=\"https:\/\/twitter.com\/drupalcampnyc\">follow us on Twitter<\/a> to be alerted when we have more to share.<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

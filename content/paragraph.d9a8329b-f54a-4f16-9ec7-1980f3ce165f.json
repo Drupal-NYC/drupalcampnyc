@@ -1,0 +1,51 @@
+{
+    "uuid": [
+        {
+            "value": "d9a8329b-f54a-4f16-9ec7-1980f3ce165f"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-15T03:58:29+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "field_body": [
+        {
+            "value": "<p>FREE*<\/p>\r\n\r\n<p>*Thanks to the generosity of our <a href=\"\/sponsors\">sponsors<\/a>, we are thrilled to be able to offer all attendees free general admission tickets to DrupalCampNYC 2020! We encourage attendees who are able to make a donation to our non-profit, DrupalNYC&nbsp;Incorporated, when reserving tickets.<\/p>\r\n\r\n<p>To reduce no-shows for our trainings, which have limited capacities,&nbsp;we will charge attendees a deposit for each training ($25 for half day trainings and $50 for full-day trainings), which will be fully refundable once they participate in the training, or which can be donated to our non-profit to support our educational and scientific mission. Exception: we do not charge a deposit for the \"Intro to Drupal\" training.<\/p>\r\n\r\n<p><a href=\"https:\/\/ti.to\/drupalcampnyc\/2020\">Tickets are now available<\/a>!<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "692bfd2d-6029-4c66-80ad-ba3659773468"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/node\/b2a2aae1-a15a-4fda-af3b-889aef60c4e3"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/sponsor\/palantirnet"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

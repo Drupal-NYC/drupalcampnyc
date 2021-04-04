@@ -1,0 +1,55 @@
+{
+    "uuid": [
+        {
+            "value": "5ad9dee4-b353-4ddc-8320-02e7d0710229"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "61ce98e6-826b-46fb-bbc9-abd8a7461137"
+        }
+    ],
+    "filename": [
+        {
+            "value": "Kalamuna.svg"
+        }
+    ],
+    "uri": [
+        {
+            "value": "public:\/\/2020-09\/Kalamuna.svg"
+        }
+    ],
+    "filemime": [
+        {
+            "value": "image\/svg+xml"
+        }
+    ],
+    "filesize": [
+        {
+            "value": 9282
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-09-14T20:39:35+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-09-14T20:40:12+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "uuid": [
+        {
+            "value": "eecfd849-73bb-482d-89fc-528722016358"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-11-11T21:38:14+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [],
+    "field_body": [
+        {
+            "value": "<p>&nbsp;<\/p>\r\n\r\n<h3><a data-entity-substitution=\"canonical\" data-entity-type=\"node\" data-entity-uuid=\"cb6070e2-f6cb-4332-8977-31c30286e559\" href=\"\/node\/62\">Launching a career in Drupal as a working adult<\/a><\/h3>\r\n\r\n<p>Learn how the Communication Workers of America provides training (including developing Drupal expertise) to its union members through its Joint Training Initiative.<\/p>\r\n\r\n<p><strong>Presented by:<\/strong>&nbsp;Sam Lerma, Ainsley Tracey, Yolanda White, Antiena Perry,&nbsp;Toyia Flowers, Mary Kenny, and Michael Creegan of the CWA<\/p>\r\n\r\n<p>Friday, November 13 - Time: <strong>12:00 PM-12:45 PM EST<\/strong><\/p>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

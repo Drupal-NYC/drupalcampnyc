@@ -1,0 +1,47 @@
+{
+    "uuid": [
+        {
+            "value": "70e108f9-0221-4b3e-a862-4e7e81ccf672"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-10-21T17:51:59+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [],
+    "field_body": [
+        {
+            "value": "<h3><a data-entity-substitution=\"canonical\" data-entity-type=\"node\" data-entity-uuid=\"b1224713-2aaa-4653-93f7-c75b81e554dd\" href=\"\/node\/36\">Striving for Inclusion Through Accessible Design<\/a><\/h3>\r\n\r\n<p>In this talk, the NYU Stern UX team will discuss accessibility and the importance of accessible design. We will cover the design process the Stern UX team went through bring the portal up to WCAG 2.0 AA standards. We will highlight some of the challenges we encountered implementing the accessible design in Drupal 8.&nbsp;<\/p>\r\n\r\n<p><strong>Presented by:<\/strong>&nbsp;Aimee Quesada and Ashworth Charles from NYU Stern<\/p>\r\n\r\n<p>Friday, November 13 - Time: <strong>11:00 AM-11:45 AM EST<\/strong><\/p>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

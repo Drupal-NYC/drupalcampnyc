@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "fc98205c-7b28-414c-aa63-dc4d0ed6480a"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "und"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/webform\/training_proposal\/submissions"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/form\/training\/submissions"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

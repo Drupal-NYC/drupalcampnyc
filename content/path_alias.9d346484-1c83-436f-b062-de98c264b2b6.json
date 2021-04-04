@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "9d346484-1c83-436f-b062-de98c264b2b6"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/webform\/european_leaders_roundtable"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/form\/european-leaders-roundtable"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

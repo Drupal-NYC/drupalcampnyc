@@ -1,0 +1,51 @@
+{
+    "uuid": [
+        {
+            "value": "69d69a02-e369-4233-9ff8-db9e00678030"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-20T14:04:18+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "field_body": [
+        {
+            "value": "<p>This year we are prioritizing interactive content and activities for our virtual conference. There will be fewer sessions than at most conferences so we can focus our efforts on providing opportunities for interaction and to encourage participation in these unique activities.<\/p>\r\n\r\n<p>We will have curated NY-themed&nbsp;sessions&nbsp;on Friday, November 13th, along with interactive activities. We will be soliciting sessions directly from speakers rather than hosting a traditional session submission process. Know of someone who could give a uniquely NY-themed talk? Please email <a href=\"mailto:camp@drupalnyc.org\">camp@drupalnyc.org<\/a><\/p>\r\n\r\n<p>Join <strong>#camp-discuss<\/strong> on <a href=\"https:\/\/www.drupalnyc.org\/slack\">DrupalNYC Slack<\/a> or follow us on <a href=\"https:\/\/twitter.com\/drupalcampnyc\">Twitter<\/a> to be alerted when we have more to share.<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

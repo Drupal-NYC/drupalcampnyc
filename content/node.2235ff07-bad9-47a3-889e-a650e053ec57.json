@@ -1,0 +1,151 @@
+{
+    "uuid": [
+        {
+            "value": "2235ff07-bad9-47a3-889e-a650e053ec57"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "session",
+            "target_type": "node_type",
+            "target_uuid": "477ef8ff-1e7b-42da-9e07-67abfdce9a09"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-10-26T04:58:00+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "revision_uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "b4e3a33f-17e1-4a0e-8ad3-36abaf6eebec"
+        }
+    ],
+    "revision_log": [],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "1898b4c0-3245-47fe-b38c-a44e33595843"
+        }
+    ],
+    "title": [
+        {
+            "value": "Introduction to Drupal"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-10-26T03:49:45+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-10-26T04:58:00+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "moderation_state": [
+        {
+            "value": "published"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/training\/introduction-drupal",
+            "langcode": "en",
+            "pathauto": 0
+        }
+    ],
+    "publish_on": [],
+    "unpublish_on": [],
+    "field_description": [
+        {
+            "value": "<p>Are you Drupal-curious? Just getting started with CMS\u2019 and WebOps? This live, three-hour workshop, will take you from understanding what Drupal is, why Drupal 9 matters, to creating basic content, users, and an overview of more complex Drupal features. <strong>No prior experience with Drupal or web development is necessary.<\/strong><\/p>\r\n\r\n<p>At the end of this workshop, you\u2019ll have an understanding of how content creation in Drupal works, and have a working test site that you can tinker with for as long as you like.<\/p>\r\n\r\n<p>Learning Drupal doesn\u2019t have to stop after this workshop. You\u2019ll get access to a recording of the workshop so you can work through the steps again, plus additional resources to take your learning further so you can leverage WebOps and Drupal to accelerate your workflows.<\/p>\r\n\r\n<h2>Agenda:<\/h2>\r\n\r\n<ul>\r\n\t<li>What is Drupal?<\/li>\r\n\t<li>What's new in Drupal 9?<\/li>\r\n\t<li>Content Management<\/li>\r\n\t<li>Creating Structured Content<\/li>\r\n\t<li>Creating Dynamic Lists<\/li>\r\n\t<li>Users, Taxonomy, &amp; More<\/li>\r\n\t<li>Pantheon<\/li>\r\n\t<li>Q&amp;A<\/li>\r\n<\/ul>\r\n\r\n<h2>Who Should Attend:<\/h2>\r\n\r\n<p>All are welcome. This three-hour course consists of topic-driven lectures and step-by-step exercises delivered online.<\/p>\r\n\r\n<p>Some typical attendees of past events have been:<\/p>\r\n\r\n<ul>\r\n\t<li><strong>WebOps team members:<\/strong> project managers, content creators, site builders, QA testers and anyone else who works with a Drupal site.<\/li>\r\n\t<li><strong>Drupal-curious developers:<\/strong> ever wonder how to build sites with Drupal?<\/li>\r\n\t<li><strong>Junior developers:<\/strong> anyone getting started with web development will learn the foundations of Drupal.<\/li>\r\n<\/ul>\r\n\r\n<h2>Here\u2019s What You\u2019ll Learn:<\/h2>\r\n\r\n<ul>\r\n\t<li><strong>Drupal Basics:<\/strong> Getting set up to create content in Drupal, navigating and understanding the interface, and the benefits of the open source Drupal community.&nbsp;<\/li>\r\n\t<li><strong>Content Types &amp; Fields:<\/strong> Content Management Systems are built to help you manage complex content and relationships. Content Types and Fields are two powerful building blocks that Drupal offers to allow you to create and manage complex data structures within an easy UI.<\/li>\r\n\t<li><strong>Dynamic Lists:<\/strong> You\u2019ll learn how to use Views to create many different dynamic lists that update automatically across your website.<\/li>\r\n\t<li><strong>Q&amp;A:<\/strong> We'll spend a portion of the time answering any questions you have around the essentials of Drupal.<\/li>\r\n<\/ul>\r\n",
+            "format": "basic_html"
+        }
+    ],
+    "field_ends_at": [
+        {
+            "value": "2020-11-12T17:30:00-05:00"
+        }
+    ],
+    "field_featured": [
+        {
+            "value": false
+        }
+    ],
+    "field_room": [],
+    "field_session_level": [
+        {
+            "value": "beginner"
+        }
+    ],
+    "field_session_sponsor": [
+        {
+            "target_type": "node",
+            "target_uuid": "383e4b0e-d292-4bfe-863e-c6c83d9d9d30"
+        }
+    ],
+    "field_slides": [],
+    "field_slides_external": [],
+    "field_speakers": [
+        {
+            "target_type": "user",
+            "target_uuid": "1898b4c0-3245-47fe-b38c-a44e33595843"
+        },
+        {
+            "target_type": "user",
+            "target_uuid": "5463fa5e-e49d-49e8-9659-196af0ea74fd"
+        }
+    ],
+    "field_start": [
+        {
+            "value": "2020-11-12T14:30:00-05:00"
+        }
+    ],
+    "field_summary": [
+        {
+            "value": "Are you Drupal-curious? Just getting started with CMS\u2019 and WebOps? This live, three-hour workshop, will take you from understanding what Drupal is, why Drupal 9 matters, to creating basic content, users, and an overview of more complex Drupal features. No prior experience with Drupal or web development is necessary. At the end of this workshop, you\u2019ll have an understanding of how content creation in Drupal works, and have a working test site that you can tinker with for as long as you like.",
+            "format": "plain_text"
+        }
+    ],
+    "field_type": [
+        {
+            "value": "training"
+        }
+    ],
+    "field_video": []
+}

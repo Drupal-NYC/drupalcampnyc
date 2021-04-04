@@ -1,0 +1,47 @@
+{
+    "uuid": [
+        {
+            "value": "b24cba0a-c9d0-40dc-be9e-0d969b00a50c"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-10-21T14:07:34+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [],
+    "field_body": [
+        {
+            "value": "<h3>&nbsp;<\/h3>\r\n\r\n<h3><a data-entity-substitution=\"canonical\" data-entity-type=\"node\" data-entity-uuid=\"6aab70a6-d5e3-4bc2-a3e9-ef863212aa5f\" href=\"\/node\/40\">Analytics Pro: Own your Data and Put it to the Service of your Cause<\/a><\/h3>\r\n\r\n<p>In one day, we will take you from data curious to data capable. From concept to application, we will empower your use of Google\u2019s Analytics, Data Studio, and Tag Manager products to deliver reports that drive change.<\/p>\r\n\r\n<p>Presented by Vadim Tchernine from Kalamuna<\/p>\r\n\r\n<p>Thursday, November 12 - 9:30am - 1:30pm ET<\/p>\r\n\r\n<p><strong>Level:<\/strong> Beginner<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

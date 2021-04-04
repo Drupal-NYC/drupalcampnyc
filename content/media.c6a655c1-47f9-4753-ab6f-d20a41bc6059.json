@@ -1,0 +1,93 @@
+{
+    "uuid": [
+        {
+            "value": "c6a655c1-47f9-4753-ab6f-d20a41bc6059"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "bundle": [
+        {
+            "target_id": "image",
+            "target_type": "media_type",
+            "target_uuid": "8f510a65-03a2-4318-b763-c520054de208"
+        }
+    ],
+    "revision_created": [
+        {
+            "value": "2020-05-15T05:25:07+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "revision_user": [],
+    "revision_log_message": [],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "61ce98e6-826b-46fb-bbc9-abd8a7461137"
+        }
+    ],
+    "name": [
+        {
+            "value": "Microsoft Reactor logo"
+        }
+    ],
+    "thumbnail": [
+        {
+            "alt": "Microsoft Reactor logo",
+            "title": null,
+            "width": 3660,
+            "height": 1270,
+            "target_type": "file",
+            "target_uuid": "5a61c4f0-5bbb-46b0-81e3-8eb3fb6890e2"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-15T05:24:55+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-05-15T05:24:55+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "path": [
+        {
+            "alias": null,
+            "pid": null,
+            "langcode": "en",
+            "pathauto": 0
+        }
+    ],
+    "field_media_image": [
+        {
+            "alt": "Microsoft Reactor logo",
+            "title": "",
+            "width": 3660,
+            "height": 1270,
+            "target_type": "file",
+            "target_uuid": "5a61c4f0-5bbb-46b0-81e3-8eb3fb6890e2"
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "uuid": [
+        {
+            "value": "7618536a-202f-4cec-834e-1d132b710205"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-10-21T14:13:55+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [],
+    "field_body": [
+        {
+            "value": "<h3>&nbsp;<\/h3>\r\n\r\n<h3><a data-entity-substitution=\"canonical\" data-entity-type=\"node\" data-entity-uuid=\"2235ff07-bad9-47a3-889e-a650e053ec57\" href=\"\/node\/42\">Introduction to Drupal&nbsp;<\/a><\/h3>\r\n\r\n<p>Are you Drupal-curious? Just getting started with CMS\u2019 and WebOps? This live, three-hour workshop, will take you from understanding what Drupal is, why Drupal 9 matters, to creating basic content, users, and an overview of more complex Drupal features. No prior experience with Drupal or web development is necessary. &nbsp;At the end of this workshop, you\u2019ll have an understanding of how content creation in Drupal works, and have a working test site that you can tinker with for as long as you like. &nbsp;<\/p>\r\n\r\n<p>Presented by Tara King and Carolyn Shannon from Pantheon<\/p>\r\n\r\n<p>Thursday, November 12 - 2:30pm - 5:30pm ET<\/p>\r\n\r\n<p><strong>Level<\/strong>: Beginner<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

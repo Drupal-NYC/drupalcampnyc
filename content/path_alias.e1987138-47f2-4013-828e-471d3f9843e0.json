@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "e1987138-47f2-4013-828e-471d3f9843e0"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "und"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/webform\/template_subscribe"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/form\/template-subscribe"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

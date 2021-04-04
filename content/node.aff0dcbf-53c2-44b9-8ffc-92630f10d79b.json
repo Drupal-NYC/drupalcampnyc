@@ -1,0 +1,128 @@
+{
+    "uuid": [
+        {
+            "value": "aff0dcbf-53c2-44b9-8ffc-92630f10d79b"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "page",
+            "target_type": "node_type",
+            "target_uuid": "942f533c-e329-4b51-a8fc-1a43795a48ba"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-11-11T00:39:21+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "revision_uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "b4e3a33f-17e1-4a0e-8ad3-36abaf6eebec"
+        }
+    ],
+    "revision_log": [],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "61ce98e6-826b-46fb-bbc9-abd8a7461137"
+        }
+    ],
+    "title": [
+        {
+            "value": "Contribution Day"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-15T05:09:38+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-11-11T00:39:21+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "moderation_state": [
+        {
+            "value": "published"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/contribution-day",
+            "langcode": "en",
+            "pathauto": 0
+        }
+    ],
+    "publish_on": [],
+    "unpublish_on": [],
+    "field_content": [
+        {
+            "target_type": "paragraph",
+            "target_uuid": "2a2d9807-1b6a-4ff2-a0a3-f3752aaf6fde"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "21b95810-05a6-485a-9ca9-72b4761d88ce"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "c3175d8c-f78f-439f-91d3-662576274b63"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "4e9aed3b-5050-4a8b-8e78-1726f7a273c9"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "659bc706-27a4-4940-ad49-b95be88f95d6"
+        }
+    ],
+    "field_header": [
+        {
+            "target_type": "paragraph",
+            "target_uuid": "d1247095-4739-4429-a52e-e53630c4b971"
+        }
+    ],
+    "field_sponsors": [],
+    "field_summary_plain": [
+        {
+            "value": "As a part of DrupalCampNYC 2020, we\u2019re including a full-day Drupal Contribution Day. It\u2019s a great way for anybody to \u201ccontribute\u201d to the Drupal project - no coding experience necessary. The goal is to make Drupal better, together."
+        }
+    ]
+}

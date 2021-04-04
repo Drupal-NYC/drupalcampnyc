@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "e1f400a3-959e-43a6-8f05-36472d8567a3"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/node\/cb6070e2-f6cb-4332-8977-31c30286e559"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/session\/launching-career-drupal-working-adult"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

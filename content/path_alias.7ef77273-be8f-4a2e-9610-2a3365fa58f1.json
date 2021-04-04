@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "7ef77273-be8f-4a2e-9610-2a3365fa58f1"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/node\/69fa9caf-7532-4b80-b182-7e6c5423ecf0"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/sponsor\/microsoft-reactor"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

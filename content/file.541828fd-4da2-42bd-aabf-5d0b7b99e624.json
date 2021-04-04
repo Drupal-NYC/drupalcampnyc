@@ -1,0 +1,55 @@
+{
+    "uuid": [
+        {
+            "value": "541828fd-4da2-42bd-aabf-5d0b7b99e624"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "6e30305e-a54b-451f-8280-a937764d5808"
+        }
+    ],
+    "filename": [
+        {
+            "value": "mike_2013_square.jpg"
+        }
+    ],
+    "uri": [
+        {
+            "value": "public:\/\/pictures\/2020-09\/mike_2013_square.jpg"
+        }
+    ],
+    "filemime": [
+        {
+            "value": "image\/jpeg"
+        }
+    ],
+    "filesize": [
+        {
+            "value": 48872
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-09-18T15:21:41+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-09-18T15:22:08+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ]
+}

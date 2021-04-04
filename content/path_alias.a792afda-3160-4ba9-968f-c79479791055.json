@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "a792afda-3160-4ba9-968f-c79479791055"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "und"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/webform\/training_proposal"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/form\/training"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

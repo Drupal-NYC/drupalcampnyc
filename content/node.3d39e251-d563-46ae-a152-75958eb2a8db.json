@@ -1,0 +1,125 @@
+{
+    "uuid": [
+        {
+            "value": "3d39e251-d563-46ae-a152-75958eb2a8db"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "sponsor",
+            "target_type": "node_type",
+            "target_uuid": "4be1da86-de47-4f5d-9938-a52b9ea555a8"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-08-19T22:17:02+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "revision_uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "61ce98e6-826b-46fb-bbc9-abd8a7461137"
+        }
+    ],
+    "revision_log": [],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "61ce98e6-826b-46fb-bbc9-abd8a7461137"
+        }
+    ],
+    "title": [
+        {
+            "value": "Drupal Contractors by Esteemed"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-08-19T22:13:11+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-09-14T20:41:30+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": true
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "moderation_state": [],
+    "path": [
+        {
+            "alias": "\/sponsor\/drupal-contractors-esteemed",
+            "langcode": "en",
+            "pathauto": 1
+        }
+    ],
+    "publish_on": [],
+    "unpublish_on": [],
+    "field_level": [
+        {
+            "value": "platinum"
+        }
+    ],
+    "field_module_name": [],
+    "field_sponsor_description": [
+        {
+            "value": "<p>Drupal Contractors, by esteemed, is the largest source for contract Drupal resources.<\/p>\r\n\r\n<p>The Esteemed Talent Network is a community of 13,000+ digital professionals. We provide staffing in digital niches like Drupal, WP, Sitecore, JavaScript, E-commerce, Cloud, UX, and more. Then we deliver pre-screened resources via the tools our clients already use. Join our community of 500+ on Slack to connect with top contractors and full-time opportunities with agencies and employers.<\/p>\r\n\r\n<p>Drupal Contractors, 400+ members and growing, connects employers with pre-screened Drupal resources they can trust. Drupal developers can also connect with colleagues they probably know (and can trust), or get a first-hand referral if they need an extra pair of hands on a project or in their own business. We provide discount rates to members and work together to carry our businesses to success.<\/p>\r\n\r\n<p>Employers, connect with expert Drupal Developers, Architects and Project Managers quickly. We offer Contract and Permanent resources.<\/p>\r\n\r\n<p>Developers, register your profile and apply to our current opportunities. Also, join our Internal Partners Program and grow your own business!<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ],
+    "field_sponsor_logo": [
+        {
+            "alt": "Drupal Contractors by esteemed logo",
+            "title": "",
+            "width": 64,
+            "height": 64,
+            "target_type": "file",
+            "target_uuid": "3e8c5f56-5390-48cc-a20d-ae1f0c771d7e"
+        }
+    ],
+    "field_sponsor_priority": [
+        {
+            "value": 201
+        }
+    ],
+    "field_track_sponsorship": [],
+    "field_website": [
+        {
+            "uri": "https:\/\/app.drupalcontractors.com\/?",
+            "title": "",
+            "options": []
+        }
+    ]
+}

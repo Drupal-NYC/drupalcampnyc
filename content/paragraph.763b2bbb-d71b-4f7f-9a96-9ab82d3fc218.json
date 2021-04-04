@@ -1,0 +1,51 @@
+{
+    "uuid": [
+        {
+            "value": "763b2bbb-d71b-4f7f-9a96-9ab82d3fc218"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-11-12T17:12:52+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "field_body": [
+        {
+            "value": "<h3>&nbsp;<\/h3>\r\n\r\n<h3>Small Batch Artisan DevOps&nbsp;<\/h3>\r\n\r\n<p>Join us for this BoF if you are interested in custom, adhoc, or bespoke Drupal DevOps or Hosting platforms.<br \/>\r\n<br \/>\r\nThis BoF is for you if:<br \/>\r\n<br \/>\r\n1. You work on a Drupal site not hosted on the typical \"Drupal Cloud\" platforms.<br \/>\r\n2. You work with a custom or ad-hoc DevOps platform for Drupal.<br \/>\r\n3. You work with an open source project that provides tools for creating your own bespoke DevOps Platforms.<br \/>\r\n4. You want to improve the system you are using to run your Drupal sites.<\/p>\r\n\r\n<p><strong>Discussion led by:<\/strong> Jon Pugh<\/p>\r\n\r\n<p><strong>Time:<\/strong>&nbsp;4:00 - 4:45 pm EST<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "uuid": [
+        {
+            "value": "9a88f669-2c8f-4d2e-a258-86a095402a05"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "element_call_to_action",
+            "target_type": "paragraphs_type",
+            "target_uuid": "ea3bb556-ba6d-435f-9504-52fd77b4027a"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-08-20T00:09:49+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "field_link": [
+        {
+            "uri": "entity:node\/633d7f82-1632-4d4f-8c28-fa951d6c2eab",
+            "title": "Learn how to become a sponsor",
+            "options": []
+        }
+    ]
+}

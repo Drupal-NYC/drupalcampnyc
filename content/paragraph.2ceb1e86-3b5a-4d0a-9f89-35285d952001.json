@@ -1,0 +1,51 @@
+{
+    "uuid": [
+        {
+            "value": "2ceb1e86-3b5a-4d0a-9f89-35285d952001"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-22T23:47:05+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "field_body": [
+        {
+            "value": "<p>All guidelines mentioned in this document also apply to DrupalCampNYC\u2019s many digital spaces, including (but not limited to):<\/p>\r\n\r\n<ul>\r\n\t<li>Slack (public and private channels)<\/li>\r\n\t<li>Google Meet rooms or other virtual conferencing platforms and spaces such as Zoom<\/li>\r\n\t<li>Open source contribution spaces<\/li>\r\n<\/ul>\r\n\r\n<p>In these spaces, the code of conduct expectations extend year-round, regardless of the scheduled dates of the camp proper.<\/p>\r\n\r\n<h3>Trolling and Spamming<\/h3>\r\n\r\n<p>Behaving\/posting in a way that is intentionally disruptive or antagonistic is unacceptable and will result in expulsion from the event.<\/p>\r\n\r\n<h3>Security and Privacy<\/h3>\r\n\r\n<p>Respect the security of our digital spaces. Attempts to gain or grant unauthorized access to private or privileged areas is strictly prohibited.<\/p>\r\n\r\n<p>Respect the privacy of our community members. Sharing sensitive or personal information threatens the safety of our community members. This includes information such as private email addresses, physical addresses, phone numbers, passwords, etc. This may also extend to images, videos, or private messages shared without the consent of involved parties.<\/p>\r\n\r\n<p>The DrupalCampNYC 2020 team reserves the right to remove any content that violates these expectations.<\/p>\r\n\r\n<p>DrupalCampNYC\u2019s code of conduct is based on those of <a href=\"https:\/\/www.drupalcampnj.org\/code-conduct\">DrupalCamp NJ<\/a> and <a href=\"https:\/\/www.midcamp.org\/code-conduct\">MidCamp<\/a>. It is licensed under a <a href=\"https:\/\/creativecommons.org\/licenses\/by-sa\/3.0\/\">Creative Commons Attribution 3.0 Unported License<\/a> and is available for others to use and adapt for their own events.<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

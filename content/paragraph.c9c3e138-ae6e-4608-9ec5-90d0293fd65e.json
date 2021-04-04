@@ -1,0 +1,51 @@
+{
+    "uuid": [
+        {
+            "value": "c9c3e138-ae6e-4608-9ec5-90d0293fd65e"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-22T23:46:53+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "field_body": [
+        {
+            "value": "<p>Any photography\/recording that is legally allowed in public spaces is allowed at DrupalCampNYC 2020, subject to any restrictions of our event venue, which may include no photography\/recording in common areas (e.g. hallways).<\/p>\r\n\r\n<p>However, anyone photographing or recording must abide by participants\u2019 willingness to be photographed. In particular, pay attention to lanyard color. A red lanyard indicates that you must not record or photograph the individual wearing that lanyard.<\/p>\r\n\r\n<p>Photography\/recording should be treated like other potentially harassing interpersonal interactions. That is, when one person in the interaction says \u201cstop\u201d or \u201cleave me alone\u201d (etc.), the interaction must end. In this case, attendees should not attempt to photograph that individual again.<\/p>\r\n\r\n<p>Photography\/recording shouldn\u2019t be done in such a way as to hide from the subject that it\u2019s happening.&nbsp;<\/p>\r\n\r\n<p>If you mistakenly photograph someone in a red lanyard or at the request of any person attending the event, the photo\/footage\/etc. of them must be deleted immediately.<\/p>\r\n\r\n<p>Violations of the photography\/recording policy should be addressed as harassment in the context of this code of conduct.<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

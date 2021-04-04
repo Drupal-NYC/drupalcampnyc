@@ -1,0 +1,125 @@
+{
+    "uuid": [
+        {
+            "value": "383e4b0e-d292-4bfe-863e-c6c83d9d9d30"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "sponsor",
+            "target_type": "node_type",
+            "target_uuid": "4be1da86-de47-4f5d-9938-a52b9ea555a8"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-10-14T03:05:55+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "revision_uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "61ce98e6-826b-46fb-bbc9-abd8a7461137"
+        }
+    ],
+    "revision_log": [],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "61ce98e6-826b-46fb-bbc9-abd8a7461137"
+        }
+    ],
+    "title": [
+        {
+            "value": "Pantheon"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-10-14T02:59:27+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-10-26T18:12:37+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": true
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "moderation_state": [],
+    "path": [
+        {
+            "alias": "\/sponsor\/pantheon",
+            "langcode": "en",
+            "pathauto": 1
+        }
+    ],
+    "publish_on": [],
+    "unpublish_on": [],
+    "field_level": [
+        {
+            "value": "gold"
+        }
+    ],
+    "field_module_name": [],
+    "field_sponsor_description": [
+        {
+            "value": "<p>Pantheon\u2019s WebOps (Website Operations) Platform empowers your marketing and development teams to take control of your websites. Achieve confidence and agility with the tools you need to deliver digital marketing results.<\/p>\r\n\r\n<p>With a Serverless CMS approach to WordPress and Drupal, multiple contributors can create and publish engaging, high speed, always-on web content\u2014without IT overhead. We give you limitless site scalability and enable a high-quality customer experience across desktop and mobile. Access web operations experts 24x7 to ensure you\u2019re never blocked by an unanswered question. Support is there when you need it.<\/p>\r\n\r\n<p>Using Structured Agile Workflows, drive cross-functional collaboration and increase productivity by allowing your team to change your website in any way needed, without ever breaking it. Automate routine tasks and review changes before they deploy\u2014adopting a rapid release cadence to respond to market needs and improve your most valuable digital asset.<\/p>\r\n\r\n<p>Whether you\u2019re optimizing a single website, or wrangling hundreds across regions, brands, and channels, the overhead of keeping everything up-to-date and secure can be daunting. Website Portfolio Management standardizes operations and gives you a handle on governance, freeing your teams from routine tasks, so they can focus on innovation and your digital roadmap.<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ],
+    "field_sponsor_logo": [
+        {
+            "alt": "Pantheon logo",
+            "title": "",
+            "width": 64,
+            "height": 64,
+            "target_type": "file",
+            "target_uuid": "7733a162-2eac-4d2a-9c37-4e58cf1c470f"
+        }
+    ],
+    "field_sponsor_priority": [
+        {
+            "value": 302
+        }
+    ],
+    "field_track_sponsorship": [],
+    "field_website": [
+        {
+            "uri": "https:\/\/pantheon.io\/",
+            "title": "",
+            "options": []
+        }
+    ]
+}

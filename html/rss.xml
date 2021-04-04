@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="https://2020.drupalcamp.nyc/">
+  <channel>
+    <title>DrupalCampNYC 2020 - Thursday-Saturday, November 12-14 Virtually everywhere!</title>
+    <link>https://2020.drupalcamp.nyc/</link>
+    <description/>
+    <language>en</language>
+    
+    <item>
+  <title>Contegix</title>
+  <link>https://2020.drupalcamp.nyc/sponsor/contegix</link>
+  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Contegix&lt;/span&gt;
+&lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;a title="View user profile." href="https://2020.drupalcamp.nyc/user/9" lang="" about="https://2020.drupalcamp.nyc/user/9" typeof="schema:Person" property="schema:name" datatype="" class="username" xml:lang=""&gt;volkswagenchick&lt;/a&gt;&lt;/span&gt;
+&lt;span class="field field--name-created field--type-created field--label-hidden"&gt;Wed, 10/28/2020 - 13:58&lt;/span&gt;
+
+            &lt;div class="field field--name-field-sponsor-logo field--type-image field--label-hidden field__item"&gt;  &lt;img src="https://2020.drupalcamp.nyc/sites/default/files/2020-10/BlackMesh_400x91.png" width="400" height="91" alt="BlackMesh by Contegix logo" typeof="foaf:Image" /&gt;&lt;/div&gt;
+      
+
+	&lt;h5 class="sponsor-level"&gt;Industrialist (Community)
+		sponsor&lt;/h5&gt;
+
+            &lt;div class="text-formatted field field--name-field-sponsor-description field--type-text-long field--label-hidden field__item"&gt;&lt;p&gt;Experience the most complete offering of Drupal managed hosting services on the market, tailored to your unique needs, powered by our BlackMesh Platform. With our proactive monitoring and management services for your complex Drupal environment, you can stay focused on strategy and development and not worry about the technical implementation. We’re FedRAMP, PCI DSS, and HIPAA compliant, so we can manage your most secure applications. Our new Advisor offering gives you access to our best practices, enhanced monitoring, our 24x7x365 support team for critical response, and designated engineers who are focused on continuously refining your solution.&lt;/p&gt;&lt;/div&gt;
+      
+
+	&lt;a class="btn btn-color-1" href="https://www.contegix.com/drupal" role="button" target="_blank"&gt;Visit sponsor website&lt;/a&gt;
+
+
+</description>
+  <pubDate>Wed, 28 Oct 2020 17:58:34 +0000</pubDate>
+    <dc:creator>volkswagenchick</dc:creator>
+    <guid isPermaLink="false">54 at https://2020.drupalcamp.nyc</guid>
+    </item>
+<item>
+  <title>Spatial Path</title>
+  <link>https://2020.drupalcamp.nyc/sponsor/spatial-path</link>
+  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Spatial Path&lt;/span&gt;
+&lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;a title="View user profile." href="https://2020.drupalcamp.nyc/user/1" lang="" about="https://2020.drupalcamp.nyc/user/1" typeof="schema:Person" property="schema:name" datatype="" class="username" xml:lang=""&gt;admin&lt;/a&gt;&lt;/span&gt;
+&lt;span class="field field--name-created field--type-created field--label-hidden"&gt;Mon, 10/26/2020 - 01:32&lt;/span&gt;
+
+            &lt;div class="field field--name-field-sponsor-logo field--type-image field--label-hidden field__item"&gt;  &lt;img src="https://2020.drupalcamp.nyc/sites/default/files/2020-10/spatial_path.svg" alt="Spatial Path logo" typeof="foaf:Image" /&gt;&lt;/div&gt;
+      
+
+	&lt;h5 class="sponsor-level"&gt;Training
+		sponsor&lt;/h5&gt;
+
+            &lt;div class="text-formatted field field--name-field-sponsor-description field--type-text-long field--label-hidden field__item"&gt;&lt;p&gt;Spatial Path is the new enterprise founded by Aimee Hannaford. She has been active in the Drupal Community for over 12 years and co-founder of Hook 42 Inc, which closed in early 2020.&lt;/p&gt;
+
+&lt;p&gt;What is a Spatial Path?&lt;/p&gt;
+
+&lt;p&gt;A spatial path is how a person fills space as they move from one place to another. There are many ways to reach your destination. The "how" one explores, defines, and executes the path to get from a starting point to a goal creates a quality journey to add lasting value to your experience.&lt;/p&gt;
+
+&lt;p&gt;Terminology from dance equally applies to performing large-scale data-oriented projects delivered with perfection and grace. Our team gives conference talks and software trainings across the United States and at international events in many software and business organizations.&lt;/p&gt;
+
+&lt;p&gt;Specialties&lt;/p&gt;
+
+&lt;p&gt;We navigate complex business change that marries people, technology, compliance, and systems. The team has hands-on experience, education, and professional certifications to meet your needs. With over 25 years of enterprise-scale technology experience we can clearly define where you are, understand your goals, and work with you to reach your goals.&lt;/p&gt;
+
+&lt;p&gt;Audit &amp; remediations (Web best practices, Migration, Accessibility, Multilingual, SEO)&lt;/p&gt;
+
+&lt;p&gt;Strategic systems consulting (Web, DevOps, Content Management)&lt;/p&gt;
+
+&lt;p&gt;Data migrations (website, data, and applications)&lt;/p&gt;
+
+&lt;p&gt;Portfolio, program, project and systems management&lt;/p&gt;
+
+&lt;p&gt;Enterprise Content Management (Drupal, WordPress, Adobe Experience Manager)&lt;/p&gt;
+
+&lt;p&gt;Why Hire Us?&lt;/p&gt;
+
+&lt;p&gt;You need to scale. You want all your data. You need planning and development by people who can take care of everything. People with many years of experience managing complexity. People who embrace and thrive working on projects of a complex nature. ...and people who are mindful of the business side, too.&lt;/p&gt;
+
+&lt;p&gt;If you have an idea of your business goals, but don't have a clear way to obtain them, we can help create the best path to success with you.&lt;/p&gt;&lt;/div&gt;
+      
+
+	&lt;a class="btn btn-color-1" href="https://www.spatialpath.com/" role="button" target="_blank"&gt;Visit sponsor website&lt;/a&gt;
+
+
+</description>
+  <pubDate>Mon, 26 Oct 2020 05:32:36 +0000</pubDate>
+    <dc:creator>admin</dc:creator>
+    <guid isPermaLink="false">53 at https://2020.drupalcamp.nyc</guid>
+    </item>
+<item>
+  <title>Evolving Web</title>
+  <link>https://2020.drupalcamp.nyc/sponsor/evolving-web</link>
+  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Evolving Web&lt;/span&gt;
+&lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;a title="View user profile." href="https://2020.drupalcamp.nyc/user/1" lang="" about="https://2020.drupalcamp.nyc/user/1" typeof="schema:Person" property="schema:name" datatype="" class="username" xml:lang=""&gt;admin&lt;/a&gt;&lt;/span&gt;
+&lt;span class="field field--name-created field--type-created field--label-hidden"&gt;Mon, 10/26/2020 - 01:29&lt;/span&gt;
+
+            &lt;div class="field field--name-field-sponsor-logo field--type-image field--label-hidden field__item"&gt;  &lt;img src="https://2020.drupalcamp.nyc/sites/default/files/2020-10/evolving-web.svg" alt="Evolving Web logo" typeof="foaf:Image" /&gt;&lt;/div&gt;
+      
+
+	&lt;h5 class="sponsor-level"&gt;Training
+		sponsor&lt;/h5&gt;
+
+            &lt;div class="text-formatted field field--name-field-sponsor-description field--type-text-long field--label-hidden field__item"&gt;&lt;p&gt;Evolving Web is a full-service web agency based in Montreal. We specialize in designing, developing, and maintaining high quality, large-scale websites and applications with Drupal. Our clients include universities, nonprofits, and government organizations.&lt;/p&gt;&lt;/div&gt;
+      
+
+	&lt;a class="btn btn-color-1" href="https://evolvingweb.ca/" role="button" target="_blank"&gt;Visit sponsor website&lt;/a&gt;
+
+
+</description>
+  <pubDate>Mon, 26 Oct 2020 05:29:51 +0000</pubDate>
+    <dc:creator>admin</dc:creator>
+    <guid isPermaLink="false">52 at https://2020.drupalcamp.nyc</guid>
+    </item>
+<item>
+  <title>Oliver Davies</title>
+  <link>https://2020.drupalcamp.nyc/sponsor/oliver-davies</link>
+  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Oliver Davies&lt;/span&gt;
+&lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;a title="View user profile." href="https://2020.drupalcamp.nyc/user/1" lang="" about="https://2020.drupalcamp.nyc/user/1" typeof="schema:Person" property="schema:name" datatype="" class="username" xml:lang=""&gt;admin&lt;/a&gt;&lt;/span&gt;
+&lt;span class="field field--name-created field--type-created field--label-hidden"&gt;Mon, 10/26/2020 - 01:24&lt;/span&gt;
+
+            &lt;div class="field field--name-field-sponsor-logo field--type-image field--label-hidden field__item"&gt;  &lt;img src="https://2020.drupalcamp.nyc/sites/default/files/2020-10/oliver_davies.svg" alt="Oliver Davies logo" typeof="foaf:Image" /&gt;&lt;/div&gt;
+      
+
+	&lt;h5 class="sponsor-level"&gt;Training
+		sponsor&lt;/h5&gt;
+
+            &lt;div class="text-formatted field field--name-field-sponsor-description field--type-text-long field--label-hidden field__item"&gt;&lt;p&gt;Oliver Davies (opdavies) is a full-stack Developer and Systems Administrator based in South Wales, UK. He is a PHP specialist, long-time Drupal community member, and Drupal 8 Grand Master, who splits his time between his day job as a Senior Software Engineer for Inviqa, working for freelance clients, writing books and courses, and contributing to and maintaining open source projects.&lt;/p&gt;
+
+&lt;p&gt;Oliver is an advocate of automated testing and test driven development (TDD), and has introduced it to several development teams and mentored Developers through the process of writing their first tests.&lt;/p&gt;
+
+&lt;p&gt;He has presented a talk and workshop on testing and TDD with Drupal at various conferences and meetups, and is currently writing a book on the subject called "TDD - Test Driven Drupal".&lt;/p&gt;&lt;/div&gt;
+      
+
+	&lt;a class="btn btn-color-1" href="https://www.oliverdavies.uk" role="button" target="_blank"&gt;Visit sponsor website&lt;/a&gt;
+
+
+</description>
+  <pubDate>Mon, 26 Oct 2020 05:24:24 +0000</pubDate>
+    <dc:creator>admin</dc:creator>
+    <guid isPermaLink="false">51 at https://2020.drupalcamp.nyc</guid>
+    </item>
+<item>
+  <title>Mediacurrent Training</title>
+  <link>https://2020.drupalcamp.nyc/sponsor/mediacurrent-training</link>
+  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Mediacurrent Training&lt;/span&gt;
+&lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;a title="View user profile." href="https://2020.drupalcamp.nyc/user/1" lang="" about="https://2020.drupalcamp.nyc/user/1" typeof="schema:Person" property="schema:name" datatype="" class="username" xml:lang=""&gt;admin&lt;/a&gt;&lt;/span&gt;
+&lt;span class="field field--name-created field--type-created field--label-hidden"&gt;Mon, 10/26/2020 - 01:20&lt;/span&gt;
+
+            &lt;div class="field field--name-field-sponsor-logo field--type-image field--label-hidden field__item"&gt;  &lt;img src="https://2020.drupalcamp.nyc/sites/default/files/2020-10/mediacurrent-training.svg" alt="Mediacurrent Training logo" typeof="foaf:Image" /&gt;&lt;/div&gt;
+      
+
+	&lt;h5 class="sponsor-level"&gt;Training
+		sponsor&lt;/h5&gt;
+
+            &lt;div class="text-formatted field field--name-field-sponsor-description field--type-text-long field--label-hidden field__item"&gt;&lt;p&gt;We are your single source digital partner for development, design, strategy, and training. We also offer ongoing Drupal support options. The quality of our work allows organizations to grow while saving significant money over time. Mediacurrent is consistently ranked among the top-ten Drupal contributors worldwide because of commitment to giving back and the community. Our team is passionate about contributing to Open Source in an effort to pay it forward to the software we love.&lt;/p&gt;
+
+&lt;p&gt;As a training partner, Mediacurrent conducts in-person and online training workshops for the community, clients, and our own team. We build custom training curriculums for small and large teams and our unique approach to training is what sets us apart. In addition, our team consistently shares their skills and knowledge through blog posts, case studies, and video tutorials.&lt;/p&gt;&lt;/div&gt;
+      
+
+	&lt;a class="btn btn-color-1" href="https://www.mediacurrent.com/training/" role="button" target="_blank"&gt;Visit sponsor website&lt;/a&gt;
+
+
+</description>
+  <pubDate>Mon, 26 Oct 2020 05:20:25 +0000</pubDate>
+    <dc:creator>admin</dc:creator>
+    <guid isPermaLink="false">50 at https://2020.drupalcamp.nyc</guid>
+    </item>
+<item>
+  <title>UnderstandDrupal.com</title>
+  <link>https://2020.drupalcamp.nyc/sponsor/understanddrupalcom</link>
+  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;UnderstandDrupal.com&lt;/span&gt;
+&lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;a title="View user profile." href="https://2020.drupalcamp.nyc/user/1" lang="" about="https://2020.drupalcamp.nyc/user/1" typeof="schema:Person" property="schema:name" datatype="" class="username" xml:lang=""&gt;admin&lt;/a&gt;&lt;/span&gt;
+&lt;span class="field field--name-created field--type-created field--label-hidden"&gt;Mon, 10/26/2020 - 01:12&lt;/span&gt;
+
+            &lt;div class="field field--name-field-sponsor-logo field--type-image field--label-hidden field__item"&gt;  &lt;img src="https://2020.drupalcamp.nyc/sites/default/files/2020-10/UnderstandDrupal_400x414.png" width="400" height="414" alt="UnderstandDrupal.com logo" typeof="foaf:Image" /&gt;&lt;/div&gt;
+      
+
+	&lt;h5 class="sponsor-level"&gt;Training
+		sponsor&lt;/h5&gt;
+
+            &lt;div class="text-formatted field field--name-field-sponsor-description field--type-text-long field--label-hidden field__item"&gt;&lt;p&gt;UnderstandDrupal.com produces articles, books, and video courses about Drupal and ReactJS in English, Spanish, and French. We also provide on-demand, remote training.&lt;/p&gt;
+
+&lt;p&gt;Checkout out our latest course on Drupal migrations. It distills years of experience into a series of video tutorials to help you leverage the Migrate API effectively! You will learn different migration concepts and how they work together through practical examples. Do you need to migrate data from CSV and JSON files? What about migrating into paragraphs or media entities? Are you having troubles updating previously migrated data? All of that and much more is covered. Along the way, we will give you tips for writing and executing migrations. We also explain how to debug migration when they fail. No previous migration experience is required! And no need to be a developer either. This course was prepared with site builders in mind. That being said, tips and tricks for developers are sprinkled all over the place.&lt;/p&gt;&lt;/div&gt;
+      
+
+	&lt;a class="btn btn-color-1" href="https://understanddrupal.com/migrations" role="button" target="_blank"&gt;Visit sponsor website&lt;/a&gt;
+
+
+</description>
+  <pubDate>Mon, 26 Oct 2020 05:12:13 +0000</pubDate>
+    <dc:creator>admin</dc:creator>
+    <guid isPermaLink="false">49 at https://2020.drupalcamp.nyc</guid>
+    </item>
+<item>
+  <title>Agaric</title>
+  <link>https://2020.drupalcamp.nyc/sponsor/agaric</link>
+  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Agaric&lt;/span&gt;
+&lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;a title="View user profile." href="https://2020.drupalcamp.nyc/user/1" lang="" about="https://2020.drupalcamp.nyc/user/1" typeof="schema:Person" property="schema:name" datatype="" class="username" xml:lang=""&gt;admin&lt;/a&gt;&lt;/span&gt;
+&lt;span class="field field--name-created field--type-created field--label-hidden"&gt;Mon, 10/26/2020 - 01:10&lt;/span&gt;
+
+            &lt;div class="field field--name-field-sponsor-logo field--type-image field--label-hidden field__item"&gt;  &lt;img src="https://2020.drupalcamp.nyc/sites/default/files/2020-10/agaric.svg" alt="Agaric logo" typeof="foaf:Image" /&gt;&lt;/div&gt;
+      
+
+	&lt;h5 class="sponsor-level"&gt;Training
+		sponsor&lt;/h5&gt;
+
+            &lt;div class="text-formatted field field--name-field-sponsor-description field--type-text-long field--label-hidden field__item"&gt;&lt;p&gt;Agaric Tech Cooperative strengthens the open web for cause-driven groups by building free software to meet their needs. We specialize in designing, developing and maintaining websites and web apps using Drupal and other free/open-source tools. We have been working with and contributing to Drupal for over 12 years, including contributions to Drupal core and maintaining over a dozen contributed modules.&lt;/p&gt;
+
+&lt;p&gt;Our expertise includes other technologies like JavaScript/React development, Python/Django implementations, infrastructure and server configurations, and more.&lt;/p&gt;&lt;/div&gt;
+      
+
+	&lt;a class="btn btn-color-1" href="https://agaric.coop/" role="button" target="_blank"&gt;Visit sponsor website&lt;/a&gt;
+
+
+</description>
+  <pubDate>Mon, 26 Oct 2020 05:10:16 +0000</pubDate>
+    <dc:creator>admin</dc:creator>
+    <guid isPermaLink="false">48 at https://2020.drupalcamp.nyc</guid>
+    </item>
+<item>
+  <title>Pantheon</title>
+  <link>https://2020.drupalcamp.nyc/sponsor/pantheon</link>
+  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Pantheon&lt;/span&gt;
+&lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;a title="View user profile." href="https://2020.drupalcamp.nyc/user/3" lang="" about="https://2020.drupalcamp.nyc/user/3" typeof="schema:Person" property="schema:name" datatype="" class="username" xml:lang=""&gt;jdleonard&lt;/a&gt;&lt;/span&gt;
+&lt;span class="field field--name-created field--type-created field--label-hidden"&gt;Tue, 10/13/2020 - 22:59&lt;/span&gt;
+
+            &lt;div class="field field--name-field-sponsor-logo field--type-image field--label-hidden field__item"&gt;  &lt;img src="https://2020.drupalcamp.nyc/sites/default/files/2020-10/pantheon.svg" alt="Pantheon logo" typeof="foaf:Image" /&gt;&lt;/div&gt;
+      
+
+	&lt;h5 class="sponsor-level"&gt;New Amsterdam (Gold)
+		sponsor&lt;/h5&gt;
+
+            &lt;div class="text-formatted field field--name-field-sponsor-description field--type-text-long field--label-hidden field__item"&gt;&lt;p&gt;Pantheon’s WebOps (Website Operations) Platform empowers your marketing and development teams to take control of your websites. Achieve confidence and agility with the tools you need to deliver digital marketing results.&lt;/p&gt;
+
+&lt;p&gt;With a Serverless CMS approach to WordPress and Drupal, multiple contributors can create and publish engaging, high speed, always-on web content—without IT overhead. We give you limitless site scalability and enable a high-quality customer experience across desktop and mobile. Access web operations experts 24x7 to ensure you’re never blocked by an unanswered question. Support is there when you need it.&lt;/p&gt;
+
+&lt;p&gt;Using Structured Agile Workflows, drive cross-functional collaboration and increase productivity by allowing your team to change your website in any way needed, without ever breaking it. Automate routine tasks and review changes before they deploy—adopting a rapid release cadence to respond to market needs and improve your most valuable digital asset.&lt;/p&gt;
+
+&lt;p&gt;Whether you’re optimizing a single website, or wrangling hundreds across regions, brands, and channels, the overhead of keeping everything up-to-date and secure can be daunting. Website Portfolio Management standardizes operations and gives you a handle on governance, freeing your teams from routine tasks, so they can focus on innovation and your digital roadmap.&lt;/p&gt;&lt;/div&gt;
+      
+
+	&lt;a class="btn btn-color-1" href="https://pantheon.io/" role="button" target="_blank"&gt;Visit sponsor website&lt;/a&gt;
+
+
+</description>
+  <pubDate>Wed, 14 Oct 2020 02:59:27 +0000</pubDate>
+    <dc:creator>jdleonard</dc:creator>
+    <guid isPermaLink="false">32 at https://2020.drupalcamp.nyc</guid>
+    </item>
+<item>
+  <title>FFW</title>
+  <link>https://2020.drupalcamp.nyc/sponsor/ffw</link>
+  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;FFW&lt;/span&gt;
+&lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;a title="View user profile." href="https://2020.drupalcamp.nyc/user/3" lang="" about="https://2020.drupalcamp.nyc/user/3" typeof="schema:Person" property="schema:name" datatype="" class="username" xml:lang=""&gt;jdleonard&lt;/a&gt;&lt;/span&gt;
+&lt;span class="field field--name-created field--type-created field--label-hidden"&gt;Tue, 10/13/2020 - 22:56&lt;/span&gt;
+
+            &lt;div class="field field--name-field-sponsor-logo field--type-image field--label-hidden field__item"&gt;  &lt;img src="https://2020.drupalcamp.nyc/sites/default/files/2020-10/ffw.svg" alt="FFW logo" typeof="foaf:Image" /&gt;&lt;/div&gt;
+      
+
+	&lt;h5 class="sponsor-level"&gt;New Amsterdam (Gold)
+		sponsor&lt;/h5&gt;
+
+            &lt;div class="text-formatted field field--name-field-sponsor-description field--type-text-long field--label-hidden field__item"&gt;&lt;p&gt;FFW is a global digital agency that partners with multinational brands to define, build, &amp; optimize Digital Experience Platforms (DXP) that drive results, with a focus on digital experience operations in terms of Experience, Technology &amp; Data.&lt;/p&gt;
+
+&lt;p&gt;Success to us isn’t launching a project. It’s creating exceptional experiences around web as a foundational digital channel for our clients and their customers throughout their entire journeys.&lt;/p&gt;
+
+&lt;p&gt;More importantly, we judge our success by how well our clients create and scale their CX through these channels.&lt;/p&gt;&lt;/div&gt;
+      
+
+	&lt;a class="btn btn-color-1" href="https://ffwagency.com/" role="button" target="_blank"&gt;Visit sponsor website&lt;/a&gt;
+
+
+</description>
+  <pubDate>Wed, 14 Oct 2020 02:56:17 +0000</pubDate>
+    <dc:creator>jdleonard</dc:creator>
+    <guid isPermaLink="false">31 at https://2020.drupalcamp.nyc</guid>
+    </item>
+<item>
+  <title>Kalamuna</title>
+  <link>https://2020.drupalcamp.nyc/sponsor/kalamuna</link>
+  <description>&lt;span class="field field--name-title field--type-string field--label-hidden"&gt;Kalamuna&lt;/span&gt;
+&lt;span class="field field--name-uid field--type-entity-reference field--label-hidden"&gt;&lt;a title="View user profile." href="https://2020.drupalcamp.nyc/user/3" lang="" about="https://2020.drupalcamp.nyc/user/3" typeof="schema:Person" property="schema:name" datatype="" class="username" xml:lang=""&gt;jdleonard&lt;/a&gt;&lt;/span&gt;
+&lt;span class="field field--name-created field--type-created field--label-hidden"&gt;Mon, 09/14/2020 - 16:37&lt;/span&gt;
+
+            &lt;div class="field field--name-field-sponsor-logo field--type-image field--label-hidden field__item"&gt;  &lt;img src="https://2020.drupalcamp.nyc/sites/default/files/2020-09/Kalamuna.svg" alt="Kalamuna logo" typeof="foaf:Image" /&gt;&lt;/div&gt;
+      
+
+	&lt;h5 class="sponsor-level"&gt;Industrialist (Community)
+		sponsor&lt;/h5&gt;
+
+            &lt;div class="text-formatted field field--name-field-sponsor-description field--type-text-long field--label-hidden field__item"&gt;&lt;p&gt;We craft and implement solutions to help institutions solve complex challenges and tell better stories that further their missions.&lt;/p&gt;&lt;/div&gt;
+      
+
+	&lt;a class="btn btn-color-1" href="https://www.kalamuna.com/" role="button" target="_blank"&gt;Visit sponsor website&lt;/a&gt;
+
+
+</description>
+  <pubDate>Mon, 14 Sep 2020 20:37:13 +0000</pubDate>
+    <dc:creator>jdleonard</dc:creator>
+    <guid isPermaLink="false">24 at https://2020.drupalcamp.nyc</guid>
+    </item>
+
+  </channel>
+</rss>

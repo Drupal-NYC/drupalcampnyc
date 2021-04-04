@@ -1,0 +1,152 @@
+{
+    "uuid": [
+        {
+            "value": "fee1e532-5bd6-4cc4-b5b8-0972c06850b1"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "page",
+            "target_type": "node_type",
+            "target_uuid": "942f533c-e329-4b51-a8fc-1a43795a48ba"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2021-01-19T06:52:55+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "revision_uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "61ce98e6-826b-46fb-bbc9-abd8a7461137"
+        }
+    ],
+    "revision_log": [],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "61ce98e6-826b-46fb-bbc9-abd8a7461137"
+        }
+    ],
+    "title": [
+        {
+            "value": "About"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-15T03:48:19+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2021-01-19T06:52:55+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "moderation_state": [
+        {
+            "value": "published"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/about",
+            "langcode": "en",
+            "pathauto": 0
+        }
+    ],
+    "publish_on": [],
+    "unpublish_on": [],
+    "field_content": [
+        {
+            "target_type": "paragraph",
+            "target_uuid": "a9e2ccdb-45e0-4cd9-b36b-728f10c32f4d"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "bcd21cb1-1e36-45d4-bf69-433c9c8af665"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "edc4bb15-bcb6-4a49-917e-36406f1c0c8d"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "743be87b-0d9b-4bc9-b046-7286c1210d43"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "39059d5b-9cd3-4770-b423-61eb59b64291"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "bb2d6ade-3922-406b-8f38-abe60b1a019f"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "67906ffa-0573-457e-bfc8-7fd7e59371ac"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "702432b0-b26e-473e-88d0-48b9d1d59f2a"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "4a3990b6-c352-4d58-bd76-c98877e6f3f9"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "cf87d519-3ae7-4a97-bed2-5bb9e0feee02"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "d36a2718-893a-4c73-b9f7-b8350370abd7"
+        }
+    ],
+    "field_header": [
+        {
+            "target_type": "paragraph",
+            "target_uuid": "c1106655-840a-4318-90b3-ec1cb46a5ce5"
+        }
+    ],
+    "field_sponsors": [],
+    "field_summary_plain": [
+        {
+            "value": "Connect with hundreds of members of the Drupal community from the tri-state area and beyond to collaborate, share knowledge, make new friends, find new business opportunities, and help grow the Drupal project."
+        }
+    ]
+}

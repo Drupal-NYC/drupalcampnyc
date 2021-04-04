@@ -1,0 +1,147 @@
+{
+    "uuid": [
+        {
+            "value": "4f74f835-e870-4e09-bb97-7dd7935c39aa"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "session",
+            "target_type": "node_type",
+            "target_uuid": "477ef8ff-1e7b-42da-9e07-67abfdce9a09"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-10-27T19:18:08+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "revision_uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "4d60223f-8a34-4e89-b13e-ad5d907db918"
+        }
+    ],
+    "revision_log": [],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "ad6ab9b7-45e0-47e5-8d3f-90d7ebdf4b46"
+        }
+    ],
+    "title": [
+        {
+            "value": "Front-End Web Development Foundations - Community Edition"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-10-26T03:56:30+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-10-27T19:18:08+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "moderation_state": [
+        {
+            "value": "published"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/training\/front-end-web-development-foundations-community-edition",
+            "langcode": "en",
+            "pathauto": 0
+        }
+    ],
+    "publish_on": [],
+    "unpublish_on": [],
+    "field_description": [
+        {
+            "value": "<p>Learn the front-end development skills to build modern, responsive, and large-scale websites with HTML5, CSS3, and JavaScript ES6. &nbsp;Front-end development is a critical aspect of software development. This is why the demand for skilled front-end developers keeps growing.<\/p>\r\n\r\n<p>Join us to learn the Front-End skills and principles that can be applied to any platform you work with or any project size. This course also offers students a wide range of guidance, tips, and practices to build or enhance your web projects.<\/p>\r\n\r\n<h2>Topics covered include:<\/h2>\r\n\r\n<ul>\r\n\t<li>HTML5<\/li>\r\n\t<li>CSS3<\/li>\r\n\t<li>Practical JavaScript ES6<\/li>\r\n\t<li>Responsive Design including Mobile First<\/li>\r\n\t<li>Accessibility best practices<\/li>\r\n\t<li>Performance practices<\/li>\r\n\t<li>Modern front-end workflows<\/li>\r\n\t<li>And more!<\/li>\r\n<\/ul>\r\n\r\n<h2>Learning Objectives<\/h2>\r\n\r\n<p>Fundamentals of web development from a front-end perspective<br \/>\r\nSetting up and organizing a new project<br \/>\r\nTools used when developing modern web applications including tools for improving your workflow by automating repetitive tasks<br \/>\r\nHands-on experience with HTML, CSS, and some JavaScript<br \/>\r\nBuilding flexible and responsive websites<br \/>\r\nHow to identify and troubleshoot code bugs<\/p>\r\n\r\n<h2>Who This Course is For<\/h2>\r\n\r\n<p>Front and Back-End developers looking to learn or level up their Front-End skills.<\/p>\r\n\r\n<h2>What You Can Expect From This Course<\/h2>\r\n\r\n<p>Best practices and standards are at the core of our teaching; you will be exposed to the latest trends, processes, and tools used on today's web development to build responsive, accessible web interfaces. At the end of the course, you will understand how to write semantic and accessible code that is performant and easy to maintain long term.<\/p>\r\n\r\n<h3>Prior to training<\/h3>\r\n\r\n<p>Our team of trainers put a lot of effort into making sure your training experience is successful before you step foot in the door (or in these days of distance learning, before you log into the training platform). We provide guidance and support to ensure you are ready for training with your local environment and answer any questions you may have. In addition to providing a detailed set of instructions for setting up your local environment, we hold a virtual call, prior to the training day, to assist anyone who needs help with their local setup.<\/p>\r\n\r\n<h3>During training<\/h3>\r\n\r\n<p>You will be able to ask live questions and discuss issues related to the topic at hand. If necessary, you will be able to share your screen to help you debug your issues so other students can benefit from this opportunity to learn something new.<\/p>\r\n\r\n<h3>After training<\/h3>\r\n\r\n<p>In addition to providing you with world-class training material that can be accessed at any time, even after training has passed, we share the recordings of each lesson. This is a great way to reference the training at your own pace afterward.<\/p>\r\n\r\n<h2>Course Requirements<\/h2>\r\n\r\n<ul>\r\n\t<li>A code editor<\/li>\r\n\t<li>Basic knowledge of writing simple HTML tags<\/li>\r\n\t<li>Basic understanding of how to write CSS<\/li>\r\n\t<li>A computer with the latest version of NodeJS installed<\/li>\r\n\t<li>A GitHub account<\/li>\r\n\t<li>Familiarity with using the command line is helpful<\/li>\r\n\t<li>JavaScript knowledge is helpful but not required<br \/>\r\n\t&nbsp;<\/li>\r\n<\/ul>\r\n",
+            "format": "basic_html"
+        }
+    ],
+    "field_ends_at": [
+        {
+            "value": "2020-11-12T17:30:00-05:00"
+        }
+    ],
+    "field_featured": [
+        {
+            "value": false
+        }
+    ],
+    "field_room": [],
+    "field_session_level": [
+        {
+            "value": "intermediate"
+        }
+    ],
+    "field_session_sponsor": [
+        {
+            "target_type": "node",
+            "target_uuid": "28ea7b0d-fa54-4bd6-b492-a6a9d712ee55"
+        }
+    ],
+    "field_slides": [],
+    "field_slides_external": [],
+    "field_speakers": [
+        {
+            "target_type": "user",
+            "target_uuid": "ad6ab9b7-45e0-47e5-8d3f-90d7ebdf4b46"
+        }
+    ],
+    "field_start": [
+        {
+            "value": "2020-11-12T09:30:00-05:00"
+        }
+    ],
+    "field_summary": [
+        {
+            "value": "In this hands-on virtual course, you will learn the latest trends and practices that will help you become a skilled front-end developer capable of working on any project size.",
+            "format": "plain_text"
+        }
+    ],
+    "field_type": [
+        {
+            "value": "training"
+        }
+    ],
+    "field_video": []
+}

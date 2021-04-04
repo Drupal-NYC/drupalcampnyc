@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "f26f3806-ee7f-4706-88ab-261948572624"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/webform\/template_user_profile\/submissions"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/form\/template-user-profile\/submissions"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

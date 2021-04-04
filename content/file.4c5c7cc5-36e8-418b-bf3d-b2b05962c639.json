@@ -1,0 +1,55 @@
+{
+    "uuid": [
+        {
+            "value": "4c5c7cc5-36e8-418b-bf3d-b2b05962c639"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "61ce98e6-826b-46fb-bbc9-abd8a7461137"
+        }
+    ],
+    "filename": [
+        {
+            "value": "Reactor-logo-Dark.svg"
+        }
+    ],
+    "uri": [
+        {
+            "value": "public:\/\/icon\/Reactor-logo-Dark.svg"
+        }
+    ],
+    "filemime": [
+        {
+            "value": "image\/svg+xml"
+        }
+    ],
+    "filesize": [
+        {
+            "value": 14598
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-15T05:19:38+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-05-15T05:19:53+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ]
+}

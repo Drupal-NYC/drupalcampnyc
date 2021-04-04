@@ -1,0 +1,51 @@
+{
+    "uuid": [
+        {
+            "value": "535b5571-5347-4fda-9e79-a0010ba1b60d"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-09-08T18:24:08+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "field_body": [
+        {
+            "value": "<p>Thanks&nbsp;for letting us know which DrupalNYC emails you'd like to receive. If you selected \"DrupalCampNYC News\", then you'll hear from us soon with the latest on DrupalCampNYC 2020!<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

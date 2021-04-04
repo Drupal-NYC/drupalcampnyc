@@ -1,0 +1,47 @@
+{
+    "uuid": [
+        {
+            "value": "7919d90e-f8c2-4b40-8892-c8ed8cc43bd2"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-22T23:14:39+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [],
+    "field_body": [
+        {
+            "value": "<p>We are extremely grateful to <a href=\"https:\/\/developer.microsoft.com\/en-us\/reactor\/\">Microsoft Reactor<\/a> for providing us with the well appointed and conveniently located Microsoft Conference Center in Times Square.<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

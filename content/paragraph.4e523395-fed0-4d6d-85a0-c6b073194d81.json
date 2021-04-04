@@ -1,0 +1,51 @@
+{
+    "uuid": [
+        {
+            "value": "4e523395-fed0-4d6d-85a0-c6b073194d81"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-15T03:56:20+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "field_body": [
+        {
+            "value": "<ul>\r\n\t<li>People new to Drupal<\/li>\r\n\t<li>Web developers looking to up their game<\/li>\r\n\t<li>Graphic artists and designers<\/li>\r\n\t<li>Project managers<\/li>\r\n\t<li>Site owners<\/li>\r\n\t<li>Content managers<\/li>\r\n\t<li>Marketing professionals<\/li>\r\n\t<li>Those seeking a powerful open-source CMS<\/li>\r\n<\/ul>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

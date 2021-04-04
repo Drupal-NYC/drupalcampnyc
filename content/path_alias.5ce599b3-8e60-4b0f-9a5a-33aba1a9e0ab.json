@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "5ce599b3-8e60-4b0f-9a5a-33aba1a9e0ab"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "und"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/webform\/template_session_evaluation\/drafts"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/form\/template-session-evaluation\/drafts"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "ff9d659f-bb86-4969-9152-702c6ad69105"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "und"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/webform\/template_issue\/drafts"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/form\/template-issue\/drafts"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

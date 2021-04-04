@@ -1,0 +1,120 @@
+{
+    "uuid": [
+        {
+            "value": "69fa9caf-7532-4b80-b182-7e6c5423ecf0"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "sponsor",
+            "target_type": "node_type",
+            "target_uuid": "4be1da86-de47-4f5d-9938-a52b9ea555a8"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-05-15T05:20:46+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "revision_uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "61ce98e6-826b-46fb-bbc9-abd8a7461137"
+        }
+    ],
+    "revision_log": [],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "61ce98e6-826b-46fb-bbc9-abd8a7461137"
+        }
+    ],
+    "title": [
+        {
+            "value": "Microsoft Reactor"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-15T05:20:27+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-09-14T20:41:38+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": true
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "moderation_state": [],
+    "path": [
+        {
+            "alias": "\/sponsor\/microsoft-reactor",
+            "langcode": "en",
+            "pathauto": 0
+        }
+    ],
+    "publish_on": [],
+    "unpublish_on": [],
+    "field_level": [
+        {
+            "value": "venue"
+        }
+    ],
+    "field_module_name": [],
+    "field_sponsor_description": [],
+    "field_sponsor_logo": [
+        {
+            "alt": "Microsoft Reactor",
+            "title": "",
+            "width": 488,
+            "height": 169,
+            "target_type": "file",
+            "target_uuid": "d2935129-7d60-4c90-ad9b-d7c9216508f2"
+        }
+    ],
+    "field_sponsor_priority": [
+        {
+            "value": 699
+        }
+    ],
+    "field_track_sponsorship": [],
+    "field_website": [
+        {
+            "uri": "https:\/\/developer.microsoft.com\/en-us\/reactor\/",
+            "title": "",
+            "options": []
+        }
+    ]
+}

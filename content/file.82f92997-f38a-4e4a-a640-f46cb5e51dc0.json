@@ -1,0 +1,55 @@
+{
+    "uuid": [
+        {
+            "value": "82f92997-f38a-4e4a-a640-f46cb5e51dc0"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "61ce98e6-826b-46fb-bbc9-abd8a7461137"
+        }
+    ],
+    "filename": [
+        {
+            "value": "IDNYC.svg"
+        }
+    ],
+    "uri": [
+        {
+            "value": "public:\/\/icon\/IDNYC.svg"
+        }
+    ],
+    "filemime": [
+        {
+            "value": "image\/svg+xml"
+        }
+    ],
+    "filesize": [
+        {
+            "value": 17837
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-15T03:52:47+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-05-15T03:53:23+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ]
+}

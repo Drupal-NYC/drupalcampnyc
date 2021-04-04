@@ -1,0 +1,136 @@
+{
+    "uuid": [
+        {
+            "value": "633d7f82-1632-4d4f-8c28-fa951d6c2eab"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "page",
+            "target_type": "node_type",
+            "target_uuid": "942f533c-e329-4b51-a8fc-1a43795a48ba"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-08-14T15:03:01+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "revision_uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "61ce98e6-826b-46fb-bbc9-abd8a7461137"
+        }
+    ],
+    "revision_log": [],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "61ce98e6-826b-46fb-bbc9-abd8a7461137"
+        }
+    ],
+    "title": [
+        {
+            "value": "How to Sponsor"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-15T04:56:11+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-08-14T15:03:01+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "moderation_state": [
+        {
+            "value": "published"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/how-to-sponsor",
+            "langcode": "en",
+            "pathauto": 0
+        }
+    ],
+    "publish_on": [],
+    "unpublish_on": [],
+    "field_content": [
+        {
+            "target_type": "paragraph",
+            "target_uuid": "1abbda13-b629-4fbc-9ae6-40fed713777d"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "4cde27a4-519a-40fe-aeda-5f1083f23e6b"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "34f6a913-f1da-44ea-8b79-73ccd73a1866"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "8fb00025-b552-4bb4-8e0f-7f6e70119303"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "0478bed6-7c65-4599-a653-9abb1c6dd166"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "6d790a01-3794-4288-865b-3f69c0ea9bb6"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "e3a6bce2-3925-45e5-a6f7-745961c470ca"
+        }
+    ],
+    "field_header": [
+        {
+            "target_type": "paragraph",
+            "target_uuid": "f9aa76b3-a60c-48ce-a90c-a6d567d2b519"
+        }
+    ],
+    "field_sponsors": [],
+    "field_summary_plain": [
+        {
+            "value": "Why to sponsor, sponsorship opportunities, sponsor terms, and contact information."
+        }
+    ]
+}

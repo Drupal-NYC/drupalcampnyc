@@ -1,0 +1,52 @@
+{
+    "uuid": [
+        {
+            "value": "aeddbaa9-9b10-4d58-be58-cbc369dce785"
+        }
+    ],
+    "hash": [
+        {
+            "value": "L__747jGPk6JUGYTtpJbMouFrcnCE49x24scGQ93QiU"
+        }
+    ],
+    "type": [
+        {
+            "value": "redirect"
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "b4e3a33f-17e1-4a0e-8ad3-36abaf6eebec"
+        }
+    ],
+    "redirect_source": [
+        {
+            "path": "session\/how-united-federation-teachers-migrated-drupal-6-drupal-8",
+            "query": []
+        }
+    ],
+    "redirect_redirect": [
+        {
+            "uri": "internal:\/node\/63",
+            "title": null,
+            "options": []
+        }
+    ],
+    "language": [
+        {
+            "value": "en"
+        }
+    ],
+    "status_code": [
+        {
+            "value": 301
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-11-12T17:20:25+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ]
+}

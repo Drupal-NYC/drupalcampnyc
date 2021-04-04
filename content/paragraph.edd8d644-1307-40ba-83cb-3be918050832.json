@@ -1,0 +1,94 @@
+{
+    "uuid": [
+        {
+            "value": "edd8d644-1307-40ba-83cb-3be918050832"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "deck_1_column",
+            "target_type": "paragraphs_type",
+            "target_uuid": "73dfd6ef-8c06-4dcb-8b87-b8ae4ec1a001"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-20T13:47:50+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "field_layout_full_width": [
+        {
+            "value": false
+        }
+    ],
+    "field_primary_column": [
+        {
+            "target_type": "paragraph",
+            "target_uuid": "a8cf37aa-18ad-41d0-a685-fe224a79600f"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "b24cba0a-c9d0-40dc-be9e-0d969b00a50c"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "0e0d213c-5012-418b-8cbf-8b47e0e9d1c3"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "7618536a-202f-4cec-834e-1d132b710205"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "82cef9db-e9fe-4f1c-ae33-fac1b2514848"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "c95e3154-9212-4e17-aeb6-24a4d263eaea"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "cb53b4a2-fdbc-48bd-91ec-542dc0eb363f"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "128b3299-4971-4e1c-962b-0b558cd0ab15"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "1ea2bd3a-9b40-4404-9c07-ad85067309d9"
+        }
+    ],
+    "field_title": [
+        {
+            "value": "Confirmed trainings",
+            "format": "basic_html"
+        }
+    ]
+}

@@ -1,0 +1,55 @@
+{
+    "uuid": [
+        {
+            "value": "f4031d65-8eba-47ad-b581-5497ae5686e5"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "3156ca27-62c1-43e1-8d70-570425c60e1f"
+        }
+    ],
+    "filename": [
+        {
+            "value": "shawn-std.jpg"
+        }
+    ],
+    "uri": [
+        {
+            "value": "public:\/\/pictures\/2020-05\/shawn-std.jpg"
+        }
+    ],
+    "filemime": [
+        {
+            "value": "image\/jpeg"
+        }
+    ],
+    "filesize": [
+        {
+            "value": 16613
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-21T20:55:14+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-05-21T20:55:35+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ]
+}

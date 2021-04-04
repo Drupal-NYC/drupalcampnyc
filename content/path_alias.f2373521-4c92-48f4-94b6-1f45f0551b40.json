@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "f2373521-4c92-48f4-94b6-1f45f0551b40"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/node\/6f7bdf8d-f0cb-448a-919f-d3074beed558"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/session\/accessibility-angles-panel"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

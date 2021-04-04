@@ -1,0 +1,52 @@
+{
+    "uuid": [
+        {
+            "value": "b6501197-d57d-4fd3-8774-cd40fa02d4ed"
+        }
+    ],
+    "hash": [
+        {
+            "value": "IdPpQkleTbj83Zz88TNo001xrHCy1t-VfQsGyc5kN10"
+        }
+    ],
+    "type": [
+        {
+            "value": "redirect"
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "61ce98e6-826b-46fb-bbc9-abd8a7461137"
+        }
+    ],
+    "redirect_source": [
+        {
+            "path": "venue",
+            "query": []
+        }
+    ],
+    "redirect_redirect": [
+        {
+            "uri": "internal:\/",
+            "title": "",
+            "options": []
+        }
+    ],
+    "language": [
+        {
+            "value": "und"
+        }
+    ],
+    "status_code": [
+        {
+            "value": 301
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-08-14T01:29:48+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ]
+}

@@ -1,0 +1,55 @@
+{
+    "uuid": [
+        {
+            "value": "8c208d28-b5fe-4161-9fcb-98c486ce26db"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "b4e3a33f-17e1-4a0e-8ad3-36abaf6eebec"
+        }
+    ],
+    "filename": [
+        {
+            "value": "evolving-web.svg"
+        }
+    ],
+    "uri": [
+        {
+            "value": "public:\/\/2020-10\/evolving-web.svg"
+        }
+    ],
+    "filemime": [
+        {
+            "value": "image\/svg+xml"
+        }
+    ],
+    "filesize": [
+        {
+            "value": 3719
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-10-26T05:31:15+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-10-26T05:31:43+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ]
+}

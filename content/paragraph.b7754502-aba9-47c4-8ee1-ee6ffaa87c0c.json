@@ -1,0 +1,51 @@
+{
+    "uuid": [
+        {
+            "value": "b7754502-aba9-47c4-8ee1-ee6ffaa87c0c"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-11-11T21:46:57+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "field_body": [
+        {
+            "value": "<p>&nbsp;<\/p>\r\n\r\n<h3><a data-entity-substitution=\"canonical\" data-entity-type=\"node\" data-entity-uuid=\"7d113274-9e98-477a-942a-e990646e089f\" href=\"\/node\/63\">The Challenges of Migrating UFT from Drupal 6 to Drupal 8<\/a><\/h3>\r\n\r\n<p>Learn how the United Federation of Teachers (UFT) managed a massive migration from D6 to D8, including hundreds of custom modules.<\/p>\r\n\r\n<p><strong>Presented by:<\/strong>&nbsp;Matthew Merkelson and&nbsp;Lenny Zenith from the United Federation of Teachers<\/p>\r\n\r\n<p>Friday, November 13 - Time:<strong>&nbsp;4:00 PM-4:45 PM EST<\/strong><\/p>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "dee05217-95ec-491b-9ba0-a41d778f52ac"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/node\/3af6316f-f42b-42d4-a249-ed62aa81a7b0"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/sponsor\/ffw"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

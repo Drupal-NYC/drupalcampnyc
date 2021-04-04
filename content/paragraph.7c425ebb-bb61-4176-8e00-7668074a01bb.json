@@ -1,0 +1,47 @@
+{
+    "uuid": [
+        {
+            "value": "7c425ebb-bb61-4176-8e00-7668074a01bb"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-11-10T17:01:51+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [],
+    "field_body": [
+        {
+            "value": "<h3>&nbsp;<\/h3>\r\n\r\n<h3>Drupal Content Management Role Models<\/h3>\r\n\r\n<p>In this BoF, we want to discuss areas where Drupal can improve its Content Management experience by learning from other CMSs. Example areas of focus include: WYSIWYG, layout builder, taxonomy management, menu management and media management. It is great if you have experience with other CMSs to bring to the group, but not required. If you know of new projects propelling Drupal in these areas, be prepared to share URLs.<br \/>\r\n&nbsp;<\/p>\r\n\r\n<p><strong>Discussion led by:<\/strong> Jeremy Grajales<\/p>\r\n\r\n<p><strong>Time:<\/strong> 3:00 - 3:45 pm EST<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

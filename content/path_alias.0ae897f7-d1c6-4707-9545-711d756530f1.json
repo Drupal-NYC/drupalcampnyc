@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "0ae897f7-d1c6-4707-9545-711d756530f1"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/node\/329db9c4-bdd6-4e8a-9394-f71d6da861de"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/job-listings"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

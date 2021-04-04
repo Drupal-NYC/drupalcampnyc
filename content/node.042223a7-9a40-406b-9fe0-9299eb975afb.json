@@ -1,0 +1,120 @@
+{
+    "uuid": [
+        {
+            "value": "042223a7-9a40-406b-9fe0-9299eb975afb"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "page",
+            "target_type": "node_type",
+            "target_uuid": "942f533c-e329-4b51-a8fc-1a43795a48ba"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-05-29T23:54:34+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "revision_uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "b4e3a33f-17e1-4a0e-8ad3-36abaf6eebec"
+        }
+    ],
+    "revision_log": [],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "61ce98e6-826b-46fb-bbc9-abd8a7461137"
+        }
+    ],
+    "title": [
+        {
+            "value": "Thank You Sponsor"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-29T23:35:06+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-05-29T23:54:34+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "moderation_state": [
+        {
+            "value": "published"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/thank-you-sponsor",
+            "langcode": "en",
+            "pathauto": 0
+        }
+    ],
+    "publish_on": [],
+    "unpublish_on": [],
+    "field_content": [
+        {
+            "target_type": "paragraph",
+            "target_uuid": "0756fadb-e93c-4293-966c-9f0d37ddcf28"
+        }
+    ],
+    "field_header": [
+        {
+            "target_type": "paragraph",
+            "target_uuid": "546eade4-1ccc-4530-9906-2dcd94780c88"
+        }
+    ],
+    "field_sponsors": [
+        {
+            "target_id": "element_list_sponsors",
+            "display_id": "block_1",
+            "data": "a:5:{s:5:\"limit\";N;s:5:\"title\";N;s:8:\"argument\";s:7:\"diamond\";s:6:\"offset\";N;s:5:\"pager\";N;}",
+            "target_type": "view",
+            "target_uuid": "50501e00-dad8-4e62-92f3-73e647ea1c8b"
+        }
+    ],
+    "field_summary_plain": [
+        {
+            "value": "Thank you for supporting DrupalCampNYC"
+        }
+    ]
+}

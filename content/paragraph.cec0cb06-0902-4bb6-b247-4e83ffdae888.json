@@ -1,0 +1,47 @@
+{
+    "uuid": [
+        {
+            "value": "cec0cb06-0902-4bb6-b247-4e83ffdae888"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-11-10T23:54:40+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [],
+    "field_body": [
+        {
+            "value": "<h3>&nbsp;<\/h3>\r\n\r\n<h3>Household Item Treasure Hunt<\/h3>\r\n\r\n<p>Fun competition to find out what random treasures might be lying around your dwelling.<\/p>\r\n\r\n<p><strong>Hosted by:<\/strong>&nbsp;Job Gregory<\/p>\r\n\r\n<p><strong>Time:<\/strong>&nbsp;12:00 - 12:45 pm EST<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

@@ -1,0 +1,60 @@
+{
+    "uuid": [
+        {
+            "value": "3a096ef5-4ddd-466a-824e-ca6ece8bcefa"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "deck_hero",
+            "target_type": "paragraphs_type",
+            "target_uuid": "0e49da06-5a6b-4245-aed5-e2c08127a93f"
+        }
+    ],
+    "status": [
+        {
+            "value": false
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-11-11T00:21:47+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "field_background": [],
+    "field_elements": [
+        {
+            "target_type": "paragraph",
+            "target_uuid": "47ab6d2a-4f4f-46c3-b9fa-b1b15708e7f3"
+        }
+    ],
+    "field_icon": [],
+    "field_style": [],
+    "field_title": [
+        {
+            "value": "Program",
+            "format": "basic_html"
+        }
+    ]
+}

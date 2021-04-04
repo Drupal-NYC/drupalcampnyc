@@ -1,0 +1,146 @@
+{
+    "uuid": [
+        {
+            "value": "7d113274-9e98-477a-942a-e990646e089f"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "session",
+            "target_type": "node_type",
+            "target_uuid": "477ef8ff-1e7b-42da-9e07-67abfdce9a09"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-11-12T17:20:25+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "revision_uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "b4e3a33f-17e1-4a0e-8ad3-36abaf6eebec"
+        }
+    ],
+    "revision_log": [],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "b4e3a33f-17e1-4a0e-8ad3-36abaf6eebec"
+        }
+    ],
+    "title": [
+        {
+            "value": "The Challenges of Migrating UFT from Drupal 6 to Drupal 8"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-11-11T21:42:07+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-11-12T17:20:25+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "moderation_state": [
+        {
+            "value": "published"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/session\/challenges-migrating-uft-drupal-6-drupal-8",
+            "langcode": "en",
+            "pathauto": 1
+        }
+    ],
+    "publish_on": [],
+    "unpublish_on": [],
+    "field_description": [
+        {
+            "value": "<p>Learn how the United Federation of Teachers (UFT) managed a massive migration from D6 to D8, including hundreds of custom modules.<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ],
+    "field_ends_at": [
+        {
+            "value": "2020-11-13T16:45:00-05:00"
+        }
+    ],
+    "field_featured": [
+        {
+            "value": false
+        }
+    ],
+    "field_room": [],
+    "field_session_level": [
+        {
+            "value": "beginner"
+        }
+    ],
+    "field_session_sponsor": [],
+    "field_slides": [],
+    "field_slides_external": [],
+    "field_speakers": [
+        {
+            "target_type": "user",
+            "target_uuid": "6ff7a70e-09c7-42fe-b9b2-4dcb48c0ba2d"
+        },
+        {
+            "target_type": "user",
+            "target_uuid": "6e84a4a2-8f4b-45d6-a45a-2206a6707668"
+        }
+    ],
+    "field_start": [
+        {
+            "value": "2020-11-13T16:00:00-05:00"
+        }
+    ],
+    "field_summary": [
+        {
+            "value": "Learn how the United Federation of Teachers (UFT) managed a massive migration from D6 to D8, including hundreds of custom modules.",
+            "format": "plain_text"
+        }
+    ],
+    "field_type": [
+        {
+            "value": "talk"
+        }
+    ],
+    "field_video": []
+}

@@ -1,0 +1,55 @@
+{
+    "uuid": [
+        {
+            "value": "5a61c4f0-5bbb-46b0-81e3-8eb3fb6890e2"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "61ce98e6-826b-46fb-bbc9-abd8a7461137"
+        }
+    ],
+    "filename": [
+        {
+            "value": "Reactor-logo-Dark.png"
+        }
+    ],
+    "uri": [
+        {
+            "value": "public:\/\/2020-05\/Reactor-logo-Dark.png"
+        }
+    ],
+    "filemime": [
+        {
+            "value": "image\/png"
+        }
+    ],
+    "filesize": [
+        {
+            "value": 78942
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-15T05:24:55+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-05-15T05:25:07+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ]
+}

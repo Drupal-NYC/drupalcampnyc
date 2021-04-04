@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "0f5486a0-0270-4456-8e98-1d2151c3dda5"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/node\/06e0108c-6c0a-4f46-847a-a154ca910470"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/training\/first-time-contribution-workshop"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

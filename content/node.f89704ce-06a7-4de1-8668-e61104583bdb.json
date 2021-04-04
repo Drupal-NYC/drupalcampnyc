@@ -1,0 +1,124 @@
+{
+    "uuid": [
+        {
+            "value": "f89704ce-06a7-4de1-8668-e61104583bdb"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "page",
+            "target_type": "node_type",
+            "target_uuid": "942f533c-e329-4b51-a8fc-1a43795a48ba"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-09-17T02:50:52+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "revision_uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "61ce98e6-826b-46fb-bbc9-abd8a7461137"
+        }
+    ],
+    "revision_log": [
+        {
+            "value": "Added \"Attendees will be held accountable to any existing CWG agreements.\" per a community request and as discussed in #camp-organize"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "61ce98e6-826b-46fb-bbc9-abd8a7461137"
+        }
+    ],
+    "title": [
+        {
+            "value": "Code of Conduct"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-15T04:46:54+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-09-17T02:50:52+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "moderation_state": [
+        {
+            "value": "published"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/code-of-conduct",
+            "langcode": "en",
+            "pathauto": 0
+        }
+    ],
+    "publish_on": [],
+    "unpublish_on": [],
+    "field_content": [
+        {
+            "target_type": "paragraph",
+            "target_uuid": "458a58c3-718a-42c1-a0de-0510a38a693e"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "9df9c9ca-e58a-47e3-8cba-e2ead773b7a8"
+        },
+        {
+            "target_type": "paragraph",
+            "target_uuid": "3c1cfbab-3a74-47cb-9c08-ef292c132277"
+        }
+    ],
+    "field_header": [
+        {
+            "target_type": "paragraph",
+            "target_uuid": "42336327-24af-4b6c-b976-b9469ae15efb"
+        }
+    ],
+    "field_sponsors": [],
+    "field_summary_plain": [
+        {
+            "value": "DrupalCampNYC 2020 is an event where all participants can freely and openly share ideas in a friendly, safe, and welcoming environment that encourages and inspires mutual respect and collaboration."
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "b614800c-7eef-43f7-a1ff-bb97b70a2c2f"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/node\/d44940aa-c6a3-4a06-8708-1657f704e82e"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/training\/user-experience-drupal-site-builders"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "439bf56a-b283-4aa9-a6c8-c13d75bfab54"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/node\/28ea7b0d-fa54-4bd6-b492-a6a9d712ee55"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/sponsor\/mediacurrent-training"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

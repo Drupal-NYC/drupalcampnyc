@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "bf37d674-0c61-43ce-982b-a8a258410b3c"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/node\/830739e3-8448-4e81-b7a3-c17d9ac2348f"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/sponsor\/pantheon\/jobs"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

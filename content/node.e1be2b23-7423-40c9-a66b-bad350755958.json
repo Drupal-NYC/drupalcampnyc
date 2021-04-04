@@ -1,0 +1,142 @@
+{
+    "uuid": [
+        {
+            "value": "e1be2b23-7423-40c9-a66b-bad350755958"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "session",
+            "target_type": "node_type",
+            "target_uuid": "477ef8ff-1e7b-42da-9e07-67abfdce9a09"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2020-11-10T23:07:33+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "revision_uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "3541195f-ad7e-45cc-b404-fba4c6504527"
+        }
+    ],
+    "revision_log": [],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "uid": [
+        {
+            "target_type": "user",
+            "target_uuid": "0d9d79ea-7dc6-40be-b8db-051c5822f543"
+        }
+    ],
+    "title": [
+        {
+            "value": "How NYPL Leverages Free Tools for CI\/CD"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-10-26T03:27:47+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2020-11-10T23:07:33+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false
+        }
+    ],
+    "sticky": [
+        {
+            "value": false
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "moderation_state": [
+        {
+            "value": "published"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/session\/how-nypl-leverages-free-tools-cicd",
+            "langcode": "en",
+            "pathauto": 1
+        }
+    ],
+    "publish_on": [],
+    "unpublish_on": [],
+    "field_description": [
+        {
+            "value": "<p>Learn how the New York Public Library is making the switch to Drupal 8 using more modern techniques for development and deployment. We'll cover what tools we use for site building, local development and deployment to self-hosted or third-party hosting environments.<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ],
+    "field_ends_at": [
+        {
+            "value": "2020-11-13T03:45:00-05:00"
+        }
+    ],
+    "field_featured": [
+        {
+            "value": false
+        }
+    ],
+    "field_room": [],
+    "field_session_level": [],
+    "field_session_sponsor": [],
+    "field_slides": [],
+    "field_slides_external": [],
+    "field_speakers": [
+        {
+            "target_type": "user",
+            "target_uuid": "0d9d79ea-7dc6-40be-b8db-051c5822f543"
+        },
+        {
+            "target_type": "user",
+            "target_uuid": "eed494b4-657b-48a9-b7fb-43d1d7c4c469"
+        }
+    ],
+    "field_start": [
+        {
+            "value": "2020-11-13T03:00:00-05:00"
+        }
+    ],
+    "field_summary": [
+        {
+            "value": "Learn how NYPL is making the switch to Drupal 8 using more modern techniques for development and deployment. We'll cover what tools we use for site building, local development and deployment to self-hosted or third-party hosting environments.",
+            "format": "plain_text"
+        }
+    ],
+    "field_type": [
+        {
+            "value": "talk"
+        }
+    ],
+    "field_video": []
+}

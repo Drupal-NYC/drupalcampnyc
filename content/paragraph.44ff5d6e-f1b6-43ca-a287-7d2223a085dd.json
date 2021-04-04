@@ -1,0 +1,47 @@
+{
+    "uuid": [
+        {
+            "value": "44ff5d6e-f1b6-43ca-a287-7d2223a085dd"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-22T23:58:04+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [],
+    "field_body": [
+        {
+            "value": "<p>Got skills? Did you always have them or did others teach and mentor you? Pay it forward by mentoring:<\/p>\r\n\r\n<ul>\r\n\t<li>A new speaker<\/li>\r\n\t<li>Those new to contributing during our Contribution Day<\/li>\r\n<\/ul>\r\n\r\n<p>Please email <a href=\"mailto:camp-volunteer@drupalnyc.org\">camp-volunteer@drupalnyc.org<\/a> to get involved as a mentor!<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

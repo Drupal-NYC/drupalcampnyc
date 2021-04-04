@@ -1,0 +1,51 @@
+{
+    "uuid": [
+        {
+            "value": "a4b6002f-b741-4b88-ba12-1623eca70f3b"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "text",
+            "target_type": "paragraphs_type",
+            "target_uuid": "27dd2c8c-e5f9-4560-876c-847e027fe9be"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-05-20T14:25:22+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "behavior_settings": [
+        {
+            "value": []
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true
+        }
+    ],
+    "field_body": [
+        {
+            "value": "<p>DrupalCampNYC 2020 is an event where all participants can freely and openly share ideas in a friendly, safe, and welcoming environment that encourages and inspires mutual respect and collaboration. Attendees, speakers, sponsors, volunteers, and others are required to treat all conference participants with dignity and respect.<\/p>\r\n\r\n<p>Misunderstandings sometimes do occur and people should work things out between themselves in a courteous and respectful manner whenever possible. For support or assistance, seek the advice of a mutually-trusted third party or a designated community volunteer.<\/p>\r\n\r\n<p>We do not tolerate harassment in any form. If you feel threatened or violated as a result of intimidating, harassing, abusive, discriminatory, derogatory or demeaning conduct, please immediately notify a conference organizer or a designated community volunteer. Further, please immediately notify an organizer if you notice that someone else is being subjected to such behavior.<\/p>\r\n\r\n<p>The designated community volunteers for handling code of conduct concerns for DrupalCampNYC 2020 are:<\/p>\r\n\r\n<ul>\r\n\t<li>AmyJune Hineline (call\/text 831-406-1130 or email <a href=\"mailto:ahineline@drupalnyc.org\">ahineline@drupalnyc.org<\/a>)<\/li>\r\n\t<li>JD Leonard (call\/text 832-282-9214 or email <a href=\"mailto:jdleonard@drupalnyc.org\">jdleonard@drupalnyc.org<\/a>)<\/li>\r\n<\/ul>\r\n\r\n<p>This year the organizing team is fortunate to have AmyJune as a member who has had <a href=\"https:\/\/www.drupal.org\/node\/3081410\">Code of Conduct training<\/a> organized by the Drupal <a href=\"https:\/\/www.drupal.org\/governance\/community-working-group\">Community Working Group<\/a> (CWG).<\/p>\r\n\r\n<p>If your concern is not resolved to your satisfaction, we encourage you to contact the Drupal CWG: <a href=\"mailto:drupal-cwg@drupal.org\">drupal-cwg@drupal.org<\/a><\/p>\r\n\r\n<p>The DrupalCampNYC 2020 team wants everyone to feel safe for the duration of the conference. If necessary, conference organizers are empowered to take appropriate actions that may include but are not limited to: warnings, expulsion from the conference without refund, and referrals to venue security or local law enforcement.<\/p>\r\n\r\n<p>Attendees will be held accountable to any existing CWG agreements.<\/p>\r\n",
+            "format": "basic_html"
+        }
+    ]
+}

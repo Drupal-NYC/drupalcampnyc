@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "6b6676b3-aead-4e31-a89a-af0d3a446a6c"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "und"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/webform\/template_registration\/drafts"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/form\/template-registration\/drafts"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "uuid": [
+        {
+            "value": "77571cb8-773e-46ab-9480-a024b1ec2607"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "path": [
+        {
+            "value": "\/node\/dcc48b37-1d52-4c99-b79f-8d3c776ba61d"
+        }
+    ],
+    "alias": [
+        {
+            "value": "\/sponsor\/the-weekly-drop"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ]
+}
