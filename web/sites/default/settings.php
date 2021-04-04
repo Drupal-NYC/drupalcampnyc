@@ -175,3 +175,13 @@ else {
   $config['google_tag.container.default_container']['environment_id'] = 'env-7';
   $config['google_tag.container.default_container']['environment_token'] = 'RCeOkCkKhSzZumh-hhqhUw';
 }
+
+/**
+ * Tome export settings.
+ *
+ * See https://tome.fyi/docs/installing-existing-site/ for details.
+ */
+$settings['tome_files_directory'] = '../files';
+$settings['tome_content_directory'] = '../content';
+$settings['tome_static_directory'] = '../html';
+$config_directories['sync'] = '../config';
