@@ -60,7 +60,6 @@ module:
   media: 0
   menu_block: 0
   menu_ui: 0
-  message_banner: 0
   metatag: 0
   metatag_twitter_cards: 0
   metatag_views: 0
@@ -90,6 +89,10 @@ module:
   taxonomy: 0
   text: 0
   token: 0
+  tome: 0
+  tome_base: 0
+  tome_static: 0
+  tome_sync: 0
   toolbar: 0
   user: 0
   viewsreference: 0
