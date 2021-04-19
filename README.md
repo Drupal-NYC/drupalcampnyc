@@ -84,8 +84,6 @@ You now have a fully functional local environment, accessible at [https://drupal
 
 If you find that you can see the site, but the theme was not applied, check out your error/warning messages in the console.  You may be asked to install a module called optipng.  Use this command to install it:  `npm install --save optipng-bin`
 
-If your installation was working but later refuses to load try the following commands to clean up your npm files: 
-
 ## Useful Commands
 
 `git push` as normal.
