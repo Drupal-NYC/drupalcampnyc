@@ -22,6 +22,8 @@ CodeShip, among other things, runs `composer install` and `npm run build`, copie
 
 Our use of CodeShip for CI has many benefits, but one side effect is that we can't use Pantheon's environments to make any changes to configuration (e.g. site building) because there is no good way to get those changes back to our canonical git repository in GitHub. Thus, we must use local development environments to make configuration changes.
 
+*** If you are using an Apple laptop with the M1 chip, make sure you have this version of PHP installed: `PHP 7.3.27`  You can check your version by using :  `php -v`.   Do not upgrade to PHP 8.0!  The installation of the environment for M1 will not work with that version.
+
 # Local Environment Using Lando
 
 [Lando documentation](https://docs.lando.dev/)
@@ -31,9 +33,10 @@ Our use of CodeShip for CI has many benefits, but one side effect is that we can
 Note that the git repo already has a `.lando.yml` file so you shouldn't run `lando init`.
 
 1. Download and install the [latest release of Lando](https://github.com/lando/lando/releases/latest)
-2. Create a directory to contain the site (e.g. `mkdir ~/Sites/drupalcampnyc`). To avoid file permission issues, it is strongly recommended that this directory be located within your home folder.
-3. Change to that directory (e.g. `cd ~/Sites/drupalcampnyc`)
-4. If you have your local SSH public key [added to your GitHub account](https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account) (recommended), clone the repository using:
+2. *** If you are running laptop with the Apple M1 chip please note: the lando installation will also install Docker for the intel chip.  This will cause an error on your machine.  You must install the M1 version of Docker.  This should overwrite the one installed by Lando.  It can be found here:  (https://desktop.docker.com/mac/stable/arm64/Docker.dmg?utm_source=docker&utm_medium=webreferral&utm_campaign=docs-driven-download-mac-arm64). 
+3. Create a directory to contain the site (e.g. `mkdir ~/Sites/drupalcampnyc`). To avoid file permission issues, it is strongly recommended that this directory be located within your home folder.
+4. Change to that directory (e.g. `cd ~/Sites/drupalcampnyc`)
+5. If you have your local SSH public key [added to your GitHub account](https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account) (recommended), clone the repository using:
 
    `git clone git@github.com:Drupal-NYC/drupalcampnyc.git .`
 
@@ -78,6 +81,8 @@ To replace your local environment's database and files with that of our Live env
 Note that this will overwrite your local database and files without prompt. The `lando drush cim` ensures that your local environment uses the development-specific configuration (e.g. enables Devel).
 
 You now have a fully functional local environment, accessible at [https://drupalcampnyc.lndo.site/](https://drupalcampnyc.lndo.site/)
+
+If you find that you can see the site, but the theme was not applied, check out your error/warning messages in the console.  You may be asked to install a module called optipng.  Use this command to install it:  `npm install --save optipng-bin`
 
 ## Useful Commands
 
