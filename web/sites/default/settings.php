@@ -94,7 +94,8 @@ if (defined('PANTHEON_ENVIRONMENT')) {
     // Redirect to https://$primary_domain in the Live environment
     if ($_ENV['PANTHEON_ENVIRONMENT'] === 'live') {
       // Replace www.example.com with your registered domain name.
-      $primary_domain = '2020.drupalcamp.nyc';
+      // $primary_domain = '2020.drupalcamp.nyc';
+      $primary_domain = 'live-drupalcampnyc.pantheonsite.io';
     }
     else {
       // Redirect to HTTPS on every Pantheon environment.
