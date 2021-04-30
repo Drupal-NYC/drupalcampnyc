@@ -94,15 +94,14 @@ if (defined('PANTHEON_ENVIRONMENT')) {
     // Redirect to https://$primary_domain in the Live environment
     if ($_ENV['PANTHEON_ENVIRONMENT'] === 'live') {
       // Replace www.example.com with your registered domain name.
-      // $primary_domain = '2020.drupalcamp.nyc';
-      $primary_domain = 'live-drupalcampnyc.pantheonsite.io';
+      $primary_domain = '2020.drupalcamp.nyc';
     }
     else {
       // Redirect to HTTPS on every Pantheon environment.
       $primary_domain = $_SERVER['HTTP_HOST'];
     }
 
-    if ($_SERVER['HTTP_HOST'] != $primary_domain) {
+    if ($_SERVER['HTTP_HOST'] != $primary_domain && $_SERVER['HTTP_HOST'] != 'live-drupalcampnyc.pantheonsite.io') {
       // Name transaction "redirect" in New Relic for improved reporting.
       if (extension_loaded('newrelic')) {
         newrelic_name_transaction("redirect");
