@@ -101,7 +101,7 @@ if (defined('PANTHEON_ENVIRONMENT')) {
       $primary_domain = $_SERVER['HTTP_HOST'];
     }
 
-    if ($_SERVER['HTTP_HOST'] != $primary_domain) {
+    if ($_SERVER['HTTP_HOST'] != $primary_domain && $_SERVER['HTTP_HOST'] != 'live-drupalcampnyc.pantheonsite.io') {
       // Name transaction "redirect" in New Relic for improved reporting.
       if (extension_loaded('newrelic')) {
         newrelic_name_transaction("redirect");
