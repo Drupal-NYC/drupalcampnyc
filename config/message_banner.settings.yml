@@ -1,5 +1,5 @@
 langcode: en
-banner_enabled: 1
+banner_enabled: 0
 banner_enabled_on_admin_routes: 0
 banner_color: default--white
 banner_text:
