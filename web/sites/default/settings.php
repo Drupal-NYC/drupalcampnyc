@@ -147,7 +147,10 @@ if (defined('PANTHEON_ENVIRONMENT')) {
     }
 
     // Drupal 8 Trusted Host Settings
-    $settings['trusted_host_patterns'] = array('^'. preg_quote($primary_domain) .'$');
+    $settings['trusted_host_patterns'] = array(
+      '^'. preg_quote($primary_domain) .'$',
+      '^live-drupalcampnyc.pantheonsite.io$',
+    );
   }
 
   // Include the Redis services.yml file. Adjust the path if you installed to a contrib or other subdirectory.
