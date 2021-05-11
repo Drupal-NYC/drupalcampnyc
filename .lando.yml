@@ -32,6 +32,14 @@ tooling:
       files:
         default: live
   push: disabled
+  update:
+    cmd:
+      - appserver: composer install
+      - appserver: drush cr
+      - appserver: drush updb -y
+      - appserver: drush cim -y
+      - node: cd /app/web/themes/drupalnyc && npm install
+      - node: cd /app/web/themes/drupalnyc && npm run build
 excludes:
   - vendor
   - web/themes/drupaleurope/node_modules
