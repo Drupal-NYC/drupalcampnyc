@@ -33,7 +33,7 @@ Our use of CodeShip for CI has many benefits, but one side effect is that we can
 Note that the git repo already has a `.lando.yml` file so you shouldn't run `lando init`.
 
 1. Download and install the [latest release of Lando](https://github.com/lando/lando/releases/latest)
-2. *** If you are running laptop with the Apple M1 chip please note: the lando installation will also install Docker for the intel chip.  This will cause an error on your machine.  You must install the M1 version of Docker.  This should overwrite the one installed by Lando.  It can be found here:  (https://desktop.docker.com/mac/stable/arm64/Docker.dmg?utm_source=docker&utm_medium=webreferral&utm_campaign=docs-driven-download-mac-arm64). 
+2. *** If you are running laptop with the Apple M1 chip please note: the lando installation will also install Docker for the intel chip.  This will cause an error on your machine.  You must install the M1 version of Docker.  This should overwrite the one installed by Lando.  It can be found here:  (https://desktop.docker.com/mac/stable/arm64/Docker.dmg?utm_source=docker&utm_medium=webreferral&utm_campaign=docs-driven-download-mac-arm64).
 3. Create a directory to contain the site (e.g. `mkdir ~/Sites/drupalcampnyc`). To avoid file permission issues, it is strongly recommended that this directory be located within your home folder.
 4. Change to that directory (e.g. `cd ~/Sites/drupalcampnyc`)
 5. If you have your local SSH public key [added to your GitHub account](https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account) (recommended), clone the repository using:
@@ -73,10 +73,13 @@ Note that the git repo already has a `.lando.yml` file so you shouldn't run `lan
 
 To replace your local environment's database and files with that of our Live environment, ensure that you are using the Pantheon lando.local.yml described under "Initial Setup" above, ensure that you are a member of the Pantheon site's "Team", then:
 1. `lando pull`
-2. `lando composer install`
-3. `lando drush cr`
-4. `lando drush updb`
-5. `lando drush cim`
+2. `lando update`
+
+`lando update` is defined in .lando.yml and runs the following commands so that you don't have to run them individually.
+1. `lando composer install`
+2. `lando drush cr`
+3. `lando drush updb`
+4. `lando drush cim`
 
 Note that this will overwrite your local database and files without prompt. The `lando drush cim` ensures that your local environment uses the development-specific configuration (e.g. enables Devel).
 
@@ -107,7 +110,6 @@ Build the theme automatically when changed: `lando npm run watch`
 Get a one-time log in URL for user 1: `lando drush uli`
 
 ## Using XDebug
-
 
 XDebug debugging is enabled, but for performance reasons, [start_with_request](https://xdebug.org/docs/all_settings#start_with_request) is set to "trigger" so you'll need to trigger XDEBUG per request. Alternatively you can create a custom php.ini based on .lando/php.ini and [override](https://docs.lando.dev/config/lando.html#override-file) the active php.ini in .lando.local.yml (which you may need to create).
 
