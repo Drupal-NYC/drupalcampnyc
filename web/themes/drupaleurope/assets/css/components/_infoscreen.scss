@@ -11,9 +11,7 @@ body.path-infoscreen {
     display: none;
   }
 }
-.region-content .block {
-  max-width:none;
-}
+
 body.path-infoscreen-parking {
   padding: 50px 25px 25px 25px;
   background-image: url(/themes/drupaleurope/assets/images/U1-2-background.jpg);
@@ -85,7 +83,6 @@ body.path-infoscreen-m12 {
 
   .region-content .block {
     width: 100%;
-    max-width: none;
   }
 }
 
