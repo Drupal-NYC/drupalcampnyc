@@ -1,6 +1,6 @@
 name: Drupal NYC
 type: theme
-description: A theme for DrupalCampNYC 2020 based on the Drupal Europe 2018 codebase
+description: A theme for DrupalCampNYC 2021 based on the Drupal Europe 2018 codebase
 core: 8.x
 base theme: classy
 regions:
