@@ -9,7 +9,7 @@ dependencies:
 id: default_container
 label: 'Default Container'
 weight: 0
-container_id: GTM-KJVG3N6
+container_id: GTM-NDQSW5V
 data_layer: dataLayer
 include_classes: false
 whitelist_classes: "google\nnonGooglePixels\nnonGoogleScripts\nnonGoogleIframes"
