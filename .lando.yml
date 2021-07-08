@@ -17,6 +17,8 @@ services:
     run:
       - cd /app/web/themes/drupalnyc && npm install
       - cd /app/web/themes/drupalnyc && npm run build
+  database:
+    type: mariadb:10.4
 tooling:
   npm:
     service: node
