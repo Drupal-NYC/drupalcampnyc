@@ -26,9 +26,11 @@ settings:
   follow_parent: child
   level: 1
   depth: 0
-  expand: false
+  expand_all_items: false
   parent: 'user-cta:'
   suggestion: user_cta
+  label_type: block
+  label_link: false
 visibility:
   request_path:
     id: request_path

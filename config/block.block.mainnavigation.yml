@@ -24,9 +24,11 @@ settings:
   follow_parent: child
   level: 1
   depth: 2
-  expand: true
+  expand_all_items: true
   parent: 'main:'
   suggestion: main
+  label_type: block
+  label_link: false
 visibility:
   current_user_page:
     id: current_user_page

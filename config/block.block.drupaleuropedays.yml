@@ -25,9 +25,11 @@ settings:
   follow_parent: child
   level: 1
   depth: 0
-  expand: false
+  expand_all_items: false
   parent: 'drupal-europe-days:'
   suggestion: drupal_europe_days
+  label_type: block
+  label_link: false
 visibility:
   current_user_page:
     id: current_user_page

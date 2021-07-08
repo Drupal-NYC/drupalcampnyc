@@ -24,7 +24,7 @@ settings:
   follow_parent: child
   level: 1
   depth: 1
-  expand: true
+  expand_all_items: true
   parent: 'policies:'
   suggestion: policies
   label_type: block
