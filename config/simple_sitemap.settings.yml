@@ -16,3 +16,4 @@ default_variant: default
 xsl: true
 disable_language_hreflang: false
 generate_duration: 10000
+entities_per_queue_item: 50

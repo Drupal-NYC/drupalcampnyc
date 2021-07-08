@@ -186,6 +186,7 @@ ui:
   dialog_disabled: false
   offcanvas_disabled: false
   promotions_disabled: true
+  support_disabled: false
   description_help: true
   toolbar_item: false
 libraries:
