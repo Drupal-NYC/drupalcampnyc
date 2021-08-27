@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f7921188cfd7817c361b02a16a681895",
+    "content-hash": "baadd178494d3873ae040adca22807cb",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1888,17 +1888,17 @@
         },
         {
             "name": "drupal/admin_toolbar",
-            "version": "2.4.0",
+            "version": "2.5.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/admin_toolbar.git",
-                "reference": "8.x-2.4"
+                "reference": "8.x-2.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/admin_toolbar-8.x-2.4.zip",
-                "reference": "8.x-2.4",
-                "shasum": "6240047b8d91ac78f98d861ba8282af971fa0b38"
+                "url": "https://ftp.drupal.org/files/projects/admin_toolbar-8.x-2.5.zip",
+                "reference": "8.x-2.5",
+                "shasum": "c71e58051b8d6818272df96d14cb11407d5e5ceb"
             },
             "require": {
                 "drupal/core": "^8.8.0 || ^9.0"
@@ -1906,8 +1906,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.4",
-                    "datestamp": "1601999178",
+                    "version": "8.x-2.5",
+                    "datestamp": "1629907119",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2944,16 +2944,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.9.17",
+            "version": "8.9.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "a1416f2cc6701acc0cc6725bfeac3715e633fd9c"
+                "reference": "e536176c45d9d75ec57f7a12c0e3c0aead856841"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/a1416f2cc6701acc0cc6725bfeac3715e633fd9c",
-                "reference": "a1416f2cc6701acc0cc6725bfeac3715e633fd9c",
+                "url": "https://api.github.com/repos/drupal/core/zipball/e536176c45d9d75ec57f7a12c0e3c0aead856841",
+                "reference": "e536176c45d9d75ec57f7a12c0e3c0aead856841",
                 "shasum": ""
             },
             "require": {
@@ -3172,13 +3172,13 @@
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
             "support": {
-                "source": "https://github.com/drupal/core/tree/8.9.17"
+                "source": "https://github.com/drupal/core/tree/8.9.18"
             },
-            "time": "2021-07-20T21:43:12+00:00"
+            "time": "2021-08-12T17:48:42+00:00"
         },
         {
             "name": "drupal/core-composer-scaffold",
-            "version": "8.9.17",
+            "version": "8.9.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-composer-scaffold.git",
@@ -3222,22 +3222,22 @@
                 "drupal"
             ],
             "support": {
-                "source": "https://github.com/drupal/core-composer-scaffold/tree/8.9.4"
+                "source": "https://github.com/drupal/core-composer-scaffold/tree/8.9.5"
             },
             "time": "2020-08-07T22:30:30+00:00"
         },
         {
             "name": "drupal/core-recommended",
-            "version": "8.9.17",
+            "version": "8.9.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-recommended.git",
-                "reference": "fcc40b85be8a37246965a276f1ae94a1dba971a6"
+                "reference": "71839bb9799b70f449b76294b461877ba1e9ff2c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/fcc40b85be8a37246965a276f1ae94a1dba971a6",
-                "reference": "fcc40b85be8a37246965a276f1ae94a1dba971a6",
+                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/71839bb9799b70f449b76294b461877ba1e9ff2c",
+                "reference": "71839bb9799b70f449b76294b461877ba1e9ff2c",
                 "shasum": ""
             },
             "require": {
@@ -3249,7 +3249,7 @@
                 "doctrine/common": "v2.7.3",
                 "doctrine/inflector": "v1.2.0",
                 "doctrine/lexer": "1.0.2",
-                "drupal/core": "8.9.17",
+                "drupal/core": "8.9.18",
                 "easyrdf/easyrdf": "0.9.1",
                 "egulias/email-validator": "2.1.17",
                 "guzzlehttp/guzzle": "6.5.4",
@@ -3307,9 +3307,9 @@
             ],
             "description": "Locked core dependencies; require this project INSTEAD OF drupal/core.",
             "support": {
-                "source": "https://github.com/drupal/core-recommended/tree/8.9.17"
+                "source": "https://github.com/drupal/core-recommended/tree/8.9.18"
             },
-            "time": "2021-07-20T21:43:12+00:00"
+            "time": "2021-08-12T17:48:42+00:00"
         },
         {
             "name": "drupal/csv_serialization",
@@ -4059,17 +4059,17 @@
         },
         {
             "name": "drupal/field_group",
-            "version": "3.1.0",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/field_group.git",
-                "reference": "8.x-3.1"
+                "reference": "8.x-3.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/field_group-8.x-3.1.zip",
-                "reference": "8.x-3.1",
-                "shasum": "8a719eaea594f0ba874172831cb28da93c66b77a"
+                "url": "https://ftp.drupal.org/files/projects/field_group-8.x-3.2.zip",
+                "reference": "8.x-3.2",
+                "shasum": "2020bbfe40f6ba43bc733ae7c8761632572433a0"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9"
@@ -4080,8 +4080,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-3.1",
-                    "datestamp": "1591772567",
+                    "version": "8.x-3.2",
+                    "datestamp": "1628513585",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4607,64 +4607,24 @@
                     "homepage": "https://www.drupal.org/user/61864"
                 },
                 {
-                    "name": "Schnitzel",
-                    "homepage": "https://www.drupal.org/user/643820"
-                },
-                {
-                    "name": "a_c_m",
-                    "homepage": "https://www.drupal.org/user/195063"
-                },
-                {
-                    "name": "barneytech",
-                    "homepage": "https://www.drupal.org/user/669922"
-                },
-                {
-                    "name": "claudiu_cristea",
-                    "homepage": "https://www.drupal.org/user/2623935"
+                    "name": "cedewey",
+                    "homepage": "https://www.drupal.org/user/38694"
                 },
                 {
                     "name": "dawehner",
                     "homepage": "https://www.drupal.org/user/99340"
                 },
                 {
-                    "name": "derhasi",
-                    "homepage": "https://www.drupal.org/user/83474"
-                },
-                {
-                    "name": "frjo",
-                    "homepage": "https://www.drupal.org/user/5546"
-                },
-                {
-                    "name": "hefox",
-                    "homepage": "https://www.drupal.org/user/426416"
-                },
-                {
-                    "name": "jm.federico",
-                    "homepage": "https://www.drupal.org/user/509892"
-                },
-                {
-                    "name": "k4v",
-                    "homepage": "https://www.drupal.org/user/744246"
-                },
-                {
-                    "name": "mariano73",
-                    "homepage": "https://www.drupal.org/user/1324866"
+                    "name": "hipp2bsquare",
+                    "homepage": "https://www.drupal.org/user/2473076"
                 },
                 {
                     "name": "mariuss",
                     "homepage": "https://www.drupal.org/user/28539"
                 },
                 {
-                    "name": "sanduhrs",
-                    "homepage": "https://www.drupal.org/user/28074"
-                },
-                {
-                    "name": "vasi1186",
-                    "homepage": "https://www.drupal.org/user/342104"
-                },
-                {
-                    "name": "webiator GmbH",
-                    "homepage": "https://www.drupal.org/user/2390554"
+                    "name": "srdtwc",
+                    "homepage": "https://www.drupal.org/user/3422763"
                 }
             ],
             "description": "Limit the number of characters in textfields and textareas and shows the amount of characters left.",
@@ -5662,17 +5622,17 @@
         },
         {
             "name": "drupal/svg_image",
-            "version": "1.14.0",
+            "version": "1.15.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/svg_image.git",
-                "reference": "8.x-1.14"
+                "reference": "8.x-1.15"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/svg_image-8.x-1.14.zip",
-                "reference": "8.x-1.14",
-                "shasum": "0a6ca8104995a8cf4a1fff3e9e04e1fecf734b11"
+                "url": "https://ftp.drupal.org/files/projects/svg_image-8.x-1.15.zip",
+                "reference": "8.x-1.15",
+                "shasum": "368d0189bb3c59ea40cf52d83c8551b6358aa161"
             },
             "require": {
                 "drupal/core": "^8 || ^9",
@@ -5681,8 +5641,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.14",
-                    "datestamp": "1591251834",
+                    "version": "8.x-1.15",
+                    "datestamp": "1629259130",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5845,17 +5805,17 @@
         },
         {
             "name": "drupal/webform",
-            "version": "5.27.0",
+            "version": "5.28.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/webform.git",
-                "reference": "8.x-5.27"
+                "reference": "8.x-5.28"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/webform-8.x-5.27.zip",
-                "reference": "8.x-5.27",
-                "shasum": "5c3df517a9f20bc06b7d89ed18d4cc20ea9ae818"
+                "url": "https://ftp.drupal.org/files/projects/webform-8.x-5.28.zip",
+                "reference": "8.x-5.28",
+                "shasum": "31376657f81e50302cc6b89d5094e0b8a0810f57"
             },
             "require": {
                 "drupal/core": "^8.8"
@@ -5896,8 +5856,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-5.27",
-                    "datestamp": "1624460854",
+                    "version": "8.x-5.28",
+                    "datestamp": "1629909852",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6239,25 +6199,26 @@
         },
         {
             "name": "enshrined/svg-sanitize",
-            "version": "0.14.0",
+            "version": "0.14.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/darylldoyle/svg-sanitizer.git",
-                "reference": "beff89576a72540ee99476aeb9cfe98222e76fb8"
+                "reference": "307b42066fb0b76b5119f5e1f0826e18fefabe95"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/darylldoyle/svg-sanitizer/zipball/beff89576a72540ee99476aeb9cfe98222e76fb8",
-                "reference": "beff89576a72540ee99476aeb9cfe98222e76fb8",
+                "url": "https://api.github.com/repos/darylldoyle/svg-sanitizer/zipball/307b42066fb0b76b5119f5e1f0826e18fefabe95",
+                "reference": "307b42066fb0b76b5119f5e1f0826e18fefabe95",
                 "shasum": ""
             },
             "require": {
                 "ext-dom": "*",
-                "ext-libxml": "*"
+                "ext-libxml": "*",
+                "php": "^7.0 || ^8.0"
             },
             "require-dev": {
                 "codeclimate/php-test-reporter": "^0.1.2",
-                "phpunit/phpunit": "^6"
+                "phpunit/phpunit": "^6.5 || ^8.5"
             },
             "type": "library",
             "autoload": {
@@ -6278,9 +6239,9 @@
             "description": "An SVG sanitizer for PHP",
             "support": {
                 "issues": "https://github.com/darylldoyle/svg-sanitizer/issues",
-                "source": "https://github.com/darylldoyle/svg-sanitizer/tree/0.14.0"
+                "source": "https://github.com/darylldoyle/svg-sanitizer/tree/0.14.1"
             },
-            "time": "2021-01-21T10:13:20+00:00"
+            "time": "2021-08-09T23:46:54+00:00"
         },
         {
             "name": "grasmash/expander",
@@ -7604,16 +7565,16 @@
         },
         {
             "name": "phpmailer/phpmailer",
-            "version": "v6.5.0",
+            "version": "v6.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPMailer/PHPMailer.git",
-                "reference": "a5b5c43e50b7fba655f793ad27303cd74c57363c"
+                "reference": "dd803df5ad7492e1b40637f7ebd258fee5ca7355"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/a5b5c43e50b7fba655f793ad27303cd74c57363c",
-                "reference": "a5b5c43e50b7fba655f793ad27303cd74c57363c",
+                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/dd803df5ad7492e1b40637f7ebd258fee5ca7355",
+                "reference": "dd803df5ad7492e1b40637f7ebd258fee5ca7355",
                 "shasum": ""
             },
             "require": {
@@ -7625,10 +7586,12 @@
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
                 "doctrine/annotations": "^1.2",
+                "php-parallel-lint/php-console-highlighter": "^0.5.0",
+                "php-parallel-lint/php-parallel-lint": "^1.3",
                 "phpcompatibility/php-compatibility": "^9.3.5",
                 "roave/security-advisories": "dev-latest",
-                "squizlabs/php_codesniffer": "^3.5.6",
-                "yoast/phpunit-polyfills": "^0.2.0"
+                "squizlabs/php_codesniffer": "^3.6.0",
+                "yoast/phpunit-polyfills": "^1.0.0"
             },
             "suggest": {
                 "ext-mbstring": "Needed to send email in multibyte encoding charset or decode encoded addresses",
@@ -7668,7 +7631,7 @@
             "description": "PHPMailer is a full-featured email creation and transfer class for PHP",
             "support": {
                 "issues": "https://github.com/PHPMailer/PHPMailer/issues",
-                "source": "https://github.com/PHPMailer/PHPMailer/tree/v6.5.0"
+                "source": "https://github.com/PHPMailer/PHPMailer/tree/v6.5.1"
             },
             "funding": [
                 {
@@ -7676,7 +7639,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-06-16T14:33:43+00:00"
+            "time": "2021-08-18T09:14:16+00:00"
         },
         {
             "name": "psr/container",
