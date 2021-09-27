@@ -1,0 +1,13 @@
+{
+  "name": "drupal/sessionize_embed_block",
+  "type": "drupal-module",
+  "description": "Provides a configurable Block for Sessionize Embed.",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://github.com/hotwebmatter/sessionize_embed_block/issues",
+  "minimum-stability": "dev",
+  "support": {
+      "issues": "https://github.com/hotwebmatter/sessionize_embed_block/issues",
+      "source": "https://github.com/hotwebmatter/sessionize_embed_block"
+  }
+}
