@@ -57,8 +57,8 @@ class Embed {
     $config = $this->configFactory->get(static::SETTINGS);
     $embed_id = $config->get('embed_id') ?? 'Error';
     $embed_style = $config->get('embed_style') ?? 'Error';
-    // $sessionize_url = 'https://sessionize.com/api/v2/' . $embed_id . '/view/' . $embed_style;
-    $sessionize_url = 'https://sessionize.com/api/v2/' . $embed_id . '/view/GridSmart';
+    $sessionize_url = 'https://sessionize.com/api/v2/' . $embed_id . '/view/' . $embed_style;
+    // $sessionize_url = 'https://sessionize.com/api/v2/' . $embed_id . '/view/GridSmart';
     return $sessionize_url;
   }
 

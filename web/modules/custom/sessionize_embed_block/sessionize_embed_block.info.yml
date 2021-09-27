@@ -3,4 +3,3 @@ type: module
 description: Provides a Block containing Seesionize Embed code.
 core_version_requirement: '^8.8 || ^9.0'
 package: DrupalCampNYC
-
