@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * Sessionize Embed Block module hook implementations.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function sessionize_embed_block_theme() {
+  return [
+    'sessionize_embed_block__embed' => [
+      // 'render element' => 'markup',
+      // 'template' => 'sessionize-embed-block--embed',
+      'variables' => [
+        'embed_url' => NULL,
+      ],
+    ],
+  ];
+}

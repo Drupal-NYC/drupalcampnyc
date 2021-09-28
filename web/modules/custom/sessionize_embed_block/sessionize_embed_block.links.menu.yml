@@ -1,0 +1,6 @@
+sessionize_embed_block.admin:
+  title: 'Sessionize Embed Block Settings'
+  description: 'Administer settings for Sessionize Embed Block module.'
+  parent: system.admin_config_development
+  route_name: sessionize_embed_block.admin_settings
+  weight: 100
