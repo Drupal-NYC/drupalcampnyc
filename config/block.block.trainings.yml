@@ -1,0 +1,35 @@
+uuid: a891b87b-1f53-4fb7-9b4f-bb4e3da21667
+langcode: en
+status: true
+dependencies:
+  module:
+    - de_core
+    - sessionize_embed_block
+    - system
+  theme:
+    - drupalnyc
+id: trainings
+theme: drupalnyc
+region: content
+weight: 0
+provider: null
+plugin: sessionize_embed
+settings:
+  id: sessionize_embed
+  label: Trainings
+  provider: sessionize_embed_block
+  label_display: visible
+  embed_id: 7wis7f6i
+  embed_style: GridSmart
+visibility:
+  current_user_page:
+    id: current_user_page
+    show_on_own_page: 0
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+  request_path:
+    id: request_path
+    pages: /trainings
+    negate: false
+    context_mapping: {  }
