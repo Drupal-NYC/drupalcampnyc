@@ -147,8 +147,9 @@ class SessionizeEmbedBlock extends BlockBase implements ContainerFactoryPluginIn
    * {@inheritdoc}
    */
   public function build() {
-    $embed_id = $this->sessionizeEmbed->getGlobalEmbedId();
-    $embed_style = $this->sessionizeEmbed->getGlobalEmbedStyle();
+    $config = $this->getConfiguration();
+    $embed_id = $config['embed_id'] ?? '6mh71zh8';
+    $embed_style = $config['embed_style'] ?? 'GridSmart';
     $renderable = [
       '#theme' => 'sessionize_embed_block__embed',
       '#embed_url' => $this->sessionizeEmbed->getSessionizeUrl($embed_id, $embed_style),

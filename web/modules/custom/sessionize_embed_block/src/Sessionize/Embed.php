@@ -51,7 +51,7 @@ class Embed {
    * Get Global Embed ID.
    *
    * @return string
-   *   The Gllobal Embed ID.
+   *   The Global Embed ID.
    */
   public function getGlobalEmbedId() {
     $config = $this->configFactory->get(static::SETTINGS);
@@ -62,7 +62,7 @@ class Embed {
    * Get Global Embed Style.
    *
    * @return string
-   *   The Gllobal Embed Style.
+   *   The Global Embed Style.
    */
   public function getGlobalEmbedStyle() {
     $config = $this->configFactory->get(static::SETTINGS);
