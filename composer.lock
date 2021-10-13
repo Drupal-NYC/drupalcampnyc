@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "baadd178494d3873ae040adca22807cb",
+    "content-hash": "f7b3ccdc4cdc98b281971dbf94432bb4",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -135,12 +135,12 @@
             "version": "v5.9.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/dropzone/dropzone.git",
+                "url": "git@github.com:enyo/dropzone.git",
                 "reference": "9dfbd74fd245736dc4051f34a43e9ac7126f764e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dropzone/dropzone/zipball/9dfbd74fd245736dc4051f34a43e9ac7126f764e",
+                "url": "https://api.github.com/repos/enyo/dropzone/zipball/9dfbd74fd245736dc4051f34a43e9ac7126f764e",
                 "reference": "9dfbd74fd245736dc4051f34a43e9ac7126f764e"
             },
             "type": "bower-asset"
@@ -3552,7 +3552,7 @@
             "extra": {
                 "drupal": {
                     "version": "4.1.1",
-                    "datestamp": "1609419527",
+                    "datestamp": "1631968537",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4475,7 +4475,7 @@
             "extra": {
                 "drupal": {
                     "version": "6.0.0-beta2",
-                    "datestamp": "1608957496",
+                    "datestamp": "1632933683",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -4492,6 +4492,10 @@
                     "homepage": "https://stjerneman.com",
                     "email": "emil@stjerneman.com",
                     "role": "Maintainer"
+                },
+                {
+                    "name": "johnwebdev",
+                    "homepage": "https://www.drupal.org/user/3331569"
                 }
             ],
             "description": "Linkit - Enriched linking experience",
@@ -4603,10 +4607,6 @@
             ],
             "authors": [
                 {
-                    "name": "Aron Novak",
-                    "homepage": "https://www.drupal.org/user/61864"
-                },
-                {
                     "name": "cedewey",
                     "homepage": "https://www.drupal.org/user/38694"
                 },
@@ -4621,6 +4621,10 @@
                 {
                     "name": "mariuss",
                     "homepage": "https://www.drupal.org/user/28539"
+                },
+                {
+                    "name": "pmichelazzo",
+                    "homepage": "https://www.drupal.org/user/182237"
                 },
                 {
                     "name": "srdtwc",
@@ -5314,6 +5318,51 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/scheduler",
                 "issues": "https://www.drupal.org/project/issues/scheduler"
+            }
+        },
+        {
+            "name": "drupal/sessionize_embed_block",
+            "version": "dev-1.0.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/sessionize_embed_block.git",
+                "reference": "f6ee72e3bf36b5d331c3ce39ef496d6fee87654e"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.0.x": "1.0.x-dev"
+                },
+                "drupal": {
+                    "version": "1.0.x-dev",
+                    "datestamp": "1634164688",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "hotwebmatter",
+                    "homepage": "https://www.drupal.org/user/2440136"
+                }
+            ],
+            "description": "Provides a configurable Block for Sessionize Embed.",
+            "homepage": "https://github.com/hotwebmatter/sessionize_embed_block/issues",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "https://github.com/hotwebmatter/sessionize_embed_block",
+                "issues": "https://github.com/hotwebmatter/sessionize_embed_block/issues"
             }
         },
         {
@@ -10705,7 +10754,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drupal/facebook_pixel": 15
+        "drupal/facebook_pixel": 15,
+        "drupal/sessionize_embed_block": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
