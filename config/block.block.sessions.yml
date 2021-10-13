@@ -1,0 +1,35 @@
+uuid: 0339b6c3-6c49-43c4-acdf-b9dcfa548dd2
+langcode: en
+status: true
+dependencies:
+  module:
+    - de_core
+    - sessionize_embed_block
+    - system
+  theme:
+    - drupalnyc
+id: sessions
+theme: drupalnyc
+region: content
+weight: 0
+provider: null
+plugin: sessionize_embed
+settings:
+  id: sessionize_embed
+  label: Sessions
+  provider: sessionize_embed_block
+  label_display: visible
+  embed_id: y6l88m0u
+  embed_style: GridSmart
+visibility:
+  current_user_page:
+    id: current_user_page
+    show_on_own_page: 0
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+  request_path:
+    id: request_path
+    pages: /sessions
+    negate: false
+    context_mapping: {  }
