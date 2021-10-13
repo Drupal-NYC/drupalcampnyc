@@ -1,0 +1,4 @@
+services:
+  sessionize.embed:
+    class: Drupal\sessionize_embed_block\Sessionize\Embed
+    arguments: ['@config.factory']

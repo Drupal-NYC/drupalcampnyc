@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c8d1295d2340a73a0285db27040c7c12",
+    "content-hash": "baadd178494d3873ae040adca22807cb",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -5314,51 +5314,6 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/scheduler",
                 "issues": "https://www.drupal.org/project/issues/scheduler"
-            }
-        },
-        {
-            "name": "drupal/sessionize_embed_block",
-            "version": "dev-1.0.x",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/sessionize_embed_block.git",
-                "reference": "5af14d6c223facb9ddb166d55241db17cf338ec1"
-            },
-            "require": {
-                "drupal/core": "^8.8 || ^9.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.0.x": "1.0.x-dev"
-                },
-                "drupal": {
-                    "version": "1.0.x-dev",
-                    "datestamp": "1634092488",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "hotwebmatter",
-                    "homepage": "https://www.drupal.org/user/2440136"
-                }
-            ],
-            "description": "Provides a configurable Block for Sessionize Embed.",
-            "homepage": "https://github.com/hotwebmatter/sessionize_embed_block/issues",
-            "keywords": [
-                "Drupal"
-            ],
-            "support": {
-                "source": "https://github.com/hotwebmatter/sessionize_embed_block",
-                "issues": "https://github.com/hotwebmatter/sessionize_embed_block/issues"
             }
         },
         {
@@ -10750,8 +10705,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drupal/facebook_pixel": 15,
-        "drupal/sessionize_embed_block": 20
+        "drupal/facebook_pixel": 15
     },
     "prefer-stable": true,
     "prefer-lowest": false,
