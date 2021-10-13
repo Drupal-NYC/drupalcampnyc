@@ -80,7 +80,6 @@ module:
   rest: 0
   scheduler: 0
   serialization: 0
-  sessionize_embed_block: 0
   shariff: 0
   simple_sitemap: 0
   smart_trim: 0

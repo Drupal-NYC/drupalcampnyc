@@ -2,8 +2,11 @@ uuid: 368ee1a5-314a-4c61-a453-dcb03b0c22c0
 langcode: en
 status: false
 dependencies:
+  config:
+    - views.view.session_proposal_review
   module:
     - de_core
+    - views
   theme:
     - drupalnyc
 id: drupalnyc_views_block__session_proposal_review_block_flagged
