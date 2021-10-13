@@ -48,28 +48,57 @@ class Embed {
   }
 
   /**
-   * Generate Sessionize Embed URL based on config settings.
+   * Get Global Embed ID.
    *
    * @return string
-   *   The Sessionize Embed URL used in Sessionize Embed code.
+   *   The Gllobal Embed ID.
    */
-  public function getSessionizeUrl() {
+  public function getGlobalEmbedId() {
     $config = $this->configFactory->get(static::SETTINGS);
-    $embed_id = $config->get('embed_id') ?? 'Error';
-    $embed_style = $config->get('embed_style') ?? 'Error';
+    return $config->get('embed_id') ?? '6mh71zh8';
+  }
+
+  /**
+   * Get Global Embed Style.
+   *
+   * @return string
+   *   The Gllobal Embed Style.
+   */
+  public function getGlobalEmbedStyle() {
+    $config = $this->configFactory->get(static::SETTINGS);
+    return $config->get('embed_style') ?? 'GridSmart';
+  }
+
+  /**
+   * Generate Sessionize embed URL based on config settings.
+   *
+   * @param string $embed_id
+   *   The Sessionize embed ID.
+   * @param string $embed_style
+   *   The Sessionize embed style.
+   *
+   * @return string
+   *   The Sessionize embed URL used in Sessionize embed code.
+   */
+  public function getSessionizeUrl($embed_id, $embed_style) {
     $sessionize_url = 'https://sessionize.com/api/v2/' . $embed_id . '/view/' . $embed_style;
     // $sessionize_url = 'https://sessionize.com/api/v2/' . $embed_id . '/view/GridSmart';
     return $sessionize_url;
   }
 
   /**
-   * Preview Sessionize Embed code using generated URL above.
+   * Preview Sessionize embed code using generated URL above.
+   *
+   * @param string $embed_id
+   *   The Sessionize embed ID.
+   * @param string $embed_style
+   *   The Sessionize embed style.
    *
    * @return string
-   *   The Sessionize Embed code markup used in Sessionize Embed Block.
+   *   The Sessionize embed code markup used in Sessionize embed Block.
    */
-  public function getSessionizeEmbed() {
-    $sessionize_url = $this->getSessionizeUrl();
+  public function getSessionizeEmbed($embed_id, $embed_style) {
+    $sessionize_url = $this->getSessionizeUrl($embed_id, $embed_style);
     $sessionize_embed = '<script type="text/javascript" src="' . $sessionize_url . '"></script>';
     return $sessionize_embed;
   }

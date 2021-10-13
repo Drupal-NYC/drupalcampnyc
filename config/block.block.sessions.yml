@@ -1,4 +1,4 @@
-uuid: 6d23dc11-3291-4565-97b9-cf977c28dc13
+uuid: 0339b6c3-6c49-43c4-acdf-b9dcfa548dd2
 langcode: en
 status: true
 dependencies:
@@ -8,7 +8,7 @@ dependencies:
     - system
   theme:
     - drupalnyc
-id: sessionizeembed
+id: sessions
 theme: drupalnyc
 region: content
 weight: 0
@@ -16,9 +16,11 @@ provider: null
 plugin: sessionize_embed
 settings:
   id: sessionize_embed
-  label: 'Sessionize Embed'
+  label: Sessions
   provider: sessionize_embed_block
-  label_display: '0'
+  label_display: visible
+  embed_id: y6l88m0u
+  embed_style: GridSmart
 visibility:
   current_user_page:
     id: current_user_page

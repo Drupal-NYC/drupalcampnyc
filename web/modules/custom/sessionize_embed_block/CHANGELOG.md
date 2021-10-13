@@ -13,13 +13,37 @@ git.drupalcode.org to become a proper contrib module. :tada:
 
 ### Added
 
+- Nothing.
+
+### Changed
+
+- Nothing.
+
+### Deprecated
+
+- Nothing.
+
+### Removed
+
+- Nothing.
+
+### Fixed
+
+- Fix per-block config for Sessionize Embed Block.
+
+## 0.1.0 - 2021-10-09
+
+### Added
+
 - Keep a changelog.
 - Add composer.json.
 - Use appropriate configuration schema.
 
 ### Changed
 
-- Nothing.
+- Release module on Drupal.org.
+- Include configuration per Block instance.
+- Write a better README.
 
 ### Deprecated
 
