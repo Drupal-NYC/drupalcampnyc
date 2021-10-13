@@ -5322,7 +5322,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/sessionize_embed_block.git",
-                "reference": "434f246da58bb7c9f0f83bd29fea070dc0398268"
+                "reference": "5af14d6c223facb9ddb166d55241db17cf338ec1"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9.0"
@@ -5334,7 +5334,7 @@
                 },
                 "drupal": {
                     "version": "1.0.x-dev",
-                    "datestamp": "1634092327",
+                    "datestamp": "1634092488",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
