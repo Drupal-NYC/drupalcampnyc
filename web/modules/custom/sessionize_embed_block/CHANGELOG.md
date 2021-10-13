@@ -9,7 +9,7 @@ With the addition of `composer.json` and `CHANGELOG.md`, we are close
 to launching a public alpha version 0.1.0 and moving the project to
 git.drupalcode.org to become a proper contrib module. :tada:
 
-## Unreleased - TBD
+## 0.1.0 - 2021-10-09
 
 ### Added
 
@@ -19,7 +19,9 @@ git.drupalcode.org to become a proper contrib module. :tada:
 
 ### Changed
 
-- Nothing.
+- Release module on Drupal.org.
+- Include configuration per Block instance.
+- Write a better README.
 
 ### Deprecated
 

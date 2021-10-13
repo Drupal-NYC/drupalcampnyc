@@ -3,6 +3,7 @@
 namespace Drupal\sessionize_embed_block\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
+use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Drupal\sessionize_embed_block\Sessionize\Embed;
@@ -18,7 +19,7 @@ use Drupal\sessionize_embed_block\Sessionize\Embed;
 class SessionizeEmbedBlock extends BlockBase implements ContainerFactoryPluginInterface {
 
   /**
-   * Protected member varioable.
+   * Protected member variable.
    *
    * @var \Drupal\sessionize_embed_block\Sessionize\Embed
    *   The Sessionize Embed service.
@@ -58,7 +59,84 @@ class SessionizeEmbedBlock extends BlockBase implements ContainerFactoryPluginIn
    * {@inheritdoc}
    */
   public function defaultConfiguration() {
-    return ['label_display' => FALSE];
+    // @todo: Fall back on global configuration.
+    $config = $this->getConfiguration();
+    $embed_id = $config['embed_id'];
+    $embed_style = $config['embed_style'];
+    return [
+      'label_display' => FALSE,
+      'embed_id' => $embed_id ?? $this->sessionizeEmbed->getGlobalEmbedId(),
+      'embed_style' => $embed_style ?? $this->sessionizeEmbed->getGlobalEmbedStyle(),
+    ];
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function blockForm($form, FormStateInterface $form_state) {
+    $form = parent::blockForm($form, $form_state);
+
+    $config = $this->getConfiguration();
+    $embed_id = $config['embed_id'];
+    $embed_style = $config['embed_style'];
+
+    $form['form_config'] = [
+      '#theme_wrappers' => ['container'],
+    ];
+    $form['form_config']['embed_id'] = [
+      '#type' => 'textfield',
+      '#title' => $this->t('Embed ID'),
+      '#required' => TRUE,
+      '#default_value' => $embed_id,
+      '#description' => $this->t('Sessionize Embed ID.'),
+    ];
+    $form['form_config']['embed_style'] = [
+      '#type' => 'select',
+      '#title' => $this->t('Embed Style'),
+      '#required' => TRUE,
+      '#default_value' => $embed_style,
+      '#options' => [
+        'GridSmart' => $this->t('GridSmart'),
+        'Sessions' => $this->t('Sessions'),
+        'Speakers' => $this->t('Speakers'),
+        'SpeakerWall' => $this->t('SpeakerWall (retired)'),
+        'GridTable' => $this->t('GridTable (retired)'),
+        'Grid' => $this->t('Grid'),
+      ],
+      '#empty_option' => $this->t('-- Select --'),
+      '#description' => $this->t('Sessionize Embed style.'),
+    ];
+
+    // Computed Embed Code configuration (read-only).
+    $form['form_config']['sessionize_embed_block_computed_base_url'] = [
+      '#type' => 'textfield',
+      '#title' => $this->t('Computed base URL (Preview)'),
+      '#default_value' => $this->sessionizeEmbed->getSessionizeUrl($embed_id, $embed_style),
+      '#description' => $this->t('Read-only value based on config. Save changes to update.'),
+      '#attributes' => ['disabled' => 'disabled'],
+    ];
+    $form['form_config']['sessionize_embed_block_computed_embed_code'] = [
+      '#type' => 'textfield',
+      '#title' => $this->t('Computed Embed Code (Preview)'),
+      '#default_value' => $this->sessionizeEmbed->getSessionizeEmbed($embed_id, $embed_style),
+      '#description' => $this->t('Read-only value based on config. Save changes to update.'),
+      '#attributes' => ['disabled' => 'disabled'],
+      '#size' => 120,
+    ];
+
+    return $form;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function blockSubmit($form, FormStateInterface $form_state) {
+    parent::blockSubmit($form, $form_state);
+    $values = $form_state->getValues();
+    // dump($values) && die;.
+    $this->configuration['label_display'] = $values['label_display'];
+    $this->configuration['embed_id'] = $values['form_config']['embed_id'];
+    $this->configuration['embed_style'] = $values['form_config']['embed_style'];
   }
 
   /**
@@ -67,7 +145,7 @@ class SessionizeEmbedBlock extends BlockBase implements ContainerFactoryPluginIn
   public function build() {
     $renderable = [
       '#theme' => 'sessionize_embed_block__embed',
-      '#embed_url' => $this->sessionizeEmbed->getSessionizeUrl(),
+      '#embed_url' => $this->sessionizeEmbed->getSessionizeUrl($embed_id, $embed_style),
     ];
 
     return $renderable;

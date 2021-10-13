@@ -75,14 +75,14 @@ class SettingsForm extends ConfigFormBase implements ContainerInjectionInterface
       '#type' => 'textfield',
       '#title' => $this->t('Embed ID'),
       '#required' => TRUE,
-      '#default_value' => $config->get('embed_id') ?? [],
+      '#default_value' => $config->get('embed_id'),
       '#description' => $this->t('Sessionize Embed ID.'),
     ];
     $form['form_config']['sessionize_embed_block_embed_style'] = [
       '#type' => 'select',
       '#title' => $this->t('Embed Style'),
       '#required' => TRUE,
-      '#default_value' => $config->get('embed_style') ?? [],
+      '#default_value' => $config->get('embed_style'),
       '#options' => [
         'GridSmart' => $this->t('GridSmart'),
         'Sessions' => $this->t('Sessions'),
@@ -96,17 +96,19 @@ class SettingsForm extends ConfigFormBase implements ContainerInjectionInterface
     ];
 
     // Computed Embed Code configuration (read-only).
+    $embed_id = $config->get('embed_id');
+    $embed_style = $config->get('embed_style');
     $form['form_config']['sessionize_embed_block_computed_base_url'] = [
       '#type' => 'textfield',
       '#title' => $this->t('Computed base URL (Preview)'),
-      '#default_value' => $this->sessionizeEmbed->getSessionizeUrl(),
+      '#default_value' => $this->sessionizeEmbed->getSessionizeUrl($embed_id, $embed_style),
       '#description' => $this->t('Read-only value based on config. Save changes to update.'),
       '#attributes' => ['disabled' => 'disabled'],
     ];
     $form['form_config']['sessionize_embed_block_computed_embed_code'] = [
       '#type' => 'textfield',
       '#title' => $this->t('Computed Embed Code (Preview)'),
-      '#default_value' => $this->sessionizeEmbed->getSessionizeEmbed(),
+      '#default_value' => $this->sessionizeEmbed->getSessionizeEmbed($embed_id, $embed_style),
       '#description' => $this->t('Read-only value based on config. Save changes to update.'),
       '#attributes' => ['disabled' => 'disabled'],
       '#size' => 120,
