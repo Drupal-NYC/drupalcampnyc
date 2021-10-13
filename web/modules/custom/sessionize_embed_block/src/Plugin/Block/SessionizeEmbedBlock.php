@@ -60,9 +60,13 @@ class SessionizeEmbedBlock extends BlockBase implements ContainerFactoryPluginIn
    */
   public function defaultConfiguration() {
     // @todo: Fall back on global configuration.
+    // Local configuration (per-block).
     $config = $this->getConfiguration();
-    $embed_id = $config['embed_id'] ?? $this->sessionizeEmbed->getGlobalEmbedId() ?? '6mh71zh8';
-    $embed_style = $config['embed_style'] ?? $this->sessionizeEmbed->getGlobalEmbedStyle() ?? 'GridSmart';
+    // Global configuration. (This does not work at the moment.)
+    // $globalEmbedId = $this->sessionizeEmbed->getGlobalEmbedId();
+    // $globalEmbedStyle = $this->sessionizeEmbed->getGlobalEmbedStyle();
+    $embed_id = $config['embed_id'] ?? '6mh71zh8';
+    $embed_style = $config['embed_style'] ?? 'GridSmart';
     return [
       'label_display' => FALSE,
       'embed_id' => $embed_id,
