@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f7b3ccdc4cdc98b281971dbf94432bb4",
+    "content-hash": "23f6ed088c2cc92541d63794e90ec040",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -5322,23 +5322,26 @@
         },
         {
             "name": "drupal/sessionize_embed_block",
-            "version": "dev-1.0.x",
+            "version": "1.0.0-beta1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/sessionize_embed_block.git",
-                "reference": "f6ee72e3bf36b5d331c3ce39ef496d6fee87654e"
+                "reference": "1.0.0-beta1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/sessionize_embed_block-1.0.0-beta1.zip",
+                "reference": "1.0.0-beta1",
+                "shasum": "dd372df26a5acf1128a6376b38f4f8d917ad920f"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9.0"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.0.x": "1.0.x-dev"
-                },
                 "drupal": {
-                    "version": "1.0.x-dev",
-                    "datestamp": "1634164688",
+                    "version": "1.0.0-beta1",
+                    "datestamp": "1634171654",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -10755,7 +10758,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/facebook_pixel": 15,
-        "drupal/sessionize_embed_block": 20
+        "drupal/sessionize_embed_block": 10
     },
     "prefer-stable": true,
     "prefer-lowest": false,
