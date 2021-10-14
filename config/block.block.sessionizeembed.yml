@@ -11,7 +11,7 @@ dependencies:
 id: sessionizeembed
 theme: drupalnyc
 region: content
-weight: 0
+weight: -5
 provider: null
 plugin: sessionize_embed
 settings:
@@ -19,7 +19,7 @@ settings:
   label: Speakers
   provider: sessionize_embed_block
   label_display: '0'
-  embed_id: y6l88m0u
+  embed_id: 16ic3xr6
   embed_style: SpeakerWall
 visibility:
   current_user_page:
