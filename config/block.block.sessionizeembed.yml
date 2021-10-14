@@ -1,0 +1,35 @@
+uuid: 16f1c600-6b02-45e6-925a-832874faa84a
+langcode: en
+status: true
+dependencies:
+  module:
+    - de_core
+    - sessionize_embed_block
+    - system
+  theme:
+    - drupalnyc
+id: sessionizeembed
+theme: drupalnyc
+region: content
+weight: 0
+provider: null
+plugin: sessionize_embed
+settings:
+  id: sessionize_embed
+  label: Speakers
+  provider: sessionize_embed_block
+  label_display: '0'
+  embed_id: y6l88m0u
+  embed_style: SpeakerWall
+visibility:
+  current_user_page:
+    id: current_user_page
+    show_on_own_page: 0
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+  request_path:
+    id: request_path
+    pages: /speakers
+    negate: false
+    context_mapping: {  }
