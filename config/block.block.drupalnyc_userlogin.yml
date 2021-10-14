@@ -10,7 +10,7 @@ dependencies:
 id: drupalnyc_userlogin
 theme: drupalnyc
 region: content
-weight: -3
+weight: -1
 provider: null
 plugin: user_login_block
 settings:

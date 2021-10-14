@@ -1,28 +1,26 @@
-uuid: b9e67b00-91bf-4d61-b0d0-4e7bb3c31cbc
+uuid: 73af5ff0-d563-4cf0-b23d-1a13a1f21aa1
 langcode: en
-status: false
+status: true
 dependencies:
-  config:
-    - views.view.sponsors
   module:
     - de_core
+    - sessionize_embed_block
     - system
-    - views
   theme:
     - drupalnyc
-id: views_block__sponsors_block_venue_2
+id: sessionizeembed_2
 theme: drupalnyc
 region: content
-weight: -4
+weight: -7
 provider: null
-plugin: 'views_block:sponsors-block_venue'
+plugin: sessionize_embed
 settings:
-  id: 'views_block:sponsors-block_venue'
-  label: ''
-  provider: views
-  label_display: visible
-  views_label: ''
-  items_per_page: none
+  id: sessionize_embed
+  label: 'Full Schedule'
+  provider: sessionize_embed_block
+  label_display: '0'
+  embed_id: g2uz7lae
+  embed_style: GridSmart
 visibility:
   current_user_page:
     id: current_user_page
@@ -32,6 +30,6 @@ visibility:
       user: '@user.current_user_context:current_user'
   request_path:
     id: request_path
-    pages: /sponsors
-    negate: true
+    pages: /program
+    negate: false
     context_mapping: {  }

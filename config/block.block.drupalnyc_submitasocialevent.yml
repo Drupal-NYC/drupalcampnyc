@@ -10,7 +10,7 @@ dependencies:
 id: drupalnyc_submitasocialevent
 theme: drupalnyc
 region: content
-weight: 0
+weight: 2
 provider: null
 plugin: 'block_content:9d6ee8ba-c760-41de-9b10-7e4ad30fd8ca'
 settings:

@@ -11,16 +11,16 @@ dependencies:
 id: sessions
 theme: drupalnyc
 region: content
-weight: 0
+weight: -6
 provider: null
 plugin: sessionize_embed
 settings:
   id: sessionize_embed
   label: Sessions
   provider: sessionize_embed_block
-  label_display: visible
+  label_display: '0'
   embed_id: y6l88m0u
-  embed_style: GridSmart
+  embed_style: Sessions
 visibility:
   current_user_page:
     id: current_user_page

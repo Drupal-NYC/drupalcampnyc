@@ -13,7 +13,7 @@ dependencies:
 id: views_block__sponsors_block_diamond_2
 theme: drupalnyc
 region: content
-weight: -6
+weight: -10
 provider: null
 plugin: 'views_block:sponsors-block_diamond'
 settings:
