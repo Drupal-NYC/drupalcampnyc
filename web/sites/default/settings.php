@@ -159,3 +159,6 @@ else {
   // Enable development modules and config.
   $config['config_split.config_split.development']['status'] = TRUE;
 }
+
+// Configure Tome Static directory for Tome Netlify.
+$settings['tome_static_directory'] = 'sites/default/files/private/tome_static';
