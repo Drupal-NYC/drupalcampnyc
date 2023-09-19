@@ -68,6 +68,18 @@ You now have a fully functional local environment, accessible at [https://drupal
 
 If you find that you can see the site, but the theme was not applied, check out your error/warning messages in the console.  You may be asked to install a module called optipng.  Use this command to install it:  `npm install --save optipng-bin`
 
+## Lagoon environments
+
+### Main
+This is the production environment.  The `main` branch is deployed here.
+
+### Test
+A staging environment that deploys the `test` branch.
+
+### Pull Requests
+A PR to either of `main` or `test` will spin up a temporary environment with the result of
+the PR deployed as the code.  We are allowed up to 3 of these temporary environments.
+
 ## Useful Commands
 
 `git push` as normal.
@@ -84,11 +96,10 @@ XDebug debugging is disabled for performance reasons. `ddev xdebug on` will enab
 
 ## Using Composer
 
-You must run composer inside the Lando container by using `ddev composer` instead of `composer`.
+You should run composer inside the DDEV container by using `ddev composer` instead of `composer`.
 
-Why? For performance reasons, lando.yml is configured to disable syncing of files in the `vendor` and `node_modules` directories. For this reason, running vanilla `composer` commands in your terminal will not behave as expected.
-
-If you prefer to take the performance hit (and use `composer`) rather than have to use `lando composer`, you should be able to override the excludes in lando.local.yml by adding an exclude similar to `"!vendor"`.
+If you prefer to run composer on the host (and use `composer`) rather than have to use `ddev composer`, you must
+have the same version of PHP as that used in the container.
 
 Lando's [Performance documentation](https://docs.lando.dev/config/performance.html) explains further.
 
