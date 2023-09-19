@@ -15,6 +15,7 @@
         }
     ],
     "require": {
+        "amazeeio/drupal_integrations": "^0.3.7",
         "bower-asset/dropzone": "^5.7",
         "consolidation/robo": "^1.4",
         "cweagans/composer-patches": "^1.7",
@@ -30,7 +31,6 @@
         "drupal/config_readonly": "^1.0",
         "drupal/config_split": "^1.6",
         "drupal/config_update": "^1.7",
-        "drupal/console": "^1.9",
         "drupal/core": "^8.9",
         "drupal/core-composer-scaffold": "^8.9",
         "drupal/core-recommended": "8.9.18",
@@ -50,6 +50,7 @@
         "drupal/google_tag": "^1.4",
         "drupal/honeypot": "^2.0",
         "drupal/inline_entity_form": "^1.0",
+        "drupal/lagoon_logs": "^2.0",
         "drupal/linkit": "^6.0",
         "drupal/markup": "^1.0",
         "drupal/maxlength": "^1.0",
@@ -76,7 +77,6 @@
         "drupal/webform": "^5.23",
         "drush/drush": "^9.7",
         "oomphinc/composer-installers-extender": "^2.0",
-        "pantheon-systems/drupal-integrations": "^8.0",
         "webflo/drupal-finder": "^1.2",
         "webmozart/path-util": "^2.3"
     },
@@ -86,7 +86,14 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "drupal/core-composer-scaffold": true,
+            "cweagans/composer-patches": true,
+            "composer/installers": true,
+            "oomphinc/composer-installers-extender": true,
+            "drupal/console-extend-plugin": true
+        }
     },
     "extra": {
         "drupal-scaffold": {
@@ -95,7 +102,10 @@
             },
             "allowed-packages": [
                 "drupal/core",
-                "pantheon-systems/drupal-integrations"
+                "amazeeio/drupal_integrations"
+            ],
+            "excludes": [
+                "lagoon.site.yml"
             ]
         },
         "installer-types": [
