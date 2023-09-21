@@ -1,0 +1,11 @@
+#!/bin/bash
+
+## #ddev-generated
+## Description: Pull down db and files from production
+## Usage: update
+## Example: ddev update
+
+
+drush rsync @lagoon.main:%files  @self:%files
+drush sql-sync @lagoon.main @self
+drush deploy
