@@ -42,3 +42,15 @@ environments:
           - www.drupalcamp.nyc:
               tls-acme: 'true'
               insecure: Redirect
+  test:
+    # routes:
+    cronjobs:
+      - name: drush cron
+        schedule: "*/30 * * * *"
+        command: drush cron
+        service: cli
+    routes:
+      - nginx:
+          - test.drupalcamp.nyc:
+              tls-acme: 'true'
+              insecure: Redirect
