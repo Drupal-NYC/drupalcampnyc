@@ -275,7 +275,7 @@
 
 .field-group-fieldset legend {
   color: $secondary-color;
-  padding: 0 $grid-gap/2;
+  padding: 0 $grid-gap*0.5;
   font-size: 1.5em;
 }
 

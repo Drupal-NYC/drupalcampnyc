@@ -1,6 +1,7 @@
 var Encore = require("@symfony/webpack-encore");
 
 Encore
+  .disableSingleRuntimeChunk()
   // the project directory where compiled assets will be stored
   .setOutputPath("build/")
   // the public path used by the web server to access the previous directory
@@ -15,7 +16,9 @@ Encore
   .addEntry("js/infoscreen", "./assets/js/infoscreen.js")
   .addStyleEntry("css/main", "./assets/css/main.scss")
   .addStyleEntry("css/infoscreen", "./assets/css/infoscreen.scss")
-
+  .configureCssLoader((options) => {
+    options.url = false
+  })
   // uncomment if you use Sass/SCSS files
   .enableSassLoader(function (sassOptions) {}, {
     resolveUrlLoader: true,
