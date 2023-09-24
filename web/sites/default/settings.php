@@ -38,14 +38,14 @@ else {
   $config['google_tag.container.default_container']['environment_token'] = 'LrgoUUM8BuZax-g62Vi7Yg';
 
   $local_services = __DIR__ . '/services.local.yml';
-  if (file_exists($local_services)) {
+  if (is_readable($local_services)) {
     $settings['container_yamls'][] = $local_services;
   }
 
   // Load local settings file if it exists.
   $local_conf_file_path = __DIR__ . '/settings.local.php';
-  if (file_exists($local_conf_file_path)) {
-    require_once $local_conf_file_path;
+  if (is_readable($local_conf_file_path)) {
+    require $local_conf_file_path;
   }
   // Include for settings managed by ddev.
   $ddev_settings = __DIR__ . '/settings.ddev.php';
