@@ -42,7 +42,7 @@ else {
     $settings['container_yamls'][] = $local_services;
   }
 
-  // Load local settings file if it exists.
+//  // Load local settings file if it exists.
   $local_conf_file_path = __DIR__ . '/settings.local.php';
   if (is_readable($local_conf_file_path)) {
     require $local_conf_file_path;
