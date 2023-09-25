@@ -4,7 +4,7 @@ FROM uselagoon/php-7.4-cli-drupal:latest
 RUN apk update \
     && apk add --no-cache \
            autoconf \
-    && rm -rf /var/cache/apk/* \
+    && rm -rf /var/cache/apk/*
 
 COPY composer.* /app/
 COPY assets /app/assets
