@@ -1,1 +1,28 @@
-<?php&#10&#10// @codingStandardsIgnoreFile&#10&#10/**&#10 * @file&#10 * Loaded by lagoon.settings.php in development type environments.&#10 *&#10 * This file is loaded before any environment specific settings file.&#10 */&#10&#10// Enable development modules and config.&#10$config['config_split.config_split.development']['status'] = TRUE;&#10&#10
+<?php
+
+
+
+// @codingStandardsIgnoreFile
+
+
+
+/**
+
+ * @file
+
+ * Loaded by lagoon.settings.php in development type environments.
+
+ *
+
+ * This file is loaded before any environment specific settings file.
+
+ */
+
+
+
+// Enable development modules and config.
+
+$config['config_split.config_split.development']['status'] = TRUE;
+
+
+

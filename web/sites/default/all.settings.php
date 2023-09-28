@@ -1,1 +1,65 @@
-<?php&#10&#10/**&#10 * @file&#10 * Loaded by lagoon.settings.php in the all environments.&#10 *&#10 * Sets up Redis on all environments.&#10 */&#10&#10use \Drupal\Core\Installer\InstallerKernel;&#10&#10$settings['redis.connection']['interface'] = 'PhpRedis';&#10$settings['redis.connection']['host'] = getenv('REDIS_HOST') ?: 'redis';&#10$settings['redis.connection']['port'] = getenv('REDIS_SERVICE_PORT') ?: '6379';&#10$settings['cache_prefix']['default'] = getenv('LAGOON_PROJECT') . '_' . getenv('LAGOON_GIT_SAFE_BRANCH');&#10&#10// Do not set the cache during installations of Drupal.&#10if (!InstallerKernel::installationAttempted() && extension_loaded('redis')) {&#10  // Set Redis as the default backend for any cache bin not otherwise specified.&#10  $settings['cache']['default'] = 'cache.backend.redis';&#10&#10  // Apply changes to the container configuration to better leverage Redis.&#10  // This includes using Redis for the lock and flood control systems, as well&#10  // as the cache tag checksum. Alternatively, copy the contents of that file&#10  // to your project-specific services.yml file, modify as appropriate, and&#10  // remove this line.&#10  $settings['container_yamls'][] = 'modules/contrib/redis/example.services.yml';&#10&#10  // Allow the services to work before the Redis module itself is enabled.&#10  $settings['container_yamls'][] = 'modules/contrib/redis/redis.services.yml';&#10&#10  // Manually add the classloader path, this is required for the container cache bin definition below&#10  // and allows to use it without the redis module being enabled.&#10  $class_loader->addPsr4('Drupal\\redis\\', 'modules/contrib/redis/src');&#10&#10  // Use redis for container cache.&#10  // The container cache is used to load the container definition itself, and&#10  // thus any configuration stored in the container itself is not available&#10  // yet. These lines force the container cache to use Redis rather than the&#10  // default SQL cache.&#10  $settings['bootstrap_container_definition'] = [&#10    'parameters' => [],&#10    'services' => [&#10      'redis.factory' => [&#10        'class' => 'Drupal\redis\ClientFactory',&#10      ],&#10      'cache.backend.redis' => [&#10        'class' => 'Drupal\redis\Cache\CacheBackendFactory',&#10        'arguments' => ['@redis.factory', '@cache_tags_provider.container', '@serialization.phpserialize'],&#10      ],&#10      'cache.container' => [&#10        'class' => '\Drupal\redis\Cache\PhpRedis',&#10        'factory' => ['@cache.backend.redis', 'get'],&#10        'arguments' => ['container'],&#10      ],&#10      'cache_tags_provider.container' => [&#10        'class' => 'Drupal\redis\Cache\RedisCacheTagsChecksum',&#10        'arguments' => ['@redis.factory'],&#10      ],&#10      'serialization.phpserialize' => [&#10        'class' => 'Drupal\Component\Serialization\PhpSerialize',&#10      ],&#10    ],&#10  ];&#10}&#10
+<?php
+
+/**
+ * @file
+ * Loaded by lagoon.settings.php in the all environments.
+ *
+ * Sets up Redis on all environments.
+ */
+
+use \Drupal\Core\Installer\InstallerKernel;
+
+$settings['redis.connection']['interface'] = 'PhpRedis';
+$settings['redis.connection']['host'] = getenv('REDIS_HOST') ?: 'redis';
+$settings['redis.connection']['port'] = getenv('REDIS_SERVICE_PORT') ?: '6379';
+$settings['cache_prefix']['default'] = getenv('LAGOON_PROJECT') . '_' . getenv('LAGOON_GIT_SAFE_BRANCH');
+
+// Do not set the cache during installations of Drupal.
+if (!InstallerKernel::installationAttempted() && extension_loaded('redis')) {
+  // Set Redis as the default backend for any cache bin not otherwise specified.
+  $settings['cache']['default'] = 'cache.backend.redis';
+
+  // Apply changes to the container configuration to better leverage Redis.
+  // This includes using Redis for the lock and flood control systems, as well
+  // as the cache tag checksum. Alternatively, copy the contents of that file
+  // to your project-specific services.yml file, modify as appropriate, and
+  // remove this line.
+  $settings['container_yamls'][] = 'modules/contrib/redis/example.services.yml';
+
+  // Allow the services to work before the Redis module itself is enabled.
+  $settings['container_yamls'][] = 'modules/contrib/redis/redis.services.yml';
+
+  // Manually add the classloader path, this is required for the container cache bin definition below
+  // and allows to use it without the redis module being enabled.
+  $class_loader->addPsr4('Drupal\\redis\\', 'modules/contrib/redis/src');
+
+  // Use redis for container cache.
+  // The container cache is used to load the container definition itself, and
+  // thus any configuration stored in the container itself is not available
+  // yet. These lines force the container cache to use Redis rather than the
+  // default SQL cache.
+  $settings['bootstrap_container_definition'] = [
+    'parameters' => [],
+    'services' => [
+      'redis.factory' => [
+        'class' => 'Drupal\redis\ClientFactory',
+      ],
+      'cache.backend.redis' => [
+        'class' => 'Drupal\redis\Cache\CacheBackendFactory',
+        'arguments' => ['@redis.factory', '@cache_tags_provider.container', '@serialization.phpserialize'],
+      ],
+      'cache.container' => [
+        'class' => '\Drupal\redis\Cache\PhpRedis',
+        'factory' => ['@cache.backend.redis', 'get'],
+        'arguments' => ['container'],
+      ],
+      'cache_tags_provider.container' => [
+        'class' => 'Drupal\redis\Cache\RedisCacheTagsChecksum',
+        'arguments' => ['@redis.factory'],
+      ],
+      'serialization.phpserialize' => [
+        'class' => 'Drupal\Component\Serialization\PhpSerialize',
+      ],
+    ],
+  ];
+}
