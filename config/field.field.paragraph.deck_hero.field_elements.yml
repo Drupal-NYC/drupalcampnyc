@@ -23,36 +23,30 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 0
     target_bundles:
       media: media
       text: text
       element_call_to_action: element_call_to_action
+    negate: 0
     target_bundles_drag_drop:
-      deck_hero:
-        weight: 2
-        enabled: false
-      media:
-        enabled: true
-        weight: 4
-      text:
-        enabled: true
-        weight: 6
       deck_1_column:
         weight: 7
         enabled: false
       deck_2_columns:
         weight: 8
         enabled: false
-      element_sessions:
-        weight: 10
-        enabled: false
       deck_header:
         weight: 16
         enabled: false
+      deck_hero:
+        weight: 2
+        enabled: false
       element_call_to_action:
-        enabled: true
         weight: 18
+        enabled: true
+      element_sessions:
+        weight: 10
+        enabled: false
       element_sponsor:
         weight: 20
         enabled: false
@@ -68,4 +62,10 @@ settings:
       element_webform:
         weight: 24
         enabled: false
+      media:
+        weight: 4
+        enabled: true
+      text:
+        weight: 6
+        enabled: true
 field_type: entity_reference_revisions

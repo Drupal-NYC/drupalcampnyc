@@ -31,8 +31,9 @@ if (getenv('LAGOON')) {
   // Load Lagoon settings.
   require_once __DIR__ . '/settings.lagoon.php';
 }
-// Load settings suitable outside of Lagoon (e.g. local development).
 else {
+  // Load settings suitable outside of Lagoon (e.g. local development).
+
   // Default Google Tag Manager Container Environment "non-Live".
   $config['google_tag.container.default_container']['environment_id'] = 'env-19';
   $config['google_tag.container.default_container']['environment_token'] = 'LrgoUUM8BuZax-g62Vi7Yg';
@@ -42,7 +43,7 @@ else {
     $settings['container_yamls'][] = $local_services;
   }
 
-//  // Load local settings file if it exists.
+  // Load local settings file if it exists.
   $local_conf_file_path = __DIR__ . '/settings.local.php';
   if (is_readable($local_conf_file_path)) {
     require $local_conf_file_path;

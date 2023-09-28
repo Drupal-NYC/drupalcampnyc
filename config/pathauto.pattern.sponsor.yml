@@ -10,13 +10,13 @@ type: 'canonical_entities:node'
 pattern: 'sponsor/[node:title]'
 selection_criteria:
   0fded743-93ab-4c1d-917b-93ae0976c977:
-    id: node_type
-    bundles:
-      sponsor: sponsor
+    id: 'entity_bundle:node'
     negate: false
+    uuid: 0fded743-93ab-4c1d-917b-93ae0976c977
     context_mapping:
       node: node
-    uuid: 0fded743-93ab-4c1d-917b-93ae0976c977
+    bundles:
+      sponsor: sponsor
 selection_logic: and
 weight: -5
 relationships: {  }

@@ -10,13 +10,13 @@ type: 'canonical_entities:node'
 pattern: '/bof/[node:title]'
 selection_criteria:
   504a3726-e4e9-43a9-bf28-49d9b938662d:
-    id: node_type
-    bundles:
-      bof: bof
+    id: 'entity_bundle:node'
     negate: false
+    uuid: 504a3726-e4e9-43a9-bf28-49d9b938662d
     context_mapping:
       node: node
-    uuid: 504a3726-e4e9-43a9-bf28-49d9b938662d
+    bundles:
+      bof: bof
 selection_logic: and
 weight: -5
 relationships: {  }

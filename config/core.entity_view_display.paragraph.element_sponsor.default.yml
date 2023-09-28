@@ -14,7 +14,7 @@ bundle: element_sponsor
 mode: default
 content:
   field_sponsor:
-    weight: 0
+    type: viewsreference_formatter
     label: hidden
     settings:
       plugin_types:
@@ -26,6 +26,6 @@ content:
     third_party_settings:
       empty_fields:
         handler: ''
-    type: viewsreference_formatter
+    weight: 0
     region: content
 hidden: {  }

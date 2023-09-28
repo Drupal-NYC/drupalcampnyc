@@ -18,17 +18,17 @@ plugin: 'menu_block:policies'
 settings:
   id: 'menu_block:policies'
   label: Policies
-  provider: menu_block
   label_display: visible
+  provider: menu_block
   follow: false
   follow_parent: child
+  label_link: false
+  label_type: block
   level: 1
   depth: 1
   expand_all_items: true
   parent: 'policies:'
   suggestion: policies
-  label_type: block
-  label_link: false
 visibility:
   current_user_page:
     id: current_user_page

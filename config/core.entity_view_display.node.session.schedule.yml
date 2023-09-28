@@ -30,46 +30,46 @@ third_party_settings:
     group_type_and_track:
       children:
         - field_type
+      label: 'Type and track'
       parent_name: ''
+      region: content
       weight: 1
       format_type: html_element
       format_settings:
-        id: ''
         classes: session-type-and-track
+        id: ''
         element: div
         show_label: false
         label_element: h3
         attributes: ''
         effect: none
         speed: fast
-      label: 'Type and track'
-      region: content
     group_scheduled_at:
       children:
         - field_start
         - field_ends_at
         - field_room
+      label: 'Scheduled at'
       parent_name: ''
+      region: content
       weight: 0
       format_type: html_element
       format_settings:
-        id: ''
         classes: scheduled-at
+        id: ''
         element: div
         show_label: false
         label_element: h3
         attributes: ''
         effect: none
         speed: fast
-      label: 'Scheduled at'
-      region: content
 id: node.session.schedule
 targetEntityType: node
 bundle: session
 mode: schedule
 content:
   field_ends_at:
-    weight: 8
+    type: datetime_default
     label: hidden
     settings:
       timezone_override: ''
@@ -77,20 +77,20 @@ content:
     third_party_settings:
       empty_fields:
         handler: ''
-    type: datetime_default
+    weight: 8
     region: content
   field_room:
-    weight: 9
+    type: entity_reference_label
     label: hidden
     settings:
       link: false
     third_party_settings:
       empty_fields:
         handler: ''
-    type: entity_reference_label
+    weight: 9
     region: content
   field_speakers:
-    weight: 3
+    type: entity_reference_entity_view
     label: visually_hidden
     settings:
       view_mode: tiny
@@ -98,10 +98,10 @@ content:
     third_party_settings:
       empty_fields:
         handler: ''
-    type: entity_reference_entity_view
+    weight: 3
     region: content
   field_start:
-    weight: 7
+    type: datetime_default
     label: hidden
     settings:
       timezone_override: ''
@@ -109,24 +109,24 @@ content:
     third_party_settings:
       empty_fields:
         handler: ''
-    type: datetime_default
+    weight: 7
     region: content
   field_summary:
-    weight: 2
+    type: text_trimmed
     label: hidden
     settings:
       trim_length: 450
     third_party_settings:
       empty_fields:
         handler: nbsp
-    type: text_trimmed
+    weight: 2
     region: content
   field_type:
-    weight: 5
+    type: list_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: list_default
+    weight: 5
     region: content
 hidden:
   content_moderation_control: true

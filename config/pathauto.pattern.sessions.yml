@@ -10,13 +10,13 @@ type: 'canonical_entities:node'
 pattern: '/session/[node:title]'
 selection_criteria:
   97c7cfb7-9848-4bb9-9428-32e21138eb47:
-    id: node_type
-    bundles:
-      session: session
+    id: 'entity_bundle:node'
     negate: false
+    uuid: 97c7cfb7-9848-4bb9-9428-32e21138eb47
     context_mapping:
       node: node
-    uuid: 97c7cfb7-9848-4bb9-9428-32e21138eb47
+    bundles:
+      session: session
 selection_logic: and
 weight: -5
 relationships: {  }

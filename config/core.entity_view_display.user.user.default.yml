@@ -48,20 +48,20 @@ third_party_settings:
         - field_u_middle_name
         - field_u_last_name
         - field_u_acad_title_post
+      label: 'Full name'
       parent_name: ''
+      region: content
       weight: 1
       format_type: html_element
       format_settings:
+        classes: ''
+        id: ''
         element: div
         show_label: false
         label_element: h3
         attributes: ''
         effect: none
         speed: fast
-        id: ''
-        classes: ''
-      label: 'Full name'
-      region: content
 _core:
   default_config_hash: V51QPCKkgNREKtSmB9Iu2wmAMEpktVpnzklWaZV8UYo
 id: user.user.default
@@ -70,86 +70,85 @@ bundle: user
 mode: default
 content:
   field_speaker_profile:
-    weight: 5
+    type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 5
     region: content
   field_u_acad_title_post:
     type: string
-    weight: 6
-    region: content
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 6
+    region: content
   field_u_acad_title_pre:
     type: string
-    weight: 2
-    region: content
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 2
+    region: content
   field_u_company:
     type: string
-    weight: 3
-    region: content
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 3
+    region: content
   field_u_first_name:
     type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
     weight: 3
     region: content
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
   field_u_job_title:
     type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
     weight: 2
     region: content
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
   field_u_last_name:
     type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
     weight: 5
     region: content
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
   field_u_middle_name:
     type: string
-    weight: 4
-    region: content
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-  field_u_testimonial:
-    type: basic_string
     weight: 4
     region: content
+  field_u_testimonial:
+    type: basic_string
     label: above
     settings: {  }
     third_party_settings: {  }
+    weight: 4
+    region: content
   field_u_volunteer_about:
     type: text_default
-    weight: 6
-    region: content
     label: above
     settings: {  }
     third_party_settings: {  }
+    weight: 6
+    region: content
   user_picture:
     type: responsive_image
-    weight: 0
-    region: content
+    label: hidden
     settings:
       responsive_image_style: user_picture
       image_link: ''
@@ -160,7 +159,8 @@ content:
     third_party_settings:
       empty_fields:
         handler: ''
-    label: hidden
+    weight: 0
+    region: content
 hidden:
   field_dietary_intro: true
   field_interest_horizontal: true

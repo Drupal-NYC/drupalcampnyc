@@ -12,12 +12,12 @@ pattern: '/session-by-expertise/[term:name]'
 selection_criteria:
   432aec3c-e8fe-4c9a-b1ec-01cd84d66336:
     id: 'entity_bundle:taxonomy_term'
-    bundles:
-      session_horizontal: session_horizontal
     negate: false
+    uuid: 432aec3c-e8fe-4c9a-b1ec-01cd84d66336
     context_mapping:
       taxonomy_term: taxonomy_term
-    uuid: 432aec3c-e8fe-4c9a-b1ec-01cd84d66336
+    bundles:
+      session_horizontal: session_horizontal
 selection_logic: and
 weight: -5
 relationships: {  }

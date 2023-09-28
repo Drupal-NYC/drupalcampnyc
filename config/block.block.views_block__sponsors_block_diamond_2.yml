@@ -19,10 +19,11 @@ plugin: 'views_block:sponsors-block_diamond'
 settings:
   id: 'views_block:sponsors-block_diamond'
   label: ''
-  provider: views
   label_display: visible
+  provider: views
   views_label: ''
   items_per_page: none
+  exposed: {  }
 visibility:
   current_user_page:
     id: current_user_page
@@ -32,6 +33,6 @@ visibility:
       user: '@user.current_user_context:current_user'
   request_path:
     id: request_path
-    pages: /sponsors
     negate: true
     context_mapping: {  }
+    pages: /sponsors

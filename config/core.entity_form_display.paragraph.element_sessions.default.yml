@@ -16,40 +16,40 @@ third_party_settings:
         - field_featured
         - field_topic
         - field_track
+      label: Filtering
+      region: content
       parent_name: ''
       weight: 0
       format_type: fieldset
       format_settings:
-        id: ''
         classes: ''
+        id: ''
         description: 'Limit the listed sessions by these filters'
         required_fields: true
-      label: Filtering
-      region: content
 id: paragraph.element_sessions.default
 targetEntityType: paragraph
 bundle: element_sessions
 mode: default
 content:
   field_featured:
+    type: boolean_checkbox
     weight: 101
+    region: content
     settings:
       display_label: true
     third_party_settings: {  }
-    type: boolean_checkbox
-    region: content
   field_topic:
+    type: options_select
     weight: 102
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   field_track:
+    type: options_select
     weight: 103
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   status:
     type: boolean_checkbox
     weight: 2

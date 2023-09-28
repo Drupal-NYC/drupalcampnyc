@@ -27,7 +27,6 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 0
     target_bundles:
       media: media
       text: text
@@ -36,28 +35,26 @@ settings:
       element_user_pick: element_user_pick
       element_webform: element_webform
       views_block: views_block
+    negate: 0
     target_bundles_drag_drop:
-      deck_2_columns:
-        weight: 5
-        enabled: false
-      deck_hero:
-        weight: 6
-        enabled: false
-      media:
-        enabled: true
-        weight: 7
-      text:
-        enabled: true
-        weight: 8
       deck_1_column:
         weight: 16
+        enabled: false
+      deck_2_columns:
+        weight: 5
         enabled: false
       deck_header:
         weight: 18
         enabled: false
+      deck_hero:
+        weight: 6
+        enabled: false
       element_call_to_action:
-        enabled: true
         weight: 20
+        enabled: true
+      element_session_overview:
+        weight: 24
+        enabled: false
       element_sessions:
         weight: 21
         enabled: false
@@ -65,12 +62,9 @@ settings:
         weight: 22
         enabled: false
       element_testimonial_pick:
-        enabled: true
         weight: 23
+        enabled: true
       element_tickets_widget:
-        weight: 24
-        enabled: false
-      element_session_overview:
         weight: 24
         enabled: false
       element_tracks:
@@ -80,12 +74,18 @@ settings:
         weight: 26
         enabled: false
       element_user_pick:
-        enabled: true
         weight: 27
+        enabled: true
       element_webform:
-        enabled: true
         weight: 28
-      views_block:
         enabled: true
+      media:
+        weight: 7
+        enabled: true
+      text:
+        weight: 8
+        enabled: true
+      views_block:
         weight: 34
+        enabled: true
 field_type: entity_reference_revisions

@@ -14,7 +14,7 @@ bundle: views_block
 mode: default
 content:
   field_pick_view:
-    weight: 0
+    type: viewsreference_formatter
     label: hidden
     settings:
       plugin_types:
@@ -27,6 +27,6 @@ content:
     third_party_settings:
       empty_fields:
         handler: ''
-    type: viewsreference_formatter
+    weight: 0
     region: content
 hidden: {  }

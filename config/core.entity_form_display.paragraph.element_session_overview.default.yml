@@ -13,11 +13,11 @@ bundle: element_session_overview
 mode: default
 content:
   field_session_overview:
+    type: viewsreference_select
     weight: 1
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: viewsreference_select
-    region: content
   status:
     type: boolean_checkbox
     weight: 2

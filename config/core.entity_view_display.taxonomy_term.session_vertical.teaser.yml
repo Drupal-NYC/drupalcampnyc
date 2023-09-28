@@ -19,14 +19,14 @@ bundle: session_vertical
 mode: teaser
 content:
   description:
-    label: hidden
     type: text_default
-    weight: 1
-    region: content
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 1
+    region: content
   field_icon:
-    weight: 0
+    type: entity_reference_entity_view
     label: hidden
     settings:
       view_mode: default
@@ -34,7 +34,7 @@ content:
     third_party_settings:
       empty_fields:
         handler: ''
-    type: entity_reference_entity_view
+    weight: 0
     region: content
 hidden:
   field_confirmed: true

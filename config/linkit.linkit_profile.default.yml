@@ -4,16 +4,14 @@ status: true
 dependencies:
   module:
     - node
-id: default
 label: Default
+id: default
 description: ''
 matchers:
   9f22c4e2-c6c5-4f5b-8f47-1ab32d174ef2:
-    uuid: 9f22c4e2-c6c5-4f5b-8f47-1ab32d174ef2
     id: 'entity:node'
-    weight: 0
+    uuid: 9f22c4e2-c6c5-4f5b-8f47-1ab32d174ef2
     settings:
-      include_unpublished: true
       metadata: ''
       bundles:
         blog_post: blog_post
@@ -29,3 +27,5 @@ matchers:
       group_by_bundle: true
       substitution_type: canonical
       limit: 200
+      include_unpublished: true
+    weight: 0

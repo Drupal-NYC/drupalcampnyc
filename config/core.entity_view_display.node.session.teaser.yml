@@ -32,58 +32,58 @@ third_party_settings:
     group_type_and_track:
       children:
         - field_type
+      label: 'Type and track'
       parent_name: ''
+      region: content
       weight: 0
       format_type: html_element
       format_settings:
+        classes: session-type-and-track
+        id: ''
         element: div
         show_label: false
         label_element: h3
         attributes: ''
         effect: none
         speed: fast
-        id: ''
-        classes: session-type-and-track
-      label: 'Type and track'
-      region: content
     group_scheduled_at:
       children:
         - field_start
         - field_ends_at
         - field_room
+      label: 'Scheduled at'
       parent_name: ''
+      region: content
       weight: 4
       format_type: html_element
       format_settings:
+        classes: scheduled-at
+        id: ''
         element: div
         show_label: false
         label_element: h3
         attributes: ''
         effect: none
         speed: fast
-        id: ''
-        classes: scheduled-at
-      label: 'Scheduled at'
-      region: content
     group_materials:
       children:
         - field_slides
         - field_slides_external
         - field_video
+      label: Materials
       parent_name: ''
+      region: content
       weight: 3
       format_type: html_element
       format_settings:
-        id: ''
         classes: session-materials
+        id: ''
         element: div
         show_label: true
         label_element: h3
         attributes: ''
         effect: none
         speed: fast
-      label: Materials
-      region: content
 id: node.session.teaser
 targetEntityType: node
 bundle: session
@@ -91,8 +91,6 @@ mode: teaser
 content:
   field_ends_at:
     type: datetime_default
-    weight: 6
-    region: content
     label: hidden
     settings:
       timezone_override: ''
@@ -100,42 +98,42 @@ content:
     third_party_settings:
       empty_fields:
         handler: ''
+    weight: 6
+    region: content
   field_room:
     type: entity_reference_label
-    weight: 7
-    region: content
     label: hidden
     settings:
       link: false
     third_party_settings:
       empty_fields:
         handler: ''
+    weight: 7
+    region: content
   field_slides:
     type: file_default
-    weight: 0
-    region: content
     label: above
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
+    weight: 0
+    region: content
   field_slides_external:
     type: link
-    weight: 1
-    region: content
     label: above
     settings:
       trim_length: 80
-      target: _blank
       url_only: false
       url_plain: false
       rel: '0'
+      target: _blank
     third_party_settings:
       empty_fields:
         handler: ''
-  field_speakers:
-    type: entity_reference_entity_view
     weight: 1
     region: content
+  field_speakers:
+    type: entity_reference_entity_view
     label: visually_hidden
     settings:
       view_mode: compact
@@ -143,10 +141,10 @@ content:
     third_party_settings:
       empty_fields:
         handler: ''
+    weight: 1
+    region: content
   field_start:
     type: datetime_default
-    weight: 5
-    region: content
     label: hidden
     settings:
       timezone_override: ''
@@ -154,37 +152,39 @@ content:
     third_party_settings:
       empty_fields:
         handler: ''
+    weight: 5
+    region: content
   field_summary:
     type: text_trimmed
-    weight: 2
-    region: content
     label: hidden
     settings:
       trim_length: 450
     third_party_settings:
       empty_fields:
         handler: nbsp
+    weight: 2
+    region: content
   field_type:
     type: list_default
-    weight: 0
-    region: content
     label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
   field_video:
     type: link
-    weight: 2
-    region: content
     label: above
     settings:
       trim_length: 80
-      target: _blank
       url_only: false
       url_plain: false
       rel: '0'
+      target: _blank
     third_party_settings:
       empty_fields:
         handler: ''
+    weight: 2
+    region: content
 hidden:
   content_moderation_control: true
   field_description: true

@@ -10,11 +10,11 @@ dependencies:
     - user
 third_party_settings:
   allowed_formats:
-    basic_html: basic_html
-    restricted_html: restricted_html
-    full_html: full_html
-    plain_text: plain_text
-    job_listing_html: '0'
+    allowed_formats:
+      - basic_html
+      - restricted_html
+      - full_html
+      - plain_text
 id: user.user.field_speaker_profile
 field_name: field_speaker_profile
 entity_type: user

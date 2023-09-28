@@ -17,8 +17,8 @@ plugin: sessionize_embed
 settings:
   id: sessionize_embed
   label: 'Full Schedule'
-  provider: sessionize_embed_block
   label_display: '0'
+  provider: sessionize_embed_block
   embed_id: g2uz7lae
   embed_style: GridSmart
 visibility:
@@ -30,6 +30,6 @@ visibility:
       user: '@user.current_user_context:current_user'
   request_path:
     id: request_path
-    pages: /program
     negate: false
     context_mapping: {  }
+    pages: /program

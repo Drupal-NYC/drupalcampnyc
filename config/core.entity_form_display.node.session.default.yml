@@ -37,54 +37,54 @@ third_party_settings:
         - field_summary
         - field_description
         - uid
+      label: Subject
+      region: content
       parent_name: ''
       weight: 1
       format_type: details
       format_settings:
+        classes: ''
+        id: ''
         open: true
         required_fields: true
-        id: ''
-        classes: ''
-      label: Subject
-      region: content
     group_category:
       children: {  }
+      label: Category
+      region: content
       parent_name: ''
       weight: 4
       format_type: details
       format_settings:
+        classes: ''
+        id: ''
         open: true
         required_fields: true
-        id: ''
-        classes: ''
-      label: Category
-      region: content
     group_speaker_info:
       children: {  }
+      label: Speaker
+      region: content
       parent_name: ''
       weight: 5
       format_type: fieldset
       format_settings:
-        id: ''
         classes: ''
+        id: ''
         description: ''
         required_fields: true
-      label: Speaker
-      region: content
     group_resources:
       children:
         - field_slides_external
         - field_slides
+      label: Resources
+      region: content
       parent_name: ''
       weight: 17
       format_type: fieldset
       format_settings:
-        id: ''
         classes: ''
+        id: ''
         description: 'Please provide either a link to the slides presented or upload them here.'
         required_fields: true
-      label: Resources
-      region: content
 id: node.session.default
 targetEntityType: node
 bundle: session
@@ -97,35 +97,35 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_description:
+    type: text_textarea
     weight: 25
+    region: content
     settings:
       rows: 9
       placeholder: ''
     third_party_settings: {  }
-    type: text_textarea
-    region: content
   field_ends_at:
-    weight: 16
-    settings: {  }
-    third_party_settings: {  }
     type: datetime_default
+    weight: 16
     region: content
-  field_session_level:
-    weight: 2
     settings: {  }
     third_party_settings: {  }
+  field_session_level:
     type: options_select
+    weight: 2
     region: content
+    settings: {  }
+    third_party_settings: {  }
   field_session_sponsor:
+    type: entity_reference_autocomplete
     weight: 27
+    region: content
     settings:
       match_operator: CONTAINS
       match_limit: 10
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
   field_slides:
     type: file_generic
     weight: 22
@@ -134,48 +134,48 @@ content:
       progress_indicator: throbber
     third_party_settings: {  }
   field_slides_external:
+    type: link_default
     weight: 21
+    region: content
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
-    type: link_default
-    region: content
   field_speakers:
+    type: entity_browser_entity_reference
     weight: 3
+    region: content
     settings:
       entity_browser: user_browser
       field_widget_display: rendered_entity
+      field_widget_edit: false
       field_widget_remove: true
+      field_widget_replace: false
       open: true
-      selection_mode: selection_edit
       field_widget_display_settings:
         view_mode: compact
-      field_widget_edit: false
-      field_widget_replace: false
+      selection_mode: selection_edit
     third_party_settings: {  }
-    type: entity_browser_entity_reference
-    region: content
   field_start:
+    type: datetime_default
     weight: 15
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: datetime_default
-    region: content
   field_summary:
+    type: text_textarea
     weight: 23
+    region: content
     settings:
       rows: 3
       placeholder: ''
     third_party_settings: {  }
-    type: text_textarea
-    region: content
   field_type:
+    type: options_buttons
     weight: 22
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_buttons
-    region: content
   field_video:
     type: link_default
     weight: 18
@@ -187,8 +187,8 @@ content:
   moderation_state:
     type: moderation_state_default
     weight: 6
-    settings: {  }
     region: content
+    settings: {  }
     third_party_settings: {  }
   path:
     type: path
@@ -198,10 +198,10 @@ content:
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 11
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   publish_on:
     type: datetime_timestamp_no_default
@@ -211,17 +211,17 @@ content:
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 10
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 12
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   title:
     type: string_textfield
@@ -234,12 +234,12 @@ content:
   uid:
     type: entity_reference_autocomplete
     weight: 26
+    region: content
     settings:
       match_operator: CONTAINS
+      match_limit: 10
       size: 60
       placeholder: ''
-      match_limit: 10
-    region: content
     third_party_settings: {  }
   unpublish_on:
     type: datetime_timestamp_no_default

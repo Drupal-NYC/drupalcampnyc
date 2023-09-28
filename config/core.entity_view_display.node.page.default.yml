@@ -21,13 +21,12 @@ bundle: page
 mode: default
 content:
   content_moderation_control:
-    weight: -20
     settings: {  }
     third_party_settings: {  }
+    weight: -20
     region: content
   field_content:
     type: entity_reference_revisions_entity_view
-    weight: 3
     label: hidden
     settings:
       view_mode: default
@@ -35,18 +34,19 @@ content:
     third_party_settings:
       empty_fields:
         handler: ''
+    weight: 3
     region: content
   field_header:
     type: entity_reference_revisions_entity_view
-    weight: 1
     label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
+    weight: 1
     region: content
   field_sponsors:
-    weight: 2
+    type: viewsreference_formatter
     label: hidden
     settings:
       plugin_types:
@@ -58,13 +58,13 @@ content:
     third_party_settings:
       empty_fields:
         handler: ''
-    type: viewsreference_formatter
+    weight: 2
     region: content
   links:
-    weight: 0
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   field_summary_plain: true
   shariff_field: true

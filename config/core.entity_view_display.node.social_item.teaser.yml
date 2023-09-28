@@ -16,12 +16,12 @@ mode: teaser
 content:
   field_tweet_link:
     type: linkembed
-    weight: 0
-    region: content
     label: hidden
     settings:
       text_length: short
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   links: true
   shariff_field: true

@@ -13,27 +13,27 @@ bundle: element_sessions
 mode: default
 content:
   field_featured:
-    weight: 0
+    type: boolean
     label: hidden
     settings:
       format: default
       format_custom_false: ''
       format_custom_true: ''
     third_party_settings: {  }
-    type: boolean
+    weight: 0
     region: content
   field_topic:
-    weight: 3
+    type: entity_reference_entity_id
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: entity_reference_entity_id
+    weight: 3
     region: content
   field_track:
-    weight: 4
+    type: entity_reference_entity_id
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: entity_reference_entity_id
+    weight: 4
     region: content
 hidden: {  }

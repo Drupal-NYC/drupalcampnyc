@@ -1,7 +1,54 @@
 uuid: e2f9db5d-14a8-4d39-93f0-20129d653360
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.basic_html
+    - filter.format.full_html
+    - filter.format.restricted_html
+    - media.type.audio
+    - media.type.file
+    - media.type.icon
+    - media.type.image
+    - media.type.video
+    - node.type.blog_post
+    - node.type.bof
+    - node.type.job_listing
+    - node.type.page
+    - node.type.partner
+    - node.type.session
+    - node.type.social_event
+    - node.type.sponsor
+    - node.type.webform
+    - taxonomy.vocabulary.accessibility_needs
+    - taxonomy.vocabulary.dietary_restrictions
+    - taxonomy.vocabulary.session_horizontal
+    - taxonomy.vocabulary.session_vertical
+    - workflows.workflow.editorial
+    - workflows.workflow.sessions
+    - workflows.workflow.social_events
+  module:
+    - content_moderation
+    - contextual
+    - dropzonejs
+    - entity_browser
+    - field_permissions
+    - file
+    - filter
+    - honeypot
+    - media
+    - node
+    - override_node_options
+    - paragraphs_type_permissions
+    - path
+    - pathauto
+    - redirect
+    - scheduler
+    - system
+    - taxonomy
+    - toolbar
+    - webform
+    - webform_node
 id: content_editor
 label: 'Content editor'
 weight: 3
@@ -31,7 +78,6 @@ permissions:
   - 'create field_access_notice'
   - 'create field_job_sponsor'
   - 'create field_track_chairs'
-  - 'create field_track_session_additionals'
   - 'create file media'
   - 'create icon media'
   - 'create image media'
@@ -118,7 +164,6 @@ permissions:
   - 'delete terms in dietary_restrictions'
   - 'delete terms in session_horizontal'
   - 'delete terms in session_vertical'
-  - 'display eu cookie compliance popup'
   - 'dropzone upload files'
   - 'edit any audio media'
   - 'edit any blog_post content'
@@ -138,11 +183,9 @@ permissions:
   - 'edit field_speaker_profile'
   - 'edit field_sponsors'
   - 'edit field_track_chairs'
-  - 'edit field_track_session_additionals'
   - 'edit own audio media'
   - 'edit own blog_post content'
   - 'edit own field_job_sponsor'
-  - 'edit own field_track_session_additionals'
   - 'edit own file media'
   - 'edit own icon media'
   - 'edit own image media'
@@ -158,7 +201,6 @@ permissions:
   - 'edit terms in session_horizontal'
   - 'edit terms in session_vertical'
   - 'edit webform submissions own node'
-  - 'enter all revision log entry'
   - 'enter blog_post revision log entry'
   - 'enter bof revision log entry'
   - 'enter job_listing revision log entry'
@@ -285,18 +327,15 @@ permissions:
   - 'view any unpublished content'
   - 'view blog_post revisions'
   - 'view field_comments'
-  - 'view field_duration'
   - 'view field_job_sponsor'
   - 'view field_speaker'
   - 'view field_ticket_type'
-  - 'view field_track_session_additionals'
   - 'view field_u_cat_orgateam'
   - 'view job_listing revisions'
   - 'view latest version'
   - 'view own field_job_sponsor'
   - 'view own field_speaker'
   - 'view own field_ticket_type'
-  - 'view own field_track_session_additionals'
   - 'view own field_u_cat_orgateam'
   - 'view own unpublished content'
   - 'view own webform submission'

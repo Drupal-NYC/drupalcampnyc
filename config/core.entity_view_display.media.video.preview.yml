@@ -18,28 +18,28 @@ mode: preview
 content:
   field_media_video_file:
     type: file_video
-    weight: 1
     label: visually_hidden
     settings:
       controls: true
-      multiple_file_display_type: tags
-      width: 480
-      height: 320
       autoplay: false
       loop: false
+      multiple_file_display_type: tags
       muted: false
+      width: 480
+      height: 320
     third_party_settings:
       empty_fields:
         handler: nbsp
+    weight: 1
     region: content
   name:
     type: string
-    weight: 0
-    region: content
     label: visually_hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   created: true
   thumbnail: true

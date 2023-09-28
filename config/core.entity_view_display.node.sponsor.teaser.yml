@@ -23,19 +23,21 @@ mode: teaser
 content:
   field_sponsor_logo:
     type: image
-    weight: 0
-    region: content
     label: hidden
     settings:
-      image_style: ''
       image_link: content
-      svg_render_as_image: true
+      image_style: ''
       svg_attributes:
         width: null
         height: null
+      svg_render_as_image: true
+      image_loading:
+        attribute: lazy
     third_party_settings:
       empty_fields:
         handler: ''
+    weight: 0
+    region: content
 hidden:
   field_address: true
   field_contact_name: true

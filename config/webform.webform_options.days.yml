@@ -11,4 +11,11 @@ id: days
 label: Days
 category: 'Date and time'
 likert: false
-options: "Monday: Monday\nTuesday: Tuesday\nWednesday: Wednesday\nThursday: Thursday\nFriday: Friday\nSaturday: Saturday\nSunday: Sunday\n"
+options: |
+  Monday: Monday
+  Tuesday: Tuesday
+  Wednesday: Wednesday
+  Thursday: Thursday
+  Friday: Friday
+  Saturday: Saturday
+  Sunday: Sunday

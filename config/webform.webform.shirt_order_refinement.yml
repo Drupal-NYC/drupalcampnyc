@@ -2,17 +2,117 @@ uuid: d81a60de-b108-45e7-ab68-6c571f791439
 langcode: en
 status: scheduled
 dependencies: {  }
+weight: 0
 open: null
 close: '2018-08-10T23:59:59'
-weight: 0
 uid: 1
 template: false
 archive: false
 id: shirt_order_refinement
 title: 'Shirt order refinement'
 description: 'Allows attendees who have bought a shirt to change the size.'
-category: ''
-elements: "internal:\n  '#type': fieldset\n  '#title': 'To find your order'\n  ticket_order_no_:\n    '#type': textfield\n    '#title': 'Order No.'\n    '#description': 'The code of your (ticket) order (5 chars).'\n    '#minlength': 5\n    '#maxlength': 5\n    '#size': 5\n    '#required': true\n  given_names:\n    '#type': textfield\n    '#title': 'First Name'\n    '#required': true\n    '#default_value': '[current-user:field_u_first_name]'\n  surname:\n    '#type': textfield\n    '#title': 'Last Name'\n    '#default_value': '[current-user:field_u_last_name]'\n    '#required': true\n  email:\n    '#type': email\n    '#title': E-Mail\n    '#description': 'In case we need to contact you on this.'\n    '#readonly': true\n    '#required': true\n    '#default_value': '[current-user:mail]'\nshirt:\n  '#type': fieldset\n  '#title': 'Your shirt'\n  size_ordered:\n    '#type': select\n    '#title': 'The size you originally ordered'\n    '#options':\n      '(Men''s) S': '(Men''s) S'\n      '(Men''s) M': '(Men''s) M'\n      '(Men''s) L': '(Men''s) L'\n      '(Men''s) XL': '(Men''s) XL'\n      '(Men''s) XXL': '(Men''s) XXL'\n      '(Men''s) XXXL': '(Men''s) XXXL'\n      '(Men''s) 7XL': '(Men''s) 7XL'\n    '#empty_option': '--please indicate--'\n    '#empty_value': 'please choose'\n    '#required': true\n  size_target_women:\n    '#type': select\n    '#title': 'The size you prefer (Women''s fit)'\n    '#help': '&quot;Lady fit&quot;'\n    '#options':\n      'Women''s XS': 'Women''s XS'\n      'Women''s S': 'Women''s S'\n      'Women''s M': 'Women''s M'\n      'Women''s L': 'Women''s L'\n      'Women''s XL': 'Women''s XL'\n      'Women''s XXL': 'Women''s XXL'\n    '#empty_option': '--please choose--'\n    '#empty_value': 'please choose'\n    '#states':\n      disabled:\n        -\n          ':input[name=\"size_ordered\"]':\n            value: 'please choose'\n        - or\n        -\n          ':input[name=\"size_target_men\"]':\n            '!value': 'please choose'\n  size_target_men:\n    '#type': select\n    '#title': 'The size you prefer (Men''s)'\n    '#help': '&quot;Straight&quot; resp. &quot;unisex&quot;'\n    '#options':\n      'Men''s XS': 'Men''s XS'\n      'Men''s S': 'Men''s S'\n      'Men''s M': 'Men''s M'\n      'Men''s L': 'Men''s L'\n      'Men''s XL': 'Men''s XL'\n      'Men''s XXL': 'Men''s XXL'\n      'Men''s XXXL': 'Men''s XXXL'\n    '#empty_option': '--please choose--'\n    '#empty_value': 'please choose'\n    '#states':\n      disabled:\n        -\n          ':input[name=\"size_ordered\"]':\n            value: 'please choose'\n        - or\n        -\n          ':input[name=\"size_target_women\"]':\n            '!value': 'please choose'\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#states':\n    disabled:\n      ':input[name=\"size_target_women\"]':\n        value: 'please choose'\n      ':input[name=\"size_target_men\"]':\n        value: 'please choose'\n  '#submit__label': 'Submit Request'\n"
+categories: {  }
+elements: |
+  internal:
+    '#type': fieldset
+    '#title': 'To find your order'
+    ticket_order_no_:
+      '#type': textfield
+      '#title': 'Order No.'
+      '#description': 'The code of your (ticket) order (5 chars).'
+      '#minlength': 5
+      '#maxlength': 5
+      '#size': 5
+      '#required': true
+    given_names:
+      '#type': textfield
+      '#title': 'First Name'
+      '#required': true
+      '#default_value': '[current-user:field_u_first_name]'
+    surname:
+      '#type': textfield
+      '#title': 'Last Name'
+      '#default_value': '[current-user:field_u_last_name]'
+      '#required': true
+    email:
+      '#type': email
+      '#title': E-Mail
+      '#description': 'In case we need to contact you on this.'
+      '#readonly': true
+      '#required': true
+      '#default_value': '[current-user:mail]'
+  shirt:
+    '#type': fieldset
+    '#title': 'Your shirt'
+    size_ordered:
+      '#type': select
+      '#title': 'The size you originally ordered'
+      '#options':
+        '(Men''s) S': '(Men''s) S'
+        '(Men''s) M': '(Men''s) M'
+        '(Men''s) L': '(Men''s) L'
+        '(Men''s) XL': '(Men''s) XL'
+        '(Men''s) XXL': '(Men''s) XXL'
+        '(Men''s) XXXL': '(Men''s) XXXL'
+        '(Men''s) 7XL': '(Men''s) 7XL'
+      '#empty_option': '--please indicate--'
+      '#empty_value': 'please choose'
+      '#required': true
+    size_target_women:
+      '#type': select
+      '#title': 'The size you prefer (Women''s fit)'
+      '#help': '&quot;Lady fit&quot;'
+      '#options':
+        'Women''s XS': 'Women''s XS'
+        'Women''s S': 'Women''s S'
+        'Women''s M': 'Women''s M'
+        'Women''s L': 'Women''s L'
+        'Women''s XL': 'Women''s XL'
+        'Women''s XXL': 'Women''s XXL'
+      '#empty_option': '--please choose--'
+      '#empty_value': 'please choose'
+      '#states':
+        disabled:
+          -
+            ':input[name="size_ordered"]':
+              value: 'please choose'
+          - or
+          -
+            ':input[name="size_target_men"]':
+              '!value': 'please choose'
+    size_target_men:
+      '#type': select
+      '#title': 'The size you prefer (Men''s)'
+      '#help': '&quot;Straight&quot; resp. &quot;unisex&quot;'
+      '#options':
+        'Men''s XS': 'Men''s XS'
+        'Men''s S': 'Men''s S'
+        'Men''s M': 'Men''s M'
+        'Men''s L': 'Men''s L'
+        'Men''s XL': 'Men''s XL'
+        'Men''s XXL': 'Men''s XXL'
+        'Men''s XXXL': 'Men''s XXXL'
+      '#empty_option': '--please choose--'
+      '#empty_value': 'please choose'
+      '#states':
+        disabled:
+          -
+            ':input[name="size_ordered"]':
+              value: 'please choose'
+          - or
+          -
+            ':input[name="size_target_women"]':
+              '!value': 'please choose'
+  actions:
+    '#type': webform_actions
+    '#title': 'Submit button(s)'
+    '#states':
+      disabled:
+        ':input[name="size_target_women"]':
+          value: 'please choose'
+        ':input[name="size_target_men"]':
+          value: 'please choose'
+    '#submit__label': 'Submit Request'
 css: ''
 javascript: ''
 settings:
@@ -27,40 +127,48 @@ settings:
   page_theme_name: ''
   form_title: both
   form_submit_once: false
-  form_exception_message: ''
   form_open_message: ''
   form_close_message: 'Sorry, t-shirt orders cannot be changed any more.'
+  form_exception_message: ''
   form_previous_submissions: true
   form_confidential: false
   form_confidential_message: ''
-  form_remote_addr: true
+  form_disable_remote_addr: false
   form_convert_anonymous: false
   form_prepopulate: false
   form_prepopulate_source_entity: false
   form_prepopulate_source_entity_required: false
   form_prepopulate_source_entity_type: ''
-  form_reset: false
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
   form_disable_autocomplete: false
   form_novalidate: false
   form_disable_inline_errors: false
   form_required: false
-  form_unsaved: false
-  form_disable_back: false
-  form_submit_back: false
   form_autofocus: false
   form_details_toggle: false
+  form_reset: false
   form_access_denied: default
   form_access_denied_title: ''
   form_access_denied_message: ''
   form_access_denied_attributes: {  }
   form_file_limit: ''
+  form_attributes: {  }
+  form_method: ''
+  form_action: ''
   share: false
   share_node: false
   share_theme_name: ''
   share_title: true
   share_page_body_attributes: {  }
   submission_label: ''
+  submission_exception_message: ''
+  submission_locked_message: ''
   submission_log: false
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
   submission_views: {  }
   submission_views_replace: {  }
   submission_user_columns: {  }
@@ -69,11 +177,6 @@ settings:
   submission_access_denied_title: ''
   submission_access_denied_message: ''
   submission_access_denied_attributes: {  }
-  submission_exception_message: ''
-  submission_locked_message: ''
-  submission_excluded_elements: {  }
-  submission_exclude_empty: false
-  submission_exclude_empty_checkbox: false
   previous_submission_message: ''
   previous_submissions_message: ''
   autofill: false
@@ -84,19 +187,21 @@ settings:
   wizard_progress_percentage: false
   wizard_progress_link: false
   wizard_progress_states: false
-  wizard_auto_forward: true
-  wizard_auto_forward_hide_next_button: false
-  wizard_keyboard: true
   wizard_start_label: ''
   wizard_preview_link: false
   wizard_confirmation: true
   wizard_confirmation_label: ''
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
   wizard_track: ''
   wizard_prev_button_label: ''
   wizard_next_button_label: ''
   wizard_toggle: false
   wizard_toggle_show_label: ''
   wizard_toggle_hide_label: ''
+  wizard_page_type: container
+  wizard_page_title_tag: h2
   preview: 0
   preview_label: ''
   preview_title: ''
@@ -113,9 +218,9 @@ settings:
   draft_pending_single_message: ''
   draft_pending_multiple_message: ''
   confirmation_type: inline
+  confirmation_url: ''
   confirmation_title: ''
   confirmation_message: "Thanks for reaching out, we&#39;re happy to help.<br />\r\nChanges to orders list will be included until 10 August."
-  confirmation_url: ''
   confirmation_attributes: {  }
   confirmation_back: true
   confirmation_back_label: ''
@@ -201,9 +306,9 @@ access:
 handlers:
   email:
     id: email
+    handler_id: email
     label: Email
     notes: ''
-    handler_id: email
     status: true
     conditions: {  }
     weight: 0
@@ -212,13 +317,17 @@ handlers:
         - completed
       to_mail: camp@drupalnyc.org
       to_options: {  }
-      cc_mail: ''
-      cc_options: {  }
       bcc_mail: ''
       bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
       from_mail: '[webform_submission:values:email:raw]'
       from_options: {  }
       from_name: 'Shirt buyer'
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
       subject: 'Shirt order refinement'
       body: "Hello Attendee Care Team,<br />\r\n[current-user:field_u_first_name] [current-user:field_u_last_name] requests a t-shirt refinement.<br />\r\n<br />\r\nPlease gather the information at [webform_submission:url]<br />\r\n<br />\r\nBest regards, your webform :-)"
       excluded_elements:
@@ -236,11 +345,7 @@ handlers:
       html: true
       attachments: false
       twig: false
-      debug: false
-      reply_to: ''
-      return_path: ''
-      sender_mail: ''
-      sender_name: ''
       theme_name: ''
       parameters: {  }
+      debug: false
 variants: {  }

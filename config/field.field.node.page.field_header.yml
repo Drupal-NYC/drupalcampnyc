@@ -22,10 +22,10 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 0
     target_bundles:
       deck_header: deck_header
       deck_hero: deck_hero
+    negate: 0
     target_bundles_drag_drop:
       deck_1_column:
         weight: 11
@@ -34,16 +34,19 @@ settings:
         weight: 12
         enabled: false
       deck_header:
-        enabled: true
         weight: 13
+        enabled: true
       deck_hero:
-        enabled: true
         weight: 13
+        enabled: true
       element_sessions:
         weight: 14
         enabled: false
       element_sponsor:
         weight: 15
+        enabled: false
+      element_tickets_widget:
+        weight: 19
         enabled: false
       element_tracks:
         weight: 16
@@ -53,9 +56,6 @@ settings:
         enabled: false
       element_webform:
         weight: 18
-        enabled: false
-      element_tickets_widget:
-        weight: 19
         enabled: false
       media:
         weight: 19

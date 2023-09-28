@@ -1,7 +1,12 @@
 uuid: 5fb0c118-16cc-4cb3-a3ab-c7392c6e5975
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - workflows.workflow.sessions
+  module:
+    - content_moderation
+    - field_permissions
 id: speaker
 label: Speaker
 weight: 6

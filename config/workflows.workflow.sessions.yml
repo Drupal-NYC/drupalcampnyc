@@ -12,35 +12,35 @@ type: content_moderation
 type_settings:
   states:
     accepted:
-      published: true
-      default_revision: true
       label: Accepted
       weight: -6
-    declined:
-      published: false
+      published: true
       default_revision: true
+    declined:
       label: Declined
       weight: -5
+      published: false
+      default_revision: true
     draft:
       label: Draft
+      weight: -10
       published: false
       default_revision: false
-      weight: -10
     needs_review:
-      published: true
-      default_revision: false
       label: 'Needs review'
       weight: -8
-    needs_work:
       published: true
       default_revision: false
+    needs_work:
       label: 'Needs work'
       weight: -9
+      published: true
+      default_revision: false
     published:
       label: Published
+      weight: -7
       published: true
       default_revision: true
-      weight: -7
   transitions:
     accept:
       label: Accept
@@ -52,11 +52,11 @@ type_settings:
       weight: -5
     create_new_draft:
       label: 'Create New Draft'
-      to: draft
-      weight: -10
       from:
         - draft
         - published
+      to: draft
+      weight: -10
     decline:
       label: Decline
       from:
@@ -74,11 +74,11 @@ type_settings:
       weight: -9
     publish:
       label: Publish
-      to: published
-      weight: -6
       from:
         - draft
         - published
+      to: published
+      weight: -6
     ready_for_review:
       label: 'Ready for review'
       from:

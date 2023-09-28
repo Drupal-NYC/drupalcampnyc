@@ -1,19 +1,19 @@
+_core:
+  default_config_hash: vFARRSP9-YgEArfDNYmRSg0cNFOgZPxqziffIalgLbU
 max_links: 2000
 cron_generate: true
 cron_generate_interval: 1
+generate_duration: 10000
 remove_duplicates: true
 skip_untranslated: false
+disable_language_hreflang: false
+xsl: true
 base_url: ''
+default_variant: default
 custom_links_include_images: false
 excluded_languages: {  }
 enabled_entity_types:
   - node
   - taxonomy_term
   - menu_link_content
-_core:
-  default_config_hash: vFARRSP9-YgEArfDNYmRSg0cNFOgZPxqziffIalgLbU
-default_variant: default
-xsl: true
-disable_language_hreflang: false
-generate_duration: 10000
 entities_per_queue_item: 50

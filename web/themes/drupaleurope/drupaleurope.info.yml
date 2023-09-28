@@ -1,7 +1,6 @@
 name: Drupal Europe
 type: theme
 description: The End-user oriented theme for the Drupal Europe conference site.
-core: 8.x
 base theme: classy
 regions:
   header: Header
@@ -10,7 +9,10 @@ regions:
   prefooter: Pre-footer
   footer: Footer
 screenshot: drupaleurope-icon-logo.png
+dependencies:
+  - classy:classy
 
+core_version_requirement: ^9 || ^10
 stylesheets-remove:
   - '@eu_cookie_compliance/css/eu_cookie_compliance.css'
   - '@eu_cookie_compliance/css/eu_cookie_compliance.bare.css'
