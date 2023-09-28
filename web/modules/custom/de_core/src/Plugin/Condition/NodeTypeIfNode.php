@@ -66,7 +66,7 @@ class NodeTypeIfNode extends ConditionPluginBase implements ContainerFactoryPlug
             $plugin_id,
             $plugin_definition,
             $container->get('current_route_match'),
-            $container->get('entity.manager')->getStorage('node_type')
+            $container->get('entity_type.manager')->getStorage('node_type')
         );
     }
     /**

@@ -63,6 +63,7 @@ class UpdateSpeakersCommand extends ContainerAwareCommand
     $node_storage = $this->entity_type_manager->getStorage('node');
     $node_query = $node_storage->getQuery();
     $nids = $node_query->condition('status', Node::PUBLISHED)
+      ->accessCheck(FALSE)
       ->condition('type', 'session')
       ->execute();
 

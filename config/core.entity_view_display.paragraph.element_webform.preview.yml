@@ -17,14 +17,14 @@ bundle: element_webform
 mode: preview
 content:
   field_access_notice:
-    weight: 1
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 1
     region: content
   field_webform:
-    weight: 0
+    type: webform_entity_reference_link
     label: hidden
     settings:
       label: 'Go to [webform:title] webform'
@@ -33,6 +33,6 @@ content:
     third_party_settings:
       empty_fields:
         handler: ''
-    type: webform_entity_reference_link
+    weight: 0
     region: content
 hidden: {  }

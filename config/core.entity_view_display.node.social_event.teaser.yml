@@ -28,38 +28,38 @@ third_party_settings:
         - field_start
         - field_ends_at
         - field_room
+      label: Info
       parent_name: ''
+      region: content
       weight: 2
       format_type: html_element
       format_settings:
         label: Info
+        classes: scheduled-at
+        id: ''
         element: div
         show_label: false
         label_element: h3
         attributes: ''
         effect: none
         speed: fast
-        id: ''
-        classes: scheduled-at
-      label: Info
-      region: content
     group_type_and_track:
       children:
         - field_type
+      label: 'Type and track'
       parent_name: ''
+      region: content
       weight: 0
       format_type: html_element
       format_settings:
-        id: ''
         classes: session-type-and-track
+        id: ''
         element: div
         show_label: false
         label_element: h3
         attributes: ''
         effect: none
         speed: fast
-      label: 'Type and track'
-      region: content
 id: node.social_event.teaser
 targetEntityType: node
 bundle: social_event
@@ -67,8 +67,6 @@ mode: teaser
 content:
   field_ends_at:
     type: datetime_default
-    weight: 3
-    region: content
     label: hidden
     settings:
       timezone_override: ''
@@ -76,18 +74,18 @@ content:
     third_party_settings:
       empty_fields:
         handler: ''
+    weight: 3
+    region: content
   field_room:
     type: entity_reference_label
-    weight: 4
-    region: content
     label: hidden
     settings:
       link: false
     third_party_settings: {  }
+    weight: 4
+    region: content
   field_start:
     type: datetime_default
-    weight: 2
-    region: content
     label: hidden
     settings:
       timezone_override: ''
@@ -95,25 +93,27 @@ content:
     third_party_settings:
       empty_fields:
         handler: ''
+    weight: 2
+    region: content
   field_summary:
     type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
     weight: 1
     region: content
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
   field_type:
     type: list_default
-    weight: 0
-    region: content
     label: hidden
     settings: {  }
     third_party_settings: {  }
-  flag_session_schedule:
-    weight: 3
+    weight: 0
     region: content
+  flag_session_schedule:
     settings: {  }
     third_party_settings: {  }
+    weight: 3
+    region: content
 hidden:
   body: true
   content_moderation_control: true

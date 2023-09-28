@@ -28,93 +28,93 @@ third_party_settings:
         - field_room
         - field_vertical
         - field_horizontal
+      label: Info
       parent_name: ''
+      region: content
       weight: 0
       format_type: html_element
       format_settings:
-        id: ''
         classes: table-style
+        id: ''
         element: div
         show_label: false
         label_element: h3
         attributes: ''
         effect: none
         speed: fast
-      label: Info
-      region: content
 id: node.bof.default
 targetEntityType: node
 bundle: bof
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 2
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 2
     region: content
   field_ends_at:
-    weight: 13
+    type: datetime_default
     label: above
     settings:
-      format_type: medium
       timezone_override: ''
+      format_type: medium
     third_party_settings: {  }
-    type: datetime_default
+    weight: 13
     region: content
   field_horizontal:
-    weight: 16
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 16
     region: content
   field_room:
-    weight: 14
+    type: entity_reference_label
     label: above
     settings:
       link: false
     third_party_settings:
       empty_fields:
         handler: ''
-    type: entity_reference_label
+    weight: 14
     region: content
   field_start:
-    weight: 12
+    type: datetime_default
     label: above
     settings:
-      format_type: medium
       timezone_override: ''
+      format_type: medium
     third_party_settings: {  }
-    type: datetime_default
+    weight: 12
     region: content
   field_summary:
-    weight: 1
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 1
     region: content
   field_vertical:
-    weight: 15
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 15
     region: content
   flag_session_schedule:
+    settings: {  }
+    third_party_settings: {  }
     weight: 4
     region: content
+  links:
     settings: {  }
     third_party_settings: {  }
-  links:
     weight: 3
     region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   field_terms: true
   field_timeslot: true

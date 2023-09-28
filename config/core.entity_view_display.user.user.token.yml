@@ -42,38 +42,38 @@ third_party_settings:
       children:
         - field_u_first_name
         - field_u_middle_name
+      label: 'Full name'
       parent_name: ''
+      region: content
       weight: 0
       format_type: html_element
       format_settings:
         label: 'Full name'
+        classes: ''
+        id: ''
         element: div
         show_label: false
         label_element: h3
         attributes: ''
         effect: none
         speed: fast
-        id: ''
-        classes: ''
-      label: 'Full name'
-      region: content
     group_company:
       children:
         - field_u_company
+      label: Company
       parent_name: ''
+      region: content
       weight: 20
       format_type: html_element
       format_settings:
-        id: ''
         classes: session-speaker-company
+        id: ''
         element: span
         show_label: false
         label_element: h3
         attributes: ''
         effect: none
         speed: fast
-      label: Company
-      region: content
 _core:
   default_config_hash: V51QPCKkgNREKtSmB9Iu2wmAMEpktVpnzklWaZV8UYo
 id: user.user.token
@@ -83,36 +83,36 @@ mode: token
 content:
   field_u_company:
     type: string
-    weight: 0
-    region: content
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 0
+    region: content
   field_u_first_name:
     type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
     weight: 0
     region: content
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
   field_u_last_name:
     type: string
-    weight: 1
-    region: content
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 1
+    region: content
   field_u_middle_name:
     type: string
-    weight: 1
-    region: content
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 1
+    region: content
 hidden:
   field_dietary_intro: true
   field_interest_horizontal: true

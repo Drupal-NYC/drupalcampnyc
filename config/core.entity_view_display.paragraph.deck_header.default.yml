@@ -14,12 +14,12 @@ bundle: deck_header
 mode: default
 content:
   field_title:
-    weight: 0
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings:
       empty_fields:
         handler: ''
-    type: text_default
+    weight: 0
     region: content
 hidden: {  }

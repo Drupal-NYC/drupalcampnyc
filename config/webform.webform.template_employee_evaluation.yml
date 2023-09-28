@@ -5,17 +5,86 @@ dependencies:
   enforced:
     module:
       - webform_templates
+_core:
+  default_config_hash: xJrzEtz7bpbCelU-IasmEqt7ASycFjWupdVGd8S0wMU
+weight: 0
 open: null
 close: null
-weight: 0
 uid: null
 template: true
 archive: false
 id: template_employee_evaluation
 title: 'Employee Evaluation'
 description: 'An employee evaluation webform template.'
-category: ''
-elements: "evaluator_information:\n  '#title': 'Your Information'\n  '#type': fieldset\n  evaluator_first_name:\n    '#title': 'First Name'\n    '#type': textfield\n    '#required': true\n  evaluator_last_name:\n    '#title': 'Last Name'\n    '#type': textfield\n    '#required': true\n  evaluator_job_title:\n    '#type': textfield\n    '#title': 'Job Title'\n    '#required': true\n  evaluator_relationship:\n    '#type': webform_select_other\n    '#title': 'Relationship with employee'\n    '#options':\n      Coworker: Coworker\n      Supervisor: Supervisor\n    '#required': true\nemployee_information:\n  '#title': 'Employee Information'\n  '#type': fieldset\n  employee_first_name:\n    '#title': 'First Name'\n    '#type': textfield\n    '#required': true\n  employee_last_name:\n    '#title': 'Last Name'\n    '#type': textfield\n    '#required': true\n  employee_job_title:\n    '#type': textfield\n    '#title': 'Job Title'\n    '#required': true\n  employee_ratings:\n    '#type': webform_likert\n    '#title': 'How would you rate the employee''s...'\n    '#questions':\n      attendance: Attendance\n      attire: Attire\n      professionalism: Professionalism\n      work_area: 'Work area'\n      ability: 'Ability to do the job'\n      work_with_others: 'Ability to work with others'\n      receive_feedback: 'Ability to receive feedback/criticism'\n      adaptabily: 'Ability to adapt'\n      learning: 'Willingness to learn'\n      participation: 'Willingness to participate'\n      work_ethic: 'Work ethic'\n      quality: 'Quality of work'\n    '#answers': likert_quality\n    '#required': true\n  employee_qualities:\n    '#type': textarea\n    '#title': 'What are the employee''s top qualities?'\n    '#required': true\n  employee_improve:\n    '#type': textarea\n    '#title': 'In what ways could the employee improve?'\n    '#required': true\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': Apply\n"
+categories: {  }
+elements: |
+  evaluator_information:
+    '#title': 'Your Information'
+    '#type': fieldset
+    evaluator_first_name:
+      '#title': 'First Name'
+      '#type': textfield
+      '#required': true
+    evaluator_last_name:
+      '#title': 'Last Name'
+      '#type': textfield
+      '#required': true
+    evaluator_job_title:
+      '#type': textfield
+      '#title': 'Job Title'
+      '#required': true
+    evaluator_relationship:
+      '#type': webform_select_other
+      '#title': 'Relationship with employee'
+      '#options':
+        Coworker: Coworker
+        Supervisor: Supervisor
+      '#required': true
+  employee_information:
+    '#title': 'Employee Information'
+    '#type': fieldset
+    employee_first_name:
+      '#title': 'First Name'
+      '#type': textfield
+      '#required': true
+    employee_last_name:
+      '#title': 'Last Name'
+      '#type': textfield
+      '#required': true
+    employee_job_title:
+      '#type': textfield
+      '#title': 'Job Title'
+      '#required': true
+    employee_ratings:
+      '#type': webform_likert
+      '#title': 'How would you rate the employee''s...'
+      '#questions':
+        attendance: Attendance
+        attire: Attire
+        professionalism: Professionalism
+        work_area: 'Work area'
+        ability: 'Ability to do the job'
+        work_with_others: 'Ability to work with others'
+        receive_feedback: 'Ability to receive feedback/criticism'
+        adaptabily: 'Ability to adapt'
+        learning: 'Willingness to learn'
+        participation: 'Willingness to participate'
+        work_ethic: 'Work ethic'
+        quality: 'Quality of work'
+      '#answers': likert_quality
+      '#required': true
+    employee_qualities:
+      '#type': textarea
+      '#title': 'What are the employee''s top qualities?'
+      '#required': true
+    employee_improve:
+      '#type': textarea
+      '#title': 'In what ways could the employee improve?'
+      '#required': true
+  actions:
+    '#type': webform_actions
+    '#title': 'Submit button(s)'
+    '#submit__label': Apply
 css: ''
 javascript: ''
 settings:
@@ -30,40 +99,48 @@ settings:
   page_theme_name: ''
   form_title: both
   form_submit_once: false
-  form_exception_message: ''
   form_open_message: ''
   form_close_message: ''
+  form_exception_message: ''
   form_previous_submissions: true
   form_confidential: false
   form_confidential_message: ''
-  form_remote_addr: true
+  form_disable_remote_addr: false
   form_convert_anonymous: false
   form_prepopulate: false
   form_prepopulate_source_entity: false
   form_prepopulate_source_entity_required: false
   form_prepopulate_source_entity_type: ''
-  form_reset: false
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
   form_disable_autocomplete: false
   form_novalidate: false
   form_disable_inline_errors: false
   form_required: false
-  form_unsaved: false
-  form_disable_back: false
-  form_submit_back: false
   form_autofocus: false
   form_details_toggle: false
+  form_reset: false
   form_access_denied: default
   form_access_denied_title: ''
   form_access_denied_message: ''
   form_access_denied_attributes: {  }
   form_file_limit: ''
+  form_attributes: {  }
+  form_method: ''
+  form_action: ''
   share: false
   share_node: false
   share_theme_name: ''
   share_title: true
   share_page_body_attributes: {  }
   submission_label: ''
+  submission_exception_message: ''
+  submission_locked_message: ''
   submission_log: false
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
   submission_views: {  }
   submission_views_replace: {  }
   submission_user_columns: {  }
@@ -72,11 +149,6 @@ settings:
   submission_access_denied_title: ''
   submission_access_denied_message: ''
   submission_access_denied_attributes: {  }
-  submission_exception_message: ''
-  submission_locked_message: ''
-  submission_excluded_elements: {  }
-  submission_exclude_empty: false
-  submission_exclude_empty_checkbox: false
   previous_submission_message: ''
   previous_submissions_message: ''
   autofill: false
@@ -87,19 +159,21 @@ settings:
   wizard_progress_percentage: false
   wizard_progress_link: false
   wizard_progress_states: false
-  wizard_auto_forward: true
-  wizard_auto_forward_hide_next_button: false
-  wizard_keyboard: true
   wizard_start_label: ''
   wizard_preview_link: false
   wizard_confirmation: true
   wizard_confirmation_label: ''
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
   wizard_track: ''
   wizard_prev_button_label: ''
   wizard_next_button_label: ''
   wizard_toggle: false
   wizard_toggle_show_label: ''
   wizard_toggle_hide_label: ''
+  wizard_page_type: container
+  wizard_page_title_tag: h2
   preview: 0
   preview_label: ''
   preview_title: ''
@@ -116,9 +190,9 @@ settings:
   draft_pending_single_message: ''
   draft_pending_multiple_message: ''
   confirmation_type: page
+  confirmation_url: ''
   confirmation_title: ''
   confirmation_message: 'Thank you for applying.'
-  confirmation_url: ''
   confirmation_attributes: {  }
   confirmation_back: true
   confirmation_back_label: ''
@@ -196,5 +270,3 @@ access:
     permissions: {  }
 handlers: {  }
 variants: {  }
-_core:
-  default_config_hash: xJrzEtz7bpbCelU-IasmEqt7ASycFjWupdVGd8S0wMU

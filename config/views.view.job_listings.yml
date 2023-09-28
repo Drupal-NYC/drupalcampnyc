@@ -19,87 +19,11 @@ base_table: node_field_data
 base_field: nid
 display:
   default:
-    display_plugin: default
     id: default
     display_title: Master
+    display_plugin: default
     position: 0
     display_options:
-      access:
-        type: perm
-        options:
-          perm: 'access content'
-      cache:
-        type: tag
-        options: {  }
-      query:
-        type: views_query
-        options:
-          disable_sql_rewrite: false
-          distinct: false
-          replica: false
-          query_comment: ''
-          query_tags: {  }
-      exposed_form:
-        type: basic
-        options:
-          submit_button: Apply
-          reset_button: false
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      pager:
-        type: none
-        options:
-          offset: 0
-      style:
-        type: table
-        options:
-          grouping: {  }
-          row_class: ''
-          default_row_class: true
-          override: true
-          sticky: false
-          caption: ''
-          summary: ''
-          description: ''
-          columns:
-            view_node: view_node
-            field_sponsor_logo: view_node
-            field_job_listing_short_descript: field_job_listing_short_descript
-          info:
-            view_node:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            field_sponsor_logo:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            field_job_listing_short_descript:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-          default: '-1'
-          empty_table: false
-      row:
-        type: fields
-        options:
-          default_field_elements: true
-          inline:
-            view_node_1: view_node_1
-          separator: ''
-          hide_empty: false
       fields:
         view_node:
           id: view_node
@@ -108,6 +32,8 @@ display:
           relationship: none
           group_type: group
           admin_label: 'URL to sponsor job listings'
+          entity_type: node
+          plugin_id: entity_link
           label: ''
           exclude: true
           alter:
@@ -152,8 +78,6 @@ display:
           text: view
           output_url_as_text: true
           absolute: false
-          entity_type: node
-          plugin_id: entity_link
         view_node_1:
           id: view_node_1
           table: node
@@ -161,6 +85,8 @@ display:
           relationship: none
           group_type: group
           admin_label: 'Link: Read full job listings'
+          entity_type: node
+          plugin_id: entity_link
           label: ''
           exclude: true
           alter:
@@ -205,8 +131,6 @@ display:
           text: 'Read full job listings'
           output_url_as_text: false
           absolute: false
-          entity_type: node
-          plugin_id: entity_link
         field_sponsor_logo:
           id: field_sponsor_logo
           table: node__field_sponsor_logo
@@ -214,6 +138,7 @@ display:
           relationship: field_job_sponsor
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: ''
           exclude: false
           alter:
@@ -258,12 +183,14 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: ''
             image_link: ''
-            svg_render_as_image: true
+            image_style: ''
             svg_attributes:
               width: null
               height: null
+            svg_render_as_image: true
+            image_loading:
+              attribute: lazy
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -274,7 +201,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
         field_job_listing_short_descript:
           id: field_job_listing_short_descript
           table: node__field_job_listing_short_descript
@@ -282,6 +208,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: ''
           exclude: false
           alter:
@@ -336,48 +263,27 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
-      filters:
-        status:
-          value: '1'
-          table: node_field_data
-          field: status
-          plugin_id: boolean
-          entity_type: node
-          entity_field: status
-          id: status
-          expose:
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-          group: 1
-        type:
-          id: type
-          table: node_field_data
-          field: type
-          value:
-            job_listing: job_listing
-          entity_type: node
-          entity_field: type
-          plugin_id: bundle
-          expose:
-            operator_limit_selection: false
-            operator_list: {  }
-      sorts:
-        field_sponsor_priority_value:
-          id: field_sponsor_priority_value
-          table: node__field_sponsor_priority
-          field: field_sponsor_priority_value
-          relationship: field_job_sponsor
-          group_type: group
-          admin_label: ''
-          order: ASC
-          exposed: false
-          expose:
-            label: ''
-          plugin_id: standard
-      header: {  }
-      footer: {  }
+      pager:
+        type: none
+        options:
+          offset: 0
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Apply
+          reset_button: false
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      access:
+        type: perm
+        options:
+          perm: 'access content'
+      cache:
+        type: tag
+        options: {  }
       empty:
         area:
           id: area
@@ -386,12 +292,108 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: text
           empty: true
-          tokenize: false
           content:
             value: 'Looks like our sponsors don''t have any active job listings here at the moment. Check back soon!'
             format: basic_html
-          plugin_id: text
+          tokenize: false
+      sorts:
+        field_sponsor_priority_value:
+          id: field_sponsor_priority_value
+          table: node__field_sponsor_priority
+          field: field_sponsor_priority_value
+          relationship: field_job_sponsor
+          group_type: group
+          admin_label: ''
+          plugin_id: standard
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: field_sponsor_priority_value
+          exposed: false
+      arguments: {  }
+      filters:
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          value:
+            job_listing: job_listing
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+      style:
+        type: table
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+          columns:
+            view_node: view_node
+            field_sponsor_logo: view_node
+            field_job_listing_short_descript: field_job_listing_short_descript
+          default: '-1'
+          info:
+            view_node:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_sponsor_logo:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_job_listing_short_descript:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+          override: true
+          sticky: false
+          summary: ''
+          empty_table: false
+          caption: ''
+          description: ''
+      row:
+        type: fields
+        options:
+          default_field_elements: true
+          inline:
+            view_node_1: view_node_1
+          separator: ''
+          hide_empty: false
+      query:
+        type: views_query
+        options:
+          query_comment: ''
+          disable_sql_rewrite: false
+          distinct: false
+          replica: false
+          query_tags: {  }
       relationships:
         field_job_sponsor:
           id: field_job_sponsor
@@ -400,9 +402,10 @@ display:
           relationship: none
           group_type: group
           admin_label: Sponsor
-          required: false
           plugin_id: standard
-      arguments: {  }
+          required: false
+      header: {  }
+      footer: {  }
       display_extenders:
         metatag_display_extender: {  }
     cache_metadata:
@@ -416,9 +419,9 @@ display:
         - 'config:field.storage.node.field_job_listing_short_descript'
         - 'config:field.storage.node.field_sponsor_logo'
   job_listings_block:
-    display_plugin: block
     id: job_listings_block
     display_title: Block
+    display_plugin: block
     position: 1
     display_options:
       display_extenders:

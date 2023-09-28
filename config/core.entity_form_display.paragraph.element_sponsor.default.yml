@@ -13,11 +13,11 @@ bundle: element_sponsor
 mode: default
 content:
   field_sponsor:
+    type: viewsreference_select
     weight: 1
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: viewsreference_select
-    region: content
   status:
     type: boolean_checkbox
     weight: 2

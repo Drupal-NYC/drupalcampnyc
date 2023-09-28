@@ -1,7 +1,25 @@
 uuid: 2eb15187-0331-4732-94a2-cfbef12cb873
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - media.type.audio
+    - media.type.file
+    - media.type.image
+    - media.type.video
+    - node.type.session
+    - taxonomy.vocabulary.session_horizontal
+    - taxonomy.vocabulary.session_vertical
+    - workflows.workflow.sessions
+  module:
+    - content_moderation
+    - field_permissions
+    - media
+    - node
+    - scheduler
+    - system
+    - taxonomy
+    - toolbar
 id: track_chair
 label: 'Track chair'
 weight: 5
@@ -12,7 +30,6 @@ permissions:
   - 'access toolbar'
   - 'create audio media'
   - 'create field_track_chairs'
-  - 'create field_u_cat_trackchair'
   - 'create file media'
   - 'create image media'
   - 'create media'
@@ -37,6 +54,5 @@ permissions:
   - 'use sessions transition publish'
   - 'use sessions transition ready_for_review'
   - 'use sessions transition reviewed_and_ok'
-  - 'view field_track_session_additionals'
   - 'view session revisions'
   - 'view the administration theme'

@@ -1,4 +1,4 @@
-FROM uselagoon/php-7.4-cli-drupal:latest
+FROM uselagoon/php-8.1-cli-drupal:latest
 
 # Dependencies for theme packages:
 RUN apk update \

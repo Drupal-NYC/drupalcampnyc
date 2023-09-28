@@ -16,8 +16,8 @@ plugin: social_media_links_block
 settings:
   id: social_media_links_block
   label: Connect
-  provider: social_media_links
   label_display: visible
+  provider: social_media_links
   platforms:
     twitter:
       value: DrupalCampNYC

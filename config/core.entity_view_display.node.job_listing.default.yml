@@ -17,16 +17,14 @@ bundle: job_listing
 mode: default
 content:
   field_job_description:
-    weight: 1
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 1
     region: content
   field_job_sponsor:
     type: entity_reference_entity_view
-    weight: 0
-    region: content
     label: hidden
     settings:
       view_mode: teaser
@@ -34,6 +32,8 @@ content:
     third_party_settings:
       empty_fields:
         handler: ''
+    weight: 0
+    region: content
 hidden:
   field_job_listing_short_descript: true
   links: true

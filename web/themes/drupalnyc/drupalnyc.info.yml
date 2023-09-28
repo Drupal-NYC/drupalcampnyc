@@ -1,7 +1,7 @@
 name: Drupal NYC
 type: theme
 description: A theme for DrupalCampNYC 2021 based on the Drupal Europe 2018 codebase
-core: 8.x
+core_version_requirement: ^9 || ^10
 base theme: classy
 regions:
   header: Header
@@ -10,6 +10,8 @@ regions:
   prefooter: Pre-footer
   footer: Footer
 screenshot: screenshot.png
+dependencies:
+  - classy:classy
 
 stylesheets-remove:
   - "@eu_cookie_compliance/css/eu_cookie_compliance.css"

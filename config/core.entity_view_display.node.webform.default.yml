@@ -18,23 +18,23 @@ bundle: webform
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 101
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 101
     region: content
   links:
-    weight: 100
     settings: {  }
     third_party_settings: {  }
+    weight: 100
     region: content
   webform:
-    weight: 102
+    type: webform_entity_reference_entity_view
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: webform_entity_reference_entity_view
+    weight: 102
     region: content
 hidden:
   shariff_field: true

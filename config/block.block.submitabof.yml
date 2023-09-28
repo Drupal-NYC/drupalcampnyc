@@ -16,8 +16,8 @@ plugin: 'block_content:19214c0e-023f-414d-b6bd-38aaab22b3c2'
 settings:
   id: 'block_content:19214c0e-023f-414d-b6bd-38aaab22b3c2'
   label: 'Submit a BoF'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
@@ -30,6 +30,6 @@ visibility:
       user: '@user.current_user_context:current_user'
   request_path:
     id: request_path
-    pages: "/program/schedule/tuesday\r\n/program/schedule/wednesday\r\n/program/schedule/thursday"
     negate: false
     context_mapping: {  }
+    pages: "/program/schedule/tuesday\r\n/program/schedule/wednesday\r\n/program/schedule/thursday"

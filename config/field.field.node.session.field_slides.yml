@@ -18,10 +18,10 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
+  handler: 'default:file'
+  handler_settings: {  }
   file_directory: 'slides/[date:custom:Y]-[date:custom:m]'
   file_extensions: 'txt pptx pdf key odp sxi zip'
   max_filesize: '200 MB'
   description_field: false
-  handler: 'default:file'
-  handler_settings: {  }
 field_type: file

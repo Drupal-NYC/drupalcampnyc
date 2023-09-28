@@ -20,30 +20,30 @@ plugin: 'menu_block:user-cta'
 settings:
   id: 'menu_block:user-cta'
   label: 'Call to Action'
-  provider: menu_block
   label_display: '0'
+  provider: menu_block
   follow: false
   follow_parent: child
+  label_link: false
+  label_type: block
   level: 1
   depth: 0
   expand_all_items: false
   parent: 'user-cta:'
   suggestion: user_cta
-  label_type: block
-  label_link: false
 visibility:
   request_path:
     id: request_path
-    pages: '/user/*'
     negate: false
     context_mapping: {  }
+    pages: '/user/*'
   user_role:
     id: user_role
-    roles:
-      authenticated: authenticated
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated
   current_user_page:
     id: current_user_page
     show_on_own_page: 1

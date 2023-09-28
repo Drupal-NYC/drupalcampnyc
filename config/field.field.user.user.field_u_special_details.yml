@@ -10,11 +10,10 @@ dependencies:
     - user
 third_party_settings:
   allowed_formats:
-    basic_html: basic_html
-    restricted_html: restricted_html
-    full_html: full_html
-    plain_text: '0'
-    job_listing_html: '0'
+    allowed_formats:
+      - basic_html
+      - restricted_html
+      - full_html
 id: user.user.field_u_special_details
 field_name: field_u_special_details
 entity_type: user

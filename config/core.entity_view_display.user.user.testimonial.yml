@@ -48,20 +48,20 @@ third_party_settings:
         - field_u_middle_name
         - field_u_last_name
         - field_u_acad_title_post
+      label: 'Full name'
       parent_name: ''
+      region: content
       weight: 2
       format_type: html_element
       format_settings:
-        id: ''
         classes: ''
+        id: ''
         element: div
         show_label: false
         label_element: h3
         attributes: ''
         effect: none
         speed: fast
-      label: 'Full name'
-      region: content
 _core:
   default_config_hash: V51QPCKkgNREKtSmB9Iu2wmAMEpktVpnzklWaZV8UYo
 id: user.user.testimonial
@@ -71,55 +71,54 @@ mode: testimonial
 content:
   field_u_acad_title_post:
     type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
     weight: 6
     region: content
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
   field_u_acad_title_pre:
     type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
     weight: 2
     region: content
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
   field_u_first_name:
     type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
     weight: 3
     region: content
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
   field_u_last_name:
     type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
     weight: 5
     region: content
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
   field_u_middle_name:
     type: string
-    weight: 4
-    region: content
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 4
+    region: content
   field_u_testimonial:
     type: basic_string
-    weight: 1
-    region: content
     label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 1
+    region: content
   user_picture:
     type: responsive_image
-    weight: 0
-    region: content
+    label: hidden
     settings:
       responsive_image_style: user_picture
       image_link: ''
@@ -130,7 +129,8 @@ content:
     third_party_settings:
       empty_fields:
         handler: ''
-    label: hidden
+    weight: 0
+    region: content
 hidden:
   field_dietary_intro: true
   field_interest_horizontal: true

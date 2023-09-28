@@ -16,6 +16,7 @@ use Drupal\paragraphs\Entity\Paragraph;
  */
 function de_core_update_8001() {
     $nids = \Drupal::entityQuery('node')
+        ->accessCheck(FALSE)
         ->condition('type', 'page')
         ->condition('nid', '1', '<>')
         ->execute();
@@ -68,6 +69,7 @@ function de_core_update_8001() {
  */
 function de_core_update_8002() {
   $nids = \Drupal::entityQuery('node')
+    ->accessCheck(FALSE)
     ->condition('type', 'session')
     ->notExists('field_speakers')
     ->execute();

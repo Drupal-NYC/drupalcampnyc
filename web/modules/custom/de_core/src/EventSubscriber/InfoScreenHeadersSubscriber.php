@@ -2,13 +2,13 @@
 
 namespace Drupal\de_core\EventSubscriber;
 
+use Symfony\Component\HttpKernel\Event\ResponseEvent;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
-use Symfony\Component\HttpKernel\Event\FilterResponseEvent;
 use Symfony\Component\HttpKernel\KernelEvents;
 
 class InfoScreenHeadersSubscriber implements EventSubscriberInterface {
 
-  public function InfoScreenResponse(FilterResponseEvent $event) {
+  public function InfoScreenResponse(ResponseEvent $event) {
 
     // Act on infoscreen paths.
     $request = $event->getRequest();

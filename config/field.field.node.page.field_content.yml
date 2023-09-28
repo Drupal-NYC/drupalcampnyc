@@ -23,21 +23,21 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 0
     target_bundles:
       deck_1_column: deck_1_column
       deck_2_columns: deck_2_columns
       deck_hero: deck_hero
+    negate: 0
     target_bundles_drag_drop:
       deck_1_column:
-        enabled: true
         weight: 7
+        enabled: true
       deck_2_columns:
-        enabled: true
         weight: 8
-      deck_hero:
         enabled: true
+      deck_hero:
         weight: 9
+        enabled: true
       element_sessions:
         weight: 10
         enabled: false

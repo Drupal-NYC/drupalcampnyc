@@ -9,28 +9,6 @@ With the addition of `composer.json` and `CHANGELOG.md`, we are close
 to launching a public alpha version 0.1.0 and moving the project to
 git.drupalcode.org to become a proper contrib module. :tada:
 
-## 1.0.0-beta1 - 2021-10-13
-
-### Added
-
-- Nothing.
-
-### Changed
-
-- Release version 1.0.0-beta1 on Drupal.org.
-
-### Deprecated
-
-- Nothing.
-
-### Removed
-
-- Nothing.
-
-### Fixed
-
-- Nothing.
-
 ## 0.1.1 - 2021-10-13
 
 ### Fixed

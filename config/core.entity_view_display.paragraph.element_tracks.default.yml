@@ -13,12 +13,12 @@ bundle: element_tracks
 mode: default
 content:
   field_track_teasers:
-    weight: 0
+    type: viewsreference_formatter
     label: hidden
     settings:
       plugin_types:
         - block
     third_party_settings: {  }
-    type: viewsreference_formatter
+    weight: 0
     region: content
 hidden: {  }

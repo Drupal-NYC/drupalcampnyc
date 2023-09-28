@@ -16,33 +16,33 @@ bundle: element_sessions
 mode: preview
 content:
   field_featured:
-    weight: 0
+    type: boolean
     label: inline
     settings:
       format: default
       format_custom_false: ''
       format_custom_true: ''
     third_party_settings: {  }
-    type: boolean
+    weight: 0
     region: content
   field_topic:
     type: entity_reference_label
+    label: inline
+    settings:
+      link: false
+    third_party_settings:
+      empty_fields:
+        handler: ''
     weight: 1
     region: content
-    label: inline
-    settings:
-      link: false
-    third_party_settings:
-      empty_fields:
-        handler: ''
   field_track:
     type: entity_reference_label
-    weight: 2
-    region: content
     label: inline
     settings:
       link: false
     third_party_settings:
       empty_fields:
         handler: ''
+    weight: 2
+    region: content
 hidden: {  }

@@ -13,7 +13,7 @@ bundle: element_testimonial_pick
 mode: default
 content:
   field_select_user:
-    weight: 0
+    type: entity_reference_entity_view
     label: hidden
     settings:
       view_mode: testimonial
@@ -21,6 +21,6 @@ content:
     third_party_settings:
       empty_fields:
         handler: ''
-    type: entity_reference_entity_view
+    weight: 0
     region: content
 hidden: {  }

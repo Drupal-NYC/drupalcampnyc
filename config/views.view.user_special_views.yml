@@ -18,85 +18,34 @@ base_table: users_field_data
 base_field: uid
 display:
   default:
-    display_plugin: default
     id: default
     display_title: Master
+    display_plugin: default
     position: 0
     display_options:
-      access:
-        type: perm
-        options:
-          perm: 'view paragraph content element_user_lists'
-      cache:
-        type: tag
-        options: {  }
-      query:
-        type: views_query
-        options:
-          disable_sql_rewrite: false
-          distinct: false
-          replica: false
-          query_comment: ''
-          query_tags: {  }
-      exposed_form:
-        type: basic
-        options:
-          submit_button: Apply
-          reset_button: false
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      pager:
-        type: mini
-        options:
-          items_per_page: 0
-          offset: 0
-          id: 0
-          total_pages: null
-          tags:
-            previous: ‹‹
-            next: ››
-          expose:
-            items_per_page: false
-            items_per_page_label: 'Items per page'
-            items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
-            offset: false
-            offset_label: Offset
-      style:
-        type: default
-      row:
-        type: 'entity:user'
-        options:
-          relationship: none
-          view_mode: volunteer_profile
+      title: ''
       fields:
         name:
           id: name
           table: users_field_data
           field: name
+          relationship: none
+          group_type: group
+          admin_label: ''
           entity_type: user
           entity_field: name
+          plugin_id: field
           label: ''
+          exclude: false
           alter:
             alter_text: false
             make_link: false
             absolute: false
-            trim: false
             word_boundary: false
             ellipsis: false
             strip_tags: false
+            trim: false
             html: false
-          hide_empty: false
-          empty_zero: false
-          plugin_id: field
-          relationship: none
-          group_type: group
-          admin_label: ''
-          exclude: false
           element_type: ''
           element_class: ''
           element_label_type: ''
@@ -106,6 +55,8 @@ display:
           element_wrapper_class: ''
           element_default_classes: true
           empty: ''
+          hide_empty: false
+          empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
           type: user_name
@@ -120,85 +71,42 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-      filters:
-        field_u_pub_attendee_list_value:
-          id: field_u_pub_attendee_list_value
-          table: user__field_u_pub_attendee_list
-          field: field_u_pub_attendee_list_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: '='
-          value: '1'
-          group: 1
-          exposed: false
+      pager:
+        type: mini
+        options:
+          offset: 0
+          items_per_page: 0
+          total_pages: null
+          id: 0
+          tags:
+            next: ››
+            previous: ‹‹
           expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            operator_limit_selection: false
-            operator_list: {  }
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          plugin_id: boolean
-        status:
-          id: status
-          table: users_field_data
-          field: status
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: '='
-          value: '1'
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            operator_limit_selection: false
-            operator_list: {  }
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          entity_type: user
-          entity_field: status
-          plugin_id: boolean
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Apply
+          reset_button: false
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      access:
+        type: perm
+        options:
+          perm: 'view paragraph content element_user_lists'
+      cache:
+        type: tag
+        options: {  }
+      empty: {  }
       sorts:
         created:
           id: created
@@ -207,22 +115,115 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          order: DESC
-          exposed: false
-          expose:
-            label: ''
-          granularity: second
           entity_type: user
           entity_field: created
           plugin_id: date
-      title: ''
+          order: DESC
+          expose:
+            label: ''
+            field_identifier: created
+          exposed: false
+          granularity: second
+      arguments: {  }
+      filters:
+        field_u_pub_attendee_list_value:
+          id: field_u_pub_attendee_list_value
+          table: user__field_u_pub_attendee_list
+          field: field_u_pub_attendee_list_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: boolean
+          operator: '='
+          value: '1'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        status:
+          id: status
+          table: users_field_data
+          field: status
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: user
+          entity_field: status
+          plugin_id: boolean
+          operator: '='
+          value: '1'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+      style:
+        type: default
+      row:
+        type: 'entity:user'
+        options:
+          relationship: none
+          view_mode: volunteer_profile
+      query:
+        type: views_query
+        options:
+          query_comment: ''
+          disable_sql_rewrite: false
+          distinct: false
+          replica: false
+          query_tags: {  }
+      relationships: {  }
+      css_class: people
       header: {  }
       footer: {  }
-      empty: {  }
-      relationships: {  }
-      arguments: {  }
       display_extenders: {  }
-      css_class: people
     cache_metadata:
       max-age: -1
       contexts:
@@ -232,29 +233,28 @@ display:
         - user.permissions
       tags: {  }
   block_testimonials:
-    display_plugin: block
     id: block_testimonials
     display_title: 'Block Testimonials'
+    display_plugin: block
     position: 2
     display_options:
-      display_extenders: {  }
-      display_description: ''
-      defaults:
-        title: true
-        style: false
-        row: false
-        filters: false
-        filter_groups: false
-        css_class: false
-        sorts: false
-      style:
-        type: default
-        options: {  }
-      row:
-        type: 'entity:user'
-        options:
+      sorts:
+        created:
+          id: created
+          table: users_field_data
+          field: created
           relationship: none
-          view_mode: testimonial
+          group_type: group
+          admin_label: ''
+          entity_type: user
+          entity_field: created
+          plugin_id: date
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: created
+          exposed: false
+          granularity: hour
       filters:
         field_u_testimonial_value:
           id: field_u_testimonial_value
@@ -263,6 +263,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: string
           operator: longerthan
           value: '1'
           group: 1
@@ -273,6 +274,8 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
@@ -280,8 +283,6 @@ display:
             remember_roles:
               authenticated: authenticated
             placeholder: ''
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -294,7 +295,6 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          plugin_id: string
         field_u_pub_attendee_list_value:
           id: field_u_pub_attendee_list_value
           table: user__field_u_pub_attendee_list
@@ -302,6 +302,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: boolean
           operator: '='
           value: '1'
           group: 1
@@ -312,14 +313,14 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
             multiple: false
             remember_roles:
               authenticated: authenticated
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -332,7 +333,6 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          plugin_id: boolean
         status:
           id: status
           table: users_field_data
@@ -340,6 +340,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: user
+          entity_field: status
+          plugin_id: boolean
           operator: '='
           value: '1'
           group: 1
@@ -350,14 +353,14 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
             multiple: false
             remember_roles:
               authenticated: authenticated
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -370,30 +373,29 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          entity_type: user
-          entity_field: status
-          plugin_id: boolean
       filter_groups:
         operator: AND
         groups: {  }
-      block_description: Testimonials
-      css_class: 'people testimonials'
-      sorts:
-        created:
-          id: created
-          table: users_field_data
-          field: created
+      style:
+        type: default
+        options: {  }
+      row:
+        type: 'entity:user'
+        options:
           relationship: none
-          group_type: group
-          admin_label: ''
-          order: ASC
-          exposed: false
-          expose:
-            label: ''
-          granularity: hour
-          entity_type: user
-          entity_field: created
-          plugin_id: date
+          view_mode: testimonial
+      defaults:
+        title: true
+        css_class: false
+        style: false
+        row: false
+        sorts: false
+        filters: false
+        filter_groups: false
+      css_class: 'people testimonials'
+      display_description: ''
+      display_extenders: {  }
+      block_description: Testimonials
     cache_metadata:
       max-age: -1
       contexts:
@@ -403,31 +405,12 @@ display:
         - user.permissions
       tags: {  }
   block_track_chairs:
-    display_plugin: block
     id: block_track_chairs
     display_title: 'Block Track Chairs (this track)'
+    display_plugin: block
     position: 3
     display_options:
-      display_extenders: {  }
-      display_description: 'to display on the respective track'
-      block_description: 'Block Track Chairs (on track)'
-      relationships:
-        reverse__taxonomy_term__field_track_chairs:
-          id: reverse__taxonomy_term__field_track_chairs
-          table: users_field_data
-          field: reverse__taxonomy_term__field_track_chairs
-          relationship: none
-          group_type: group
-          admin_label: field_track_chairs
-          required: true
-          entity_type: user
-          plugin_id: entity_reverse
-      defaults:
-        relationships: false
-        arguments: false
-        filters: false
-        filter_groups: false
-        title: false
+      title: ''
       arguments:
         tid:
           id: tid
@@ -436,6 +419,9 @@ display:
           relationship: reverse__taxonomy_term__field_track_chairs
           group_type: group
           admin_label: ''
+          entity_type: taxonomy_term
+          entity_field: tid
+          plugin_id: taxonomy
           default_action: default
           exception:
             value: all
@@ -446,16 +432,16 @@ display:
           default_argument_type: taxonomy_tid
           default_argument_options:
             term_page: '1'
-            anyall: ','
             node: false
             limit: false
             vids: {  }
+            anyall: ','
           default_argument_skip_url: false
           summary_options:
             base_path: ''
             count: true
-            items_per_page: 25
             override: false
+            items_per_page: 25
           summary:
             sort_order: asc
             number_of_records: 0
@@ -467,9 +453,6 @@ display:
           validate_options: {  }
           break_phrase: false
           not: false
-          entity_type: taxonomy_term
-          entity_field: tid
-          plugin_id: taxonomy
       filters:
         status:
           id: status
@@ -478,6 +461,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: user
+          entity_field: status
+          plugin_id: boolean
           operator: '='
           value: '1'
           group: 1
@@ -488,14 +474,14 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
             multiple: false
             remember_roles:
               authenticated: authenticated
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -508,14 +494,30 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          entity_type: user
-          entity_field: status
-          plugin_id: boolean
       filter_groups:
         operator: AND
         groups:
           1: AND
-      title: ''
+      defaults:
+        title: false
+        relationships: false
+        arguments: false
+        filters: false
+        filter_groups: false
+      relationships:
+        reverse__taxonomy_term__field_track_chairs:
+          id: reverse__taxonomy_term__field_track_chairs
+          table: users_field_data
+          field: reverse__taxonomy_term__field_track_chairs
+          relationship: none
+          group_type: group
+          admin_label: field_track_chairs
+          entity_type: user
+          plugin_id: entity_reverse
+          required: true
+      display_description: 'to display on the respective track'
+      display_extenders: {  }
+      block_description: 'Block Track Chairs (on track)'
     cache_metadata:
       max-age: -1
       contexts:
@@ -526,12 +528,28 @@ display:
         - user.permissions
       tags: {  }
   block_volunteers:
-    display_plugin: block
     id: block_volunteers
     display_title: 'Block Volunteers'
+    display_plugin: block
     position: 1
     display_options:
-      display_extenders: {  }
+      sorts:
+        created:
+          id: created
+          table: users_field_data
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: user
+          entity_field: created
+          plugin_id: date
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: created
+          exposed: false
+          granularity: hour
       filters:
         field_u_cat_volunteer_value:
           id: field_u_cat_volunteer_value
@@ -540,6 +558,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: boolean
           operator: '='
           value: '1'
           group: 1
@@ -550,14 +569,14 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
             multiple: false
             remember_roles:
               authenticated: authenticated
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -570,7 +589,6 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          plugin_id: boolean
         field_u_cat_orgateam_value:
           id: field_u_cat_orgateam_value
           table: user__field_u_cat_orgateam
@@ -578,6 +596,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: boolean
           operator: '!='
           value: '1'
           group: 1
@@ -588,14 +607,14 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
             multiple: false
             remember_roles:
               authenticated: authenticated
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -608,7 +627,6 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          plugin_id: boolean
         field_u_cat_mentor_value:
           id: field_u_cat_mentor_value
           table: user__field_u_cat_mentor
@@ -616,6 +634,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: boolean
           operator: '!='
           value: '1'
           group: 1
@@ -626,14 +645,14 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
             multiple: false
             remember_roles:
               authenticated: authenticated
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -646,7 +665,6 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          plugin_id: boolean
         roles_target_id:
           id: roles_target_id
           table: user__roles
@@ -654,6 +672,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: user
+          entity_field: roles
+          plugin_id: user_roles
           operator: not
           value:
             track_chair: track_chair
@@ -665,6 +686,8 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
@@ -672,8 +695,6 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -687,9 +708,6 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          entity_type: user
-          entity_field: roles
-          plugin_id: user_roles
         field_u_pub_attendee_list_value:
           id: field_u_pub_attendee_list_value
           table: user__field_u_pub_attendee_list
@@ -697,6 +715,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: boolean
           operator: '='
           value: '1'
           group: 1
@@ -707,14 +726,14 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
             multiple: false
             remember_roles:
               authenticated: authenticated
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -727,7 +746,6 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          plugin_id: boolean
         status:
           id: status
           table: users_field_data
@@ -735,6 +753,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: user
+          entity_field: status
+          plugin_id: boolean
           operator: '='
           value: '1'
           group: 1
@@ -745,14 +766,14 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
             multiple: false
             remember_roles:
               authenticated: authenticated
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -765,38 +786,10 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          entity_type: user
-          entity_field: status
-          plugin_id: boolean
-      defaults:
-        filters: false
-        filter_groups: false
-        sorts: false
-        style: false
-        row: false
-        title: true
       filter_groups:
         operator: AND
         groups:
           1: AND
-      display_description: ''
-      sorts:
-        created:
-          id: created
-          table: users_field_data
-          field: created
-          relationship: none
-          group_type: group
-          admin_label: ''
-          order: ASC
-          exposed: false
-          expose:
-            label: ''
-          granularity: hour
-          entity_type: user
-          entity_field: created
-          plugin_id: date
-      block_description: Volunteers
       style:
         type: default
         options: {  }
@@ -805,6 +798,16 @@ display:
         options:
           relationship: none
           view_mode: volunteer_profile
+      defaults:
+        title: true
+        style: false
+        row: false
+        sorts: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders: {  }
+      block_description: Volunteers
     cache_metadata:
       max-age: -1
       contexts:

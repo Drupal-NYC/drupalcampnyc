@@ -17,7 +17,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
  * @Condition(
  *   id = "current_user_page",
  *   label = @Translation("Current user page"),
- *   context = {
+ *   context_definitions = {
  *     "user" = @ContextDefinition("entity:user", required = TRUE , label = @Translation("user"))
  *   }
  * )

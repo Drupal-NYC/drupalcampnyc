@@ -13,7 +13,6 @@ bundles:
   - social_event
 entity_type: node
 global: false
-weight: 0
 flag_short: 'Mark favourite'
 flag_long: 'Add this session to your favourite items.'
 flag_message: ''
@@ -21,6 +20,7 @@ unflag_short: 'Unmark favourite'
 unflag_long: 'Remove this session from your favourite items.'
 unflag_message: ''
 unflag_denied_text: ''
+weight: 0
 flag_type: 'entity:node'
 link_type: ajax_link
 flagTypeConfig:

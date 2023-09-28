@@ -2,17 +2,186 @@ uuid: 081dba54-dd73-4548-a1bc-ed3232f254ad
 langcode: en
 status: closed
 dependencies: {  }
+weight: 0
 open: null
 close: null
-weight: 0
 uid: 1247
 template: false
 archive: false
 id: post_conference_survey
 title: 'Post-conference survey'
 description: ''
-category: ''
-elements: "country:\n  '#type': webform_address\n  '#title': 'Your country'\n  '#address__access': false\n  '#address_2__access': false\n  '#city__access': false\n  '#state_province__access': false\n  '#postal_code__access': false\n  '#country__title': 'Your country'\non_a_scale_of_1_10_how_would_you_rate_your_overall_experience_at:\n  '#type': webform_rating\n  '#title': 'On a scale of 1-10, how would you rate your overall experience at Drupal Europe?'\n  '#title_display': before\n  '#min': 1\n  '#max': 10\n  '#output': ''\ndo_you_attend_big_drupal_events_regularly_:\n  '#type': radios\n  '#title': 'Do you attend big Drupal events regularly?'\n  '#options':\n    always: 'I (almost) always attend European DrupalCons'\n    one: 'I attended at least one DrupalCon before'\n    first: 'Drupal Europe was my first big Drupal event'\nif_you_were_a_first_time_attendee_how_easy_difficult_was_it_for_:\n  '#type': radios\n  '#title': 'How easy/difficult was it for you to connect with fellow attendees?'\n  '#options':\n    'Very easy': 'Very easy'\n    Easy: Easy\n    Neutral: Neutral\n    Difficult: Difficult\n    'Very difficult': 'Very difficult'\n  '#states':\n    visible-slide:\n      ':input[name=\"do_you_attend_big_drupal_events_regularly_\"]':\n        value: first\nif_you_are_new_to_drupal_did_you_find_the_conference_a_good_plac:\n  '#type': radios\n  '#title': 'If you are new to Drupal, did you find the conference a good place to get to know Drupal?'\n  '#options':\n    'I am not new to Drupal': 'I am not new to Drupal'\n    'I did not intend to get to know Drupal': 'I did not intend to get to know Drupal'\n    'Drupal Europe provided a good introduction': 'Drupal Europe provided a good introduction'\n    'Things were too overwhelming and more guidance would have been useful': 'Things were too overwhelming and more guidance would have been useful'\n  '#states':\n    visible-slide:\n      ':input[name=\"do_you_attend_big_drupal_events_regularly_\"]':\n        value: first\nwhich_of_the_following_aspects_impacted_your_decision_to_attend_:\n  '#type': webform_likert\n  '#title': 'Which of the following aspects impacted your decision to attend Drupal Europe?'\n  '#questions':\n    'European Splash Awards': 'European Splash Awards'\n    Driesnote: Driesnote\n    'Panel “The future of open source and the open web”': 'Panel “The future of open source and the open web”'\n    'Session speakers': 'Session speakers'\n    'Session content': 'Session content'\n    'Informal gatherings (BoFs)': 'Informal gatherings (BoFs)'\n    Workshops: Workshops\n    'Industry tracks': 'Industry tracks'\n    'Mentored contribution': 'Mentored contribution'\n    'General contribution': 'General contribution'\n    'Open Web Lounge': 'Open Web Lounge'\n    'Networking with attendees': 'Networking with attendees'\n    'Chance to meet a Drupaler I look up to': 'Chance to meet a Drupaler I look up to'\n    'Social events': 'Social events'\n    'My employer was a sponsor': 'My employer was a sponsor'\n    'Colleagues or friends were attending': 'Colleagues or friends were attending'\n    'The mix of nations and cultures': 'The mix of nations and cultures'\n    'To meet a sponsor': 'To meet a sponsor'\n    'To meet new clients or partners': 'To meet new clients or partners'\n    'To find a job': 'To find a job'\n    'To hire people': 'To hire people'\n    'To promote my organization': 'To promote my organization'\n    'To promote my local community': 'To promote my local community'\n    'To promote a project I am working on': 'To promote a project I am working on'\n    'Travel distance to the venue': 'Travel distance to the venue'\n    'Lodging and entertainment costs': 'Lodging and entertainment costs'\n    'Darmstadt or the Rhein-Main region': 'Darmstadt or the Rhein-Main region'\n  '#answers':\n    'High impact': 'High impact'\n    'Some impact': 'Some impact'\n    'Hardly any impact': 'Hardly any impact'\n    'No impact at all': 'No impact at all'\n  '#sticky': false\nwas_the_value_you_received_from_the_conference_worth_the_price_y:\n  '#type': radios\n  '#title': 'Was the value you received from the conference worth the price you paid?'\n  '#options':\n    'Much more value than I expected': 'Much more value than I expected'\n    'Somewhat more value than I expected': 'Somewhat more value than I expected'\n    'Somewhat less value than I expected': 'Somewhat less value than I expected'\n    'Much less value than I expected': 'Much less value than I expected'\nrank_the_following_drupal_europe_elements_based_on_how_useful_th:\n  '#type': webform_likert\n  '#title': 'Rank the following Drupal Europe elements based on how useful they turned out be'\n  '#questions':\n    'European Splash Awards': 'European Splash Awards'\n    Driesnote: Driesnote\n    'Panel “The future of open source and the open web”': 'Panel “The future of open source and the open web”'\n    Sessions: Sessions\n    Workshops: Workshops\n    'Informal gatherings (BoFs)': 'Informal gatherings (BoFs)'\n    'Mentored contribution': 'Mentored contribution'\n    'General contribution': 'General contribution'\n    'Open Web Lounge': 'Open Web Lounge'\n    'Sponsor exhibition': 'Sponsor exhibition'\n    'Catering (lunch, snacks, coffee)': 'Catering (lunch, snacks, coffee)'\n    'Social events': 'Social events'\n    Networking: Networking\n    'Digital signage': 'Digital signage'\n  '#answers':\n    'Very useful': 'Very useful'\n    'Somewhat useful': 'Somewhat useful'\n    Neutral: Neutral\n    'Not very useful': 'Not very useful'\n    'Did not use/attend': 'Did not use/attend'\n  '#sticky': false\nwhat_if_anything_would_you_like_to_see_more_of_at_future_events_:\n  '#type': textarea\n  '#title': 'What if anything would you like to see *more* of at future events to improve the ranking of the above?'\n  '#description': 'Include session ideas, workshop or training requests, social event suggestions, etc.'\nwhat_if_anything_would_you_like_to_see_less_of_at_future_events_:\n  '#type': textarea\n  '#title': 'What if anything would you like to see *less* of at future events to improve the raking of the above?'\non_the_expense_of_sessions_more_or_less_workshops_would_be_bette:\n  '#type': radios\n  '#title': 'On the expense of sessions, more or less workshops would be better?'\n  '#options':\n    More: More\n    Less: Less\n    Neutral: Neutral\nas_we_did_not_do_announcement_segments_in_the_keynotes_and_no_op:\n  '#type': radios\n  '#title': 'As we did not do announcement segments in the keynotes and no opening or closing session, were the updates on the website, digital signage and posted on twitter sufficient to keep you in the loop during the conference?'\n  '#options':\n    'Very useful': 'Very useful'\n    'Somewhat useful': 'Somewhat useful'\n    Neutral: Neutral\n    'Not very useful': 'Not very useful'\nwhat_was_your_favourite_moment_at_drupal_europe_:\n  '#type': textarea\n  '#title': 'What was your favourite moment at Drupal Europe?'\nare_you_planning_to_attend_drupalcon_amsterdam_:\n  '#type': radios\n  '#title': 'Are you planning to attend DrupalCon Amsterdam?'\n  '#options':\n    'Yes': 'Yes'\n    'No': 'No'\n    'Don''t know yet': 'Don''t know yet'\nhow_could_you_be_convinced_to_attend_:\n  '#type': textfield\n  '#title': 'What would convince you to attend?'\n  '#states':\n    visible-slide:\n      -\n        ':input[name=\"are_you_planning_to_attend_drupalcon_amsterdam_\"]':\n          value: 'No'\n      - or\n      -\n        ':input[name=\"are_you_planning_to_attend_drupalcon_amsterdam_\"]':\n          value: 'Don''t know yet'\nanything_else_you_want_to_share_with_us:\n  '#type': textarea\n  '#title': 'Anything else you want to share with us'\nprocessed_text:\n  '#type': processed_text\n  '#text': \"<style type=\\\"text/css\\\">.webform-submission-post-conference-survey-form .fieldset-legend,\\r\\n.webform-submission-post-conference-survey-form .form-type-textarea label,\\r\\n.webform-submission-post-conference-survey-form .form-type-textfield label,\\r\\n.webform-submission-post-conference-survey-form .form-type-webform-likert label,\\r\\n.webform-submission-post-conference-survey-form .form-type-select label,\\r\\n.webform-submission-post-conference-survey-form .form-type-webform-rating label {\\r\\n    font-size: 1.2em;\\r\\n    display: block;\\r\\n    margin-top: 1.5em;\\r\\n    font-weight: bold;\\r\\n    margin-bottom: 0.5em;\\r\\n}\\r\\n\\r\\n.webform-submission-post-conference-survey-form .form-type-webform-likert td label {\\r\\n   font-size: 1em;\\r\\n   margin-top: 0;\\r\\n   margin-bottom: 0;\\r\\n   font-weight: normal;\\r\\n}\\r\\n\\r\\n.webform-submission-post-conference-survey-form .form-type-radio label.option {\\r\\n  margin-left: 0.3em;\\r\\n}\\r\\n\\r\\n.webform-submission-post-conference-survey-form .description {\\r\\n  color: #000;\\r\\n}\\r\\n</style>\\r\\n\"\n  '#format': full_html\n"
+categories: {  }
+elements: |
+  country:
+    '#type': webform_address
+    '#title': 'Your country'
+    '#address__access': false
+    '#address_2__access': false
+    '#city__access': false
+    '#state_province__access': false
+    '#postal_code__access': false
+    '#country__title': 'Your country'
+  on_a_scale_of_1_10_how_would_you_rate_your_overall_experience_at:
+    '#type': webform_rating
+    '#title': 'On a scale of 1-10, how would you rate your overall experience at Drupal Europe?'
+    '#title_display': before
+    '#min': 1
+    '#max': 10
+    '#output': ''
+  do_you_attend_big_drupal_events_regularly_:
+    '#type': radios
+    '#title': 'Do you attend big Drupal events regularly?'
+    '#options':
+      always: 'I (almost) always attend European DrupalCons'
+      one: 'I attended at least one DrupalCon before'
+      first: 'Drupal Europe was my first big Drupal event'
+  if_you_were_a_first_time_attendee_how_easy_difficult_was_it_for_:
+    '#type': radios
+    '#title': 'How easy/difficult was it for you to connect with fellow attendees?'
+    '#options':
+      'Very easy': 'Very easy'
+      Easy: Easy
+      Neutral: Neutral
+      Difficult: Difficult
+      'Very difficult': 'Very difficult'
+    '#states':
+      visible-slide:
+        ':input[name="do_you_attend_big_drupal_events_regularly_"]':
+          value: first
+  if_you_are_new_to_drupal_did_you_find_the_conference_a_good_plac:
+    '#type': radios
+    '#title': 'If you are new to Drupal, did you find the conference a good place to get to know Drupal?'
+    '#options':
+      'I am not new to Drupal': 'I am not new to Drupal'
+      'I did not intend to get to know Drupal': 'I did not intend to get to know Drupal'
+      'Drupal Europe provided a good introduction': 'Drupal Europe provided a good introduction'
+      'Things were too overwhelming and more guidance would have been useful': 'Things were too overwhelming and more guidance would have been useful'
+    '#states':
+      visible-slide:
+        ':input[name="do_you_attend_big_drupal_events_regularly_"]':
+          value: first
+  which_of_the_following_aspects_impacted_your_decision_to_attend_:
+    '#type': webform_likert
+    '#title': 'Which of the following aspects impacted your decision to attend Drupal Europe?'
+    '#questions':
+      'European Splash Awards': 'European Splash Awards'
+      Driesnote: Driesnote
+      'Panel “The future of open source and the open web”': 'Panel “The future of open source and the open web”'
+      'Session speakers': 'Session speakers'
+      'Session content': 'Session content'
+      'Informal gatherings (BoFs)': 'Informal gatherings (BoFs)'
+      Workshops: Workshops
+      'Industry tracks': 'Industry tracks'
+      'Mentored contribution': 'Mentored contribution'
+      'General contribution': 'General contribution'
+      'Open Web Lounge': 'Open Web Lounge'
+      'Networking with attendees': 'Networking with attendees'
+      'Chance to meet a Drupaler I look up to': 'Chance to meet a Drupaler I look up to'
+      'Social events': 'Social events'
+      'My employer was a sponsor': 'My employer was a sponsor'
+      'Colleagues or friends were attending': 'Colleagues or friends were attending'
+      'The mix of nations and cultures': 'The mix of nations and cultures'
+      'To meet a sponsor': 'To meet a sponsor'
+      'To meet new clients or partners': 'To meet new clients or partners'
+      'To find a job': 'To find a job'
+      'To hire people': 'To hire people'
+      'To promote my organization': 'To promote my organization'
+      'To promote my local community': 'To promote my local community'
+      'To promote a project I am working on': 'To promote a project I am working on'
+      'Travel distance to the venue': 'Travel distance to the venue'
+      'Lodging and entertainment costs': 'Lodging and entertainment costs'
+      'Darmstadt or the Rhein-Main region': 'Darmstadt or the Rhein-Main region'
+    '#answers':
+      'High impact': 'High impact'
+      'Some impact': 'Some impact'
+      'Hardly any impact': 'Hardly any impact'
+      'No impact at all': 'No impact at all'
+    '#sticky': false
+  was_the_value_you_received_from_the_conference_worth_the_price_y:
+    '#type': radios
+    '#title': 'Was the value you received from the conference worth the price you paid?'
+    '#options':
+      'Much more value than I expected': 'Much more value than I expected'
+      'Somewhat more value than I expected': 'Somewhat more value than I expected'
+      'Somewhat less value than I expected': 'Somewhat less value than I expected'
+      'Much less value than I expected': 'Much less value than I expected'
+  rank_the_following_drupal_europe_elements_based_on_how_useful_th:
+    '#type': webform_likert
+    '#title': 'Rank the following Drupal Europe elements based on how useful they turned out be'
+    '#questions':
+      'European Splash Awards': 'European Splash Awards'
+      Driesnote: Driesnote
+      'Panel “The future of open source and the open web”': 'Panel “The future of open source and the open web”'
+      Sessions: Sessions
+      Workshops: Workshops
+      'Informal gatherings (BoFs)': 'Informal gatherings (BoFs)'
+      'Mentored contribution': 'Mentored contribution'
+      'General contribution': 'General contribution'
+      'Open Web Lounge': 'Open Web Lounge'
+      'Sponsor exhibition': 'Sponsor exhibition'
+      'Catering (lunch, snacks, coffee)': 'Catering (lunch, snacks, coffee)'
+      'Social events': 'Social events'
+      Networking: Networking
+      'Digital signage': 'Digital signage'
+    '#answers':
+      'Very useful': 'Very useful'
+      'Somewhat useful': 'Somewhat useful'
+      Neutral: Neutral
+      'Not very useful': 'Not very useful'
+      'Did not use/attend': 'Did not use/attend'
+    '#sticky': false
+  what_if_anything_would_you_like_to_see_more_of_at_future_events_:
+    '#type': textarea
+    '#title': 'What if anything would you like to see *more* of at future events to improve the ranking of the above?'
+    '#description': 'Include session ideas, workshop or training requests, social event suggestions, etc.'
+  what_if_anything_would_you_like_to_see_less_of_at_future_events_:
+    '#type': textarea
+    '#title': 'What if anything would you like to see *less* of at future events to improve the raking of the above?'
+  on_the_expense_of_sessions_more_or_less_workshops_would_be_bette:
+    '#type': radios
+    '#title': 'On the expense of sessions, more or less workshops would be better?'
+    '#options':
+      More: More
+      Less: Less
+      Neutral: Neutral
+  as_we_did_not_do_announcement_segments_in_the_keynotes_and_no_op:
+    '#type': radios
+    '#title': 'As we did not do announcement segments in the keynotes and no opening or closing session, were the updates on the website, digital signage and posted on twitter sufficient to keep you in the loop during the conference?'
+    '#options':
+      'Very useful': 'Very useful'
+      'Somewhat useful': 'Somewhat useful'
+      Neutral: Neutral
+      'Not very useful': 'Not very useful'
+  what_was_your_favourite_moment_at_drupal_europe_:
+    '#type': textarea
+    '#title': 'What was your favourite moment at Drupal Europe?'
+  are_you_planning_to_attend_drupalcon_amsterdam_:
+    '#type': radios
+    '#title': 'Are you planning to attend DrupalCon Amsterdam?'
+    '#options':
+      'Yes': 'Yes'
+      'No': 'No'
+      'Don''t know yet': 'Don''t know yet'
+  how_could_you_be_convinced_to_attend_:
+    '#type': textfield
+    '#title': 'What would convince you to attend?'
+    '#states':
+      visible-slide:
+        -
+          ':input[name="are_you_planning_to_attend_drupalcon_amsterdam_"]':
+            value: 'No'
+        - or
+        -
+          ':input[name="are_you_planning_to_attend_drupalcon_amsterdam_"]':
+            value: 'Don''t know yet'
+  anything_else_you_want_to_share_with_us:
+    '#type': textarea
+    '#title': 'Anything else you want to share with us'
+  processed_text:
+    '#type': processed_text
+    '#text': "<style type=\"text/css\">.webform-submission-post-conference-survey-form .fieldset-legend,\r\n.webform-submission-post-conference-survey-form .form-type-textarea label,\r\n.webform-submission-post-conference-survey-form .form-type-textfield label,\r\n.webform-submission-post-conference-survey-form .form-type-webform-likert label,\r\n.webform-submission-post-conference-survey-form .form-type-select label,\r\n.webform-submission-post-conference-survey-form .form-type-webform-rating label {\r\n    font-size: 1.2em;\r\n    display: block;\r\n    margin-top: 1.5em;\r\n    font-weight: bold;\r\n    margin-bottom: 0.5em;\r\n}\r\n\r\n.webform-submission-post-conference-survey-form .form-type-webform-likert td label {\r\n   font-size: 1em;\r\n   margin-top: 0;\r\n   margin-bottom: 0;\r\n   font-weight: normal;\r\n}\r\n\r\n.webform-submission-post-conference-survey-form .form-type-radio label.option {\r\n  margin-left: 0.3em;\r\n}\r\n\r\n.webform-submission-post-conference-survey-form .description {\r\n  color: #000;\r\n}\r\n</style>\r\n"
+    '#format': full_html
 css: ''
 javascript: ''
 settings:
@@ -27,40 +196,48 @@ settings:
   page_theme_name: ''
   form_title: both
   form_submit_once: false
-  form_exception_message: ''
   form_open_message: ''
   form_close_message: ''
+  form_exception_message: ''
   form_previous_submissions: true
   form_confidential: false
   form_confidential_message: ''
-  form_remote_addr: true
+  form_disable_remote_addr: false
   form_convert_anonymous: false
   form_prepopulate: false
   form_prepopulate_source_entity: false
   form_prepopulate_source_entity_required: false
   form_prepopulate_source_entity_type: ''
-  form_reset: false
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
   form_disable_autocomplete: false
   form_novalidate: false
   form_disable_inline_errors: false
   form_required: false
-  form_unsaved: false
-  form_disable_back: false
-  form_submit_back: false
   form_autofocus: false
   form_details_toggle: false
+  form_reset: false
   form_access_denied: default
   form_access_denied_title: ''
   form_access_denied_message: ''
   form_access_denied_attributes: {  }
   form_file_limit: ''
+  form_attributes: {  }
+  form_method: ''
+  form_action: ''
   share: false
   share_node: false
   share_theme_name: ''
   share_title: true
   share_page_body_attributes: {  }
   submission_label: ''
+  submission_exception_message: ''
+  submission_locked_message: ''
   submission_log: false
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
   submission_views: {  }
   submission_views_replace: {  }
   submission_user_columns: {  }
@@ -69,11 +246,6 @@ settings:
   submission_access_denied_title: ''
   submission_access_denied_message: ''
   submission_access_denied_attributes: {  }
-  submission_exception_message: ''
-  submission_locked_message: ''
-  submission_excluded_elements: {  }
-  submission_exclude_empty: false
-  submission_exclude_empty_checkbox: false
   previous_submission_message: ''
   previous_submissions_message: ''
   autofill: false
@@ -84,19 +256,21 @@ settings:
   wizard_progress_percentage: false
   wizard_progress_link: false
   wizard_progress_states: false
-  wizard_auto_forward: true
-  wizard_auto_forward_hide_next_button: false
-  wizard_keyboard: true
   wizard_start_label: ''
   wizard_preview_link: false
   wizard_confirmation: true
   wizard_confirmation_label: ''
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
   wizard_track: ''
   wizard_prev_button_label: ''
   wizard_next_button_label: ''
   wizard_toggle: false
   wizard_toggle_show_label: ''
   wizard_toggle_hide_label: ''
+  wizard_page_type: container
+  wizard_page_title_tag: h2
   preview: 0
   preview_label: ''
   preview_title: ''
@@ -113,9 +287,9 @@ settings:
   draft_pending_single_message: ''
   draft_pending_multiple_message: ''
   confirmation_type: page
+  confirmation_url: ''
   confirmation_title: ''
   confirmation_message: ''
-  confirmation_url: ''
   confirmation_attributes: {  }
   confirmation_back: true
   confirmation_back_label: ''

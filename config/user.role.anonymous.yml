@@ -1,7 +1,16 @@
 uuid: e5e3fbd8-519d-446c-82ee-606a1980990c
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.restricted_html
+  module:
+    - field_permissions
+    - filter
+    - media
+    - message_banner
+    - paragraphs_type_permissions
+    - system
 _core:
   default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
 id: anonymous
@@ -11,29 +20,21 @@ is_admin: false
 permissions:
   - 'access content'
   - 'access user profiles'
-  - 'display eu cookie compliance popup'
   - 'use text format restricted_html'
   - 'view field_access_notice'
-  - 'view field_alternative_verticals'
-  - 'view field_duration'
   - 'view field_featured'
   - 'view field_job_sponsor'
   - 'view field_si_sponsor'
   - 'view field_slides'
   - 'view field_slides_external'
   - 'view field_speaker'
-  - 'view field_speaker_experience'
-  - 'view field_speaker_inclusion'
   - 'view field_speaker_profile'
   - 'view field_speakers'
   - 'view field_sponsors'
   - 'view field_track_chairs'
-  - 'view field_track_session_additionals'
   - 'view field_u_cat_mentor'
-  - 'view field_u_cat_trackchair'
   - 'view field_u_cat_volunteer'
   - 'view field_video'
-  - 'view field_xp_level'
   - 'view media'
   - 'view message banner'
   - 'view own field_si_sponsor'

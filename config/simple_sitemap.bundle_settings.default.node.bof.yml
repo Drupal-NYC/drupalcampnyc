@@ -1,4 +1,4 @@
-index: 1
+index: true
 priority: '0.3'
 changefreq: ''
-include_images: 0
+include_images: false
