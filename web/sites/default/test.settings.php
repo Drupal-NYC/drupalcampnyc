@@ -1,1 +1,15 @@
-<?php&#10&#10// @codingStandardsIgnoreFile&#10&#10/**&#10 * @file&#10 * Loaded by lagoon.settings.php in the test environment&#10 */&#10&#10// Disable development modules and config.&#10$config['config_split.config_split.development']['status'] = FALSE;&#10&#10
+<?php
+
+// @codingStandardsIgnoreFile
+
+/**
+ * @file
+ * Loaded by lagoon.settings.php in the test environment
+ */
+
+// Disable development modules and config.
+
+$config['config_split.config_split.development']['status'] = FALSE;
+
+
+
