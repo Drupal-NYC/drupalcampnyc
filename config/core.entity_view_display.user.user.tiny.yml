@@ -157,6 +157,8 @@ content:
       svg_attributes:
         width: ''
         height: ''
+      image_loading:
+        attribute: eager
     third_party_settings:
       empty_fields:
         handler: ''

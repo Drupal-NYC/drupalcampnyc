@@ -295,7 +295,7 @@ display:
           plugin_id: text
           empty: true
           content:
-            value: 'Looks like our sponsors don''t have any active job listings here at the moment. Check back soon!'
+            value: "Looks like our sponsors don't have any active job listings here at the moment. Check back soon!"
             format: basic_html
           tokenize: false
       sorts:

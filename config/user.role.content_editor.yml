@@ -131,6 +131,7 @@ permissions:
   - 'delete own blog_post content'
   - 'delete own bof content'
   - 'delete own file media'
+  - 'delete own files'
   - 'delete own icon media'
   - 'delete own image media'
   - 'delete own job_listing content'

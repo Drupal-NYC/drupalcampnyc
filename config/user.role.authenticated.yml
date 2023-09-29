@@ -15,6 +15,7 @@ dependencies:
     - content_moderation
     - entity_browser
     - field_permissions
+    - file
     - filter
     - flag
     - media
@@ -37,6 +38,7 @@ permissions:
   - 'cancel account'
   - 'create field_comments'
   - 'create field_ticket_orderno'
+  - 'delete own files'
   - 'delete own webform submission'
   - 'edit own bof content'
   - 'edit own field_comments'

@@ -14,6 +14,7 @@ dependencies:
   module:
     - content_moderation
     - field_permissions
+    - file
     - media
     - node
     - scheduler
@@ -35,6 +36,7 @@ permissions:
   - 'create media'
   - 'create video media'
   - 'delete media'
+  - 'delete own files'
   - 'delete own session content'
   - 'edit any session content'
   - 'edit field_speaker'

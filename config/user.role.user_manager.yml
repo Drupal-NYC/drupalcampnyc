@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - field_permissions
+    - file
     - system
     - toolbar
 id: user_manager
@@ -21,6 +22,7 @@ permissions:
   - 'create field_u_cat_mentor'
   - 'create field_u_cat_orgateam'
   - 'create field_u_cat_volunteer'
+  - 'delete own files'
   - 'edit field_speaker'
   - 'edit field_ticket_orderno'
   - 'edit field_ticket_type'

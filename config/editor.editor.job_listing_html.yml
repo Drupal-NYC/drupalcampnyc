@@ -28,15 +28,15 @@ settings:
         - heading4
         - heading5
         - heading6
+    ckeditor5_list:
+      reversed: false
+      startIndex: true
     ckeditor5_sourceEditing:
       allowed_tags:
         - '<span>'
         - '<a hreflang>'
         - '<ul type>'
         - '<ol type>'
-    ckeditor5_list:
-      reversed: false
-      startIndex: true
     linkit_extension:
       linkit_enabled: false
 image_upload:
