@@ -59,6 +59,3 @@ else {
     }
   }
 }
-
-// Configure Tome Static directory for Tome Netlify.
-$settings['tome_static_directory'] = 'sites/default/files/private/tome_static';

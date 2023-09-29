@@ -74,8 +74,6 @@
         "drupal/social_media_links": "^2.7",
         "drupal/svg_image": "^3.0.1",
         "drupal/token": "^1.9",
-        "drupal/tome": "^1.4",
-        "drupal/tome_netlify": "1.x-dev",
         "drupal/viewsreference": "^2.0.0",
         "drupal/webform": "^6.2.0-beta6",
         "drush/drush": "^11",
