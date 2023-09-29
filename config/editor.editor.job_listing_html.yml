@@ -1,37 +1,44 @@
-uuid: 64a9aa98-e0b1-41f3-9411-61b66f8d846a
+uuid: b155f6f4-fceb-4ab3-b57c-f76ace0f59b2
 langcode: en
 status: true
 dependencies:
   config:
     - filter.format.job_listing_html
   module:
-    - ckeditor
+    - ckeditor5
 format: job_listing_html
-editor: ckeditor
+editor: ckeditor5
 settings:
   toolbar:
-    rows:
-      -
-        -
-          name: Formatting
-          items:
-            - Bold
-            - Italic
-            - Format
-        -
-          name: Links
-          items:
-            - DrupalLink
-            - DrupalUnlink
-        -
-          name: Lists
-          items:
-            - BulletedList
-            - NumberedList
+    items:
+      - bold
+      - italic
+      - heading
+      - '|'
+      - link
+      - '|'
+      - bulletedList
+      - numberedList
+      - sourceEditing
   plugins:
-    drupallink:
+    ckeditor5_heading:
+      enabled_headings:
+        - heading2
+        - heading3
+        - heading4
+        - heading5
+        - heading6
+    ckeditor5_sourceEditing:
+      allowed_tags:
+        - '<span>'
+        - '<a hreflang>'
+        - '<ul type>'
+        - '<ol type>'
+    ckeditor5_list:
+      reversed: false
+      startIndex: true
+    linkit_extension:
       linkit_enabled: false
-      linkit_profile: ''
 image_upload:
   status: false
   scheme: public

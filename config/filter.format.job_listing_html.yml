@@ -56,7 +56,7 @@ filters:
     status: true
     weight: -50
     settings:
-      allowed_html: '<a href hreflang> <em> <strong> <ul type> <ol start type> <li> <p> <br> <span> <h2> <h3> <h4> <h5> <h6>'
+      allowed_html: '<br> <p> <h2> <h3> <h4> <h5> <h6> <span> <a hreflang href> <ul type> <ol type start> <strong> <em> <li>'
       filter_html_help: false
       filter_html_nofollow: true
   filter_align:
