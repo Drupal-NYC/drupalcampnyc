@@ -32,36 +32,34 @@ third_party_settings:
         - field_ends_at
         - field_vertical
         - field_horizontal
+      label: Info
       parent_name: ''
+      region: content
       weight: 0
       format_type: html_element
       format_settings:
-        id: ''
         classes: table-style
+        id: ''
         element: div
         show_label: false
         label_element: h3
         attributes: ''
         effect: none
         speed: fast
-      label: Info
-      region: content
 id: node.bof.full
 targetEntityType: node
 bundle: bof
 mode: full
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 2
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 2
     region: content
   field_ends_at:
     type: datetime_default
-    weight: 3
-    region: content
     label: above
     settings:
       timezone_override: ''
@@ -69,28 +67,28 @@ content:
     third_party_settings:
       empty_fields:
         handler: ''
+    weight: 3
+    region: content
   field_horizontal:
-    weight: 5
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 5
     region: content
   field_room:
     type: entity_reference_label
-    weight: 1
-    region: content
     label: above
     settings:
       link: false
     third_party_settings:
       empty_fields:
         handler: ''
+    weight: 1
+    region: content
   field_start:
     type: datetime_default
-    weight: 2
-    region: content
     label: above
     settings:
       timezone_override: ''
@@ -98,38 +96,40 @@ content:
     third_party_settings:
       empty_fields:
         handler: ''
+    weight: 2
+    region: content
   field_summary:
     type: text_default
-    weight: 1
-    region: content
     label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 1
+    region: content
   field_type:
     type: list_default
-    weight: 0
-    region: content
     label: above
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
   field_vertical:
     type: entity_reference_label
-    weight: 4
-    region: content
     label: above
     settings:
       link: true
     third_party_settings: {  }
-  flag_session_schedule:
-    weight: 10
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  links:
     weight: 4
     region: content
+  flag_session_schedule:
     settings: {  }
     third_party_settings: {  }
+    weight: 10
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
 hidden:
   field_terms: true
   field_timeslot: true

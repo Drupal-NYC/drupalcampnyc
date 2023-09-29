@@ -14,17 +14,17 @@ bundle: social_item
 mode: default
 content:
   field_tweet_link:
-    weight: 101
+    type: linkembed
     label: hidden
     settings:
       text_length: short
     third_party_settings: {  }
-    type: linkembed
+    weight: 101
     region: content
   links:
-    weight: 100
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 100
+    region: content
 hidden:
   shariff_field: true

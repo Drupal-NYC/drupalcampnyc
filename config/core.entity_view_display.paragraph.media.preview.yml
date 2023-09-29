@@ -15,7 +15,6 @@ mode: preview
 content:
   field_media:
     type: entity_reference_entity_view
-    weight: 0
     label: hidden
     settings:
       view_mode: preview
@@ -23,5 +22,6 @@ content:
     third_party_settings:
       empty_fields:
         handler: ''
+    weight: 0
     region: content
 hidden: {  }

@@ -22,16 +22,17 @@ bundle: deck_hero
 mode: default
 content:
   field_background:
+    type: image_image
     weight: 1
+    region: content
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-    type: image_image
-    region: content
   field_elements:
     type: paragraphs
     weight: 3
+    region: content
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -42,35 +43,34 @@ content:
       form_display_mode: default
       default_paragraph_type: _none
     third_party_settings: {  }
-    region: content
   field_icon:
+    type: entity_browser_entity_reference
     weight: 2
+    region: content
     settings:
       entity_browser: icon_browser
       field_widget_display: rendered_entity
       field_widget_edit: true
       field_widget_remove: true
       open: true
-      selection_mode: selection_edit
       field_widget_display_settings:
         view_mode: logo
+      selection_mode: selection_edit
     third_party_settings: {  }
-    type: entity_browser_entity_reference
-    region: content
   field_style:
+    type: options_select
     weight: 5
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   field_title:
+    type: text_textfield
     weight: 0
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: text_textfield
-    region: content
   status:
     type: boolean_checkbox
     weight: 4

@@ -22,7 +22,7 @@
       left: 160px;
       top: 6px;
       @include responsive(mobile) {
-        left: $grid-gap/2;
+        left: $grid-gap*0.5;
       }
     }
 
@@ -43,7 +43,7 @@
 
   .scheduled-at {
     margin-left: $grid-gap*2;
-    margin-bottom: $grid-gap/2;
+    margin-bottom: $grid-gap*0.5;
     position: relative;
 
     .field:not(.field--name-field-room) {
@@ -156,7 +156,7 @@
       margin-left: 0;
       position: relative;
       &:before {
-        left: $grid-gap/2;
+        left: $grid-gap*0.5;
       }
 
       .node--type-session.node--view-mode-teaser,

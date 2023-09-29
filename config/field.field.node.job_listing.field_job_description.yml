@@ -10,11 +10,8 @@ dependencies:
     - text
 third_party_settings:
   allowed_formats:
-    job_listing_html: job_listing_html
-    basic_html: '0'
-    restricted_html: '0'
-    full_html: '0'
-    plain_text: '0'
+    allowed_formats:
+      - job_listing_html
 id: node.job_listing.field_job_description
 field_name: field_job_description
 entity_type: node

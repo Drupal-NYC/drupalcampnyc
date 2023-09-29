@@ -1,6 +1,6 @@
 uuid: af990139-c907-4d53-9716-f5bc787793ed
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.pre-footer
@@ -17,15 +17,15 @@ plugin: 'menu_block:pre-footer'
 settings:
   id: 'menu_block:pre-footer'
   label: Pre-footer
-  provider: menu_block
   label_display: '0'
+  provider: menu_block
   follow: false
   follow_parent: child
+  label_link: false
+  label_type: block
   level: 1
   depth: 2
   expand_all_items: true
   parent: 'pre-footer:'
   suggestion: pre_footer
-  label_type: block
-  label_link: false
 visibility: {  }

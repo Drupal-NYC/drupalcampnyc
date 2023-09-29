@@ -15,20 +15,20 @@ bundle: element_webform
 mode: default
 content:
   field_access_notice:
+    type: text_textarea
     weight: 2
+    region: content
     settings:
       rows: 2
       placeholder: ''
     third_party_settings: {  }
-    type: text_textarea
-    region: content
   field_webform:
+    type: webform_entity_reference_select
     weight: 1
+    region: content
     settings:
       default_data: true
     third_party_settings: {  }
-    type: webform_entity_reference_select
-    region: content
   status:
     type: boolean_checkbox
     weight: 3

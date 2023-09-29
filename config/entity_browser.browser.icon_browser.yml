@@ -29,9 +29,12 @@ widget_selector: tabs
 widget_selector_configuration: {  }
 widgets:
   3db9c589-d81b-45dc-a3fb-941164cb6b3c:
+    id: dropzonejs_media_entity_inline_entity_form
+    uuid: 3db9c589-d81b-45dc-a3fb-941164cb6b3c
+    label: 'Upload icon'
+    weight: 1
     settings:
-      form_mode: default
-      media_type: icon
+      submit_text: 'Select icon'
       upload_location: 'public://icon'
       dropzone_description: 'Drop SVG icon here to upload them'
       max_filesize: 2048M
@@ -42,18 +45,15 @@ widgets:
       resize_quality: !!float 1
       resize_method: contain
       thumbnail_method: contain
-      submit_text: 'Select icon'
-    uuid: 3db9c589-d81b-45dc-a3fb-941164cb6b3c
-    weight: 1
-    label: 'Upload icon'
-    id: dropzonejs_media_entity_inline_entity_form
+      media_type: icon
+      form_mode: default
   2977a39a-0d73-4358-a885-2362612204d1:
+    id: view
+    uuid: 2977a39a-0d73-4358-a885-2362612204d1
+    label: Icons
+    weight: 2
     settings:
-      view: icon_browser
-      view_display: entity_browser_icons
       submit_text: 'Select icon'
       auto_select: false
-    uuid: 2977a39a-0d73-4358-a885-2362612204d1
-    weight: 2
-    label: Icons
-    id: view
+      view: icon_browser
+      view_display: entity_browser_icons

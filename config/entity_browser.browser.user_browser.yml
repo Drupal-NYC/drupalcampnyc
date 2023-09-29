@@ -26,12 +26,12 @@ widget_selector: single
 widget_selector_configuration: {  }
 widgets:
   3d005f31-b837-4d48-b9a9-2f780c5d1983:
+    id: view
+    uuid: 3d005f31-b837-4d48-b9a9-2f780c5d1983
+    label: Speakers
+    weight: 1
     settings:
-      view: user_speaker_browser
-      view_display: entity_browser_1
       submit_text: 'Select co-speakers'
       auto_select: false
-    uuid: 3d005f31-b837-4d48-b9a9-2f780c5d1983
-    weight: 1
-    label: Speakers
-    id: view
+      view: user_speaker_browser
+      view_display: entity_browser_1

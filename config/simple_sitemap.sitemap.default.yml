@@ -1,0 +1,11 @@
+uuid: 7a4081e9-cabe-42a3-9225-eaca59d95332
+langcode: en
+status: true
+dependencies:
+  config:
+    - simple_sitemap.type.default_hreflang
+id: default
+label: Default
+description: null
+type: default_hreflang
+weight: 0

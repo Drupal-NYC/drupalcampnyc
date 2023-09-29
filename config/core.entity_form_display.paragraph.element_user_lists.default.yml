@@ -13,11 +13,11 @@ bundle: element_user_lists
 mode: default
 content:
   field_user_view:
+    type: viewsreference_select
     weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: viewsreference_select
-    region: content
   status:
     type: boolean_checkbox
     weight: 1

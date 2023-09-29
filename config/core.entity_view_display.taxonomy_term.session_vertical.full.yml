@@ -20,14 +20,14 @@ bundle: session_vertical
 mode: full
 content:
   description:
-    label: hidden
     type: text_default
-    weight: 2
-    region: content
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 2
+    region: content
   field_icon:
-    weight: 1
+    type: entity_reference_entity_view
     label: hidden
     settings:
       view_mode: large_icon
@@ -35,21 +35,19 @@ content:
     third_party_settings:
       empty_fields:
         handler: ''
-    type: entity_reference_entity_view
+    weight: 1
     region: content
   field_track_details:
     type: entity_reference_revisions_entity_view
-    weight: 4
-    region: content
     label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
+    weight: 4
+    region: content
   field_track_sponsors:
     type: entity_reference_entity_view
-    weight: -4
-    region: content
     label: above
     settings:
       view_mode: teaser
@@ -57,6 +55,8 @@ content:
     third_party_settings:
       empty_fields:
         handler: ''
+    weight: -4
+    region: content
 hidden:
   field_confirmed: true
   field_track_chairs: true

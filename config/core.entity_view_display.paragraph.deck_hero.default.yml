@@ -20,18 +20,17 @@ bundle: deck_hero
 mode: default
 content:
   field_background:
-    weight: 2
+    type: image_url
     label: hidden
     settings:
       image_style: ''
     third_party_settings:
       empty_fields:
         handler: ''
-    type: image_url
+    weight: 2
     region: content
   field_elements:
     type: entity_reference_revisions_entity_view
-    weight: 1
     label: hidden
     settings:
       view_mode: default
@@ -39,10 +38,10 @@ content:
     third_party_settings:
       empty_fields:
         handler: ''
+    weight: 1
     region: content
   field_icon:
     type: entity_reference_entity_view
-    weight: 3
     label: hidden
     settings:
       view_mode: logo
@@ -50,13 +49,14 @@ content:
     third_party_settings:
       empty_fields:
         handler: ''
+    weight: 3
     region: content
   field_title:
-    weight: 0
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 0
     region: content
 hidden:
   field_style: true

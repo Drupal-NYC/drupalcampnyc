@@ -1,7 +1,11 @@
 uuid: 7717e696-e9e1-4673-85e5-ddc1ef388f57
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - field_permissions
+    - system
+    - toolbar
 id: user_manager
 label: 'User manager'
 weight: 4
@@ -16,23 +20,18 @@ permissions:
   - 'create field_track_chairs'
   - 'create field_u_cat_mentor'
   - 'create field_u_cat_orgateam'
-  - 'create field_u_cat_trackchair'
   - 'create field_u_cat_volunteer'
-  - 'display eu cookie compliance popup'
   - 'edit field_speaker'
   - 'edit field_ticket_orderno'
   - 'edit field_ticket_type'
   - 'edit field_track_chairs'
   - 'edit field_u_cat_mentor'
   - 'edit field_u_cat_orgateam'
-  - 'edit field_u_cat_trackchair'
   - 'edit field_u_cat_volunteer'
-  - 'edit own field_u_cat_trackchair'
   - 'select account cancellation method'
   - 'view field_speaker'
   - 'view field_ticket_orderno'
   - 'view field_ticket_type'
-  - 'view field_track_session_additionals'
   - 'view field_u_cat_orgateam'
   - 'view own field_speaker'
   - 'view own field_ticket_type'

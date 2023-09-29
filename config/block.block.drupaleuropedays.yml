@@ -19,17 +19,17 @@ plugin: 'menu_block:drupal-europe-days'
 settings:
   id: 'menu_block:drupal-europe-days'
   label: 'DrupalCampNYC Days'
-  provider: menu_block
   label_display: '0'
+  provider: menu_block
   follow: false
   follow_parent: child
+  label_link: false
+  label_type: block
   level: 1
   depth: 0
   expand_all_items: false
   parent: 'drupal-europe-days:'
   suggestion: drupal_europe_days
-  label_type: block
-  label_link: false
 visibility:
   current_user_page:
     id: current_user_page
@@ -39,6 +39,6 @@ visibility:
       user: '@user.current_user_context:current_user'
   request_path:
     id: request_path
-    pages: '/program/schedule/*'
     negate: false
     context_mapping: {  }
+    pages: '/program/schedule/*'

@@ -1,0 +1,56 @@
+docker-compose-yaml: docker-compose.yml
+
+project: drupalcamp-nyc
+tasks:
+
+
+  #   pre-rollout:
+  #     - run:
+  #         name: drush sql-dump
+  #         command: mkdir -p /app/web/sites/default/files/private/ && drush sql-dump --ordered-dump --gzip --result-file=/app/web/sites/default/files/private/pre-deploy-dump.sql.gz || true
+  #         service: cli
+
+  post-rollout:
+     - run:
+         name: Sync DB and Files from main if we are not on main
+         command: |
+           # Only if we don't have a database yet
+           if tables=$(drush sqlq 'show tables;') && [ -z "$tables" ]; then
+               drush sql-sync @lagoon.main @self #
+               drush rsync @lagoon.main:%files @self:%files -- --omit-dir-times --no-perms --no-group --no-owner --chmod=ugo=rwX
+           fi
+         service: cli
+         when: LAGOON_ENVIRONMENT_TYPE != "production"
+     - run:
+         name: drush deploy
+         command: drush -y deploy
+         service: cli
+
+environments:
+  main:
+    # routes:
+    cronjobs:
+      - name: drush cron
+        schedule: "*/30 * * * *"
+        command: drush cron
+        service: cli
+    routes:
+      - nginx:
+          - drupalcamp.nyc:
+              tls-acme: 'true'
+              insecure: Redirect
+          - www.drupalcamp.nyc:
+              tls-acme: 'true'
+              insecure: Redirect
+  test:
+    # routes:
+    cronjobs:
+      - name: drush cron
+        schedule: "*/30 * * * *"
+        command: drush cron
+        service: cli
+    routes:
+      - nginx:
+          - test.drupalcamp.nyc:
+              tls-acme: 'true'
+              insecure: Redirect

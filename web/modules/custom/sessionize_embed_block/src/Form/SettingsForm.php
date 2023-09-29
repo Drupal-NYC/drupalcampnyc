@@ -151,7 +151,7 @@ class SettingsForm extends ConfigFormBase implements ContainerInjectionInterface
   protected function renderEmbed() {
     $build['#theme'] = 'sessionize_embed_block__embed';
 
-    $sessionize_embed = render($build);
+    $sessionize_embed = \Drupal::service('renderer')->render($build);
     return $sessionize_embed;
   }
 

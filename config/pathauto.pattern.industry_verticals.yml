@@ -12,12 +12,12 @@ pattern: '/session-by-industry/[term:name]'
 selection_criteria:
   356c1358-ab0a-4e2f-8912-6d04fb2864a1:
     id: 'entity_bundle:taxonomy_term'
-    bundles:
-      session_vertical: session_vertical
     negate: false
+    uuid: 356c1358-ab0a-4e2f-8912-6d04fb2864a1
     context_mapping:
       taxonomy_term: taxonomy_term
-    uuid: 356c1358-ab0a-4e2f-8912-6d04fb2864a1
+    bundles:
+      session_vertical: session_vertical
 selection_logic: and
 weight: -5
 relationships: {  }

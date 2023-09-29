@@ -10,11 +10,11 @@ dependencies:
     - text
 third_party_settings:
   allowed_formats:
-    basic_html: basic_html
-    restricted_html: restricted_html
-    full_html: full_html
-    plain_text: plain_text
-    job_listing_html: '0'
+    allowed_formats:
+      - basic_html
+      - restricted_html
+      - full_html
+      - plain_text
 id: taxonomy_term.session_horizontal.field_ext_desc
 field_name: field_ext_desc
 entity_type: taxonomy_term

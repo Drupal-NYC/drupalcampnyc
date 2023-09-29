@@ -10,13 +10,13 @@ type: 'canonical_entities:node'
 pattern: '/sponsor/[node:field_job_sponsor:entity:title]/jobs'
 selection_criteria:
   e4ab300d-bfe1-4235-bc9d-76288606e802:
-    id: node_type
-    bundles:
-      job_listing: job_listing
+    id: 'entity_bundle:node'
     negate: false
+    uuid: e4ab300d-bfe1-4235-bc9d-76288606e802
     context_mapping:
       node: node
-    uuid: e4ab300d-bfe1-4235-bc9d-76288606e802
+    bundles:
+      job_listing: job_listing
 selection_logic: and
 weight: -5
 relationships: {  }

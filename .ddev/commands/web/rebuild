@@ -1,0 +1,9 @@
+#!/bin/bash
+
+## Description: Rebuild the site dependencies.
+## Usage: rebuild
+## Example: ddev rebuild
+composer install
+cd "${DDEV_DOCROOT}/themes/drupalnyc"
+yarn install --frozen-lockfile
+yarn run build

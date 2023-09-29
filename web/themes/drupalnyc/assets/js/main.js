@@ -1,10 +1,12 @@
 "use strict";
 // images are loaded here, so they get preprocessed by webpack.
-const images = [require("../images/plussign.svg")];
+// however, commented out because it throws an error:
+// Module not found: Error: request argument is not a string
+// const images = [require("../images/plussign.svg")];
 
-(function ($) {
+(function ($, Drupal) {
   Drupal.behaviors.onLoad = {
-    onLoad: (function (context, settings) {
+    attach: function (context, settings) {
       // on scroll fade small logo in menu
       if ($("body").hasClass("path-frontpage")) {
         $(document).scroll(function () {
@@ -45,8 +47,11 @@ const images = [require("../images/plussign.svg")];
             .prepend('<img src="/themes/drupalnyc/user-placeholder.png"/>');
         }
       });
-    })(),
-    clickEvents: (function () {
+    }
+  };
+
+  Drupal.behaviors.clickEvents = {
+    attach: function (context, settings) {
       let mainMenu = $(".menu--main");
       $(".hamburger").click(function () {
         if (mainMenu.hasClass("open")) {
@@ -57,8 +62,8 @@ const images = [require("../images/plussign.svg")];
           $("main").addClass("mobile-menu-opened");
         }
       });
-    })(),
-  };
+    }
+  }
 
   Drupal.behaviors.ticketing = {
     attach: function (context, settings) {
@@ -82,7 +87,7 @@ const images = [require("../images/plussign.svg")];
     }
   }
 
-  var x = window.matchMedia("(max-width: 1023px)");
+  let x = window.matchMedia("(max-width: 1023px)");
   myFunction(x); // Call listener function at run time
   x.addListener(myFunction); // Attach listener function on state changes
-})(jQuery);
+})(jQuery, Drupal);

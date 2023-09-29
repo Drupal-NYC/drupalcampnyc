@@ -10,7 +10,7 @@ base:
     - core/drupal.ajax
     - core/drupal
     - core/drupalSettings
-    - core/jquery.once
+    - core/once
 infoscreen:
   version: 1.x
   css:

@@ -13,13 +13,13 @@ bundle: text
 mode: default
 content:
   field_body:
+    type: text_textarea
     weight: 1
+    region: content
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-    type: text_textarea
-    region: content
   status:
     type: boolean_checkbox
     weight: 2

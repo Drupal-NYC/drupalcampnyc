@@ -2,17 +2,66 @@ uuid: cfd5d506-1bc3-44e5-b059-8962f56b7ce7
 langcode: en
 status: closed
 dependencies: {  }
+weight: 0
 open: null
 close: null
-weight: 0
 uid: 1
 template: false
 archive: false
 id: training_proposal
 title: 'Training proposal'
 description: ''
-category: ''
-elements: "course:\n  '#type': fieldset\n  '#title': Course\n  training_title:\n    '#type': textfield\n    '#title': 'Training title'\n    '#required': true\n  course_description:\n    '#type': textarea\n    '#title': 'Course description'\n    '#required': true\n  learning_objectives:\n    '#type': textarea\n    '#title': 'Learning objectives'\n  course_level:\n    '#type': radios\n    '#title': 'Course level'\n    '#options':\n      Beginner: Beginner\n      Intermediate: Intermediate\n      Advanced: Advanced\n  trainer_name:\n    '#type': textfield\n    '#title': Trainer\n    '#multiple': true\ntrainer:\n  '#type': fieldset\n  '#title': Organizational\n  your_name:\n    '#type': textfield\n    '#title': 'Your name'\n    '#required': true\n  company_name:\n    '#type': textfield\n    '#title': 'Company name'\n  email:\n    '#type': email\n    '#title': Email\n    '#help': 'The address for getting back to you'\n    '#required': true\n  this_training_experience:\n    '#type': textarea\n    '#title': 'Your experience giving this training'\n  pre_requisites:\n    '#type': textarea\n    '#title': Pre-requisites\n  setup_instructions:\n    '#type': textarea\n    '#title': 'Setup instructions'\n"
+categories: {  }
+elements: |
+  course:
+    '#type': fieldset
+    '#title': Course
+    training_title:
+      '#type': textfield
+      '#title': 'Training title'
+      '#required': true
+    course_description:
+      '#type': textarea
+      '#title': 'Course description'
+      '#required': true
+    learning_objectives:
+      '#type': textarea
+      '#title': 'Learning objectives'
+    course_level:
+      '#type': radios
+      '#title': 'Course level'
+      '#options':
+        Beginner: Beginner
+        Intermediate: Intermediate
+        Advanced: Advanced
+    trainer_name:
+      '#type': textfield
+      '#title': Trainer
+      '#multiple': true
+  trainer:
+    '#type': fieldset
+    '#title': Organizational
+    your_name:
+      '#type': textfield
+      '#title': 'Your name'
+      '#required': true
+    company_name:
+      '#type': textfield
+      '#title': 'Company name'
+    email:
+      '#type': email
+      '#title': Email
+      '#help': 'The address for getting back to you'
+      '#required': true
+    this_training_experience:
+      '#type': textarea
+      '#title': 'Your experience giving this training'
+    pre_requisites:
+      '#type': textarea
+      '#title': Pre-requisites
+    setup_instructions:
+      '#type': textarea
+      '#title': 'Setup instructions'
 css: ''
 javascript: ''
 settings:
@@ -27,40 +76,48 @@ settings:
   page_theme_name: ''
   form_title: both
   form_submit_once: false
-  form_exception_message: ''
   form_open_message: ''
   form_close_message: ''
+  form_exception_message: ''
   form_previous_submissions: true
   form_confidential: false
   form_confidential_message: ''
-  form_remote_addr: true
+  form_disable_remote_addr: false
   form_convert_anonymous: false
   form_prepopulate: false
   form_prepopulate_source_entity: false
   form_prepopulate_source_entity_required: false
   form_prepopulate_source_entity_type: ''
-  form_reset: false
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
   form_disable_autocomplete: false
   form_novalidate: false
   form_disable_inline_errors: false
   form_required: false
-  form_unsaved: false
-  form_disable_back: false
-  form_submit_back: false
   form_autofocus: false
   form_details_toggle: false
+  form_reset: false
   form_access_denied: default
   form_access_denied_title: ''
   form_access_denied_message: ''
   form_access_denied_attributes: {  }
   form_file_limit: ''
+  form_attributes: {  }
+  form_method: ''
+  form_action: ''
   share: false
   share_node: false
   share_theme_name: ''
   share_title: true
   share_page_body_attributes: {  }
   submission_label: ''
+  submission_exception_message: ''
+  submission_locked_message: ''
   submission_log: false
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
   submission_views: {  }
   submission_views_replace: {  }
   submission_user_columns: {  }
@@ -69,11 +126,6 @@ settings:
   submission_access_denied_title: ''
   submission_access_denied_message: ''
   submission_access_denied_attributes: {  }
-  submission_exception_message: ''
-  submission_locked_message: ''
-  submission_excluded_elements: {  }
-  submission_exclude_empty: false
-  submission_exclude_empty_checkbox: false
   previous_submission_message: ''
   previous_submissions_message: ''
   autofill: false
@@ -84,19 +136,21 @@ settings:
   wizard_progress_percentage: false
   wizard_progress_link: false
   wizard_progress_states: false
-  wizard_auto_forward: true
-  wizard_auto_forward_hide_next_button: false
-  wizard_keyboard: true
   wizard_start_label: ''
   wizard_preview_link: false
   wizard_confirmation: true
   wizard_confirmation_label: ''
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
   wizard_track: ''
   wizard_prev_button_label: ''
   wizard_next_button_label: ''
   wizard_toggle: false
   wizard_toggle_show_label: ''
   wizard_toggle_hide_label: ''
+  wizard_page_type: container
+  wizard_page_title_tag: h2
   preview: 0
   preview_label: ''
   preview_title: ''
@@ -113,9 +167,9 @@ settings:
   draft_pending_single_message: ''
   draft_pending_multiple_message: ''
   confirmation_type: page
+  confirmation_url: ''
   confirmation_title: ''
   confirmation_message: ''
-  confirmation_url: ''
   confirmation_attributes: {  }
   confirmation_back: true
   confirmation_back_label: ''
@@ -194,9 +248,9 @@ access:
 handlers:
   email:
     id: email
+    handler_id: email
     label: Email
     notes: ''
-    handler_id: email
     status: true
     conditions: {  }
     weight: 0
@@ -205,13 +259,17 @@ handlers:
         - completed
       to_mail: camp@drupalnyc.org
       to_options: {  }
-      cc_mail: ''
-      cc_options: {  }
       bcc_mail: ''
       bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
       from_mail: _default
       from_options: {  }
       from_name: _default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
       subject: 'Training proposal'
       body: _default
       excluded_elements: {  }
@@ -222,11 +280,7 @@ handlers:
       html: true
       attachments: false
       twig: false
-      debug: false
-      reply_to: ''
-      return_path: ''
-      sender_mail: ''
-      sender_name: ''
       theme_name: ''
       parameters: {  }
+      debug: false
 variants: {  }

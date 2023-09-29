@@ -1,8 +1,9 @@
+_core:
+  default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
 module:
   admin_toolbar: 0
   admin_toolbar_links_access_filter: 0
   admin_toolbar_tools: 0
-  adminimal_admin_toolbar: 0
   allowed_formats: 0
   auto_entitylabel: 0
   autocomplete_deluxe: 0
@@ -14,7 +15,6 @@ module:
   config: 0
   config_filter: 0
   config_ignore: 0
-  config_ignore_readonly: 0
   config_readonly: 0
   config_split: 0
   content_moderation: 0
@@ -46,6 +46,7 @@ module:
   file: 0
   filter: 0
   flag: 0
+  gin_toolbar: 0
   google_tag: 0
   help: 0
   history: 0
@@ -64,11 +65,11 @@ module:
   metatag: 0
   metatag_twitter_cards: 0
   metatag_views: 0
+  mysql: 0
   node: 0
   nyc_core: 0
   options: 0
   override_node_options: 0
-  pantheon_advanced_page_cache: 0
   paragraphs_type_permissions: 0
   path: 0
   path_alias: 0
@@ -92,6 +93,7 @@ module:
   text: 0
   token: 0
   toolbar: 0
+  update: 0
   user: 0
   viewsreference: 0
   webform: 0
@@ -109,10 +111,8 @@ module:
 theme:
   stable: 0
   classy: 0
-  seven: 0
   drupaleurope: 0
-  adminimal_theme: 0
   drupalnyc: 0
+  claro: 0
+  gin: 0
 profile: minimal
-_core:
-  default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc

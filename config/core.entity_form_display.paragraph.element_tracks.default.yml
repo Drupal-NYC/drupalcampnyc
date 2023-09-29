@@ -13,11 +13,11 @@ bundle: element_tracks
 mode: default
 content:
   field_track_teasers:
+    type: viewsreference_select
     weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: viewsreference_select
-    region: content
   status:
     type: boolean_checkbox
     weight: 2

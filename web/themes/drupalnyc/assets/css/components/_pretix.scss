@@ -42,7 +42,7 @@ div.pretix-widget {
     	flex-direction: column;
   	}
 	}
-	.pretix-widget-item-info-col, 
+	.pretix-widget-item-info-col,
 	.pretix-widget-item-availability-col,
 	.pretix-widget-item-price-col {
 		@include responsive(mobile) {
@@ -71,7 +71,7 @@ div.pretix-widget {
 		    	color: #a2a2a2;
 		    }
 	    }
-	    
+
 	}
 	input[type="number"],
 	input[type="text"] {
@@ -93,7 +93,7 @@ div.pretix-widget {
 		    display: inline-block;
 		    background-size: contain;
 		    background-repeat: no-repeat;
-		    background-image: url(/themes/drupalnyc/arrow-down.svg);
+		    background-image: url('/themes/drupalnyc/arrow-down.svg');
 		    content: "";
 		}
 	}

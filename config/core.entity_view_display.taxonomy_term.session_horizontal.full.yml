@@ -16,22 +16,21 @@ bundle: session_horizontal
 mode: full
 content:
   description:
-    label: hidden
     type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
     weight: 1
     region: content
-    settings: {  }
-    third_party_settings: {  }
   field_ext_desc:
-    weight: 2
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 2
     region: content
   field_icon:
     type: entity_reference_entity_view
-    weight: 0
     label: hidden
     settings:
       view_mode: large_icon
@@ -39,5 +38,6 @@ content:
     third_party_settings:
       empty_fields:
         handler: ''
+    weight: 0
     region: content
 hidden: {  }

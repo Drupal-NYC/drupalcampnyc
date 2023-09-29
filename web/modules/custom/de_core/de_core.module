@@ -1,5 +1,7 @@
 <?php
 
+use Drupal\core\Database\Database;
+use Drupal\user\Entity\User;
 use Drupal\Core\Entity\ContentEntityInterface;
 use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Form\FormStateInterface;
@@ -52,13 +54,13 @@ function de_core_views_pre_execute(ViewExecutable $view)
 /**
  * Implements hook_ENTITY_TYPE_create().
  */
-function de_core_node_create(\Drupal\Core\Entity\EntityInterface $entity) {
+function de_core_node_create(EntityInterface $entity) {
   $route_name = \Drupal::routeMatch()->getRouteName();
   if ($entity->bundle() != 'session' || $route_name != 'node.add') {
     return;
   }
   $user = \Drupal::currentUser();
-  $user_entity = \Drupal\user\Entity\User::load($user->id());
+  $user_entity = User::load($user->id());
   $entity->field_speakers->entity = $user_entity;
 }
 
@@ -101,7 +103,8 @@ function de_core_bof_form_validate(array &$form, FormStateInterface $form_state)
   $field_name = 'field_timeslot';
 
   // Query based on the node table.
-  $query = db_select('node_field_data', 'n');
+  $database = Database::getConnection();
+  $query = $database->select('node_field_data', 'n');
   $query->fields('n', array('nid'));
 
   // Join to match existing nodes with this field value.
@@ -139,7 +142,8 @@ function de_core_field_widget_form_alter(&$element, FormStateInterface $form_sta
 
   if ($context['items']->getName() == $field_name) {
     // Query based on the node table.
-    $query = db_select('node_field_data', 'n');
+    $database = Database::getConnection();
+    $query = $database->select('node_field_data', 'n');
     $query->fields('n', array('nid'));
 
     // Join to match existing nodes with values in this field.

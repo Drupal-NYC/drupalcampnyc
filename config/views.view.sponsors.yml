@@ -18,54 +18,12 @@ base_table: node_field_data
 base_field: nid
 display:
   default:
-    display_plugin: default
     id: default
     display_title: Master
+    display_plugin: default
     position: 0
     display_options:
-      access:
-        type: perm
-        options:
-          perm: 'access content'
-      cache:
-        type: tag
-        options: {  }
-      query:
-        type: views_query
-        options:
-          disable_sql_rewrite: false
-          distinct: false
-          replica: false
-          query_comment: ''
-          query_tags: {  }
-      exposed_form:
-        type: basic
-        options:
-          submit_button: Apply
-          reset_button: false
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      pager:
-        type: none
-        options:
-          items_per_page: null
-          offset: 0
-      style:
-        type: default
-        options:
-          grouping: {  }
-          row_class: ''
-          default_row_class: false
-      row:
-        type: fields
-        options:
-          default_field_elements: false
-          inline: {  }
-          separator: ''
-          hide_empty: false
+      title: 'Sponsors of DrupalCampNYC'
       fields:
         field_sponsor_logo:
           id: field_sponsor_logo
@@ -74,6 +32,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: ''
           exclude: false
           alter:
@@ -118,12 +77,14 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: ''
             image_link: ''
-            svg_render_as_image: true
+            image_style: ''
             svg_attributes:
               width: null
               height: null
+            svg_render_as_image: true
+            image_loading:
+              attribute: lazy
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -134,21 +95,58 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
+      pager:
+        type: none
+        options:
+          offset: 0
+          items_per_page: null
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Apply
+          reset_button: false
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      access:
+        type: perm
+        options:
+          perm: 'access content'
+      cache:
+        type: tag
+        options: {  }
+      empty: {  }
+      sorts:
+        field_sponsor_priority_value:
+          id: field_sponsor_priority_value
+          table: node__field_sponsor_priority
+          field: field_sponsor_priority_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: standard
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: field_sponsor_priority_value
+          exposed: false
+      arguments: {  }
       filters:
         status:
-          value: '1'
+          id: status
           table: node_field_data
           field: status
-          plugin_id: boolean
           entity_type: node
           entity_field: status
-          id: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
           expose:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-          group: 1
         field_level_value:
           id: field_level_value
           table: node__field_level
@@ -156,6 +154,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: list_field
           operator: or
           value:
             diamond: diamond
@@ -189,29 +188,33 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          plugin_id: list_field
-      sorts:
-        field_sponsor_priority_value:
-          id: field_sponsor_priority_value
-          table: node__field_sponsor_priority
-          field: field_sponsor_priority_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          order: ASC
-          exposed: false
-          expose:
-            label: ''
-          plugin_id: standard
-      title: 'Sponsors of DrupalCampNYC'
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: false
+      row:
+        type: fields
+        options:
+          default_field_elements: false
+          inline: {  }
+          separator: ''
+          hide_empty: false
+      query:
+        type: views_query
+        options:
+          query_comment: ''
+          disable_sql_rewrite: false
+          distinct: false
+          replica: false
+          query_tags: {  }
+      relationships: {  }
+      css_class: sponsors
       header: {  }
       footer: {  }
-      empty: {  }
-      relationships: {  }
-      arguments: {  }
       display_extenders:
         metatag_display_extender: {  }
-      css_class: sponsors
     cache_metadata:
       max-age: -1
       contexts:
@@ -222,81 +225,12 @@ display:
       tags:
         - 'config:field.storage.node.field_sponsor_logo'
   block_community:
-    display_plugin: block
     id: block_community
     display_title: 'Block Community'
+    display_plugin: block
     position: 5
     display_options:
-      display_extenders:
-        metatag_display_extender: {  }
       title: 'Industrialist (Community) sponsors'
-      defaults:
-        title: false
-        filters: false
-        filter_groups: false
-        fields: false
-      display_description: ''
-      filters:
-        status:
-          value: '1'
-          table: node_field_data
-          field: status
-          plugin_id: boolean
-          entity_type: node
-          entity_field: status
-          id: status
-          expose:
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-          group: 1
-        field_level_value:
-          id: field_level_value
-          table: node__field_level
-          field: field_level_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: or
-          value:
-            community: community
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: false
-          plugin_id: list_field
-      filter_groups:
-        operator: AND
-        groups:
-          1: AND
-      block_description: ''
-      block_hide_empty: true
       fields:
         field_sponsor_logo:
           id: field_sponsor_logo
@@ -305,6 +239,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: ''
           exclude: false
           alter:
@@ -349,12 +284,14 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: ''
             image_link: content
-            svg_render_as_image: true
+            image_style: ''
             svg_attributes:
               width: null
               height: null
+            svg_render_as_image: true
+            image_loading:
+              attribute: lazy
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -365,7 +302,75 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
+      filters:
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        field_level_value:
+          id: field_level_value
+          table: node__field_level
+          field: field_level_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: list_field
+          operator: or
+          value:
+            community: community
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      defaults:
+        title: false
+        fields: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders:
+        metatag_display_extender: {  }
+      block_description: ''
+      block_hide_empty: true
     cache_metadata:
       max-age: -1
       contexts:
@@ -376,19 +381,12 @@ display:
       tags:
         - 'config:field.storage.node.field_sponsor_logo'
   block_diamond:
-    display_plugin: block
     id: block_diamond
     display_title: 'Block Diamond'
+    display_plugin: block
     position: 2
     display_options:
-      display_extenders:
-        metatag_display_extender: {  }
       title: 'Big Apple (Diamond) sponsors'
-      defaults:
-        title: false
-        fields: false
-      display_description: ''
-      block_hide_empty: true
       fields:
         field_sponsor_logo:
           id: field_sponsor_logo
@@ -397,6 +395,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: ''
           exclude: false
           alter:
@@ -441,12 +440,14 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: ''
             image_link: content
-            svg_render_as_image: true
+            image_style: ''
             svg_attributes:
               width: null
               height: null
+            svg_render_as_image: true
+            image_loading:
+              attribute: lazy
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -457,7 +458,13 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
+      defaults:
+        title: false
+        fields: false
+      display_description: ''
+      display_extenders:
+        metatag_display_extender: {  }
+      block_hide_empty: true
     cache_metadata:
       max-age: -1
       contexts:
@@ -468,80 +475,12 @@ display:
       tags:
         - 'config:field.storage.node.field_sponsor_logo'
   block_gold:
-    display_plugin: block
     id: block_gold
     display_title: 'Block Gold'
+    display_plugin: block
     position: 4
     display_options:
-      display_extenders:
-        metatag_display_extender: {  }
       title: 'New Amsterdam (Gold) sponsors'
-      defaults:
-        title: false
-        filters: false
-        filter_groups: false
-        fields: false
-      display_description: ''
-      filters:
-        status:
-          value: '1'
-          table: node_field_data
-          field: status
-          plugin_id: boolean
-          entity_type: node
-          entity_field: status
-          id: status
-          expose:
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-          group: 1
-        field_level_value:
-          id: field_level_value
-          table: node__field_level
-          field: field_level_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: or
-          value:
-            gold: gold
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            reduce: false
-            operator_limit_selection: false
-            operator_list: {  }
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: false
-          plugin_id: list_field
-      filter_groups:
-        operator: AND
-        groups:
-          1: AND
-      block_hide_empty: true
       fields:
         field_sponsor_logo:
           id: field_sponsor_logo
@@ -550,6 +489,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: ''
           exclude: false
           alter:
@@ -594,12 +534,14 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: ''
             image_link: content
-            svg_render_as_image: true
+            image_style: ''
             svg_attributes:
               width: null
               height: null
+            svg_render_as_image: true
+            image_loading:
+              attribute: lazy
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -610,46 +552,20 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - 'user.node_grants:view'
-        - user.permissions
-      tags:
-        - 'config:field.storage.node.field_sponsor_logo'
-  block_homegrown:
-    display_plugin: block
-    id: block_homegrown
-    display_title: 'Block Homegrown'
-    position: 2
-    display_options:
-      display_extenders:
-        metatag_display_extender: {  }
-      title: 'Homegrown sponsors'
-      defaults:
-        title: false
-        filters: false
-        filter_groups: false
-        fields: false
-      display_description: ''
-      block_hide_empty: true
       filters:
         status:
-          value: '1'
+          id: status
           table: node_field_data
           field: status
-          plugin_id: boolean
           entity_type: node
           entity_field: status
-          id: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
           expose:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-          group: 1
         field_level_value:
           id: field_level_value
           table: node__field_level
@@ -657,9 +573,10 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: list_field
           operator: or
           value:
-            homegrown: homegrown
+            gold: gold
           group: 1
           exposed: false
           expose:
@@ -690,11 +607,35 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          plugin_id: list_field
       filter_groups:
         operator: AND
         groups:
           1: AND
+      defaults:
+        title: false
+        fields: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders:
+        metatag_display_extender: {  }
+      block_hide_empty: true
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_sponsor_logo'
+  block_homegrown:
+    id: block_homegrown
+    display_title: 'Block Homegrown'
+    display_plugin: block
+    position: 2
+    display_options:
+      title: 'Homegrown sponsors'
       fields:
         field_sponsor_logo:
           id: field_sponsor_logo
@@ -703,6 +644,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: ''
           exclude: false
           alter:
@@ -747,12 +689,14 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: ''
             image_link: content
-            svg_render_as_image: true
+            image_style: ''
             svg_attributes:
               width: null
               height: null
+            svg_render_as_image: true
+            image_loading:
+              attribute: lazy
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -763,45 +707,20 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - 'user.node_grants:view'
-        - user.permissions
-      tags:
-        - 'config:field.storage.node.field_sponsor_logo'
-  block_inkind:
-    display_plugin: block
-    id: block_inkind
-    display_title: 'Block In-Kind'
-    position: 5
-    display_options:
-      display_extenders:
-        metatag_display_extender: {  }
-      title: 'In-Kind sponsors'
-      defaults:
-        title: false
-        filters: false
-        filter_groups: false
-        fields: false
-      display_description: ''
       filters:
         status:
-          value: '1'
+          id: status
           table: node_field_data
           field: status
-          plugin_id: boolean
           entity_type: node
           entity_field: status
-          id: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
           expose:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-          group: 1
         field_level_value:
           id: field_level_value
           table: node__field_level
@@ -809,9 +728,10 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: list_field
           operator: or
           value:
-            inkind: inkind
+            homegrown: homegrown
           group: 1
           exposed: false
           expose:
@@ -842,13 +762,35 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          plugin_id: list_field
       filter_groups:
         operator: AND
         groups:
           1: AND
-      block_description: ''
+      defaults:
+        title: false
+        fields: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders:
+        metatag_display_extender: {  }
       block_hide_empty: true
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_sponsor_logo'
+  block_inkind:
+    id: block_inkind
+    display_title: 'Block In-Kind'
+    display_plugin: block
+    position: 5
+    display_options:
+      title: 'In-Kind sponsors'
       fields:
         field_sponsor_logo:
           id: field_sponsor_logo
@@ -857,6 +799,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: ''
           exclude: false
           alter:
@@ -901,12 +844,14 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: ''
             image_link: content
-            svg_render_as_image: true
+            image_style: ''
             svg_attributes:
               width: null
               height: null
+            svg_render_as_image: true
+            image_loading:
+              attribute: lazy
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -917,45 +862,20 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - 'user.node_grants:view'
-        - user.permissions
-      tags:
-        - 'config:field.storage.node.field_sponsor_logo'
-  block_platinum:
-    display_plugin: block
-    id: block_platinum
-    display_title: 'Block Platinum'
-    position: 3
-    display_options:
-      display_extenders:
-        metatag_display_extender: {  }
-      title: 'Gotham (Platinum) sponsors'
-      defaults:
-        title: false
-        filters: false
-        filter_groups: false
-        fields: false
-      display_description: ''
       filters:
         status:
-          value: '1'
+          id: status
           table: node_field_data
           field: status
-          plugin_id: boolean
           entity_type: node
           entity_field: status
-          id: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
           expose:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-          group: 1
         field_level_value:
           id: field_level_value
           table: node__field_level
@@ -963,9 +883,10 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: list_field
           operator: or
           value:
-            platinum: platinum
+            inkind: inkind
           group: 1
           exposed: false
           expose:
@@ -974,6 +895,8 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
@@ -981,8 +904,6 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -996,12 +917,36 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          plugin_id: list_field
       filter_groups:
         operator: AND
         groups:
           1: AND
+      defaults:
+        title: false
+        fields: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders:
+        metatag_display_extender: {  }
+      block_description: ''
       block_hide_empty: true
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_sponsor_logo'
+  block_platinum:
+    id: block_platinum
+    display_title: 'Block Platinum'
+    display_plugin: block
+    position: 3
+    display_options:
+      title: 'Gotham (Platinum) sponsors'
       fields:
         field_sponsor_logo:
           id: field_sponsor_logo
@@ -1010,6 +955,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: ''
           exclude: false
           alter:
@@ -1054,12 +1000,14 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: ''
             image_link: content
-            svg_render_as_image: true
+            image_style: ''
             svg_attributes:
               width: null
               height: null
+            svg_render_as_image: true
+            image_loading:
+              attribute: lazy
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -1070,46 +1018,20 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - 'user.node_grants:view'
-        - user.permissions
-      tags:
-        - 'config:field.storage.node.field_sponsor_logo'
-  block_tristate:
-    display_plugin: block
-    id: block_tristate
-    display_title: 'Block Tri-State'
-    position: 2
-    display_options:
-      display_extenders:
-        metatag_display_extender: {  }
-      title: 'Tri-State sponsors'
-      defaults:
-        title: false
-        filters: false
-        filter_groups: false
-        fields: false
-      display_description: ''
-      block_hide_empty: true
       filters:
         status:
-          value: '1'
+          id: status
           table: node_field_data
           field: status
-          plugin_id: boolean
           entity_type: node
           entity_field: status
-          id: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
           expose:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-          group: 1
         field_level_value:
           id: field_level_value
           table: node__field_level
@@ -1117,9 +1039,10 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: list_field
           operator: or
           value:
-            tristate: tristate
+            platinum: platinum
           group: 1
           exposed: false
           expose:
@@ -1150,11 +1073,35 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          plugin_id: list_field
       filter_groups:
         operator: AND
         groups:
           1: AND
+      defaults:
+        title: false
+        fields: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders:
+        metatag_display_extender: {  }
+      block_hide_empty: true
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_sponsor_logo'
+  block_tristate:
+    id: block_tristate
+    display_title: 'Block Tri-State'
+    display_plugin: block
+    position: 2
+    display_options:
+      title: 'Tri-State sponsors'
       fields:
         field_sponsor_logo:
           id: field_sponsor_logo
@@ -1163,6 +1110,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: ''
           exclude: false
           alter:
@@ -1207,12 +1155,14 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: ''
             image_link: content
-            svg_render_as_image: true
+            image_style: ''
             svg_attributes:
               width: null
               height: null
+            svg_render_as_image: true
+            image_loading:
+              attribute: lazy
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -1223,46 +1173,20 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - 'user.node_grants:view'
-        - user.permissions
-      tags:
-        - 'config:field.storage.node.field_sponsor_logo'
-  block_venue:
-    display_plugin: block
-    id: block_venue
-    display_title: 'Block Venue'
-    position: 2
-    display_options:
-      display_extenders:
-        metatag_display_extender: {  }
-      title: 'Times Square (Venue) sponsor'
-      defaults:
-        title: false
-        filters: false
-        filter_groups: false
-        fields: false
-      display_description: ''
-      block_hide_empty: true
       filters:
         status:
-          value: '1'
+          id: status
           table: node_field_data
           field: status
-          plugin_id: boolean
           entity_type: node
           entity_field: status
-          id: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
           expose:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-          group: 1
         field_level_value:
           id: field_level_value
           table: node__field_level
@@ -1270,9 +1194,10 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: list_field
           operator: or
           value:
-            venue: venue
+            tristate: tristate
           group: 1
           exposed: false
           expose:
@@ -1303,11 +1228,35 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          plugin_id: list_field
       filter_groups:
         operator: AND
         groups:
           1: AND
+      defaults:
+        title: false
+        fields: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders:
+        metatag_display_extender: {  }
+      block_hide_empty: true
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_sponsor_logo'
+  block_venue:
+    id: block_venue
+    display_title: 'Block Venue'
+    display_plugin: block
+    position: 2
+    display_options:
+      title: 'Times Square (Venue) sponsor'
       fields:
         field_sponsor_logo:
           id: field_sponsor_logo
@@ -1316,6 +1265,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: ''
           exclude: false
           alter:
@@ -1360,12 +1310,14 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: ''
             image_link: content
-            svg_render_as_image: true
+            image_style: ''
             svg_attributes:
               width: null
               height: null
+            svg_render_as_image: true
+            image_loading:
+              attribute: lazy
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -1376,7 +1328,74 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
+      filters:
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        field_level_value:
+          id: field_level_value
+          table: node__field_level
+          field: field_level_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: list_field
+          operator: or
+          value:
+            venue: venue
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      defaults:
+        title: false
+        fields: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders:
+        metatag_display_extender: {  }
+      block_hide_empty: true
     cache_metadata:
       max-age: -1
       contexts:
@@ -1387,113 +1406,14 @@ display:
       tags:
         - 'config:field.storage.node.field_sponsor_logo'
   page_1:
-    display_plugin: page
     id: page_1
     display_title: Page
+    display_plugin: page
     position: 1
     display_options:
-      display_extenders: {  }
-      path: sponsors
-      footer:
-        area:
-          id: area
-          table: views
-          field: area
-          relationship: none
-          group_type: group
-          admin_label: 'h2 platinum'
-          empty: false
-          tokenize: false
-          content:
-            value: '<h2>Platinum</h2>'
-            format: basic_html
-          plugin_id: text
-        view:
-          id: view
-          table: views
-          field: view
-          relationship: none
-          group_type: group
-          admin_label: block_platinum
-          empty: false
-          view_to_insert: 'sponsors:block_platinum'
-          inherit_arguments: false
-          plugin_id: view
-        area_1:
-          id: area_1
-          table: views
-          field: area
-          relationship: none
-          group_type: group
-          admin_label: 'h2 gold'
-          empty: false
-          tokenize: false
-          content:
-            value: '<h2>Gold</h2>'
-            format: basic_html
-          plugin_id: text
-        view_1:
-          id: view_1
-          table: views
-          field: view
-          relationship: none
-          group_type: group
-          admin_label: block_gold
-          empty: false
-          view_to_insert: 'sponsors:block_gold'
-          inherit_arguments: false
-          plugin_id: view
-        area_2:
-          id: area_2
-          table: views
-          field: area
-          relationship: none
-          group_type: group
-          admin_label: 'h2 silver'
-          empty: false
-          tokenize: false
-          content:
-            value: '<h2>Silver</h2>'
-            format: basic_html
-          plugin_id: text
-        view_2:
-          id: view_2
-          table: views
-          field: view
-          relationship: none
-          group_type: group
-          admin_label: block_silver
-          empty: false
-          view_to_insert: 'sponsors:block_silver'
-          inherit_arguments: false
-          plugin_id: view
-        area_3:
-          id: area_3
-          table: views
-          field: area
-          relationship: none
-          group_type: group
-          admin_label: 'h3 modules'
-          empty: false
-          tokenize: false
-          content:
-            value: '<h2>Module Sponsors</h2>'
-            format: basic_html
-          plugin_id: text
-        view_3:
-          id: view_3
-          table: views
-          field: view
-          relationship: none
-          group_type: group
-          admin_label: block_modulesponsors
-          empty: false
-          view_to_insert: 'sponsors:block_modulesponsors'
-          inherit_arguments: false
-          plugin_id: view
       defaults:
-        footer: false
         header: false
+        footer: false
       header:
         area:
           id: area
@@ -1502,12 +1422,111 @@ display:
           relationship: none
           group_type: group
           admin_label: 'h2 diamond'
+          plugin_id: text
           empty: false
-          tokenize: false
           content:
             value: '<h2>Diamond</h2>'
             format: basic_html
+          tokenize: false
+      footer:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: 'h2 platinum'
           plugin_id: text
+          empty: false
+          content:
+            value: '<h2>Platinum</h2>'
+            format: basic_html
+          tokenize: false
+        view:
+          id: view
+          table: views
+          field: view
+          relationship: none
+          group_type: group
+          admin_label: block_platinum
+          plugin_id: view
+          empty: false
+          view_to_insert: 'sponsors:block_platinum'
+          inherit_arguments: false
+        area_1:
+          id: area_1
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: 'h2 gold'
+          plugin_id: text
+          empty: false
+          content:
+            value: '<h2>Gold</h2>'
+            format: basic_html
+          tokenize: false
+        view_1:
+          id: view_1
+          table: views
+          field: view
+          relationship: none
+          group_type: group
+          admin_label: block_gold
+          plugin_id: view
+          empty: false
+          view_to_insert: 'sponsors:block_gold'
+          inherit_arguments: false
+        area_2:
+          id: area_2
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: 'h2 silver'
+          plugin_id: text
+          empty: false
+          content:
+            value: '<h2>Silver</h2>'
+            format: basic_html
+          tokenize: false
+        view_2:
+          id: view_2
+          table: views
+          field: view
+          relationship: none
+          group_type: group
+          admin_label: block_silver
+          plugin_id: view
+          empty: false
+          view_to_insert: 'sponsors:block_silver'
+          inherit_arguments: false
+        area_3:
+          id: area_3
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: 'h3 modules'
+          plugin_id: text
+          empty: false
+          content:
+            value: '<h2>Module Sponsors</h2>'
+            format: basic_html
+          tokenize: false
+        view_3:
+          id: view_3
+          table: views
+          field: view
+          relationship: none
+          group_type: group
+          admin_label: block_modulesponsors
+          plugin_id: view
+          empty: false
+          view_to_insert: 'sponsors:block_modulesponsors'
+          inherit_arguments: false
+      display_extenders: {  }
+      path: sponsors
     cache_metadata:
       max-age: -1
       contexts:

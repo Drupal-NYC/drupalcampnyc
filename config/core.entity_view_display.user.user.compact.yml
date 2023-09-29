@@ -49,20 +49,20 @@ third_party_settings:
         - field_u_middle_name
         - field_u_last_name
         - field_u_acad_title_post
+      label: 'Full name'
       parent_name: ''
+      region: content
       weight: 1
       format_type: html_element
       format_settings:
-        id: ''
         classes: ''
+        id: ''
         element: div
         show_label: false
         label_element: h3
         attributes: ''
         effect: none
         speed: fast
-      label: 'Full name'
-      region: content
 _core:
   default_config_hash: '-cLsS3M3JycipXQt9rEb81_HxKneReoGuRh8ijcOPXs'
 id: user.user.compact
@@ -72,65 +72,64 @@ mode: compact
 content:
   field_speaker_profile:
     type: text_default
-    weight: 2
-    region: content
     label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 2
+    region: content
   field_u_acad_title_post:
     type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      empty_fields:
+        handler: ''
     weight: 8
     region: content
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings:
-      empty_fields:
-        handler: ''
   field_u_acad_title_pre:
     type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      empty_fields:
+        handler: ''
     weight: 4
     region: content
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings:
-      empty_fields:
-        handler: ''
   field_u_first_name:
     type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      empty_fields:
+        handler: nbsp
     weight: 5
     region: content
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings:
-      empty_fields:
-        handler: nbsp
   field_u_last_name:
     type: string
-    weight: 7
-    region: content
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings:
       empty_fields:
         handler: nbsp
+    weight: 7
+    region: content
   field_u_middle_name:
     type: string
-    weight: 6
-    region: content
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings:
       empty_fields:
         handler: ''
+    weight: 6
+    region: content
   user_picture:
     type: responsive_image
-    weight: 0
-    region: content
+    label: hidden
     settings:
       responsive_image_style: user_picture
       image_link: ''
@@ -141,7 +140,8 @@ content:
     third_party_settings:
       empty_fields:
         handler: ''
-    label: hidden
+    weight: 0
+    region: content
 hidden:
   field_dietary_intro: true
   field_interest_horizontal: true

@@ -16,8 +16,8 @@ plugin: 'block_content:9d6ee8ba-c760-41de-9b10-7e4ad30fd8ca'
 settings:
   id: 'block_content:9d6ee8ba-c760-41de-9b10-7e4ad30fd8ca'
   label: 'Submit a social event'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
@@ -30,6 +30,6 @@ visibility:
       user: '@user.current_user_context:current_user'
   request_path:
     id: request_path
-    pages: "/program/schedule/monday\r\n/program/schedule/tuesday\r\n/program/schedule/wednesday\r\n/program/schedule/thursday\r\n/program/schedule/friday"
     negate: false
     context_mapping: {  }
+    pages: "/program/schedule/monday\r\n/program/schedule/tuesday\r\n/program/schedule/wednesday\r\n/program/schedule/thursday\r\n/program/schedule/friday"

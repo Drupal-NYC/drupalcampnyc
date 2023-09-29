@@ -16,19 +16,21 @@ bundle: icon
 mode: large_icon
 content:
   field_media_image_1:
-    weight: 0
+    type: image
     label: hidden
     settings:
-      image_style: medium
       image_link: ''
-      svg_render_as_image: true
+      image_style: medium
       svg_attributes:
         width: 200
         height: null
+      svg_render_as_image: true
+      image_loading:
+        attribute: lazy
     third_party_settings:
       empty_fields:
         handler: ''
-    type: image
+    weight: 0
     region: content
 hidden:
   created: true

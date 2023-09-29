@@ -31,9 +31,12 @@ widget_selector: tabs
 widget_selector_configuration: {  }
 widgets:
   6d780a44-f552-4021-8670-b0fbf08943ff:
+    id: dropzonejs_media_entity_inline_entity_form
+    uuid: 6d780a44-f552-4021-8670-b0fbf08943ff
+    label: 'Upload media'
+    weight: -10
     settings:
-      form_mode: default
-      media_type: image
+      submit_text: 'Select items'
       upload_location: 'public://[date:custom:Y]-[date:custom:m]'
       dropzone_description: 'Drop files here to upload them'
       max_filesize: 2048M
@@ -44,45 +47,45 @@ widgets:
       resize_quality: !!float 1
       resize_method: contain
       thumbnail_method: contain
-      submit_text: 'Select items'
-    uuid: 6d780a44-f552-4021-8670-b0fbf08943ff
-    weight: -10
-    label: 'Upload media'
-    id: dropzonejs_media_entity_inline_entity_form
+      media_type: image
+      form_mode: default
   e83381e9-3694-4ddc-970c-9908a6a50510:
+    id: view
+    uuid: e83381e9-3694-4ddc-970c-9908a6a50510
+    label: Media
+    weight: -9
     settings:
-      view: media_browser
-      view_display: entity_browser_1
       submit_text: 'Select media'
       auto_select: false
-    uuid: e83381e9-3694-4ddc-970c-9908a6a50510
-    weight: -9
-    label: Media
-    id: view
-  d75e0ef5-2253-450a-b2d7-913c2c17e8ed:
-    settings:
       view: media_browser
-      view_display: entity_browser_documents
+      view_display: entity_browser_1
+  d75e0ef5-2253-450a-b2d7-913c2c17e8ed:
+    id: view
+    uuid: d75e0ef5-2253-450a-b2d7-913c2c17e8ed
+    label: Documents
+    weight: -5
+    settings:
       submit_text: 'Select document'
       auto_select: false
-    uuid: d75e0ef5-2253-450a-b2d7-913c2c17e8ed
-    weight: -5
-    label: Documents
-    id: view
-  13845a6a-eb94-4a3a-a9cd-bc5575ac28a5:
-    settings:
       view: media_browser
-      view_display: entity_browser_vector
+      view_display: entity_browser_documents
+  13845a6a-eb94-4a3a-a9cd-bc5575ac28a5:
+    id: view
+    uuid: 13845a6a-eb94-4a3a-a9cd-bc5575ac28a5
+    label: Vectors
+    weight: -7
+    settings:
       submit_text: 'Select vector'
       auto_select: false
-    uuid: 13845a6a-eb94-4a3a-a9cd-bc5575ac28a5
-    weight: -7
-    label: Vectors
-    id: view
+      view: media_browser
+      view_display: entity_browser_vector
   d5bb2dc8-6b5c-4dba-8ba5-5d53555a8592:
+    id: dropzonejs_media_entity_inline_entity_form
+    uuid: d5bb2dc8-6b5c-4dba-8ba5-5d53555a8592
+    label: 'Upload PDF'
+    weight: -6
     settings:
-      form_mode: default
-      media_type: file
+      submit_text: 'Select document'
       upload_location: 'public://[date:custom:Y]-[date:custom:m]-document'
       dropzone_description: 'Drop pdf(s) here to upload them'
       max_filesize: 100M
@@ -93,15 +96,15 @@ widgets:
       resize_quality: !!float 1
       resize_method: contain
       thumbnail_method: contain
-      submit_text: 'Select document'
-    uuid: d5bb2dc8-6b5c-4dba-8ba5-5d53555a8592
-    weight: -6
-    label: 'Upload PDF'
-    id: dropzonejs_media_entity_inline_entity_form
-  88b48885-c326-4559-9cbc-31aa41537d53:
-    settings:
+      media_type: file
       form_mode: default
-      media_type: vector_graphics
+  88b48885-c326-4559-9cbc-31aa41537d53:
+    id: dropzonejs_media_entity_inline_entity_form
+    uuid: 88b48885-c326-4559-9cbc-31aa41537d53
+    label: 'Upload vector'
+    weight: -8
+    settings:
+      submit_text: 'Select vector'
       upload_location: 'public://[date:custom:Y]-[date:custom:m]-vector'
       dropzone_description: 'Drop vector files here to upload them'
       max_filesize: 100M
@@ -112,8 +115,5 @@ widgets:
       resize_quality: !!float 1
       resize_method: contain
       thumbnail_method: contain
-      submit_text: 'Select vector'
-    uuid: 88b48885-c326-4559-9cbc-31aa41537d53
-    weight: -8
-    label: 'Upload vector'
-    id: dropzonejs_media_entity_inline_entity_form
+      media_type: vector_graphics
+      form_mode: default
