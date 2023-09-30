@@ -80,6 +80,7 @@ module:
   redis: 0
   responsive_image: 0
   rest: 0
+  robotstxt: 0
   scheduler: 0
   serialization: 0
   sessionize_embed_block: 0
