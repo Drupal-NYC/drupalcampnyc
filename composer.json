@@ -108,6 +108,11 @@
             "dealerdirect/phpcodesniffer-composer-installer": true
         }
     },
+    "scripts": {
+        "post-drupal-scaffold-cmd": [
+            "patch -p1 < assets/site.yaml.patch"
+        ]
+    },
     "extra": {
         "drupal-scaffold": {
             "locations": {
@@ -117,10 +122,9 @@
                 "drupal/core",
                 "amazeeio/drupal_integrations"
             ],
-            "excludes": [
-                "lagoon.site.yml",
-                "robots.txt"
-            ]
+            "file-mapping": {
+                "[web-root]/robots.txt": false
+            }
         },
         "installer-types": [
             "bower-asset",
