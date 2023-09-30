@@ -122,12 +122,12 @@ content:
     settings:
       responsive_image_style: user_picture
       image_link: ''
-      svg_render_as_image: '1'
-      svg_attributes:
-        width: ''
-        height: ''
       image_loading:
         attribute: eager
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
     third_party_settings:
       empty_fields:
         handler: ''

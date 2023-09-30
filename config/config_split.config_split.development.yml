@@ -6,14 +6,13 @@ id: development
 label: development
 description: 'Modules and other configuration to be enabled in environments other than Pantheon Live and Pantheon Test.'
 weight: 0
+stackable: false
 storage: folder
 folder: ../config-development
 module:
   config_update: 0
   config_update_ui: 0
-  devel: 0
   field_ui: 0
-  update: 0
   views_ui: 0
   webform_ui: 0
 theme: {  }

@@ -1,23 +1,23 @@
-uuid: b099b840-e4c0-4e82-9aea-de8ace28297b
+uuid: 18d7d394-3d16-4a38-b1c8-adde6304f1df
 langcode: en
 status: true
 dependencies:
   config:
-    - system.menu.policies
+    - system.menu.previous-camps
   module:
     - de_core
     - menu_block
   theme:
     - drupalnyc
-id: policies_2
+id: drupalnyc_previouscamps
 theme: drupalnyc
 region: footer
-weight: -12
+weight: -11
 provider: null
-plugin: 'menu_block:policies'
+plugin: 'menu_block:previous-camps'
 settings:
-  id: 'menu_block:policies'
-  label: Policies
+  id: 'menu_block:previous-camps'
+  label: 'Previous Camps'
   label_display: visible
   provider: menu_block
   follow: false
@@ -25,10 +25,10 @@ settings:
   label_link: false
   label_type: block
   level: 1
-  depth: 1
-  expand_all_items: true
-  parent: 'policies:'
-  suggestion: policies
+  depth: 0
+  expand_all_items: false
+  parent: 'previous-camps:'
+  suggestion: previous_camps
 visibility:
   current_user_page:
     id: current_user_page
