@@ -118,7 +118,8 @@
                 "amazeeio/drupal_integrations"
             ],
             "excludes": [
-                "lagoon.site.yml"
+                "lagoon.site.yml",
+                "robots.txt"
             ]
         },
         "installer-types": [
