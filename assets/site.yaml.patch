@@ -1,0 +1,13 @@
+diff --git a/assets/lagoon.site.yml b/assets/lagoon.site.yml
+index 412b309..f9ab487 100644
+--- a/drush/sites/lagoon.site.yml
++++ b/drush/sites/lagoon.site.yml
+@@ -2,7 +2,7 @@
+   host: ssh.lagoon.amazeeio.cloud
+   paths:
+     files: /app/web/sites/default/files
+-  user: ${env-name}
++  user: drupalcamp-nyc-${env-name}
+   ssh:
+     options: '-o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o LogLevel=FATAL -p 32222'
+     tty: false

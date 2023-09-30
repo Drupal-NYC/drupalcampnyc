@@ -39,8 +39,12 @@ else {
   $config['google_tag.container.default_container']['environment_token'] = 'LrgoUUM8BuZax-g62Vi7Yg';
 
   $local_services = __DIR__ . '/services.local.yml';
+  $local_dev_services = __DIR__ . '/services.local-dev.yml';
   if (is_readable($local_services)) {
     $settings['container_yamls'][] = $local_services;
+  }
+  if (is_readable($local_dev_services)) {
+    $settings['container_yamls'][] = $local_dev_services;
   }
 
   // Load local settings file if it exists.
