@@ -54,6 +54,7 @@ module:
   image: 0
   inline_entity_form: 0
   inline_form_errors: 0
+  key: 0
   link: 0
   linkit: 0
   markup: 0
@@ -88,6 +89,7 @@ module:
   social_media_links: 0
   svg_image: 0
   svg_image_responsive: 0
+  symfony_mailer: 0
   system: 0
   taxonomy: 0
   text: 0

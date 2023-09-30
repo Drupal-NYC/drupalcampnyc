@@ -1,0 +1,20 @@
+uuid: a2de7dd6-7e09-4fd4-b493-0b62b7c2f2cd
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: oUtf135g-IPzmggtfsOOX5ZINxbSe5Kno64BN2NUKn0
+id: _
+configuration:
+  mailer_inline_css: {  }
+  email_reply_to:
+    addresses:
+      -
+        value: camp@drupalnyc.org
+        display: DrupalCampNYC
+  email_theme:
+    theme: _active_fallback
+  mailer_url_to_absolute: {  }
+  mailer_wrap_and_convert:
+    plain: false
+    swiftmailer: false

@@ -2,8 +2,8 @@ _core:
   default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
 langcode: en
 uuid: 976667ed-c652-450a-8725-dd5419e5cb97
-name: 'DrupalCampNYC'
-mail: camp@drupalnyc.org
+name: DrupalCampNYC
+mail: webhost@drupalnyc.org
 slogan: ''
 page:
   403: ''

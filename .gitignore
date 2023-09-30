@@ -34,7 +34,7 @@
 /web/sites/*/services.local.yml
 /keys
 env
-codeship.aes
+/.ddev/.env
 # settings.php should never contain sensitive information.
 # /web/sites/*/settings.php
 
