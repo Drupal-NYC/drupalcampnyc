@@ -107,69 +107,6 @@ Lando's [Performance documentation](https://docs.lando.dev/config/performance.ht
 
 We use Drupal's [core-composer-scaffold](https://github.com/drupal/core-composer-scaffold) to place and manage files provided by Drupal core or Pantheon.
 
-# Tome Netlify Demo (for DevOps Summit)
-
-## Local Drupal + Netlify
-
-This guide will describe how you can use traditional Drupal hosting, Tome Static, and Netlify to have a normal content editing experience while still running static html on your public-facing site.
-
-First, you'll need to create a local development environment. For this demo, I'll use Lando since it's the local dev environment for the DrupalCampNYC site.
-
-(Run `lando start` on WSL2.)
-
-Assuming you have your local Drupal 8 up and running, run this command from where your site's "composer.json" file lives: "composer require drupal/tome drupal/tome_netlify".
-
-Edit your site "settings.php" file and set the "tome_static_directory" setting to a writeable directory on your hosting provider.
-
-Tome documentation recommends adding the following block of code for sites hosted on Pantheon:
-
-```php
-if (isset($_ENV['PANTHEON_ENVIRONMENT'])) {
-  $settings['tome_static_directory'] = 'sites/default/files/private/tome_static';
-}
-```
-
-However, we want the ability to export directly from Lando, so we won't even check the Pantheon environment variable:
-
-```php
-// Configure Tome Static directory for Tome Netlify.
-$settings['tome_static_directory'] = 'sites/default/files/private/tome_static';
-
-```
-
-The rest of the instructions are quoted verbatim from [Tome documentation](https://tome.fyi/docs/hosting/hosted-drupal-netlify/):
-
-> Commit the changes and push to your remote repository if you're using version control.
->
-> Create a Netlify account at https://app.netlify.com/signup
->
-> Login to  your Drupal site as an administrator. Ensure you are using the HTTPS URL of your Drupal site, as Netlify pushes will fail when using HTTP.
->
-> Enable Tome Static and Tome Netlify at /admin/modules. You're enabling Tome Static and not Tome since you don't need any of the "store your content in Git" features that Tome Sync provides.
->
-> Visit `/admin/config/tome/static/generate` and generate your first static site.
->
-> Visit `/admin/config/tome/static/download` and download the static build. Extract the generated .tar.gz file.
->
-> Visit https://app.netlify.com/account/sites and drag+drop your static build folder to the dropzone at the bottom of the screen. This will create a new Netlify site that isn't tracked in Git.
->
-> Click into your new site in the Netlify UI, then click "Settings". Copy your site-specific "API ID" from there.
->
-> Visit https://app.netlify.com/account/applications and generate a new personal access token. Copy your token as it can not be retrieved after viewing it the first time.
->
-> Visit `/admin/config/services/tome_netlify/settings` and enter your token and site ID, then save the form.
->
-> Visit `/admin/config/tome/netlify/send` and click Deploy.
->
-> Wait a few minutes after a deploy is complete for Netlify to pick up the new build, then preview it using the link provided. Builds sent to Netlify only include files that have changed since the last build, which should make them super-duper fast.
->
-> When satisfied with the deploy, publish the draft on Netlify at "Deploys" when viewing your site in the UI.
->
-> You're done!
->
-> While this guide may seem daunting, I think this hosting setup is the most reasonable for Drupal users who don't want to change the way content editors use Drupal, but still want to run a static site on the frontend.
-
-
 
 # Credits
 
