@@ -6,5 +6,6 @@ dependencies:
     - node
 id: node.evaluation
 label: Evaluation
+description: ''
 targetEntityType: node
 cache: true

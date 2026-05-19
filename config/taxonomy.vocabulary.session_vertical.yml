@@ -4,5 +4,6 @@ status: true
 dependencies: {  }
 name: 'Industry Tracks (Vertical)'
 vid: session_vertical
-description: ''
+description: null
 weight: 0
+new_revision: false

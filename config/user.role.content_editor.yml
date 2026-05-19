@@ -3,6 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
+    - entity_browser.browser.icon_browser
+    - entity_browser.browser.media_browser
     - filter.format.basic_html
     - filter.format.full_html
     - filter.format.restricted_html
@@ -35,6 +37,7 @@ dependencies:
     - field_permissions
     - file
     - filter
+    - help
     - honeypot
     - media
     - node
@@ -43,6 +46,7 @@ dependencies:
     - path
     - pathauto
     - redirect
+    - redis
     - scheduler
     - system
     - taxonomy
@@ -58,9 +62,11 @@ permissions:
   - 'access content overview'
   - 'access contextual links'
   - 'access files overview'
+  - 'access help pages'
   - 'access icon_browser entity browser pages'
   - 'access media overview'
   - 'access media_browser entity browser pages'
+  - 'access redis report'
   - 'access site reports'
   - 'access taxonomy overview'
   - 'access toolbar'

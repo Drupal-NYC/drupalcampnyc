@@ -2,6 +2,8 @@ uuid: abc9fcc7-ae27-4351-a3b5-e7cb6cf20129
 langcode: en
 status: true
 dependencies:
+  config:
+    - node.type.bof
   module:
     - node
 id: bof
@@ -12,7 +14,6 @@ selection_criteria:
   504a3726-e4e9-43a9-bf28-49d9b938662d:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 504a3726-e4e9-43a9-bf28-49d9b938662d
     context_mapping:
       node: node
     bundles:

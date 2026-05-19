@@ -4,5 +4,6 @@ status: true
 dependencies: {  }
 name: 'User - Dietary restrictions'
 vid: dietary_restrictions
-description: ''
+description: null
 weight: 0
+new_revision: false

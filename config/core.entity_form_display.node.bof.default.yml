@@ -50,13 +50,13 @@ content:
       autocomplete_route_name: autocomplete_deluxe.autocomplete
       size: 60
       selection_handler: default
-      limit: 25
+      match_limit: 25
       min_length: 0
       delimiter: ''
       not_found_message_allow: true
       not_found_message: "The term '@term' will be added"
       new_terms: true
-      target_type: taxonomy_term
+      no_empty_message: 'No terms could be found. Please type in order to add a new term.'
     third_party_settings: {  }
   field_summary:
     type: text_textarea
@@ -107,6 +107,11 @@ content:
   publish_on:
     type: datetime_timestamp_no_default
     weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  simple_sitemap:
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }

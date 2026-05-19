@@ -2,6 +2,8 @@ uuid: a38039ab-325a-418b-b09d-81575b4b51b2
 langcode: en
 status: true
 dependencies:
+  config:
+    - node.type.social_event
   module:
     - node
 id: social_events
@@ -12,7 +14,6 @@ selection_criteria:
   ae5b97d8-d918-4825-8d24-6137c7e8defc:
     id: 'entity_bundle:node'
     negate: false
-    uuid: ae5b97d8-d918-4825-8d24-6137c7e8defc
     context_mapping:
       node: node
     bundles:

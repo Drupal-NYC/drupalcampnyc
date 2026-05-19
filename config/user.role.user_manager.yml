@@ -5,6 +5,7 @@ dependencies:
   module:
     - field_permissions
     - file
+    - help
     - system
     - toolbar
 id: user_manager
@@ -13,6 +14,7 @@ weight: 4
 is_admin: null
 permissions:
   - 'access administration pages'
+  - 'access help pages'
   - 'access toolbar'
   - 'access user profiles'
   - 'administer users'

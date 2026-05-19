@@ -6,5 +6,6 @@ dependencies:
     - taxonomy
 id: taxonomy_term.teaser
 label: 'Taxonomy term teaser'
+description: ''
 targetEntityType: taxonomy_term
 cache: true

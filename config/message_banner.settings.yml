@@ -8,3 +8,6 @@ banner_color: default--white
 banner_text:
   value: "<h2>Archived website</h2>\r\n\r\n<p>This 2020 website is archived and likely contains information that is now inaccurate&nbsp;or otherwise out of date. <a href=\"https://www.drupalcamp.nyc\">Visit the latest DrupalCampNYC website</a>.</p>\r\n"
   format: basic_html
+banner_position_override: 0
+banner_override_selector: body
+banner_disable_close: 0

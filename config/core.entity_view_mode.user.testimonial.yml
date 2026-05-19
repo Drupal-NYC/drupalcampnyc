@@ -6,5 +6,6 @@ dependencies:
     - user
 id: user.testimonial
 label: Testimonial
+description: ''
 targetEntityType: user
 cache: true
