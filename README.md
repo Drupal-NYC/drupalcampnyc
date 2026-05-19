@@ -101,8 +101,6 @@ You should run composer inside the DDEV container by using `ddev composer` inste
 If you prefer to run composer on the host (and use `composer`) rather than have to use `ddev composer`, you must
 have the same version of PHP as that used in the container.
 
-Lando's [Performance documentation](https://docs.lando.dev/config/performance.html) explains further.
-
 ### Composer Scaffold
 
 We use Drupal's [core-composer-scaffold](https://github.com/drupal/core-composer-scaffold) to place and manage files provided by Drupal core or Pantheon.
