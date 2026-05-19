@@ -2,8 +2,9 @@ uuid: 87cd4e7b-5900-4bec-b5b4-3472a3f86fbe
 langcode: en
 status: true
 dependencies:
+  config:
+    - taxonomy.vocabulary.session_horizontal
   module:
-    - ctools
     - taxonomy
 id: expertise_topics
 label: 'Expertise Topics'
@@ -13,7 +14,6 @@ selection_criteria:
   432aec3c-e8fe-4c9a-b1ec-01cd84d66336:
     id: 'entity_bundle:taxonomy_term'
     negate: false
-    uuid: 432aec3c-e8fe-4c9a-b1ec-01cd84d66336
     context_mapping:
       taxonomy_term: taxonomy_term
     bundles:

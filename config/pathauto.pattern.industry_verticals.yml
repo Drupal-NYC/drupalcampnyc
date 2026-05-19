@@ -2,8 +2,9 @@ uuid: 5cbf8fbe-3221-4a7a-8842-e8d3ae38ba1f
 langcode: en
 status: true
 dependencies:
+  config:
+    - taxonomy.vocabulary.session_vertical
   module:
-    - ctools
     - taxonomy
 id: industry_verticals
 label: 'Industry Verticals'
@@ -13,7 +14,6 @@ selection_criteria:
   356c1358-ab0a-4e2f-8912-6d04fb2864a1:
     id: 'entity_bundle:taxonomy_term'
     negate: false
-    uuid: 356c1358-ab0a-4e2f-8912-6d04fb2864a1
     context_mapping:
       taxonomy_term: taxonomy_term
     bundles:

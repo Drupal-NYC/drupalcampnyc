@@ -3,8 +3,10 @@ langcode: en
 status: true
 dependencies:
   config:
+    - entity_browser.browser.user_browser
     - filter.format.basic_html
     - filter.format.job_listing_html
+    - filter.format.webform_default
     - node.type.bof
     - node.type.job_listing
     - node.type.session
@@ -54,6 +56,7 @@ permissions:
   - 'use social_events transition ready_for_review'
   - 'use text format basic_html'
   - 'use text format job_listing_html'
+  - 'use text format webform_default'
   - 'view field_featured'
   - 'view field_si_sponsor'
   - 'view field_slides'

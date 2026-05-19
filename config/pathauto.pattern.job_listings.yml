@@ -2,6 +2,8 @@ uuid: 5c4d67ad-b89d-4311-b445-cc5f93cf6464
 langcode: en
 status: true
 dependencies:
+  config:
+    - node.type.job_listing
   module:
     - node
 id: job_listings
@@ -12,7 +14,6 @@ selection_criteria:
   e4ab300d-bfe1-4235-bc9d-76288606e802:
     id: 'entity_bundle:node'
     negate: false
-    uuid: e4ab300d-bfe1-4235-bc9d-76288606e802
     context_mapping:
       node: node
     bundles:

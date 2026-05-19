@@ -4,5 +4,6 @@ status: true
 dependencies: {  }
 name: 'Expertise Topics (Horizontal)'
 vid: session_horizontal
-description: ''
+description: null
 weight: 0
+new_revision: false

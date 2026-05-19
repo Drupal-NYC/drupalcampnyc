@@ -24,7 +24,7 @@ third_party_settings:
 name: 'Program item'
 type: program_item
 description: 'Used for scheduling lunches, breaks and other special global events.'
-help: ''
+help: null
 new_revision: true
 preview_mode: 1
 display_submitted: false

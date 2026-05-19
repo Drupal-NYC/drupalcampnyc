@@ -11,7 +11,6 @@ tags:
   canonical_url: '[site:url]'
   description: '[node:field_summary_plain]'
   twitter_cards_site: '@DrupalCampNYC'
-  twitter_cards_page_url: '[site:url]'
   twitter_cards_description: '[node:field_summary_plain]'
   twitter_cards_type: summary
   twitter_cards_title: '[current-page:title] | [site:name]'

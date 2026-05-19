@@ -6,5 +6,6 @@ dependencies:
     - user
 id: user.speaker_profile
 label: 'Speaker profile'
+description: ''
 targetEntityType: user
 cache: true

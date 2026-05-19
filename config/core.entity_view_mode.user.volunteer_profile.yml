@@ -6,5 +6,6 @@ dependencies:
     - user
 id: user.volunteer_profile
 label: 'Volunteer profile'
+description: ''
 targetEntityType: user
 cache: true

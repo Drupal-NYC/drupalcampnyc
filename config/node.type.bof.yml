@@ -23,7 +23,7 @@ third_party_settings:
 name: BoF
 type: bof
 description: 'Birds of a Feather submission form. Any registered user can access it.'
-help: ''
+help: null
 new_revision: true
 preview_mode: 1
 display_submitted: false

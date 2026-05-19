@@ -1,9 +1,7 @@
 uuid: 7da69959-2ca4-4e54-941a-e1357d458c7f
 langcode: en
 status: true
-dependencies:
-  module:
-    - de_core
+dependencies: {  }
 id: default_container
 label: 'Default Container'
 weight: 0
@@ -11,31 +9,11 @@ tag_container_ids:
   - GTM-NDQSW5V
 advanced_settings:
   gtm:
-    data_layer: dataLayer
-    include_classes: false
-    allowlist_classes: |-
-      google
-      nonGooglePixels
-      nonGoogleScripts
-      nonGoogleIframes
-    blocklist_classes: |-
-      customScripts
-      customPixels
-    include_environment: true
-    environment_id: env-19
-    environment_token: LrgoUUM8BuZax-g62Vi7Yg
+    GTM-NDQSW5V:
+      data_layer: dataLayer
+      include_environment: false
 dimensions_metrics: {  }
 conditions:
-  current_user_page:
-    id: current_user_page
-    show_on_own_page: 0
-    negate: 0
-    context_mapping:
-      user: '@user.current_user_context:current_user'
-  node_type_if_node:
-    id: node_type_if_node
-    bundles: {  }
-    negate: 0
   response_code:
     id: response_code
     negate: true

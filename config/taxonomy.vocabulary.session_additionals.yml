@@ -6,3 +6,4 @@ name: 'Session - Helper add-ons'
 vid: session_additionals
 description: 'Helper taxonomy to integrate other content in schedule'
 weight: 0
+new_revision: false
