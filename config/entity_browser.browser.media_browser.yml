@@ -19,6 +19,7 @@ display_configuration:
   height: ''
   link_text: 'Select Media'
   auto_open: false
+  use_admin_theme: true
 selection_display: multi_step_display
 selection_display_configuration:
   entity_type: media
@@ -48,6 +49,7 @@ widgets:
       resize_method: contain
       thumbnail_method: contain
       media_type: image
+      inherit_settings: true
       form_mode: default
   e83381e9-3694-4ddc-970c-9908a6a50510:
     id: view
@@ -97,6 +99,7 @@ widgets:
       resize_method: contain
       thumbnail_method: contain
       media_type: file
+      inherit_settings: true
       form_mode: default
   88b48885-c326-4559-9cbc-31aa41537d53:
     id: dropzonejs_media_entity_inline_entity_form
@@ -116,4 +119,5 @@ widgets:
       resize_method: contain
       thumbnail_method: contain
       media_type: vector_graphics
+      inherit_settings: true
       form_mode: default

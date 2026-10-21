@@ -17,6 +17,7 @@ display_configuration:
   height: ''
   link_text: 'Select icon'
   auto_open: false
+  use_admin_theme: true
 selection_display: multi_step_display
 selection_display_configuration:
   entity_type: media
@@ -46,6 +47,7 @@ widgets:
       resize_method: contain
       thumbnail_method: contain
       media_type: icon
+      inherit_settings: true
       form_mode: default
   2977a39a-0d73-4358-a885-2362612204d1:
     id: view
