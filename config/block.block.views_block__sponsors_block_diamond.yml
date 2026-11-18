@@ -5,7 +5,6 @@ dependencies:
   config:
     - views.view.sponsors
   module:
-    - de_core
     - system
     - views
   theme:
@@ -22,14 +21,9 @@ settings:
   label_display: visible
   provider: views
   views_label: ''
-  items_per_page: none
+  items_per_page: null
+  exposed: {  }
 visibility:
-  current_user_page:
-    id: current_user_page
-    show_on_own_page: 0
-    negate: false
-    context_mapping:
-      user: '@user.current_user_context:current_user'
   request_path:
     id: request_path
     negate: true

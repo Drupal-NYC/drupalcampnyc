@@ -287,6 +287,7 @@ permissions:
   - 'override webform published option'
   - 'override webform revision option'
   - 'override webform sticky option'
+  - 'rebuild node access permissions'
   - 'revert all revisions'
   - 'revert blog_post revisions'
   - 'revert job_listing revisions'

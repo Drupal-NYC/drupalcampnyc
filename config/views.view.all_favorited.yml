@@ -211,11 +211,6 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-              content_editor: '0'
-              user_manager: '0'
-              track_chair: '0'
             reduce: false
           is_grouped: false
           group_info:
@@ -260,6 +255,7 @@ display:
           empty_table: false
           caption: ''
           description: ''
+          class: ''
       row:
         type: fields
         options:
@@ -313,4 +309,5 @@ display:
         - url.query_args
         - 'user.node_grants:view'
         - user.permissions
-      tags: {  }
+      tags:
+        - flag.flag.session_schedule

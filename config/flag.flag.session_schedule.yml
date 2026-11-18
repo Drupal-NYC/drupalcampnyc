@@ -20,6 +20,9 @@ unflag_short: 'Unmark favourite'
 unflag_long: 'Remove this session from your favourite items.'
 unflag_message: ''
 unflag_denied_text: ''
+flood_control_active: false
+flood_control_limit: 10
+flood_control_window: 3600
 weight: 0
 flag_type: 'entity:node'
 link_type: ajax_link

@@ -32,13 +32,12 @@ settings:
       properties:
         reversed: false
         startIndex: true
+        styles: true
       multiBlock: true
     ckeditor5_sourceEditing:
       allowed_tags:
         - '<span>'
         - '<a hreflang>'
-        - '<ul type>'
-        - '<ol type>'
     linkit_extension:
       linkit_enabled: false
 image_upload:

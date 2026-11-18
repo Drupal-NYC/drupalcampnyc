@@ -4,17 +4,13 @@ status: true
 dependencies:
   config:
     - field.storage.paragraph.field_access_notice
+    - filter.format.basic_html
+    - filter.format.full_html
+    - filter.format.plain_text
+    - filter.format.restricted_html
     - paragraphs.paragraphs_type.element_webform
   module:
-    - allowed_formats
     - text
-third_party_settings:
-  allowed_formats:
-    allowed_formats:
-      - basic_html
-      - restricted_html
-      - full_html
-      - plain_text
 id: paragraph.element_webform.field_access_notice
 field_name: field_access_notice
 entity_type: paragraph
@@ -28,5 +24,10 @@ default_value:
     value: "<p>Please <a href=\"/user/register\">register</a> or <a href=\"/user/login\">log in</a> to have access to this form.</p>\r\n"
     format: basic_html
 default_value_callback: ''
-settings: {  }
+settings:
+  allowed_formats:
+    - basic_html
+    - restricted_html
+    - full_html
+    - plain_text
 field_type: text_long
