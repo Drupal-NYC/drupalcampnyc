@@ -4,17 +4,13 @@ status: true
 dependencies:
   config:
     - field.storage.taxonomy_term.field_ext_desc
+    - filter.format.basic_html
+    - filter.format.full_html
+    - filter.format.plain_text
+    - filter.format.restricted_html
     - taxonomy.vocabulary.session_horizontal
   module:
-    - allowed_formats
     - text
-third_party_settings:
-  allowed_formats:
-    allowed_formats:
-      - basic_html
-      - restricted_html
-      - full_html
-      - plain_text
 id: taxonomy_term.session_horizontal.field_ext_desc
 field_name: field_ext_desc
 entity_type: taxonomy_term
@@ -25,5 +21,10 @@ required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
-settings: {  }
+settings:
+  allowed_formats:
+    - basic_html
+    - restricted_html
+    - full_html
+    - plain_text
 field_type: text_long

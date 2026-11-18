@@ -4,16 +4,12 @@ status: true
 dependencies:
   config:
     - field.storage.user.field_u_special_details
+    - filter.format.basic_html
+    - filter.format.full_html
+    - filter.format.restricted_html
   module:
-    - allowed_formats
     - text
     - user
-third_party_settings:
-  allowed_formats:
-    allowed_formats:
-      - basic_html
-      - restricted_html
-      - full_html
 id: user.user.field_u_special_details
 field_name: field_u_special_details
 entity_type: user
@@ -24,5 +20,9 @@ required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
-settings: {  }
+settings:
+  allowed_formats:
+    - basic_html
+    - restricted_html
+    - full_html
 field_type: text_long

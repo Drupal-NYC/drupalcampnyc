@@ -384,6 +384,7 @@ display:
         type: mini
         options:
           offset: 0
+          pagination_heading_level: h4
           items_per_page: 12
           total_pages: null
           id: 0
@@ -398,7 +399,6 @@ display:
             items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
-          pagination_heading_level: h4
       exposed_form:
         type: basic
         options:
@@ -512,11 +512,6 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-              content_editor: '0'
-              user_manager: '0'
-              track_chair: '0'
             placeholder: ''
           is_grouped: false
           group_info:
@@ -576,10 +571,6 @@ display:
         - url.query_args
         - user.permissions
       tags:
-        - 'config:core.entity_view_display.user.user.compact'
-        - 'config:core.entity_view_display.user.user.default'
-        - 'config:core.entity_view_display.user.user.testimonial'
-        - 'config:core.entity_view_display.user.user.volunteer_profile'
         - 'config:field.storage.user.field_u_first_name'
         - 'config:field.storage.user.field_u_last_name'
         - 'config:field.storage.user.field_u_middle_name'
@@ -599,10 +590,6 @@ display:
         - url.query_args
         - user.permissions
       tags:
-        - 'config:core.entity_view_display.user.user.compact'
-        - 'config:core.entity_view_display.user.user.default'
-        - 'config:core.entity_view_display.user.user.testimonial'
-        - 'config:core.entity_view_display.user.user.volunteer_profile'
         - 'config:field.storage.user.field_u_first_name'
         - 'config:field.storage.user.field_u_last_name'
         - 'config:field.storage.user.field_u_middle_name'

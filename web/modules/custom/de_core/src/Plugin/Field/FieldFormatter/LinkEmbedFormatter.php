@@ -2,6 +2,7 @@
 
 namespace Drupal\de_core\Plugin\Field\FieldFormatter;
 
+use Drupal\Core\Utility\Error;
 use Drupal\Core\Annotation\Translation;
 use Drupal\Core\Field\Annotation\FieldFormatter;
 use Drupal\Core\Field\FieldItemListInterface;
@@ -21,9 +22,9 @@ use GuzzleHttp\Exception\RequestException;
  */
 class LinkEmbedFormatter extends FormatterBase {
 
-  private $maxWidth = 300;
+  protected $maxWidth = 300;
 
-  private $providers = "#https?://(www\.)?youtube.com/watch.*#i | http://www.youtube.com/oembed | true
+  protected $providers = "#https?://(www\.)?youtube.com/watch.*#i | http://www.youtube.com/oembed | true
 #https?://youtu\.be/.*#i | http://www.youtube.com/oembed | true
 #https?://(www\.)?vimeo\.com/.*#i | http://vimeo.com/api/oembed.json | true
 #http://(www\.)?hulu\.com/watch/.*#i | http://www.hulu.com/api/oembed.json | true
@@ -47,10 +48,10 @@ class LinkEmbedFormatter extends FormatterBase {
     return [
       'oembed_maxwidth' => 500,
       'oembed_providers' => "#https?://(www\.)?youtube.com/watch.*#i | http://www.youtube.com/oembed | true
-#https?://youtu\.be/.*#i | http://www.youtube.com/oembed | true 
+#https?://youtu\.be/.*#i | http://www.youtube.com/oembed | true
 #https?://(www\.)?vimeo\.com/.*#i | http://vimeo.com/api/oembed.json | true
-#http://(www\.)?hulu\.com/watch/.*#i | http://www.hulu.com/api/oembed.json | true 
-#https?://(www\.)?twitter.com/.+?/status(es)?/.*#i | https://api.twitter.com/1/statuses/oembed.json | true 
+#http://(www\.)?hulu\.com/watch/.*#i | http://www.hulu.com/api/oembed.json | true
+#https?://(www\.)?twitter.com/.+?/status(es)?/.*#i | https://api.twitter.com/1/statuses/oembed.json | true
 #https?://(www\.)?instagram.com/p/.*#i | https://api.instagram.com/oembed | true",
     ] + parent::defaultSettings();
   }
@@ -123,7 +124,7 @@ class LinkEmbedFormatter extends FormatterBase {
       }
 
       catch (RequestException $e) {
-        watchdog_exception('link_oembed', $e);
+        Error::logException(\Drupal::logger('link_oembed'), $e);
       }
 
       if (!empty($response)) {

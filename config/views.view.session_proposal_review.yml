@@ -562,11 +562,6 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-              content_editor: '0'
-              user_manager: '0'
-              track_chair: '0'
           is_grouped: false
           group_info:
             label: ''
@@ -617,11 +612,6 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-              content_editor: '0'
-              user_manager: '0'
-              track_chair: '0'
             reduce: false
           is_grouped: false
           group_info:
@@ -669,11 +659,6 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-              content_editor: '0'
-              user_manager: '0'
-              track_chair: '0'
             placeholder: ''
           is_grouped: false
           group_info:
@@ -715,11 +700,6 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-              content_editor: '0'
-              user_manager: '0'
-              track_chair: '0'
             reduce: false
           is_grouped: false
           group_info:
@@ -762,11 +742,6 @@ display:
             multiple: true
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-              content_editor: '0'
-              user_manager: '0'
-              track_chair: '0'
             reduce: false
           is_grouped: false
           group_info:
@@ -859,6 +834,7 @@ display:
           empty_table: false
           caption: ''
           description: ''
+          class: ''
       row:
         type: 'entity:node'
         options:
@@ -1414,11 +1390,6 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-              content_editor: '0'
-              user_manager: '0'
-              track_chair: '0'
           is_grouped: false
           group_info:
             label: ''
@@ -2056,11 +2027,6 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-              content_editor: '0'
-              user_manager: '0'
-              track_chair: '0'
           is_grouped: false
           group_info:
             label: ''
@@ -2766,11 +2732,6 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-              content_editor: '0'
-              user_manager: '0'
-              track_chair: '0'
           is_grouped: false
           group_info:
             label: ''
@@ -2896,6 +2857,7 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - session
         - user
         - 'user.node_grants:view'
       tags:
@@ -2903,6 +2865,7 @@ display:
         - 'config:field.storage.node.field_speakers'
         - 'config:field.storage.node.field_type'
         - 'config:field.storage.node.field_vertical'
+        - flag.flag.session_schedule
   block_sessions_public:
     id: block_sessions_public
     display_title: 'Block Proposed sessions (public)'
@@ -3443,11 +3406,6 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-              content_editor: '0'
-              user_manager: '0'
-              track_chair: '0'
           is_grouped: false
           group_info:
             label: ''
@@ -3488,11 +3446,6 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-              content_editor: '0'
-              user_manager: '0'
-              track_chair: '0'
             placeholder: ''
           is_grouped: false
           group_info:
@@ -3532,11 +3485,6 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-              content_editor: '0'
-              user_manager: '0'
-              track_chair: '0'
             reduce: false
           is_grouped: false
           group_info:
@@ -3577,11 +3525,6 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-              content_editor: '0'
-              user_manager: '0'
-              track_chair: '0'
             reduce: false
           is_grouped: false
           group_info:
@@ -3671,6 +3614,7 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - session
         - url
         - url.query_args
         - user
@@ -3680,6 +3624,7 @@ display:
         - 'config:field.storage.node.field_speakers'
         - 'config:field.storage.node.field_type'
         - 'config:field.storage.node.field_vertical'
+        - flag.flag.session_schedule
   page_session_review:
     id: page_session_review
     display_title: 'Page Review'
@@ -4333,11 +4278,6 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-              content_editor: '0'
-              user_manager: '0'
-              track_chair: '0'
             placeholder: ''
           is_grouped: false
           group_info:
@@ -4377,11 +4317,6 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-              content_editor: '0'
-              user_manager: '0'
-              track_chair: '0'
             reduce: false
           is_grouped: false
           group_info:
@@ -4427,11 +4362,6 @@ display:
             multiple: true
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-              content_editor: '0'
-              user_manager: '0'
-              track_chair: '0'
             reduce: false
           is_grouped: false
           group_info:
@@ -4484,11 +4414,6 @@ display:
             multiple: true
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-              content_editor: '0'
-              user_manager: '0'
-              track_chair: '0'
             reduce: true
           is_grouped: false
           group_info:
@@ -4528,11 +4453,6 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-              content_editor: '0'
-              user_manager: '0'
-              track_chair: '0'
             reduce: false
           is_grouped: false
           group_info:

@@ -4,17 +4,13 @@ status: true
 dependencies:
   config:
     - field.storage.paragraph.field_title
+    - filter.format.basic_html
+    - filter.format.full_html
+    - filter.format.plain_text
+    - filter.format.restricted_html
     - paragraphs.paragraphs_type.deck_2_columns
   module:
-    - allowed_formats
     - text
-third_party_settings:
-  allowed_formats:
-    allowed_formats:
-      - basic_html
-      - restricted_html
-      - full_html
-      - plain_text
 id: paragraph.deck_2_columns.field_title
 field_name: field_title
 entity_type: paragraph
@@ -25,5 +21,10 @@ required: false
 translatable: true
 default_value: {  }
 default_value_callback: ''
-settings: {  }
+settings:
+  allowed_formats:
+    - basic_html
+    - restricted_html
+    - full_html
+    - plain_text
 field_type: text

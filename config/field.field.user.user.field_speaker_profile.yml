@@ -4,17 +4,13 @@ status: true
 dependencies:
   config:
     - field.storage.user.field_speaker_profile
+    - filter.format.basic_html
+    - filter.format.full_html
+    - filter.format.plain_text
+    - filter.format.restricted_html
   module:
-    - allowed_formats
     - text
     - user
-third_party_settings:
-  allowed_formats:
-    allowed_formats:
-      - basic_html
-      - restricted_html
-      - full_html
-      - plain_text
 id: user.user.field_speaker_profile
 field_name: field_speaker_profile
 entity_type: user
@@ -25,5 +21,10 @@ required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
-settings: {  }
+settings:
+  allowed_formats:
+    - basic_html
+    - restricted_html
+    - full_html
+    - plain_text
 field_type: text_long

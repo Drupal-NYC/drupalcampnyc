@@ -4,7 +4,7 @@ namespace Drupal\de_core\Plugin\Condition;
 
 
 use Drupal\Core\Condition\ConditionPluginBase;
-use Drupal\Core\Entity\EntityStorageInterface;
+use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
 use Drupal\Core\Routing\RouteMatchInterface;
@@ -21,53 +21,30 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
  */
 class NodeTypeIfNode extends ConditionPluginBase implements ContainerFactoryPluginInterface {
 
-    /** @var RouteMatchInterface */
-    protected $currentRouteMatch;
+    /**
+     * The current route match.
+     */
+    protected RouteMatchInterface $currentRouteMatch;
 
     /**
-     * The entity storage.
-     *
-     * @var \Drupal\Core\Entity\EntityStorageInterface
+     * The entity manager.
      */
-    protected $entityStorage;
-
-
-    /**
-     * Creates a new CurrentUserPage object.
-     *
-     * @param array $configuration
-     *   The plugin configuration, i.e. an array with configuration values keyed
-     *   by configuration option name. The special key 'context' may be used to
-     *   initialize the defined contexts by setting it to an array of context
-     *   values keyed by context names.
-     * @param string $plugin_id
-     *   The plugin_id for the plugin instance.
-     * @param mixed $plugin_definition
-     *   The plugin implementation definition.
-     * @param RouteMatchInterface $current_route_match
-     *   A route matching interface for the current page to check if we have a node canonical route.
-     * @param \Drupal\Core\Entity\EntityStorageInterface $entity_storage
-     *   The entity storage.
-     */
-    public function __construct(array $configuration, $plugin_id, $plugin_definition, RouteMatchInterface $current_route_match,EntityStorageInterface $entity_storage)
-    {
-        parent::__construct($configuration, $plugin_id, $plugin_definition);
-        $this->entityStorage = $entity_storage;
-        $this->currentRouteMatch = $current_route_match;
-    }
+    protected EntityTypeManagerInterface $entityManager;
 
     /**
      * {@inheritdoc}
      */
     public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition)
     {
-        return new static(
+        $instance = new static(
             $configuration,
             $plugin_id,
             $plugin_definition,
-            $container->get('current_route_match'),
-            $container->get('entity_type.manager')->getStorage('node_type')
         );
+
+        $instance->currentRouteMatch = $container->get('current_route_match');
+        $instance->entityManager = $container->get('entity_type.manager');
+        return $instance;
     }
     /**
      * {@inheritdoc}
@@ -80,7 +57,7 @@ class NodeTypeIfNode extends ConditionPluginBase implements ContainerFactoryPlug
         ];
 
         $options = [];
-        $node_types = $this->entityStorage->loadMultiple();
+        $node_types = $this->entityManager->storage('node_type')->loadMultiple();
         foreach ($node_types as $type) {
             $options[$type->id()] = $type->label();
         }

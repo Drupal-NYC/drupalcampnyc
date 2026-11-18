@@ -3,7 +3,6 @@ langcode: en
 status: false
 dependencies:
   module:
-    - de_core
     - system
   theme:
     - drupalnyc
@@ -18,16 +17,8 @@ settings:
   label: 'Submit a BoF'
   label_display: '0'
   provider: block_content
-  status: true
-  info: ''
   view_mode: full
 visibility:
-  current_user_page:
-    id: current_user_page
-    show_on_own_page: 0
-    negate: false
-    context_mapping:
-      user: '@user.current_user_context:current_user'
   request_path:
     id: request_path
     negate: false

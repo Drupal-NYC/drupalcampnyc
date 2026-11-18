@@ -4,14 +4,10 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_job_description
+    - filter.format.job_listing_html
     - node.type.job_listing
   module:
-    - allowed_formats
     - text
-third_party_settings:
-  allowed_formats:
-    allowed_formats:
-      - job_listing_html
 id: node.job_listing.field_job_description
 field_name: field_job_description
 entity_type: node
@@ -22,5 +18,7 @@ required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
-settings: {  }
+settings:
+  allowed_formats:
+    - job_listing_html
 field_type: text_long

@@ -4,17 +4,13 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_summary
+    - filter.format.basic_html
+    - filter.format.full_html
+    - filter.format.plain_text
+    - filter.format.restricted_html
     - node.type.bof
   module:
-    - allowed_formats
     - text
-third_party_settings:
-  allowed_formats:
-    allowed_formats:
-      - basic_html
-      - restricted_html
-      - full_html
-      - plain_text
 id: node.bof.field_summary
 field_name: field_summary
 entity_type: node
@@ -25,5 +21,10 @@ required: false
 translatable: true
 default_value: {  }
 default_value_callback: ''
-settings: {  }
+settings:
+  allowed_formats:
+    - basic_html
+    - restricted_html
+    - full_html
+    - plain_text
 field_type: text_long

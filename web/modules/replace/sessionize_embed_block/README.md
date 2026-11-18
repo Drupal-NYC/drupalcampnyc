@@ -4,6 +4,9 @@ Sessionize Embed
 INTRODUCTION
 ------------
 
+## D11 upgrade note
+This contrib module was never updated for D11.  Copied and adjusted here.
+
 This module allows the display of Sessions, Schedules, and Speakers from [Sessionize.com](https://sessionize.com) on your Drupal 8 or 9 site.
 
 ![Sessionize Embed in Drupal 8](https://user-images.githubusercontent.com/1103978/134827378-0da4dce4-1fe7-4368-9cf8-d8693d0c59b2.png)

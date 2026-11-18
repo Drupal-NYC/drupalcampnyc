@@ -2,11 +2,8 @@ uuid: af1b3712-fd93-4563-86cc-92a3dc85dd3f
 langcode: en
 status: false
 dependencies:
-  config:
-    - views.view.session_proposal_review
   module:
     - de_core
-    - views
   theme:
     - drupaleurope
 id: views_block__session_proposal_review_block_flagged
@@ -21,7 +18,7 @@ settings:
   label_display: '0'
   provider: views
   views_label: ''
-  items_per_page: none
+  items_per_page: null
   pager: view
 visibility:
   current_user_page:

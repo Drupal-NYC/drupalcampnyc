@@ -1,0 +1,9 @@
+name: Sessionize Embed Block
+type: module
+description: Provides a Block containing Seesionize Embed code.
+core_version_requirement: ^9.3 || ^10.0 || ^11
+package: DrupalCampNYC
+
+# Not maintained since D10 - needs to be replaced, adopted, or made custom
+# core_version_requirement change is the only upgrade status flag
+# changed 2026-11-18
