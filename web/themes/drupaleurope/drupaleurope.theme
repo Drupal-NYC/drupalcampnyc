@@ -1,6 +1,8 @@
 <?php
 
 
+use Drupal\Component\Utility\Html;
+use Drupal\user\UserInterface;
 use Drupal\views\Views;
 
 use Drupal\paragraphs\Entity\Paragraph;
@@ -59,11 +61,11 @@ function drupaleurope_preprocess_html(&$variables) {
   // Page class based on current internal path.
   $current_path = \Drupal::service('path.current')->getPath();
   $current_path = ltrim($current_path, '/');
-  $variables['attributes']['class'][] = 'path-' . \Drupal\Component\Utility\Html::cleanCssIdentifier($current_path);
+  $variables['attributes']['class'][] = 'path-' . Html::cleanCssIdentifier($current_path);
 
   $current_uri = \Drupal::request()->getRequestUri();
   $current_uri = ltrim($current_uri, '/');
-  $current_uri = \Drupal\Component\Utility\Html::cleanCssIdentifier($current_uri);
+  $current_uri = Html::cleanCssIdentifier($current_uri);
   $current_uri = str_replace('cssdebug','', $current_uri);
   $variables['attributes']['class'][] = 'path-' . $current_uri;
 }
@@ -86,7 +88,7 @@ function drupaleurope_preprocess_user(&$variables) {
  * @param \Drupal\user\UserInterface $user
  * @return bool
  */
-function drupaleurope_user_is_page(\Drupal\user\UserInterface $user) {
+function drupaleurope_user_is_page(UserInterface $user) {
     $route_match = \Drupal::routeMatch();
     if ($route_match->getRouteName() == 'entity.user.canonical') {
         $page_user = $route_match->getParameter('user');

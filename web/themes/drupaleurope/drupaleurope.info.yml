@@ -12,7 +12,7 @@ screenshot: drupaleurope-icon-logo.png
 dependencies:
   - classy:classy
 
-core_version_requirement: ^9 || ^10
+core_version_requirement: ^9 || ^10 || ^11
 stylesheets-remove:
   - '@eu_cookie_compliance/css/eu_cookie_compliance.css'
   - '@eu_cookie_compliance/css/eu_cookie_compliance.bare.css'

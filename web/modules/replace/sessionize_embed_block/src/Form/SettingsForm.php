@@ -21,6 +21,9 @@ class SettingsForm extends ConfigFormBase implements ContainerInjectionInterface
    */
   protected $configFactory;
 
+  protected Embed $sessionizeEmbed;
+
+
   /**
    * Config settings.
    *
